@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+	<head>
+		{% include '_head.html' %}
+		{% block title %}{% endblock title %}
+	</head>
+	<body>
+		<nav>
+			{% include '_nav.html' %}
+		</nav>
+
+		{% block header %}{% endblock header %}
+
+		<main>
+			{% block content %}{% endblock content %}
+		</main>
+
+		<footer>
+			{% include '_footer.html' %}
+		</footer>
+
+		{% include '_foot.html' %}
+	</body>
+</html>
+

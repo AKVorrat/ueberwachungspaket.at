@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block title %}
+	<title>Deine Abgeordneten | {{ config['PROJECT_NAME'] }}</title>
+{% endblock title %}
+
+{% block content %}
+	<section>
+		<h1>Deine Abgeordneten</h1>
+		<div id="filter" class="column">
+			<form id="parties" class="btn-group row">
+				<input id="spoe" type="checkbox">
+				<label for="spoe" id="spoe-label">SPÖ</label>
+				<input id="oevp" type="checkbox">
+				<label for="oevp" id="oevp-label">ÖVP</label>
+				<input id="fpoe" type="checkbox">
+				<label for="fpoe" id="fpoe-label">FPÖ</label>
+				<input id="gruene" type="checkbox">
+				<label for="gruene" id="gruene-label">GRÜNE</label>
+				<input id="neos" type="checkbox">
+				<label for="neos" id="neos-label">NEOS</label>
+				<input id="stronach" type="checkbox">
+				<label for="stronach" id="stronach-label">STRONACH</label>
+				<input id="none" type="checkbox">
+				<label for="none" id="none-label">parteilos</label>
+			</form>
+			<form id="teams" class="btn-group row">
+				<input id="liberty" type="checkbox">
+				<label for="liberty" id="liberty-label">Team Grundrechte</label>
+				<input id="spy" type="checkbox">
+				<label for="spy" id="spy-label">Team Überwachung</label>
+				<input id="unknown" type="checkbox">
+				<label for="unknown" id="unknown-label">Unbekannt</label>
+			</form>
+		</div>
+		<div id="representatives" class="row">
+			{% for rep in reps %}
+			<a class="representative" href="{{ url_for('representative', prettyname=rep.name.prettyname) }}" data-party="{{ rep.party.prettyname }}" data-team="{{ rep.team.prettyname }}">
+				<div class="column">
+					<div class="name">{{ rep.name.lastname }}</div>
+					<div class="party">{{ rep.party.shortname }}</div>
+				</div>
+				<div class="overlay {{ rep.team.prettyname }}"></div>
+				<img src="{{ url_for('static', filename='img/representative/' + rep.idn + '.jpg') }}" alt="" />
+			</a>
+			{% endfor %}
+		</div>
+	</section>
+{% endblock %}

@@ -1,0 +1,71 @@
+{% extends "layout.html" %}
+
+{% block title %}
+	<title>{{ rep }} | {{ config['PROJECT_NAME'] }}</title>
+{% endblock title%}
+
+{% block content %}
+	<section class="column">
+		<h1>{{ rep.fullname() }}</h1>
+		<div class="profile {{ rep.team.prettyname }}">
+			<img src="{{ url_for('static', filename='img/representative/' + rep.idn + '.jpg') }}" alt="{{ rep }}" />
+			<span class="team {{ rep.team.prettyname }}">{{ rep.team }}</span>
+		</div>
+		<div class="row bottom">
+			<a class="share center" href="https://www.facebook.com/{{ rep.contact.facebook }}" target="_blank">
+				<div class="center"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+			</a>
+			<a class="share center" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Füberwachungspaket%2Eat%2F&text=Stoppt%20das%20%C3%9Cberwachungspaket%21%20%40{{ rep.contact.twitter }}&hashtags=%C3%BCberwachungspaket&related=epicenter%5Fworks%3Aepicenter%2Eworks" target="_blank">
+				<div class="center"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+			</a>
+			<a class="share center" href="mailto:{{ rep.contact.mail }}?subject=%C3%9Cberwachungspaket">
+				<div class="center"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+			</a>
+		</div>
+	</section>
+	<section id="email-senden">
+		<h2><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i> E-Mail senden</h2>
+		<form id="mail" autocomplete="off" class="shrunk">
+			<div class="row row-space align-left">
+				<div class="column">
+					<label for="mail-lastname">Nachname *</label>
+					<input type="text" name="lastname" id="mail-lastname" required="required">
+				</div>
+				<div class="column">
+					<label for="mail-firstname">Vorname *</label>
+					<input type="text" name="firstname" id="mail-firstname" required="required">
+				</div>
+				<div class="column">
+					<label for="mail-email">E-Mail *</label>
+					<input type="email" name="email" id="mail-email"  required="required">
+				</div>
+				<div class="column">
+					<label for="debit-newsletter" class="space"><input type="checkbox" name="newsletter" id="debit-newsletter" value="yes">Newsletter abonnieren</label>
+				</div>
+			</div>
+			<p class="small">* Pflichtfeld</p>
+			<div class="textarea">{{ lipsum(2) }}</div>
+			<button class="btn btn-default">Senden</button>
+		</form>
+	</section>
+	<section id="anrufen">
+		<h2><i class="fa fa-phone fa-lg" aria-hidden="true"></i> Anrufen</h2>
+		<div id="call" class="row items3 row-space centertext">
+			<div>
+				<i class="fa fa-mobile fa-5x" aria-hidden="true"></i>
+				<h3>Wählen</h3>
+				<p>Unter <strong>#telnr#</strong> erreichst du unser Kampagnentelefon.</p>
+			</div>
+			<div>
+				<i class="fa fa-reply-all fa-5x" aria-hidden="true"></i>
+				<h3>Verbinden</h3>
+				<p>Der Code <strong>{{ rep.idn }}</strong> verbindet dich automatisch mit {{ rep }}.</p>
+			</div>
+			<div>
+				<i class="fa fa-comments fa-5x" aria-hidden="true"></i>
+				<h3>Sprechen</h3>
+				<p>Spreche mit {{ rep }} und erläre, wieso wir das Überwachungspaket verhindern müssen.</p>
+			</div>
+		</div>
+	</section>
+{% endblock %}

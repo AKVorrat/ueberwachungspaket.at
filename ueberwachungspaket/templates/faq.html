@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %}
+	<title>Häufig gestellte Fragen | {{ config['PROJECT_NAME'] }}</title>
+{% endblock title %}
+
+{% block content %}
+	<section>
+		<h1>Häufig gestellte Fragen</h1>
+		<h2>Wer seid ihr?</h2>
+		{{ lipsum(2) }}
+		<h2>Kann ich die Abgeordneten einfach so anrufen?</h2>
+		{{ lipsum(2) }}
+	</section>
+{% endblock %}
