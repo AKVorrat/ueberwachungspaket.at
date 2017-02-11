@@ -1,0 +1,4211 @@
+[
+	{
+		"contact": {
+			"facebook": "rezor",
+			"mail": "nikolaus.alm@parlament.gv.at",
+			"phone": "+4350705070",
+			"twitter": "nikoalm"
+		},
+		"id": "83119",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_83119/4380895_180.jpg"
+		},
+		"name": {
+			"firstname": "Nikolaus",
+			"lastname": "Alm",
+			"prefix": "Mag.",
+			"prettyname": "nikolaus-alm",
+			"suffix": ""
+		},
+		"party": "neos",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "werner.amon@parlament.gv.at",
+			"phone": "+431401104933",
+			"twitter": ""
+		},
+		"id": "02819",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_02819/4387252_180.jpg"
+		},
+		"name": {
+			"firstname": "Werner",
+			"lastname": "Amon",
+			"prefix": "",
+			"prettyname": "werner-amon",
+			"suffix": "MBA"
+		},
+		"party": "oevp",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "",
+			"phone": "+436643373650",
+			"twitter": ""
+		},
+		"id": "84060",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_84060/5226025_180.jpg"
+		},
+		"name": {
+			"firstname": "Erwin",
+			"lastname": "Angerer",
+			"prefix": "",
+			"prettyname": "erwin-angerer",
+			"suffix": ""
+		},
+		"party": "fpoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "konrad.antoni@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "83107",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_83107/4384844_180.jpg"
+		},
+		"name": {
+			"firstname": "Konrad",
+			"lastname": "Antoni",
+			"prefix": "",
+			"prettyname": "konrad-antoni",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "aslan.a.berivan",
+			"mail": "berivan.aslan@gruene.at",
+			"phone": "",
+			"twitter": "Berivan_Aslan_"
+		},
+		"id": "83105",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_83105/4384722_180.jpg"
+		},
+		"name": {
+			"firstname": "Ayg\u00fcl Berivan",
+			"lastname": "Aslan",
+			"prefix": "Mag.",
+			"prettyname": "ayguel-berivan-aslan",
+			"suffix": ""
+		},
+		"party": "gruene",
+		"sex": "female",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "gertrude.aubauer@parlament.gv.at",
+			"phone": "+431401104693",
+			"twitter": ""
+		},
+		"id": "35467",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_35467/4413544_180.jpg"
+		},
+		"name": {
+			"firstname": "Gertrude",
+			"lastname": "Aubauer",
+			"prefix": "Mag.",
+			"prettyname": "gertrude-aubauer",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "female",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "jakob.auer@parlament.gv.at",
+			"phone": "+436643074635",
+			"twitter": ""
+		},
+		"id": "00039",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_00039/4444521_180.jpg"
+		},
+		"name": {
+			"firstname": "Jakob",
+			"lastname": "Auer",
+			"prefix": "",
+			"prettyname": "jakob-auer",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "walter.bacher@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "83108",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_83108/4385273_180.jpg"
+		},
+		"name": {
+			"firstname": "Walter",
+			"lastname": "Bacher",
+			"prefix": "",
+			"prettyname": "walter-bacher",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "petra.bayr@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "14835",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_14835/4444987_180.jpg"
+		},
+		"name": {
+			"firstname": "Petra",
+			"lastname": "Bayr",
+			"prefix": "",
+			"prettyname": "petra-bayr",
+			"suffix": "MA"
+		},
+		"party": "spoe",
+		"sex": "female",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "ruth.becher@parlament.gv.at",
+			"phone": "+431401103586",
+			"twitter": ""
+		},
+		"id": "14836",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_14836/4445008_180.jpg"
+		},
+		"name": {
+			"firstname": "Ruth",
+			"lastname": "Becher",
+			"prefix": "Mag.",
+			"prettyname": "ruth-becher",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "female",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "dagmar.belakowitsch-jenewein@parlament.gv.at",
+			"phone": "+436641266012",
+			"twitter": ""
+		},
+		"id": "35468",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_35468/4387913_180.jpg"
+		},
+		"name": {
+			"firstname": "Dagmar",
+			"lastname": "Belakowitsch-Jenewein",
+			"prefix": "Dr.",
+			"prettyname": "dagmar-belakowitsch-jenewein",
+			"suffix": ""
+		},
+		"party": "fpoe",
+		"sex": "female",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "nikolaus.berlakovich@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "52688",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_52688/5225964_180.jpg"
+		},
+		"name": {
+			"firstname": "Nikolaus",
+			"lastname": "Berlakovich",
+			"prefix": "Dipl.-Ing.",
+			"prettyname": "nikolaus-berlakovich",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "neos.pock",
+			"mail": "michael.pock@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "83124",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_83124/4380874_180.jpg"
+		},
+		"name": {
+			"firstname": "Michael",
+			"lastname": "Bernhard",
+			"prefix": "",
+			"prettyname": "michael-bernhard",
+			"suffix": ""
+		},
+		"party": "neos",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "reinhard.boesch@fpoe.at",
+			"phone": "+436763349446",
+			"twitter": ""
+		},
+		"id": "02867",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_02867/4387764_180.jpg"
+		},
+		"name": {
+			"firstname": "Reinhard Eugen",
+			"lastname": "B\u00f6sch",
+			"prefix": "Dr.",
+			"prettyname": "reinhard-eugen-boesch",
+			"suffix": ""
+		},
+		"party": "fpoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "dieter.brosz@gruene.at",
+			"phone": "+431401106691",
+			"twitter": ""
+		},
+		"id": "08239",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_08239/4384460_180.jpg"
+		},
+		"name": {
+			"firstname": "Dieter",
+			"lastname": "Brosz",
+			"prefix": "",
+			"prettyname": "dieter-brosz",
+			"suffix": "MSc"
+		},
+		"party": "gruene",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "61639",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_61639/3487782_384.jpg"
+		},
+		"name": {
+			"firstname": "Hermann",
+			"lastname": "Br\u00fcckl",
+			"prefix": "",
+			"prettyname": "hermann-brueckl",
+			"suffix": ""
+		},
+		"party": "fpoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "christiane.brunner@parlament.gv.at",
+			"phone": "+431401106303",
+			"twitter": ""
+		},
+		"id": "51586",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_51586/4384763_180.jpg"
+		},
+		"name": {
+			"firstname": "Christiane",
+			"lastname": "Brunner",
+			"prefix": "Mag.",
+			"prettyname": "christiane-brunner",
+			"suffix": ""
+		},
+		"party": "gruene",
+		"sex": "female",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "h.buchmayr@aon.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "63179",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_63179/4384872_180.jpg"
+		},
+		"name": {
+			"firstname": "Harry",
+			"lastname": "Buchmayr",
+			"prefix": "",
+			"prettyname": "harry-buchmayr",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "doris.bures@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "00145",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_00145/5830576_180.jpg"
+		},
+		"name": {
+			"firstname": "Doris",
+			"lastname": "Bures",
+			"prefix": "",
+			"prettyname": "doris-bures",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "female",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "josef.cap@spoe.at",
+			"phone": "+431401103454",
+			"twitter": ""
+		},
+		"id": "00178",
+		"image": {
+			"copyright": "Parlamentsdirektion / WILKE",
+			"url": "https://www.parlament.gv.at/WWER/PAD_00178/3488817_384.jpg"
+		},
+		"name": {
+			"firstname": "Josef",
+			"lastname": "Cap",
+			"prefix": "Dr.",
+			"prettyname": "josef-cap",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "gerhard.deimek@fpoe.at",
+			"phone": "+431401107019",
+			"twitter": ""
+		},
+		"id": "51557",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_51557/4444818_180.jpg"
+		},
+		"name": {
+			"firstname": "Gerhard",
+			"lastname": "Deimek",
+			"prefix": "Dipl.-Ing.",
+			"prettyname": "gerhard-deimek",
+			"suffix": ""
+		},
+		"party": "fpoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "martina.diesner-wais@parlament.gv.at",
+			"phone": "+431401104687",
+			"twitter": ""
+		},
+		"id": "16218",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_16218/4386170_180.jpg"
+		},
+		"name": {
+			"firstname": "Martina",
+			"lastname": "Diesner-Wais",
+			"prefix": "",
+			"prettyname": "martina-diesner-wais",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "female",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "waltraud.dietrich@parlament.gv.at",
+			"phone": "+431401108025",
+			"twitter": ""
+		},
+		"id": "83140",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_83140/4386127_180.jpg"
+		},
+		"name": {
+			"firstname": "Waltraud",
+			"lastname": "Dietrich",
+			"prefix": "Ing.",
+			"prettyname": "waltraud-dietrich",
+			"suffix": ""
+		},
+		"party": "stronach",
+		"sex": "female",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "rupert.doppler@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "51558",
+		"image": {
+			"copyright": "FP\u00d6 Salzburg",
+			"url": "https://www.parlament.gv.at/WWER/PAD_51558/4838939_180.jpg"
+		},
+		"name": {
+			"firstname": "Rupert",
+			"lastname": "Doppler",
+			"prefix": "",
+			"prettyname": "rupert-doppler",
+			"suffix": ""
+		},
+		"party": "none",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "claudia.durchschlag@parlament.gv.at",
+			"phone": "+436764263025",
+			"twitter": ""
+		},
+		"id": "40627",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_40627/4386427_180.jpg"
+		},
+		"name": {
+			"firstname": "Claudia",
+			"lastname": "Durchschlag",
+			"prefix": "",
+			"prettyname": "claudia-durchschlag",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "female",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "conny.ecker.spoe",
+			"mail": "cornelia.ecker@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "83109",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_83109/4385153_180.jpg"
+		},
+		"name": {
+			"firstname": "Cornelia",
+			"lastname": "Ecker",
+			"prefix": "",
+			"prettyname": "cornelia-ecker",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "female",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "83144",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_83144/4386299_180.jpg"
+		},
+		"name": {
+			"firstname": "Asdin",
+			"lastname": "El Habbassi",
+			"prefix": "",
+			"prettyname": "asdin-el-habbassi",
+			"suffix": "BA"
+		},
+		"party": "oevp",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "Ertlschweiger.Rouven",
+			"mail": "rouven.ertlschweiger@parlament.gv.at",
+			"phone": "+431401104400",
+			"twitter": ""
+		},
+		"id": "83433",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_83433/4582543_384.jpg"
+		},
+		"name": {
+			"firstname": "Rouven",
+			"lastname": "Ertlschweiger",
+			"prefix": "",
+			"prettyname": "rouven-ertlschweiger",
+			"suffix": "MSc"
+		},
+		"party": "oevp",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "franz.essl@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "14755",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_14755/4386828_180.jpg"
+		},
+		"name": {
+			"firstname": "Franz Leonhard",
+			"lastname": "E\u00dfl",
+			"prefix": "",
+			"prettyname": "franz-leonhard-essl",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "klaus-uwe.feichtinger@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "83298",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_83298/4582572_384.jpg"
+		},
+		"name": {
+			"firstname": "Klaus Uwe",
+			"lastname": "Feichtinger",
+			"prefix": "Mag. Dr.",
+			"prettyname": "klaus-uwe-feichtinger",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "maria.fekter@parlament.gv.at",
+			"phone": "+431401104682",
+			"twitter": ""
+		},
+		"id": "00311",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_00311/4387369_180.jpg"
+		},
+		"name": {
+			"firstname": "Maria Theresia",
+			"lastname": "Fekter",
+			"prefix": "Mag. Dr.",
+			"prettyname": "maria-theresia-fekter",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "female",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "angela.fichtinger",
+			"mail": "angela.fichtinger@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "83146",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_83146/4386378_180.jpg"
+		},
+		"name": {
+			"firstname": "Angela",
+			"lastname": "Fichtinger",
+			"prefix": "",
+			"prettyname": "angela-fichtinger",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "female",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "marcus.franz@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "83141",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_83141/4385896_180.jpg"
+		},
+		"name": {
+			"firstname": "Marcus",
+			"lastname": "Franz",
+			"prefix": "Dr.",
+			"prettyname": "marcus-franz",
+			"suffix": ""
+		},
+		"party": "none",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "hubert.fuchs@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "83127",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_83127/4387467_180.jpg"
+		},
+		"name": {
+			"firstname": "Hubert",
+			"lastname": "Fuchs",
+			"prefix": "MMag. DDr.",
+			"prettyname": "hubert-fuchs",
+			"suffix": ""
+		},
+		"party": "fpoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "hermann.gahr@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "08209",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_08209/4387081_180.jpg"
+		},
+		"name": {
+			"firstname": "Hermann",
+			"lastname": "Gahr",
+			"prefix": "",
+			"prettyname": "hermann-gahr",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "cgamon",
+			"mail": "claudia.gamon@neos.eu",
+			"phone": "",
+			"twitter": "dieGamon"
+		},
+		"id": "86976",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_86976/6006189_180.jpg"
+		},
+		"name": {
+			"firstname": "Claudia Angela",
+			"lastname": "Gamon",
+			"prefix": "",
+			"prettyname": "claudia-angela-gamon",
+			"suffix": "MSc"
+		},
+		"party": "neos",
+		"sex": "female",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "wgerstl",
+			"mail": "wolfgang.gerstl@oevp-wien.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "67199",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_67199/4386512_180.jpg"
+		},
+		"name": {
+			"firstname": "Wolfgang",
+			"lastname": "Gerstl",
+			"prefix": "Mag.",
+			"prettyname": "wolfgang-gerstl",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "andrea.gessl-ranftl@aon.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "51527",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_51527/4385218_180.jpg"
+		},
+		"name": {
+			"firstname": "Andrea",
+			"lastname": "Gessl-Ranftl",
+			"prefix": "",
+			"prettyname": "andrea-gessl-ranftl",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "female",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "eva.glawischnig@gruene.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "08240",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_08240/4582273_384.jpg"
+		},
+		"name": {
+			"firstname": "Eva",
+			"lastname": "Glawischnig-Piesczek",
+			"prefix": "Dr.",
+			"prettyname": "eva-glawischnig-piesczek",
+			"suffix": ""
+		},
+		"party": "gruene",
+		"sex": "female",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "80479",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_80479/4582473_384.jpg"
+		},
+		"name": {
+			"firstname": "Karin",
+			"lastname": "Greiner",
+			"prefix": "Mag.",
+			"prettyname": "karin-greiner",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "female",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "12907",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_12907/5225943_180.jpg"
+		},
+		"name": {
+			"firstname": "Fritz",
+			"lastname": "Grillitsch",
+			"prefix": "",
+			"prettyname": "fritz-grillitsch",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "werner.groiss@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "83147",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_83147/4386211_180.jpg"
+		},
+		"name": {
+			"firstname": "Werner",
+			"lastname": "Groi\u00df",
+			"prefix": "Ing. Mag.",
+			"prettyname": "werner-groiss",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "elisabeth.grossmann@parlament.gv.at",
+			"phone": "+431401103726",
+			"twitter": ""
+		},
+		"id": "14839",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_14839/4385324_180.jpg"
+		},
+		"name": {
+			"firstname": "Elisabeth",
+			"lastname": "Grossmann",
+			"prefix": "Mag.",
+			"prettyname": "elisabeth-grossmann",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "female",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "",
+			"phone": "+4315854544",
+			"twitter": ""
+		},
+		"id": "83110",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_83110/4384958_180.jpg"
+		},
+		"name": {
+			"firstname": "Marianne",
+			"lastname": "Gusenbauer-J\u00e4ger",
+			"prefix": "",
+			"prettyname": "marianne-gusenbauer-jaeger",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "female",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "rainerhable.eu",
+			"mail": "rainer.hable@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "83120",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_83120/4380832_180.jpg"
+		},
+		"name": {
+			"firstname": "Rainer",
+			"lastname": "Hable",
+			"prefix": "Dr.",
+			"prettyname": "rainer-hable",
+			"suffix": ""
+		},
+		"party": "neos",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "christian.hafenecker@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "78586",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_78586/4444584_180.jpg"
+		},
+		"name": {
+			"firstname": "Christian",
+			"lastname": "Hafenecker",
+			"prefix": "",
+			"prettyname": "christian-hafenecker",
+			"suffix": "MA"
+		},
+		"party": "fpoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "christoph.hagen@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "08256",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_08256/4386149_180.jpg"
+		},
+		"name": {
+			"firstname": "Christoph",
+			"lastname": "Hagen",
+			"prefix": "",
+			"prettyname": "christoph-hagen",
+			"suffix": ""
+		},
+		"party": "stronach",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "roman.haider@parlament.gv.at",
+			"phone": "+431401107027",
+			"twitter": ""
+		},
+		"id": "51560",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_51560/4445156_180.jpg"
+		},
+		"name": {
+			"firstname": "Roman",
+			"lastname": "Haider",
+			"prefix": "Mag.",
+			"prettyname": "roman-haider",
+			"suffix": ""
+		},
+		"party": "fpoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "elisabeth.hakel@parlament.gv.at",
+			"phone": "+431401101471",
+			"twitter": ""
+		},
+		"id": "10256",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_10256/4473430_180.jpg"
+		},
+		"name": {
+			"firstname": "Elisabeth",
+			"lastname": "Hakel",
+			"prefix": "",
+			"prettyname": "elisabeth-hakel",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "female",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "michael.hammer@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "55227",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_55227/5225905_384.jpg"
+		},
+		"name": {
+			"firstname": "Michael",
+			"lastname": "Hammer",
+			"prefix": "Mag.",
+			"prettyname": "michael-hammer",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "mail@andreas-hanger.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "83148",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_83148/5225861_180.jpg"
+		},
+		"name": {
+			"firstname": "Andreas",
+			"lastname": "Hanger",
+			"prefix": "Mag.",
+			"prettyname": "andreas-hanger",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "p.haubner@wirtschaftsbund.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "12741",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_12741/4386616_180.jpg"
+		},
+		"name": {
+			"firstname": "Peter",
+			"lastname": "Haubner",
+			"prefix": "",
+			"prettyname": "peter-haubner",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "gerald.hauser@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "35515",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_35515/4387596_180.jpg"
+		},
+		"name": {
+			"firstname": "Gerald",
+			"lastname": "Hauser",
+			"prefix": "Mag.",
+			"prettyname": "gerald-hauser",
+			"suffix": ""
+		},
+		"party": "fpoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "johann.hechtl@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "51547",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_51547/4385362_180.jpg"
+		},
+		"name": {
+			"firstname": "Johann",
+			"lastname": "Hechtl",
+			"prefix": "",
+			"prettyname": "johann-hechtl",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "gabriele.heinisch-hosek@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "08177",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_08177/6401592_180.jpg"
+		},
+		"name": {
+			"firstname": "Gabriele",
+			"lastname": "Heinisch-Hosek",
+			"prefix": "",
+			"prettyname": "gabriele-heinisch-hosek",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "female",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "anton.heinzl@spoe.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "05076",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_05076/4385474_180.jpg"
+		},
+		"name": {
+			"firstname": "Anton",
+			"lastname": "Heinzl",
+			"prefix": "",
+			"prettyname": "anton-heinzl",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "johann.hell@spoe.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "50187",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_50187/4385131_180.jpg"
+		},
+		"name": {
+			"firstname": "Johann",
+			"lastname": "Hell",
+			"prefix": "",
+			"prettyname": "johann-hell",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "eva.himmelbauer",
+			"mail": "eva-maria.himmelbauer@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "72959",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_72959/4386704_180.jpg"
+		},
+		"name": {
+			"firstname": "Eva-Maria",
+			"lastname": "Himmelbauer",
+			"prefix": "",
+			"prettyname": "eva-maria-himmelbauer",
+			"suffix": "BSc"
+		},
+		"party": "oevp",
+		"sex": "female",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "christian.hoebart@fpoe.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "51562",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_51562/4444669_180.jpg"
+		},
+		"name": {
+			"firstname": "Christian",
+			"lastname": "H\u00f6bart",
+			"prefix": "Ing.",
+			"prettyname": "christian-hoebart",
+			"suffix": ""
+		},
+		"party": "fpoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "norbert.hofer@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "35521",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_35521/4444542_180.jpg"
+		},
+		"name": {
+			"firstname": "Norbert",
+			"lastname": "Hofer",
+			"prefix": "Ing.",
+			"prettyname": "norbert-hofer",
+			"suffix": ""
+		},
+		"party": "fpoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "manfred.hofinger@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "83299",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_83299/4582361_384.jpg"
+		},
+		"name": {
+			"firstname": "Manfred",
+			"lastname": "Hofinger",
+			"prefix": "Ing.",
+			"prettyname": "manfred-hofinger",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "johann.hoefinger@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "16234",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_16234/4386933_180.jpg"
+		},
+		"name": {
+			"firstname": "Johann",
+			"lastname": "H\u00f6finger",
+			"prefix": "",
+			"prettyname": "johann-hoefinger",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "daniela.holzinger.3",
+			"mail": "daniela.holzinger@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "83111",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_83111/4384894_180.jpg"
+		},
+		"name": {
+			"firstname": "Daniela",
+			"lastname": "Holzinger-Vogtenhuber",
+			"prefix": "",
+			"prettyname": "daniela-holzinger-vogtenhuber",
+			"suffix": "BA"
+		},
+		"party": "spoe",
+		"sex": "female",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "franz.huainigg@parlament.gv.at",
+			"phone": "+431401104647",
+			"twitter": ""
+		},
+		"id": "14759",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_14759/4582252_384.jpg"
+		},
+		"name": {
+			"firstname": "Franz-Joseph",
+			"lastname": "Huainigg",
+			"prefix": "Dr.",
+			"prettyname": "franz-joseph-huainigg",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "johannes.huebner@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "51561",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_51561/4387889_180.jpg"
+		},
+		"name": {
+			"firstname": "Johannes",
+			"lastname": "H\u00fcbner",
+			"prefix": "Dr.",
+			"prettyname": "johannes-huebner",
+			"suffix": ""
+		},
+		"party": "fpoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "brigitte.jank@parlament.gv.at",
+			"phone": "+431401104678",
+			"twitter": ""
+		},
+		"id": "83149",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_83149/4386406_180.jpg"
+		},
+		"name": {
+			"firstname": "Brigitte",
+			"lastname": "Jank",
+			"prefix": "",
+			"prettyname": "brigitte-jank",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "female",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "harald.jannach@fpoe.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "51563",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_51563/4387659_180.jpg"
+		},
+		"name": {
+			"firstname": "Harald",
+			"lastname": "Jannach",
+			"prefix": "",
+			"prettyname": "harald-jannach",
+			"suffix": ""
+		},
+		"party": "fpoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "Abg.Helene.Jarmer",
+			"mail": "helene.jarmer@gruene.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "57367",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_57367/4384392_180.jpg"
+		},
+		"name": {
+			"firstname": "Helene",
+			"lastname": "Jarmer",
+			"prefix": "Mag.",
+			"prettyname": "helene-jarmer",
+			"suffix": ""
+		},
+		"party": "gruene",
+		"sex": "female",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "hannes.jarolim@parlament.gv.at",
+			"phone": "+431401103729",
+			"twitter": ""
+		},
+		"id": "02889",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_02889/4445093_180.jpg"
+		},
+		"name": {
+			"firstname": "Johannes",
+			"lastname": "Jarolim",
+			"prefix": "Dr.",
+			"prettyname": "johannes-jarolim",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "beatrix.karl@parlament.gv.at",
+			"phone": "+431401104628",
+			"twitter": ""
+		},
+		"id": "35490",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_35490/4386742_180.jpg"
+		},
+		"name": {
+			"firstname": "Beatrix",
+			"lastname": "Karl",
+			"prefix": "Mag. Dr.",
+			"prettyname": "beatrix-karl",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "female",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "andreas.karlsboeck@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "51564",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_51564/4444648_180.jpg"
+		},
+		"name": {
+			"firstname": "Andreas",
+			"lastname": "Karlsb\u00f6ck",
+			"prefix": "Dr.",
+			"prettyname": "andreas-karlsboeck",
+			"suffix": ""
+		},
+		"party": "fpoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "axel.kassegger@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "83129",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_83129/4387514_180.jpg"
+		},
+		"name": {
+			"firstname": "Axel",
+			"lastname": "Kassegger",
+			"prefix": "MMMag. Dr.",
+			"prettyname": "axel-kassegger",
+			"suffix": ""
+		},
+		"party": "fpoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "wolfgang.katzian@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "32494",
+		"image": {
+			"copyright": "Parlamentsdirektion / WILKE",
+			"url": "https://www.parlament.gv.at/WWER/PAD_32494/3490712_384.jpg"
+		},
+		"name": {
+			"firstname": "Wolfgang",
+			"lastname": "Katzian",
+			"prefix": "",
+			"prettyname": "wolfgang-katzian",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "14840",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_14840/4385790_180.jpg"
+		},
+		"name": {
+			"firstname": "Dietmar",
+			"lastname": "Keck",
+			"prefix": "",
+			"prettyname": "dietmar-keck",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "herbert.kickl@parlament.gv.at",
+			"phone": "+431512353525",
+			"twitter": ""
+		},
+		"id": "35520",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_35520/4444860_180.jpg"
+		},
+		"name": {
+			"firstname": "Herbert",
+			"lastname": "Kickl",
+			"prefix": "",
+			"prettyname": "herbert-kickl",
+			"suffix": ""
+		},
+		"party": "fpoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "franz.kirchgatterer@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "35495",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_35495/4385706_180.jpg"
+		},
+		"name": {
+			"firstname": "Franz",
+			"lastname": "Kirchgatterer",
+			"prefix": "",
+			"prettyname": "franz-kirchgatterer",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "anneliese.kitzmueller@parlament.gv.at",
+			"phone": "+431401107027",
+			"twitter": ""
+		},
+		"id": "51565",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_51565/4387679_180.jpg"
+		},
+		"name": {
+			"firstname": "Anneliese",
+			"lastname": "Kitzm\u00fcller",
+			"prefix": "",
+			"prettyname": "anneliese-kitzmueller",
+			"suffix": ""
+		},
+		"party": "fpoe",
+		"sex": "female",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "",
+			"phone": "+436641007029",
+			"twitter": ""
+		},
+		"id": "88857",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_88857/6567303_180.jpg"
+		},
+		"name": {
+			"firstname": "Wolfgang",
+			"lastname": "Klinger",
+			"prefix": "Ing.",
+			"prettyname": "wolfgang-klinger",
+			"suffix": ""
+		},
+		"party": "fpoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "",
+			"phone": "+431401103466",
+			"twitter": ""
+		},
+		"id": "30036",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_30036/6401454_384.jpg"
+		},
+		"name": {
+			"firstname": "Gerald",
+			"lastname": "Klug",
+			"prefix": "Mag.",
+			"prettyname": "gerald-klug",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "wolfgang.knes@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "83112",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_83112/4385750_180.jpg"
+		},
+		"name": {
+			"firstname": "Wolfgang",
+			"lastname": "Knes",
+			"prefix": "",
+			"prettyname": "wolfgang-knes",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "solarzeitalter",
+			"mail": "matthias.koechl@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "83100",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_83100/4384591_180.jpg"
+		},
+		"name": {
+			"firstname": "Matthias",
+			"lastname": "K\u00f6chl",
+			"prefix": "",
+			"prettyname": "matthias-koechl",
+			"suffix": ""
+		},
+		"party": "gruene",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "werner.kogler@gruene.at",
+			"phone": "+431401106700",
+			"twitter": "wkogler"
+		},
+		"id": "08242",
+		"image": {
+			"copyright": "Parlamentsdirektion / WILKE",
+			"url": "https://www.parlament.gv.at/WWER/PAD_08242/3490465_384.jpg"
+		},
+		"name": {
+			"firstname": "Werner",
+			"lastname": "Kogler",
+			"prefix": "Mag.",
+			"prettyname": "werner-kogler",
+			"suffix": ""
+		},
+		"party": "gruene",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "UlrikeKonigsbergerLudwig",
+			"mail": "ulrike.koenigsberger-ludwig@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "14841",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_14841/4385811_180.jpg"
+		},
+		"name": {
+			"firstname": "Ulrike",
+			"lastname": "K\u00f6nigsberger-Ludwig",
+			"prefix": "",
+			"prettyname": "ulrike-koenigsberger-ludwig",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "female",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "karlheinzkopf",
+			"mail": "karlheinz.kopf@parlament.gv.at",
+			"phone": "+431401104400",
+			"twitter": ""
+		},
+		"id": "02822",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_02822/4405723_180.jpg"
+		},
+		"name": {
+			"firstname": "Karlheinz",
+			"lastname": "Kopf",
+			"prefix": "",
+			"prettyname": "karlheinz-kopf",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "alev.korun@gruene.at",
+			"phone": "+431401106301",
+			"twitter": ""
+		},
+		"id": "51587",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_51587/4384700_180.jpg"
+		},
+		"name": {
+			"firstname": "Alev",
+			"lastname": "Korun",
+			"prefix": "Mag.",
+			"prettyname": "alev-korun",
+			"suffix": ""
+		},
+		"party": "gruene",
+		"sex": "female",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "jan.krainer@spoe.at",
+			"phone": "+431401103719",
+			"twitter": ""
+		},
+		"id": "14842",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_14842/4582232_384.jpg"
+		},
+		"name": {
+			"firstname": "Kai Jan",
+			"lastname": "Krainer",
+			"prefix": "",
+			"prettyname": "kai-jan-krainer",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "",
+			"phone": "+431401103661",
+			"twitter": ""
+		},
+		"id": "14843",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_14843/4468385_180.jpg"
+		},
+		"name": {
+			"firstname": "Hermann",
+			"lastname": "Krist",
+			"prefix": "",
+			"prettyname": "hermann-krist",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "kucharowits",
+			"mail": "katharina.kucharowits@parlament.gv.at",
+			"phone": "",
+			"twitter": "kathi_kuch"
+		},
+		"id": "35908",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_35908/4384979_180.jpg"
+		},
+		"name": {
+			"firstname": "Katharina",
+			"lastname": "Kucharowits",
+			"prefix": "",
+			"prettyname": "katharina-kucharowits",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "female",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "philip.kucher",
+			"mail": "philip.kucher@parlament.gv.at",
+			"phone": "+436648521330",
+			"twitter": ""
+		},
+		"id": "83113",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_83113/4385832_180.jpg"
+		},
+		"name": {
+			"firstname": "Philip",
+			"lastname": "Kucher",
+			"prefix": "",
+			"prettyname": "philip-kucher",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "86603",
+		"image": {
+			"copyright": "Privat",
+			"url": "https://www.parlament.gv.at/WWER/PAD_86603/5814774_180.jpg"
+		},
+		"name": {
+			"firstname": "G\u00fcnther",
+			"lastname": "Kumpitsch",
+			"prefix": "Mag.",
+			"prettyname": "guenther-kumpitsch",
+			"suffix": ""
+		},
+		"party": "fpoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "andrea.kuntzl@spoe.at",
+			"phone": "+431401103654",
+			"twitter": ""
+		},
+		"id": "08178",
+		"image": {
+			"copyright": "Parlamentsdirektion / WILKE",
+			"url": "https://www.parlament.gv.at/WWER/PAD_08178/3491279_384.jpg"
+		},
+		"name": {
+			"firstname": "Andrea",
+			"lastname": "Kuntzl",
+			"prefix": "Mag.",
+			"prettyname": "andrea-kuntzl",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "female",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "david.lasar@fpoe.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "88823",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_88823/6567366_180.jpg"
+		},
+		"name": {
+			"firstname": "David",
+			"lastname": "Lasar",
+			"prefix": "",
+			"prettyname": "david-lasar",
+			"suffix": ""
+		},
+		"party": "fpoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "christian.lausch@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "51568",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_51568/4444500_180.jpg"
+		},
+		"name": {
+			"firstname": "Christian",
+			"lastname": "Lausch",
+			"prefix": "",
+			"prettyname": "christian-lausch",
+			"suffix": ""
+		},
+		"party": "fpoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "josef.lettenbichler@parlament.gv.at",
+			"phone": "+431401104574",
+			"twitter": ""
+		},
+		"id": "51553",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_51553/4386764_180.jpg"
+		},
+		"name": {
+			"firstname": "Josef",
+			"lastname": "Lettenbichler",
+			"prefix": "Mag.",
+			"prettyname": "josef-lettenbichler",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "ruperta.lichtenecker@gruene.at",
+			"phone": "+431401106730",
+			"twitter": ""
+		},
+		"id": "18447",
+		"image": {
+			"copyright": "Parlamentsdirektion / WILKE",
+			"url": "https://www.parlament.gv.at/WWER/PAD_18447/3490769_384.jpg"
+		},
+		"name": {
+			"firstname": "Ruperta",
+			"lastname": "Lichtenecker",
+			"prefix": "Dr.",
+			"prettyname": "ruperta-lichtenecker",
+			"suffix": ""
+		},
+		"party": "gruene",
+		"sex": "female",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "jessi.lintl@parlament.gv.at",
+			"phone": "",
+			"twitter": "jessilintl"
+		},
+		"id": "83142",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_83142/4385959_180.jpg"
+		},
+		"name": {
+			"firstname": "Jessi",
+			"lastname": "Lintl",
+			"prefix": "Dr.",
+			"prettyname": "jessi-lintl",
+			"suffix": ""
+		},
+		"party": "fpoe",
+		"sex": "female",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "hermann.lipitsch@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "51548",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_51548/4385066_180.jpg"
+		},
+		"name": {
+			"firstname": "Hermann",
+			"lastname": "Lipitsch",
+			"prefix": "",
+			"prettyname": "hermann-lipitsch",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "GLoacker.NEOS",
+			"mail": "gerald.loacker@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "83121",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_83121/4380811_180.jpg"
+		},
+		"name": {
+			"firstname": "Gerald",
+			"lastname": "Loacker",
+			"prefix": "Mag.",
+			"prettyname": "gerald-loacker",
+			"suffix": ""
+		},
+		"party": "neos",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "reinhold.lopatka",
+			"mail": "reinhold.lopatka@oevpklub.at",
+			"phone": "",
+			"twitter": "ReinholdLopatka"
+		},
+		"id": "15526",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_15526/4387318_180.jpg"
+		},
+		"name": {
+			"firstname": "Reinhold",
+			"lastname": "Lopatka",
+			"prefix": "Dr.",
+			"prettyname": "reinhold-lopatka",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "male",
+		"team": "spy"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "angela.lueger@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "22449",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_22449/4385411_180.jpg"
+		},
+		"name": {
+			"firstname": "Angela",
+			"lastname": "Lueger",
+			"prefix": "",
+			"prettyname": "angela-lueger",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "female",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "robert.lugar@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "51579",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_51579/4385980_180.jpg"
+		},
+		"name": {
+			"firstname": "Robert",
+			"lastname": "Lugar",
+			"prefix": "Ing.",
+			"prettyname": "robert-lugar",
+			"suffix": ""
+		},
+		"party": "stronach",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "christoph.matznetter@parlament.gv.at",
+			"phone": "+431401103741",
+			"twitter": ""
+		},
+		"id": "14844",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_14844/5225985_180.jpg"
+		},
+		"name": {
+			"firstname": "Christoph",
+			"lastname": "Matznetter",
+			"prefix": "Dr.",
+			"prettyname": "christoph-matznetter",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "sigrid.maurer",
+			"mail": "sigi.maurer@gruene.at",
+			"phone": "",
+			"twitter": "sigi_maurer"
+		},
+		"id": "83101",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_83101/4384301_180.jpg"
+		},
+		"name": {
+			"firstname": "Sigrid",
+			"lastname": "Maurer",
+			"prefix": "",
+			"prettyname": "sigrid-maurer",
+			"suffix": ""
+		},
+		"party": "gruene",
+		"sex": "female",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "elmar.mayer@spoe.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "35501",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_35501/4385596_180.jpg"
+		},
+		"name": {
+			"firstname": "Elmar",
+			"lastname": "Mayer",
+			"prefix": "",
+			"prettyname": "elmar-mayer",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "wendelin.moelzer",
+			"mail": "wendelin.moelzer@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "36187",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_36187/4387575_180.jpg"
+		},
+		"name": {
+			"firstname": "Wendelin",
+			"lastname": "M\u00f6lzer",
+			"prefix": "",
+			"prettyname": "wendelin-moelzer",
+			"suffix": ""
+		},
+		"party": "fpoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "gabriela.moser@gruene.at",
+			"phone": "+431401106556",
+			"twitter": ""
+		},
+		"id": "02853",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_02853/4384678_180.jpg"
+		},
+		"name": {
+			"firstname": "Gabriela",
+			"lastname": "Moser",
+			"prefix": "Dr.",
+			"prettyname": "gabriela-moser",
+			"suffix": ""
+		},
+		"party": "gruene",
+		"sex": "female",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "josef.muchitsch@parlament.gv.at",
+			"phone": "+431401103764",
+			"twitter": ""
+		},
+		"id": "35497",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_35497/4582613_384.jpg"
+		},
+		"name": {
+			"firstname": "Josef",
+			"lastname": "Muchitsch",
+			"prefix": "",
+			"prettyname": "josef-muchitsch",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "eva.muckstein",
+			"mail": "eva.mueckstein@gruene.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "83102",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_83102/5225818_180.jpg"
+		},
+		"name": {
+			"firstname": "Eva",
+			"lastname": "M\u00fcckstein",
+			"prefix": "Dr.",
+			"prettyname": "eva-mueckstein",
+			"suffix": ""
+		},
+		"party": "gruene",
+		"sex": "female",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "edith.muehlberghuber@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "51569",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_51569/4444711_180.jpg"
+		},
+		"name": {
+			"firstname": "Edith",
+			"lastname": "M\u00fchlberghuber",
+			"prefix": "",
+			"prettyname": "edith-muehlberghuber",
+			"suffix": ""
+		},
+		"party": "fpoe",
+		"sex": "female",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "christine.muttonen@parlament.gv.at",
+			"phone": "+431401103660",
+			"twitter": ""
+		},
+		"id": "08179",
+		"image": {
+			"copyright": "Parlamentsdirektion / WILKE",
+			"url": "https://www.parlament.gv.at/WWER/PAD_08179/3567270_384.jpg"
+		},
+		"name": {
+			"firstname": "Christine",
+			"lastname": "Muttonen",
+			"prefix": "Mag.",
+			"prettyname": "christine-muttonen",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "female",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "kathrin.nachbaur@parlament.gv.at",
+			"phone": "+431401104628",
+			"twitter": ""
+		},
+		"id": "83139",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_83139/4386042_180.jpg"
+		},
+		"name": {
+			"firstname": "Kathrin",
+			"lastname": "Nachbaur",
+			"prefix": "Dr.",
+			"prettyname": "kathrin-nachbaur",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "female",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "werner.neubauer@fpoe.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "35522",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_35522/4387828_180.jpg"
+		},
+		"name": {
+			"firstname": "Werner",
+			"lastname": "Neubauer",
+			"prefix": "",
+			"prettyname": "werner-neubauer",
+			"suffix": ""
+		},
+		"party": "fpoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "gabriel.obernosterer@parlament.gv.at",
+			"phone": "+431401104691",
+			"twitter": ""
+		},
+		"id": "35487",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_35487/4386958_180.jpg"
+		},
+		"name": {
+			"firstname": "Gabriel",
+			"lastname": "Obernosterer",
+			"prefix": "",
+			"prettyname": "gabriel-obernosterer",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "friedrich.ofenauer@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "83300",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_83300/4582315_384.jpg"
+		},
+		"name": {
+			"firstname": "Friedrich",
+			"lastname": "Ofenauer",
+			"prefix": "Mag.",
+			"prettyname": "friedrich-ofenauer",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "karloellinger",
+			"mail": "karl.oellinger@gruene.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "02854",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_02854/6347436_180.jpg"
+		},
+		"name": {
+			"firstname": "Karl",
+			"lastname": "\u00d6llinger",
+			"prefix": "",
+			"prettyname": "karl-oellinger",
+			"suffix": ""
+		},
+		"party": "gruene",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "andreas.ottenschlaeger@parlament.gv.at",
+			"phone": "+431401104655",
+			"twitter": ""
+		},
+		"id": "83150",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_83150/4386257_180.jpg"
+		},
+		"name": {
+			"firstname": "Andreas",
+			"lastname": "Ottenschl\u00e4ger",
+			"prefix": "",
+			"prettyname": "andreas-ottenschlaeger",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "otto.pendl@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "05375",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_05375/4385016_180.jpg"
+		},
+		"name": {
+			"firstname": "Otto",
+			"lastname": "Pendl",
+			"prefix": "",
+			"prettyname": "otto-pendl",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "elisabeth.pfurtscheller@parlament.gv.at",
+			"phone": "+436764124088",
+			"twitter": ""
+		},
+		"id": "83151",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_83151/4386320_180.jpg"
+		},
+		"name": {
+			"firstname": "Elisabeth",
+			"lastname": "Pfurtscheller",
+			"prefix": "Dipl.-Kffr.",
+			"prettyname": "elisabeth-pfurtscheller",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "female",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "peterpilz",
+			"mail": "pilz@gruene.at",
+			"phone": "",
+			"twitter": "Peter_Pilz"
+		},
+		"id": "01210",
+		"image": {
+			"copyright": "Parlamentsdirektion / WILKE",
+			"url": "https://www.parlament.gv.at/WWER/PAD_01210/3490351_384.jpg"
+		},
+		"name": {
+			"firstname": "Peter",
+			"lastname": "Pilz",
+			"prefix": "Dr.",
+			"prettyname": "peter-pilz",
+			"suffix": ""
+		},
+		"party": "gruene",
+		"sex": "male",
+		"team": "liberty"
+	},
+	{
+		"contact": {
+			"facebook": "wolfgang.pirklhuber",
+			"mail": "wolfgang.pirklhuber@gruene.at",
+			"phone": "+431401106672",
+			"twitter": ""
+		},
+		"id": "08245",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_08245/4384415_180.jpg"
+		},
+		"name": {
+			"firstname": "Wolfgang",
+			"lastname": "Pirklhuber",
+			"prefix": "Dipl.-Ing. Dr.",
+			"prettyname": "wolfgang-pirklhuber",
+			"suffix": ""
+		},
+		"party": "gruene",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "rudolf.plessl@parlament.gv.at",
+			"phone": "+431401103694",
+			"twitter": ""
+		},
+		"id": "51549",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_51549/4385643_180.jpg"
+		},
+		"name": {
+			"firstname": "Rudolf",
+			"lastname": "Plessl",
+			"prefix": "",
+			"prettyname": "rudolf-plessl",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "erwin.preiner@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "30011",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_30011/4385875_180.jpg"
+		},
+		"name": {
+			"firstname": "Erwin",
+			"lastname": "Preiner",
+			"prefix": "",
+			"prettyname": "erwin-preiner",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "nikolaus.prinz@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "08235",
+		"image": {
+			"copyright": "Parlamentsdirektion / WILKE",
+			"url": "https://www.parlament.gv.at/WWER/PAD_08235/3488352_384.jpg"
+		},
+		"name": {
+			"firstname": "Nikolaus",
+			"lastname": "Prinz",
+			"prefix": "",
+			"prettyname": "nikolaus-prinz",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "johann.raedler@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "14767",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_14767/5225840_180.jpg"
+		},
+		"name": {
+			"firstname": "Johann",
+			"lastname": "R\u00e4dler",
+			"prefix": "",
+			"prettyname": "johann-raedler",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "erwin.rasinger@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "02862",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_02862/4582336_384.jpg"
+		},
+		"name": {
+			"firstname": "Erwin",
+			"lastname": "Rasinger",
+			"prefix": "Dr.",
+			"prettyname": "erwin-rasinger",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "hannes.rauch",
+			"mail": "johannes.rauch@parlament.gv.at",
+			"phone": "+431401104664",
+			"twitter": ""
+		},
+		"id": "83152",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_83152/4582494_384.jpg"
+		},
+		"name": {
+			"firstname": "Johannes",
+			"lastname": "Rauch",
+			"prefix": "Mag.",
+			"prettyname": "johannes-rauch",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "walter.rauch@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "83130",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_83130/4387429_180.jpg"
+		},
+		"name": {
+			"firstname": "Walter",
+			"lastname": "Rauch",
+			"prefix": "",
+			"prettyname": "walter-rauch",
+			"suffix": ""
+		},
+		"party": "fpoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "josef.riemer@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "61659",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_61659/4444775_180.jpg"
+		},
+		"name": {
+			"firstname": "Josef",
+			"lastname": "Riemer",
+			"prefix": "",
+			"prettyname": "josef-riemer",
+			"suffix": ""
+		},
+		"party": "fpoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "walter.rosenkranz@parlament.gv.at",
+			"phone": "+436641431613",
+			"twitter": ""
+		},
+		"id": "51570",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_51570/4444902_180.jpg"
+		},
+		"name": {
+			"firstname": "Walter",
+			"lastname": "Rosenkranz",
+			"prefix": "Dr.",
+			"prettyname": "walter-rosenkranz",
+			"suffix": ""
+		},
+		"party": "fpoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "barbara.rosenkranz@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "14693",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_14693/4444797_180.jpg"
+		},
+		"name": {
+			"firstname": "Barbara",
+			"lastname": "Rosenkranz",
+			"prefix": "",
+			"prettyname": "barbara-rosenkranz",
+			"suffix": ""
+		},
+		"party": "fpoe",
+		"sex": "female",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "bruno.rossmann.3",
+			"mail": "bruno.rossmann@gruene.at",
+			"phone": "+431401106680",
+			"twitter": ""
+		},
+		"id": "35516",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_35516/4384641_180.jpg"
+		},
+		"name": {
+			"firstname": "Bruno",
+			"lastname": "Rossmann",
+			"prefix": "Mag.",
+			"prettyname": "bruno-rossmann",
+			"suffix": ""
+		},
+		"party": "gruene",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "juergen.schabhuettl@parlament.gv.at",
+			"phone": "+436645518560",
+			"twitter": ""
+		},
+		"id": "86681",
+		"image": {
+			"copyright": "Johannes Zinner",
+			"url": "https://www.parlament.gv.at/POOL/BILDER/40772/4077202_384.jpg"
+		},
+		"name": {
+			"firstname": "J\u00fcrgen",
+			"lastname": "Schabh\u00fcttl",
+			"prefix": "",
+			"prettyname": "juergen-schabhuettl",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "birgit.schatz@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "35512",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_35512/4384369_180.jpg"
+		},
+		"name": {
+			"firstname": "Birgit",
+			"lastname": "Schatz",
+			"prefix": "Mag.",
+			"prettyname": "birgit-schatz",
+			"suffix": ""
+		},
+		"party": "gruene",
+		"sex": "female",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "thomas.schellenbacher@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "83132",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_83132/4444690_180.jpg"
+		},
+		"name": {
+			"firstname": "Thomas",
+			"lastname": "Schellenbacher",
+			"prefix": "Ing.",
+			"prettyname": "thomas-schellenbacher",
+			"suffix": ""
+		},
+		"party": "fpoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "sepp.schellhorn@neos.eu",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "84056",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_84056/5225882_180.jpg"
+		},
+		"name": {
+			"firstname": "Josef",
+			"lastname": "Schellhorn",
+			"prefix": "",
+			"prettyname": "josef-schellhorn",
+			"suffix": ""
+		},
+		"party": "neos",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "martina.schenk@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "51582",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_51582/4386085_180.jpg"
+		},
+		"name": {
+			"firstname": "Martina",
+			"lastname": "Schenk",
+			"prefix": "",
+			"prettyname": "martina-schenk",
+			"suffix": ""
+		},
+		"party": "stronach",
+		"sex": "female",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "niki.scherak",
+			"mail": "nikolaus.scherak@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "83125",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_83125/4380953_180.jpg"
+		},
+		"name": {
+			"firstname": "Nikolaus",
+			"lastname": "Scherak",
+			"prefix": "Dr.",
+			"prettyname": "nikolaus-scherak",
+			"suffix": ""
+		},
+		"party": "neos",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "andreas.schieder.5",
+			"mail": "andreas.schieder@spoe.at",
+			"phone": "",
+			"twitter": "SCHIEDER"
+		},
+		"id": "35504",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_35504/4385389_180.jpg"
+		},
+		"name": {
+			"firstname": "Andreas",
+			"lastname": "Schieder",
+			"prefix": "Mag.",
+			"prettyname": "andreas-schieder",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "carmen.schimanek",
+			"mail": "carmen.schimanek@fpoe.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "51559",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_51559/4387803_180.jpg"
+		},
+		"name": {
+			"firstname": "Carmen",
+			"lastname": "Schimanek",
+			"prefix": "",
+			"prettyname": "carmen-schimanek",
+			"suffix": ""
+		},
+		"party": "fpoe",
+		"sex": "female",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "dorothea.schittenhelm@parlament.gv.at",
+			"phone": "+431401104683",
+			"twitter": ""
+		},
+		"id": "36908",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_36908/4386788_180.jpg"
+		},
+		"name": {
+			"firstname": "Dorothea",
+			"lastname": "Schittenhelm",
+			"prefix": "",
+			"prettyname": "dorothea-schittenhelm",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "female",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "gerhard.schmid@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "83133",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_83103/4384324_180.jpg"
+		},
+		"name": {
+			"firstname": "Gerhard",
+			"lastname": "Schmid",
+			"prefix": "",
+			"prettyname": "gerhard-schmid",
+			"suffix": ""
+		},
+		"party": "none",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "julian.schmid.gruene",
+			"mail": "julian.schmid@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "83103",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_83103/4384324_180.jpg"
+		},
+		"name": {
+			"firstname": "Julian",
+			"lastname": "Schmid",
+			"prefix": "",
+			"prettyname": "julian-schmid",
+			"suffix": "BA"
+		},
+		"party": "gruene",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "johannes.schmuckenschlager@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "52727",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_52727/4386997_180.jpg"
+		},
+		"name": {
+			"firstname": "Johannes",
+			"lastname": "Schmuckenschlager",
+			"prefix": "",
+			"prettyname": "johannes-schmuckenschlager",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "bernd.schoenegger@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "51555",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_51555/4386679_180.jpg"
+		},
+		"name": {
+			"firstname": "Bernd",
+			"lastname": "Sch\u00f6negger",
+			"prefix": "Mag.",
+			"prettyname": "bernd-schoenegger",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "walter.schopf@proge.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "14849",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_14849/5225797_180.jpg"
+		},
+		"name": {
+			"firstname": "Walter",
+			"lastname": "Schopf",
+			"prefix": "",
+			"prettyname": "walter-schopf",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "philipp.schrangl@parlament.gv.at",
+			"phone": "+436765026848",
+			"twitter": ""
+		},
+		"id": "83134",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_83134/4387489_180.jpg"
+		},
+		"name": {
+			"firstname": "Philipp",
+			"lastname": "Schrangl",
+			"prefix": "Mag.",
+			"prettyname": "philipp-schrangl",
+			"suffix": ""
+		},
+		"party": "fpoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "hermann.schultes@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "09775",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_09775/4386911_180.jpg"
+		},
+		"name": {
+			"firstname": "Hermann",
+			"lastname": "Schultes",
+			"prefix": "Ing.",
+			"prettyname": "hermann-schultes",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "judith.schwentner",
+			"mail": "judith.schwentner@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "51589",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_51589/4384502_180.jpg"
+		},
+		"name": {
+			"firstname": "Judith",
+			"lastname": "Schwentner",
+			"prefix": "Mag.",
+			"prettyname": "judith-schwentner",
+			"suffix": ""
+		},
+		"party": "gruene",
+		"sex": "female",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "norbert.sieber@parlament.gv.at",
+			"phone": "+436644538647",
+			"twitter": ""
+		},
+		"id": "14769",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_14769/4386533_180.jpg"
+		},
+		"name": {
+			"firstname": "Norbert",
+			"lastname": "Sieber",
+			"prefix": "",
+			"prettyname": "norbert-sieber",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "johann.singer@parlament.gv.at",
+			"phone": "+436641122493",
+			"twitter": ""
+		},
+		"id": "51556",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_51556/4387017_180.jpg"
+		},
+		"name": {
+			"firstname": "Johann",
+			"lastname": "Singer",
+			"prefix": "",
+			"prettyname": "johann-singer",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "erwin.spindelberger@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "14850",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_14850/4385303_180.jpg"
+		},
+		"name": {
+			"firstname": "Erwin",
+			"lastname": "Spindelberger",
+			"prefix": "",
+			"prettyname": "erwin-spindelberger",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "harald.stefan@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "51571",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_51571/4444563_180.jpg"
+		},
+		"name": {
+			"firstname": "Harald",
+			"lastname": "Stefan",
+			"prefix": "Mag.",
+			"prettyname": "harald-stefan",
+			"suffix": ""
+		},
+		"party": "fpoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "stegerpetra",
+			"mail": "petra.steger@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "83135",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_83135/4387553_180.jpg"
+		},
+		"name": {
+			"firstname": "Petra",
+			"lastname": "Steger",
+			"prefix": "",
+			"prettyname": "petra-steger",
+			"suffix": ""
+		},
+		"party": "fpoe",
+		"sex": "female",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "michaela.steinacker@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "83059",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_83059/4387040_180.jpg"
+		},
+		"name": {
+			"firstname": "Michaela",
+			"lastname": "Steinacker",
+			"prefix": "Mag.",
+			"prettyname": "michaela-steinacker",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "female",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "leo.steinbichler@teamstronach.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "04395",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_04395/4386064_180.jpg"
+		},
+		"name": {
+			"firstname": "Leopold",
+			"lastname": "Steinbichler",
+			"prefix": "",
+			"prettyname": "leopold-steinbichler",
+			"suffix": ""
+		},
+		"party": "stronach",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "albertsteinhauser",
+			"mail": "albert.steinhauser@gruene.at",
+			"phone": "",
+			"twitter": "a_steinhauser"
+		},
+		"id": "40628",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_40628/4582395_384.jpg"
+		},
+		"name": {
+			"firstname": "Albert",
+			"lastname": "Steinhauser",
+			"prefix": "Mag.",
+			"prettyname": "albert-steinhauser",
+			"suffix": ""
+		},
+		"party": "gruene",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "HCStracheFP",
+			"mail": "heinz-christian.strache@parlament.gv.at",
+			"phone": "+431401107028",
+			"twitter": ""
+		},
+		"id": "35518",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_35518/4444605_180.jpg"
+		},
+		"name": {
+			"firstname": "Heinz-Christian",
+			"lastname": "Strache",
+			"prefix": "",
+			"prettyname": "heinz-christian-strache",
+			"suffix": ""
+		},
+		"party": "fpoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "georg.strasser@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "83153",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_83153/4386574_180.jpg"
+		},
+		"name": {
+			"firstname": "Georg",
+			"lastname": "Strasser",
+			"prefix": "Dipl.-Ing.",
+			"prettyname": "georg-strasser",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "matthias.strolz@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "10304",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_10304/4380916_180.jpg"
+		},
+		"name": {
+			"firstname": "Matthias",
+			"lastname": "Strolz",
+			"prefix": "Mag. Dr.",
+			"prettyname": "matthias-strolz",
+			"suffix": ""
+		},
+		"party": "neos",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "gabriele.tamandl@parlament.gv.at",
+			"phone": "+431401104652",
+			"twitter": ""
+		},
+		"id": "15531",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_15531/4387340_180.jpg"
+		},
+		"name": {
+			"firstname": "Gabriele",
+			"lastname": "Tamandl",
+			"prefix": "",
+			"prettyname": "gabriele-tamandl",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "female",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "bernhard.themessl@fpoe.at",
+			"phone": "+431401107129",
+			"twitter": ""
+		},
+		"id": "35524",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_35524/4444733_180.jpg"
+		},
+		"name": {
+			"firstname": "Bernhard",
+			"lastname": "Themessl",
+			"prefix": "",
+			"prettyname": "bernhard-themessl",
+			"suffix": ""
+		},
+		"party": "fpoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "karlheinz.toechterle@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "65319",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_65319/4386342_180.jpg"
+		},
+		"name": {
+			"firstname": "Karlheinz",
+			"lastname": "T\u00f6chterle",
+			"prefix": "Dr.",
+			"prettyname": "karlheinz-toechterle",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "harald.troch@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "83114",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_83114/4385239_180.jpg"
+		},
+		"name": {
+			"firstname": "Harald",
+			"lastname": "Troch",
+			"prefix": "Dr.",
+			"prettyname": "harald-troch",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "max.unterrainer",
+			"mail": "maximilian.unterrainer@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "83115",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_83115/4385188_180.jpg"
+		},
+		"name": {
+			"firstname": "Maximilian",
+			"lastname": "Unterrainer",
+			"prefix": "Mag.",
+			"prettyname": "maximilian-unterrainer",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "christoph.vavrik@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "83126",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_83126/4380767_180.jpg"
+		},
+		"name": {
+			"firstname": "Christoph",
+			"lastname": "Vavrik",
+			"prefix": "Mag.",
+			"prettyname": "christoph-vavrik",
+			"suffix": ""
+		},
+		"party": "neos",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "georg.vetter@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "83143",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_83143/4385928_180.jpg"
+		},
+		"name": {
+			"firstname": "Georg",
+			"lastname": "Vetter",
+			"prefix": "Dr.",
+			"prettyname": "georg-vetter",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "markus.vogl@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "83116",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_83116/4385044_180.jpg"
+		},
+		"name": {
+			"firstname": "Markus",
+			"lastname": "Vogl",
+			"prefix": "Ing.",
+			"prettyname": "markus-vogl",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "harald.walser@gruene.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "51590",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_51590/4444944_180.jpg"
+		},
+		"name": {
+			"firstname": "Harald",
+			"lastname": "Walser",
+			"prefix": "Dr.",
+			"prettyname": "harald-walser",
+			"suffix": ""
+		},
+		"party": "gruene",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "ulrike.weigerstorfer@parlament.gv.at",
+			"phone": "+431401108053",
+			"twitter": ""
+		},
+		"id": "83262",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_83262/4582593_384.jpg"
+		},
+		"name": {
+			"firstname": "Ulrike",
+			"lastname": "Weigerstorfer",
+			"prefix": "",
+			"prettyname": "ulrike-weigerstorfer",
+			"suffix": ""
+		},
+		"party": "stronach",
+		"sex": "female",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "hannes.weninger@spoe.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "47087",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_47087/4384930_180.jpg"
+		},
+		"name": {
+			"firstname": "Hannes",
+			"lastname": "Weninger",
+			"prefix": "",
+			"prettyname": "hannes-weninger",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "georg.willi@gruene.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "83104",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_83104/4384613_180.jpg"
+		},
+		"name": {
+			"firstname": "Georg",
+			"lastname": "Willi",
+			"prefix": "",
+			"prettyname": "georg-willi",
+			"suffix": ""
+		},
+		"party": "gruene",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "rainer.wimmer@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "02013",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_02013/4385677_180.jpg"
+		},
+		"name": {
+			"firstname": "Rainer",
+			"lastname": "Wimmer",
+			"prefix": "",
+			"prettyname": "rainer-wimmer",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "tanjawindbuechler",
+			"mail": "tanja.windbuechler@gruene.at",
+			"phone": "+431401106306",
+			"twitter": ""
+		},
+		"id": "51591",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_51591/4462008_180.jpg"
+		},
+		"name": {
+			"firstname": "Tanja",
+			"lastname": "Windb\u00fcchler-Souschill",
+			"prefix": "",
+			"prettyname": "tanja-windbuechler-souschill",
+			"suffix": ""
+		},
+		"party": "gruene",
+		"sex": "female",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "susanne.winter@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "51573",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_51573/4444627_180.jpg"
+		},
+		"name": {
+			"firstname": "Susanne",
+			"lastname": "Winter",
+			"prefix": "Dr.",
+			"prettyname": "susanne-winter",
+			"suffix": ""
+		},
+		"party": "none",
+		"sex": "female",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "angelika.winzig@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "60878",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_60878/4386877_180.jpg"
+		},
+		"name": {
+			"firstname": "Angelika",
+			"lastname": "Winzig",
+			"prefix": "Dr.",
+			"prettyname": "angelika-winzig",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "female",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "peter.wittmann@spoe.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "04477",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_04477/4385559_180.jpg"
+		},
+		"name": {
+			"firstname": "Peter",
+			"lastname": "Wittmann",
+			"prefix": "Dr.",
+			"prettyname": "peter-wittmann",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "august.woeginger@parlament.gv.at",
+			"phone": "+436644120023",
+			"twitter": ""
+		},
+		"id": "14795",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_14795/4387280_180.jpg"
+		},
+		"name": {
+			"firstname": "August",
+			"lastname": "W\u00f6ginger",
+			"prefix": "",
+			"prettyname": "august-woeginger",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "gisela.wurm@spoe.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "02768",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_02768/4385727_180.jpg"
+		},
+		"name": {
+			"firstname": "Gisela",
+			"lastname": "Wurm",
+			"prefix": "Mag.",
+			"prettyname": "gisela-wurm",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "female",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "peter.wurm@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "83137",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_83137/4582438_384.jpg"
+		},
+		"name": {
+			"firstname": "Peter",
+			"lastname": "Wurm",
+			"prefix": "",
+			"prettyname": "peter-wurm",
+			"suffix": ""
+		},
+		"party": "fpoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "nurten.yilmaz@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "83117",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_83117/4445051_180.jpg"
+		},
+		"name": {
+			"firstname": "Nurten",
+			"lastname": "Yilmaz",
+			"prefix": "",
+			"prettyname": "nurten-yilmaz",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "female",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "andreas.zakostelsky@parlament.gv.at",
+			"phone": "+431401104649",
+			"twitter": ""
+		},
+		"id": "83154",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_83154/4983718_180.jpg"
+		},
+		"name": {
+			"firstname": "Andreas",
+			"lastname": "Zakostelsky",
+			"prefix": "Mag.",
+			"prettyname": "andreas-zakostelsky",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "wolfgang.zanger@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "35514",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_35514/4444923_180.jpg"
+		},
+		"name": {
+			"firstname": "Wolfgang",
+			"lastname": "Zanger",
+			"prefix": "",
+			"prettyname": "wolfgang-zanger",
+			"suffix": ""
+		},
+		"party": "fpoe",
+		"sex": "male",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "wolfgang.zinggl@gruene.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "22573",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_22573/4384551_180.jpg"
+		},
+		"name": {
+			"firstname": "Wolfgang",
+			"lastname": "Zinggl",
+			"prefix": "Mag. Dr.",
+			"prettyname": "wolfgang-zinggl",
+			"suffix": ""
+		},
+		"party": "gruene",
+		"sex": "male",
+		"team": "unknown"
+	}
+]
