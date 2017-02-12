@@ -1,4 +1,5 @@
 from flask import render_template, abort
+import twilio.twiml
 from . import app, reps
 
 @app.route("/")
@@ -33,9 +34,11 @@ def mail():
     email = request.form.get("email")
     abort(404)
 
-@app.route("/act/call/", methods=["POST"])
+@app.route("/act/call/", methods=["GET", "POST"])
 def call():
-    abort(404)
+    resp = twilio.twiml.Response()
+    resp.say("Hello. This is a test. Goodbye!")
+    return str(resp)
 
 @app.errorhandler(404)
 def page_not_found(error):
