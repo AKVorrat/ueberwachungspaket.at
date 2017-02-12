@@ -32,30 +32,30 @@
 				<input id="unknown" type="checkbox">
 				<label for="unknown">Unbekannt</label>
 			</form>
-			<form id="locations" class="btn-group row">
-				<input id="location-b" type="checkbox">
-				<label for="location-b">Bgld.</label>
-				<input id="location-k" type="checkbox">
-				<label for="location-k">Ktn.</label>
-				<input id="location-n" type="checkbox">
-				<label for="location-n">NÖ</label>
-				<input id="location-o" type="checkbox">
-				<label for="location-o">OÖ</label>
-				<input id="location-s" type="checkbox">
-				<label for="location-s">Sbg.</label>
-				<input id="location-st" type="checkbox">
-				<label for="location-st">Stmk.</label>
-				<input id="location-k" type="checkbox">
-				<label for="location-t">T</label>
-				<input id="location-k" type="checkbox">
-				<label for="location-v">Vbg.</label>
-				<input id="location-k" type="checkbox">
-				<label for="location-w">W</label>
+			<form id="states" class="btn-group row">
+				<input id="state-b" type="checkbox">
+				<label for="state-b">Bgld.</label>
+				<input id="state-k" type="checkbox">
+				<label for="state-k">Ktn.</label>
+				<input id="state-n" type="checkbox">
+				<label for="state-n">NÖ</label>
+				<input id="state-o" type="checkbox">
+				<label for="state-o">OÖ</label>
+				<input id="state-s" type="checkbox">
+				<label for="state-s">Sbg.</label>
+				<input id="state-st" type="checkbox">
+				<label for="state-st">Stmk.</label>
+				<input id="state-k" type="checkbox">
+				<label for="state-t">T</label>
+				<input id="state-k" type="checkbox">
+				<label for="state-v">Vbg.</label>
+				<input id="state-k" type="checkbox">
+				<label for="state-w">W</label>
 			</form>
 		</div>
 		<div id="representatives" class="row">
 			{% for rep in reps %}
-			<a class="representative" href="{{ url_for('representative', prettyname=rep.name.prettyname) }}" data-party="{{ rep.party.prettyname }}" data-team="{{ rep.team.prettyname }}" data-location="{{ rep.location }}">
+			<a class="representative" href="{{ url_for('representative', prettyname=rep.name.prettyname) }}" data-party="{{ rep.party.prettyname }}" data-team="{{ rep.team.prettyname }}" data-state="{{ rep.state }}">
 				<div class="column">
 					<div class="name">{{ rep.name.lastname }}</div>
 					<div class="party">{{ rep.party.shortname }}</div>

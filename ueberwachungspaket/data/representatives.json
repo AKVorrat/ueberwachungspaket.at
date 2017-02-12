@@ -6,6 +6,7 @@
 			"phone": "+4350705070",
 			"twitter": "nikoalm"
 		},
+		"district": "9",
 		"id": "83119",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -20,8 +21,8 @@
 		},
 		"party": "neos",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "w",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -30,6 +31,7 @@
 			"phone": "+431401104933",
 			"twitter": ""
 		},
+		"district": "6",
 		"id": "02819",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -44,8 +46,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "st",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -54,6 +56,7 @@
 			"phone": "+436643373650",
 			"twitter": ""
 		},
+		"district": "2",
 		"id": "84060",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -68,8 +71,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "k",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -78,6 +81,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "3B",
 		"id": "83107",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -92,8 +96,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "n",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -102,6 +106,7 @@
 			"phone": "",
 			"twitter": "Berivan_Aslan_"
 		},
+		"district": "7",
 		"id": "83105",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -116,8 +121,8 @@
 		},
 		"party": "gruene",
 		"sex": "female",
-		"team": "unknown",
-		"location": ""
+		"state": "t",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -126,6 +131,7 @@
 			"phone": "+431401104693",
 			"twitter": ""
 		},
+		"district": "B",
 		"id": "35467",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -140,8 +146,8 @@
 		},
 		"party": "oevp",
 		"sex": "female",
-		"team": "unknown",
-		"location": ""
+		"state": "w",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -150,6 +156,7 @@
 			"phone": "+436643074635",
 			"twitter": ""
 		},
+		"district": "4",
 		"id": "00039",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -164,8 +171,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "o",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -174,6 +181,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "5C",
 		"id": "83108",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -188,8 +196,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "s",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -198,6 +206,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "9D",
 		"id": "14835",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -212,8 +221,8 @@
 		},
 		"party": "spoe",
 		"sex": "female",
-		"team": "unknown",
-		"location": ""
+		"state": "w",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -222,6 +231,7 @@
 			"phone": "+431401103586",
 			"twitter": ""
 		},
+		"district": "9G",
 		"id": "14836",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -236,8 +246,8 @@
 		},
 		"party": "spoe",
 		"sex": "female",
-		"team": "unknown",
-		"location": ""
+		"state": "w",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -246,6 +256,7 @@
 			"phone": "+436641266012",
 			"twitter": ""
 		},
+		"district": "9",
 		"id": "35468",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -260,8 +271,8 @@
 		},
 		"party": "fpoe",
 		"sex": "female",
-		"team": "unknown",
-		"location": ""
+		"state": "w",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -270,6 +281,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "1",
 		"id": "52688",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -284,8 +296,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "b",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -294,6 +306,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "9",
 		"id": "83124",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -308,8 +321,8 @@
 		},
 		"party": "neos",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "w",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -318,6 +331,7 @@
 			"phone": "+436763349446",
 			"twitter": ""
 		},
+		"district": "B",
 		"id": "02867",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -332,8 +346,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "v",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -342,6 +356,7 @@
 			"phone": "+431401106691",
 			"twitter": ""
 		},
+		"district": "3",
 		"id": "08239",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -356,8 +371,8 @@
 		},
 		"party": "gruene",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "n",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -366,6 +381,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "4B",
 		"id": "61639",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -380,8 +396,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "o",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -390,6 +406,7 @@
 			"phone": "+431401106303",
 			"twitter": ""
 		},
+		"district": "B",
 		"id": "51586",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -404,8 +421,8 @@
 		},
 		"party": "gruene",
 		"sex": "female",
-		"team": "unknown",
-		"location": ""
+		"state": "b",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -414,6 +431,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "4B",
 		"id": "63179",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -428,8 +446,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "o",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -438,6 +456,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "9E",
 		"id": "00145",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -452,8 +471,8 @@
 		},
 		"party": "spoe",
 		"sex": "female",
-		"team": "unknown",
-		"location": ""
+		"state": "w",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -462,6 +481,7 @@
 			"phone": "+431401103454",
 			"twitter": ""
 		},
+		"district": "B",
 		"id": "00178",
 		"image": {
 			"copyright": "Parlamentsdirektion / WILKE",
@@ -476,8 +496,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "w",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -486,6 +506,7 @@
 			"phone": "+431401107019",
 			"twitter": ""
 		},
+		"district": "4D",
 		"id": "51557",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -500,8 +521,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "o",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -510,6 +531,7 @@
 			"phone": "+431401104687",
 			"twitter": ""
 		},
+		"district": "3B",
 		"id": "16218",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -524,8 +546,8 @@
 		},
 		"party": "oevp",
 		"sex": "female",
-		"team": "unknown",
-		"location": ""
+		"state": "n",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -534,6 +556,7 @@
 			"phone": "+431401108025",
 			"twitter": ""
 		},
+		"district": "6",
 		"id": "83140",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -548,8 +571,8 @@
 		},
 		"party": "frank",
 		"sex": "female",
-		"team": "unknown",
-		"location": ""
+		"state": "st",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -558,6 +581,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "5",
 		"id": "51558",
 		"image": {
 			"copyright": "FP\u00d6 Salzburg",
@@ -572,8 +596,8 @@
 		},
 		"party": "none",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "s",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -582,6 +606,7 @@
 			"phone": "+436764263025",
 			"twitter": ""
 		},
+		"district": "4A",
 		"id": "40627",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -596,8 +621,8 @@
 		},
 		"party": "oevp",
 		"sex": "female",
-		"team": "unknown",
-		"location": ""
+		"state": "o",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -606,6 +631,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "5",
 		"id": "83109",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -620,8 +646,8 @@
 		},
 		"party": "spoe",
 		"sex": "female",
-		"team": "unknown",
-		"location": ""
+		"state": "s",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -630,6 +656,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "B",
 		"id": "83144",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -644,8 +671,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "s",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -654,6 +681,7 @@
 			"phone": "+431401104400",
 			"twitter": ""
 		},
+		"district": "B",
 		"id": "83433",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -668,8 +696,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "n",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -678,6 +706,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "5C",
 		"id": "14755",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -692,8 +721,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "s",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -702,6 +731,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "6B",
 		"id": "83298",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -716,8 +746,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "st",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -726,6 +756,7 @@
 			"phone": "+431401104682",
 			"twitter": ""
 		},
+		"district": "4C",
 		"id": "00311",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -740,8 +771,8 @@
 		},
 		"party": "oevp",
 		"sex": "female",
-		"team": "unknown",
-		"location": ""
+		"state": "o",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -750,6 +781,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "3B",
 		"id": "83146",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -764,8 +796,8 @@
 		},
 		"party": "oevp",
 		"sex": "female",
-		"team": "unknown",
-		"location": ""
+		"state": "n",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -774,6 +806,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "B",
 		"id": "83141",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -788,8 +821,8 @@
 		},
 		"party": "none",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "w",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -798,6 +831,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "B",
 		"id": "83127",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -812,8 +846,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "s",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -822,6 +856,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "7B",
 		"id": "08209",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -836,8 +871,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "t",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -846,6 +881,7 @@
 			"phone": "",
 			"twitter": "dieGamon"
 		},
+		"district": "B",
 		"id": "86976",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -860,8 +896,8 @@
 		},
 		"party": "neos",
 		"sex": "female",
-		"team": "unknown",
-		"location": ""
+		"state": "w",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -870,6 +906,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "B",
 		"id": "67199",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -884,8 +921,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "w",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -894,6 +931,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "6D",
 		"id": "51527",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -908,8 +946,8 @@
 		},
 		"party": "spoe",
 		"sex": "female",
-		"team": "unknown",
-		"location": ""
+		"state": "st",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -918,6 +956,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "9",
 		"id": "08240",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -932,8 +971,8 @@
 		},
 		"party": "gruene",
 		"sex": "female",
-		"team": "unknown",
-		"location": ""
+		"state": "w",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -942,6 +981,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "B",
 		"id": "80479",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -956,8 +996,8 @@
 		},
 		"party": "spoe",
 		"sex": "female",
-		"team": "unknown",
-		"location": ""
+		"state": "st",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -966,6 +1006,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "6D",
 		"id": "12907",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -980,8 +1021,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "st",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -990,6 +1031,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "3",
 		"id": "83147",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -1004,8 +1046,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "n",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -1014,6 +1056,7 @@
 			"phone": "+431401103726",
 			"twitter": ""
 		},
+		"district": "6",
 		"id": "14839",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -1028,8 +1071,8 @@
 		},
 		"party": "spoe",
 		"sex": "female",
-		"team": "unknown",
-		"location": ""
+		"state": "st",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -1038,6 +1081,7 @@
 			"phone": "+4315854544",
 			"twitter": ""
 		},
+		"district": "4E",
 		"id": "83110",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -1052,8 +1096,8 @@
 		},
 		"party": "spoe",
 		"sex": "female",
-		"team": "unknown",
-		"location": ""
+		"state": "o",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -1062,6 +1106,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "4",
 		"id": "83120",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -1076,8 +1121,8 @@
 		},
 		"party": "neos",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "o",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -1086,6 +1131,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "3D",
 		"id": "78586",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -1100,8 +1146,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "n",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -1110,6 +1156,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "B",
 		"id": "08256",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -1124,8 +1171,8 @@
 		},
 		"party": "frank",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "v",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -1134,6 +1181,7 @@
 			"phone": "+431401107027",
 			"twitter": ""
 		},
+		"district": "4",
 		"id": "51560",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -1148,8 +1196,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "o",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -1158,6 +1206,7 @@
 			"phone": "+431401101471",
 			"twitter": ""
 		},
+		"district": "B",
 		"id": "10256",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -1172,8 +1221,8 @@
 		},
 		"party": "spoe",
 		"sex": "female",
-		"team": "unknown",
-		"location": ""
+		"state": "st",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -1182,6 +1231,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "4E",
 		"id": "55227",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -1196,8 +1246,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "o",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -1206,6 +1256,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "3C",
 		"id": "83148",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -1220,8 +1271,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "n",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -1230,6 +1281,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "5B",
 		"id": "12741",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -1244,8 +1296,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "s",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -1254,6 +1306,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "7",
 		"id": "35515",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -1268,8 +1321,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "t",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -1278,6 +1331,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "3",
 		"id": "51547",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -1292,8 +1346,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "n",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -1302,6 +1356,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "3",
 		"id": "08177",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -1316,8 +1371,8 @@
 		},
 		"party": "spoe",
 		"sex": "female",
-		"team": "unknown",
-		"location": ""
+		"state": "n",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -1326,6 +1381,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "3D",
 		"id": "05076",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -1340,8 +1396,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "n",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -1350,6 +1406,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "3",
 		"id": "50187",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -1364,8 +1421,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "n",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -1374,6 +1431,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "3A",
 		"id": "72959",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -1388,8 +1446,8 @@
 		},
 		"party": "oevp",
 		"sex": "female",
-		"team": "unknown",
-		"location": ""
+		"state": "n",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -1398,6 +1456,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "3",
 		"id": "51562",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -1412,8 +1471,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "n",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -1422,6 +1481,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "1",
 		"id": "35521",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -1436,8 +1496,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "b",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -1446,6 +1506,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "4",
 		"id": "83299",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -1460,8 +1521,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "o",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -1470,6 +1531,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "3D",
 		"id": "16234",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -1484,8 +1546,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "n",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -1494,6 +1556,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "4C",
 		"id": "83111",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -1508,8 +1571,8 @@
 		},
 		"party": "spoe",
 		"sex": "female",
-		"team": "unknown",
-		"location": ""
+		"state": "o",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -1518,6 +1581,7 @@
 			"phone": "+431401104647",
 			"twitter": ""
 		},
+		"district": "B",
 		"id": "14759",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -1532,8 +1596,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "w",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -1542,6 +1606,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "9E",
 		"id": "51561",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -1556,8 +1621,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "w",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -1566,6 +1631,7 @@
 			"phone": "+431401104678",
 			"twitter": ""
 		},
+		"district": "9",
 		"id": "83149",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -1580,8 +1646,8 @@
 		},
 		"party": "oevp",
 		"sex": "female",
-		"team": "unknown",
-		"location": ""
+		"state": "w",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -1590,6 +1656,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "B",
 		"id": "51563",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -1604,8 +1671,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "k",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -1614,6 +1681,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "B",
 		"id": "57367",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -1628,8 +1696,8 @@
 		},
 		"party": "gruene",
 		"sex": "female",
-		"team": "unknown",
-		"location": ""
+		"state": "w",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -1638,6 +1706,7 @@
 			"phone": "+431401103729",
 			"twitter": ""
 		},
+		"district": "9C",
 		"id": "02889",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -1652,8 +1721,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "w",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -1662,6 +1731,7 @@
 			"phone": "+431401104628",
 			"twitter": ""
 		},
+		"district": "6",
 		"id": "35490",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -1676,8 +1746,8 @@
 		},
 		"party": "oevp",
 		"sex": "female",
-		"team": "unknown",
-		"location": ""
+		"state": "st",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -1686,6 +1756,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "9D",
 		"id": "51564",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -1700,8 +1771,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "w",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -1710,6 +1781,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "6",
 		"id": "83129",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -1724,8 +1796,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "st",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -1734,6 +1806,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "B",
 		"id": "32494",
 		"image": {
 			"copyright": "Parlamentsdirektion / WILKE",
@@ -1748,8 +1821,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "w",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -1758,6 +1831,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "4A",
 		"id": "14840",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -1772,8 +1846,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "o",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -1782,6 +1856,7 @@
 			"phone": "+431512353525",
 			"twitter": ""
 		},
+		"district": "B",
 		"id": "35520",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -1796,8 +1871,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "w",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -1806,6 +1881,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "4C",
 		"id": "35495",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -1820,8 +1896,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "o",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -1830,6 +1906,7 @@
 			"phone": "+431401107027",
 			"twitter": ""
 		},
+		"district": "4E",
 		"id": "51565",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -1844,8 +1921,8 @@
 		},
 		"party": "fpoe",
 		"sex": "female",
-		"team": "unknown",
-		"location": ""
+		"state": "o",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -1854,6 +1931,7 @@
 			"phone": "+436641007029",
 			"twitter": ""
 		},
+		"district": "4C",
 		"id": "88857",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -1868,8 +1946,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "o",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -1878,6 +1956,7 @@
 			"phone": "+431401103466",
 			"twitter": ""
 		},
+		"district": "6A",
 		"id": "30036",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -1892,8 +1971,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "st",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -1902,6 +1981,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "2D",
 		"id": "83112",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -1916,8 +1996,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "k",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -1926,6 +2006,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "2",
 		"id": "83100",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -1940,8 +2021,8 @@
 		},
 		"party": "gruene",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "k",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -1950,6 +2031,7 @@
 			"phone": "+431401106700",
 			"twitter": "wkogler"
 		},
+		"district": "6",
 		"id": "08242",
 		"image": {
 			"copyright": "Parlamentsdirektion / WILKE",
@@ -1964,8 +2046,8 @@
 		},
 		"party": "gruene",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "st",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -1974,6 +2056,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "3C",
 		"id": "14841",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -1988,8 +2071,8 @@
 		},
 		"party": "spoe",
 		"sex": "female",
-		"team": "unknown",
-		"location": ""
+		"state": "n",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -1998,6 +2081,7 @@
 			"phone": "+431401104400",
 			"twitter": ""
 		},
+		"district": "8",
 		"id": "02822",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -2012,8 +2096,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "v",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -2022,6 +2106,7 @@
 			"phone": "+431401106301",
 			"twitter": ""
 		},
+		"district": "9",
 		"id": "51587",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -2036,8 +2121,8 @@
 		},
 		"party": "gruene",
 		"sex": "female",
-		"team": "unknown",
-		"location": ""
+		"state": "w",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -2046,6 +2131,7 @@
 			"phone": "+431401103719",
 			"twitter": ""
 		},
+		"district": "9",
 		"id": "14842",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -2060,8 +2146,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "w",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -2070,6 +2156,7 @@
 			"phone": "+431401103661",
 			"twitter": ""
 		},
+		"district": "4A",
 		"id": "14843",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -2084,8 +2171,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "o",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -2094,6 +2181,7 @@
 			"phone": "",
 			"twitter": "kathi_kuch"
 		},
+		"district": "B",
 		"id": "35908",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -2108,8 +2196,8 @@
 		},
 		"party": "spoe",
 		"sex": "female",
-		"team": "unknown",
-		"location": ""
+		"state": "n",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -2118,6 +2206,7 @@
 			"phone": "+436648521330",
 			"twitter": ""
 		},
+		"district": "2A",
 		"id": "83113",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -2132,8 +2221,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "k",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -2142,6 +2231,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "6A",
 		"id": "86603",
 		"image": {
 			"copyright": "Privat",
@@ -2156,8 +2246,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "st",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -2166,6 +2256,7 @@
 			"phone": "+431401103654",
 			"twitter": ""
 		},
+		"district": "9",
 		"id": "08178",
 		"image": {
 			"copyright": "Parlamentsdirektion / WILKE",
@@ -2180,8 +2271,8 @@
 		},
 		"party": "spoe",
 		"sex": "female",
-		"team": "unknown",
-		"location": ""
+		"state": "w",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -2190,6 +2281,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "9G",
 		"id": "88823",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -2204,8 +2296,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "w",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -2214,6 +2306,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "3",
 		"id": "51568",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -2228,8 +2321,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "n",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -2238,6 +2331,7 @@
 			"phone": "+431401104574",
 			"twitter": ""
 		},
+		"district": "7C",
 		"id": "51553",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -2252,8 +2346,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "t",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -2262,6 +2356,7 @@
 			"phone": "+431401106730",
 			"twitter": ""
 		},
+		"district": "4",
 		"id": "18447",
 		"image": {
 			"copyright": "Parlamentsdirektion / WILKE",
@@ -2276,8 +2371,8 @@
 		},
 		"party": "gruene",
 		"sex": "female",
-		"team": "unknown",
-		"location": ""
+		"state": "o",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -2286,6 +2381,7 @@
 			"phone": "",
 			"twitter": "jessilintl"
 		},
+		"district": "9",
 		"id": "83142",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -2300,8 +2396,8 @@
 		},
 		"party": "fpoe",
 		"sex": "female",
-		"team": "unknown",
-		"location": ""
+		"state": "w",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -2310,6 +2406,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "2B",
 		"id": "51548",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -2324,8 +2421,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "k",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -2334,6 +2431,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "8",
 		"id": "83121",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -2348,8 +2446,8 @@
 		},
 		"party": "neos",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "v",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -2358,6 +2456,7 @@
 			"phone": "",
 			"twitter": "ReinholdLopatka"
 		},
+		"district": "6B",
 		"id": "15526",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -2372,8 +2471,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "spy",
-		"location": ""
+		"state": "st",
+		"team": "spy"
 	},
 	{
 		"contact": {
@@ -2382,6 +2481,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "9G",
 		"id": "22449",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -2396,8 +2496,8 @@
 		},
 		"party": "spoe",
 		"sex": "female",
-		"team": "unknown",
-		"location": ""
+		"state": "w",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -2406,6 +2506,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "3",
 		"id": "51579",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -2420,8 +2521,8 @@
 		},
 		"party": "frank",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "n",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -2430,6 +2531,7 @@
 			"phone": "+431401103741",
 			"twitter": ""
 		},
+		"district": "B",
 		"id": "14844",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -2444,8 +2546,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "w",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -2454,6 +2556,7 @@
 			"phone": "",
 			"twitter": "sigi_maurer"
 		},
+		"district": "B",
 		"id": "83101",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -2468,8 +2571,8 @@
 		},
 		"party": "gruene",
 		"sex": "female",
-		"team": "unknown",
-		"location": ""
+		"state": "t",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -2478,6 +2581,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "8",
 		"id": "35501",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -2492,8 +2596,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "v",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -2502,6 +2606,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "2",
 		"id": "36187",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -2516,8 +2621,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "k",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -2526,6 +2631,7 @@
 			"phone": "+431401106556",
 			"twitter": ""
 		},
+		"district": "4A",
 		"id": "02853",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -2540,8 +2646,8 @@
 		},
 		"party": "gruene",
 		"sex": "female",
-		"team": "unknown",
-		"location": ""
+		"state": "o",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -2550,6 +2656,7 @@
 			"phone": "+431401103764",
 			"twitter": ""
 		},
+		"district": "6C",
 		"id": "35497",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -2564,8 +2671,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "st",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -2574,6 +2681,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "3",
 		"id": "83102",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -2588,8 +2696,8 @@
 		},
 		"party": "gruene",
 		"sex": "female",
-		"team": "unknown",
-		"location": ""
+		"state": "n",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -2598,6 +2706,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "3C",
 		"id": "51569",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -2612,8 +2721,8 @@
 		},
 		"party": "fpoe",
 		"sex": "female",
-		"team": "unknown",
-		"location": ""
+		"state": "n",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -2622,6 +2731,7 @@
 			"phone": "+431401103660",
 			"twitter": ""
 		},
+		"district": "2",
 		"id": "08179",
 		"image": {
 			"copyright": "Parlamentsdirektion / WILKE",
@@ -2636,8 +2746,8 @@
 		},
 		"party": "spoe",
 		"sex": "female",
-		"team": "unknown",
-		"location": ""
+		"state": "k",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -2646,6 +2756,7 @@
 			"phone": "+431401104628",
 			"twitter": ""
 		},
+		"district": "B",
 		"id": "83139",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -2660,8 +2771,8 @@
 		},
 		"party": "oevp",
 		"sex": "female",
-		"team": "unknown",
-		"location": ""
+		"state": "st",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -2670,6 +2781,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "B",
 		"id": "35522",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -2684,8 +2796,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "o",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -2694,6 +2806,7 @@
 			"phone": "+431401104691",
 			"twitter": ""
 		},
+		"district": "2",
 		"id": "35487",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -2708,8 +2821,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "k",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -2718,6 +2831,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "3",
 		"id": "83300",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -2732,8 +2846,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "n",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -2742,6 +2856,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "9",
 		"id": "02854",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -2756,8 +2871,8 @@
 		},
 		"party": "gruene",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "w",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -2766,6 +2881,7 @@
 			"phone": "+431401104655",
 			"twitter": ""
 		},
+		"district": "9",
 		"id": "83150",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -2780,8 +2896,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "w",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -2790,6 +2906,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "3G",
 		"id": "05375",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -2804,8 +2921,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "n",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -2814,6 +2931,7 @@
 			"phone": "+436764124088",
 			"twitter": ""
 		},
+		"district": "7D",
 		"id": "83151",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -2828,8 +2946,8 @@
 		},
 		"party": "oevp",
 		"sex": "female",
-		"team": "unknown",
-		"location": ""
+		"state": "t",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -2838,6 +2956,7 @@
 			"phone": "",
 			"twitter": "Peter_Pilz"
 		},
+		"district": "B",
 		"id": "01210",
 		"image": {
 			"copyright": "Parlamentsdirektion / WILKE",
@@ -2852,8 +2971,8 @@
 		},
 		"party": "gruene",
 		"sex": "male",
-		"team": "liberty",
-		"location": ""
+		"state": "w",
+		"team": "liberty"
 	},
 	{
 		"contact": {
@@ -2862,6 +2981,7 @@
 			"phone": "+431401106672",
 			"twitter": ""
 		},
+		"district": "4",
 		"id": "08245",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -2876,8 +2996,8 @@
 		},
 		"party": "gruene",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "o",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -2886,6 +3006,7 @@
 			"phone": "+431401103694",
 			"twitter": ""
 		},
+		"district": "3A",
 		"id": "51549",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -2900,8 +3021,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "n",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -2910,6 +3031,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "1A",
 		"id": "30011",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -2924,8 +3046,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "b",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -2934,6 +3056,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "4E",
 		"id": "08235",
 		"image": {
 			"copyright": "Parlamentsdirektion / WILKE",
@@ -2948,8 +3071,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "o",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -2958,6 +3081,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "3E",
 		"id": "14767",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -2972,8 +3096,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "n",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -2982,6 +3106,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "9E",
 		"id": "02862",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -2996,8 +3121,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "w",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -3006,6 +3131,7 @@
 			"phone": "+431401104664",
 			"twitter": ""
 		},
+		"district": "B",
 		"id": "83152",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -3020,8 +3146,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "t",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -3030,6 +3156,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "6B",
 		"id": "83130",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -3044,8 +3171,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "st",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -3054,6 +3181,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "6C",
 		"id": "61659",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -3068,8 +3196,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "st",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -3078,6 +3206,7 @@
 			"phone": "+436641431613",
 			"twitter": ""
 		},
+		"district": "3",
 		"id": "51570",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -3092,8 +3221,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "n",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -3102,6 +3231,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "3A",
 		"id": "14693",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -3116,8 +3246,8 @@
 		},
 		"party": "fpoe",
 		"sex": "female",
-		"team": "unknown",
-		"location": ""
+		"state": "n",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -3126,6 +3256,7 @@
 			"phone": "+431401106680",
 			"twitter": ""
 		},
+		"district": "B",
 		"id": "35516",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -3140,8 +3271,8 @@
 		},
 		"party": "gruene",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "w",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -3150,6 +3281,7 @@
 			"phone": "+436645518560",
 			"twitter": ""
 		},
+		"district": "1B",
 		"id": "86681",
 		"image": {
 			"copyright": "Johannes Zinner",
@@ -3164,8 +3296,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "b",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -3174,6 +3306,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "5",
 		"id": "35512",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -3188,8 +3321,8 @@
 		},
 		"party": "gruene",
 		"sex": "female",
-		"team": "unknown",
-		"location": ""
+		"state": "s",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -3198,6 +3331,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "9",
 		"id": "83132",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -3212,8 +3346,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "w",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -3222,6 +3356,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "B",
 		"id": "84056",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -3236,8 +3371,8 @@
 		},
 		"party": "neos",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "s",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -3246,6 +3381,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "6",
 		"id": "51582",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -3260,8 +3396,8 @@
 		},
 		"party": "frank",
 		"sex": "female",
-		"team": "unknown",
-		"location": ""
+		"state": "st",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -3270,6 +3406,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "3",
 		"id": "83125",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -3284,8 +3421,8 @@
 		},
 		"party": "neos",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "n",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -3294,6 +3431,7 @@
 			"phone": "",
 			"twitter": "SCHIEDER"
 		},
+		"district": "9",
 		"id": "35504",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -3308,8 +3446,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "w",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -3318,6 +3456,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "B",
 		"id": "51559",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -3332,8 +3471,8 @@
 		},
 		"party": "fpoe",
 		"sex": "female",
-		"team": "unknown",
-		"location": ""
+		"state": "t",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -3342,6 +3481,7 @@
 			"phone": "+431401104683",
 			"twitter": ""
 		},
+		"district": "B",
 		"id": "36908",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -3356,32 +3496,8 @@
 		},
 		"party": "oevp",
 		"sex": "female",
-		"team": "unknown",
-		"location": ""
-	},
-	{
-		"contact": {
-			"facebook": "",
-			"mail": "gerhard.schmid@parlament.gv.at",
-			"phone": "",
-			"twitter": ""
-		},
-		"id": "83133",
-		"image": {
-			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_83103/4384324_180.jpg"
-		},
-		"name": {
-			"firstname": "Gerhard",
-			"lastname": "Schmid",
-			"prefix": "",
-			"prettyname": "gerhard-schmid",
-			"suffix": ""
-		},
-		"party": "none",
-		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "n",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -3390,6 +3506,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "B",
 		"id": "83103",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -3404,8 +3521,33 @@
 		},
 		"party": "gruene",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "w",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "gerhard.schmid@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"district": "5",
+		"id": "83133",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "https://www.parlament.gv.at/WWER/PAD_83103/4384324_180.jpg"
+		},
+		"name": {
+			"firstname": "Gerhard",
+			"lastname": "Schmid",
+			"prefix": "",
+			"prettyname": "gerhard-schmid",
+			"suffix": ""
+		},
+		"party": "none",
+		"sex": "male",
+		"state": "s",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -3414,6 +3556,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "3F",
 		"id": "52727",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -3428,8 +3571,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "n",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -3438,6 +3581,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "6A",
 		"id": "51555",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -3452,8 +3596,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "st",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -3462,6 +3606,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "4",
 		"id": "14849",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -3476,8 +3621,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "o",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -3486,6 +3631,7 @@
 			"phone": "+436765026848",
 			"twitter": ""
 		},
+		"district": "4A",
 		"id": "83134",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -3500,8 +3646,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "o",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -3510,6 +3656,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "3A",
 		"id": "09775",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -3524,8 +3671,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "n",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -3534,6 +3681,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "6A",
 		"id": "51589",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -3548,8 +3696,8 @@
 		},
 		"party": "gruene",
 		"sex": "female",
-		"team": "unknown",
-		"location": ""
+		"state": "st",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -3558,6 +3706,7 @@
 			"phone": "+436644538647",
 			"twitter": ""
 		},
+		"district": "8A",
 		"id": "14769",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -3572,8 +3721,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "v",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -3582,6 +3731,7 @@
 			"phone": "+436641122493",
 			"twitter": ""
 		},
+		"district": "4D",
 		"id": "51556",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -3596,8 +3746,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "o",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -3606,6 +3756,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "6D",
 		"id": "14850",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -3620,8 +3771,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "st",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -3630,6 +3781,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "B",
 		"id": "51571",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -3644,8 +3796,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "w",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -3654,6 +3806,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "9",
 		"id": "83135",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -3668,8 +3821,8 @@
 		},
 		"party": "fpoe",
 		"sex": "female",
-		"team": "unknown",
-		"location": ""
+		"state": "w",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -3678,6 +3831,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "B",
 		"id": "83059",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -3692,8 +3846,8 @@
 		},
 		"party": "oevp",
 		"sex": "female",
-		"team": "unknown",
-		"location": ""
+		"state": "w",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -3702,6 +3856,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "4",
 		"id": "04395",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -3716,8 +3871,8 @@
 		},
 		"party": "frank",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "o",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -3726,6 +3881,7 @@
 			"phone": "",
 			"twitter": "a_steinhauser"
 		},
+		"district": "9",
 		"id": "40628",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -3740,8 +3896,8 @@
 		},
 		"party": "gruene",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "w",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -3750,6 +3906,7 @@
 			"phone": "+431401107028",
 			"twitter": ""
 		},
+		"district": "B",
 		"id": "35518",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -3764,8 +3921,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "w",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -3774,6 +3931,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "3C",
 		"id": "83153",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -3788,8 +3946,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "n",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -3798,6 +3956,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "B",
 		"id": "10304",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -3812,8 +3971,8 @@
 		},
 		"party": "neos",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "v",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -3822,6 +3981,7 @@
 			"phone": "+431401104652",
 			"twitter": ""
 		},
+		"district": "9",
 		"id": "15531",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -3836,8 +3996,8 @@
 		},
 		"party": "oevp",
 		"sex": "female",
-		"team": "unknown",
-		"location": ""
+		"state": "w",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -3846,6 +4006,7 @@
 			"phone": "+431401107129",
 			"twitter": ""
 		},
+		"district": "8",
 		"id": "35524",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -3860,8 +4021,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "v",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -3870,6 +4031,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "7",
 		"id": "65319",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -3884,8 +4046,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "t",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -3894,6 +4056,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "9D",
 		"id": "83114",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -3908,8 +4071,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "w",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -3918,6 +4081,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "7",
 		"id": "83115",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -3932,8 +4096,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "t",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -3942,6 +4106,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "6",
 		"id": "83126",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -3956,8 +4121,8 @@
 		},
 		"party": "neos",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "st",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -3966,6 +4131,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "B",
 		"id": "83143",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -3980,8 +4146,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "w",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -3990,6 +4156,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "4D",
 		"id": "83116",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -4004,8 +4171,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "o",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -4014,6 +4181,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "8",
 		"id": "51590",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -4028,8 +4196,8 @@
 		},
 		"party": "gruene",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "v",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -4038,6 +4206,7 @@
 			"phone": "+431401108053",
 			"twitter": ""
 		},
+		"district": "B",
 		"id": "83262",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -4052,8 +4221,8 @@
 		},
 		"party": "frank",
 		"sex": "female",
-		"team": "unknown",
-		"location": ""
+		"state": "n",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -4062,6 +4231,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "3F",
 		"id": "47087",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -4076,8 +4246,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "n",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -4086,6 +4256,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "7",
 		"id": "83104",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -4100,8 +4271,8 @@
 		},
 		"party": "gruene",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "t",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -4110,6 +4281,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "B",
 		"id": "02013",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -4124,8 +4296,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "o",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -4134,6 +4306,7 @@
 			"phone": "+431401106306",
 			"twitter": ""
 		},
+		"district": "3",
 		"id": "51591",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -4148,8 +4321,8 @@
 		},
 		"party": "gruene",
 		"sex": "female",
-		"team": "unknown",
-		"location": ""
+		"state": "n",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -4158,6 +4331,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "6",
 		"id": "51573",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -4172,8 +4346,8 @@
 		},
 		"party": "none",
 		"sex": "female",
-		"team": "unknown",
-		"location": ""
+		"state": "st",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -4182,6 +4356,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "B",
 		"id": "60878",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -4196,8 +4371,8 @@
 		},
 		"party": "oevp",
 		"sex": "female",
-		"team": "unknown",
-		"location": ""
+		"state": "o",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -4206,6 +4381,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "3E",
 		"id": "04477",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -4220,8 +4396,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "n",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -4230,6 +4406,7 @@
 			"phone": "+436644120023",
 			"twitter": ""
 		},
+		"district": "4B",
 		"id": "14795",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -4244,8 +4421,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "o",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -4254,6 +4431,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "7",
 		"id": "02768",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -4268,8 +4446,8 @@
 		},
 		"party": "spoe",
 		"sex": "female",
-		"team": "unknown",
-		"location": ""
+		"state": "t",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -4278,6 +4456,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "7B",
 		"id": "83137",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -4292,8 +4471,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "t",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -4302,6 +4481,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "9F",
 		"id": "83117",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -4316,8 +4496,8 @@
 		},
 		"party": "spoe",
 		"sex": "female",
-		"team": "unknown",
-		"location": ""
+		"state": "w",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -4326,6 +4506,7 @@
 			"phone": "+431401104649",
 			"twitter": ""
 		},
+		"district": "B",
 		"id": "83154",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -4340,8 +4521,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "st",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -4350,6 +4531,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "6D",
 		"id": "35514",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -4364,8 +4546,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "st",
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -4374,6 +4556,7 @@
 			"phone": "",
 			"twitter": ""
 		},
+		"district": "9",
 		"id": "22573",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
@@ -4388,7 +4571,7 @@
 		},
 		"party": "gruene",
 		"sex": "male",
-		"team": "unknown",
-		"location": ""
+		"state": "w",
+		"team": "unknown"
 	}
 ]
