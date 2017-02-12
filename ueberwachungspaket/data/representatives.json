@@ -20,7 +20,8 @@
 		},
 		"party": "neos",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -43,7 +44,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -66,7 +68,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -89,7 +92,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -112,7 +116,8 @@
 		},
 		"party": "gruene",
 		"sex": "female",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -135,7 +140,8 @@
 		},
 		"party": "oevp",
 		"sex": "female",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -158,7 +164,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -181,7 +188,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -204,7 +212,8 @@
 		},
 		"party": "spoe",
 		"sex": "female",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -227,7 +236,8 @@
 		},
 		"party": "spoe",
 		"sex": "female",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -250,7 +260,8 @@
 		},
 		"party": "fpoe",
 		"sex": "female",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -273,7 +284,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -296,7 +308,8 @@
 		},
 		"party": "neos",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -319,7 +332,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -342,7 +356,8 @@
 		},
 		"party": "gruene",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -365,7 +380,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -388,7 +404,8 @@
 		},
 		"party": "gruene",
 		"sex": "female",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -411,7 +428,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -434,7 +452,8 @@
 		},
 		"party": "spoe",
 		"sex": "female",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -457,7 +476,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -480,7 +500,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -503,7 +524,8 @@
 		},
 		"party": "oevp",
 		"sex": "female",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -526,7 +548,8 @@
 		},
 		"party": "frank",
 		"sex": "female",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -549,7 +572,8 @@
 		},
 		"party": "none",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -572,7 +596,8 @@
 		},
 		"party": "oevp",
 		"sex": "female",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -595,7 +620,8 @@
 		},
 		"party": "spoe",
 		"sex": "female",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -618,7 +644,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -641,7 +668,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -664,7 +692,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -687,7 +716,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -710,7 +740,8 @@
 		},
 		"party": "oevp",
 		"sex": "female",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -733,7 +764,8 @@
 		},
 		"party": "oevp",
 		"sex": "female",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -756,7 +788,8 @@
 		},
 		"party": "none",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -779,7 +812,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -802,7 +836,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -825,7 +860,8 @@
 		},
 		"party": "neos",
 		"sex": "female",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -848,7 +884,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -871,7 +908,8 @@
 		},
 		"party": "spoe",
 		"sex": "female",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -894,7 +932,8 @@
 		},
 		"party": "gruene",
 		"sex": "female",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -917,7 +956,8 @@
 		},
 		"party": "spoe",
 		"sex": "female",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -940,7 +980,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -963,7 +1004,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -986,7 +1028,8 @@
 		},
 		"party": "spoe",
 		"sex": "female",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -1009,7 +1052,8 @@
 		},
 		"party": "spoe",
 		"sex": "female",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -1032,7 +1076,8 @@
 		},
 		"party": "neos",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -1055,7 +1100,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -1078,7 +1124,8 @@
 		},
 		"party": "frank",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -1101,7 +1148,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -1124,7 +1172,8 @@
 		},
 		"party": "spoe",
 		"sex": "female",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -1147,7 +1196,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -1170,7 +1220,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -1193,7 +1244,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -1216,7 +1268,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -1239,7 +1292,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -1262,7 +1316,8 @@
 		},
 		"party": "spoe",
 		"sex": "female",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -1285,7 +1340,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -1308,7 +1364,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -1331,7 +1388,8 @@
 		},
 		"party": "oevp",
 		"sex": "female",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -1354,7 +1412,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -1377,7 +1436,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -1400,7 +1460,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -1423,7 +1484,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -1446,7 +1508,8 @@
 		},
 		"party": "spoe",
 		"sex": "female",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -1469,7 +1532,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -1492,7 +1556,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -1515,7 +1580,8 @@
 		},
 		"party": "oevp",
 		"sex": "female",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -1538,7 +1604,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -1561,7 +1628,8 @@
 		},
 		"party": "gruene",
 		"sex": "female",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -1584,7 +1652,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -1607,7 +1676,8 @@
 		},
 		"party": "oevp",
 		"sex": "female",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -1630,7 +1700,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -1653,7 +1724,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -1676,7 +1748,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -1699,7 +1772,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -1722,7 +1796,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -1745,7 +1820,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -1768,7 +1844,8 @@
 		},
 		"party": "fpoe",
 		"sex": "female",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -1791,7 +1868,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -1814,7 +1892,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -1837,7 +1916,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -1860,7 +1940,8 @@
 		},
 		"party": "gruene",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -1883,7 +1964,8 @@
 		},
 		"party": "gruene",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -1906,7 +1988,8 @@
 		},
 		"party": "spoe",
 		"sex": "female",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -1929,7 +2012,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -1952,7 +2036,8 @@
 		},
 		"party": "gruene",
 		"sex": "female",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -1975,7 +2060,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -1998,7 +2084,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -2021,7 +2108,8 @@
 		},
 		"party": "spoe",
 		"sex": "female",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -2044,7 +2132,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -2067,7 +2156,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -2090,7 +2180,8 @@
 		},
 		"party": "spoe",
 		"sex": "female",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -2113,7 +2204,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -2136,7 +2228,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -2159,7 +2252,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -2182,7 +2276,8 @@
 		},
 		"party": "gruene",
 		"sex": "female",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -2205,7 +2300,8 @@
 		},
 		"party": "fpoe",
 		"sex": "female",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -2228,7 +2324,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -2251,7 +2348,8 @@
 		},
 		"party": "neos",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -2274,7 +2372,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "spy"
+		"team": "spy",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -2297,7 +2396,8 @@
 		},
 		"party": "spoe",
 		"sex": "female",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -2320,7 +2420,8 @@
 		},
 		"party": "frank",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -2343,7 +2444,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -2366,7 +2468,8 @@
 		},
 		"party": "gruene",
 		"sex": "female",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -2389,7 +2492,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -2412,7 +2516,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -2435,7 +2540,8 @@
 		},
 		"party": "gruene",
 		"sex": "female",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -2458,7 +2564,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -2481,7 +2588,8 @@
 		},
 		"party": "gruene",
 		"sex": "female",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -2504,7 +2612,8 @@
 		},
 		"party": "fpoe",
 		"sex": "female",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -2527,7 +2636,8 @@
 		},
 		"party": "spoe",
 		"sex": "female",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -2550,7 +2660,8 @@
 		},
 		"party": "oevp",
 		"sex": "female",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -2573,7 +2684,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -2596,7 +2708,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -2619,7 +2732,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -2642,7 +2756,8 @@
 		},
 		"party": "gruene",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -2665,7 +2780,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -2688,7 +2804,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -2711,7 +2828,8 @@
 		},
 		"party": "oevp",
 		"sex": "female",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -2734,7 +2852,8 @@
 		},
 		"party": "gruene",
 		"sex": "male",
-		"team": "liberty"
+		"team": "liberty",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -2757,7 +2876,8 @@
 		},
 		"party": "gruene",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -2780,7 +2900,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -2803,7 +2924,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -2826,7 +2948,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -2849,7 +2972,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -2872,7 +2996,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -2895,7 +3020,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -2918,7 +3044,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -2941,7 +3068,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -2964,7 +3092,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -2987,7 +3116,8 @@
 		},
 		"party": "fpoe",
 		"sex": "female",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -3010,7 +3140,8 @@
 		},
 		"party": "gruene",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -3033,7 +3164,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -3056,7 +3188,8 @@
 		},
 		"party": "gruene",
 		"sex": "female",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -3079,7 +3212,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -3102,7 +3236,8 @@
 		},
 		"party": "neos",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -3125,7 +3260,8 @@
 		},
 		"party": "frank",
 		"sex": "female",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -3148,7 +3284,8 @@
 		},
 		"party": "neos",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -3171,7 +3308,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -3194,7 +3332,8 @@
 		},
 		"party": "fpoe",
 		"sex": "female",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -3217,7 +3356,8 @@
 		},
 		"party": "oevp",
 		"sex": "female",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -3240,7 +3380,8 @@
 		},
 		"party": "none",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -3263,7 +3404,8 @@
 		},
 		"party": "gruene",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -3286,7 +3428,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -3309,7 +3452,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -3332,7 +3476,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -3355,7 +3500,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -3378,7 +3524,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -3401,7 +3548,8 @@
 		},
 		"party": "gruene",
 		"sex": "female",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -3424,7 +3572,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -3447,7 +3596,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -3470,7 +3620,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -3493,7 +3644,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -3516,7 +3668,8 @@
 		},
 		"party": "fpoe",
 		"sex": "female",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -3539,7 +3692,8 @@
 		},
 		"party": "oevp",
 		"sex": "female",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -3562,7 +3716,8 @@
 		},
 		"party": "frank",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -3585,7 +3740,8 @@
 		},
 		"party": "gruene",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -3608,7 +3764,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -3631,7 +3788,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -3654,7 +3812,8 @@
 		},
 		"party": "neos",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -3677,7 +3836,8 @@
 		},
 		"party": "oevp",
 		"sex": "female",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -3700,7 +3860,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -3723,7 +3884,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -3746,7 +3908,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -3769,7 +3932,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -3792,7 +3956,8 @@
 		},
 		"party": "neos",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -3815,7 +3980,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -3838,7 +4004,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -3861,7 +4028,8 @@
 		},
 		"party": "gruene",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -3884,7 +4052,8 @@
 		},
 		"party": "frank",
 		"sex": "female",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -3907,7 +4076,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -3930,7 +4100,8 @@
 		},
 		"party": "gruene",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -3953,7 +4124,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -3976,7 +4148,8 @@
 		},
 		"party": "gruene",
 		"sex": "female",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -3999,7 +4172,8 @@
 		},
 		"party": "none",
 		"sex": "female",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -4022,7 +4196,8 @@
 		},
 		"party": "oevp",
 		"sex": "female",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -4045,7 +4220,8 @@
 		},
 		"party": "spoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -4068,7 +4244,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -4091,7 +4268,8 @@
 		},
 		"party": "spoe",
 		"sex": "female",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -4114,7 +4292,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -4137,7 +4316,8 @@
 		},
 		"party": "spoe",
 		"sex": "female",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -4160,7 +4340,8 @@
 		},
 		"party": "oevp",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -4183,7 +4364,8 @@
 		},
 		"party": "fpoe",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	},
 	{
 		"contact": {
@@ -4206,6 +4388,7 @@
 		},
 		"party": "gruene",
 		"sex": "male",
-		"team": "unknown"
+		"team": "unknown",
+		"location": ""
 	}
 ]
