@@ -25,11 +25,15 @@ def faq():
 def privacy():
     return render_template("privacy.html")
 
-@app.route("/act/mail/")
+@app.route("/act/mail/", methods=["POST"])
 def mail():
+    idn = request.form.get("id")
+    firstname = request.form.get("firstname")
+    lastname = request.form.get("lastname")
+    email = request.form.get("email")
     abort(404)
 
-@app.route("/act/call/")
+@app.route("/act/call/", methods=["POST"])
 def call():
     abort(404)
 

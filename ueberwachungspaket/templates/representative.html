@@ -25,25 +25,26 @@
 	</section>
 	<section id="email-senden">
 		<h2><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i> E-Mail senden</h2>
-		<form id="mail" autocomplete="off" class="shrunk">
+		<form id="mail" autocomplete="off" class="shrunk" action="{{ url_for('mail') }}" method="post">
 			<div class="row row-space align-left">
 				<div class="column">
 					<label for="mail-lastname">Nachname *</label>
-					<input type="text" name="lastname" id="mail-lastname" required="required">
+					<input type="text" name="lastname" required="required">
 				</div>
 				<div class="column">
 					<label for="mail-firstname">Vorname *</label>
-					<input type="text" name="firstname" id="mail-firstname" required="required">
+					<input type="text" name="firstname" required="required">
 				</div>
 				<div class="column">
 					<label for="mail-email">E-Mail *</label>
-					<input type="email" name="email" id="mail-email"  required="required">
+					<input type="email" name="email" required="required">
 				</div>
 				<div class="column">
 					<label for="debit-newsletter" class="space"><input type="checkbox" name="newsletter" id="debit-newsletter" value="yes">Newsletter abonnieren</label>
 				</div>
 			</div>
 			<p class="small">* Pflichtfeld</p>
+			<input type="hidden" name="id" value="{{ rep.idn }}" />
 			<div class="textarea">{{ lipsum(2) }}</div>
 			<button class="btn btn-default">Senden</button>
 		</form>
