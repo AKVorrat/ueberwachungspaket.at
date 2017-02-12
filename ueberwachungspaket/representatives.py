@@ -52,7 +52,7 @@ class Team():
         return self.name
 
 class Representative():
-    def __init__(self, idn, name, contact, image, party, team, sex, location):
+    def __init__(self, idn, name, contact, image, party, team, sex, state):
         self.idn = idn
         self.name = name
         self.contact = contact
@@ -60,7 +60,16 @@ class Representative():
         self.party = party
         self.team = team
         self.sex = sex
-        self.location = location
+        self.state = state
+
+        if not self.contact.mail:
+            self.contact.mail = party.contact.mail
+        if not self.contact.phone:
+            self.contact.phone = party.contact.phone
+        if not self.contact.facebook:
+            self.contact.facebook = party.contact.facebook
+        if not self.contact.twitter:
+            self.contact.twitter = party.contact.twitter
 
     def __repr__(self):
         return self.name.firstname + " " + self.name.lastname
@@ -110,7 +119,7 @@ def load_representatives(parties, teams):
         image = Image(lrep["image"]["url"], lrep["image"]["copyright"])
         party = parties[lrep["party"]]
         team = teams[lrep["team"]]
-        representative = Representative(lrep["id"], name, contact, image, party, team, lrep["sex"], lrep["location"])
+        representative = Representative(lrep["id"], name, contact, image, party, team, lrep["sex"], lrep["state"])
         representatives.append(representative)
 
     return representatives

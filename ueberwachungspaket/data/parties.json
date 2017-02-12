@@ -7,8 +7,8 @@
 			"mail": "klub@spoe.at",
 			"phone": "+431401103471",
 			"fax": "+431401103455",
-			"facebook": "",
-			"twitter": ""
+			"facebook": "Sozialdemokratie",
+			"twitter": "SPOE_at"
 		}
 	},
 	"oevp": {
@@ -19,8 +19,8 @@
 			"mail": "office@oevpklub.at",
 			"phone": "+431401104408",
 			"fax": "+431401104437",
-			"facebook": "",
-			"twitter": ""
+			"facebook": "Volkspartei",
+			"twitter": "oevp"
 		}
 	},
 	"fpoe": {
@@ -31,8 +31,8 @@
 			"mail": "parlamentsklub@fpoe.at",
 			"phone": "+431401107012",
 			"fax": "+431401107099",
-			"facebook": "",
-			"twitter": ""
+			"facebook": "fpoe",
+			"twitter": "hcstrachefp"
 		}
 	},
 	"gruene": {
@@ -43,8 +43,8 @@
 			"mail": "infopool@gruene.at",
 			"phone": "+431401106698",
 			"fax": "+431401106793",
-			"facebook": "",
-			"twitter": ""
+			"facebook": "diegruenen",
+			"twitter": "Gruene_Austria"
 		}
 	},
 	"neos": {
@@ -55,8 +55,8 @@
 			"mail": "parlamentsklub@neos.eu",
 			"phone": "+431401109000",
 			"fax": "+431401109009",
-			"facebook": "",
-			"twitter": ""
+			"facebook": "NeosDasNeueOesterreich",
+			"twitter": "neos_eu"
 		}
 	},
 	"frank": {
@@ -67,8 +67,8 @@
 			"mail": "parlamentsklub@teamstronach.at",
 			"phone": "+431401108000",
 			"fax": "+431401108008",
-			"facebook": "",
-			"twitter": ""
+			"facebook": "TeamStronach",
+			"twitter": "TeamStronach_at"
 		}
 	},
 	"none": {
