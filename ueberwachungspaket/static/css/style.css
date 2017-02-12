@@ -367,6 +367,11 @@ abbr {
 	cursor: help;
 }
 
+strong,
+strong > a {
+	color: #c80000;
+}
+
 
 
 
