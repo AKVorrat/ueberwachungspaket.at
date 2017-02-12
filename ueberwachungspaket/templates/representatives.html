@@ -10,32 +10,52 @@
 		<div id="filter" class="column">
 			<form id="parties" class="btn-group row">
 				<input id="spoe" type="checkbox">
-				<label for="spoe" id="spoe-label">SPÖ</label>
+				<label for="spoe">SPÖ</label>
 				<input id="oevp" type="checkbox">
-				<label for="oevp" id="oevp-label">ÖVP</label>
+				<label for="oevp">ÖVP</label>
 				<input id="fpoe" type="checkbox">
-				<label for="fpoe" id="fpoe-label">FPÖ</label>
+				<label for="fpoe">FPÖ</label>
 				<input id="gruene" type="checkbox">
-				<label for="gruene" id="gruene-label">GRÜNE</label>
+				<label for="gruene">GRÜNE</label>
 				<input id="neos" type="checkbox">
-				<label for="neos" id="neos-label">NEOS</label>
+				<label for="neos">NEOS</label>
 				<input id="frank" type="checkbox">
-				<label for="frank" id="frank-label">FRANK</label>
+				<label for="frank">FRANK</label>
 				<input id="none" type="checkbox">
-				<label for="none" id="none-label">parteilos</label>
+				<label for="none">parteilos</label>
 			</form>
 			<form id="teams" class="btn-group row">
 				<input id="liberty" type="checkbox">
-				<label for="liberty" id="liberty-label">Team Grundrechte</label>
+				<label for="liberty">Team Grundrechte</label>
 				<input id="spy" type="checkbox">
-				<label for="spy" id="spy-label">Team Überwachung</label>
+				<label for="spy">Team Überwachung</label>
 				<input id="unknown" type="checkbox">
-				<label for="unknown" id="unknown-label">Unbekannt</label>
+				<label for="unknown">Unbekannt</label>
+			</form>
+			<form id="locations" class="btn-group row">
+				<input id="location-b" type="checkbox">
+				<label for="location-b">Bgld.</label>
+				<input id="location-k" type="checkbox">
+				<label for="location-k">Ktn.</label>
+				<input id="location-n" type="checkbox">
+				<label for="location-n">NÖ</label>
+				<input id="location-o" type="checkbox">
+				<label for="location-o">OÖ</label>
+				<input id="location-s" type="checkbox">
+				<label for="location-s">Sbg.</label>
+				<input id="location-st" type="checkbox">
+				<label for="location-st">Stmk.</label>
+				<input id="location-k" type="checkbox">
+				<label for="location-t">T</label>
+				<input id="location-k" type="checkbox">
+				<label for="location-v">Vbg.</label>
+				<input id="location-k" type="checkbox">
+				<label for="location-w">W</label>
 			</form>
 		</div>
 		<div id="representatives" class="row">
 			{% for rep in reps %}
-			<a class="representative" href="{{ url_for('representative', prettyname=rep.name.prettyname) }}" data-party="{{ rep.party.prettyname }}" data-team="{{ rep.team.prettyname }}">
+			<a class="representative" href="{{ url_for('representative', prettyname=rep.name.prettyname) }}" data-party="{{ rep.party.prettyname }}" data-team="{{ rep.team.prettyname }}" data-location="{{ rep.location }}">
 				<div class="column">
 					<div class="name">{{ rep.name.lastname }}</div>
 					<div class="party">{{ rep.party.shortname }}</div>
