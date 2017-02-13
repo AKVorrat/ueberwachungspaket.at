@@ -55,7 +55,7 @@
 		</div>
 		<div id="representatives" class="row">
 			{% for rep in reps %}
-			<a class="representative" href="{{ url_for('representative', prettyname=rep.name.prettyname) }}" data-party="{{ rep.party.prettyname }}" data-team="{{ rep.team.prettyname }}" data-state="{{ rep.state }}">
+			<a class="representative" href="{{ url_for('representative', prettyname=rep.name.prettyname) }}" data-firstname="{{ rep.name.firstname }}" data-lastname="{{ rep.name.lastname }}" data-party="{{ rep.party.prettyname }}" data-team="{{ rep.team.prettyname }}" data-state="{{ rep.state }}">
 				<div class="column">
 					<div class="name">{{ rep.name.lastname }}</div>
 					<div class="party">{{ rep.party.shortname }}</div>
