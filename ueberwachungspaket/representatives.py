@@ -6,11 +6,19 @@ class Representatives():
         self.teams = load_teams()
         self.representatives = load_representatives(self.parties, self.teams)
 
-    def get_representative(self, prettyname):
-        for r in self.representatives:
-            if r.name.prettyname == prettyname:
-                return r
-        return None
+    def get_representative_by_idn(self, idn):
+        try:
+            rep = [rep for rep in self.representatives if rep.idn == idn][0]
+        except IndexError:
+            rep = None
+        return rep
+
+    def get_representative_by_name(self, prettyname):
+        try:
+            rep = [rep for rep in self.representatives if rep.name.prettyname == prettyname][0]
+        except IndexError:
+            rep = None
+        return rep
     
     def get_party(self, shortname):
         return self.parties[shortname]

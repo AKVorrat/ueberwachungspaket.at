@@ -1,4 +1,4 @@
-from flask import render_template, abort
+from flask import render_template, abort, url_for
 import twilio.twiml
 from . import app, reps
 
@@ -12,7 +12,7 @@ def representatives():
 
 @app.route("/a/<prettyname>/")
 def representative(prettyname):
-    rep = reps.get_representative(prettyname)
+    rep = reps.get_representative_by_name(prettyname)
     if rep != None:
         return render_template("representative.html", rep=rep)
     else:
@@ -34,10 +34,56 @@ def mail():
     email = request.form.get("email")
     abort(404)
 
+def gather_representative(resp):
+    with resp.gather(numDigits=5, action=url_for("handle_representative"), method="POST") as g:
+        resp.say("Please provide your representatives code to be redirected.")
+        resp.say("The code is located at the bottom of your representative's page and is five digits long.")
+
+@app.route("/act/handle-representative/", methods=["POST"])
+def handle_representative():
+    digits_pressed = request.values.get("Digits", None)
+    rep = reps.get_representative_by_idn(digits_pressed)
+    resp = twilio.twiml.Response()
+    
+    if rep is not None:
+        resp.say("You will now be redirected to " + rep + ".")
+        # resp.dial()
+    else:
+        resp.say("The ID you entered does not exist.")
+        resp = gather_representative(resp)
+
+    return str(resp)
+
+def gather_menu(resp):
+    with resp.gather(numDigits=1, action=url_for("handle_menu"), method="POST") as g:
+        resp.say("To talk to a representative enter 1.")
+        resp.say("To subscribe for a recurring call reminder enter 2.")
+        resp.say("To unsubscribe your current recurring call reminder enter 3.")
+
+@app.route("/act/handle-menu/", methods=["POST"])
+def handle_menu():
+    digits_pressed = request.values.get("Digits", None)
+    resp = twilio.twiml.Response()
+
+    if digits_pressed == "1":
+        resp = gather_representative(resp)
+    elif digits_pressed == "2":
+        resp.say("This feature will be available soon.")
+    elif digits_pressed == "3":
+        resp.say("This feature will be available soon.")
+    else:
+        resp.say("You did not enter a valid option.")
+        gather_menu(resp)
+
+    return str(resp)
+
 @app.route("/act/call/", methods=["GET", "POST"])
 def call():
     resp = twilio.twiml.Response()
-    resp.say("Hello. This is a test. Goodbye!")
+
+    resp.say("Welcome to 'Contact Your Representatives'!")
+    resp = gather_menu(resp)
+
     return str(resp)
 
 @app.errorhandler(404)
