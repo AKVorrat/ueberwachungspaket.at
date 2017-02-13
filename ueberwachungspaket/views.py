@@ -34,13 +34,22 @@ def mail():
     email = request.form.get("email")
     abort(404)
 
+@app.route("/act/call/", methods=["GET", "POST"])
+def call():
+    resp = twilio.twiml.Response()
+
+    resp.say("Welcome to 'Contact Your Representatives'!")
+    resp.redirect(url_for("gather_menu"), method="POST")
+
+    return str(resp)
+
 @app.route("/act/gather-representative/", methods=["POST"])
 def gather_representative(resp):
     resp = twilio.twiml.Response()
 
     with resp.gather(numDigits=5, action=url_for("handle_representative"), method="POST") as g:
-        resp.say("Please provide your representatives code to be redirected.")
-        resp.say("The code is located at the bottom of your representative's page and is five digits long.")
+        g.say("Please provide your representatives code to be redirected.")
+        g.say("The code is located at the bottom of your representative's page and is five digits long.")
 
     return str(resp)
 
@@ -64,9 +73,9 @@ def gather_menu():
     resp = twilio.twiml.Response()
 
     with resp.gather(numDigits=1, action=url_for("handle_menu"), method="POST") as g:
-        resp.say("To talk to a representative enter 1.")
-        resp.say("To subscribe for a recurring call reminder enter 2.")
-        resp.say("To unsubscribe your current recurring call reminder enter 3.")
+        g.say("To talk to a representative enter 1.")
+        g.say("To subscribe for a recurring call reminder enter 2.")
+        g.say("To unsubscribe your current recurring call reminder enter 3.")
 
     return str(resp)
 
@@ -84,15 +93,6 @@ def handle_menu():
     else:
         resp.say("You did not enter a valid option.")
         resp.redirect(url_for("gather_menu"), method="POST")
-
-    return str(resp)
-
-@app.route("/act/call/", methods=["GET", "POST"])
-def call():
-    resp = twilio.twiml.Response()
-
-    resp.say("Welcome to 'Contact Your Representatives'!")
-    resp.redirect(url_for("gather_menu"), method="POST")
 
     return str(resp)
 
