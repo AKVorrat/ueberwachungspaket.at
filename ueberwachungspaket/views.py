@@ -44,7 +44,7 @@ def call():
     return str(resp)
 
 @app.route("/act/gather-representative/", methods=["POST"])
-def gather_representative(resp):
+def gather_representative():
     resp = twilio.twiml.Response()
 
     with resp.gather(numDigits=5, action=url_for("handle_representative"), method="POST") as g:
