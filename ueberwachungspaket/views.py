@@ -1,4 +1,4 @@
-from flask import render_template, abort, url_for
+from flask import render_template, abort, request, url_for
 import twilio.twiml
 from . import app, reps
 
@@ -81,7 +81,7 @@ def gather_menu():
 
 @app.route("/act/handle-menu/", methods=["POST"])
 def handle_menu():
-    digits_pressed = request.values.get("Digits", None)
+    digits_pressed = request.form.get("Digits", None)
     resp = twilio.twiml.Response()
 
     if digits_pressed == "1":
