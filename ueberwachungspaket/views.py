@@ -60,7 +60,7 @@ def handle_representative():
     resp = twilio.twiml.Response()
     
     if rep is not None:
-        resp.say("You will now be redirected to " + rep + ".")
+        resp.say("You will now be redirected to " + str(rep) + ".")
         # resp.dial()
     else:
         resp.say("The ID you entered does not exist.")
