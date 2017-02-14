@@ -1,6 +1,9 @@
-from flask import render_template, abort, request, url_for
-import twilio.twiml
-from . import app, reps
+from flask import render_template, abort, request, url_for, jsonify
+from random import choice
+from twilio.twiml import Response
+from sqlalchemy.exc import IntegrityError
+from database.models import Reminder
+from . import app, reps, db_session
 
 @app.route("/")
 def root():
@@ -26,73 +29,170 @@ def faq():
 def privacy():
     return render_template("privacy.html")
 
+def sendmail(id, firstname, lastname, email):
+    return False
+    
 @app.route("/act/mail/", methods=["POST"])
 def mail():
-    idn = request.form.get("id")
+    id = request.form.get("id")
     firstname = request.form.get("firstname")
     lastname = request.form.get("lastname")
     email = request.form.get("email")
-    abort(404)
+    newsletter = True if request.form.get("newsletter") == "yes" else False
+
+    if not all([id, firstname, lastname, email]):
+        app.logger.info("Sendmail: passed invalid arguments.")
+        abort(400) # bad request
+
+    success = sendmail(id, firstname, lastname, email, newsletter)
+
+    rep = reps.get_representative_by_id(id)
+    return render_template("representative.html", rep=rep, success=success)
 
 @app.route("/act/call/", methods=["GET", "POST"])
 def call():
-    resp = twilio.twiml.Response()
+    resp = Response()
 
-    resp.say("Welcome to 'Contact Your Representatives'!")
+    resp.say("Willkommen zu 'Kontaktiere Deine Abgeordneten'!", voice="alice", language="de-DE")
     resp.redirect(url_for("gather_menu"), method="POST")
-
-    return str(resp)
-
-@app.route("/act/gather-representative/", methods=["POST"])
-def gather_representative():
-    resp = twilio.twiml.Response()
-
-    with resp.gather(numDigits=5, action=url_for("handle_representative"), method="POST") as g:
-        g.say("Please provide your representatives code to be redirected.")
-        g.say("The code is located at the bottom of your representative's page and is five digits long.")
-
-    return str(resp)
-
-@app.route("/act/handle-representative/", methods=["POST"])
-def handle_representative():
-    digits_pressed = request.values.get("Digits", None)
-    rep = reps.get_representative_by_idn(digits_pressed)
-    resp = twilio.twiml.Response()
-    
-    if rep is not None:
-        resp.say("You will now be redirected to " + str(rep) + ".")
-        # resp.dial()
-    else:
-        resp.say("The ID you entered does not exist.")
-        resp.redirect(url_for("gather_representative"), method="POST")
 
     return str(resp)
 
 @app.route("/act/gather-menu/", methods=["POST"])
 def gather_menu():
-    resp = twilio.twiml.Response()
+    resp = Response()
 
     with resp.gather(numDigits=1, action=url_for("handle_menu"), method="POST") as g:
-        g.say("To talk to a representative enter 1.")
-        g.say("To subscribe for a recurring call reminder enter 2.")
-        g.say("To unsubscribe your current recurring call reminder enter 3.")
+        g.say("Um mit einem Abgeordneten zu sprechen, wählen Sie Eins.", voice="alice", language="de-DE")
+        g.say("Um sich für eine wiederholende Anruferinnerung anzumelden, wählen Sie Zwei.", voice="alice", language="de-DE")
+        g.say("Um sich von der wiederholenden Anruferinnerung abzumendel, wählen Sie Drei.", voice="alice", language="de-DE")
+
+    resp.redirect(url_for("gather_menu"), method="POST")
 
     return str(resp)
 
 @app.route("/act/handle-menu/", methods=["POST"])
 def handle_menu():
     digits_pressed = request.form.get("Digits", None)
-    resp = twilio.twiml.Response()
+    resp = Response()
 
     if digits_pressed == "1":
         resp.redirect(url_for("gather_representative"), method="POST")
     elif digits_pressed == "2":
-        resp.say("This feature will be available soon.")
+        resp.redirect(url_for("gather_reminder_time"), method="POST")
     elif digits_pressed == "3":
-        resp.say("This feature will be available soon.")
+        resp.redirect(url_for("handle_reminder_unsubscribe"), method="POST")
     else:
-        resp.say("You did not enter a valid option.")
+        resp.say("Sie haben keine gültige Option gewählt.", voice="alice", language="de-DE")
         resp.redirect(url_for("gather_menu"), method="POST")
+
+    return str(resp)
+
+@app.route("/act/gather-representative/", methods=["POST"])
+def gather_representative():
+    resp = Response()
+
+    with resp.gather(numDigits=5, action=url_for("handle_representative"), method="POST") as g:
+        g.say("Bitte geben Sie den Code ein, der Sie zu ihrem Abgeorneten weiterleitet.", voice="alice", language="de-DE")
+        g.say("Der Code befindet sich am Ende der Seite ihres Abgeordneten und ist fünf Stellen lang.", voice="alice", language="de-DE")
+
+    return str(resp)
+
+@app.route("/act/handle-representative/", methods=["POST"])
+def handle_representative():
+    digits_pressed = request.values.get("Digits", None)
+    rep = reps.get_representative_by_id(digits_pressed)
+    resp = Response()
+    
+    if rep is not None:
+        resp.say("Sie werden jetzt zu " + str(rep) + " weitergeleitet.", voice="alice", language="de-DE")
+        # resp.dial()
+    else:
+        resp.say("Sie haben keinen gültigen Code gewählt.", voice="alice", language="de-DE")
+        resp.redirect(url_for("gather_representative"), method="POST")
+
+    return str(resp)
+
+@app.route("/act/gather-reminder-time/", methods=["POST"])
+def gather_reminder_time():
+    resp = Response()
+    
+    with resp.gather(numDigits=2, action=url_for("handle_reminder_time"), method="POST") as g:
+        g.say("Um welche Uhrzeit möchten sie täglich mit einem zufälligen Abgeordneten verbunden werden?", voice="alice", language="de-DE")
+        g.say("Bitte verwenden Sie das Vierundzwanzig-Stunden-Format.", voice="alice", language="de-DE")
+
+    resp.redirect(url_for("gather_reminder_time"), method="POST")
+
+    return str(resp)
+
+@app.route("/act/handle-reminder-time/", methods=["POST"])
+def handle_reminder_time():
+    digits_pressed = request.values.get("Digits", None)
+    from_number = request.values.get("From", None)
+    resp = Response()
+
+    if not all([digits_pressed, from_number]):
+        resp.say("Es ist ein Fehler aufgetreten.", voice="alice", language="de-DE")
+        resp.say("Bitte kontaktieren Sie uns, um den Service wieder zum Laufen zu bringen.", voice="alice", language="de-DE")
+    if len(digits_pressed) == 2 and int(digits_pressed) >= 9 and int(digits_pressed) <= 16:
+        reminder = Reminder(from_number, digits_pressed)
+
+        try:
+            db_session.add(reminder)
+            db_session.commit()
+            resp.say("Sie wurden in unsere Liste aufgenommen.", voice="alice", language="de-DE")
+            resp.say("Um sich wieder abzumelden, rufen Sie erneut an und wählen die entsprechende Option im Menü.", voice="alice", language="de-DE")
+        except IntegrityError as e:
+            db_session.rollback()
+            db_session.query(Reminder).filter_by(number = from_number).delete()
+            db_session.add(reminder)
+            db_session.commit()
+            resp.say("Ihrere Errinerungszeit wurde aktualisiert.")
+    else:
+        resp.say("Die Zeit, die Sie eingegeben haben, ist ungültig.", voice="alice", language="de-DE")
+        resp.say("Bitte beachten Sie, dass die Büros der Abgeordneten nur von neun bis sechzehn Uhr besetzt sind.", voice="alice", language="de-DE")
+        resp.redirect(url_for("gather_reminder_time"), method="POST")
+
+    return str(resp)
+
+@app.route("/act/handle-reminder-unsubscribe/", methods=["POST"])
+def handle_reminder_unsubscribe():
+    from_number = request.values.get("From", None)
+    resp = Response()
+    
+    db_session.query(Reminder).filter_by(number = from_number).delete()
+    db_session.commit()
+    resp.say("Sie werden ab jetzt nicht mehr regelmäßig mit Abgeordneten verbunden.", voice="alice", language="de-DE")
+
+    return str(resp)
+
+@app.route("/act/gather-reminder-call/", methods=["POST"])
+def gather_reminder_call():
+    resp = Response()
+
+    with resp.gather(numDigits=1, action=url_for("handle_reminder_call"), method="POST") as g:
+        g.say("Hallo, ich wollte Sie daran erinnern, einen Abgeordneten zu kontaktieren.", voice="alice", language="de-DE")
+        g.say("Um jetzt mit einem Abgeordneten zu sprechen, wählen Sie Eins.", voice="alice", language="de-DE")
+        g.say("Um in Zukunft nicht mehr erinnert zu werden, wählen Sie Zwei.", voice="alice", language="de-DE")
+
+    resp.redirect(url_for("gather_reminder_call"), method="POST")
+
+    return str(resp)
+
+@app.route("/act/handle-reminder-call", methods=["POST"])
+def handle_reminder_call():
+    digits_pressed = request.values.get("Digits", None)
+    resp = Response()
+
+    if digits_pressed == "1":
+        rep = choice([rep for rep in resp.representatives if rep.team.prettyname == "spy"])
+        resp.say("Sie werden jetzt mit " + rep + " verbunden.", voice="alice", language="de-DE")
+        # resp.dial()
+    elif digits_pressed == "2":
+        resp.redirect(url_for("handle_reminder_unsubscribe"), methods=["POST"])
+    else:
+        resp.say("Sie haben keine gültige Option gewählt.", voice="alice", language="de-DE")
+        resp.redirect(url_for("handle_reminder_call"), methods=["POST"])
 
     return str(resp)
 

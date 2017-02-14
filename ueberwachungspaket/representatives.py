@@ -6,9 +6,9 @@ class Representatives():
         self.teams = load_teams()
         self.representatives = load_representatives(self.parties, self.teams)
 
-    def get_representative_by_idn(self, idn):
+    def get_representative_by_id(self, id):
         try:
-            rep = [rep for rep in self.representatives if rep.idn == idn][0]
+            rep = [rep for rep in self.representatives if rep.id == id][0]
         except IndexError:
             rep = None
         return rep
@@ -60,8 +60,8 @@ class Team():
         return self.name
 
 class Representative():
-    def __init__(self, idn, name, contact, image, party, team, sex, state):
-        self.idn = idn
+    def __init__(self, id, name, contact, image, party, team, sex, state):
+        self.id = id
         self.name = name
         self.contact = contact
         self.image = image

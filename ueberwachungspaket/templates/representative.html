@@ -8,7 +8,7 @@
 	<section class="column">
 		<h1>{{ rep.fullname() }}</h1>
 		<div class="profile {{ rep.team.prettyname }}">
-			<img src="{{ url_for('static', filename='img/representative/' + rep.idn + '.jpg') }}" alt="{{ rep }}" />
+			<img src="{{ url_for('static', filename='img/representative/' + rep.id + '.jpg') }}" alt="{{ rep }}" />
 			<span class="team {{ rep.team.prettyname }}">{{ rep.team }}</span>
 		</div>
 		<div class="row bottom">
@@ -40,11 +40,11 @@
 					<input type="email" name="email" required="required">
 				</div>
 				<div class="column">
-					<label for="debit-newsletter" class="space"><input type="checkbox" name="newsletter" id="debit-newsletter" value="yes">Newsletter abonnieren</label>
+					<label for="debit-newsletter" class="space"><input type="checkbox" name="newsletter" value="yes">Newsletter abonnieren</label>
 				</div>
 			</div>
 			<p class="small">* Pflichtfeld</p>
-			<input type="hidden" name="id" value="{{ rep.idn }}" />
+			<input type="hidden" name="id" value="{{ rep.id }}" />
 			<div class="textarea">{{ lipsum(2) }}</div>
 			<button class="btn btn-default">Senden</button>
 		</form>
@@ -55,12 +55,12 @@
 			<div>
 				<i class="fa fa-mobile fa-5x" aria-hidden="true"></i>
 				<h3>Wählen</h3>
-				<p>Unter <strong><a href="tel:{{ config['TWILIO_NUMBERS'][0] }}">{{ config['TWILIO_NUMBERS'][0] }}</a></strong> erreichst du unser Kampagnentelefon.</p>
+				<p>Unter <strong><a href="tel:{{ config['TWILIO_NUMBERS'] | random }}">{{ config['TWILIO_NUMBERS'] | random }}</a></strong> erreichst du unser Kampagnentelefon.</p>
 			</div>
 			<div>
 				<i class="fa fa-reply-all fa-5x" aria-hidden="true"></i>
 				<h3>Verbinden</h3>
-				<p>Der Code <strong>{{ rep.idn }}</strong> verbindet dich automatisch mit {{ rep }}.</p>
+				<p>Der Code <strong>{{ rep.id }}</strong> verbindet dich automatisch mit {{ rep }}.</p>
 			</div>
 			<div>
 				<i class="fa fa-comments fa-5x" aria-hidden="true"></i>

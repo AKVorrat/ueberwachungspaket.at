@@ -1,3 +1,3 @@
 env
 __pycache__
-config_sensitive.py
+config/
