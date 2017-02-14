@@ -7,10 +7,10 @@ app = Flask(__name__)
 app.config.from_pyfile("config.py")
 app.config["TWILIO_NUMBERS"] = TWILIO_NUMBERS
 reps = Representatives()
+init_db()
 
 if __name__ == "__main__":
     app.run()
-    initdb()
 
 @app.teardown_appcontext
 def shutdown_session(exception=None):
