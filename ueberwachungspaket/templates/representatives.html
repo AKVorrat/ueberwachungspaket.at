@@ -61,7 +61,7 @@
 					<div class="party">{{ rep.party.shortname }}</div>
 				</div>
 				<div class="overlay {{ rep.team.prettyname }}"></div>
-				<img src="{{ url_for('static', filename='img/representative-small/' + rep.idn + '.jpg') }}" alt="" />
+				<img src="{{ url_for('static', filename='img/representative-small/' + rep.id + '.jpg') }}" alt="" />
 			</a>
 			{% endfor %}
 		</div>

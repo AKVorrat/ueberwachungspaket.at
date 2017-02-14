@@ -1,6 +1,12 @@
 # About
 Dieses Repository beinhaltet den Code der Kampagne "Kontaktiere Deine Abgeordneten" auf [überwachungspaket.at](https://überwachungspaket.at/).
 
+# Dependencies
+- Flask
+- twilio
+- SQLAlchemy
+- PyMySQL
+
 # Includes
 - jQuery Core (C) jQuery Foundation, Inc. [MIT]
 - Normalize.css (C) Nicolas Gallagher, Jonathan Neal [MIT]
