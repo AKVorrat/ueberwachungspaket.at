@@ -4,6 +4,7 @@ from twilio.twiml import Response
 from sqlalchemy.exc import IntegrityError
 from database.models import Reminder
 from . import app, reps, db_session
+from .decorators import validate_twilio_request
 
 @app.route("/")
 def root():
@@ -49,7 +50,8 @@ def mail():
     rep = reps.get_representative_by_id(id)
     return render_template("representative.html", rep=rep, success=success)
 
-@app.route("/act/call/", methods=["GET", "POST"])
+@app.route("/act/call/", methods=["POST"])
+@validate_twilio_request
 def call():
     resp = Response()
 
@@ -59,6 +61,7 @@ def call():
     return str(resp)
 
 @app.route("/act/gather-menu/", methods=["POST"])
+@validate_twilio_request
 def gather_menu():
     resp = Response()
 
@@ -72,6 +75,7 @@ def gather_menu():
     return str(resp)
 
 @app.route("/act/handle-menu/", methods=["POST"])
+@validate_twilio_request
 def handle_menu():
     digits_pressed = request.form.get("Digits", None)
     resp = Response()
@@ -89,6 +93,7 @@ def handle_menu():
     return str(resp)
 
 @app.route("/act/gather-representative/", methods=["POST"])
+@validate_twilio_request
 def gather_representative():
     resp = Response()
 
@@ -96,9 +101,12 @@ def gather_representative():
         g.say("Bitte geben Sie den Code ein, der Sie zu ihrem Abgeorneten weiterleitet.", voice="alice", language="de-DE")
         g.say("Der Code befindet sich am Ende der Seite ihres Abgeordneten und ist fünf Stellen lang.", voice="alice", language="de-DE")
 
+    resp.redirect(url_for("gather_representative"), method="POST")
+
     return str(resp)
 
 @app.route("/act/handle-representative/", methods=["POST"])
+@validate_twilio_request
 def handle_representative():
     digits_pressed = request.values.get("Digits", None)
     rep = reps.get_representative_by_id(digits_pressed)
@@ -114,6 +122,7 @@ def handle_representative():
     return str(resp)
 
 @app.route("/act/gather-reminder-time/", methods=["POST"])
+@validate_twilio_request
 def gather_reminder_time():
     resp = Response()
     
@@ -126,6 +135,7 @@ def gather_reminder_time():
     return str(resp)
 
 @app.route("/act/handle-reminder-time/", methods=["POST"])
+@validate_twilio_request
 def handle_reminder_time():
     digits_pressed = request.values.get("Digits", None)
     from_number = request.values.get("From", None)
@@ -156,6 +166,7 @@ def handle_reminder_time():
     return str(resp)
 
 @app.route("/act/handle-reminder-unsubscribe/", methods=["POST"])
+@validate_twilio_request
 def handle_reminder_unsubscribe():
     from_number = request.values.get("From", None)
     resp = Response()
@@ -167,6 +178,7 @@ def handle_reminder_unsubscribe():
     return str(resp)
 
 @app.route("/act/gather-reminder-call/", methods=["POST"])
+@validate_twilio_request
 def gather_reminder_call():
     resp = Response()
 
@@ -180,6 +192,7 @@ def gather_reminder_call():
     return str(resp)
 
 @app.route("/act/handle-reminder-call", methods=["POST"])
+@validate_twilio_request
 def handle_reminder_call():
     digits_pressed = request.values.get("Digits", None)
     resp = Response()
@@ -189,10 +202,10 @@ def handle_reminder_call():
         resp.say("Sie werden jetzt mit " + rep + " verbunden.", voice="alice", language="de-DE")
         # resp.dial()
     elif digits_pressed == "2":
-        resp.redirect(url_for("handle_reminder_unsubscribe"), methods=["POST"])
+        resp.redirect(url_for("handle_reminder_unsubscribe"), method="POST")
     else:
         resp.say("Sie haben keine gültige Option gewählt.", voice="alice", language="de-DE")
-        resp.redirect(url_for("handle_reminder_call"), methods=["POST"])
+        resp.redirect(url_for("handle_reminder_call"), method="POST")
 
     return str(resp)
 
