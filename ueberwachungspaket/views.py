@@ -23,6 +23,14 @@ def representative(prettyname):
     else:
         abort(404)
 
+@app.route("/weitersagen/")
+def share():
+    return render_template("share.html")
+
+@app.route("/themen/")
+def topics():
+    return render_template("topics.html")
+
 @app.route("/faq/")
 def faq():
     return render_template("faq.html")

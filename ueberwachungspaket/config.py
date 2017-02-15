@@ -2,4 +2,4 @@ import os
 
 DEBUG = True
 
-PROJECT_NAME = "Kontaktiere Deine Abgeordneten"
+PROJECT_NAME = "Stoppt das Überwachungspaket!"
