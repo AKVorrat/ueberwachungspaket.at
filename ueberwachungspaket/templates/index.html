@@ -21,26 +21,51 @@
 	</section>
 	<section id="warum-ist-das-schlecht">
 		<h2>Warum ist das schlecht?</h2>
-		<div class="row">
+		<div class="row items3">
+			<div class="column">
+				<div class="center"><i class="fa fa-floppy-o fa-5x" aria-hidden="true"></i></div>
+				<h4><a href="{{ url_for('faq', _anchor='quick-freeze') }}">Quick Freeze</a></h4>
+				<p>Obwohl der EuGH die Vorratsdatenspeicherung zum zweiten mal als rechtswidrig erklärt hat, versucht man sie in Österreich unter einem anderen Namen einzuführen. <a href="{{ url_for('faq', _anchor='quick-freeze') }}">mehr</a></p>
+			</div>
 			<div class="column">
 				<div class="center"><i class="fa fa-video-camera fa-5x" aria-hidden="true"></i></div>
 				<h4><a href="{{ url_for('faq', _anchor='flaechendeckende-videoueberwachung') }}">Flächendeckende Videoüberwachung</a></h4>
-				<p>Betreiber von Überwachungskameras sollen zur Vorratsdatenspeicherung des Videomaterials verpflichtet werden, das auf Anordnung der Staatsanwaltschaft herausgegeben werden muss. Die Regierung will sogar private Unternehmen (im Nahebereich der öffentlichen Hand) in die Vernetzung der Überwachungsmöglichkeiten miteinbeziehen. Falls keine technische Hürde vorliegt, sollen die Aufnahmen in Echtzeit an die Sicherheitsbehörden gestreamt werden. <a href="{{ url_for('faq', _anchor='flaechendeckende-videoueberwachung') }}">mehr</a></p>
+				<p>Betreiber von Überwachungskameras sollen zur Speicherung des Videomaterials verpflichtet werden. <a href="{{ url_for('faq', _anchor='flaechendeckende-videoueberwachung') }}">mehr</a></p>
+			</div>
+			<div class="column">
+				<div class="center"><i class="fa fa-mobile fa-5x" aria-hidden="true"></i></div>
+				<h4><a href="{{ url_for('faq', _anchor='registrierungspflicht-fuer-wertkarten') }}">Registrierungspflicht für Wertkarten</a></h4>
+				<p>Für Prepaid-Wertkarten muss zur Registrierung ein Lichtbildausweis vorgelegt werden. <a href="{{ url_for('faq', _anchor='registrierungspflicht-fuer-wertkarten') }}">mehr</a></p>
 			</div>
 			<div class="column">
 				<div class="center"><i class="fa fa-whatsapp fa-5x" aria-hidden="true"></i></div>
 				<h4><a href="{{ url_for('faq', _anchor='staatliche-spionagesoftware') }}">Staatliche Spionagesoftware (Bundestrojaner)</a></h4>
-				<p>Nachdem das Justizministerium den Plan für den Einsatz staatlicher Spionagesoftware im Vorjahr nach massiver sachlicher Kritik zurückgezogen hat, soll diese Maßnahme nun sogar mit erweitertem Fokus kommen. Das größte Problem dabei: Die Regierung hat damit ein Interesse daran, dass Sicherheitslücken in Computersystemen bestehen bleiben, um den Bundestrojaner einsetzen zu können. Diese Sicherheitslücken können dann auch von Kriminellen ausgenützt werden. Anstatt mehr Sicherheit entsteht so mehr Unsicherheit. <a href="{{ url_for('faq', _anchor='staatliche-spionagesoftware') }}">mehr</a></p>
+				<p>Durch staatliche Schadsoftware soll Ermittlern umfangreicher Zugriff auf Kommunikation via WhatsApp und anderen Messengern gegeben werden. <a href="{{ url_for('faq', _anchor='staatliche-spionagesoftware') }}">mehr</a></p>
 			</div>
 			<div class="column">
-				<div class="center"><i class="fa fa-mobile fa-5x" aria-hidden="true"></i></div>
-				<h4><a href="{{ url_for('faq', _anchor='registrierungspflicht-fuer-prepaid-sim-karten') }}">Registrierungspflicht für Prepaid SIM-Karten</a></h4>
-				<p>Für Prepaid-Wertkarten wird eine Registrierung verlangt. Damit werden 4,5 Millionen Nutzer in Österreich unter Generalverdacht gestellt. Während dadurch ein finanzieller und organisatorischer Mehraufwand entsteht und man Billiganbieter vom Markt drängt, werden Kriminelle auf andere Kommunikationsmittel ausweichen. <a href="{{ url_for('faq', _anchor='registrierungspflich-fuer-prepaid-sim-karten') }}">mehr</a></p>
+				<div class="center"><i class="fa fa-road fa-5x" aria-hidden="true"></i></div>
+				<h4><a href="{{ url_for('faq', _anchor='ueberwachung-im-strassenverkehr') }}">Überwachung im Straßenverkehr</a></h4>
+				<p>Mit einem elektronischen Kennzeichenerfassungssystem sollen die Nummernschilder der sich im Verkehr bewegenden Fahrzeuge automatisch verarbeitet werden können. <a href="{{ url_for('faq', _anchor='ueberwachung-im-strassenverkehr') }}">mehr</a></p>
 			</div>
 			<div class="column">
 				<div class="center"><i class="fa fa-car fa-5x" aria-hidden="true"></i></div>
-				<h4><a href="{{ url_for('faq', _anchor='ueberwachung-im-strassenverkehr') }}">Überwachung im Straßenverkehr</a></h4>
-				<p>Der vorgelegte Pakt sieht ein elektronisches Kennzeichenerfassungssystem vor, mit dem die Nummernschilder der sich im Verkehr bewegenden Fahrzeuge automatisch verarbeitet werden können. Zudem will die Regierung bei konkretem Tatverdacht auch Gespräche in Autos abhören können (Lauschangriff). <a href="{{ url_for('faq', _anchor='ueberwachung-im-strassenverkehr') }}">mehr</a></p>
+				<h4><a href="{{ url_for('faq', _anchor='lauschangriff-im-auto') }}">Lauschangriff im Auto</a></h4>
+				<p>Die Möglichkeit eines Lauschangriffs soll um Innenräume von Autos ergänzt werden. <a href="{{ url_for('faq', _anchor='lauschangriff-im-auto') }}">mehr</a></p>
+			</div>
+			<div class="column">
+				<div class="center"><i class="fa fa-commenting-o fa-5x" aria-hidden="true"></i></div>
+				<h4><a href="{{ url_for('faq', _anchor='einschraenkung-der-meinungsfreiheit') }}">Einschränkung der Meinungsfreiheit</a></h4>
+				<p>Duis per dolor diam vulputate risus maecenas porta, tempor rhoncus et ligula sapien orci, curae tincidunt phasellus orci ipsum sociosqu, conubia ultrices donec. <a href="{{ url_for('faq', _anchor='einschraenkung-der-meinungsfreiheit') }}">mehr</a></p>
+			</div>
+			<div class="column">
+				<div class="center"><i class="fa fa-ban fa-5x" aria-hidden="true"></i></div>
+				<h4><a href="{{ url_for('faq', _anchor='fussfessel') }}">Fußfessel für nicht Verurteilte</a></h4>
+				<p>Duis per dolor diam vulputate risus maecenas porta, tempor rhoncus et ligula sapien orci, curae tincidunt phasellus orci ipsum sociosqu, conubia ultrices donec. <a href="{{ url_for('faq', _anchor='fussfessel') }}">mehr</a></p>
+			</div>
+			<div class="column">
+				<div class="center"><i class="fa fa-shield fa-5x" aria-hidden="true"></i></div>
+				<h4><a href="{{ url_for('faq', _anchor='cybersicherheitsgesetz') }}">Cybersicherheitsgesetz</a></h4>
+				<p>Duis per dolor diam vulputate risus maecenas porta, tempor rhoncus et ligula sapien orci, curae tincidunt phasellus orci ipsum sociosqu, conubia ultrices donec. <a href="{{ url_for('faq', _anchor='cybersicherheitsgesetz') }}">mehr</a></p>
 			</div>
 		</div>
 	</section>

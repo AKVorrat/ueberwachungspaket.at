@@ -2,6 +2,7 @@ from flask import render_template, abort, request, url_for, jsonify
 from random import choice
 from twilio.twiml import Response
 from sqlalchemy.exc import IntegrityError
+from config import *
 from database.models import Reminder
 from . import app, reps, db_session
 from .decorators import validate_twilio_request
@@ -17,8 +18,8 @@ def representatives():
 @app.route("/a/<prettyname>/")
 def representative(prettyname):
     rep = reps.get_representative_by_name(prettyname)
-    if rep != None:
-        return render_template("representative.html", rep=rep)
+    if rep:
+        return render_template("representative.html", rep=rep, twilio_number=choice(TWILIO_NUMBERS))
     else:
         abort(404)
 
@@ -191,7 +192,7 @@ def gather_reminder_call():
 
     return str(resp)
 
-@app.route("/act/handle-reminder-call", methods=["POST"])
+@app.route("/act/handle-reminder-call/", methods=["POST"])
 @validate_twilio_request
 def handle_reminder_call():
     digits_pressed = request.values.get("Digits", None)
