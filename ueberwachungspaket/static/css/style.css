@@ -200,11 +200,6 @@ header h1 {
 	margin-bottom: 0;
 }
 
-header h2 {
-	opacity: 0.6;
-	filter: Alpha(opacity=60);
-}
-
 footer {
 	padding: 0.5rem;
 	font-size: 85%;
@@ -341,7 +336,16 @@ section:nth-child(odd) {
 	background-color: #EEE;
 }
 
-section + section::before {
+section.dark {
+	padding: 3em;
+	background-color: #00466e;
+}
+
+section.dark .btn {
+	padding: 2em;
+}
+
+section + section:not(.dark)::before {
 	position: absolute;
 	display: block;
 	top: 0px;
@@ -356,11 +360,11 @@ section + section::before {
 	border-right: 90px solid transparent;
 }
 
-section:nth-child(even) + section::before {
+section:nth-child(even):not(.dark) + section::before {
 	border-top: 40px solid #FFF;
 }
 
-section:nth-child(odd) + section::before {
+section:nth-child(odd):not(.dark) + section::before {
 	border-top: 40px solid #EEE;
 }
 
@@ -742,17 +746,17 @@ div.center > p,
 	font-size: 80%;
 }
 
-#warum-ist-das-schlecht .fa,
+#topics .fa,
 #call .fa {
 	color: #00466e;
 }
 
-#warum-ist-das-schlecht h4,
-#warum-ist-das-schlecht p {
+#topics h4,
+#topics p {
 	text-align: center;
 }
 
-#warum-ist-das-schlecht .row {
+#topics .row {
 	-webkit-align-items: left;
 	-ms-flex-align: left;
 	align-items: left;

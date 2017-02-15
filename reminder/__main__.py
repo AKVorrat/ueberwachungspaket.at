@@ -22,7 +22,7 @@ for reminder in reminders:
         client.calls.create(to = reminder.number,
                             from_ = choice(TWILIO_NUMBERS),
                             url = "https://beta.xn--berwachungspaket-izb.at/act/gather-reminder-call/")
-    except TwilioRestException as e:
+    except TwilioRestException:
         pass
 
     sleep(3)
