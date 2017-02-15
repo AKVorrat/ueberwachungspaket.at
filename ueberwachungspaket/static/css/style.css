@@ -792,6 +792,18 @@ div.center > p,
 
 /* REPRESENTATIVES */
 
+.glyph.unknown {
+	color: #2E2E50;
+}
+
+.glyph.liberty {
+	color: #2CBC9B;
+}
+
+.glyph.spy {
+	color: #E74B4C;
+}
+
 #representatives {
 	color: #fff;
 }

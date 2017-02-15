@@ -1,14 +1,14 @@
 {% extends "layout.html" %}
 
 {% block title %}
-	<title>Stoppt das Überwachungspaket! | {{ config['PROJECT_NAME'] }}</title>
+	<title>Sicherheit statt Überwachung! | {{ config['PROJECT_NAME'] }}</title>
 {% endblock title%}
 
 {% block header %}
 	<header class="center">
 		<div>
 			<h1>{{ config['PROJECT_NAME'] }}</h1>
-			<h2>Stoppt das Überwachungspaket!</h2>
+			<h2>Sicherheit statt Überwachung!</h2>
 		</div>
 	</header>
 {% endblock %}
@@ -18,6 +18,7 @@
 		<h2>Was ist das Überwachungspaket?</h2>
 		<p>Ende Jänner 2017 hat die Bundesregierung ihr Arbeitsprogramm für den Rest der Legislaturperiode vorgestellt. Darin sind Vorschläge enthalten, die auf eine komplette Überwachung des öffentlichen Raumes abzielen - und das ohne Beleg, dass diese unsere Sicherheit tatsächlich verbessern würden. Die Verschärfung der Gesetze soll sogar so weit gehen, dass Maßnahmen, die bislang nur für verurteilte Straftäter vorgesehen waren, auf unbescholtene Menschen angewandt werden (etwa die Fußfessel). Auch die Vorratsdatenspeicherung, die bereits mehrmals von Höchstgerichten für unvereinbar mit unseren Grundrechten erklärt wurde, soll wieder eingeführt werden.</p>
 		<p>Mit derart tiefen Eingriffen in die Privatsphäre aller Menschen wird die technische und juristische Basis für einen Repressionsapparat geschaffen. <em>Unsere Freiheit und unsere Demokratie sind in Gefahr!</em></p>
+		<a href="{{ url_for('representatives') }}" class="btn btn-default">Jetzt handeln</a>
 	</section>
 	<section id="warum-ist-das-schlecht">
 		<h2>Warum ist das schlecht?</h2>
