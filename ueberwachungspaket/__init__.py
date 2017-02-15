@@ -5,7 +5,6 @@ from .representatives import Representatives
 
 app = Flask(__name__)
 app.config.from_pyfile("config.py")
-app.config["TWILIO_NUMBERS"] = TWILIO_NUMBERS
 reps = Representatives()
 init_db()
 
