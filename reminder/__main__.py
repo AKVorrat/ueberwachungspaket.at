@@ -1,5 +1,5 @@
 from random import choice
-from time import strftime, sleep
+from time import localtime, sleep
 from twilio import TwilioRestException
 from twilio.rest import TwilioRestClient
 from sqlalchemy.orm.exc import NoResultFound
@@ -10,7 +10,7 @@ from database.models import Reminder
 client = TwilioRestClient(account = TWILIO_SID,
                           token = TWILIO_SECRET,
                           request_account = TWILIO_ACCOUNT)
-hour = strftime("%H")
+hour = localtime().tm_hour
 
 try:
     reminders = db_session.query(Reminder).filter_by(time = hour)

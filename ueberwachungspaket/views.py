@@ -154,7 +154,7 @@ def handle_reminder_time():
         resp.say("Es ist ein Fehler aufgetreten.", voice="alice", language="de-DE")
         resp.say("Bitte kontaktieren Sie uns, um den Service wieder zum Laufen zu bringen.", voice="alice", language="de-DE")
     if len(digits_pressed) == 2 and int(digits_pressed) >= 9 and int(digits_pressed) <= 16:
-        reminder = Reminder(from_number, digits_pressed)
+        reminder = Reminder(from_number, int(digits_pressed))
 
         try:
             db_session.add(reminder)
@@ -166,7 +166,7 @@ def handle_reminder_time():
             db_session.query(Reminder).filter_by(number = from_number).delete()
             db_session.add(reminder)
             db_session.commit()
-            resp.say("Ihrere Errinerungszeit wurde aktualisiert.")
+            resp.say("Ihre Erinnerungszeit wurde aktualisiert.")
     else:
         resp.say("Die Zeit, die Sie eingegeben haben, ist ungültig.", voice="alice", language="de-DE")
         resp.say("Bitte beachten Sie, dass die Büros der Abgeordneten nur von neun bis sechzehn Uhr besetzt sind.", voice="alice", language="de-DE")
