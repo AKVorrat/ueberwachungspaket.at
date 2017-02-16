@@ -87,7 +87,6 @@ def gather_menu():
 @validate_twilio_request
 def handle_menu():
     digits_pressed = request.form.get("Digits", None)
-    from_number = request.values.get("From", None)
     resp = Response()
 
     if digits_pressed == "1":
@@ -95,7 +94,7 @@ def handle_menu():
     elif digits_pressed == "2":
         resp.redirect(url_for("gather_reminder_time"), method="POST")
     elif digits_pressed == "3":
-        resp.redirect(url_for("handle_reminder_unsubscribe", number=from_number), method="GET")
+        resp.redirect(url_for("handle_reminder_unsubscribe"), method="GET")
     else:
         resp.say("Sie haben keine gültige Option gewählt.", voice="alice", language="de-DE")
         resp.redirect(url_for("gather_menu"), method="POST")
@@ -175,11 +174,18 @@ def handle_reminder_time():
 
     return str(resp)
 
-@app.route("/act/handle-reminder-unsubscribe/<number>/", methods=["GET"])
+@app.route("/act/handle-reminder-unsubscribe/", methods=["GET"])
 @validate_twilio_request
-def handle_reminder_unsubscribe(number):
+def handle_reminder_unsubscribe():
     resp = Response()
     
+    direction = request.values.get("Direction", None)
+
+    if direction == "inbound":
+        number = request.values.get("From")
+    else:
+        number = request.values.get("To")
+
     db_session.query(Reminder).filter_by(number = number).delete()
     db_session.commit()
     resp.say("Sie werden ab jetzt nicht mehr regelmäßig mit Abgeordneten verbunden.", voice="alice", language="de-DE")
@@ -204,7 +210,6 @@ def gather_reminder_call():
 @validate_twilio_request
 def handle_reminder_call():
     digits_pressed = request.values.get("Digits", None)
-    from_number = request.values.get("From", None)
     resp = Response()
 
     if digits_pressed == "1":
@@ -212,7 +217,7 @@ def handle_reminder_call():
         resp.say("Sie werden jetzt mit " + rep + " verbunden.", voice="alice", language="de-DE")
         # resp.dial()
     elif digits_pressed == "2":
-        resp.redirect(url_for("handle_reminder_unsubscribe", number=from_number), method="GET")
+        resp.redirect(url_for("handle_reminder_unsubscribe"), method="GET")
     else:
         resp.say("Sie haben keine gültige Option gewählt.", voice="alice", language="de-DE")
         resp.redirect(url_for("handle_reminder_call"), method="POST")
