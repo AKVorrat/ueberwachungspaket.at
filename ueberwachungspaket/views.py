@@ -94,7 +94,7 @@ def handle_menu():
     elif digits_pressed == "2":
         resp.redirect(url_for("gather_reminder_time"), method="POST")
     elif digits_pressed == "3":
-        resp.redirect(url_for("handle_reminder_unsubscribe"), method="GET")
+        resp.redirect(url_for("handle_reminder_unsubscribe"), method="POST")
     else:
         resp.say("Sie haben keine gültige Option gewählt.", voice="alice", language="de-DE")
         resp.redirect(url_for("gather_menu"), method="POST")
@@ -174,7 +174,7 @@ def handle_reminder_time():
 
     return str(resp)
 
-@app.route("/act/handle-reminder-unsubscribe/", methods=["GET"])
+@app.route("/act/handle-reminder-unsubscribe/", methods=["POST"])
 @validate_twilio_request
 def handle_reminder_unsubscribe():
     resp = Response()
@@ -217,7 +217,7 @@ def handle_reminder_call():
         resp.say("Sie werden jetzt mit " + rep + " verbunden.", voice="alice", language="de-DE")
         # resp.dial()
     elif digits_pressed == "2":
-        resp.redirect(url_for("handle_reminder_unsubscribe"), method="GET")
+        resp.redirect(url_for("handle_reminder_unsubscribe"), method="POST")
     else:
         resp.say("Sie haben keine gültige Option gewählt.", voice="alice", language="de-DE")
         resp.redirect(url_for("handle_reminder_call"), method="POST")
