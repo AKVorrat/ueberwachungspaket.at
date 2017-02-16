@@ -27,7 +27,7 @@ def representative(prettyname):
 def share():
     return render_template("share.html")
 
-@app.route("/themen/")
+@app.route("/kritik/")
 def topics():
     return render_template("topics.html")
 
