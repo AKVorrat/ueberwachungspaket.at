@@ -338,7 +338,6 @@ section:nth-child(odd) {
 
 section.dark {
 	padding: 1em;
-	background-color: #00466e;
 }
 
 section.dark .btn {
