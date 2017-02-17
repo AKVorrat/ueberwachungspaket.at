@@ -86,14 +86,14 @@ def gather_menu():
 @app.route("/act/handle-menu/", methods=["POST"])
 @validate_twilio_request
 def handle_menu():
-    digits_pressed = request.form.get("Digits")
+    digits_pressed = request.values.get("Digits", 0, type=int)
     resp = Response()
 
-    if digits_pressed == "1":
+    if digits_pressed == 1:
         resp.redirect(url_for("gather_representative"), method="POST")
-    elif digits_pressed == "2":
+    elif digits_pressed == 2:
         resp.redirect(url_for("gather_reminder_time"), method="POST")
-    elif digits_pressed == "3":
+    elif digits_pressed == 3:
         resp.redirect(url_for("handle_reminder_unsubscribe"), method="POST")
     else:
         resp.say("Sie haben keine gültige Option gewählt.", language="de")
@@ -117,7 +117,7 @@ def gather_representative():
 @app.route("/act/handle-representative/", methods=["POST"])
 @validate_twilio_request
 def handle_representative():
-    digits_pressed = request.values.get("Digits")
+    digits_pressed = request.values.get("Digits", "00000", type=str)
     rep = reps.get_representative_by_id(digits_pressed)
     resp = Response()
     
@@ -147,14 +147,9 @@ def gather_reminder_time():
 @app.route("/act/handle-reminder-time/", methods=["POST"])
 @validate_twilio_request
 def handle_reminder_time():
-    digits_pressed = request.values.get("Digits")
+    digits_pressed = request.values.get("Digits", 0, type=int)
     from_number = request.values.get("From")
     resp = Response()
-
-    try:
-        digits_pressed = int(digits_pressed)
-    except ValueError:
-        digits_pressed = 0
 
     if not from_number or from_number in ["+7378742833", "+2562533", "+8656696", "+266696687", "+86282452253"]:
         resp.say("Es ist ein Fehler aufgetreten.", language="de")
@@ -215,15 +210,15 @@ def gather_reminder_call():
 @app.route("/act/handle-reminder-call/", methods=["POST"])
 @validate_twilio_request
 def handle_reminder_call():
-    digits_pressed = request.values.get("Digits")
+    digits_pressed = request.values.get("Digits", 0, type=int)
     resp = Response()
 
-    if digits_pressed == "1":
+    if digits_pressed == 1:
         rep = choice([rep for rep in resp.representatives if rep.team.prettyname == "spy"])
         resp.say("Sie werden jetzt mit " + rep + " verbunden.", language="de")
         if not app.debug:
             resp.dial(rep.contact.phone, timelimit=600, callerid=choice(TWILIO_NUMBERS))
-    elif digits_pressed == "2":
+    elif digits_pressed == 2:
         resp.redirect(url_for("handle_reminder_unsubscribe"), method="POST")
     else:
         resp.say("Sie haben keine gültige Option gewählt.", language="de")
