@@ -1,4 +1,4 @@
-from flask import render_template, abort, request, url_for, jsonify
+from flask import render_template, abort, request, url_for
 from random import choice
 from twilio.twiml import Response
 from sqlalchemy.exc import IntegrityError
