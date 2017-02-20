@@ -1,7 +1,9 @@
 from flask import render_template, abort, request, url_for
 from random import choice
+from datetime import datetime
 from twilio.twiml import Response
 from sqlalchemy.exc import IntegrityError
+from sqlalchemy.orm.exc import NoResultFound
 from config import *
 from database.models import Reminder
 from . import app, reps, db_session
@@ -148,24 +150,27 @@ def gather_reminder_time():
 @validate_twilio_request
 def handle_reminder_time():
     digits_pressed = request.values.get("Digits", 0, type=int)
-    from_number = request.values.get("From")
+    number = request.values.get("From")
     resp = Response()
 
-    if not from_number or from_number in ["+7378742833", "+2562533", "+8656696", "+266696687", "+86282452253"]:
+    if not number or number in ["+7378742833", "+2562533", "+8656696", "+266696687", "+86282452253"]:
         resp.say("Es ist ein Fehler aufgetreten.", language="de")
         resp.say("Bitte kontaktieren Sie uns, um den Service wieder zum Laufen zu bringen.", language="de")
     if 9 <= digits_pressed <= 16:
-        reminder = Reminder(from_number, digits_pressed)
-
         try:
+            reminder = Reminder(number, digits_pressed)
             db_session.add(reminder)
             db_session.commit()
             resp.say("Sie wurden in unsere Liste aufgenommen.", language="de")
             resp.say("Um sich wieder abzumelden, rufen Sie erneut an und wählen die entsprechende Option im Menü.", language="de")
         except IntegrityError as e:
             db_session.rollback()
-            db_session.query(Reminder).filter_by(number = from_number).delete()
-            db_session.add(reminder)
+            reminder = db_session.query(Reminder).filter_by(phone_number = number).first()
+
+            if digits_pressed > datetime.now().hour and reminder.last_called.date() == datetime.today().date():
+                reminder.last_called = None
+
+            reminder.time = digits_pressed
             db_session.commit()
             resp.say("Ihre Erinnerungszeit wurde aktualisiert.")
     else:
@@ -186,10 +191,14 @@ def handle_reminder_unsubscribe():
         number = request.values.get("From")
     else:
         number = request.values.get("To")
-
-    db_session.query(Reminder).filter_by(number = number).delete()
-    db_session.commit()
-    resp.say("Sie werden ab jetzt nicht mehr regelmäßig mit Abgeordneten verbunden.", language="de")
+    
+    try:
+        reminder = db_session.query(Reminder).filter_by(phone_number = number).first()
+        reminder.time = None
+        db_session.commit()
+        resp.say("Sie werden ab jetzt nicht mehr regelmäßig mit Abgeordneten verbunden.", language="de")
+    except NoResultFound:
+        pass
 
     return str(resp)
 
@@ -211,18 +220,24 @@ def gather_reminder_call():
 @validate_twilio_request
 def handle_reminder_call():
     digits_pressed = request.values.get("Digits", 0, type=int)
+    number = request.values.get("To")
     resp = Response()
 
     if digits_pressed == 1:
+        reminder = db_session.query(Reminder).filter_by(phone_number = number).first()
+        reminder.times_forwarded = reminder.times_forwarded + 1
+        db_session.commit()
+
         rep = choice([rep for rep in resp.representatives if rep.team.prettyname == "spy"])
         resp.say("Sie werden jetzt mit " + rep + " verbunden.", language="de")
         if not app.debug:
             resp.dial(rep.contact.phone, timelimit=600, callerid=choice(TWILIO_NUMBERS))
+
     elif digits_pressed == 2:
         resp.redirect(url_for("handle_reminder_unsubscribe"), method="POST")
     else:
         resp.say("Sie haben keine gültige Option gewählt.", language="de")
-        resp.redirect(url_for("handle_reminder_call"), method="POST")
+        resp.redirect(url_for("gather_reminder_call"), method="POST")
 
     return str(resp)
 
