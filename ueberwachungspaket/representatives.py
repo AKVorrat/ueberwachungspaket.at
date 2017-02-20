@@ -1,4 +1,5 @@
 from json import load
+from random import choice
 
 class Representatives():
     def __init__(self):
@@ -7,6 +8,9 @@ class Representatives():
         self.representatives = load_representatives(self.parties, self.teams)
 
     def get_representative_by_id(self, id):
+        if id == "00000":
+            return choice(self.representatives)
+
         try:
             rep = [rep for rep in self.representatives if rep.id == id][0]
         except IndexError:
