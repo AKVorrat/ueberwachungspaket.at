@@ -1,5 +1,5 @@
 from flask import render_template, abort, request, url_for
-from random import choice
+from random import choice, shuffle
 from datetime import datetime
 from twilio.twiml import Response
 from sqlalchemy.exc import IntegrityError
@@ -10,7 +10,9 @@ from .decorators import validate_twilio_request
 
 @app.route("/")
 def root():
-    return render_template("index.html")
+    important_reps = [rep for rep in reps.representatives if rep.important]
+    shuffle(important_reps)
+    return render_template("index.html", reps=important_reps[0:5])
 
 @app.route("/abgeordnete/")
 def representatives():

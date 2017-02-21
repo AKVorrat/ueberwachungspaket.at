@@ -1,6 +1,406 @@
 [
 	{
 		"contact": {
+			"facebook": "",
+			"mail": "",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "02941",
+		"image": {
+			"copyright": "BKA / Andy Wenzel",
+			"url": ""
+		},
+		"important": true,
+		"name": {
+			"firstname": "Christian",
+			"lastname": "Kern",
+			"prefix": "Mag.",
+			"prettyname": "christian-kern",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "male",
+		"state": "",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "60446",
+		"image": {
+			"copyright": "Parlamentsdirektion / WILKE",
+			"url": "/PAD_60446/3488020_384.jpg"
+		},
+		"important": true,
+		"name": {
+			"firstname": "Muna",
+			"lastname": "Duzdar",
+			"prefix": "Mag.",
+			"prettyname": "muna-duzdar",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "female",
+		"state": "",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "88629",
+		"image": {
+			"copyright": "Parlamentsdirektion / Johannes Zinner",
+			"url": "/PAD_88629/6517608_384.jpg"
+		},
+		"important": true,
+		"name": {
+			"firstname": "Thomas",
+			"lastname": "Drozda",
+			"prefix": "Mag.",
+			"prettyname": "thomas-drozda",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "male",
+		"state": "",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "08696",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "/PAD_08696/4386658_180.jpg"
+		},
+		"important": true,
+		"name": {
+			"firstname": "Reinhold",
+			"lastname": "Mitterlehner",
+			"prefix": "Dr.",
+			"prettyname": "reinhold-mitterlehner",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "male",
+		"state": "",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "65321",
+		"image": {
+			"copyright": "Felicitas Matern",
+			"url": "/PAD_65321/4652441_384.jpg"
+		},
+		"important": true,
+		"name": {
+			"firstname": "Sebastian",
+			"lastname": "Kurz",
+			"prefix": "",
+			"prettyname": "sebastian-kurz",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "male",
+		"state": "",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "52687",
+		"image": {
+			"copyright": "Grebe Elisabeth",
+			"url": "/PAD_52687/2402825_180.jpg"
+		},
+		"important": true,
+		"name": {
+			"firstname": "Alois",
+			"lastname": "Stöger",
+			"prefix": "",
+			"prettyname": "alois-stoeger",
+			"suffix": "diplômé"
+		},
+		"party": "spoe",
+		"sex": "male",
+		"state": "",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "88631",
+		"image": {
+			"copyright": "Daniela Beranek / Vetmeduni Vienna",
+			"url": "/PAD_88631/6353660_384.jpg"
+		},
+		"important": true,
+		"name": {
+			"firstname": "Sonja",
+			"lastname": "Hammerschmid",
+			"prefix": "Mag. Dr.",
+			"prettyname": "sonja-hammerschmid",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "female",
+		"state": "",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "83297",
+		"image": {
+			"copyright": "Christian Jungwirth",
+			"url": "/PAD_83297/4725791_384.jpg"
+		},
+		"important": true,
+		"name": {
+			"firstname": "Sophie",
+			"lastname": "Karmasin",
+			"prefix": "MMag. Dr.",
+			"prettyname": "sophie-karmasin",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "female",
+		"state": "",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "35509",
+		"image": {
+			"copyright": "BMG / Johannes Zinner",
+			"url": "/PAD_35509/5224316_384.jpg"
+		},
+		"important": true,
+		"name": {
+			"firstname": "Sabine",
+			"lastname": "Oberhauser",
+			"prefix": "Dr.",
+			"prettyname": "sabine-oberhauser",
+			"suffix": "MAS"
+		},
+		"party": "spoe",
+		"sex": "female",
+		"state": "",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "36907",
+		"image": {
+			"copyright": "BMF / Loebell",
+			"url": "/PAD_36907/5913436_384.jpg"
+		},
+		"important": true,
+		"name": {
+			"firstname": "Johann Georg",
+			"lastname": "Schelling",
+			"prefix": "Dr.",
+			"prettyname": "johann-georg-schelling",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "male",
+		"state": "",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "88386",
+		"image": {
+			"copyright": "Felicitas Matern",
+			"url": "/PAD_88386/6302763_384.jpg"
+		},
+		"important": true,
+		"name": {
+			"firstname": "Wolfgang",
+			"lastname": "Sobotka",
+			"prefix": "Mag.",
+			"prettyname": "wolfgang-sobotka",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "male",
+		"state": "",
+		"team": "spy"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "83295",
+		"image": {
+			"copyright": "Christian Jungwirth",
+			"url": "/PAD_83295/5370025_384.jpg"
+		},
+		"important": true,
+		"name": {
+			"firstname": "Wolfgang",
+			"lastname": "Brandstetter",
+			"prefix": "Dr.",
+			"prettyname": "wolfgang-brandstetter",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "male",
+		"state": "",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "87429",
+		"image": {
+			"copyright": "Ricardo Herrgott",
+			"url": "/PAD_87429/6323967_384.jpg"
+		},
+		"important": true,
+		"name": {
+			"firstname": "Hans Peter",
+			"lastname": "Doskozil",
+			"prefix": "Mag.",
+			"prettyname": "hans-peter-doskozil",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "male",
+		"state": "",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "83296",
+		"image": {
+			"copyright": "Alexander Haiden",
+			"url": "/PAD_83296/6542366_384.jpg"
+		},
+		"important": true,
+		"name": {
+			"firstname": "Andrä",
+			"lastname": "Rupprechter",
+			"prefix": "Dipl.Ing.",
+			"prettyname": "andrae-rupprechter",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "male",
+		"state": "",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "22694",
+		"image": {
+			"copyright": "www.beauhartphotography.com",
+			"url": "/PAD_22694/4832364_180.jpg"
+		},
+		"important": true,
+		"name": {
+			"firstname": "Jörg",
+			"lastname": "Leichtfried",
+			"prefix": "Mag.",
+			"prettyname": "joerg-leichtfried",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "male",
+		"state": "",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "84308",
+		"image": {
+			"copyright": "David Sailer",
+			"url": "/PAD_84308/5380448_384.jpg"
+		},
+		"important": true,
+		"name": {
+			"firstname": "Harald",
+			"lastname": "Mahrer",
+			"prefix": "Mag. Dr.",
+			"prettyname": "harald-mahrer",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "male",
+		"state": "",
+		"team": "unknown"
+	},
+	{
+		"contact": {
 			"facebook": "rezor",
 			"mail": "nikolaus.alm@parlament.gv.at",
 			"phone": "+4350705070",
@@ -10,7 +410,7 @@
 		"id": "83119",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_83119/4380895_180.jpg"
+			"url": "/PAD_83119/4380895_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -36,7 +436,7 @@
 		"id": "02819",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_02819/4387252_180.jpg"
+			"url": "/PAD_02819/4387252_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -62,7 +462,7 @@
 		"id": "84060",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_84060/5226025_180.jpg"
+			"url": "/PAD_84060/5226025_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -88,7 +488,7 @@
 		"id": "83107",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_83107/4384844_180.jpg"
+			"url": "/PAD_83107/4384844_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -114,7 +514,7 @@
 		"id": "83105",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_83105/4384722_180.jpg"
+			"url": "/PAD_83105/4384722_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -140,7 +540,7 @@
 		"id": "35467",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_35467/4413544_180.jpg"
+			"url": "/PAD_35467/4413544_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -166,7 +566,7 @@
 		"id": "00039",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_00039/4444521_180.jpg"
+			"url": "/PAD_00039/4444521_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -192,7 +592,7 @@
 		"id": "83108",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_83108/4385273_180.jpg"
+			"url": "/PAD_83108/4385273_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -218,7 +618,7 @@
 		"id": "14835",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_14835/4444987_180.jpg"
+			"url": "/PAD_14835/4444987_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -244,7 +644,7 @@
 		"id": "14836",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_14836/4445008_180.jpg"
+			"url": "/PAD_14836/4445008_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -270,7 +670,7 @@
 		"id": "35468",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_35468/4387913_180.jpg"
+			"url": "/PAD_35468/4387913_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -296,7 +696,7 @@
 		"id": "52688",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_52688/5225964_180.jpg"
+			"url": "/PAD_52688/5225964_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -322,7 +722,7 @@
 		"id": "83124",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_83124/4380874_180.jpg"
+			"url": "/PAD_83124/4380874_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -348,7 +748,7 @@
 		"id": "02867",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_02867/4387764_180.jpg"
+			"url": "/PAD_02867/4387764_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -374,7 +774,7 @@
 		"id": "08239",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_08239/4384460_180.jpg"
+			"url": "/PAD_08239/4384460_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -400,7 +800,7 @@
 		"id": "61639",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_61639/3487782_384.jpg"
+			"url": "/PAD_61639/3487782_384.jpg"
 		},
 		"important": false,
 		"name": {
@@ -426,7 +826,7 @@
 		"id": "51586",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_51586/4384763_180.jpg"
+			"url": "/PAD_51586/4384763_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -452,7 +852,7 @@
 		"id": "63179",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_63179/4384872_180.jpg"
+			"url": "/PAD_63179/4384872_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -478,7 +878,7 @@
 		"id": "00145",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_00145/5830576_180.jpg"
+			"url": "/PAD_00145/5830576_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -504,7 +904,7 @@
 		"id": "00178",
 		"image": {
 			"copyright": "Parlamentsdirektion / WILKE",
-			"url": "https://www.parlament.gv.at/WWER/PAD_00178/3488817_384.jpg"
+			"url": "/PAD_00178/3488817_384.jpg"
 		},
 		"important": false,
 		"name": {
@@ -530,7 +930,7 @@
 		"id": "51557",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_51557/4444818_180.jpg"
+			"url": "/PAD_51557/4444818_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -556,7 +956,7 @@
 		"id": "16218",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_16218/4386170_180.jpg"
+			"url": "/PAD_16218/4386170_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -582,7 +982,7 @@
 		"id": "83140",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_83140/4386127_180.jpg"
+			"url": "/PAD_83140/4386127_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -608,7 +1008,7 @@
 		"id": "51558",
 		"image": {
 			"copyright": "FP\u00d6 Salzburg",
-			"url": "https://www.parlament.gv.at/WWER/PAD_51558/4838939_180.jpg"
+			"url": "/PAD_51558/4838939_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -634,7 +1034,7 @@
 		"id": "40627",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_40627/4386427_180.jpg"
+			"url": "/PAD_40627/4386427_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -660,7 +1060,7 @@
 		"id": "83109",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_83109/4385153_180.jpg"
+			"url": "/PAD_83109/4385153_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -686,7 +1086,7 @@
 		"id": "83144",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_83144/4386299_180.jpg"
+			"url": "/PAD_83144/4386299_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -712,7 +1112,7 @@
 		"id": "83433",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_83433/4582543_384.jpg"
+			"url": "/PAD_83433/4582543_384.jpg"
 		},
 		"important": false,
 		"name": {
@@ -738,7 +1138,7 @@
 		"id": "14755",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_14755/4386828_180.jpg"
+			"url": "/PAD_14755/4386828_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -764,7 +1164,7 @@
 		"id": "83298",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_83298/4582572_384.jpg"
+			"url": "/PAD_83298/4582572_384.jpg"
 		},
 		"important": false,
 		"name": {
@@ -790,7 +1190,7 @@
 		"id": "00311",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_00311/4387369_180.jpg"
+			"url": "/PAD_00311/4387369_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -816,7 +1216,7 @@
 		"id": "83146",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_83146/4386378_180.jpg"
+			"url": "/PAD_83146/4386378_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -842,7 +1242,7 @@
 		"id": "83141",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_83141/4385896_180.jpg"
+			"url": "/PAD_83141/4385896_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -868,7 +1268,7 @@
 		"id": "83127",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_83127/4387467_180.jpg"
+			"url": "/PAD_83127/4387467_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -894,7 +1294,7 @@
 		"id": "08209",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_08209/4387081_180.jpg"
+			"url": "/PAD_08209/4387081_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -920,7 +1320,7 @@
 		"id": "86976",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_86976/6006189_180.jpg"
+			"url": "/PAD_86976/6006189_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -946,7 +1346,7 @@
 		"id": "67199",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_67199/4386512_180.jpg"
+			"url": "/PAD_67199/4386512_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -972,7 +1372,7 @@
 		"id": "51527",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_51527/4385218_180.jpg"
+			"url": "/PAD_51527/4385218_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -998,7 +1398,7 @@
 		"id": "08240",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_08240/4582273_384.jpg"
+			"url": "/PAD_08240/4582273_384.jpg"
 		},
 		"important": false,
 		"name": {
@@ -1024,7 +1424,7 @@
 		"id": "80479",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_80479/4582473_384.jpg"
+			"url": "/PAD_80479/4582473_384.jpg"
 		},
 		"important": false,
 		"name": {
@@ -1050,7 +1450,7 @@
 		"id": "12907",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_12907/5225943_180.jpg"
+			"url": "/PAD_12907/5225943_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -1076,7 +1476,7 @@
 		"id": "83147",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_83147/4386211_180.jpg"
+			"url": "/PAD_83147/4386211_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -1102,7 +1502,7 @@
 		"id": "14839",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_14839/4385324_180.jpg"
+			"url": "/PAD_14839/4385324_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -1128,7 +1528,7 @@
 		"id": "83110",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_83110/4384958_180.jpg"
+			"url": "/PAD_83110/4384958_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -1154,7 +1554,7 @@
 		"id": "83120",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_83120/4380832_180.jpg"
+			"url": "/PAD_83120/4380832_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -1180,7 +1580,7 @@
 		"id": "78586",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_78586/4444584_180.jpg"
+			"url": "/PAD_78586/4444584_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -1206,7 +1606,7 @@
 		"id": "08256",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_08256/4386149_180.jpg"
+			"url": "/PAD_08256/4386149_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -1232,7 +1632,7 @@
 		"id": "51560",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_51560/4445156_180.jpg"
+			"url": "/PAD_51560/4445156_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -1258,7 +1658,7 @@
 		"id": "10256",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_10256/4473430_180.jpg"
+			"url": "/PAD_10256/4473430_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -1284,7 +1684,7 @@
 		"id": "55227",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_55227/5225905_384.jpg"
+			"url": "/PAD_55227/5225905_384.jpg"
 		},
 		"important": false,
 		"name": {
@@ -1310,7 +1710,7 @@
 		"id": "83148",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_83148/5225861_180.jpg"
+			"url": "/PAD_83148/5225861_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -1336,7 +1736,7 @@
 		"id": "12741",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_12741/4386616_180.jpg"
+			"url": "/PAD_12741/4386616_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -1362,7 +1762,7 @@
 		"id": "35515",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_35515/4387596_180.jpg"
+			"url": "/PAD_35515/4387596_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -1388,7 +1788,7 @@
 		"id": "51547",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_51547/4385362_180.jpg"
+			"url": "/PAD_51547/4385362_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -1414,7 +1814,7 @@
 		"id": "08177",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_08177/6401592_180.jpg"
+			"url": "/PAD_08177/6401592_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -1440,7 +1840,7 @@
 		"id": "05076",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_05076/4385474_180.jpg"
+			"url": "/PAD_05076/4385474_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -1466,7 +1866,7 @@
 		"id": "50187",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_50187/4385131_180.jpg"
+			"url": "/PAD_50187/4385131_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -1492,7 +1892,7 @@
 		"id": "72959",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_72959/4386704_180.jpg"
+			"url": "/PAD_72959/4386704_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -1518,7 +1918,7 @@
 		"id": "51562",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_51562/4444669_180.jpg"
+			"url": "/PAD_51562/4444669_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -1544,7 +1944,7 @@
 		"id": "35521",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_35521/4444542_180.jpg"
+			"url": "/PAD_35521/4444542_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -1570,7 +1970,7 @@
 		"id": "83299",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_83299/4582361_384.jpg"
+			"url": "/PAD_83299/4582361_384.jpg"
 		},
 		"important": false,
 		"name": {
@@ -1596,7 +1996,7 @@
 		"id": "16234",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_16234/4386933_180.jpg"
+			"url": "/PAD_16234/4386933_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -1622,7 +2022,7 @@
 		"id": "83111",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_83111/4384894_180.jpg"
+			"url": "/PAD_83111/4384894_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -1648,7 +2048,7 @@
 		"id": "14759",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_14759/4582252_384.jpg"
+			"url": "/PAD_14759/4582252_384.jpg"
 		},
 		"important": false,
 		"name": {
@@ -1674,7 +2074,7 @@
 		"id": "51561",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_51561/4387889_180.jpg"
+			"url": "/PAD_51561/4387889_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -1700,7 +2100,7 @@
 		"id": "83149",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_83149/4386406_180.jpg"
+			"url": "/PAD_83149/4386406_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -1726,7 +2126,7 @@
 		"id": "51563",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_51563/4387659_180.jpg"
+			"url": "/PAD_51563/4387659_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -1752,7 +2152,7 @@
 		"id": "57367",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_57367/4384392_180.jpg"
+			"url": "/PAD_57367/4384392_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -1778,7 +2178,7 @@
 		"id": "02889",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_02889/4445093_180.jpg"
+			"url": "/PAD_02889/4445093_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -1804,7 +2204,7 @@
 		"id": "35490",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_35490/4386742_180.jpg"
+			"url": "/PAD_35490/4386742_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -1830,7 +2230,7 @@
 		"id": "51564",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_51564/4444648_180.jpg"
+			"url": "/PAD_51564/4444648_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -1856,7 +2256,7 @@
 		"id": "83129",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_83129/4387514_180.jpg"
+			"url": "/PAD_83129/4387514_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -1882,7 +2282,7 @@
 		"id": "32494",
 		"image": {
 			"copyright": "Parlamentsdirektion / WILKE",
-			"url": "https://www.parlament.gv.at/WWER/PAD_32494/3490712_384.jpg"
+			"url": "/PAD_32494/3490712_384.jpg"
 		},
 		"important": false,
 		"name": {
@@ -1908,7 +2308,7 @@
 		"id": "14840",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_14840/4385790_180.jpg"
+			"url": "/PAD_14840/4385790_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -1934,7 +2334,7 @@
 		"id": "35520",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_35520/4444860_180.jpg"
+			"url": "/PAD_35520/4444860_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -1960,7 +2360,7 @@
 		"id": "35495",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_35495/4385706_180.jpg"
+			"url": "/PAD_35495/4385706_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -1986,7 +2386,7 @@
 		"id": "51565",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_51565/4387679_180.jpg"
+			"url": "/PAD_51565/4387679_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -2012,7 +2412,7 @@
 		"id": "88857",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_88857/6567303_180.jpg"
+			"url": "/PAD_88857/6567303_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -2038,7 +2438,7 @@
 		"id": "30036",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_30036/6401454_384.jpg"
+			"url": "/PAD_30036/6401454_384.jpg"
 		},
 		"important": false,
 		"name": {
@@ -2064,7 +2464,7 @@
 		"id": "83112",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_83112/4385750_180.jpg"
+			"url": "/PAD_83112/4385750_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -2090,7 +2490,7 @@
 		"id": "83100",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_83100/4384591_180.jpg"
+			"url": "/PAD_83100/4384591_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -2116,7 +2516,7 @@
 		"id": "08242",
 		"image": {
 			"copyright": "Parlamentsdirektion / WILKE",
-			"url": "https://www.parlament.gv.at/WWER/PAD_08242/3490465_384.jpg"
+			"url": "/PAD_08242/3490465_384.jpg"
 		},
 		"important": false,
 		"name": {
@@ -2142,7 +2542,7 @@
 		"id": "14841",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_14841/4385811_180.jpg"
+			"url": "/PAD_14841/4385811_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -2168,7 +2568,7 @@
 		"id": "02822",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_02822/4405723_180.jpg"
+			"url": "/PAD_02822/4405723_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -2194,7 +2594,7 @@
 		"id": "51587",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_51587/4384700_180.jpg"
+			"url": "/PAD_51587/4384700_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -2220,7 +2620,7 @@
 		"id": "14842",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_14842/4582232_384.jpg"
+			"url": "/PAD_14842/4582232_384.jpg"
 		},
 		"important": false,
 		"name": {
@@ -2246,7 +2646,7 @@
 		"id": "14843",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_14843/4468385_180.jpg"
+			"url": "/PAD_14843/4468385_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -2272,7 +2672,7 @@
 		"id": "35908",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_35908/4384979_180.jpg"
+			"url": "/PAD_35908/4384979_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -2298,7 +2698,7 @@
 		"id": "83113",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_83113/4385832_180.jpg"
+			"url": "/PAD_83113/4385832_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -2324,7 +2724,7 @@
 		"id": "86603",
 		"image": {
 			"copyright": "Privat",
-			"url": "https://www.parlament.gv.at/WWER/PAD_86603/5814774_180.jpg"
+			"url": "/PAD_86603/5814774_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -2350,7 +2750,7 @@
 		"id": "08178",
 		"image": {
 			"copyright": "Parlamentsdirektion / WILKE",
-			"url": "https://www.parlament.gv.at/WWER/PAD_08178/3491279_384.jpg"
+			"url": "/PAD_08178/3491279_384.jpg"
 		},
 		"important": false,
 		"name": {
@@ -2376,7 +2776,7 @@
 		"id": "88823",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_88823/6567366_180.jpg"
+			"url": "/PAD_88823/6567366_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -2402,7 +2802,7 @@
 		"id": "51568",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_51568/4444500_180.jpg"
+			"url": "/PAD_51568/4444500_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -2428,7 +2828,7 @@
 		"id": "51553",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_51553/4386764_180.jpg"
+			"url": "/PAD_51553/4386764_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -2454,7 +2854,7 @@
 		"id": "18447",
 		"image": {
 			"copyright": "Parlamentsdirektion / WILKE",
-			"url": "https://www.parlament.gv.at/WWER/PAD_18447/3490769_384.jpg"
+			"url": "/PAD_18447/3490769_384.jpg"
 		},
 		"important": false,
 		"name": {
@@ -2480,7 +2880,7 @@
 		"id": "83142",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_83142/4385959_180.jpg"
+			"url": "/PAD_83142/4385959_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -2506,7 +2906,7 @@
 		"id": "51548",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_51548/4385066_180.jpg"
+			"url": "/PAD_51548/4385066_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -2532,7 +2932,7 @@
 		"id": "83121",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_83121/4380811_180.jpg"
+			"url": "/PAD_83121/4380811_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -2558,7 +2958,7 @@
 		"id": "15526",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_15526/4387318_180.jpg"
+			"url": "/PAD_15526/4387318_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -2584,7 +2984,7 @@
 		"id": "22449",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_22449/4385411_180.jpg"
+			"url": "/PAD_22449/4385411_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -2610,7 +3010,7 @@
 		"id": "51579",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_51579/4385980_180.jpg"
+			"url": "/PAD_51579/4385980_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -2636,7 +3036,7 @@
 		"id": "14844",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_14844/5225985_180.jpg"
+			"url": "/PAD_14844/5225985_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -2662,7 +3062,7 @@
 		"id": "83101",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_83101/4384301_180.jpg"
+			"url": "/PAD_83101/4384301_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -2688,7 +3088,7 @@
 		"id": "35501",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_35501/4385596_180.jpg"
+			"url": "/PAD_35501/4385596_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -2714,7 +3114,7 @@
 		"id": "36187",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_36187/4387575_180.jpg"
+			"url": "/PAD_36187/4387575_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -2740,7 +3140,7 @@
 		"id": "02853",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_02853/4384678_180.jpg"
+			"url": "/PAD_02853/4384678_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -2766,7 +3166,7 @@
 		"id": "35497",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_35497/4582613_384.jpg"
+			"url": "/PAD_35497/4582613_384.jpg"
 		},
 		"important": false,
 		"name": {
@@ -2792,7 +3192,7 @@
 		"id": "83102",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_83102/5225818_180.jpg"
+			"url": "/PAD_83102/5225818_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -2818,7 +3218,7 @@
 		"id": "51569",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_51569/4444711_180.jpg"
+			"url": "/PAD_51569/4444711_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -2844,7 +3244,7 @@
 		"id": "08179",
 		"image": {
 			"copyright": "Parlamentsdirektion / WILKE",
-			"url": "https://www.parlament.gv.at/WWER/PAD_08179/3567270_384.jpg"
+			"url": "/PAD_08179/3567270_384.jpg"
 		},
 		"important": false,
 		"name": {
@@ -2870,7 +3270,7 @@
 		"id": "83139",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_83139/4386042_180.jpg"
+			"url": "/PAD_83139/4386042_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -2896,7 +3296,7 @@
 		"id": "35522",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_35522/4387828_180.jpg"
+			"url": "/PAD_35522/4387828_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -2922,7 +3322,7 @@
 		"id": "35487",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_35487/4386958_180.jpg"
+			"url": "/PAD_35487/4386958_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -2948,7 +3348,7 @@
 		"id": "83300",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_83300/4582315_384.jpg"
+			"url": "/PAD_83300/4582315_384.jpg"
 		},
 		"important": false,
 		"name": {
@@ -2974,7 +3374,7 @@
 		"id": "02854",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_02854/6347436_180.jpg"
+			"url": "/PAD_02854/6347436_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -3000,7 +3400,7 @@
 		"id": "83150",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_83150/4386257_180.jpg"
+			"url": "/PAD_83150/4386257_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -3026,7 +3426,7 @@
 		"id": "05375",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_05375/4385016_180.jpg"
+			"url": "/PAD_05375/4385016_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -3052,7 +3452,7 @@
 		"id": "83151",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_83151/4386320_180.jpg"
+			"url": "/PAD_83151/4386320_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -3078,7 +3478,7 @@
 		"id": "01210",
 		"image": {
 			"copyright": "Parlamentsdirektion / WILKE",
-			"url": "https://www.parlament.gv.at/WWER/PAD_01210/3490351_384.jpg"
+			"url": "/PAD_01210/3490351_384.jpg"
 		},
 		"important": false,
 		"name": {
@@ -3104,7 +3504,7 @@
 		"id": "08245",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_08245/4384415_180.jpg"
+			"url": "/PAD_08245/4384415_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -3130,7 +3530,7 @@
 		"id": "51549",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_51549/4385643_180.jpg"
+			"url": "/PAD_51549/4385643_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -3156,7 +3556,7 @@
 		"id": "30011",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_30011/4385875_180.jpg"
+			"url": "/PAD_30011/4385875_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -3182,7 +3582,7 @@
 		"id": "08235",
 		"image": {
 			"copyright": "Parlamentsdirektion / WILKE",
-			"url": "https://www.parlament.gv.at/WWER/PAD_08235/3488352_384.jpg"
+			"url": "/PAD_08235/3488352_384.jpg"
 		},
 		"important": false,
 		"name": {
@@ -3208,7 +3608,7 @@
 		"id": "14767",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_14767/5225840_180.jpg"
+			"url": "/PAD_14767/5225840_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -3234,7 +3634,7 @@
 		"id": "02862",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_02862/4582336_384.jpg"
+			"url": "/PAD_02862/4582336_384.jpg"
 		},
 		"important": false,
 		"name": {
@@ -3260,7 +3660,7 @@
 		"id": "83152",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_83152/4582494_384.jpg"
+			"url": "/PAD_83152/4582494_384.jpg"
 		},
 		"important": false,
 		"name": {
@@ -3286,7 +3686,7 @@
 		"id": "83130",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_83130/4387429_180.jpg"
+			"url": "/PAD_83130/4387429_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -3312,7 +3712,7 @@
 		"id": "61659",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_61659/4444775_180.jpg"
+			"url": "/PAD_61659/4444775_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -3338,7 +3738,7 @@
 		"id": "51570",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_51570/4444902_180.jpg"
+			"url": "/PAD_51570/4444902_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -3364,7 +3764,7 @@
 		"id": "14693",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_14693/4444797_180.jpg"
+			"url": "/PAD_14693/4444797_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -3390,7 +3790,7 @@
 		"id": "35516",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_35516/4384641_180.jpg"
+			"url": "/PAD_35516/4384641_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -3442,7 +3842,7 @@
 		"id": "35512",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_35512/4384369_180.jpg"
+			"url": "/PAD_35512/4384369_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -3468,7 +3868,7 @@
 		"id": "83132",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_83132/4444690_180.jpg"
+			"url": "/PAD_83132/4444690_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -3494,7 +3894,7 @@
 		"id": "84056",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_84056/5225882_180.jpg"
+			"url": "/PAD_84056/5225882_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -3520,7 +3920,7 @@
 		"id": "51582",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_51582/4386085_180.jpg"
+			"url": "/PAD_51582/4386085_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -3546,7 +3946,7 @@
 		"id": "83125",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_83125/4380953_180.jpg"
+			"url": "/PAD_83125/4380953_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -3572,7 +3972,7 @@
 		"id": "35504",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_35504/4385389_180.jpg"
+			"url": "/PAD_35504/4385389_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -3598,7 +3998,7 @@
 		"id": "51559",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_51559/4387803_180.jpg"
+			"url": "/PAD_51559/4387803_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -3624,7 +4024,7 @@
 		"id": "36908",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_36908/4386788_180.jpg"
+			"url": "/PAD_36908/4386788_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -3650,7 +4050,7 @@
 		"id": "83103",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_83103/4384324_180.jpg"
+			"url": "/PAD_83103/4384324_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -3676,7 +4076,7 @@
 		"id": "83133",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_83103/4384324_180.jpg"
+			"url": "/PAD_83103/4384324_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -3702,7 +4102,7 @@
 		"id": "52727",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_52727/4386997_180.jpg"
+			"url": "/PAD_52727/4386997_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -3728,7 +4128,7 @@
 		"id": "51555",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_51555/4386679_180.jpg"
+			"url": "/PAD_51555/4386679_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -3754,7 +4154,7 @@
 		"id": "14849",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_14849/5225797_180.jpg"
+			"url": "/PAD_14849/5225797_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -3780,7 +4180,7 @@
 		"id": "83134",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_83134/4387489_180.jpg"
+			"url": "/PAD_83134/4387489_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -3806,7 +4206,7 @@
 		"id": "09775",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_09775/4386911_180.jpg"
+			"url": "/PAD_09775/4386911_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -3832,7 +4232,7 @@
 		"id": "51589",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_51589/4384502_180.jpg"
+			"url": "/PAD_51589/4384502_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -3858,7 +4258,7 @@
 		"id": "14769",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_14769/4386533_180.jpg"
+			"url": "/PAD_14769/4386533_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -3884,7 +4284,7 @@
 		"id": "51556",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_51556/4387017_180.jpg"
+			"url": "/PAD_51556/4387017_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -3910,7 +4310,7 @@
 		"id": "14850",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_14850/4385303_180.jpg"
+			"url": "/PAD_14850/4385303_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -3936,7 +4336,7 @@
 		"id": "51571",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_51571/4444563_180.jpg"
+			"url": "/PAD_51571/4444563_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -3962,7 +4362,7 @@
 		"id": "83135",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_83135/4387553_180.jpg"
+			"url": "/PAD_83135/4387553_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -3988,7 +4388,7 @@
 		"id": "83059",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_83059/4387040_180.jpg"
+			"url": "/PAD_83059/4387040_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -4014,7 +4414,7 @@
 		"id": "04395",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_04395/4386064_180.jpg"
+			"url": "/PAD_04395/4386064_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -4040,7 +4440,7 @@
 		"id": "40628",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_40628/4582395_384.jpg"
+			"url": "/PAD_40628/4582395_384.jpg"
 		},
 		"important": false,
 		"name": {
@@ -4066,7 +4466,7 @@
 		"id": "35518",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_35518/4444605_180.jpg"
+			"url": "/PAD_35518/4444605_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -4092,7 +4492,7 @@
 		"id": "83153",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_83153/4386574_180.jpg"
+			"url": "/PAD_83153/4386574_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -4118,7 +4518,7 @@
 		"id": "10304",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_10304/4380916_180.jpg"
+			"url": "/PAD_10304/4380916_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -4144,7 +4544,7 @@
 		"id": "15531",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_15531/4387340_180.jpg"
+			"url": "/PAD_15531/4387340_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -4170,7 +4570,7 @@
 		"id": "35524",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_35524/4444733_180.jpg"
+			"url": "/PAD_35524/4444733_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -4196,7 +4596,7 @@
 		"id": "65319",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_65319/4386342_180.jpg"
+			"url": "/PAD_65319/4386342_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -4222,7 +4622,7 @@
 		"id": "83114",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_83114/4385239_180.jpg"
+			"url": "/PAD_83114/4385239_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -4248,7 +4648,7 @@
 		"id": "83115",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_83115/4385188_180.jpg"
+			"url": "/PAD_83115/4385188_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -4274,7 +4674,7 @@
 		"id": "83126",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_83126/4380767_180.jpg"
+			"url": "/PAD_83126/4380767_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -4300,7 +4700,7 @@
 		"id": "83143",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_83143/4385928_180.jpg"
+			"url": "/PAD_83143/4385928_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -4326,7 +4726,7 @@
 		"id": "83116",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_83116/4385044_180.jpg"
+			"url": "/PAD_83116/4385044_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -4352,7 +4752,7 @@
 		"id": "51590",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_51590/4444944_180.jpg"
+			"url": "/PAD_51590/4444944_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -4378,7 +4778,7 @@
 		"id": "83262",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_83262/4582593_384.jpg"
+			"url": "/PAD_83262/4582593_384.jpg"
 		},
 		"important": false,
 		"name": {
@@ -4404,7 +4804,7 @@
 		"id": "47087",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_47087/4384930_180.jpg"
+			"url": "/PAD_47087/4384930_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -4430,7 +4830,7 @@
 		"id": "83104",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_83104/4384613_180.jpg"
+			"url": "/PAD_83104/4384613_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -4456,7 +4856,7 @@
 		"id": "02013",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_02013/4385677_180.jpg"
+			"url": "/PAD_02013/4385677_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -4482,7 +4882,7 @@
 		"id": "51591",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_51591/4462008_180.jpg"
+			"url": "/PAD_51591/4462008_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -4508,7 +4908,7 @@
 		"id": "51573",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_51573/4444627_180.jpg"
+			"url": "/PAD_51573/4444627_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -4534,7 +4934,7 @@
 		"id": "60878",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_60878/4386877_180.jpg"
+			"url": "/PAD_60878/4386877_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -4560,7 +4960,7 @@
 		"id": "04477",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_04477/4385559_180.jpg"
+			"url": "/PAD_04477/4385559_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -4586,7 +4986,7 @@
 		"id": "14795",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_14795/4387280_180.jpg"
+			"url": "/PAD_14795/4387280_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -4612,7 +5012,7 @@
 		"id": "02768",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_02768/4385727_180.jpg"
+			"url": "/PAD_02768/4385727_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -4638,7 +5038,7 @@
 		"id": "83137",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_83137/4582438_384.jpg"
+			"url": "/PAD_83137/4582438_384.jpg"
 		},
 		"important": false,
 		"name": {
@@ -4664,7 +5064,7 @@
 		"id": "83117",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_83117/4445051_180.jpg"
+			"url": "/PAD_83117/4445051_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -4690,7 +5090,7 @@
 		"id": "83154",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_83154/4983718_180.jpg"
+			"url": "/PAD_83154/4983718_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -4716,7 +5116,7 @@
 		"id": "35514",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_35514/4444923_180.jpg"
+			"url": "/PAD_35514/4444923_180.jpg"
 		},
 		"important": false,
 		"name": {
@@ -4742,7 +5142,7 @@
 		"id": "22573",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "https://www.parlament.gv.at/WWER/PAD_22573/4384551_180.jpg"
+			"url": "/PAD_22573/4384551_180.jpg"
 		},
 		"important": false,
 		"name": {
