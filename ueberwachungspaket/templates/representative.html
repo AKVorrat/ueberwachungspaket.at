@@ -23,6 +23,26 @@
 			</a>
 		</div>
 	</section>
+	<section id="anrufen">
+		<h2><i class="fa fa-phone fa-lg" aria-hidden="true"></i> Anrufen</h2>
+		<div id="call" class="row items3 row-space centertext">
+			<div>
+				<i class="fa fa-mobile fa-5x" aria-hidden="true"></i>
+				<h3>Wählen</h3>
+				<p>Unter <strong><a href="tel:{{ twilio_number }}">{{ twilio_number }}</a></strong> erreichst du unser Kampagnentelefon.</p>
+			</div>
+			<div>
+				<i class="fa fa-reply-all fa-5x" aria-hidden="true"></i>
+				<h3>Verbinden</h3>
+				<p>Der Code <strong>{{ rep.id }}</strong> verbindet dich automatisch mit {{ rep }}.</p>
+			</div>
+			<div>
+				<i class="fa fa-comments fa-5x" aria-hidden="true"></i>
+				<h3>Sprechen</h3>
+				<p>Sprich mit {{ rep }} und erläre, wieso wir das Überwachungspaket verhindern müssen.</p>
+			</div>
+		</div>
+	</section>
 	<section id="email-senden">
 		<h2><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i> E-Mail senden</h2>
 		<form id="mail" autocomplete="off" class="shrunk" action="{{ url_for('mail') }}" method="post">
@@ -48,25 +68,5 @@
 			<div class="textarea">{{ lipsum(2) }}</div>
 			<button class="btn btn-default">Senden</button>
 		</form>
-	</section>
-	<section id="anrufen">
-		<h2><i class="fa fa-phone fa-lg" aria-hidden="true"></i> Anrufen</h2>
-		<div id="call" class="row items3 row-space centertext">
-			<div>
-				<i class="fa fa-mobile fa-5x" aria-hidden="true"></i>
-				<h3>Wählen</h3>
-				<p>Unter <strong><a href="tel:{{ twilio_number }}">{{ twilio_number }}</a></strong> erreichst du unser Kampagnentelefon.</p>
-			</div>
-			<div>
-				<i class="fa fa-reply-all fa-5x" aria-hidden="true"></i>
-				<h3>Verbinden</h3>
-				<p>Der Code <strong>{{ rep.id }}</strong> verbindet dich automatisch mit {{ rep }}.</p>
-			</div>
-			<div>
-				<i class="fa fa-comments fa-5x" aria-hidden="true"></i>
-				<h3>Sprechen</h3>
-				<p>Sprich mit {{ rep }} und erläre, wieso wir das Überwachungspaket verhindern müssen.</p>
-			</div>
-		</div>
 	</section>
 {% endblock %}

@@ -58,7 +58,18 @@
 		<a href="{{ url_for('representatives') }}" class="btn btn-default">werde aktiv</a>
 	</section>
 	<section>
-		<p>Politikerauslage</p>
+		<div id="representatives" class="row">
+			{% for rep in reps %}
+			<a class="representative" href="{{ url_for('representative', prettyname=rep.name.prettyname) }}" data-firstname="{{ rep.name.firstname }}" data-lastname="{{ rep.name.lastname }}" data-party="{{ rep.party.prettyname }}" data-team="{{ rep.team.prettyname }}" data-state="{{ rep.state }}">
+				<div class="column">
+					<div class="name">{{ rep.name.lastname }}</div>
+					<div class="party">{{ rep.party.shortname }}</div>
+				</div>
+				<div class="overlay {{ rep.team.prettyname }}"></div>
+				<img src="{{ url_for('static', filename='img/representative-small/' + rep.id + '.jpg') }}" alt="" />
+			</a>
+			{% endfor %}
+		</div>
 	</section>
 	<section class="dark">
 		<a href="{{ url_for('share') }}" class="btn btn-default">Rede über Überwachung</a>
