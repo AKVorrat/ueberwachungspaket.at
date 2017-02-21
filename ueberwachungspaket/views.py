@@ -2,8 +2,6 @@ from flask import render_template, abort, request, url_for
 from random import choice
 from datetime import datetime
 from twilio.twiml import Response
-from sqlalchemy.exc import IntegrityError
-from sqlalchemy.orm.exc import NoResultFound
 from config import *
 from database.models import Reminder
 from . import app, reps, db_session
@@ -66,22 +64,25 @@ def mail():
 def call():
     resp = Response()
 
-    resp.say("Willkommen zu 'Kontaktiere Deine Abgeordneten'!", language="de")
-    resp.redirect(url_for("gather_menu"), method="POST")
+    resp.play(url_for("static", filename="audio/01_willkommen.wav"))
+    resp.redirect(url_for("gather_menu"))
 
     return str(resp)
 
 @app.route("/act/gather-menu/", methods=["POST"])
 @validate_twilio_request
 def gather_menu():
+    number = request.values.get("From")
     resp = Response()
+    
+    reminder = Reminder(number)
+    db_session.add(reminder)
+    db_session.commit()
 
-    with resp.gather(numDigits=1, action=url_for("handle_menu"), method="POST") as g:
-        g.say("Um mit einem Abgeordneten zu sprechen, wählen Sie Eins.", language="de")
-        g.say("Um sich für eine wiederholende Anruferinnerung anzumelden, wählen Sie Zwei.", language="de")
-        g.say("Um sich von der wiederholenden Anruferinnerung abzumendel, wählen Sie Drei.", language="de")
+    with resp.gather(numDigits=1, action=url_for("handle_menu")) as g:
+        g.play(url_for("static", filename="audio/02_gather_menu.wav"))
 
-    resp.redirect(url_for("gather_menu"), method="POST")
+    resp.redirect(url_for("gather_menu"))
 
     return str(resp)
 
@@ -92,14 +93,12 @@ def handle_menu():
     resp = Response()
 
     if digits_pressed == 1:
-        resp.redirect(url_for("gather_representative"), method="POST")
+        resp.redirect(url_for("gather_representative"))
     elif digits_pressed == 2:
-        resp.redirect(url_for("gather_reminder_time"), method="POST")
-    elif digits_pressed == 3:
-        resp.redirect(url_for("handle_reminder_unsubscribe"), method="POST")
+        resp.redirect(url_for("handle_reminder_unsubscribe"))
     else:
-        resp.say("Sie haben keine gültige Option gewählt.", language="de")
-        resp.redirect(url_for("gather_menu"), method="POST")
+        resp.play(url_for("static", filename="audio/09_handle_reminder_call_2.wav"))
+        resp.redirect(url_for("gather_menu"))
 
     return str(resp)
 
@@ -108,11 +107,10 @@ def handle_menu():
 def gather_representative():
     resp = Response()
 
-    with resp.gather(numDigits=5, action=url_for("handle_representative"), method="POST") as g:
-        g.say("Bitte geben Sie den Code ein, der Sie zu ihrem Abgeorneten weiterleitet.", language="de")
-        g.say("Der Code befindet sich am Ende der Seite ihres Abgeordneten und ist fünf Stellen lang.", language="de")
+    with resp.gather(numDigits=5, action=url_for("handle_representative")) as g:
+        g.play(url_for("static", filename="audio/03_gather_representative.wav"))
 
-    resp.redirect(url_for("gather_representative"), method="POST")
+    resp.redirect(url_for("gather_representative"))
 
     return str(resp)
 
@@ -124,12 +122,15 @@ def handle_representative():
     resp = Response()
     
     if rep is not None:
-        resp.say("Sie werden jetzt zu " + str(rep) + " weitergeleitet.", language="de")
+        resp.play(url_for("static", filename="audio/04_handle_representative_1a.wav"))
+        resp.say(str(rep))
+        resp.play(url_for("static", filename="audio/04_handle_representative_1c.wav"))
+
         if not app.debug:
             resp.dial(rep.contact.phone, timelimit=600, callerid=choice(TWILIO_NUMBERS))
     else:
-        resp.say("Sie haben keinen gültigen Code gewählt.", language="de")
-        resp.redirect(url_for("gather_representative"), method="POST")
+        resp.play(url_for("static", filename="audio/04_handle_representative_4.wav"))
+        resp.redirect(url_for("gather_representative"))
 
     return str(resp)
 
@@ -138,11 +139,10 @@ def handle_representative():
 def gather_reminder_time():
     resp = Response()
     
-    with resp.gather(numDigits=2, action=url_for("handle_reminder_time"), method="POST") as g:
-        g.say("Um welche Uhrzeit möchten sie täglich mit einem zufälligen Abgeordneten verbunden werden?", language="de")
-        g.say("Bitte verwenden Sie das Vierundzwanzig-Stunden-Format.", language="de")
+    with resp.gather(numDigits=2, action=url_for("handle_reminder_time")) as g:
+        g.play(url_for("static", filename="audio/05_gather_reminder_time.wav"))
 
-    resp.redirect(url_for("gather_reminder_time"), method="POST")
+    resp.redirect(url_for("gather_reminder_time"))
 
     return str(resp)
 
@@ -154,29 +154,22 @@ def handle_reminder_time():
     resp = Response()
 
     if not number or number in ["+7378742833", "+2562533", "+8656696", "+266696687", "+86282452253"]:
-        resp.say("Es ist ein Fehler aufgetreten.", language="de")
-        resp.say("Bitte kontaktieren Sie uns, um den Service wieder zum Laufen zu bringen.", language="de")
+        resp.play(url_for("static", filename="audio/06_handle_reminder_time_1.wav"))
     if 9 <= digits_pressed <= 16:
-        try:
-            reminder = Reminder(number, digits_pressed)
-            db_session.add(reminder)
-            db_session.commit()
-            resp.say("Sie wurden in unsere Liste aufgenommen.", language="de")
-            resp.say("Um sich wieder abzumelden, rufen Sie erneut an und wählen die entsprechende Option im Menü.", language="de")
-        except IntegrityError as e:
-            db_session.rollback()
-            reminder = db_session.query(Reminder).filter_by(phone_number = number).first()
-
+        reminder = db_session.query(Reminder).filter_by(phone_number = number).first()
+        if reminder.time is None:
+            resp.play(url_for("static", filename="audio/06_handle_reminder_time_2.wav"))
+        else:
             if digits_pressed > datetime.now().hour and reminder.last_called.date() == datetime.today().date():
                 reminder.last_called = None
 
-            reminder.time = digits_pressed
-            db_session.commit()
-            resp.say("Ihre Erinnerungszeit wurde aktualisiert.")
+            resp.play(url_for("static", filename="audio/06_handle_reminder_time_3.wav"))
+
+        reminder.time = digits_pressed
+        db_session.commit()
     else:
-        resp.say("Die Zeit, die Sie eingegeben haben, ist ungültig.", language="de")
-        resp.say("Bitte beachten Sie, dass die Büros der Abgeordneten nur von neun bis sechzehn Uhr besetzt sind.", language="de")
-        resp.redirect(url_for("gather_reminder_time"), method="POST")
+        resp.play(url_for("static", filename="audio/06_handle_reminder_time_4.wav"))
+        resp.redirect(url_for("gather_reminder_time"))
 
     return str(resp)
 
@@ -192,13 +185,10 @@ def handle_reminder_unsubscribe():
     else:
         number = request.values.get("To")
     
-    try:
-        reminder = db_session.query(Reminder).filter_by(phone_number = number).first()
-        reminder.time = None
-        db_session.commit()
-        resp.say("Sie werden ab jetzt nicht mehr regelmäßig mit Abgeordneten verbunden.", language="de")
-    except NoResultFound:
-        pass
+    reminder = db_session.query(Reminder).filter_by(phone_number = number).first()
+    reminder.time = None
+    db_session.commit()
+    resp.play(url_for("static", filename="audio/07_handle_reminder_unsubscribe.wav"))
 
     return str(resp)
 
@@ -207,12 +197,10 @@ def handle_reminder_unsubscribe():
 def gather_reminder_call():
     resp = Response()
 
-    with resp.gather(numDigits=1, action=url_for("handle_reminder_call"), method="POST") as g:
-        g.say("Hallo, ich wollte Sie daran erinnern, einen Abgeordneten zu kontaktieren.", language="de")
-        g.say("Um jetzt mit einem Abgeordneten zu sprechen, wählen Sie Eins.", language="de")
-        g.say("Um in Zukunft nicht mehr erinnert zu werden, wählen Sie Zwei.", language="de")
+    with resp.gather(numDigits=1, action=url_for("handle_reminder_call")) as g:
+        g.play(url_for("static", filename="audio/08_gather_reminder_call.wav"))
 
-    resp.redirect(url_for("gather_reminder_call"), method="POST")
+    resp.redirect(url_for("gather_reminder_call"))
 
     return str(resp)
 
@@ -229,15 +217,18 @@ def handle_reminder_call():
         db_session.commit()
 
         rep = choice([rep for rep in resp.representatives if rep.team.prettyname == "spy"])
-        resp.say("Sie werden jetzt mit " + rep + " verbunden.", language="de")
+        resp.play(url_for("static", filename="audio/09_handle_reminder_call_1a.wav"))
+        resp.say(str(rep))
+        resp.play(url_for("static", filename="audio/09_handle_reminder_call_1c.wav"))
+
         if not app.debug:
             resp.dial(rep.contact.phone, timelimit=600, callerid=choice(TWILIO_NUMBERS))
 
     elif digits_pressed == 2:
-        resp.redirect(url_for("handle_reminder_unsubscribe"), method="POST")
+        resp.redirect(url_for("handle_reminder_unsubscribe"))
     else:
-        resp.say("Sie haben keine gültige Option gewählt.", language="de")
-        resp.redirect(url_for("gather_reminder_call"), method="POST")
+        resp.play(url_for("static", filename="audio/09_handle_reminder_call_2.wav"))
+        resp.redirect(url_for("gather_reminder_call"))
 
     return str(resp)
 
