@@ -123,7 +123,7 @@ def handle_representative():
     
     if rep is not None:
         resp.play(url_for("static", filename="audio/04_handle_representative_1a.wav"))
-        resp.say(str(rep))
+        resp.say(str(rep), language="de")
         resp.play(url_for("static", filename="audio/04_handle_representative_1c.wav"))
 
         if not app.debug:
@@ -218,7 +218,7 @@ def handle_reminder_call():
 
         rep = choice([rep for rep in resp.representatives if rep.team.prettyname == "spy"])
         resp.play(url_for("static", filename="audio/09_handle_reminder_call_1a.wav"))
-        resp.say(str(rep))
+        resp.say(str(rep), language="de")
         resp.play(url_for("static", filename="audio/09_handle_reminder_call_1c.wav"))
 
         if not app.debug:
