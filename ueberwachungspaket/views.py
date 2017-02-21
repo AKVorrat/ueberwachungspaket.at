@@ -2,6 +2,7 @@ from flask import render_template, abort, request, url_for
 from random import choice
 from datetime import datetime
 from twilio.twiml import Response
+from sqlalchemy.exc import IntegrityError
 from config import *
 from database.models import Reminder
 from . import app, reps, db_session
@@ -75,9 +76,12 @@ def gather_menu():
     number = request.values.get("From")
     resp = Response()
     
-    reminder = Reminder(number)
-    db_session.add(reminder)
-    db_session.commit()
+    try:
+        reminder = Reminder(number)
+        db_session.add(reminder)
+        db_session.commit()
+    except IntegrityError:
+        pass
 
     with resp.gather(numDigits=1, action=url_for("handle_menu")) as g:
         g.play(url_for("static", filename="audio/02_gather_menu.wav"))
