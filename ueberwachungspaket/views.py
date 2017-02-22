@@ -179,7 +179,7 @@ def handle_representative():
         if not app.debug:
             resp.dial(rep.contact.phone, timelimit=600, callerid=choice(TWILIO_NUMBERS))
     else:
-        resp.play(url_for("static", filename="audio/handle_representative_error.wav"))
+        resp.play(url_for("static", filename="audio/handle_representative_invalid.wav"))
         resp.redirect(url_for("gather_representative"))
 
     return str(resp)
