@@ -242,9 +242,9 @@ def handle_reminder_menu():
             resp.dial(rep.contact.phone, timelimit=600, callerid=choice(TWILIO_NUMBERS))
 
     elif digits_pressed == 2:
-        resp.redirect(url_for("reminder_info_tape"))
-    elif digits_pressed == 3:
         pass # hang up
+    elif digits_pressed == 3:
+        resp.redirect(url_for("reminder_info_tape"))
     elif digits_pressed == 4:
         resp.redirect(url_for("handle_reminder_unsubscribe"))
     else:
