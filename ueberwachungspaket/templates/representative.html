@@ -60,13 +60,14 @@
 					<input type="email" name="email" required="required">
 				</div>
 				<div class="column">
-					<label for="debit-newsletter" class="space"><input type="checkbox" name="newsletter" value="yes">Newsletter abonnieren</label>
+					<label for="newsletter" class="space"><input type="checkbox" name="newsletter" id="newsletter" value="yes">Newsletter abonnieren</label>
 				</div>
 			</div>
 			<p class="small">* Pflichtfeld</p>
 			<input type="hidden" name="id" value="{{ rep.id }}" />
 			<div class="textarea">{{ lipsum(2) }}</div>
 			<button class="btn btn-default">Senden</button>
+			<p class="center small indent">Wenn du diese Nachricht abändern möchtest, kannst du die E-Mail <a href="mailto:{{ rep.contact.mail }}?subject=%C3%9Cberwachungspaket">direkt</a> verschicken.</p>
 		</form>
 	</section>
 {% endblock %}
