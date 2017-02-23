@@ -5,21 +5,24 @@ class Representatives():
     def __init__(self):
         self.parties = load_parties()
         self.teams = load_teams()
-        self.representatives = load_representatives(self.parties, self.teams)
+        self.representatives = load_representatives("representatives.json", self.parties, self.teams)
+        self.government = load_representatives("government.json", self.parties, self.teams)
 
     def get_representative_by_id(self, id):
+        representatives = self.representatives + self.government
         if id == "00000":
             return choice(self.representatives)
 
         try:
-            rep = [rep for rep in self.representatives if rep.id == id][0]
+            rep = [rep for rep in representatives if rep.id == id][0]
         except IndexError:
             rep = None
         return rep
 
     def get_representative_by_name(self, prettyname):
+        representatives = self.representatives + self.government
         try:
-            rep = [rep for rep in self.representatives if rep.name.prettyname == prettyname][0]
+            rep = [rep for rep in representatives if rep.name.prettyname == prettyname][0]
         except IndexError:
             rep = None
         return rep
@@ -117,10 +120,10 @@ def load_teams():
 
     return teams
 
-def load_representatives(parties, teams):
+def load_representatives(filename, parties, teams):
     representatives = []
 
-    with open("ueberwachungspaket/data/representatives.json", "r") as f:
+    with open("ueberwachungspaket/data/" + filename, "r") as f:
         lrepresentatives = load(f)
 
     for lrep in lrepresentatives:
