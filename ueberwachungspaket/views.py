@@ -82,9 +82,7 @@ def gather_menu():
         pass
 
     with resp.gather(numDigits=1, action=url_for("handle_menu")) as g:
-        g.play(url_for("static", filename="audio/gather_menu.wav"))
-
-    resp.redirect(url_for("gather_menu"))
+        g.play(url_for("static", filename="audio/gather_menu.wav"), loop = 4)
 
     return str(resp)
 
@@ -114,9 +112,7 @@ def gather_reminder_time():
     resp = Response()
     
     with resp.gather(numDigits=2, action=url_for("handle_reminder_time")) as g:
-        g.play(url_for("static", filename="audio/gather_reminder_time.wav"))
-
-    resp.redirect(url_for("gather_reminder_time"))
+        g.play(url_for("static", filename="audio/gather_reminder_time.wav"), loop = 4)
 
     return str(resp)
 
@@ -153,9 +149,7 @@ def gather_representative():
     resp = Response()
 
     with resp.gather(numDigits=5, action=url_for("handle_representative")) as g:
-        g.play(url_for("static", filename="audio/gather_representative.wav"))
-
-    resp.redirect(url_for("gather_representative"))
+        g.play(url_for("static", filename="audio/gather_representative.wav"), loop = 4)
 
     return str(resp)
 
@@ -214,7 +208,7 @@ def gather_reminder_menu():
     resp = Response()
 
     with resp.gather(numDigits=1, action=url_for("handle_reminder_menu")) as g:
-        g.play(url_for("static", filename="audio/gather_reminder_menu.wav"), loop = 5)
+        g.play(url_for("static", filename="audio/gather_reminder_menu.wav"), loop = 4)
 
     return str(resp)
 
