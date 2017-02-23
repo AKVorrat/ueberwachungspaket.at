@@ -10,7 +10,7 @@ from .decorators import validate_twilio_request
 
 @app.route("/")
 def root():
-    important_reps = [reps.get_representative_by_id(id) for id in IMPORTANT_REPS]
+    important_reps = [reps.get_representative_by_id(id) for id in app.config["IMPORTANT_REPS"]]
     return render_template("index.html", reps=important_reps)
 
 @app.route("/politiker/")
