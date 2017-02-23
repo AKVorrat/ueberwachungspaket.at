@@ -214,9 +214,7 @@ def gather_reminder_menu():
     resp = Response()
 
     with resp.gather(numDigits=1, action=url_for("handle_reminder_menu")) as g:
-        g.play(url_for("static", filename="audio/gather_reminder_menu.wav"))
-
-    resp.redirect(url_for("gather_reminder_menu"))
+        g.play(url_for("static", filename="audio/gather_reminder_menu.wav"), loop = 5)
 
     return str(resp)
 
