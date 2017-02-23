@@ -1,10 +1,10 @@
 [
 	{
 		"contact": {
-			"facebook": "",
-			"mail": "",
-			"phone": "",
-			"twitter": ""
+			"facebook": "bundeskanzler.christian.kern",
+			"mail": "christian.kern@bka.gv.at",
+			"phone": "0800222666",
+			"twitter": "@KernChri"
 		},
 		"id": "02941",
 		"image": {
@@ -25,9 +25,9 @@
 	},
 	{
 		"contact": {
-			"facebook": "",
-			"mail": "",
-			"phone": "",
+			"facebook": "m.duzdar",
+			"mail": "munar.duzdar@bka.gv.at",
+			"phone": "0153115204065",
 			"twitter": ""
 		},
 		"id": "60446",
@@ -49,10 +49,10 @@
 	},
 	{
 		"contact": {
-			"facebook": "",
-			"mail": "",
-			"phone": "",
-			"twitter": ""
+			"facebook": "thomas.drozda",
+			"mail": "Thomas.Drozda@bka.gv.at",
+			"phone": "0153115202104",
+			"twitter": "@thomasdrozda"
 		},
 		"id": "88629",
 		"image": {
@@ -75,13 +75,13 @@
 		"contact": {
 			"facebook": "",
 			"mail": "",
-			"phone": "",
-			"twitter": ""
+			"phone": "0171100805193",
+			"twitter": "@MitterlehnerR"
 		},
 		"id": "08696",
 		"image": {
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "/PAD_08696/4386658_384.jpg"
+			"url": "/PAD_08696/4386658_180.jpg"
 		},
 		"name": {
 			"firstname": "Reinhold",
@@ -97,10 +97,10 @@
 	},
 	{
 		"contact": {
-			"facebook": "",
-			"mail": "",
-			"phone": "",
-			"twitter": ""
+			"facebook": "sebastiankurz.at",
+			"mail": "sebastian.kurz@bmeia.gv.at",
+			"phone": "05011503469",
+			"twitter": "@sebastiankurz"
 		},
 		"id": "65321",
 		"image": {
@@ -129,7 +129,7 @@
 		"id": "52687",
 		"image": {
 			"copyright": "Grebe Elisabeth",
-			"url": "/PAD_52687/2402825_384.jpg"
+			"url": "/PAD_52687/2402825_180.jpg"
 		},
 		"name": {
 			"firstname": "Alois",
@@ -145,9 +145,9 @@
 	},
 	{
 		"contact": {
-			"facebook": "",
-			"mail": "",
-			"phone": "",
+			"facebook": "S.Hammerschmid",
+			"mail": "sonja.hammerschmid@bmb.gv.at",
+			"phone": "01531205000",
 			"twitter": ""
 		},
 		"id": "88631",
@@ -169,9 +169,9 @@
 	},
 	{
 		"contact": {
-			"facebook": "",
-			"mail": "",
-			"phone": "",
+			"facebook": "karmasin.sophie",
+			"mail": "sophie.karmasin@bmfj.gv.at",
+			"phone": "01711000",
 			"twitter": ""
 		},
 		"id": "83297",
@@ -218,9 +218,9 @@
 	{
 		"contact": {
 			"facebook": "",
-			"mail": "",
-			"phone": "",
-			"twitter": ""
+			"mail": "hans-joerg.schelling@bmf.gv.at",
+			"phone": "+43 1 51433-500005",
+			"twitter": "@HJSchelling"
 		},
 		"id": "36907",
 		"image": {
@@ -241,10 +241,10 @@
 	},
 	{
 		"contact": {
-			"facebook": "",
-			"mail": "",
-			"phone": "",
-			"twitter": ""
+			"facebook": "InnenministerAT",
+			"mail": "ministerbuero@bmi.gv.at",
+			"phone": "01531262025",
+			"twitter": "@wolfgangsobotka"
 		},
 		"id": "88386",
 		"image": {
@@ -266,8 +266,8 @@
 	{
 		"contact": {
 			"facebook": "",
-			"mail": "",
-			"phone": "",
+			"mail": "minister.justiz@bmj.gv.at",
+			"phone": "+43 1 52152 2313",
 			"twitter": ""
 		},
 		"id": "83295",
@@ -290,9 +290,9 @@
 	{
 		"contact": {
 			"facebook": "",
-			"mail": "",
-			"phone": "",
-			"twitter": ""
+			"mail": "hans-peter.doskozil@bmlvs.gv.at",
+			"phone": "050201 10 20071",
+			"twitter": "@HPDoskozilAt"
 		},
 		"id": "87429",
 		"image": {
@@ -313,10 +313,10 @@
 	},
 	{
 		"contact": {
-			"facebook": "",
-			"mail": "",
-			"phone": "",
-			"twitter": ""
+			"facebook": "BMRupprechter",
+			"mail": "buero.rupprechter@bmlfuw.gv.at",
+			"phone": "0171100606918",
+			"twitter": "@BMRupprechter"
 		},
 		"id": "83296",
 		"image": {
@@ -337,15 +337,15 @@
 	},
 	{
 		"contact": {
-			"facebook": "",
-			"mail": "",
-			"phone": "",
-			"twitter": ""
+			"facebook": "joerg.leichtfried",
+			"mail": "joerg.leichtfried@bmvit.gv.at",
+			"phone": "0171162658818",
+			"twitter": "@jleichtfried"
 		},
 		"id": "22694",
 		"image": {
 			"copyright": "www.beauhartphotography.com",
-			"url": "/PAD_22694/4832364_384.jpg"
+			"url": "/PAD_22694/4832364_180.jpg"
 		},
 		"name": {
 			"firstname": "Jörg",
@@ -361,9 +361,9 @@
 	},
 	{
 		"contact": {
-			"facebook": "",
-			"mail": "",
-			"phone": "",
+			"facebook": "harald.mahrer",
+			"mail": "harald.mahrer@bmwfw.gv.at",
+			"phone": "0171100802691",
 			"twitter": ""
 		},
 		"id": "84308",
