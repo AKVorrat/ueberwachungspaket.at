@@ -698,6 +698,7 @@ label.space {
 	margin: 2rem auto;
 	font-family: "Courier New", Courier, serif;
 	font-size: 18px;
+	background-color: #fff;
 	border: 1px solid #00466e;
 	border-radius: 2px;
 }
