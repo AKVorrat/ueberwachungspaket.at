@@ -1,7 +1,12 @@
+{% set navigation_items = [
+	("root", "Home"),
+	("representatives", "Werde Aktiv"),
+	("share", "Rede über Überwachung"),
+	("faq", "FAQ")
+] -%}
+
 <ul class="row">
-	<li><a href="{{ url_for('root') }}">Home</a></li>
-	<li class="highlight"><a href="{{ url_for('representatives') }}">Abgeordnete</a></li>
-	<li><a href="{{ url_for('share') }}">Weitersagen</a></li>
-	<li><a href="{{ url_for('topics') }}">Kritik</a></li>
-	<li><a href="{{ url_for('faq') }}">FAQ</a></li>
+	{% for func, title in navigation_items %}
+	<li{% if func == active_page %} class="active"{% endif %}><a href="{{ url_for(func) }}">{{ title }}</a></li>
+	{% endfor %}
 </ul>

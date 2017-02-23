@@ -1,12 +1,13 @@
 {% extends "layout.html" %}
+{% set active_page = "representatives" %}
 
 {% block title %}
-	<title>Deine Abgeordneten | {{ config['PROJECT_NAME'] }}</title>
+	<title>Dein Draht zu deinen Politikern | {{ config['PROJECT_NAME'] }}</title>
 {% endblock title %}
 
 {% block content %}
 	<section>
-		<h1>Deine Abgeordneten</h1>
+		<h1>Dein Draht zu deinen Politikern</h1>
 		<div id="filter" class="column">
 			<form id="parties" class="btn-group row">
 				<input id="spoe" type="checkbox">

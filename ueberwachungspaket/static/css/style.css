@@ -253,7 +253,7 @@ nav > ul > li > a {
 	color: inherit;
 }
 
-nav > ul > li.highlight {
+nav > ul > li.active {
 	color: #fff;
 	background-color: #c80000;
 }
