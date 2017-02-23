@@ -64,7 +64,7 @@ class Team():
         return self.name
 
 class Representative():
-    def __init__(self, id, name, contact, image, party, team, sex, state, important):
+    def __init__(self, id, name, contact, image, party, team, sex, state):
         self.id = id
         self.name = name
         self.contact = contact
@@ -73,7 +73,6 @@ class Representative():
         self.team = team
         self.sex = sex
         self.state = state
-        self.important = important
 
         if not self.contact.mail:
             self.contact.mail = party.contact.mail
@@ -132,7 +131,7 @@ def load_representatives(parties, teams):
         image = Image(lrep["image"]["url"], lrep["image"]["copyright"])
         party = parties[lrep["party"]]
         team = teams[lrep["team"]]
-        representative = Representative(lrep["id"], name, contact, image, party, team, lrep["sex"], lrep["state"], lrep["important"])
+        representative = Representative(lrep["id"], name, contact, image, party, team, lrep["sex"], lrep["state"])
         representatives.append(representative)
 
     return representatives
