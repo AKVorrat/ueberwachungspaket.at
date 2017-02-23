@@ -100,6 +100,8 @@ def handle_menu():
         resp.redirect(url_for("info_tape"))
     elif digits_pressed == 4:
         resp.redirect(url_for("handle_reminder_unsubscribe"))
+    elif digits_pressed == 5:
+        resp.dial(FEEDBACK_NUMBER)
     else:
         resp.play(url_for("static", filename="audio/invalid.wav"))
         resp.redirect(url_for("gather_menu"))
@@ -238,6 +240,8 @@ def handle_reminder_menu():
         resp.redirect(url_for("reminder_info_tape"))
     elif digits_pressed == 4:
         resp.redirect(url_for("handle_reminder_unsubscribe"))
+    elif digits_pressed == 5:
+        resp.dial(FEEDBACK_NUMBER)
     else:
         resp.play(url_for("static", filename="audio/invalid.wav"))
         resp.redirect(url_for("gather_reminder_menu"))
