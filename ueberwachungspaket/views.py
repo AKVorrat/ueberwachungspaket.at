@@ -14,11 +14,11 @@ def root():
     shuffle(important_reps)
     return render_template("index.html", reps=important_reps[0:5])
 
-@app.route("/abgeordnete/")
+@app.route("/politiker/")
 def representatives():
     return render_template("representatives.html", reps=reps.representatives)
 
-@app.route("/a/<prettyname>/")
+@app.route("/p/<prettyname>/")
 def representative(prettyname):
     rep = reps.get_representative_by_name(prettyname)
     if rep:
@@ -29,10 +29,6 @@ def representative(prettyname):
 @app.route("/weitersagen/")
 def share():
     return render_template("share.html")
-
-@app.route("/kritik/")
-def topics():
-    return render_template("topics.html")
 
 @app.route("/faq/")
 def faq():
