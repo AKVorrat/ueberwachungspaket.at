@@ -194,30 +194,6 @@
 	{
 		"contact": {
 			"facebook": "",
-			"mail": "",
-			"phone": "",
-			"twitter": ""
-		},
-		"id": "35509",
-		"image": {
-			"copyright": "BMG / Johannes Zinner",
-			"url": "/PAD_35509/5224316_384.jpg"
-		},
-		"name": {
-			"firstname": "Sabine",
-			"lastname": "Oberhauser",
-			"prefix": "Dr.",
-			"prettyname": "sabine-oberhauser",
-			"suffix": "MAS"
-		},
-		"party": "spoe",
-		"sex": "female",
-		"state": "",
-		"team": "unknown"
-	},
-	{
-		"contact": {
-			"facebook": "",
 			"mail": "hans-joerg.schelling@bmf.gv.at",
 			"phone": "+43 1 51433-500005",
 			"twitter": "@HJSchelling"
