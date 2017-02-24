@@ -164,11 +164,11 @@ def handle_representative():
     
     if rep is not None:
         resp.play(url_for("static", filename="audio/handle_representative_a.wav"))
-        resp.say(str(rep), language="de-DE", voice="alice")
+        resp.play(url_for("static", filename="audio/representative/" + rep.name.prettyname + ".wav"))
         resp.play(url_for("static", filename="audio/handle_representative_c.wav"))
 
         if not app.debug:
-            resp.dial(rep.contact.phone, timelimit=600, callerid=choice(TWILIO_NUMBERS))
+            resp.dial(rep.contact.phone, timelimit=900, callerid=choice(TWILIO_NUMBERS))
     else:
         resp.play(url_for("static", filename="audio/handle_representative_invalid.wav"))
         resp.redirect(url_for("gather_representative"))
@@ -228,11 +228,11 @@ def handle_reminder_menu():
 
         rep = choice([rep for rep in resp.representatives if rep.team.prettyname == "spy"])
         resp.play(url_for("static", filename="audio/handle_representative_a.wav"))
-        resp.say(str(rep), language="de-DE", voice="alice")
+        resp.play(url_for("static", filename="audio/representative/" + rep.name.prettyname + ".wav"))
         resp.play(url_for("static", filename="audio/handle_representative_c.wav"))
 
         if not app.debug:
-            resp.dial(rep.contact.phone, timelimit=600, callerid=choice(TWILIO_NUMBERS))
+            resp.dial(rep.contact.phone, timelimit=900, callerid=choice(TWILIO_NUMBERS))
 
     elif digits_pressed == 2:
         pass # hang up
