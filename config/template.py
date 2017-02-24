@@ -1,6 +1,19 @@
+# Twilio settings using Twilio API keys.
+TWILIO_NUMBERS = ['']
+TWILIO_ACCOUNT = ''
+TWILIO_SID = ''
+TWILIO_SECRET = ''
+TWILIO_APP = ''
+
+# A database is needed to store reminders.
 DB_USER = ''
-DB_HOST = ''
 DB_PASSWORD = ''
+DB_HOST = ''
 DB_NAME = ''
 
-TWILIO_NUMBERS = ['']
+# Key used by Flask to encrypt cookies.
+# Check out Flask documentation on how to generate a key.
+SECRET_KEY = b''
+
+# Number dialed if a caller wants to give feedback.
+FEEDBACK_NUMBER = ''
