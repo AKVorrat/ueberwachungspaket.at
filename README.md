@@ -3,7 +3,7 @@ Dieses Repository beinhaltet den Code der Kampagne "Kontaktiere Deine Abgeordnet
 
 # Setup
 See below for dependencies.
-- copy config/template.py to config/__init__.py
+- copy config/template.py to config/\_\_init\_\_.py
 - fill in your Twilio and database settings
 - run ./run.py to start the local development server
 
