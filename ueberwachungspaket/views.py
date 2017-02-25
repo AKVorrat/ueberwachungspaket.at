@@ -167,8 +167,13 @@ def handle_representative():
         resp.play(url_for("static", filename="audio/representative/" + rep.name.prettyname + ".wav"))
         resp.play(url_for("static", filename="audio/handle_representative_c.wav"))
 
-        if not app.debug:
+        if app.debug:
+            resp.dial(FEEDBACK_NUMBER, timelimit=60, callerid=choice(TWILIO_NUMBERS))
+        else:
             resp.dial(rep.contact.phone, timelimit=900, callerid=choice(TWILIO_NUMBERS))
+
+        resp.play(url_for("static", filename="audio/adieu.wav"))
+
     else:
         resp.play(url_for("static", filename="audio/handle_representative_invalid.wav"))
         resp.redirect(url_for("gather_representative"))
@@ -231,8 +236,12 @@ def handle_reminder_menu():
         resp.play(url_for("static", filename="audio/representative/" + rep.name.prettyname + ".wav"))
         resp.play(url_for("static", filename="audio/handle_representative_c.wav"))
 
-        if not app.debug:
+        if app.debug:
+            resp.dial(FEEDBACK_NUMBER, timelimit=60, callerid=choice(TWILIO_NUMBERS))
+        else:
             resp.dial(rep.contact.phone, timelimit=900, callerid=choice(TWILIO_NUMBERS))
+
+        resp.play(url_for("static", filename="audio/adieu.wav"))
 
     elif digits_pressed == 2:
         pass # hang up
