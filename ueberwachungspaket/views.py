@@ -231,7 +231,7 @@ def handle_reminder_menu():
         reminder.times_forwarded = reminder.times_forwarded + 1
         db_session.commit()
 
-        rep = choice([rep for rep in resp.representatives if rep.team.prettyname == "spy"])
+        rep = reps.get_representative_by_id("00000")
         resp.play(url_for("static", filename="audio/handle_representative_a.wav"))
         resp.play(url_for("static", filename="audio/representative/" + rep.name.prettyname + ".wav"))
         resp.play(url_for("static", filename="audio/handle_representative_c.wav"))
