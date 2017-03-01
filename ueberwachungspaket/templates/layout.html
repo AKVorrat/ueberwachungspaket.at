@@ -9,7 +9,7 @@
 			{% set navigation_items = [
 				("root", "Home"),
 				("representatives", "Werde Aktiv"),
-				("share", "Rede über Überwachung"),
+				("share", "Sprich über Überwachung"),
 				("faq", "FAQ")
 			] -%}
 
@@ -21,6 +21,8 @@
 		</nav>
 
 		{% block header %}{% endblock header %}
+
+		{% block precontent %}{% endblock precontent %}
 
 		<main>
 			{% block content %}{% endblock content %}
