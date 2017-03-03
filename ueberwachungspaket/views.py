@@ -15,7 +15,7 @@ def root():
 
 @app.route("/politiker/")
 def representatives():
-    return render_template("representatives.html", reps=reps.representatives)
+    return render_template("representatives.html", reps=reps.representatives + reps.government)
 
 @app.route("/p/<prettyname>/")
 def representative(prettyname):
