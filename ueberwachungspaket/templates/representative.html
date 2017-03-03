@@ -19,14 +19,19 @@
 			<a class="share center" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Füberwachungspaket%2Eat%2F&text=Stoppt%20das%20%C3%9Cberwachungspaket%21%20%40{{ rep.contact.twitter }}&hashtags=%C3%BCberwachungspaket&related=epicenter%5Fworks%3Aepicenter%2Eworks" target="_blank">
 				<div class="center"><i class="fa fa-twitter" aria-hidden="true"></i></div>
 			</a>
+			{% if rep.contact.mail|length > 0 %}
 			<a class="share center" href="#email">
 				<div class="center"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
 			</a>
+			{% endif %}
+			{% if rep.contact.phone|length > 0 %}
 			<a class="share center" href="#anrufen">
 				<div class="center"><i class="fa fa-phone" aria-hidden="true"></i></div>
 			</a>
+			{% endif %}
 		</div>
 	</section>
+	{% if rep.contact.phone|length > 0 %}
 	<section id="anrufen">
 		<h2><a name="anrufen"></a><i class="fa fa-phone fa-lg" aria-hidden="true"></i> Anrufen</h2>
 		<div id="call" class="row items3 row-space centertext">
@@ -47,6 +52,8 @@
 			</div>
 		</div>
 	</section>
+	{% endif %}
+	{% if rep.contact.mail|length > 0 %}
 	<section id="email-senden">
 		<h2><a name="email"></a><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i> E-Mail senden</h2>
 		<form id="mail" autocomplete="off" class="shrunk" action="{{ url_for('mail') }}" method="post">
@@ -74,4 +81,5 @@
 			<p class="center small indent">Wenn du diese Nachricht abändern möchtest, kannst du die E-Mail <a href="mailto:{{ rep.contact.mail }}?subject=%C3%9Cberwachungspaket">direkt</a> verschicken.</p>
 		</form>
 	</section>
+	{% endif %}
 {% endblock %}
