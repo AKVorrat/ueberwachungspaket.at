@@ -612,10 +612,6 @@ label.space {
 }
 
 .btn:hover {
-	color: rgba(255, 255, 255, 1);
-}
-
-.btn.btn-default:hover {
 	color: #fff;
 	background:#449d44;
 }
@@ -686,6 +682,9 @@ label.space {
 	text-align: left;
 }
 
+#email-senden .textarea {
+	color: #777777;
+}
 
 
 
@@ -1215,9 +1214,13 @@ nav > ul > li.active {
 }
 .chat .btn{
 	width: 550px;
+	color: #ffffff !important;
 	background: #449d44;
 	font-size: 14px;
+	text-decoration: none;
+	border-bottom: 0px;
 }
+
 .chat h3{
 	font-size: 100%;
 	font-family: "OpenSans", "Helvetica Neue", "Helvetica", sans-serif;
