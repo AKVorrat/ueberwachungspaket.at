@@ -80,7 +80,7 @@
 			</div>
 			<p class="small">* Pflichtfeld</p>
 			<input type="hidden" name="id" value="{{ rep.id }}" />
-			<div class="textarea">{{ lipsum(2) }}</div>
+			<div class="textarea">{{ mail_text|e }}</div>
 			<button class="btn btn-default">Senden</button>
 			<p class="center small indent">Wenn du diese Nachricht abändern möchtest, kannst du die E-Mail <a href="mailto:{{ rep.contact.mail }}?subject=%C3%9Cberwachungspaket">direkt</a> verschicken.</p>
 		</form>
