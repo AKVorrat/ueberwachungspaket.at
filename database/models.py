@@ -1,4 +1,5 @@
 import datetime
+from uuid import uuid4
 from sqlalchemy import Column, Integer, String, Date, DateTime
 from . import Base
 
@@ -24,3 +25,21 @@ class Reminder(Base):
 
     def __repr__(self):
         return "<Reminder for {}>".format(self.phone_number)
+
+class Mail(Base):
+    __tablename__ = "mails"
+    id = Column(Integer, primary_key=True)
+    mail_from = Column(String(254))
+    name_from = Column(String(256))
+    mail_to = Column(String(254))
+    hash = Column(String(64))
+    date_requested = Column(DateTime)
+    date_sent = Column(DateTime)
+
+    def __init__(self, mail_from, name_from, mail_to):
+        self.mail_from = mail_from
+        self.name_from = name_from
+        self.mail_to = mail_to
+        self.hash = uuid4.hex
+        self.date_requested = datetime.today()
+        self.date_sent = None

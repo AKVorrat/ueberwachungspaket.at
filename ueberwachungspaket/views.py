@@ -4,7 +4,7 @@ from datetime import datetime
 from twilio.twiml import Response
 from sqlalchemy.exc import IntegrityError
 from config import *
-from database.models import Reminder
+from database.models import Reminder, Mail
 from . import app, reps, db_session
 from .decorators import validate_twilio_request
 
@@ -17,11 +17,15 @@ def root():
 def representatives():
     return render_template("representatives.html", reps=reps.representatives + reps.government)
 
+def mail_text(rep):
+    title = "Abgeordneter" if rep.sex == "male" else "Abgeordnete"
+    return app.config["MAIL_REPS"].format(name_to=rep, mail_to=rep.contact.mail, title=title, name_from="Dein Name")
+
 @app.route("/p/<prettyname>/")
 def representative(prettyname):
     rep = reps.get_representative_by_name(prettyname)
     if rep:
-        return render_template("representative.html", rep=rep, twilio_number=TWILIO_NUMBERS[0])
+        return render_template("representative.html", rep=rep, mail_text=mail_text(rep), twilio_number=TWILIO_NUMBERS[0])
     else:
         abort(404)
 
@@ -37,26 +41,40 @@ def faq():
 def privacy():
     return render_template("privacy.html")
 
-def sendmail(rep, firstname, lastname, email):
-    return False
-    
 @app.route("/act/mail/", methods=["POST"])
 def mail():
     id = request.form.get("id")
     firstname = request.form.get("firstname")
     lastname = request.form.get("lastname")
-    email = request.form.get("email")
+    name_from = firstname + " " + lastname
+    mail_from = request.form.get("email")
     newsletter = True if request.form.get("newsletter") == "yes" else False
     rep = reps.get_representative_by_id(id)
 
-    if not all([rep, firstname, lastname, email]):
+    if not all([rep, firstname, lastname, mail_from]):
         app.logger.info("Sendmail: passed invalid arguments.")
         abort(400) # bad request
 
     if not app.debug:
-        success = sendmail(rep, firstname, lastname, email, newsletter)
+        mail = Mail(name_from, mail_from, rep.contact.mail)
+        db_session.add(mail)
+        db_session.commit()
 
     return render_template("representative.html", rep=rep, success=success)
+
+def sendmail(name_from, mail_from, mail_to):
+    return False
+
+@app.route("/act/confirm/<hash>", methods=["POST"])
+def confirm(hash):
+    try:
+        mail = db_session.query(Mail).filter_by(hash=hash).first()
+        mail.date_sent = datetime.today()
+        sendmail(mail.name_from, mail.name_from, mail.mail_to)
+    except ItegrityError:
+        abort(400) # bad request
+
+    return render_template("confirmed.html", mail_to=mail.mail_to)
 
 @app.route("/act/call/", methods=["POST"])
 @validate_twilio_request
