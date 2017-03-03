@@ -11,6 +11,7 @@ class Reminder(Base):
     last_called = Column(DateTime)
     times_called = Column(Integer, nullable=False)
     times_forwarded = Column(Integer, nullable=False)
+    time_connected = Column(Integer, nullable=False)
 
     def __init__(self, phone_number, time=None):
         self.phone_number = phone_number
@@ -19,6 +20,7 @@ class Reminder(Base):
         self.last_called = None
         self.times_called = 0
         self.times_forwarded = 0
+        self.time_connected = 0
 
     def __repr__(self):
         return "<Reminder for {}>".format(self.phone_number)
