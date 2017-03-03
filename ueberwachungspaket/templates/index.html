@@ -345,35 +345,4 @@
 		</div>
 	</section>
 	
-	<script language="javascript" type="text/javascript" src="static/js/jquery-3.1.1.min.js"></script>
-	<script src="{{ url_for('static', filename='js/jquery-ui.js') }}"></script>
-	<script language="javascript" type="text/javascript" src="static/js/site.js"></script>
-	<script>
-		// Update the progressbar
-		function updateProgress() {
-			var startDate = '01/30/2017';
-			var endDate = '06/30/2017';
-
-			if (startDate != "" && endDate != "") {
-				var minDate = new Date(convertStringToDate(startDate));
-				var today = new Date();
-				var maxDate = new Date(convertStringToDate(endDate));
-
-				var nbTotalDays = Math.floor((maxDate.getTime() - minDate.getTime()) / 86400000);
-				var nbPastDays = Math.floor((today.getTime() - minDate.getTime()) / 86400000);
-
-				var percent = nbPastDays / nbTotalDays * 100;
-
-				// Extreme cases
-				if (percent < 0) {
-					percent = 0;
-				} else if (percent > 100) {
-					percent = 100;
-				}
-
-				$(".progressbar").reportprogress(percent);
-			}
-		}
-		updateProgress();
-	</script>
 {% endblock %}
