@@ -4,6 +4,7 @@ from datetime import datetime
 from twilio.twiml import Response
 from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm.exc import NoResultFound
+from smtplib import SMTP
 from config import *
 from database.models import Reminder, Mail
 from . import app, reps, db_session
@@ -17,10 +18,6 @@ def root():
 @app.route("/politiker/")
 def representatives():
     return render_template("representatives.html", reps=reps.representatives + reps.government)
-
-def mail_text(rep):
-    title = "Abgeordneter" if rep.sex == "male" else "Abgeordnete"
-    return app.config["MAIL_REPS"].format(name_to=rep, mail_to=rep.contact.mail, title=title, name_from="Dein Name")
 
 @app.route("/p/<prettyname>/")
 def representative(prettyname):
@@ -42,32 +39,57 @@ def faq():
 def privacy():
     return render_template("privacy.html")
 
+def sendmail(name_user, mail_user, rep):
+    addr_from = name_user + " <" + mail_user + ">"
+    addr_to = str(rep) + " <" + rep.contact.mail + ">"
+    salutation = "Sehr geehrter Herr" if rep.sex == "male" else "Sehr geehrte Frau"
+    msg = app.config["MAIL_REPS"].format(name_rep=str(rep), name_user=name_user, salutation=salutation)
+
+    if app.debug:
+        app.logger.info("Sending mail from " + addr_from + " to " + addr_to + ".")
+    else:
+        server = SMTP("localhost")
+        server.sendmail(addr_from, addr_to, msg)
+        server.quit()
+
+def authmail(name_user, mail_user, hash):
+    addr_from = "überwachungspaket.at" + " <" + "no-reply@überwachungspaket.at" + ">"
+    addr_to = name_user + " <" + mail_user + ">"
+    url = url_for("auth", hash=hash, _external=True)
+    msg = app.config["MAIL_AUTH"].format(name_user=name_user, url=url)
+
+    if app.debug:
+        app.logger.info("Sending mail from " + addr_from + " to " + addr_to + ".")
+        app.logger.info(msg)
+    else:
+        server = SMTP("localhost")
+        server.sendmail(addr_from, addr_to, msg)
+        server.quit()
+
 @app.route("/act/mail/", methods=["POST"])
 def mail():
     id = request.form.get("id")
     rep = reps.get_representative_by_id(id)
     firstname = request.form.get("firstname")
     lastname = request.form.get("lastname")
-    name_from = firstname + " " + lastname
-    mail_from = request.form.get("email")
+    name_user = firstname + " " + lastname
+    mail_user = request.form.get("email")
     newsletter = True if request.form.get("newsletter") == "yes" else False
 
-    if not all([rep, firstname, lastname, mail_from]):
-        app.logger.info("Sendmail: invalid arguments passed.")
+    if not all([rep, firstname, lastname, mail_user]):
+        app.logger.info("Mail: invalid arguments passed.")
         abort(400) # bad request
 
     try:
-        mail = Mail(name_from, mail_from, id)
+        mail = Mail(name_user, mail_user, id)
         db_session.add(mail)
         db_session.commit()
-        flash("Danke für dein Engagement. Um fortzufahren, bestätige bitte den Link, den wir an {mail_from} gesandt haben.".format(mail_from=mail_from))
+        authmail(name_user, mail_user, mail.hash)
+        flash("Danke für dein Engagement. Um fortzufahren, bestätige bitte den Link, den wir an {mail_user} gesandt haben.".format(mail_user=mail_user))
     except IntegrityError:
         flash("Von dieser E-Mail wurde bereits eine E-Mail an {rep_name} gesendet.".format(rep_name=str(rep)))
 
     return redirect(url_for("representative", prettyname=rep.name.prettyname, _anchor="email-senden"))
-
-def sendmail(name_from, mail_from, rep_id):
-    return False
 
 @app.route("/act/auth/<hash>", methods=["GET"])
 def auth(hash):
@@ -77,7 +99,7 @@ def auth(hash):
         if mail.date_sent is None:
             mail.date_sent = datetime.today()
             db_session.commit()
-            sendmail(mail.name_from, mail.name_from, rep.contact.mail)
+            sendmail(mail.name_user, mail.mail_user, rep)
             flash("Ihre Nachricht wurde erfolgreich versandt.")
         else:
             flash("Ihre Nachricht wurde bereits versandt.")

@@ -31,20 +31,20 @@ class Mail(Base):
     __tablename__ = "mails"
 
     id = Column(Integer, primary_key=True)
-    name_from = Column(String(256), nullable=False)
-    mail_from = Column(String(254), nullable=False)
+    name_user = Column(String(256), nullable=False)
+    mail_user = Column(String(254), nullable=False)
     rep_id = Column(String(5), nullable=False)
     hash = Column(String(64), nullable=False)
     date_requested = Column(DateTime, nullable=False)
     date_sent = Column(DateTime)
 
     __table_args__ = tuple(
-            UniqueConstraint(mail_from, rep_id)
+            UniqueConstraint(mail_user, rep_id)
             )
 
-    def __init__(self, name_from, mail_from, rep_id):
-        self.name_from = name_from
-        self.mail_from = mail_from
+    def __init__(self, name_user, mail_user, rep_id):
+        self.name_user = name_user
+        self.mail_user = mail_user
         self.rep_id = rep_id
         self.hash = uuid4().hex
         self.date_requested = datetime.today()

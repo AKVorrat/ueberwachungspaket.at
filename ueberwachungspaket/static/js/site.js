@@ -59,7 +59,7 @@ function updateText(event) {
 	$("#mail .textarea").empty();
 	$.each(lines, function() {
 		if(this.length) {
-			str = this.replace("{salutation}", MailSalutation).replace("{name_to}", MailNameTo).replace("{name_from}", MailNameFrom);
+			str = this.replace("{salutation}", MailSalutation).replace("{name_rep}", MailNameTo).replace("{name_user}", MailNameFrom);
 			$("#mail .textarea").append("<p>" + str + "</p>");
 		}
 	});
