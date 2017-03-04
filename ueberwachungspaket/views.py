@@ -52,7 +52,7 @@ def mail():
     mail_from = request.form.get("email")
     newsletter = True if request.form.get("newsletter") == "yes" else False
 
-    if not all([id, firstname, lastname, mail_from]):
+    if not all([rep, firstname, lastname, mail_from]):
         app.logger.info("Sendmail: invalid arguments passed.")
         abort(400) # bad request
 
