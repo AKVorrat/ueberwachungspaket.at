@@ -1,8 +1,9 @@
-from flask import render_template, abort, request, url_for
+from flask import render_template, abort, request, url_for, flash, redirect
 from random import choice
 from datetime import datetime
 from twilio.twiml import Response
 from sqlalchemy.exc import IntegrityError
+from sqlalchemy.orm.exc import NoResultFound
 from config import *
 from database.models import Reminder, Mail
 from . import app, reps, db_session
@@ -44,37 +45,47 @@ def privacy():
 @app.route("/act/mail/", methods=["POST"])
 def mail():
     id = request.form.get("id")
+    rep = reps.get_representative_by_id(id)
     firstname = request.form.get("firstname")
     lastname = request.form.get("lastname")
     name_from = firstname + " " + lastname
     mail_from = request.form.get("email")
     newsletter = True if request.form.get("newsletter") == "yes" else False
-    rep = reps.get_representative_by_id(id)
 
-    if not all([rep, firstname, lastname, mail_from]):
-        app.logger.info("Sendmail: passed invalid arguments.")
+    if not all([id, firstname, lastname, mail_from]):
+        app.logger.info("Sendmail: invalid arguments passed.")
         abort(400) # bad request
 
-    if not app.debug:
-        mail = Mail(name_from, mail_from, rep.contact.mail)
+    try:
+        mail = Mail(name_from, mail_from, id)
         db_session.add(mail)
         db_session.commit()
+        flash("Danke für dein Engagement. Um fortzufahren, bestätige bitte den Link, den wir an {mail_from} gesandt haben.".format(mail_from=mail_from))
+    except IntegrityError:
+        flash("Von dieser E-Mail wurde bereits eine E-Mail an {rep_name} gesendet.".format(rep_name=str(rep)))
 
-    return render_template("representative.html", rep=rep, success=success)
+    return redirect(url_for("representative", prettyname=rep.name.prettyname))
 
-def sendmail(name_from, mail_from, mail_to):
+def sendmail(name_from, mail_from, rep_id):
     return False
 
-@app.route("/act/confirm/<hash>", methods=["POST"])
-def confirm(hash):
+@app.route("/act/auth/<hash>", methods=["GET"])
+def auth(hash):
     try:
-        mail = db_session.query(Mail).filter_by(hash=hash).first()
-        mail.date_sent = datetime.today()
-        sendmail(mail.name_from, mail.name_from, mail.mail_to)
-    except ItegrityError:
-        abort(400) # bad request
+        mail = db_session.query(Mail).filter_by(hash=hash).one()
+        if mail.date_sent is None:
+            mail.date_sent = datetime.today()
+            rep = reps.get_representative_by_id(mail.rep_id)
+            sendmail(mail.name_from, mail.name_from, rep.contact.mail)
+            flash("Ihre Nachricht wurde erfolgreich versandt.")
+        else:
+            flash("Ihre Nachricht wurde bereits versandt.")
 
-    return render_template("confirmed.html", mail_to=mail.mail_to)
+        return redirect(url_for("representative", prettyname=rep.name.prettyname))
+    except NoResultFound:
+        abort(404)
+    except IntegrityError:
+        abort(500)
 
 @app.route("/act/call/", methods=["POST"])
 @validate_twilio_request
@@ -146,7 +157,7 @@ def handle_reminder_time():
     if not number or number in ["+7378742833", "+2562533", "+8656696", "+266696687", "+86282452253"]:
         resp.play(url_for("static", filename="audio/handle_reminder_time_error.wav"))
     if 9 <= digits_pressed <= 16:
-        reminder = db_session.query(Reminder).filter_by(phone_number = number).first()
+        reminder = db_session.query(Reminder).filter_by(phone_number = number).one()
         if reminder.time is None:
             resp.play(url_for("static", filename="audio/handle_reminder_time_set.wav"))
         else:
@@ -210,7 +221,7 @@ def handle_reminder_unsubscribe():
     else:
         number = request.values.get("To")
     
-    reminder = db_session.query(Reminder).filter_by(phone_number = number).first()
+    reminder = db_session.query(Reminder).filter_by(phone_number = number).one()
     reminder.time = None
     db_session.commit()
     resp.play(url_for("static", filename="audio/handle_reminder_unsubscribe.wav"))
@@ -245,7 +256,7 @@ def handle_reminder_menu():
     resp = Response()
 
     if digits_pressed == 1:
-        reminder = db_session.query(Reminder).filter_by(phone_number = number).first()
+        reminder = db_session.query(Reminder).filter_by(phone_number = number).one()
         reminder.times_forwarded = reminder.times_forwarded + 1
         db_session.commit()
 
