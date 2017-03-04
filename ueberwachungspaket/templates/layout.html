@@ -14,9 +14,9 @@
 			] -%}
 
 			<ul class="row">
-				{% for func, title in navigation_items %}
+				{% for func, title in navigation_items -%}
 					<li{% if func == active_page %} class="active"{% endif %}><a href="{{ url_for(func) }}">{{ title }}</a></li>
-				{% endfor %}
+				{% endfor -%}
 			</ul>
 		</nav>
 

@@ -4,6 +4,7 @@ from database import init_db, db_session
 from .representatives import Representatives
 
 app = Flask(__name__)
+app.secret_key = SECRET_KEY
 app.config.from_pyfile("config.py")
 reps = Representatives()
 init_db()

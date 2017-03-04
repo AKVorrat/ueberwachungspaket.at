@@ -1,10 +1,11 @@
-import datetime
+from datetime import datetime, date
 from uuid import uuid4
-from sqlalchemy import Column, Integer, String, Date, DateTime
+from sqlalchemy import UniqueConstraint, Column, Integer, String, Date, DateTime
 from . import Base
 
 class Reminder(Base):
     __tablename__ = "reminders"
+
     id = Column(Integer, primary_key=True)
     phone_number = Column(String(20), unique=True, nullable=False)
     time = Column(Integer)
@@ -17,7 +18,7 @@ class Reminder(Base):
     def __init__(self, phone_number, time=None):
         self.phone_number = phone_number
         self.time = time
-        self.date_added = datetime.date.today()
+        self.date_added = date.today()
         self.last_called = None
         self.times_called = 0
         self.times_forwarded = 0
@@ -28,18 +29,23 @@ class Reminder(Base):
 
 class Mail(Base):
     __tablename__ = "mails"
+
     id = Column(Integer, primary_key=True)
-    mail_from = Column(String(254))
-    name_from = Column(String(256))
-    mail_to = Column(String(254))
-    hash = Column(String(64))
-    date_requested = Column(DateTime)
+    name_from = Column(String(256), nullable=False)
+    mail_from = Column(String(254), nullable=False)
+    rep_id = Column(String(5), nullable=False)
+    hash = Column(String(64), nullable=False)
+    date_requested = Column(DateTime, nullable=False)
     date_sent = Column(DateTime)
 
-    def __init__(self, mail_from, name_from, mail_to):
-        self.mail_from = mail_from
+    __table_args__ = tuple(
+            UniqueConstraint(mail_from, rep_id)
+            )
+
+    def __init__(self, name_from, mail_from, rep_id):
         self.name_from = name_from
-        self.mail_to = mail_to
-        self.hash = uuid4.hex
+        self.mail_from = mail_from
+        self.rep_id = rep_id
+        self.hash = uuid4().hex
         self.date_requested = datetime.today()
         self.date_sent = None
