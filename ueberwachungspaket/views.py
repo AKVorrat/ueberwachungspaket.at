@@ -64,7 +64,7 @@ def mail():
     except IntegrityError:
         flash("Von dieser E-Mail wurde bereits eine E-Mail an {rep_name} gesendet.".format(rep_name=str(rep)))
 
-    return redirect(url_for("representative", prettyname=rep.name.prettyname))
+    return redirect(url_for("representative", prettyname=rep.name.prettyname, _anchor="email-senden"))
 
 def sendmail(name_from, mail_from, rep_id):
     return False
@@ -73,15 +73,16 @@ def sendmail(name_from, mail_from, rep_id):
 def auth(hash):
     try:
         mail = db_session.query(Mail).filter_by(hash=hash).one()
+        rep = reps.get_representative_by_id(mail.rep_id)
         if mail.date_sent is None:
             mail.date_sent = datetime.today()
-            rep = reps.get_representative_by_id(mail.rep_id)
+            db_session.commit()
             sendmail(mail.name_from, mail.name_from, rep.contact.mail)
             flash("Ihre Nachricht wurde erfolgreich versandt.")
         else:
             flash("Ihre Nachricht wurde bereits versandt.")
 
-        return redirect(url_for("representative", prettyname=rep.name.prettyname))
+        return redirect(url_for("representative", prettyname=rep.name.prettyname, _anchor="email-senden"))
     except NoResultFound:
         abort(404)
     except IntegrityError:
