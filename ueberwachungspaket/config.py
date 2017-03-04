@@ -9,7 +9,7 @@ IMPORTANT_REPS = ["05375", "02819", "51570", "02941", "08696", "35504"]
 MAIL_DISCLAIMER = "Diese E-Mail wird übermittelt im Namen von: {name_from}, {mail_from}"
 
 MAIL_REPS = """
-Sehr geehrte(r) {title} {name_to}, 
+{salutation} {name_to}, 
 
 das geplante Überwachungspaket im neuen Regierungsprogram vom 30. Jänner 2017 erfüllt mich mit großer Besorgnis. Die vorgeschlagenen Maßnahmen laufen auf eine Totalüberwachung aller Menschen in Österreich hinaus. Egal ob man mit dem Auto fährt, öffentliche Verkehrsmittel verwendet, sich auf öffentlichen Plätzen bewegt, oder zu den 4,5 Millionen Menschen mit anonymen SIM Karten gehört: Bald soll die gesamte Bevölkerung auf Schritt und Tritt überwacht werden. Das will ich nicht! Ich habe ein Recht auf Privatsphäre.
 

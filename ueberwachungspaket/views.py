@@ -26,7 +26,7 @@ def mail_text(rep):
 def representative(prettyname):
     rep = reps.get_representative_by_name(prettyname)
     if rep:
-        return render_template("representative.html", rep=rep, mail_text=mail_text(rep), twilio_number=TWILIO_NUMBERS[0])
+        return render_template("representative.html", rep=rep, twilio_number=TWILIO_NUMBERS[0])
     else:
         abort(404)
 

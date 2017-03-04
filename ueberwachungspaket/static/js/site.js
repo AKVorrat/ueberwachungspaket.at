@@ -15,7 +15,7 @@ $(document).ready(function () {
 	});
 });
 
-// activate search filter
+// search filter
 
 $(document).ready(function() {
 	if($("#representatives").length) {
@@ -39,7 +39,58 @@ function search(event) {
 	});
 }
 
-//Progressbar
+// mail text filter
+
+$(document).ready(function() {
+	if($("#mail").length) {
+		mailReps = $("#mail .textarea").text();
+		updateText();
+		$("#mail-firstname").keyup(updateText);
+		$("#mail-lastname").keyup(updateText);
+	}
+})
+
+function updateText(event) {
+	var lines = mailReps.split("\n");
+	var MailNameFrom = $("#mail-firstname").val() + " " + $("#mail-lastname").val();
+	if(!$.trim(MailNameFrom).length) {
+		MailNameFrom = "Dein Name";
+	}
+	$("#mail .textarea").empty();
+	$.each(lines, function() {
+		if(this.length) {
+			str = this.replace("{salutation}", MailSalutation).replace("{name_to}", MailNameTo).replace("{name_from}", MailNameFrom);
+			$("#mail .textarea").append("<p>" + str + "</p>");
+		}
+	});
+}
+
+// Progressbar
+
+$(document).ready(function() {
+	var startDate = '01/30/2017';
+	var endDate = '06/30/2017';
+
+	if (startDate != "" && endDate != "") {
+		var minDate = new Date(convertStringToDate(startDate));
+		var today = new Date();
+		var maxDate = new Date(convertStringToDate(endDate));
+
+		var nbTotalDays = Math.floor((maxDate.getTime() - minDate.getTime()) / 86400000);
+		var nbPastDays = Math.floor((today.getTime() - minDate.getTime()) / 86400000);
+
+		var percent = nbPastDays / nbTotalDays * 100;
+
+		// Extreme cases
+		if (percent < 0) {
+			percent = 0;
+		} else if (percent > 100) {
+			percent = 100;
+		}
+
+		$(".progressbar").reportprogress(percent);
+	}
+});
 
 (function($) {
 	//Main Method
@@ -65,6 +116,7 @@ function search(event) {
 		);
 	};
 })(jQuery);
+
 /*
  * Convert a string into a date.
  */
