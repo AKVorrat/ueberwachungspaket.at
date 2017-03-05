@@ -64,6 +64,7 @@ def mail():
                 # sender is authorized to send mails
                 flash("Vielen Dank für Ihre Teilnahme.")
                 mail.send()
+                db_session.commit()
             else:
                 if datetime.now() - sender.date_requested > timedelta(5):
                     # validation request expired
