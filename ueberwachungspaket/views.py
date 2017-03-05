@@ -1,12 +1,12 @@
 from flask import render_template, abort, request, url_for, flash, redirect
 from random import choice
-from datetime import datetime
+from datetime import datetime, date, timedelta
 from twilio.twiml import Response
 from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm.exc import NoResultFound
 from smtplib import SMTP
 from config import *
-from database.models import Reminder, Mail
+from database.models import Reminder, Mail, Sender
 from . import app, reps, db_session
 from .decorators import validate_twilio_request
 
@@ -39,33 +39,6 @@ def faq():
 def privacy():
     return render_template("privacy.html")
 
-def sendmail(name_user, mail_user, rep):
-    addr_from = name_user + " <" + mail_user + ">"
-    addr_to = str(rep) + " <" + rep.contact.mail + ">"
-    salutation = "Sehr geehrter Herr" if rep.sex == "male" else "Sehr geehrte Frau"
-    msg = app.config["MAIL_REPS"].format(name_rep=str(rep), name_user=name_user, salutation=salutation)
-
-    if app.debug:
-        app.logger.info("Sending mail from " + addr_from + " to " + addr_to + ".")
-    else:
-        server = SMTP("localhost")
-        server.sendmail(addr_from, addr_to, msg)
-        server.quit()
-
-def authmail(name_user, mail_user, hash):
-    addr_from = "überwachungspaket.at" + " <" + "no-reply@überwachungspaket.at" + ">"
-    addr_to = name_user + " <" + mail_user + ">"
-    url = url_for("auth", hash=hash, _external=True)
-    msg = app.config["MAIL_AUTH"].format(name_user=name_user, url=url)
-
-    if app.debug:
-        app.logger.info("Sending mail from " + addr_from + " to " + addr_to + ".")
-        app.logger.info(msg)
-    else:
-        server = SMTP("localhost")
-        server.sendmail(addr_from, addr_to, msg)
-        server.quit()
-
 @app.route("/act/mail/", methods=["POST"])
 def mail():
     id = request.form.get("id")
@@ -77,38 +50,58 @@ def mail():
     newsletter = True if request.form.get("newsletter") == "yes" else False
 
     if not all([rep, firstname, lastname, mail_user]):
-        app.logger.info("Mail: invalid arguments passed.")
         abort(400) # bad request
 
     try:
-        mail = Mail(name_user, mail_user, id)
+        sender = db_session.query(Sender).filter_by(email_address = mail_user).one()
+        mail = Mail(sender, id)
+
+        try:
+            db_session.add(mail)
+            db_session.commit()
+
+            if sender.date_validated:
+                # sender is authorized to send mails
+                mail.send()
+                flash("Vielen Dank für Ihre Teilnahme.")
+            else:
+                if datetime.now() - sender.date_requested > timedelta(2):
+                    # validation request expired
+                    sender.rehash()
+                    sender.request_validation()
+                    db_session.commit()
+                    flash("Ihre Bestätigungsanfrage war abgelaufen. Um fortzufahren, bestätigen Sie bitte den Link, den wir an {mail_user} gesendet haben.".format(mail_user=sender.email_address))
+                else:
+                    # validation request needs to be confirmed
+                    flash("Danke für Ihr Engagement. Um fortzufahren, bestätigen Sie bitte den Link, den wir an {mail_user} gesendet haben.".format(mail_user=sender.email_address))
+
+        except IntegrityError:
+            db_session.rollback()
+            flash("Sie haben {rep_name} bereits eine E-Mail geschrieben.".format(rep_name=str(rep)))
+
+    except NoResultFound:
+        # sender never sent mail before
+        sender = Sender(name_user, mail_user)
+        db_session.add(sender)
+        mail = Mail(sender, id)
         db_session.add(mail)
         db_session.commit()
-        authmail(name_user, mail_user, mail.hash)
-        flash("Danke für dein Engagement. Um fortzufahren, bestätige bitte den Link, den wir an {mail_user} gesandt haben.".format(mail_user=mail_user))
-    except IntegrityError:
-        flash("Von dieser E-Mail wurde bereits eine E-Mail an {rep_name} gesendet.".format(rep_name=str(rep)))
+        flash("Danke für Ihr Engagement. Um fortzufahren, bestätigen Sie bitte den Link, den wir an {mail_user} gesendet haben.".format(mail_user=sender.email_address))
 
     return redirect(url_for("representative", prettyname=rep.name.prettyname, _anchor="email-senden"))
 
-@app.route("/act/auth/<hash>", methods=["GET"])
-def auth(hash):
+@app.route("/act/validate/<hash>", methods=["GET"])
+def validate(hash):
     try:
-        mail = db_session.query(Mail).filter_by(hash=hash).one()
-        rep = reps.get_representative_by_id(mail.rep_id)
-        if mail.date_sent is None:
-            mail.date_sent = datetime.today()
-            db_session.commit()
-            sendmail(mail.name_user, mail.mail_user, rep)
-            flash("Ihre Nachricht wurde erfolgreich versandt.")
-        else:
-            flash("Ihre Nachricht wurde bereits versandt.")
+        sender = db_session.query(Sender).filter_by(hash=hash).one()
+        sender.validate()
+        for mail in sender.mails:
+            mail.send()
+        db_session.commit()
 
-        return redirect(url_for("representative", prettyname=rep.name.prettyname, _anchor="email-senden"))
+        return redirect(url_for("root"))
     except NoResultFound:
         abort(404)
-    except IntegrityError:
-        abort(500)
 
 @app.route("/act/call/", methods=["POST"])
 @validate_twilio_request
@@ -131,7 +124,7 @@ def gather_menu():
         db_session.add(reminder)
         db_session.commit()
     except IntegrityError:
-        pass
+        db_session.rollback()
 
     with resp.gather(numDigits=1, action=url_for("handle_menu")) as g:
         g.play(url_for("static", filename="audio/gather_menu.wav"), loop = 4)

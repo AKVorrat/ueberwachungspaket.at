@@ -1,6 +1,6 @@
 from random import choice
 from time import sleep
-from datetime import datetime
+from datetime import datetime, date
 from twilio import TwilioRestException
 from twilio.rest import TwilioRestClient
 from sqlalchemy.orm.exc import NoResultFound
@@ -13,7 +13,7 @@ client = TwilioRestClient(account = TWILIO_SID,
                           token = TWILIO_SECRET,
                           request_account = TWILIO_ACCOUNT)
 hour = datetime.now().hour
-today = datetime.now().date()
+today = date.today()
 
 try:
     reminders = db_session.query(Reminder).filter(Reminder.time == hour, or_(Reminder.last_called == None, cast(Reminder.last_called, Date) != today)).all()
