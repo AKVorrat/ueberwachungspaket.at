@@ -17,3 +17,6 @@ SECRET_KEY = b''
 
 # Number dialed if a caller wants to give feedback.
 FEEDBACK_NUMBER = ''
+
+# Mail address used in from field
+MAIL_FROM = ''
