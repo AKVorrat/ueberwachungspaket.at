@@ -75,17 +75,17 @@ def mail():
                     flash("Danke für Ihr Engagement. Um fortzufahren, bestätigen Sie bitte den Link, den wir an {mail_user} gesendet haben.".format(mail_user=sender.email_address))
 
         except IntegrityError:
-            db_session.rollback()
             flash("Sie haben {rep_name} bereits eine E-Mail geschrieben.".format(rep_name=str(rep)))
+            db_session.rollback()
 
     except NoResultFound:
         # sender never sent mail before
-        flash("Danke für Ihr Engagement. Um fortzufahren, bestätigen Sie bitte den Link, den wir an {mail_user} gesendet haben.".format(mail_user=sender.email_address))
         sender = Sender(name_user, mail_user)
         db_session.add(sender)
         mail = Mail(sender, id)
         db_session.add(mail)
         db_session.commit()
+        flash("Danke für Ihr Engagement. Um fortzufahren, bestätigen Sie bitte den Link, den wir an {mail_user} gesendet haben.".format(mail_user=sender.email_address))
 
     return redirect(url_for("representative", prettyname=rep.name.prettyname, _anchor="email-senden"))
 
