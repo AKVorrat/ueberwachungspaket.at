@@ -62,15 +62,14 @@ def mail():
 
             if sender.date_validated:
                 # sender is authorized to send mails
-                mail.send()
                 flash("Vielen Dank für Ihre Teilnahme.")
+                mail.send()
             else:
-                if datetime.now() - sender.date_requested > timedelta(2):
+                if datetime.now() - sender.date_requested > timedelta(5):
                     # validation request expired
-                    sender.rehash()
+                    flash("Ihre Bestätigungsanfrage ist abgelaufen. Um fortzufahren, bestätigen Sie bitte den Link, den wir an {mail_user} gesendet haben.".format(mail_user=sender.email_address))
                     sender.request_validation()
                     db_session.commit()
-                    flash("Ihre Bestätigungsanfrage war abgelaufen. Um fortzufahren, bestätigen Sie bitte den Link, den wir an {mail_user} gesendet haben.".format(mail_user=sender.email_address))
                 else:
                     # validation request needs to be confirmed
                     flash("Danke für Ihr Engagement. Um fortzufahren, bestätigen Sie bitte den Link, den wir an {mail_user} gesendet haben.".format(mail_user=sender.email_address))
@@ -81,12 +80,12 @@ def mail():
 
     except NoResultFound:
         # sender never sent mail before
+        flash("Danke für Ihr Engagement. Um fortzufahren, bestätigen Sie bitte den Link, den wir an {mail_user} gesendet haben.".format(mail_user=sender.email_address))
         sender = Sender(name_user, mail_user)
         db_session.add(sender)
         mail = Mail(sender, id)
         db_session.add(mail)
         db_session.commit()
-        flash("Danke für Ihr Engagement. Um fortzufahren, bestätigen Sie bitte den Link, den wir an {mail_user} gesendet haben.".format(mail_user=sender.email_address))
 
     return redirect(url_for("representative", prettyname=rep.name.prettyname, _anchor="email-senden"))
 
@@ -94,14 +93,23 @@ def mail():
 def validate(hash):
     try:
         sender = db_session.query(Sender).filter_by(hash=hash).one()
-        sender.validate()
-        for mail in sender.mails:
-            mail.send()
-        db_session.commit()
 
-        return redirect(url_for("root"))
+        if sender.date_validated:
+            flash("Sie haben Ihre E-Mail Adresse bereits erfolgreich verifiziert.")
+        elif datetime.now() - sender.date_requested > timedelta(5):
+            flash("Ihre Bestätigungsanfrage ist abgelaufen. Um fortzufahren, bestätigen Sie bitte den Link, den wir an {mail_user} gesendet haben.".format(mail_user=sender.email_address))
+            sender.request_validation()
+        else:
+            flash("Vielen Dank, Sie haben Ihre E-Mail Adresse erfolgreich verifiziert.")
+            sender.validate()
+            for mail in sender.mails:
+                mail.send()
+            db_session.commit()
+
     except NoResultFound:
-        abort(404)
+        flash("Dieser Bestätigungslink ist ungültig.")
+        
+    return render_template("validate.html")
 
 @app.route("/act/call/", methods=["POST"])
 @validate_twilio_request

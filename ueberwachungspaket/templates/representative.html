@@ -87,7 +87,7 @@
 			</div>
 			<p class="small">* Pflichtfeld</p>
 			<input type="hidden" name="id" value="{{ rep.id }}" />
-			<div class="textarea">{{ config['MAIL_REPS']|e }}</div>
+			<div class="textarea">{{ config['MAIL_REPRESENTATIVE']|e }}</div>
 			<button class="btn btn-default">Senden</button>
 			<p class="center small indent">Wenn du diese Nachricht abändern möchtest, kannst du die E-Mail <a href="mailto:{{ rep.contact.mail }}?subject=%C3%9Cberwachungspaket">direkt</a> verschicken.</p>
 		</form>

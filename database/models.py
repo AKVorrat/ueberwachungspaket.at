@@ -6,6 +6,15 @@ from sqlalchemy.orm import relationship
 from ueberwachungspaket import app, reps
 from . import Base
 
+def sendmail(addr_from, addr_to, msg):
+    if app.debug:
+        app.logger.info("Sending mail from " + addr_from + " to " + addr_to + ".")
+        app.logger.info(msg)
+    else:
+        server = SMTP("localhost")
+        server.sendmail(addr_from, addr_to, msg)
+        server.quit()
+
 class Reminder(Base):
     __tablename__ = "reminders"
 
@@ -51,18 +60,12 @@ class Mail(Base):
 
         rep = reps.get_representative_by_id(self.recipient)
 
-        addr_from = self.sender.name + " <" + self.sender.email_address + ">"
+        addr_from = MAIL_FROM
         addr_to = str(rep) + " <" + rep.contact.mail + ">"
         salutation = "Sehr geehrter Herr" if rep.sex == "male" else "Sehr geehrte Frau"
-        msg = app.config["MAIL_REPRESENTATIVE"].format(name_rep=str(rep), name_user=self.sender.name, salutation=salutation)
-
-        if app.debug:
-            app.logger.info("Sending mail from " + addr_from + " to " + addr_to + ".")
-            app.logger.info(msg)
-        else:
-            server = SMTP("localhost")
-            server.sendmail(addr_from, addr_to, msg)
-            server.quit()
+        msg = app.config["MAIL_DISCLAIMER"].format(name_user=self.sender.name, mail_user=self.sender.email_address) + "\n" * 2
+        msg = msg + app.config["MAIL_REPRESENTATIVE"].format(name_rep=str(rep), name_user=self.sender.name, salutation=salutation)
+        sendmail(addr_from, addr_to, msg)
 
 class Sender(Base):
     __tablename__ = "senders"
@@ -78,27 +81,22 @@ class Sender(Base):
     def __init__(self, name, email_address):
         self.name = name
         self.email_address = email_address
-        self.rehash()
         self.request_validation()
-
-    def rehash(self):
-        self.hash = uuid4().hex
 
     def validate(self):
         self.date_validated = datetime.now()
 
+        addr_from = MAIL_FROM
+        addr_to = self.name + " <" + self.email_address + ">"
+        msg = app.config["MAIL_WELCOME"].format(name_user=self.name)
+        sendmail(addr_from, addr_to, msg)
+
     def request_validation(self):
+        self.hash = uuid4().hex
         self.date_requested = datetime.now()
 
-        addr_from = "überwachungspaket.at" + " <" + "no-reply@überwachungspaket.at" + ">"
+        addr_from = MAIL_FROM
         addr_to = self.name + " <" + self.email_address + ">"
         url = url_for("validate", hash=self.hash, _external=True)
         msg = app.config["MAIL_VALIDATE"].format(name_user=self.name, url=url)
-
-        if app.debug:
-            app.logger.info("Sending mail from " + addr_from + " to " + addr_to + ".")
-            app.logger.info(msg)
-        else:
-            server = SMTP("localhost")
-            server.sendmail(addr_from, addr_to, msg)
-            server.quit()
+        sendmail(addr_from, addr_to, msg)
