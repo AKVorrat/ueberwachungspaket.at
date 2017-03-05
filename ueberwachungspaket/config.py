@@ -8,7 +8,7 @@ IMPORTANT_REPS = ["05375", "02819", "51570", "02941", "08696", "35504"]
 
 MAIL_DISCLAIMER = "Diese E-Mail wird übermittelt im Namen von: {name_user}, {mail_user}"
 
-MAIL_REPS = """
+MAIL_REPRESENTATIVE = """
 {salutation} {name_rep}, 
 
 das geplante Überwachungspaket im neuen Regierungsprogram vom 30. Jänner 2017 erfüllt mich mit großer Besorgnis. Die vorgeschlagenen Maßnahmen laufen auf eine Totalüberwachung aller Menschen in Österreich hinaus. Egal ob man mit dem Auto fährt, öffentliche Verkehrsmittel verwendet, sich auf öffentlichen Plätzen bewegt, oder zu den 4,5 Millionen Menschen mit anonymen SIM Karten gehört: Bald soll die gesamte Bevölkerung auf Schritt und Tritt überwacht werden. Das will ich nicht! Ich habe ein Recht auf Privatsphäre.
@@ -25,7 +25,7 @@ Hochachtungsvoll
 {name_user}
 """
 
-MAIL_USER = """
+MAIL_WELCOME = """
 Liebe/r {name_user}, 
 
 wir danken Ihnen herzlich, dass sie sich für Ihr Grundrecht auf Privatsphäre und Datenschutz stark gemacht haben. Wir würden uns sehr freuen, wenn Sie mithelfen, dass möglichst viele Menschen vom geplanten Überwachungspaket erfahren. Wir alle sind davon betroffen und gemeinsam können wir etwas für unsere Freiheit tun.
@@ -44,17 +44,17 @@ Mit unserer Hotline geht das ganz einfach. Rufen Sie
 0720 230 002
 an und folgen Sie dem Sprachmenü.
 
-Mit einer Anruferinnerung leisten Sie einen regelmäßigen Beitrag, die Überwachungspläne der Bundesregierung Pläne von Innenminister Sobotka zu verhindern!  
+Mit einer Anruferinnerung leisten Sie einen regelmäßigen Beitrag, die Überwachungspläne der Bundesregierung zu verhindern!
 
 Zivilgesellschaft wirkt! 
-Unser Verein epicenter.works kämpft für den Erhalt von Grund- und Freiheitsrechten im Internet. Wir streiten vor Gericht, im Parlament und auf der Straße. Wir arbeiten unabhängig von Parteien und Firmen. Damit wir weiterhin schlagkräftig bleiben, sind wir auf Hilfe aus der Zivilgesellschaft angewiesen. Sie können uns als Fördermitglied oder mit einer Spende unterstützen: spenden.epicenter.works.
+Unser Verein epicenter.works kämpft für den Erhalt von Grund- und Freiheitsrechten im Internet. Wir streiten vor Gericht, im Parlament und auf der Straße. Wir arbeiten unabhängig von Parteien und Unternehmen. Damit wir weiterhin schlagkräftig bleiben, sind wir auf Hilfe aus der Zivilgesellschaft angewiesen. Sie können uns als Fördermitglied oder mit einer Spende unterstützen: spenden.epicenter.works.
 
 Liebe Grüße, 
 
 Ihr Team von epicenter.works
 """
 
-MAIL_AUTH = """
+MAIL_VALIDATE = """
 Liebe/r {name_user},
 
 vielen Dank, dass Sie sich für unsere Freiheitsrechte einsetzen. Um sicherzustellen, dass die von Ihnen angegebene Mail tatsächlich die Ihre ist, folgen Sie bitten dem folgenden Link:
