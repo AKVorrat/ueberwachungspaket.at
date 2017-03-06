@@ -60,9 +60,9 @@ class Mail(Base):
 
         rep = reps.get_representative_by_id(self.recipient)
 
-        addr_from = MAIL_FROM
+        addr_from = MAIL_FROM + " <" + MAIL_FROM + ">"
         if DEBUG:
-            addr_to = MAIL_DEBUG
+            addr_to = MAIL_DEBUG + " <" + MAIL_DEBUG + ">"
         else:
             addr_to = str(rep) + " <" + rep.contact.mail + ">"
         salutation = "Sehr geehrter Herr" if rep.sex == "male" else "Sehr geehrte Frau"
@@ -89,7 +89,7 @@ class Sender(Base):
     def validate(self):
         self.date_validated = datetime.now()
 
-        addr_from = MAIL_FROM
+        addr_from = MAIL_FROM + " <" + MAIL_FROM + ">"
         addr_to = self.name + " <" + self.email_address + ">"
         msg = MAIL_WELCOME.format(name_user=self.name)
         sendmail(addr_from, addr_to, msg)
@@ -98,7 +98,7 @@ class Sender(Base):
         self.hash = uuid4().hex
         self.date_requested = datetime.now()
 
-        addr_from = MAIL_FROM
+        addr_from = MAIL_FROM + " <" + MAIL_FROM + ">"
         addr_to = self.name + " <" + self.email_address + ">"
         url = url_for("validate", hash=self.hash, _external=True)
         msg = MAIL_VALIDATE.format(name_user=self.name, url=url)
