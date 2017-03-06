@@ -9,9 +9,13 @@ from config import *
 from database import db_session
 from database.models import Reminder
 
-client = TwilioRestClient(account = TWILIO_SID,
-                          token = TWILIO_SECRET,
-                          request_account = TWILIO_ACCOUNT)
+try:
+    client = TwilioRestClient(account = TWILIO_SID,
+                              token = TWILIO_SECRET,
+                              request_account = TWILIO_ACCOUNT)
+except TwilioRestException:
+    exit(0)
+
 hour = datetime.now().hour
 today = date.today()
 
