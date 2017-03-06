@@ -1335,3 +1335,13 @@ section{
 		display: none;
 	}
 }
+
+#supporters ul > * {
+	width: auto;
+}
+
+#supporters img {
+	width: 200px;
+	max-width: 100%;
+	margin-right: 1rem;
+}
