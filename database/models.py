@@ -15,10 +15,9 @@ from . import Base
 
 def sendmail(addr_from, addr_to, msg):
     with SMTP("localhost") as s:
-        s.sendmail(addr_from.encode("utf-8"),
-                   addr_to.encode("utf-8"),
-                   msg.encode("utf-8"),
-                   mail_options=["SMTPUTF8"])
+        s.sendmail(addr_from,
+                   addr_to,
+                   msg.encode("utf-8"))
 
 class Reminder(Base):
     __tablename__ = "reminders"
