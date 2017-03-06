@@ -1,3 +1,5 @@
+#-*- coding: utf-8 -*-
+
 MAIL_DISCLAIMER = "Diese E-Mail wird übermittelt im Namen von: {name_user}, {mail_user}"
 
 MAIL_REPRESENTATIVE = """
