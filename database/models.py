@@ -113,7 +113,7 @@ class Sender(Base):
         subject = "Bestätigung für überwachungspaket.at"
         url = url_for("validate", hash=self.hash, _external=True)
         msg = MAIL_VALIDATE.format(name_user=self.name, url=url)
-        sendmail(addr_from, addr_to, msg)
+        sendmail(addr_from, addr_to, subject, msg)
 
 class Representatives():
     def __init__(self):
