@@ -5,6 +5,7 @@ from json import load
 from random import choice
 from uuid import uuid4
 from smtplib import SMTP
+from email.mime.text import MIMEText
 from flask import url_for
 from sqlalchemy import UniqueConstraint, Column, Integer, String, Date, DateTime, ForeignKey
 from sqlalchemy.orm import relationship
@@ -13,11 +14,14 @@ from config.main import DEBUG
 from config.mail import *
 from . import Base
 
-def sendmail(addr_from, addr_to, msg):
+def sendmail(addr_from, addr_to, subject, msg):
+    mail = MIMEText(msg)
+    mail["Subject"] = subject
+    mail["From"] = addr_from
+    mail["To"] = addr_to
+
     with SMTP("localhost") as s:
-        s.sendmail(addr_from,
-                   addr_to,
-                   msg.encode("utf-8"))
+        s.sendmail(mail)
 
 class Reminder(Base):
     __tablename__ = "reminders"
@@ -69,10 +73,11 @@ class Mail(Base):
             addr_to = MAIL_DEBUG + " <" + MAIL_DEBUG + ">"
         else:
             addr_to = str(rep) + " <" + rep.contact.mail + ">"
+        subject = "Sicherheitspaket"
         salutation = "Sehr geehrter Herr" if rep.sex == "male" else "Sehr geehrte Frau"
         msg = MAIL_DISCLAIMER.format(name_user=self.sender.name, mail_user=self.sender.email_address) + "\n" * 2
         msg = msg + MAIL_REPRESENTATIVE.format(name_rep=str(rep), name_user=self.sender.name, salutation=salutation)
-        sendmail(addr_from, addr_to, msg)
+        sendmail(addr_from, addr_to, subject, msg)
 
 class Sender(Base):
     __tablename__ = "senders"
@@ -95,8 +100,9 @@ class Sender(Base):
 
         addr_from = MAIL_FROM + " <" + MAIL_FROM + ">"
         addr_to = self.name + " <" + self.email_address + ">"
+        subject = "Vielen Dank für Ihre Teilnahme auf überwachungspaket.at"
         msg = MAIL_WELCOME.format(name_user=self.name)
-        sendmail(addr_from, addr_to, msg)
+        sendmail(addr_from, addr_to, subject, msg)
 
     def request_validation(self):
         self.hash = uuid4().hex
@@ -104,6 +110,7 @@ class Sender(Base):
 
         addr_from = MAIL_FROM + " <" + MAIL_FROM + ">"
         addr_to = self.name + " <" + self.email_address + ">"
+        subject = "Bestätigung für überwachungspaket.at"
         url = url_for("validate", hash=self.hash, _external=True)
         msg = MAIL_VALIDATE.format(name_user=self.name, url=url)
         sendmail(addr_from, addr_to, msg)
