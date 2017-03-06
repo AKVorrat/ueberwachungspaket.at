@@ -339,10 +339,21 @@
 	<section >
 		<a href="politiker/" class="btn btn-default">Werde Aktiv</a>
 	</section>
-	<section>
+	<section id="supporters">
 		<div class="container">
 			<h2>Diese Kampagne wird unterstützt von</h2>
-			<a href="https://epicenter.works"><img src="" /></a>
+			{% set supporter_items = [
+				("epicenter.works", "https://epicenter.works", "epicenter.jpg"),
+				("Amnesty International Österreich", "https://www.amnesty.at", "amnesty.jpg"),
+				("Mehr Demokratie!", "https://www.mehr-demokratie.at", "md.jpg"),
+				("Chaos Computer Club Wien", "https://c3w.at", "c3w.jpg")
+			] -%}
+
+			<ul class="row">
+				{% for name, href, img in supporter_items -%}
+					<a href="{{ href }}"><img src="{{ url_for('static', filename='img/supporter/' + img) }}" /></a>
+				{% endfor -%}
+			</ul>
 		</div>
 	</section>
 {% endblock %}
