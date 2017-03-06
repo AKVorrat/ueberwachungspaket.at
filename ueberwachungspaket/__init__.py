@@ -1,12 +1,11 @@
 from flask import Flask
 from config import *
 from database import init_db, db_session
-from database.models import Representatives
 
 app = Flask(__name__)
 app.secret_key = SECRET_KEY
-app.config.from_pyfile("config.py")
-reps = Representatives()
+app.config.from_pyfile("../config/main.py")
+app.config.from_pyfile("../config/mail.py")
 init_db()
 
 if __name__ == "__main__":

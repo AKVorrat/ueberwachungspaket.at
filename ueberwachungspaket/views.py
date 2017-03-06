@@ -6,13 +6,16 @@ from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm.exc import NoResultFound
 from smtplib import SMTP
 from config import *
-from database.models import Reminder, Mail, Sender
-from . import app, reps, db_session
+from config.main import *
+from database.models import Representatives, Reminder, Mail, Sender
+from . import app, db_session
 from .decorators import validate_twilio_request
+
+reps = Representatives()
 
 @app.route("/")
 def root():
-    important_reps = [reps.get_representative_by_id(id) for id in app.config["IMPORTANT_REPS"]]
+    important_reps = [reps.get_representative_by_id(id) for id in IMPORTANT_REPS]
     return render_template("index.html", reps=important_reps)
 
 @app.route("/politiker/")

@@ -5,9 +5,9 @@ from uuid import uuid4
 from flask import url_for
 from sqlalchemy import UniqueConstraint, Column, Integer, String, Date, DateTime, ForeignKey
 from sqlalchemy.orm import relationship
-from config.main import *
+from config import MAIL_FROM
+from config.main import DEBUG
 from config.mail import *
-from config import *
 from . import Base
 
 def sendmail(addr_from, addr_to, msg):
@@ -238,3 +238,5 @@ def load_representatives(filename, parties, teams):
         representatives.append(representative)
 
     return representatives
+
+reps = Representatives()
