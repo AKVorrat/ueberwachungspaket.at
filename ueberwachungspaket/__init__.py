@@ -1,7 +1,7 @@
 from flask import Flask
 from config import *
 from database import init_db, db_session
-from .representatives import Representatives
+from database.models import Representatives
 
 app = Flask(__name__)
 app.secret_key = SECRET_KEY
