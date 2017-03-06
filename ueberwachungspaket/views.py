@@ -4,7 +4,6 @@ from datetime import datetime, date, timedelta
 from twilio.twiml import Response
 from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm.exc import NoResultFound
-from smtplib import SMTP
 from config import *
 from config.main import *
 from database.models import Representatives, Reminder, Mail, Sender
