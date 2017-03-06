@@ -2,6 +2,7 @@ from datetime import datetime, date
 from json import load
 from random import choice
 from uuid import uuid4
+from smtplib import SMTP
 from flask import url_for
 from sqlalchemy import UniqueConstraint, Column, Integer, String, Date, DateTime, ForeignKey
 from sqlalchemy.orm import relationship
