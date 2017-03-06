@@ -5,15 +5,14 @@ from uuid import uuid4
 from flask import url_for
 from sqlalchemy import UniqueConstraint, Column, Integer, String, Date, DateTime, ForeignKey
 from sqlalchemy.orm import relationship
-from config import MAIL_FROM
+from config import MAIL_FROM, MAIL_DEBUG
 from config.main import DEBUG
 from config.mail import *
 from . import Base
 
 def sendmail(addr_from, addr_to, msg):
-    if not DEBUG:
-        with SMTP("localhost") as s:
-            s.sendmail(addr_from, addr_to, msg)
+    with SMTP("localhost") as s:
+        s.sendmail(addr_from, addr_to, msg)
 
 class Reminder(Base):
     __tablename__ = "reminders"
@@ -61,7 +60,10 @@ class Mail(Base):
         rep = reps.get_representative_by_id(self.recipient)
 
         addr_from = MAIL_FROM
-        addr_to = str(rep) + " <" + rep.contact.mail + ">"
+        if DEBUG:
+            addr_to = MAIL_DEBUG
+        else:
+            addr_to = str(rep) + " <" + rep.contact.mail + ">"
         salutation = "Sehr geehrter Herr" if rep.sex == "male" else "Sehr geehrte Frau"
         msg = MAIL_DISCLAIMER.format(name_user=self.sender.name, mail_user=self.sender.email_address) + "\n" * 2
         msg = msg + MAIL_REPRESENTATIVE.format(name_rep=str(rep), name_user=self.sender.name, salutation=salutation)
