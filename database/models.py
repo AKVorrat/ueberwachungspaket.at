@@ -21,7 +21,7 @@ def sendmail(addr_from, addr_to, subject, msg):
     mail["To"] = addr_to
 
     with SMTP("localhost") as s:
-        s.sendmail(mail)
+        s.send_message(mail)
 
 class Reminder(Base):
     __tablename__ = "reminders"
