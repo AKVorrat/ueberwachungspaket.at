@@ -20,3 +20,6 @@ FEEDBACK_NUMBER = ''
 
 # Mail address used in from field
 MAIL_FROM = ''
+
+# Mail address used for debugging
+MAIL_DEBUG = ''
