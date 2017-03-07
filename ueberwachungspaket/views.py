@@ -56,6 +56,11 @@ def mail():
 
     try:
         sender = db_session.query(Sender).filter_by(email_address = mail_user).one()
+
+        if newsletter:
+            sender.newsletter = True
+            db_session.commit()
+
         mail = Mail(sender, id)
 
         try:
@@ -83,7 +88,7 @@ def mail():
 
     except NoResultFound:
         # sender never sent mail before
-        sender = Sender(name_user, mail_user)
+        sender = Sender(name_user, mail_user, newsletter=newsletter)
         db_session.add(sender)
         mail = Mail(sender, id)
         db_session.add(mail)
