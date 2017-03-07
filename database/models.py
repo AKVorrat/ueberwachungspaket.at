@@ -7,7 +7,7 @@ from uuid import uuid4
 from smtplib import SMTP
 from email.mime.text import MIMEText
 from flask import url_for
-from sqlalchemy import UniqueConstraint, Column, Integer, String, Date, DateTime, ForeignKey
+from sqlalchemy import UniqueConstraint, Column, Boolean, Integer, String, Date, DateTime, ForeignKey
 from sqlalchemy.orm import relationship
 from config import MAIL_FROM, MAIL_DEBUG
 from config.main import DEBUG
@@ -89,11 +89,13 @@ class Sender(Base):
     hash = Column(String(64), unique=True, nullable=False)
     date_validated = Column(DateTime)
     date_requested = Column(DateTime, nullable=False)
+    newsletter = Column(Boolean(False), nullable=False)
 
-    def __init__(self, name, email_address):
+    def __init__(self, name, email_address, newsletter=False):
         self.name = name
         self.email_address = email_address
         self.request_validation()
+        self.newsletter = newsletter
 
     def validate(self):
         self.date_validated = datetime.now()
