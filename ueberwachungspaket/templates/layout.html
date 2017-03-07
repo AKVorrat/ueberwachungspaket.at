@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+	<head>
+		{% include '_head.html' %}
+		{% block title %}{% endblock title %}
+	</head>
+	<body>
+		<nav>
+			{% set navigation_items = [
+				("root", "Home"),
+				("representatives", "Werde Aktiv"),
+				("share", "Sprich über Überwachung"),
+				("faq", "FAQ")
+			] -%}
+
+			<ul class="row">
+				{% for func, title in navigation_items %}
+					<li{% if func == active_page %} class="active"{% endif %}><a href="{{ url_for(func) }}">{{ title }}</a></li>
+				{% endfor %}
+			</ul>
+		</nav>
+
+		{% block header %}{% endblock header %}
+
+		{% block precontent %}{% endblock precontent %}
+
+		<main>
+			{% block content %}{% endblock content %}
+		</main>
+
+		<footer>
+			{% include '_footer.html' %}
+		</footer>
+
+		{% include '_foot.html' %}
+	</body>
+</html>
+

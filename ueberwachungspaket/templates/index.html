@@ -1,0 +1,348 @@
+{% extends "layout.html" %}
+{% set active_page = "root" %}
+
+{% block title %}
+	<title>{{ config['PROJECT_NAME'] }}</title>
+{% endblock title%}
+
+{% block header %}
+	<header class="center">
+		<img src="static/img/header_uepa.jpg" class="visible-desktop">
+		<img src="static/img/header_uepa_mobile.jpg" class="visible-mobile">
+	</header>
+{% endblock %}
+
+{% block precontent %}
+	<div id="block" class="bg-white">
+		<div class="block">
+			<div class="blk-left">
+				<img src="static/img/Hand_FINAL.png">
+			</div>
+			<div class="blk-middle">
+				<h2>Auch du wirst bald lückenlos überwacht!</h2>
+			</div>
+			<div class="blk-right">
+				<img src="static/img/Hand_FINAL.png">
+			</div>
+		</div>
+	</div>
+{% endblock %}
+
+{% block content %}
+	<section id="topics">
+		<div class="container">
+			<h2>Das steckt im Überwachungspaket</h2>
+			<div class="row items3">
+				<div class="column">
+					<a href="https://epicenter.works/thema/ueberwachungspaket#Videoueberwachung">
+						<div class="c-block">
+							<div class="center"><img src="static/img/icons/totaleVideoueberwachung.png"></div>
+							<h4>Flächendeckende Videoüberwachung</h4>
+						</div>
+					</a>
+				</div>
+				<div class="column">
+					<a href="https://epicenter.works/thema/ueberwachungspaket#Wertkarten">
+						<div class="c-block">
+							<div class="center"><img src="static/img/icons/SIM-ID.png"></div>
+						<h4>Registrierungspflicht für Wertkarten</h4></div>
+					</a>
+				</div>
+				<div class="column">
+					<a href="https://epicenter.works/thema/ueberwachungspaket#Bundestrojaner">
+						<div class="c-block">
+							<div class="center"><img src="static/img/icons/Trojaner.png"></div>
+							<h4>Staatliche Spionagesoftware (Bundestrojaner)</h4>
+						</div>
+					</a>
+				</div>
+				<div class="column">
+					<a href="https://epicenter.works/thema/ueberwachungspaket#Kennzeichenerfassung">
+					<div class="c-block">
+						<div class="center"><img src="static/img/icons/Verkehrsueberwachung.png"></div>
+						<h4>Überwachung im Straßenverkehr</h4></div>
+					</a>
+				</div>
+				<div class="column">
+					<a href="https://epicenter.works/thema/ueberwachungspaket#LauschangriffPKW">
+						<div class="c-block">
+							<div class="center"><img src="static/img/icons/LauschangriffAuto.png"></div>
+							<h4>Lauschangriff im Auto</h4>
+						</div>
+					</a>
+				</div>
+				<div class="column">
+					<a href="https://epicenter.works/thema/ueberwachungspaket#VDS">
+						<div class="c-block">
+							<div class="center"><img src="static/img/icons/Vorratsdaten.png"></div>
+							<h4>Vorratsdatenspeicherung 2.0</h4>
+						</div>
+					</a>
+				</div>
+				<div class="column">
+					<a href="https://epicenter.works/thema/ueberwachungspaket#Staatsfeind">
+						<div class="c-block">
+							<div class="center"><img src="static/img/icons/Meinungsfreiheit.png"></div>
+							<h4>Einschränkung der Meinungsfreiheit</h4>
+						</div>
+					</a>
+				</div>
+				<div class="column">
+					<a href="https://epicenter.works/thema/ueberwachungspaket#Fussfessel">
+						<div class="c-block">
+							<div class="center"><img src="static/img/icons/Fussfessel.png"></div>
+							<h4>Fußfessel für nicht Verurteilte</h4>
+						</div>
+					</a>
+				</div>
+				<div class="column">
+					<a href="https://epicenter.works/thema/ueberwachungspaket">
+						<div class="c-block">  
+							<div class="center"><img src="static/img/icons/Bundesheer.png"></div>
+							<h4>Bundesheer im Inneren</h4>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+    <section class="center">
+		<h2>Deine Regierung will dich überwachen!</h2>
+		<a href="politiker/" class="btn btn-default">werde aktiv</a>
+	</section>
+    <section id="sprich">
+		<div class="container">
+			<h2>Sprich mit Politikern</h2>
+			<div id="representatives" class="row">
+				{% for rep in reps %}
+				<a class="representative" href="{{ url_for('representative', prettyname=rep.name.prettyname) }}" data-firstname="{{ rep.name.firstname }}" data-lastname="{{ rep.name.lastname }}" data-party="{{ rep.party.prettyname }}" data-team="{{ rep.team.prettyname }}" data-state="{{ rep.state }}">
+					<div class="column">
+						<div class="name">{{ rep.name.lastname }}</div>
+						<div class="party">{{ rep.party.shortname }}</div>
+					</div>
+					<div class="overlay {{ rep.team.prettyname }}"></div>
+					<img src="{{ url_for('static', filename='img/representative-small/' + rep.id + '.jpg') }}" alt="" />
+				</a>
+				{% endfor %}
+			</div>
+			<a href="politiker/"><i class="fa fa-angle-double-right" aria-hidden="true"></i></i> mehr</a>
+		</div>
+	</section>
+	<section class="padding">
+		<div class="container">
+			<h3>Installiere Überwachungsstaat</h3>
+			<div class="progressbar"></div>
+			<div class="uetxt">
+				<div class="txt-left">30. Jänner 2017: Regierung präsentiert Überwachungspaket</div>
+				<div class="txt-right">30. Juni 2017: Voraussichtlicher Beschluss im Nationalrat</div>
+			</div>
+		</div>
+	</section>	
+	<section id="zitate" class="chat">
+		<div class="container">
+			<h2>Zitate</h2>
+			<ul>
+				<li>
+					<div class="avatar"><img src="static/img/representative-small/02941.jpg" alt=""></div>
+					<div class="avtxt"><strong>Bundeskanzler Kern (SPÖ):</strong> Das erfordert, dass wir die Themen Sicherheit und Integration nachvollziehbar abdecken.<br><a href="https://www.profil.at/oesterreich/ab-mitte-kern-spoe-tabus-partei-7970980">
+						(Quelle)</a></div>
+				</li>
+				<li>
+					<p>Für keine der vorgeschlagenen Sicherheitsmaßnahmen gibt es Belege, dass die Menschen sicherer machen
+						werden. Im Gegenteil, bei manchen Maßnahmen, etwa der SIM-Karten-Registrierung, gibt es viele Belege aus anderen Ländern, dass die Menschen dadurch sogar unsicherer werden. Auch Videoüberwachung kann zwar normale Kriminalität in andere Stadtteile verlagern, aber Terroristen können durch die Gratis-Öffentlichkeit für ihre Gräueltaten sogar noch (extra angespornt werden)[https://www.welt.de/politik/deutschland/article160868298/Amri-posierte-nach-Tat-mit-IS-Gruss-vor-Kamera-am-Bahnhof-Zoo.html].</p>
+					<p><a class="btn btn-default" href="p/christian-kern/">Jetzt mit Christian Kern über Überwachung sprechen!</a></p>
+
+				</li>
+				<li>
+					<div class="avatar"><img src="static/img/representative/sobotka.jpg" alt=""></div>
+					<div class="avtxt"><strong>Innenminister Sobotka (ÖVP): </strong> In allen Fragen lückenlose Überwachung.<br> <a href="http://derstandard.at/2000050236705/Sobotka-will-Lauschangriff-Fussfessel-fuer-Verdaechtige-und-vernetzte-Videokontrolle)">(Quelle)</a></div>
+				</li>
+				<li>
+					<p>Eigentlich hat sich der Innenminister mit dieser Aussage selbst disqualifiziert. Lückenlose Überwachung haben bislang nur Politiker in repressiven Regimen gefordert. Von Ministern eines demokratischen Landes hat man so etwas bislang noch nicht gehört. Eine funktionierende Demokratie ist ohne Privatsphäre nicht möglich. Unter ständiger Beobachtung können wir uns keine Meinung bilden und keine Kritik an bestehenden Verhältnissen äußern.</p>
+					<p><a class="btn btn-default" href="p/wolfgang-sobotka/">Jetzt mit Wolfgang Sobotka über Überwachung sprechen!</a></p>
+				</li>
+				<li>
+					<div class="avatar"><img src="static/img/representative-small/08696.jpg" alt=""></div>
+					<div class="avtxt"><strong>Reinhold Mitterlehner (ÖVP):</strong> Ohne Sicherheit gibt es keine Freiheit.<br><a href="https://futurezone.at/netzpolitik/vorratsdatenspeicherung-oevp-plant-nachfolgeregelung/239.769.676">(Quelle)</a></div>
+				</li>
+				<li>
+					<p>Sicherheit und Freiheit haben wenig mit einander zu tun. Es gibt viele Maßnahmen, die mehr Sicherheit bringen, ohne unsere Freiheit einzuschränken, wie zB gut ausgebildete Polizeikräfte oder Prävention in betroffenen Gruppen. Genauso gibt es aber auch viele Maßnahmen, die unsere Freiheit einschränken, aber gar keinen Gewinn an Sicherheit bringen. Alle Menschen zu überwachen vergrößert nur den Heuberg für die Polizei, aber hilft nicht die wirklichen Gefahren zu finden.</p>
+					<p><a class="btn btn-default" href="p/reinhold-mitterlehner/">Jetzt mit Reinhold Mitterlehner über Überwachung sprechen!</a></p>
+				</li>
+				<li>
+					<div class="avatar"><img src="static/img/representative/brandstetter.jpg" alt=""></div>
+					<div class="avtxt"><strong>Justizminister Brandstetter (ÖVP) zu staatlicher Spionagesoftware:</strong> Entscheidend ist doch, dass im Rahmen der Begutachtung so viel Kritik geäußert wurde in verschiedener Richtung, dass wir einfach zu dem Schluss kommen müssen: Das ist so wie es war offensichtlich nicht wirklich sinnvoll. <br><a href="https://www.youtube.com/watch?v=lee2oogWm_s">(Quelle)</a></div>
+				</li>
+				<li>
+					<p>2016 hat der Justizminister versucht, eine staatliche Spionagesoftware in Österreich zu etablieren. Das Gesetz wurde aber aufgrund massiver Kritik von allen Seiten zurückgezogen. Eine solche Spionagesoftware schafft neue Gefahren für die gesamte Bevölkerung und liefert aber nur zweifelhafte Beweise für Gerichtsverfahren. Trotzdem wird im neuen Regierungsprogramm versucht, denselben Fehler mit Anlauf zu wiederholen.</p>
+					<p><a class="btn btn-default" href="p/wolfgang-brandstetter/">Jetzt mit Wolfgang Brandstetter über Überwachung sprechen!</a></p>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section>
+		<a href="weitersagen/" class="btn btn-default">Sprich über Überwachung</a>
+	</section>
+	<section id="sicherheit">
+		<div class="container">
+			<h2>Echtes Sicherheitspaket statt Überwachungspaket</h2>
+			<p>Im Überwachungspaket der Regierung ist keine wirkliche Sicherheit enthalten. Statt "subjektivem" Sicherheitsgefühl, Angstmache und Populismus brauchen wir ein "objektives" Sicherheitspaket:</p>
+			<ul class="fa-ul">
+				<li><i class="fa-li fa fa-check-square"></i>mehr gut ausgebildete Polizeikräfte statt mehr Kameras</li>
+				<li><i class="fa-li fa fa-check-square"></i>verbesserte Analysekapazitäten für Sicherheitsbehörden: Mehr Intelligenz statt mehr Daten.</li>
+				<li><i class="fa-li fa fa-check-square"></i>mehrsprachige Polizeikräfte bzw. mehr Dolmetscherkapazitäten</li>
+				<li><i class="fa-li fa fa-check-square"></i>mehr Präventionsarbeit gegen Radikalisierungstendenzen</li>
+				<li><i class="fa-li fa fa-check-square"></i>bessere Vernetzung mit Communities als vertrauensbildende Maßnahmen und zur frühzeitigen Erkennung radikaler Tendenzen</li>
+				<li><i class="fa-li fa fa-check-square"></i>"Sunset Clauses" für alle neuen Überwachungsgesetze (laufende Evaluierung und Rücknahme wirkungsloser Maßnahmen)</li>
+				<li><i class="fa-li fa fa-check-square"></i>Evaluierung aller bestehenden Überwachungsgesetze </li>
+			</ul>
+			<p>Sprich über Überwachung. Sag' deinen Politikern, dass das Überwachungspaket durch ein echtes Sicherheitspaket ersetzt werden muss!</p>
+		</div>
+	</section>
+	<section class="aktivgreen">
+		<a href="politiker/" class="btn btn-default">Werde Aktiv</a>
+	</section>
+	<section class="chat">
+		<div class="container">
+		<h2>Wie betrifft mich das Überwachungspaket?</h2>
+		<ul>
+			<li>
+
+				<div class="avtxt"><h3>Lückenlose Überwachung betrifft auch dich!</h3></div>
+			</li>
+			<li>
+				Wenn die Regierung ihre Pläne umsetzt, kann sich bald niemand mehr unbeobachtet auf Straßen und öffentlichen Plätzen bewegen. Auch du bist dann im Überwachungsnetz gefangen. Die Erfassung von Autokennzeichen, vernetzte Videokameras, das Verbot anonymer Wertkarten und Ausweiskontrollen beim Kauf von Bahn- oder Bustickets schränken deine persönliche Freiheit ein! Für die Verbrechensbekämpfung sind diese Maßnahmen allerdings kaum geeignet. Setze dich für verhältnismäßige Sicherheitspolitik ein!
+			</li>
+			<li>
+				<div class="avtxt"><h3>Verwendest du Passwörter? </h3></div>
+			</li>
+			<li>
+				Mit dem geplanten Bundestrojaner wird der Staat zum Hacker. Smartphones und private Rechner sollen mit staatlicher Spionagesoftware infiziert werden, um sensible persönliche Daten und Passwörter auszulesen. Dafür riskiert der Staat, uns alle unsicherer zu machen. Sicherheitslücken, müssen offen bleiben, damit Trojaner eingeschleust werden können.
+			</li>
+			<li>
+				<div class="avtxt"><h3>Hast du eine Kamera im Badezimmer? </h3></div>
+			</li>
+			<li>
+				<p>Wir alle wollen intime Momente genießen. Es gibt immer wieder Situationen im Leben, in denen man nicht beobachtet werden will. Mit "lückenloser Überwachung" wie sie Innenminister Sobotka fordert, wir dein Recht auf Privatsphäre massiv eingeschränkt. Wir alle haben einen Intimbereich.</p>
+			</li>
+			<li>
+				<div class="avtxt"><h3>Fährt bei dir im Auto immer ein Polizist mit?</h3></div>
+			</li>
+			<li>
+				<p>Mit der neuen Kennzeichenerfassung hat der Staat bald vollständige Bewegungsprofile aller Autofahrer in Österreich. Egal ob Arbeit, Freizeit oder Krankenhaus jeder Weg wird mit protokolliert. Dazu kann in jedem Auto bald ein Lauschangriff stattfinden, auch schon bei geringen Straftaten. All das ist bald in einer staatlichen Datenbank. </p>
+			</li>
+			<li>
+				<div class="avtxt"><h3>Hast du ein Wertkartenhandy?</h3></div>
+			</li>
+			<li>
+				<p>Dann bist du einer von 4,5 Millionen Österreicherinnen und Österreichern, die bald für einfache Kommunikation ihren Ausweis zeigen und auch noch mehr bezahlen müssen. Anonyme Wertkarten werden mit dem Überwachungspaket verboten. Andere Länder haben sich gegen diese Maßnahme entschieden, weil sie nicht positiv für die Sicherheit ist und einen Schwarzmarkt für gestohlene und getauschte SIM-Karten erzeugt. Mit der Maßnahme werden Billiganbieter vom Markt gedrängt, weil sie kaum Möglichkeiten haben, die Registrierung durchzuführen. Damit steigen die Preise.</p>
+			</li>
+			<li>
+				<div class="avtxt"><h3>Lässt du deine Haustüre offen, um sicherer zu leben?</h3></div>
+			</li>
+			<li>
+				<p>Genau das macht ein Bundestrojaner mit deinem Computer oder Handy. Eine staatliche Spionagesoftware nutzt Sicherheitslücken aus, die dann auch von Dritten verwendet werden können, um dein Gerät zu manipulieren. </p>
+			</li>
+			<li>
+				<div class="avtxt"><h3>Gibst du den PIN deiner Bankomatkarte einfach so raus?</h3></div>
+			</li>
+			<li>
+				<p>Es gibt gute Gründe, sensible Daten vor dem Zugriff Dritter zu schützen. Niemand soll dein Geld ausgeben können, wenn du es nicht willst. Niemand soll deine Post öffnen dürfen und es geht auch </p>
+			</li>
+			<li>
+				<div class="avtxt"><h3>Weißt du von wem der Satz „Wer nichts zu verbergen hat, hat von uns nichts zu befürchten“ stammt?</h3></div>
+			</li>
+			<li>
+				<p>Er wird Reichspropagandachef Joseph Goebbels zugeschrieben. Mehr muss man dazu nicht sagen. </p>
+			</li>
+		</ul>
+		</div>
+	</section>
+	<section class="padding">
+		<div class="container">
+
+			<h3>Installiere Überwachungsstaat</h3>
+			<div class="progressbar"></div>
+			<div class="uetxt">
+				<div class="txt-left">30. Jänner 2017: Regierung präsentiert Überwachungspaket</div>
+				<div class="txt-right">30. Juni 2017: Voraussichtlicher Beschluss des Überwachungspakets im Nationalrat</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="chat">
+		<div class="container">
+		<h2>Überwachung bringt mehr Sicherheit</h2>
+			<h3>Überwachung soll mehr Sicherheit bringen?</h3>
+		<ul>
+			<li>
+
+				<div class="avtxt"><h3>Haben dir Politiker jemals einen Beleg dafür geliefert?</h3></div>
+			</li>
+			<li>
+				Laufend werden neue Überwachungsgesetze beschlossen, ohne dass man sich Gedanken über ihre Wirksamkeit macht. Was dir als "Sicherheitspolitik" verkauft wird, bringt in den seltensten Fällen mehr Sicherheit, aber sehr oft Einschränkungen deiner Grund- und Freiheitsrechte. Frag' die Politiker nach einer Wirkungsfolgenabschätzung für die Maßnahmen, die sie planen!
+			</li>
+			<li>
+				<div class="avtxt"><h3>Werden Kinder zu freien, verantwortungsvollen Menschen, wenn man sie dauernd kontrolliert?</h3></div>
+			</li>
+			<li>
+				So ähnlich ist das auch mit staatlicher Überwachung. Sie eignet sich ganz gut dazu, Menschen zu unterdrücken. Freier macht sie sie aber bestimmt nicht. Wer sich permanent überwacht fühlt, wird es ihrgendwann nicht mehr wagen, eine Meinung zu haben.
+			</li>
+			<li>
+				<div class="avtxt"><h3>Weniger Freiheit bringt mehr Sicherheit?</h3></div>
+			</li>
+			<li>
+				<p>Freiheit und Sicherheit stehen nicht in einer Balance. Es gibt viele Dinge die unsere Freiheit einschränken aber überhaupt keine Sicherheit bringen. Mehr Daten zu sammeln macht es nicht einfacher Verbrecher zu finden, das wäre so, als ob man den Heuberg größer macht, um leichter die Nadel zu finden. Viele der Maßnahmen im Überwachungspaket wurden von anderen Ländern diskutiert und abgelehnt. Ein Gesetz zur Legalisierung einer staatlichen Spionagesoftware (Bundestrojaner) wurde erst 2016 vorgestellt und nach massiver Kritik von Justizminister Brandstetter zurück genommen. Bei keiner der vorgestellten Maßnahmen gibt es einen Nachweis, das sie uns sicherer macht. Bestehende Überwachungskompetenzen müssten dringend evaluiert werden. Wir fordern eine faktenbasierte Sicherheitspolitik.</p>
+				<p><a href="https://epicenter.works/thema/heat" class="btn btn-default">Erfahre mehr zur Überwachungsgesamtrechnung.</a></p>
+			</li>
+		</ul>
+			</div>
+	</section>
+	<section >
+		<a href="weitersagen/" class="btn btn-default">Sprich über Überwachung</a>
+	</section>
+	<section class="chat">
+		<div class="container">
+		<h2>Aber ich habe doch nichts zu verbergen!?</h2>
+		<ul>
+			<li>
+				<div class="avtxt"><h3>Wir haben alle etwas zu verbergen! </h3></div>
+			</li>
+			<li><p>Schließlich tragen wir Kleidung, verwenden Passwörter, wollen keine Kamera im Schlafzimmer und erzählen fremden Menschen nicht unsere intimsten Erinnerungen. Privatsphäre bedeutet, selbst entscheiden zu können, wem wir etwas über uns erzählen. Sie ist ein Rückzugsort, wo wir ganz bei uns selbst sind. .</p>
+			</li>
+			<li>
+				<div class="avtxt"><h3>Wir haben alle etwas zu befürchten! </h3></div>
+			</li>
+			<li><p>Bei allen Menschen gibt es Dinge, mit denen man sie bloßstellen kann. Auch Ehepartner müssen nicht alles über uns wissen; Vorgesetzte auch nicht und auch die Staatsmacht nicht: Es gibt gewisse Aspekte in unserem Leben, die wir lieber für uns behalten. Wir haben unsere Meinung geändert, wir sind reifer und älter geworden. Was früher war, darf uns heute nicht mehr zur Last gelegt werden. Insbesondere wenn jemand in einer Machtposition ist, haben wir ein berechtigtes Interesse, gewisse Lebensaspekte geheim zu halten. Wenn man einmal ins Fadenkreuz gerät und als “Gefährder” abgestempelt wird, ist jeder Lebensaspekt unter dem Mikroskop. </p>
+			</li>
+			<li>
+				<div class="avtxt"><h3>Was kann passieren?</h3></div>
+			</li>
+			<li>
+				<p>Viele Menschen haben berechtigte Gründe etwas zu verbergen. Man kann die Religion, Jugendsünden, Weltanschauung oder Sexualität gegen einen Menschen verwendet. Im besten Fall wird sich dieser Mensch regelkonformer verhalten, seltener aus der Reihe tanzen, weniger auffallen. Im schlimmsten Fall kann man mit solchen Informationen ein Leben zerstören. </p>
+			</li>
+			<li>
+				<div class="avtxt"><h3>Wer überwacht die Überwacher? </h3></div>
+			</li>
+			<li>
+				<p>Das große Problem bei Überwachung ist, dass die Gegenseite viel über uns weiß, wir aber nichts über sie. Diese Asymmetrie der Informationsverteilung(https://de.wikipedia.org/wiki/Panopticon) nimmt uns die Chance auf Augenhöhe mit dem Überwacher zu verhandeln. Der Überwachte wird zum Feind. Es gibt mehrere Geschichten(https://theintercept.com/2015/07/24/documents-show-department-homeland-security-monitoring-black-lives-matter-since-ferguson/) aus der jüngeren Vergangenheit in Österreich(https://de.wikipedia.org/wiki/Wiener_Neustädter_Tierschützerprozess) wo staatliche Überwachung zu den wildesten Anschuldigungen(https://futurezone.at/netzpolitik/anonymous-razzia-grobe-maengel-bei-ermittlungen/24.577.019) gegen unschuldige Menschen(https://derstandard.at/jetzt/livebericht/1342947762688/nachlese-live-bericht-freispruch-im-unibrennt-prozess) geführt hat. </p>
+			</li>
+			<li>
+				<div class="avtxt"><h3>Überwachung ist gefährlich für unsere Demokratie! </h3></div>
+			</li>
+			<li>
+				<p>Aus gutem Grund geben wir unsere Stimme im Wahllokal in einer unbeobachteten Wahlkabine ab. Eine Demokratie ohne Privatsphäre gibt es nicht. Nur wenn wir unbeobachtet sind, können eine freie und geheime Wahl treffen und mit Anderen versuchen die Gesellschaft voran zu bringen. Nur in einer Diktatur geht die Gefahr vom Volk aus.</p>
+			</li>
+		</ul>
+		</div>
+	</section>
+	<section >
+		<a href="politiker/" class="btn btn-default">Werde Aktiv</a>
+	</section>
+	<section>
+		<div class="container">
+			<h2>Diese Kampagne wird unterstützt von</h2>
+		</div>
+	</section>
+	
+{% endblock %}

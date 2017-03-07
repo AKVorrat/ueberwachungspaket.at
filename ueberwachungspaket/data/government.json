@@ -1,0 +1,362 @@
+[
+	{
+		"contact": {
+			"facebook": "bundeskanzler.christian.kern",
+			"mail": "christian.kern@bka.gv.at",
+			"phone": "0800222666",
+			"twitter": "KernChri"
+		},
+		"id": "02941",
+		"image": {
+			"copyright": "BKA / Andy Wenzel",
+			"url": "/PAD_02941/6517530_384.jpg"
+		},
+		"name": {
+			"firstname": "Christian",
+			"lastname": "Kern",
+			"prefix": "Mag.",
+			"prettyname": "christian-kern",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "male",
+		"state": "",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "m.duzdar",
+			"mail": "munar.duzdar@bka.gv.at",
+			"phone": "0153115204065",
+			"twitter": ""
+		},
+		"id": "60446",
+		"image": {
+			"copyright": "Parlamentsdirektion / WILKE",
+			"url": "/PAD_60446/3488020_384.jpg"
+		},
+		"name": {
+			"firstname": "Muna",
+			"lastname": "Duzdar",
+			"prefix": "Mag.",
+			"prettyname": "muna-duzdar",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "female",
+		"state": "",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "thomas.drozda",
+			"mail": "Thomas.Drozda@bka.gv.at",
+			"phone": "0153115202104",
+			"twitter": "thomasdrozda"
+		},
+		"id": "88629",
+		"image": {
+			"copyright": "Parlamentsdirektion / Johannes Zinner",
+			"url": "/PAD_88629/6517608_384.jpg"
+		},
+		"name": {
+			"firstname": "Thomas",
+			"lastname": "Drozda",
+			"prefix": "Mag.",
+			"prettyname": "thomas-drozda",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "male",
+		"state": "",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "",
+			"phone": "0171100805193",
+			"twitter": "MitterlehnerR"
+		},
+		"id": "08696",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "/PAD_08696/4386658_180.jpg"
+		},
+		"name": {
+			"firstname": "Reinhold",
+			"lastname": "Mitterlehner",
+			"prefix": "Dr.",
+			"prettyname": "reinhold-mitterlehner",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "male",
+		"state": "",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "sebastiankurz.at",
+			"mail": "sebastian.kurz@bmeia.gv.at",
+			"phone": "05011503469",
+			"twitter": "sebastiankurz"
+		},
+		"id": "65321",
+		"image": {
+			"copyright": "Felicitas Matern",
+			"url": "/PAD_65321/4652441_384.jpg"
+		},
+		"name": {
+			"firstname": "Sebastian",
+			"lastname": "Kurz",
+			"prefix": "",
+			"prettyname": "sebastian-kurz",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "male",
+		"state": "",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "",
+			"phone": "",
+			"twitter": ""
+		},
+		"id": "52687",
+		"image": {
+			"copyright": "Grebe Elisabeth",
+			"url": "/PAD_52687/2402825_180.jpg"
+		},
+		"name": {
+			"firstname": "Alois",
+			"lastname": "Stöger",
+			"prefix": "",
+			"prettyname": "alois-stoeger",
+			"suffix": "diplômé"
+		},
+		"party": "spoe",
+		"sex": "male",
+		"state": "",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "S.Hammerschmid",
+			"mail": "sonja.hammerschmid@bmb.gv.at",
+			"phone": "01531205000",
+			"twitter": ""
+		},
+		"id": "88631",
+		"image": {
+			"copyright": "Daniela Beranek / Vetmeduni Vienna",
+			"url": "/PAD_88631/6353660_384.jpg"
+		},
+		"name": {
+			"firstname": "Sonja",
+			"lastname": "Hammerschmid",
+			"prefix": "Mag. Dr.",
+			"prettyname": "sonja-hammerschmid",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "female",
+		"state": "",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "karmasin.sophie",
+			"mail": "sophie.karmasin@bmfj.gv.at",
+			"phone": "01711000",
+			"twitter": ""
+		},
+		"id": "83297",
+		"image": {
+			"copyright": "Christian Jungwirth",
+			"url": "/PAD_83297/4725791_384.jpg"
+		},
+		"name": {
+			"firstname": "Sophie",
+			"lastname": "Karmasin",
+			"prefix": "MMag. Dr.",
+			"prettyname": "sophie-karmasin",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "female",
+		"state": "",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "hans-joerg.schelling@bmf.gv.at",
+			"phone": "+43 1 51433-500005",
+			"twitter": "HJSchelling"
+		},
+		"id": "36907",
+		"image": {
+			"copyright": "BMF / Loebell",
+			"url": "/PAD_36907/5913436_384.jpg"
+		},
+		"name": {
+			"firstname": "Johann Georg",
+			"lastname": "Schelling",
+			"prefix": "Dr.",
+			"prettyname": "johann-georg-schelling",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "male",
+		"state": "",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "InnenministerAT",
+			"mail": "ministerbuero@bmi.gv.at",
+			"phone": "01531262025",
+			"twitter": ""
+		},
+		"id": "88386",
+		"image": {
+			"copyright": "Felicitas Matern",
+			"url": "/PAD_88386/6302763_384.jpg"
+		},
+		"name": {
+			"firstname": "Wolfgang",
+			"lastname": "Sobotka",
+			"prefix": "Mag.",
+			"prettyname": "wolfgang-sobotka",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "male",
+		"state": "",
+		"team": "spy"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "minister.justiz@bmj.gv.at",
+			"phone": "+43 1 52152 2313",
+			"twitter": ""
+		},
+		"id": "83295",
+		"image": {
+			"copyright": "Christian Jungwirth",
+			"url": "/PAD_83295/5370025_384.jpg"
+		},
+		"name": {
+			"firstname": "Wolfgang",
+			"lastname": "Brandstetter",
+			"prefix": "Dr.",
+			"prettyname": "wolfgang-brandstetter",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "male",
+		"state": "",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "",
+			"mail": "hans-peter.doskozil@bmlvs.gv.at",
+			"phone": "050201 10 20071",
+			"twitter": "HPDoskozilAt"
+		},
+		"id": "87429",
+		"image": {
+			"copyright": "Ricardo Herrgott",
+			"url": "/PAD_87429/6323967_384.jpg"
+		},
+		"name": {
+			"firstname": "Hans Peter",
+			"lastname": "Doskozil",
+			"prefix": "Mag.",
+			"prettyname": "hans-peter-doskozil",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "male",
+		"state": "",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "BMRupprechter",
+			"mail": "buero.rupprechter@bmlfuw.gv.at",
+			"phone": "0171100606918",
+			"twitter": "BMRupprechter"
+		},
+		"id": "83296",
+		"image": {
+			"copyright": "Alexander Haiden",
+			"url": "/PAD_83296/6542366_384.jpg"
+		},
+		"name": {
+			"firstname": "Andrä",
+			"lastname": "Rupprechter",
+			"prefix": "Dipl.Ing.",
+			"prettyname": "andrae-rupprechter",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "male",
+		"state": "",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "joerg.leichtfried",
+			"mail": "joerg.leichtfried@bmvit.gv.at",
+			"phone": "0171162658818",
+			"twitter": "jleichtfried"
+		},
+		"id": "22694",
+		"image": {
+			"copyright": "www.beauhartphotography.com",
+			"url": "/PAD_22694/4832364_180.jpg"
+		},
+		"name": {
+			"firstname": "Jörg",
+			"lastname": "Leichtfried",
+			"prefix": "Mag.",
+			"prettyname": "joerg-leichtfried",
+			"suffix": ""
+		},
+		"party": "spoe",
+		"sex": "male",
+		"state": "",
+		"team": "unknown"
+	},
+	{
+		"contact": {
+			"facebook": "harald.mahrer",
+			"mail": "harald.mahrer@bmwfw.gv.at",
+			"phone": "0171100802691",
+			"twitter": ""
+		},
+		"id": "84308",
+		"image": {
+			"copyright": "David Sailer",
+			"url": "/PAD_84308/5380448_384.jpg"
+		},
+		"name": {
+			"firstname": "Harald",
+			"lastname": "Mahrer",
+			"prefix": "Mag. Dr.",
+			"prettyname": "harald-mahrer",
+			"suffix": ""
+		},
+		"party": "oevp",
+		"sex": "male",
+		"state": "",
+		"team": "unknown"
+	}
+]

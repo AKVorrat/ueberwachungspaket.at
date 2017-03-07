@@ -1,0 +1,86 @@
+{
+	"spoe": {
+		"name": "Sozialdemokratische Partei Österreichs",
+		"shortname": "SPÖ",
+		"color": "#f00",
+		"contact": {
+			"mail": "klub@spoe.at",
+			"phone": "+431401103471",
+			"fax": "+431401103455",
+			"facebook": "Sozialdemokratie",
+			"twitter": "SPOE_at"
+		}
+	},
+	"oevp": {
+		"name": "Österreichische Volkspartei",
+		"shortname": "ÖVP",
+		"color": "#000",
+		"contact": {
+			"mail": "office@oevpklub.at",
+			"phone": "+431401104408",
+			"fax": "+431401104437",
+			"facebook": "Volkspartei",
+			"twitter": "oevp"
+		}
+	},
+	"fpoe": {
+		"name": "Freiheitliche Partei Österreichs",
+		"shortname": "FPÖ",
+		"color": "#0e428e",
+		"contact": {
+			"mail": "parlamentsklub@fpoe.at",
+			"phone": "+431401107012",
+			"fax": "+431401107099",
+			"facebook": "fpoe",
+			"twitter": "hcstrachefp"
+		}
+	},
+	"gruene": {
+		"name": "Die Grüne Alternative",
+		"shortname": "Grüne",
+		"color": "#6ba325",
+		"contact": {
+			"mail": "infopool@gruene.at",
+			"phone": "+431401106698",
+			"fax": "+431401106793",
+			"facebook": "diegruenen",
+			"twitter": "Gruene_Austria"
+		}
+	},
+	"neos": {
+		"name": "Das Neue Österreich und Liberales Forum",
+		"shortname": "NEOS",
+		"color": "#e6408d",
+		"contact": {
+			"mail": "parlamentsklub@neos.eu",
+			"phone": "+431401109000",
+			"fax": "+431401109009",
+			"facebook": "NeosDasNeueOesterreich",
+			"twitter": "neos_eu"
+		}
+	},
+	"frank": {
+		"name": "Team Stronach für Österreich",
+		"shortname": "FRANK",
+		"color": "#f8d323",
+		"contact": {
+			"mail": "parlamentsklub@teamstronach.at",
+			"phone": "+431401108000",
+			"fax": "+431401108008",
+			"facebook": "TeamStronach",
+			"twitter": "TeamStronach_at"
+		}
+	},
+	"none": {
+		"name": "Ohne Klubzugehörigkeit",
+		"shortname": "parteilos",
+		"color": "#fff",
+		"contact": {
+			"mail": "",
+			"phone": "",
+			"fax": "",
+			"facebook": "",
+			"twitter": ""
+		}
+	}
+}

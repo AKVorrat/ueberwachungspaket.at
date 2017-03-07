@@ -1,0 +1,11 @@
+{
+	"liberty": {
+		"name": "Team Grundrechte"
+	},
+	"spy": {
+		"name": "Team Überwachung"
+	},
+	"unknown": {
+		"name": "Unbekanntes Team"
+	}
+}
