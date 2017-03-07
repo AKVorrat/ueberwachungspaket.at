@@ -994,6 +994,11 @@ nav > ul > li.active {
 }
 
 /* Progress bar container */
+@keyframes move
+{
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
 .progressbar
 {
 
@@ -1025,7 +1030,7 @@ nav > ul > li.active {
 	);
 	z-index: 1;
 	background-size: 50px 50px;
-	animation: move 2s linear infinite;
+	animation: move 40s linear infinite;
 	border-top-right-radius: 8px;
 	border-bottom-right-radius: 8px;
 	border-top-left-radius: 20px;
