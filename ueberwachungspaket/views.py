@@ -47,12 +47,13 @@ def mail():
     rep = reps.get_representative_by_id(id)
     firstname = request.form.get("firstname")
     lastname = request.form.get("lastname")
-    name_user = firstname + " " + lastname
     mail_user = request.form.get("email")
     newsletter = True if request.form.get("newsletter") == "yes" else False
 
     if not all([rep, firstname, lastname, mail_user]):
         abort(400) # bad request
+
+    name_user = firstname + " " + lastname
 
     try:
         sender = db_session.query(Sender).filter_by(email_address = mail_user).one()
