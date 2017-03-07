@@ -218,7 +218,7 @@ def handle_representative():
     rep = reps.get_representative_by_id(digits_pressed)
     resp = Response()
     
-    if rep is not None:
+    if rep is not None and rep.contact.phone:
         resp.play(url_for("static", filename="audio/handle_representative_a.wav"))
         resp.play(url_for("static", filename="audio/representative/" + rep.name.prettyname + ".wav"))
         resp.play(url_for("static", filename="audio/handle_representative_c.wav"))
