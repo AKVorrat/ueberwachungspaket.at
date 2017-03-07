@@ -47,15 +47,21 @@ def mail():
     rep = reps.get_representative_by_id(id)
     firstname = request.form.get("firstname")
     lastname = request.form.get("lastname")
-    name_user = firstname + " " + lastname
     mail_user = request.form.get("email")
     newsletter = True if request.form.get("newsletter") == "yes" else False
 
     if not all([rep, firstname, lastname, mail_user]):
         abort(400) # bad request
 
+    name_user = firstname + " " + lastname
+
     try:
         sender = db_session.query(Sender).filter_by(email_address = mail_user).one()
+
+        if newsletter:
+            sender.newsletter = True
+            db_session.commit()
+
         mail = Mail(sender, id)
 
         try:
@@ -83,7 +89,7 @@ def mail():
 
     except NoResultFound:
         # sender never sent mail before
-        sender = Sender(name_user, mail_user)
+        sender = Sender(name_user, mail_user, newsletter=newsletter)
         db_session.add(sender)
         mail = Mail(sender, id)
         db_session.add(mail)
@@ -218,7 +224,7 @@ def handle_representative():
     rep = reps.get_representative_by_id(digits_pressed)
     resp = Response()
     
-    if rep is not None:
+    if rep is not None and rep.contact.phone:
         resp.play(url_for("static", filename="audio/handle_representative_a.wav"))
         resp.play(url_for("static", filename="audio/representative/" + rep.name.prettyname + ".wav"))
         resp.play(url_for("static", filename="audio/handle_representative_c.wav"))
