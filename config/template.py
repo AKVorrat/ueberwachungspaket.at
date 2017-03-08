@@ -1,7 +1,6 @@
-# Twilio settings using Twilio API keys.
+# Twilio settings.
 TWILIO_NUMBERS = ['']
 TWILIO_ACCOUNT = ''
-TWILIO_SID = ''
 TWILIO_SECRET = ''
 TWILIO_APP = ''
 
