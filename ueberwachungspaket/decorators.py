@@ -1,3 +1,4 @@
+from urllib.parse import urlparse, urlunparse
 from flask import abort, current_app, request
 from functools import wraps
 from twilio.util import RequestValidator
@@ -7,7 +8,10 @@ def validate_twilio_request(f):
     @wraps(f)
     def decorated_function(*args, **kwargs):
         validator = RequestValidator(TWILIO_SECRET)
-        url = request.url.encode("idna").decode("utf-8")
+        url = list(urlparse(request.url))
+        url[1] = url[1].encode("idna").decode("utf-8")
+        url = urlunparse(url)
+
         signature = request.headers.get("X-TWILIO-SIGNATURE", "")
 
         request_valid = validator.validate(url, request.form, signature)
