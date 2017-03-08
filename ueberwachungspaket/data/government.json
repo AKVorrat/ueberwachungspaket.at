@@ -19,6 +19,7 @@
 			"suffix": ""
 		},
 		"party": "spoe",
+		"salutation": "Sehr geehrter Kanzler",
 		"sex": "male",
 		"state": "",
 		"team": "unknown"
@@ -43,6 +44,7 @@
 			"suffix": ""
 		},
 		"party": "spoe",
+		"salutation": "Sehr geehrte Ministerin",
 		"sex": "female",
 		"state": "",
 		"team": "unknown"
@@ -67,6 +69,7 @@
 			"suffix": ""
 		},
 		"party": "spoe",
+		"salutation": "Sehr geehrter Minister",
 		"sex": "male",
 		"state": "",
 		"team": "unknown"
@@ -91,6 +94,7 @@
 			"suffix": ""
 		},
 		"party": "oevp",
+		"salutation": "Sehr geehrter Vizekanzler",
 		"sex": "male",
 		"state": "",
 		"team": "unknown"
@@ -115,6 +119,7 @@
 			"suffix": ""
 		},
 		"party": "oevp",
+		"salutation": "Sehr geehrter Minister",
 		"sex": "male",
 		"state": "",
 		"team": "unknown"
@@ -133,12 +138,13 @@
 		},
 		"name": {
 			"firstname": "Alois",
-			"lastname": "Stöger",
+			"lastname": "St\u00f6ger",
 			"prefix": "",
 			"prettyname": "alois-stoeger",
-			"suffix": "diplômé"
+			"suffix": "dipl\u00f4m\u00e9"
 		},
 		"party": "spoe",
+		"salutation": "Sehr geehrter Minister",
 		"sex": "male",
 		"state": "",
 		"team": "unknown"
@@ -163,6 +169,7 @@
 			"suffix": ""
 		},
 		"party": "spoe",
+		"salutation": "Sehr geehrte Ministerin",
 		"sex": "female",
 		"state": "",
 		"team": "unknown"
@@ -187,6 +194,7 @@
 			"suffix": ""
 		},
 		"party": "oevp",
+		"salutation": "Sehr geehrte Ministerin",
 		"sex": "female",
 		"state": "",
 		"team": "unknown"
@@ -211,6 +219,7 @@
 			"suffix": ""
 		},
 		"party": "oevp",
+		"salutation": "Sehr geehrter Minister",
 		"sex": "male",
 		"state": "",
 		"team": "unknown"
@@ -235,6 +244,7 @@
 			"suffix": ""
 		},
 		"party": "oevp",
+		"salutation": "Sehr geehrter Minister",
 		"sex": "male",
 		"state": "",
 		"team": "spy"
@@ -259,6 +269,7 @@
 			"suffix": ""
 		},
 		"party": "oevp",
+		"salutation": "Sehr geehrter Minister",
 		"sex": "male",
 		"state": "",
 		"team": "unknown"
@@ -283,6 +294,7 @@
 			"suffix": ""
 		},
 		"party": "spoe",
+		"salutation": "Sehr geehrter Minister",
 		"sex": "male",
 		"state": "",
 		"team": "unknown"
@@ -300,13 +312,14 @@
 			"url": "/PAD_83296/6542366_384.jpg"
 		},
 		"name": {
-			"firstname": "Andrä",
+			"firstname": "Andr\u00e4",
 			"lastname": "Rupprechter",
 			"prefix": "Dipl.Ing.",
 			"prettyname": "andrae-rupprechter",
 			"suffix": ""
 		},
 		"party": "oevp",
+		"salutation": "Sehr geehrter Minister",
 		"sex": "male",
 		"state": "",
 		"team": "unknown"
@@ -324,13 +337,14 @@
 			"url": "/PAD_22694/4832364_180.jpg"
 		},
 		"name": {
-			"firstname": "Jörg",
+			"firstname": "J\u00f6rg",
 			"lastname": "Leichtfried",
 			"prefix": "Mag.",
 			"prettyname": "joerg-leichtfried",
 			"suffix": ""
 		},
 		"party": "spoe",
+		"salutation": "Sehr geehrter Minister",
 		"sex": "male",
 		"state": "",
 		"team": "unknown"
@@ -355,6 +369,7 @@
 			"suffix": ""
 		},
 		"party": "oevp",
+		"salutation": "Sehr geehrter Minister",
 		"sex": "male",
 		"state": "",
 		"team": "unknown"
