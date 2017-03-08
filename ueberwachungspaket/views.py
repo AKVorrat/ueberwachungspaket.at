@@ -56,7 +56,7 @@ def mail():
     name_user = firstname + " " + lastname
 
     try:
-        sender = db_session.query(Sender).filter_by(email_address = mail_user).one()
+        sender = db_session.query(Sender).filter_by(email_address=mail_user).one()
 
         if newsletter:
             sender.newsletter = True
@@ -117,7 +117,7 @@ def validate(hash):
 
     except NoResultFound:
         flash("Dieser Bestätigungslink ist ungültig.")
-        
+
     return render_template("validate.html")
 
 @app.route("/act/call/", methods=["POST"])
@@ -144,7 +144,7 @@ def gather_menu():
         db_session.rollback()
 
     with resp.gather(numDigits=1, action=url_for("handle_menu")) as g:
-        g.play(url_for("static", filename="audio/gather_menu.wav"), loop = 4)
+        g.play(url_for("static", filename="audio/gather_menu.wav"), loop=4)
 
     return str(resp)
 
@@ -174,9 +174,9 @@ def handle_menu():
 @validate_twilio_request
 def gather_reminder_time():
     resp = Response()
-    
+
     with resp.gather(numDigits=2, action=url_for("handle_reminder_time")) as g:
-        g.play(url_for("static", filename="audio/gather_reminder_time.wav"), loop = 4)
+        g.play(url_for("static", filename="audio/gather_reminder_time.wav"), loop=4)
 
     return str(resp)
 
@@ -190,7 +190,7 @@ def handle_reminder_time():
     if not number or number in ["+7378742833", "+2562533", "+8656696", "+266696687", "+86282452253"]:
         resp.play(url_for("static", filename="audio/handle_reminder_time_error.wav"))
     if 9 <= digits_pressed <= 16:
-        reminder = db_session.query(Reminder).filter_by(phone_number = number).one()
+        reminder = db_session.query(Reminder).filter_by(phone_number=number).one()
         if reminder.time is None:
             resp.play(url_for("static", filename="audio/handle_reminder_time_set.wav"))
         else:
@@ -213,7 +213,7 @@ def gather_representative():
     resp = Response()
 
     with resp.gather(numDigits=5, action=url_for("handle_representative")) as g:
-        g.play(url_for("static", filename="audio/gather_representative.wav"), loop = 4)
+        g.play(url_for("static", filename="audio/gather_representative.wav"), loop=4)
 
     return str(resp)
 
@@ -223,7 +223,7 @@ def handle_representative():
     digits_pressed = request.values.get("Digits", "00000", type=str)
     rep = reps.get_representative_by_id(digits_pressed)
     resp = Response()
-    
+
     if rep is not None and rep.contact.phone:
         resp.play(url_for("static", filename="audio/handle_representative_a.wav"))
         resp.play(url_for("static", filename="audio/representative/" + rep.name.prettyname + ".wav"))
@@ -246,15 +246,15 @@ def handle_representative():
 @validate_twilio_request
 def handle_reminder_unsubscribe():
     resp = Response()
-    
+
     direction = request.values.get("Direction")
 
     if direction == "inbound":
         number = request.values.get("From")
     else:
         number = request.values.get("To")
-    
-    reminder = db_session.query(Reminder).filter_by(phone_number = number).one()
+
+    reminder = db_session.query(Reminder).filter_by(phone_number=number).one()
     reminder.time = None
     db_session.commit()
     resp.play(url_for("static", filename="audio/handle_reminder_unsubscribe.wav"))
@@ -277,7 +277,7 @@ def gather_reminder_menu():
     resp = Response()
 
     with resp.gather(numDigits=1, action=url_for("handle_reminder_menu")) as g:
-        g.play(url_for("static", filename="audio/gather_reminder_menu.wav"), loop = 4)
+        g.play(url_for("static", filename="audio/gather_reminder_menu.wav"), loop=4)
 
     return str(resp)
 
@@ -289,7 +289,7 @@ def handle_reminder_menu():
     resp = Response()
 
     if digits_pressed == 1:
-        reminder = db_session.query(Reminder).filter_by(phone_number = number).one()
+        reminder = db_session.query(Reminder).filter_by(phone_number=number).one()
         reminder.times_forwarded = reminder.times_forwarded + 1
         db_session.commit()
 
