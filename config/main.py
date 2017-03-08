@@ -1,4 +1,4 @@
-DEBUG = True
+DEBUG = False
 
 PROJECT_NAME = "Stoppt das Überwachungspaket!"
 
