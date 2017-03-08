@@ -24,10 +24,10 @@ Liebe/r {name_user},
 
 wir danken Ihnen herzlich, dass Sie sich für Ihr Grundrecht auf Privatsphäre und Datenschutz stark gemacht haben. Wir würden uns sehr freuen, wenn Sie mithelfen, dass möglichst viele Menschen vom geplanten Überwachungspaket erfahren. Wir alle sind davon betroffen und gemeinsam können wir etwas für unsere Freiheit tun.
 
-1))) Erzählen Sie ihren Freunden von Ihrem Engagement: 
+Erzählen Sie ihren Freunden von Ihrem Engagement! 
 
 
-2))) Senden Sie eine E-Mail an fünf Freunde. Hier ist ein Textvorschlag dafür: 
+1))) Senden Sie eine E-Mail an fünf Freunde. Hier ist ein Textvorschlag dafür: 
 "
 Hallo, 
 
@@ -40,7 +40,7 @@ Hilf mit, unsere Privatsphäre zu retten!
 Liebe Grüße,
 " 
 
-3))) Gehen Sie den nächsten Schritt! Rufen Sie Ihre Abgeordneten an! 
+2))) Gehen Sie den nächsten Schritt! Rufen Sie Ihre Abgeordneten an! 
 Die effektivste Art, Politikern ins Gewissen zu reden ist, direkt mit ihnen am Telefon zu sprechen.
 Mit unserer Hotline geht das ganz einfach. Rufen Sie 
 0720 205088
