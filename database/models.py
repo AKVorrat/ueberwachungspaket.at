@@ -74,9 +74,8 @@ class Mail(Base):
         else:
             addr_to = str(rep) + " <" + rep.contact.mail + ">"
         subject = "Sicherheitspaket"
-        salutation = "Sehr geehrter Herr" if rep.sex == "male" else "Sehr geehrte Frau"
         msg = MAIL_DISCLAIMER.format(name_user=self.sender.name, mail_user=self.sender.email_address) + "\n" * 2
-        msg = msg + MAIL_REPRESENTATIVE.format(name_rep=str(rep), name_user=self.sender.name, salutation=salutation)
+        msg = msg + MAIL_REPRESENTATIVE.format(name_rep=str(rep), name_user=self.sender.name, salutation=rep.salutation)
         sendmail(addr_from, addr_to, subject, msg)
 
 class Sender(Base):
@@ -183,7 +182,7 @@ class Team():
         return self.name
 
 class Representative():
-    def __init__(self, id, name, contact, image, party, team, sex, state):
+    def __init__(self, id, name, contact, image, party, team, sex, salutation, state):
         self.id = id
         self.name = name
         self.contact = contact
@@ -191,6 +190,7 @@ class Representative():
         self.party = party
         self.team = team
         self.sex = sex
+        self.salutation = salutation
         self.state = state
 
         if not self.contact.mail:
@@ -250,7 +250,7 @@ def load_representatives(filename, parties, teams):
         image = Image(lrep["image"]["url"], lrep["image"]["copyright"])
         party = parties[lrep["party"]]
         team = teams[lrep["team"]]
-        representative = Representative(lrep["id"], name, contact, image, party, team, lrep["sex"], lrep["state"])
+        representative = Representative(lrep["id"], name, contact, image, party, team, lrep["sex"], lrep["salutation"], lrep["state"])
         representatives.append(representative)
 
     return representatives
