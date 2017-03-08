@@ -96,6 +96,6 @@
 
 <script>
 	MailNameTo = "{{ rep }}";
-	MailSalutation = {% if rep.sex == "male" %}"Sehr geehrter Herr"{% else %}"Sehr geehrte Frau"{% endif %};
+	MailSalutation = {{ rep.salutation }};
 </script>
 {% endblock %}
