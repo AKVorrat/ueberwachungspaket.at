@@ -9,7 +9,7 @@ def validate_twilio_request(f):
         validator = RequestValidator(TWILIO_SECRET)
 
         request_valid = validator.validate(
-                request.url,
+                request.url.encode("idna"),
                 request.form,
                 request.headers.get("X-TWILIO-SIGNATURE", ""))
 
