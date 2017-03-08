@@ -10,9 +10,7 @@ from database import db_session
 from database.models import Reminder
 
 try:
-    client = TwilioRestClient(account = TWILIO_SID,
-                              token = TWILIO_SECRET,
-                              request_account = TWILIO_ACCOUNT)
+    client = TwilioRestClient(TWILIO_ACCOUNT, TWILIO_SECRET)
 except TwilioRestException:
     exit(0)
 
