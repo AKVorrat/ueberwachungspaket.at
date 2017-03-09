@@ -904,20 +904,24 @@ div.center > p,
 
 .profile.unknown {
 	border-color: #2E2E50;
+	background-color: #2E2E50;
 }
 
 .profile.liberty {
 	border-color: #2CBC9B;
+	background-color: #2CBC9B;
 }
 
 .profile.spy {
 	border-color: #E74B4C;
+	background-color: #E74B4C;
 }
 
 .profile > img {
 	display: block;
 	-webkit-filter: grayscale(80%) sepia(10%);
 	filter: grayscale(80%) sepia(10%);
+	border-radius: 10px;
 }
 
 
