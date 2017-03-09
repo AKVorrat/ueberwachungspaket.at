@@ -904,6 +904,7 @@ div.center > p,
 
 .profile.unknown {
 	border-color: #2E2E50;
+	background-color: #2E2E50;
 }
 
 .profile.liberty {
@@ -913,6 +914,7 @@ div.center > p,
 
 .profile.spy {
 	border-color: #E74B4C;
+	background-color: #E74B4C;
 }
 
 .profile > img {
