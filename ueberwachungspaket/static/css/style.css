@@ -908,6 +908,7 @@ div.center > p,
 
 .profile.liberty {
 	border-color: #2CBC9B;
+	background-color: #2CBC9B;
 }
 
 .profile.spy {
@@ -918,6 +919,7 @@ div.center > p,
 	display: block;
 	-webkit-filter: grayscale(80%) sepia(10%);
 	filter: grayscale(80%) sepia(10%);
+	border-radius: 10px;
 }
 
 
