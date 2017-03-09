@@ -1,4 +1,4 @@
-Flask==0.12
-PyMySQL==0.7.10
-SQLAlchemy==1.1.6
+Flask>=0.10
+PyMySQL>=0.7.6
+SQLAlchemy>=0.9.8
 twilio==5.7.0
