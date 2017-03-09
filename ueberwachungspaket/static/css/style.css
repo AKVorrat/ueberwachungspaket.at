@@ -1203,12 +1203,12 @@ nav > ul > li.active {
 	position: absolute;
 	width: 0;
 	height: 0;
-	left: -20px;
+	left: -24px;
 	right: auto;
 	top: 10px;
 	bottom: auto;
 	border: 12px solid;
-	border-color: #44B5F8 #44B5F8 transparent transparent;
+	border-color: #3EAEF8 #3EAEF8 transparent transparent;
 }
 .chat li:nth-child(odd){
 	margin: 55px 15px 15px;
@@ -1359,4 +1359,15 @@ section{
 	width: 200px;
 	max-width: 100%;
 	margin-right: 1rem;
+}
+
+/* Print */
+
+@media print {
+	.visible-mobile {
+		display: none;
+	}
+	body > nav {
+		display: none;
+	}
 }
