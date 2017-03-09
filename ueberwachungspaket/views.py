@@ -9,6 +9,7 @@ from config.main import *
 from database.models import Representatives, Reminder, Mail, Sender
 from . import app, db_session
 from .decorators import validate_twilio_request
+from random import shuffle
 
 reps = Representatives()
 
@@ -19,7 +20,9 @@ def root():
 
 @app.route("/politiker/")
 def representatives():
-    return render_template("representatives.html", reps=reps.representatives + reps.government)
+    reps_random = reps.representatives + reps.government
+    shuffle(reps_random)
+    return render_template("representatives.html", reps=reps_random)
 
 @app.route("/p/<prettyname>/")
 def representative(prettyname):
