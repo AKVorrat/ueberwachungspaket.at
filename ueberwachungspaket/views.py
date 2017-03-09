@@ -1,6 +1,7 @@
-from flask import render_template, abort, request, url_for, flash, redirect
 from random import choice
 from datetime import datetime, date, timedelta
+from re import match
+from flask import render_template, abort, request, url_for, flash, redirect
 from twilio.twiml import Response
 from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm.exc import NoResultFound
@@ -50,7 +51,7 @@ def mail():
     mail_user = request.form.get("email")
     newsletter = True if request.form.get("newsletter") == "yes" else False
 
-    if not all([rep, firstname, lastname, mail_user]):
+    if not all([rep, firstname, lastname, mail_user]) or not rep.contact.mail or id == "00000" or not match(r"[^@]+@[^@]+\.[^@]+", mail_user):
         abort(400) # bad request
 
     name_user = firstname + " " + lastname
