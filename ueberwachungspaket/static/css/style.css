@@ -1026,12 +1026,12 @@ nav > ul > li.active {
 	background-image: linear-gradient(
 			-45deg,
 			rgba(255, 255, 255, .2) 25%,
-			transparent 25%,
+			transparent 26%,
 			transparent 50%,
-			rgba(255, 255, 255, .2) 50%,
+			rgba(255, 255, 255, .2) 51%,
 			rgba(255, 255, 255, .2) 75%,
-			transparent 75%,
-			transparent
+			transparent 76%,
+			transparent 100%
 	);
 	z-index: 1;
 	background-size: 50px 50px;
