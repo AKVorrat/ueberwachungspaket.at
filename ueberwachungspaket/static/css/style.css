@@ -1360,3 +1360,14 @@ section{
 	max-width: 100%;
 	margin-right: 1rem;
 }
+
+/* Print */
+
+@media print {
+	.visible-mobile {
+		display: none;
+	}
+	body > nav {
+		display: none;
+	}
+}
