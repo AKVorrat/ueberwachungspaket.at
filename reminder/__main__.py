@@ -26,7 +26,7 @@ for reminder in reminders:
     try:
         client.calls.create(to = reminder.phone_number,
                             from_ = choice(TWILIO_NUMBERS),
-                            url = "https://beta.xn--berwachungspaket-izb.at/act/gather-reminder-call/",
+                            url = CALLBACK_BASE_URL + "/act/gather-reminder-call/",
                             if_machine = "Hangup")
         reminder.last_called = datetime.now()
         reminder.times_called = reminder.times_called + 1
