@@ -22,3 +22,6 @@ MAIL_FROM = ''
 
 # Mail address used for debugging
 MAIL_DEBUG = ''
+
+# URL under which the /act routes are accessible, without trailing slash
+CALLBACK_BASE_URL = ''
