@@ -25,20 +25,17 @@ $(document).ready(function() {
 
 		$("#states :checkbox").change(search);
 
-		$("#name-search input").on('keyup change', function (event) {
-			search(event);
-		});
+		$("#name-search input").on('keyup change', search);
 	}
 });
 
 function search(event) {
 	$("#representatives").children(".representative").each(function() {
-		console.log('test');
-		var name = ($(this).data("firstname") + " " + $(this).data("lastname")).toLowerCase();
+		var name = ($(this).data("firstname") + " " + $(this).data("lastname") + " " + $(this).data("firstname")).toLowerCase();
 		if(($("#" + $(this).data("party")).prop("checked") || $("#parties").children(":checked").length == 0)
 		&& ($("#" + $(this).data("team")).prop("checked") || $("#teams").children(":checked").length == 0)
 		&& ($("#state-" + $(this).data("state")).prop("checked") || $("#states").children(":checked").length == 0)
-		&& ($("#name-search input").val() === '' || name.indexOf($("#name-search input").val().toLowerCase()) > -1)) {
+		&& ($("#name-search input").val() === '' || name.indexOf($("#name-search input").val().trim().toLowerCase()) > -1)) {
 			$(this).removeClass("invisible");
 		} else {
 			$(this).addClass("invisible");
