@@ -1,4 +1,4 @@
-from random import choice
+from random import choice, shuffle
 from datetime import datetime, date, timedelta
 from re import match
 from flask import render_template, abort, request, url_for, flash, redirect
@@ -19,7 +19,9 @@ def root():
 
 @app.route("/politiker/")
 def representatives():
-    return render_template("representatives.html", reps=reps.representatives + reps.government)
+    reps_random = reps.representatives + reps.government
+    shuffle(reps_random)
+    return render_template("representatives.html", reps=reps_random)
 
 @app.route("/p/<prettyname>/")
 def representative(prettyname):
