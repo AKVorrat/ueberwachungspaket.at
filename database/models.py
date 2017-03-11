@@ -125,7 +125,7 @@ class Representatives():
     def get_representative_by_id(self, id):
         representatives = self.representatives + self.government
         if id == "00000":
-            return choice([rep for rep in representatives if rep.team.prettyname == "spy"])
+            return choice([rep for rep in representatives if rep.important])
 
         try:
             rep = [rep for rep in representatives if rep.id == id][0]
