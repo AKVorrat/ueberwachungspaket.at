@@ -35,6 +35,10 @@ def representative(prettyname):
 def share():
     return render_template("share.html")
 
+@app.route("/unterstützer/")
+def supporters():
+    return render_template("supporters.html")
+
 @app.route("/faq/")
 def faq():
     return render_template("faq.html")
