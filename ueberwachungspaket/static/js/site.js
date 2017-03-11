@@ -19,23 +19,26 @@ $(document).ready(function () {
 
 $(document).ready(function() {
 	if($("#representatives").length) {
+		$("#importance :radio").change(search);
+
 		$("#parties :checkbox").change(search);
 
 		$("#teams :checkbox").change(search);
 
 		$("#states :checkbox").change(search);
 
-		$("#name-search input").on('keyup change', search);
+		$("#name input").on('keyup change', search);
 	}
 });
 
 function search(event) {
 	$("#representatives").children(".representative").each(function() {
 		var name = ($(this).data("firstname") + " " + $(this).data("lastname") + " " + $(this).data("firstname")).toLowerCase();
-		if(($("#" + $(this).data("party")).prop("checked") || $("#parties").children(":checked").length == 0)
+		if((!$("#reps-important").prop("checked") || $(this).data("important") === "True")
+		&& ($("#" + $(this).data("party")).prop("checked") || $("#parties").children(":checked").length == 0)
 		&& ($("#" + $(this).data("team")).prop("checked") || $("#teams").children(":checked").length == 0)
 		&& ($("#state-" + $(this).data("state")).prop("checked") || $("#states").children(":checked").length == 0)
-		&& ($("#name-search input").val() === '' || name.indexOf($("#name-search input").val().trim().toLowerCase()) > -1)) {
+		&& ($("#name input").val() === '' || name.indexOf($("#name input").val().trim().toLowerCase()) > -1)) {
 			$(this).removeClass("invisible");
 		} else {
 			$(this).addClass("invisible");

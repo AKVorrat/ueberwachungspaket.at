@@ -11,7 +11,7 @@
 			"copyright": "BKA / Andy Wenzel",
 			"url": "/PAD_02941/6517530_384.jpg"
 		},
-		"important": false,
+		"important": true,
 		"name": {
 			"firstname": "Christian",
 			"lastname": "Kern",
@@ -89,7 +89,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_08696/4386658_180.jpg"
 		},
-		"important": false,
+		"important": true,
 		"name": {
 			"firstname": "Reinhold",
 			"lastname": "Mitterlehner",

@@ -39,7 +39,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_02819/4387252_180.jpg"
 		},
-		"important": false,
+		"important": true,
 		"name": {
 			"firstname": "Werner",
 			"lastname": "Amon",
@@ -3144,7 +3144,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_05375/4385016_180.jpg"
 		},
-		"important": false,
+		"important": true,
 		"name": {
 			"firstname": "Otto",
 			"lastname": "Pendl",
@@ -3468,7 +3468,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_51570/4444902_180.jpg"
 		},
-		"important": false,
+		"important": true,
 		"name": {
 			"firstname": "Walter",
 			"lastname": "Rosenkranz",
@@ -3711,7 +3711,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_35504/4385389_180.jpg"
 		},
-		"important": false,
+		"important": true,
 		"name": {
 			"firstname": "Andreas",
 			"lastname": "Schieder",
