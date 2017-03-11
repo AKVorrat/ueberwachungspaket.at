@@ -9,8 +9,7 @@ from email.mime.text import MIMEText
 from flask import url_for
 from sqlalchemy import UniqueConstraint, Column, Boolean, Integer, String, Date, DateTime, ForeignKey
 from sqlalchemy.orm import relationship
-from config import MAIL_FROM, MAIL_DEBUG
-from config.main import DEBUG
+from config import DEBUG, MAIL_FROM, MAIL_DEBUG
 from config.mail import *
 from . import Base
 
@@ -126,7 +125,7 @@ class Representatives():
     def get_representative_by_id(self, id):
         representatives = self.representatives + self.government
         if id == "00000":
-            return choice([rep for rep in representatives if rep.team.prettyname == "spy"])
+            return choice([rep for rep in representatives if rep.important])
 
         try:
             rep = [rep for rep in representatives if rep.id == id][0]
@@ -182,7 +181,7 @@ class Team():
         return self.name
 
 class Representative():
-    def __init__(self, id, name, contact, image, party, team, sex, salutation, state):
+    def __init__(self, id, name, contact, image, party, team, sex, important, salutation, state):
         self.id = id
         self.name = name
         self.contact = contact
@@ -190,6 +189,7 @@ class Representative():
         self.party = party
         self.team = team
         self.sex = sex
+        self.important = important
         self.salutation = salutation
         self.state = state
 
@@ -250,7 +250,7 @@ def load_representatives(filename, parties, teams):
         image = Image(lrep["image"]["url"], lrep["image"]["copyright"])
         party = parties[lrep["party"]]
         team = teams[lrep["team"]]
-        representative = Representative(lrep["id"], name, contact, image, party, team, lrep["sex"], lrep["salutation"], lrep["state"])
+        representative = Representative(lrep["id"], name, contact, image, party, team, lrep["sex"], lrep["important"], lrep["salutation"], lrep["state"])
         representatives.append(representative)
 
     return representatives

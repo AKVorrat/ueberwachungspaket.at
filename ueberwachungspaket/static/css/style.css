@@ -551,7 +551,8 @@ input[type="email"]:focus {
 	box-shadow: 0 0 4px 0 rgba(200, 0, 0, .1) inset, 0 0 4px 0 rgba(200, 0, 0, .1) inset;
 }
 
-input[type="checkbox"] {
+input[type="checkbox"],
+input[type="radio"] {
 	position: relative;
 	top: -1px;
 	width: 13px;
@@ -645,7 +646,8 @@ label.space {
 }
 
 .btn-group > label:hover,
-.btn-group > input[type="checkbox"]:checked + label {
+.btn-group > input[type="checkbox"]:checked + label,
+.btn-group > input[type="radio"]:checked + label {
 	color: #fff;
 	background-color: #00466e;
 }
@@ -662,7 +664,8 @@ label.space {
 	border-radius: 0 2px 2px 0;
 }
 
-.btn-group > input[type="checkbox"] {
+.btn-group > input[type="checkbox"],
+.btn-group > input[type="radio"] {
 	display: none;
 }
 

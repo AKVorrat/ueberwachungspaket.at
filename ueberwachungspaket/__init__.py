@@ -6,6 +6,7 @@ app = Flask(__name__)
 app.secret_key = SECRET_KEY
 app.config.from_pyfile("../config/main.py")
 app.config.from_pyfile("../config/mail.py")
+app.debug = DEBUG
 init_db()
 
 if __name__ == "__main__":

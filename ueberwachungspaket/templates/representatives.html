@@ -10,7 +10,13 @@
 		<h1>Draht zu deinen Politikern</h1>
 		<h2>Überzeuge deine Abgeordneten, dass wir ein echtes Sicherheitspaket brauchen und kein Überwachungspaket</h2>
 		<div id="filter" class="column">
-			<form id="parties" class="btn-group row">
+			<form id="importance" class="btn-group row" autocomplete="off">
+				<input id="reps-important" type="radio" name="importance" checked="checked">
+				<label for="reps-important">thematisch Zuständige</label>
+				<input id="reps-all" type="radio" name="importance">
+				<label for="reps-all">alle Politiker</label>
+			</form>
+			<form id="parties" class="btn-group row" autocomplete="off">
 				<input id="spoe" type="checkbox">
 				<label for="spoe">SPÖ</label>
 				<input id="oevp" type="checkbox">
@@ -26,7 +32,7 @@
 				<input id="none" type="checkbox">
 				<label for="none">parteilos</label>
 			</form>
-			<form id="teams" class="btn-group row">
+			<form id="teams" class="btn-group row" autocomplete="off">
 				<input id="liberty" type="checkbox">
 				<label for="liberty"><span class="glyph liberty">&#9724;</span> Team Grundrechte</label>
 				<input id="spy" type="checkbox">
@@ -34,7 +40,7 @@
 				<input id="unknown" type="checkbox">
 				<label for="unknown"><span class="glyph unknown">&#9724;</span> Unbekannt</label>
 			</form>
-			<form id="states" class="btn-group row">
+			<form id="states" class="btn-group row" autocomplete="off">
 				<input id="state-b" type="checkbox">
 				<label for="state-b">Bgld.</label>
 				<input id="state-k" type="checkbox">
@@ -54,10 +60,13 @@
 				<input id="state-w" type="checkbox">
 				<label for="state-w">W</label>
 			</form>
+			<form id="name" class="btn-group row" autocomplete="off">
+				<input type="text" size="60" placeholder="Namenssuche" />
+			</form>
 		</div>
 		<div id="representatives" class="row">
 			{% for rep in reps %}
-			<a class="representative" href="{{ url_for('representative', prettyname=rep.name.prettyname) }}" data-firstname="{{ rep.name.firstname }}" data-lastname="{{ rep.name.lastname }}" data-party="{{ rep.party.prettyname }}" data-team="{{ rep.team.prettyname }}" data-state="{{ rep.state }}">
+			<a class="representative {% if not rep.important %}invisible{% endif %}" href="{{ url_for('representative', prettyname=rep.name.prettyname) }}" data-firstname="{{ rep.name.firstname }}" data-lastname="{{ rep.name.lastname }}" data-party="{{ rep.party.prettyname }}" data-team="{{ rep.team.prettyname }}" data-state="{{ rep.state }}" data-important="{{ rep.important }}">
 				<div class="column">
 					<div class="name">{{ rep.name.lastname }}</div>
 					<div class="party">{{ rep.party.shortname }}</div>
