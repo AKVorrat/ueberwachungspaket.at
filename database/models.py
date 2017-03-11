@@ -9,8 +9,7 @@ from email.mime.text import MIMEText
 from flask import url_for
 from sqlalchemy import UniqueConstraint, Column, Boolean, Integer, String, Date, DateTime, ForeignKey
 from sqlalchemy.orm import relationship
-from config import MAIL_FROM, MAIL_DEBUG
-from config.main import DEBUG
+from config import DEBUG, MAIL_FROM, MAIL_DEBUG
 from config.mail import *
 from . import Base
 
