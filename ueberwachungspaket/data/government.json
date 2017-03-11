@@ -1,3 +1,4 @@
+
 [
 	{
 		"contact": {
@@ -23,7 +24,7 @@
 		"salutation": "Sehr geehrter Kanzler",
 		"sex": "male",
 		"state": "",
-		"team": "unknown"
+		"team": "spy"
 	},
 	{
 		"contact": {
@@ -63,7 +64,7 @@
 			"copyright": "Parlamentsdirektion / Johannes Zinner",
 			"url": "/PAD_88629/6517608_384.jpg"
 		},
-		"important": false,
+		"important": true,
 		"name": {
 			"firstname": "Thomas",
 			"lastname": "Drozda",
@@ -101,7 +102,7 @@
 		"salutation": "Sehr geehrter Vizekanzler",
 		"sex": "male",
 		"state": "",
-		"team": "unknown"
+		"team": "spy"
 	},
 	{
 		"contact": {
@@ -127,7 +128,7 @@
 		"salutation": "Sehr geehrter Minister",
 		"sex": "male",
 		"state": "",
-		"team": "unknown"
+		"team": "spy"
 	},
 	{
 		"contact": {
@@ -271,7 +272,7 @@
 			"copyright": "Christian Jungwirth",
 			"url": "/PAD_83295/5370025_384.jpg"
 		},
-		"important": false,
+		"important": true,
 		"name": {
 			"firstname": "Wolfgang",
 			"lastname": "Brandstetter",
@@ -283,7 +284,7 @@
 		"salutation": "Sehr geehrter Minister",
 		"sex": "male",
 		"state": "",
-		"team": "unknown"
+		"team": "spy"
 	},
 	{
 		"contact": {
