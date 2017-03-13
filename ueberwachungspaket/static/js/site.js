@@ -113,7 +113,6 @@ $(document).ready(function() {
 				if(innerdiv.length!=1){
 					innerdiv=$("<div class='progress'></div>");
 					div.append("<div class='text'>&nbsp;</div>");
-					$("<span class='text'>&nbsp;</span>").css("width",div.width()).css("height",div.height()).appendTo(innerdiv);
 					div.append(innerdiv);
 				}
 				var width=Math.round(val/max*100);
