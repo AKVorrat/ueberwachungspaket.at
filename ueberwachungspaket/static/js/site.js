@@ -1,3 +1,9 @@
+// show mobile share links
+
+if (!navigator.userAgent.match(/iPhone|iPad|Android/i)) {
+	$('.share-mobile').css("cssText", "display: none !important;");
+}
+
 // smooth scroll
 
 $(document).ready(function () {

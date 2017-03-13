@@ -776,6 +776,15 @@ div.center > p,
 	transform: rotate(-3deg);
 }
 
+.fb-messenger {
+	background-image: url('../img/fb-messenger.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 40px;
+	width: 40px;
+	height: 40px;
+}
+
 
 
 
