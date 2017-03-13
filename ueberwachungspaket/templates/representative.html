@@ -17,6 +17,9 @@
 			<a class="share center" href="https://www.facebook.com/{{ rep.contact.facebook }}" target="_blank">
 				<div class="center"><i class="fa fa-facebook" aria-hidden="true"></i></div>
 			</a>
+			<a class="share center" href="https://fb.com/msg/{{ rep.contact.facebook }}" target="_blank">
+				<div class="center"><i class="fb-messenger" aria-hidden="true"></i></div>
+			</a>
 			{% endif %}
 			{% if rep.contact.twitter|length > 0 %}
 			<a class="share center" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Füberwachungspaket%2Eat%2F&text=Stoppt%20das%20%C3%9Cberwachungspaket%21%20%40{{ rep.contact.twitter }}&hashtags=%C3%BCberwachungspaket&related=epicenter%5Fworks%3Aepicenter%2Eworks" target="_blank">
