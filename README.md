@@ -18,3 +18,4 @@ See below for dependencies.
 - Normalize.css (C) Nicolas Gallagher, Jonathan Neal [MIT]
 - OpenSans (C) Steve Matteson [Apache]
 - Oswald (C) Vernon Adams [OFL]
+- sms-link (C) Martin Smeeckaert [MIT]
