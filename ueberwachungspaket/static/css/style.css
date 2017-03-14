@@ -794,6 +794,13 @@ div.center > p,
 	background-image: url('../img/fb-messenger-hover.svg');
 }
 
+.sms-text {
+	margin-top: -.06em;
+    color: #ffffff;
+    font-size: 0.4em;
+    font-family: "OpenSans", "Helvetica Neue", "Helvetica", sans-serif;
+}
+
 
 
 
