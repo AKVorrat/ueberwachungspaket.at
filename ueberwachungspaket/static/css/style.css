@@ -785,6 +785,13 @@ div.center > p,
 	height: 40px;
 }
 
+.sms-text {
+	margin-top: -.06em;
+    color: #ffffff;
+    font-size: 0.4em;
+    font-family: "OpenSans", "Helvetica Neue", "Helvetica", sans-serif;
+}
+
 
 
 
