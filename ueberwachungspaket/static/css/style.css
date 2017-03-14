@@ -459,6 +459,10 @@ header.center {
 	padding: 15px;
 }
 
+form.row {
+	max-width: 100%;
+}
+
 form .row > * {
 	padding: 0;
 }
@@ -543,6 +547,7 @@ input[type="email"] {
 	border-radius: 2px;
 	-webkit-transition: background-color .3s ease, box-shadow .3s ease;
 	transition: background-color .3s ease, box-shadow .3s ease;
+	max-width: 100%;
 }
 
 input[type="text"]:focus,
@@ -783,6 +788,10 @@ div.center > p,
 	background-size: 40px;
 	width: 40px;
 	height: 40px;
+}
+
+.fb-messenger:hover {
+	background-image: url('../img/fb-messenger-hover.svg');
 }
 
 .sms-text {
