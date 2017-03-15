@@ -145,7 +145,7 @@ def callback(resp):
 
     try:
         reminder = db_session.query(Reminder).filter_by(phone_number=number).one()
-        reminder.time_connected = reminder.time_connected + timedelta(0,duration,0)
+        reminder.time_connected = reminder.time_connected + duration
         db_session.commit()
     except IntegrityError:
         db_session.rollback()
