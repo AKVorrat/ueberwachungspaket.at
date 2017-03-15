@@ -132,6 +132,26 @@ def call(resp):
     resp.play(url_for("static", filename="audio/intro.wav"))
     resp.redirect(url_for("gather_menu"))
 
+@app.route("/act/callback/", methods=["POST"])
+@twilio_request
+def call(resp):
+    direction = request.values.get("Direction")
+    duration = request.values.get("CallDuration", 0, type=int)
+
+    if direction == "inbound":
+        number = request.values.get("From")
+    else:
+        number = request.values.get("To")
+
+    try:
+        reminder = db_session.query(Reminder).filter_by(phone_number=number).one()
+        reminder.time_connected = reminder.time_connected + timedelta(0,duration,0)
+        db_session.commit()
+    except IntegrityError:
+        db_session.rollback()
+    except NoResultFound:
+        pass
+
 @app.route("/act/gather-menu/", methods=["POST"])
 @twilio_request
 def gather_menu(resp):
