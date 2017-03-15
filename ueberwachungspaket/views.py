@@ -226,6 +226,7 @@ def gather_representative(resp):
 @twilio_request
 def handle_representative(resp):
     digits_pressed = request.values.get("Digits", "00000", type=str)
+    number = request.values.get("From")
     rep = reps.get_representative_by_id(digits_pressed)
 
     if rep is not None and rep.contact.phone:
