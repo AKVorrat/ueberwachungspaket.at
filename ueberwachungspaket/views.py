@@ -229,6 +229,10 @@ def handle_representative(resp):
     rep = reps.get_representative_by_id(digits_pressed)
 
     if rep is not None and rep.contact.phone:
+        reminder = db_session.query(Reminder).filter_by(phone_number=number).one()
+        reminder.times_forwarded = reminder.times_forwarded + 1
+        db_session.commit()
+
         resp.play(url_for("static", filename="audio/handle_representative_a.wav"))
         resp.play(url_for("static", filename="audio/representative/" + rep.name.prettyname + ".wav"))
         resp.play(url_for("static", filename="audio/handle_representative_c.wav"))
