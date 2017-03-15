@@ -134,7 +134,7 @@ def call(resp):
 
 @app.route("/act/callback/", methods=["POST"])
 @twilio_request
-def call(resp):
+def callback(resp):
     direction = request.values.get("Direction")
     duration = request.values.get("CallDuration", 0, type=int)
 
