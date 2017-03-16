@@ -239,9 +239,9 @@ def handle_representative(resp):
         resp.play(url_for("static", filename="audio/handle_representative_c.wav"))
 
         if app.debug:
-            resp.dial(FEEDBACK_NUMBER, timelimit=60, callerid=choice(TWILIO_NUMBERS))
+            resp.dial(FEEDBACK_NUMBER, timeLimit=60, callerId=choice(TWILIO_NUMBERS))
         else:
-            resp.dial(rep.contact.phone, timelimit=900, callerid=choice(TWILIO_NUMBERS))
+            resp.dial(rep.contact.phone, timeLimit=900, callerId=choice(TWILIO_NUMBERS))
 
         resp.play(url_for("static", filename="audio/adieu.wav"))
 
@@ -293,9 +293,9 @@ def handle_reminder_menu(resp):
         resp.play(url_for("static", filename="audio/handle_representative_c.wav"))
 
         if app.debug:
-            resp.dial(FEEDBACK_NUMBER, timelimit=60, callerid=choice(TWILIO_NUMBERS))
+            resp.dial(FEEDBACK_NUMBER, timeLimit=60, callerId=choice(TWILIO_NUMBERS))
         else:
-            resp.dial(rep.contact.phone, timelimit=900, callerid=choice(TWILIO_NUMBERS))
+            resp.dial(rep.contact.phone, timeLimit=900, callerId=choice(TWILIO_NUMBERS))
 
         resp.play(url_for("static", filename="audio/adieu.wav"))
 
