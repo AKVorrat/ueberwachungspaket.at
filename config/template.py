@@ -1,3 +1,6 @@
+# Debug mode
+DEBUG = True
+
 # Twilio settings.
 TWILIO_NUMBERS = ['']
 TWILIO_ACCOUNT = ''
