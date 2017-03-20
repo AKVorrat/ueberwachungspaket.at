@@ -132,6 +132,26 @@ def call(resp):
     resp.play(url_for("static", filename="audio/intro.wav"))
     resp.redirect(url_for("gather_menu"))
 
+@app.route("/act/callback/", methods=["POST"])
+@twilio_request
+def callback(resp):
+    direction = request.values.get("Direction")
+    duration = request.values.get("CallDuration", 0, type=int)
+
+    if direction == "inbound":
+        number = request.values.get("From")
+    else:
+        number = request.values.get("To")
+
+    try:
+        reminder = db_session.query(Reminder).filter_by(phone_number=number).one()
+        reminder.time_connected = reminder.time_connected + duration
+        db_session.commit()
+    except IntegrityError:
+        db_session.rollback()
+    except NoResultFound:
+        pass
+
 @app.route("/act/gather-menu/", methods=["POST"])
 @twilio_request
 def gather_menu(resp):
@@ -206,17 +226,22 @@ def gather_representative(resp):
 @twilio_request
 def handle_representative(resp):
     digits_pressed = request.values.get("Digits", "00000", type=str)
+    number = request.values.get("From")
     rep = reps.get_representative_by_id(digits_pressed)
 
     if rep is not None and rep.contact.phone:
+        reminder = db_session.query(Reminder).filter_by(phone_number=number).one()
+        reminder.times_forwarded = reminder.times_forwarded + 1
+        db_session.commit()
+
         resp.play(url_for("static", filename="audio/handle_representative_a.wav"))
         resp.play(url_for("static", filename="audio/representative/" + rep.name.prettyname + ".wav"))
         resp.play(url_for("static", filename="audio/handle_representative_c.wav"))
 
         if app.debug:
-            resp.dial(FEEDBACK_NUMBER, timelimit=60, callerid=choice(TWILIO_NUMBERS))
+            resp.dial(FEEDBACK_NUMBER, timeLimit=60, callerId=choice(TWILIO_NUMBERS))
         else:
-            resp.dial(rep.contact.phone, timelimit=900, callerid=choice(TWILIO_NUMBERS))
+            resp.dial(rep.contact.phone, timeLimit=900, callerId=choice(TWILIO_NUMBERS))
 
         resp.play(url_for("static", filename="audio/adieu.wav"))
 
@@ -268,9 +293,9 @@ def handle_reminder_menu(resp):
         resp.play(url_for("static", filename="audio/handle_representative_c.wav"))
 
         if app.debug:
-            resp.dial(FEEDBACK_NUMBER, timelimit=60, callerid=choice(TWILIO_NUMBERS))
+            resp.dial(FEEDBACK_NUMBER, timeLimit=60, callerId=choice(TWILIO_NUMBERS))
         else:
-            resp.dial(rep.contact.phone, timelimit=900, callerid=choice(TWILIO_NUMBERS))
+            resp.dial(rep.contact.phone, timeLimit=900, callerId=choice(TWILIO_NUMBERS))
 
         resp.play(url_for("static", filename="audio/adieu.wav"))
 

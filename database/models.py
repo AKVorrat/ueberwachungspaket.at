@@ -9,8 +9,7 @@ from email.mime.text import MIMEText
 from flask import url_for
 from sqlalchemy import UniqueConstraint, Column, Boolean, Integer, String, Date, DateTime, ForeignKey
 from sqlalchemy.orm import relationship
-from config import MAIL_FROM, MAIL_DEBUG
-from config.main import DEBUG
+from config import DEBUG, MAIL_FROM, MAIL_DEBUG
 from config.mail import *
 from . import Base
 
@@ -126,7 +125,7 @@ class Representatives():
     def get_representative_by_id(self, id):
         representatives = self.representatives + self.government
         if id == "00000":
-            return choice([rep for rep in representatives if rep.team.prettyname == "spy"])
+            return choice([rep for rep in representatives if rep.important])
 
         try:
             rep = [rep for rep in representatives if rep.id == id][0]
