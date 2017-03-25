@@ -1,4 +1,7 @@
-from urllib.parse import urlparse, urlunparse
+try:
+    from urllib.parse import urlparse
+except ImportError:
+     from urlparse import urlparse
 from functools import wraps
 from flask import abort, current_app, request
 from twilio.twiml import Response
