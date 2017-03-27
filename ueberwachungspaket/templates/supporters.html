@@ -28,7 +28,7 @@
 
 			<ul class="row">
 				{% for name, href, img in supporter_items -%}
-					<a href="{{ href }}"><img src="{{ url_for('static', filename='img/supporter/' + img) }}" /></a>
+                <a href="{{ href }}"><img alt="{{ name }}" title="{{ name }}" src="{{ url_for('static', filename='img/supporter/' + img) }}" /></a>
 				{% endfor -%}
 			</ul>
 		</div>
