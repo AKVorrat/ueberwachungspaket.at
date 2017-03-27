@@ -1128,10 +1128,12 @@ nav > ul > li.active {
 	font-size: 20px;
 	font-weight: bold;
 }
-#zitate ul{
+#zitate ul,
+#anrufen ul {
 	list-style: none;
 }
-#zitate li:nth-child(even){
+#zitate li:nth-child(even),
+#anrufen li:nth-child(even) {
 	position: relative;
 	margin-left: 140px;
 	background: #075698;
@@ -1144,41 +1146,49 @@ nav > ul > li.active {
 	color: #fff;
 	width: 70%;
 }
-#zitate  li:nth-child(even):before{
+#zitate li:nth-child(even):before,
+#anrufen li:nth-child(even):before {
 	content:url('../img/wave.png');
 	position: absolute;
 	right: -110px;
 	top: -3px;
 }
-#zitate  li:nth-child(even):after{
+#anrufen .chat li:nth-child(even):before {
+    content: url('../img/conversation/user.jpg')
+}
+#zitate li:nth-child(even):after,
+#anrufen li:nth-child(even):after {
 	content: ' ';
 	position: absolute;
 	width: 0;
 	height: 0;
 	left: auto;
 	right: -20px;
-	top: 37px;
+	top: 20%;
 	bottom: auto;
 	border: 10px solid;
 	border-color: #3EAEF8  transparent  transparent #3EAEF8;
 }
-#zitate li:nth-child(odd){
+#zitate li:nth-child(odd),
+#anrufen li:nth-child(odd) {
 	margin: 65px 15px 15px;
 	position:relative ;
 }
-#zitate  li:nth-child(odd) .avtxt:after{
+#zitate li:nth-child(odd) .avtxt:after,
+#anrufen li:nth-child(odd) .avtxt:after {
 	content: ' ';
 	position: absolute;
 	width: 0;
 	height: 0;
 	left: 82px;
 	right: auto;
-	top: 35px;
+	top: 20%;
 	bottom: auto;
 	border: 12px solid;
 	border-color: #e4e4e4 #e4e4e4 transparent transparent;
 }
-#zitate li{
+#zitate li,
+#anrufe li {
 	clear: both;
 }
 #zitate li:nth-child(even) a{
@@ -1190,14 +1200,16 @@ nav > ul > li.active {
 	color: #fff;
 
 }
-#zitate .avatar{
+#zitate .avatar,
+#anrufen .avatar {
 	width: 80px;
 	height: 80px;
 	overflow: hidden;
 	border-radius: 50%;
 	float: left;
 }
-#zitate .avtxt{
+#zitate .avtxt,
+#anrufen .avtxt {
 	margin-left: 100px;
 	background: #E5E5EA;
 	border-radius: 10px;
