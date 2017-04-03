@@ -58,6 +58,33 @@
 				<p>Sag' den Politikern, dass du nicht überwacht werden willst. Frage nach Belegen, wieso diese Überwachungsmaßnahmen uns sicherer machen sollen.</p>
 			</div>
 		</div>
+		<h2>Beispielgespräch</h2>
+		<div class="chat container">
+			<ul>
+				<li>
+                    <div class="avatar"><img src="{{ url_for('static', filename='img/conversation/' + rep.party.handle + '.png') }}"></div>
+                    <div class="avtxt">Hallo, Sie sprechen mit dem {% if rep.is_government %}Büro von {{ rep.name.firstname }} {{ rep.name.lastname }}{% else %}{{ rep.party.shortname }}-Parlamentsklub{% endif %}.</div>
+				</li>
+				<li>
+                    <p>Guten Tag, meine Name ist ... Ich würde gerne mit {{ rep.name.firstname }} {{ rep.name.lastname }} sprechen.</p>
+				</li>
+				<li>
+                    <div class="avatar"><img src="{{ url_for('static', filename='img/conversation/' + rep.party.handle + '.png') }}"></div>
+                    <div class="avtxt">{% if rep.is_female %}Die{% else %}Der{% endif %} ist gerade leider nicht da, kann ich {% if rep.is_female %}ihr{% else %}ihm{% endif %} etwas ausrichten?</div>
+				</li>
+				<li>
+                    <p>Ja, bitte fragen Sie {% if rep.is_female %}sie{% else %}ihn{% endif %}, wie das neue Überwachungspaket uns sicherer machen wird und teilen Sie {% if rep.is_female %}ihr{% else %}ihm{% endif %} mit, dass ich als normaler Bürger über diese Ausweitung des Überwachungsstaats sehr besorgt bin.</p>
+				</li>
+				<li>
+                    <div class="avatar"><img src="{{ url_for('static', filename='img/conversation/' + rep.party.handle + '.png') }}"></div>
+					<div class="avtxt">Danke, ich werde das weitergeben.</div>
+				</li>
+				<li>
+					<p>Vielen Dank für das Gespräch! Ich würde mich sehr über eine Antwort per E-Mail oder einen Rückruf freuen.</p>
+				</li>
+
+			</ul>
+		</div>
 	</section>
 	{% endif %}
 	{% if rep.contact.mail|length > 0 %}

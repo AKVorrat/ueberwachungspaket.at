@@ -120,7 +120,7 @@ class Representatives():
         self.parties = load_parties()
         self.teams = load_teams()
         self.representatives = load_representatives("representatives.json", self.parties, self.teams)
-        self.government = load_representatives("government.json", self.parties, self.teams)
+        self.government = load_representatives("government.json", self.parties, self.teams, True)
 
     def get_representative_by_id(self, id):
         representatives = self.representatives + self.government
@@ -152,7 +152,8 @@ class Contact():
         self.twitter = twitter
 
 class Party():
-    def __init__(self, name, shortname, prettyname, color, contact):
+    def __init__(self, handle, name, shortname, prettyname, color, contact):
+        self.handle = handle
         self.name = name
         self.shortname = shortname
         self.prettyname = prettyname
@@ -181,7 +182,7 @@ class Team():
         return self.name
 
 class Representative():
-    def __init__(self, id, name, contact, image, party, team, sex, important, salutation, state):
+    def __init__(self, id, name, contact, image, party, team, sex, important, salutation, state, is_government):
         self.id = id
         self.name = name
         self.contact = contact
@@ -189,9 +190,12 @@ class Representative():
         self.party = party
         self.team = team
         self.sex = sex
+        self.is_male = sex == 'male'
+        self.is_female = sex == 'female'
         self.important = important
         self.salutation = salutation
         self.state = state
+        self.is_government = is_government
 
         if not self.contact.mail:
             self.contact.mail = party.contact.mail
@@ -218,7 +222,7 @@ def load_parties():
         lparty = lparties[prettyname]
         lcontact = lparty["contact"]
         contact = Contact(lcontact["mail"], lcontact["phone"], lcontact["facebook"], lcontact["twitter"])
-        party = Party(lparty["name"], lparty["shortname"], prettyname, lparty["color"], contact)
+        party = Party(prettyname, lparty["name"], lparty["shortname"], prettyname, lparty["color"], contact)
         parties[prettyname] = party
 
     return parties
@@ -236,7 +240,7 @@ def load_teams():
 
     return teams
 
-def load_representatives(filename, parties, teams):
+def load_representatives(filename, parties, teams, is_government=False):
     representatives = []
 
     with open("ueberwachungspaket/data/" + filename, "r") as f:
@@ -250,7 +254,7 @@ def load_representatives(filename, parties, teams):
         image = Image(lrep["image"]["url"], lrep["image"]["copyright"])
         party = parties[lrep["party"]]
         team = teams[lrep["team"]]
-        representative = Representative(lrep["id"], name, contact, image, party, team, lrep["sex"], lrep["important"], lrep["salutation"], lrep["state"])
+        representative = Representative(lrep["id"], name, contact, image, party, team, lrep["sex"], lrep["important"], lrep["salutation"], lrep["state"], is_government)
         representatives.append(representative)
 
     return representatives
