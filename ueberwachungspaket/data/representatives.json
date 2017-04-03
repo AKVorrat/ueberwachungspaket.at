@@ -30,7 +30,7 @@
 		"contact": {
 			"facebook": "",
 			"mail": "werner.amon@parlament.gv.at",
-			"phone": "+431401104933",
+			"phone": "+43140126360",
 			"twitter": ""
 		},
 		"district": "6",
@@ -1563,7 +1563,7 @@
 		"salutation": "Sehr geehrte Abgeordnete",
 		"sex": "female",
 		"state": "n",
-		"team": "spy"
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -1860,7 +1860,7 @@
 		"salutation": "Sehr geehrter Abgeordneter",
 		"sex": "male",
 		"state": "w",
-		"team": "spy"
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -2373,7 +2373,7 @@
 		"salutation": "Sehr geehrte Abgeordnete",
 		"sex": "female",
 		"state": "n",
-		"team": "spy"
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -2400,7 +2400,7 @@
 		"salutation": "Sehr geehrter Abgeordneter",
 		"sex": "male",
 		"state": "k",
-		"team": "spy"
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -3156,7 +3156,7 @@
 		"salutation": "Sehr geehrter Abgeordneter",
 		"sex": "male",
 		"state": "n",
-		"team": "spy"
+		"team": "unknown"
 	},
 	{
 		"contact": {
@@ -4749,7 +4749,7 @@
 		"salutation": "Sehr geehrter Abgeordneter",
 		"sex": "male",
 		"state": "n",
-		"team": "spy"
+		"team": "unknown"
 	},
 	{
 		"contact": {
