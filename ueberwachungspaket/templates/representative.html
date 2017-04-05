@@ -8,9 +8,11 @@
 {% block content %}
 	<section class="column">
 		<h1>{{ rep.fullname() }} ({{ rep.party.shortname }})</h1>
-		<div class="profile {{ rep.team.prettyname }}">
-			<img src="{{ url_for('static', filename='img/representative/' + rep.id + '.jpg') }}" alt="{{ rep }}" />
-			<span class="team {{ rep.team.prettyname }}">{{ rep.team }}</span>
+		<div class="profile-adjustment">
+			<div class="profile {{ rep.team.prettyname }}">
+				<img src="{{ url_for('static', filename='img/representative/' + rep.id + '.jpg') }}" alt="{{ rep }}" />
+				<span class="team {{ rep.team.prettyname }}">{{ rep.team }}</span>
+			</div>
 		</div>
 		<div class="row bottom">
 			{% if rep.contact.facebook|length > 0 %}
