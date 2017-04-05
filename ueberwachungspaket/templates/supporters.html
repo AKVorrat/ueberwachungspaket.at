@@ -21,8 +21,10 @@
 				("Forum Informationsfreiheit", "https://www.informationsfreiheit.at", "informationsfreiheit.png"),
 				("Freischreiber Österreich", "http://www.freischreiber.at", "freischreiber.jpg"),
 				("IG Kultur Wien", "http://www.igkulturwien.net", "igkw.jpg"),
+				("LosFuzzys", "https://hack.more.systems", "losfuzzys.jpg"),
 				("Mehr Demokratie!", "https://www.mehr-demokratie.at", "md.jpg"),
 				("Quintessenz", "http://www.quintessenz.at", "quintessenz.png"),
+				("realraum Graz", "https://realraum.at", "realraum.jpg"),
 				("Südwind", "https://www.suedwind.at", "suedwind.jpg"),
 				("Verein gegen Tierfabriken", "https://vgt.at", "vgt.jpg"),
 				("Vienna Centre For Societal Security", "http://vicesse.eu", "VICESSE.png")
@@ -30,7 +32,7 @@
 
 			<ul class="row">
 				{% for name, href, img in supporter_items -%}
-                <a href="{{ href }}"><img alt="{{ name }}" title="{{ name }}" src="{{ url_for('static', filename='img/supporter/' + img) }}" /></a>
+				<a href="{{ href }}"><img alt="{{ name }}" title="{{ name }}" src="{{ url_for('static', filename='img/supporter/' + img) }}" /></a>
 				{% endfor -%}
 			</ul>
 		</div>
