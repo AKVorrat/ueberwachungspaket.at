@@ -449,6 +449,10 @@ header.center {
 	margin-top: auto !important;
 }
 
+.top {
+	margin-bottom: auto !important;
+}
+
 .shrunk {
 	width: 100%;
 	max-width: 700px;
