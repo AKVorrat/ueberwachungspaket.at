@@ -1,5 +1,6 @@
 # Debug mode
 DEBUG = True
+NO_DB = False
 
 # Twilio settings.
 TWILIO_NUMBERS = ['']
