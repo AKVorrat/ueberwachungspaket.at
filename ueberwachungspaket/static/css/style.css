@@ -449,6 +449,10 @@ header.center {
 	margin-top: auto !important;
 }
 
+.top {
+	margin-bottom: auto !important;
+}
+
 .shrunk {
 	width: 100%;
 	max-width: 700px;
@@ -923,12 +927,17 @@ div.center > p,
 	background-color: #E74B4C;
 }
 
+.profile-adjustment {
+	text-align: center;
+}
+
 .profile {
 	position: relative;
 	max-width: 98%;
 	margin: 1rem auto 2rem;
 	border: 6px solid;
 	border-radius: 10px;
+	display: inline-block;
 }
 
 .profile.unknown {

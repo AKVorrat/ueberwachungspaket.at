@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from random import choice, shuffle
 from datetime import datetime, date, timedelta
 from re import match
