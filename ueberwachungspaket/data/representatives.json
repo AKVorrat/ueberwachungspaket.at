@@ -1,33 +1,6 @@
 [
 	{
 		"contact": {
-			"facebook": "rezor",
-			"mail": "nikolaus.alm@parlament.gv.at",
-			"phone": "+4350705070",
-			"twitter": "nikoalm"
-		},
-		"district": "9",
-		"id": "83119",
-		"image": {
-			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "/PAD_83119/4380895_180.jpg"
-		},
-		"important": false,
-		"name": {
-			"firstname": "Nikolaus",
-			"lastname": "Alm",
-			"prefix": "Mag.",
-			"prettyname": "nikolaus-alm",
-			"suffix": ""
-		},
-		"party": "neos",
-		"salutation": "Sehr geehrter Abgeordneter",
-		"sex": "male",
-		"state": "w",
-		"team": "liberty"
-	},
-	{
-		"contact": {
 			"facebook": "",
 			"mail": "werner.amon@parlament.gv.at",
 			"phone": "+431401104933",
@@ -4448,11 +4421,11 @@
 			"prettyname": "christoph-vavrik",
 			"suffix": ""
 		},
-		"party": "neos",
+		"party": "oevp",
 		"salutation": "Sehr geehrter Abgeordneter",
 		"sex": "male",
 		"state": "st",
-		"team": "liberty"
+		"team": "spy"
 	},
 	{
 		"contact": {
