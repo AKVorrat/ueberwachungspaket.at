@@ -39,7 +39,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_84060/5226025_180.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Erwin",
 			"lastname": "Angerer",
@@ -201,7 +201,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_14835/4444987_180.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Petra",
 			"lastname": "Bayr",
@@ -228,7 +228,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_14836/4445008_180.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Ruth",
 			"lastname": "Becher",
@@ -255,7 +255,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_35468/4387913_180.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Dagmar",
 			"lastname": "Belakowitsch-Jenewein",
@@ -282,7 +282,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_52688/5225964_180.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Nikolaus",
 			"lastname": "Berlakovich",
@@ -336,7 +336,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_02867/4387764_180.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Reinhard Eugen",
 			"lastname": "B\u00f6sch",
@@ -390,7 +390,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_61639/3487782_384.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Hermann",
 			"lastname": "Br\u00fcckl",
@@ -471,7 +471,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_00145/5830576_180.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Doris",
 			"lastname": "Bures",
@@ -498,7 +498,7 @@
 			"copyright": "Parlamentsdirektion / WILKE",
 			"url": "/PAD_00178/3488817_384.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Josef",
 			"lastname": "Cap",
@@ -525,7 +525,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_51557/4444818_180.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Gerhard",
 			"lastname": "Deimek",
@@ -768,7 +768,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_83298/4582572_384.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Klaus Uwe",
 			"lastname": "Feichtinger",
@@ -903,7 +903,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_08209/4387081_180.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Hermann",
 			"lastname": "Gahr",
@@ -957,7 +957,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_67199/4386512_180.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Wolfgang",
 			"lastname": "Gerstl",
@@ -1092,7 +1092,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_83147/4386211_180.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Werner",
 			"lastname": "Groi\u00df",
@@ -1119,7 +1119,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_14839/4385324_180.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Elisabeth",
 			"lastname": "Grossmann",
@@ -1308,7 +1308,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_55227/5225905_384.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Michael",
 			"lastname": "Hammer",
@@ -1335,7 +1335,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_83148/5225861_180.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Andreas",
 			"lastname": "Hanger",
@@ -1470,7 +1470,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_05076/4385474_180.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Anton",
 			"lastname": "Heinzl",
@@ -1551,7 +1551,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_51562/4444669_180.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Christian",
 			"lastname": "H\u00f6bart",
@@ -1578,7 +1578,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_35521/4444542_180.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Norbert",
 			"lastname": "Hofer",
@@ -1713,7 +1713,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_51561/4387889_180.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Johannes",
 			"lastname": "H\u00fcbner",
@@ -1740,7 +1740,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_83149/4386406_180.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Brigitte",
 			"lastname": "Jank",
@@ -1848,7 +1848,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_35490/4386742_180.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Beatrix",
 			"lastname": "Karl",
@@ -1875,7 +1875,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_51564/4444648_180.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Andreas",
 			"lastname": "Karlsb\u00f6ck",
@@ -1902,7 +1902,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_83129/4387514_180.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Axel",
 			"lastname": "Kassegger",
@@ -1929,7 +1929,7 @@
 			"copyright": "Parlamentsdirektion / WILKE",
 			"url": "/PAD_32494/3490712_384.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Wolfgang",
 			"lastname": "Katzian",
@@ -2091,7 +2091,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_30036/6401454_384.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Gerald",
 			"lastname": "Klug",
@@ -2199,7 +2199,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_14841/4385811_180.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Ulrike",
 			"lastname": "K\u00f6nigsberger-Ludwig",
@@ -2226,7 +2226,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_02822/4405723_180.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Karlheinz",
 			"lastname": "Kopf",
@@ -2280,7 +2280,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_14842/4582232_384.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Kai Jan",
 			"lastname": "Krainer",
@@ -2361,7 +2361,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_83113/4385832_180.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Philip",
 			"lastname": "Kucher",
@@ -2388,7 +2388,7 @@
 			"copyright": "Privat",
 			"url": "/PAD_86603/5814774_180.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "G\u00fcnther",
 			"lastname": "Kumpitsch",
@@ -2442,7 +2442,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_88823/6567366_180.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "David",
 			"lastname": "Lasar",
@@ -2469,7 +2469,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_51568/4444500_180.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Christian",
 			"lastname": "Lausch",
@@ -2496,7 +2496,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_51553/4386764_180.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Josef",
 			"lastname": "Lettenbichler",
@@ -2658,7 +2658,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_22449/4385411_180.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Angela",
 			"lastname": "Lueger",
@@ -2766,7 +2766,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_35501/4385596_180.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Elmar",
 			"lastname": "Mayer",
@@ -2928,7 +2928,7 @@
 			"copyright": "Parlamentsdirektion / WILKE",
 			"url": "/PAD_08179/3567270_384.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Christine",
 			"lastname": "Muttonen",
@@ -3009,7 +3009,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_35487/4386958_180.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Gabriel",
 			"lastname": "Obernosterer",
@@ -3036,7 +3036,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_83300/4582315_384.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Friedrich",
 			"lastname": "Ofenauer",
@@ -3171,7 +3171,7 @@
 			"copyright": "Parlamentsdirektion / WILKE",
 			"url": "/PAD_01210/3490351_384.jpg"
 		},
-		"important": false,
+		"important": true,
 		"name": {
 			"firstname": "Peter",
 			"lastname": "Pilz",
@@ -3225,7 +3225,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_51549/4385643_180.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Rudolf",
 			"lastname": "Plessl",
@@ -3279,7 +3279,7 @@
 			"copyright": "Parlamentsdirektion / WILKE",
 			"url": "/PAD_08235/3488352_384.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Nikolaus",
 			"lastname": "Prinz",
@@ -3468,7 +3468,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_14693/4444797_180.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Barbara",
 			"lastname": "Rosenkranz",
@@ -3522,7 +3522,7 @@
 			"copyright": "Johannes Zinner",
 			"url": "https://www.parlament.gv.at/POOL/BILDER/40772/4077202_384.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "J\u00fcrgen",
 			"lastname": "Schabh\u00fcttl",
@@ -3657,7 +3657,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_83125/4380953_180.jpg"
 		},
-		"important": false,
+		"important": true,
 		"name": {
 			"firstname": "Nikolaus",
 			"lastname": "Scherak",
@@ -3684,7 +3684,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_35504/4385389_180.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Andreas",
 			"lastname": "Schieder",
@@ -3846,7 +3846,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_51555/4386679_180.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Bernd",
 			"lastname": "Sch\u00f6negger",
@@ -3900,7 +3900,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_83134/4387489_180.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Philipp",
 			"lastname": "Schrangl",
@@ -3927,7 +3927,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_09775/4386911_180.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Hermann",
 			"lastname": "Schultes",
@@ -4062,7 +4062,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_51571/4444563_180.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Harald",
 			"lastname": "Stefan",
@@ -4116,7 +4116,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_83059/4387040_180.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Michaela",
 			"lastname": "Steinacker",
@@ -4170,7 +4170,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_40628/4582395_384.jpg"
 		},
-		"important": false,
+		"important": true,
 		"name": {
 			"firstname": "Albert",
 			"lastname": "Steinhauser",
@@ -4197,7 +4197,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_35518/4444605_180.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Heinz-Christian",
 			"lastname": "Strache",
@@ -4224,7 +4224,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_83153/4386574_180.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Georg",
 			"lastname": "Strasser",
@@ -4278,7 +4278,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_15531/4387340_180.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Gabriele",
 			"lastname": "Tamandl",
@@ -4332,7 +4332,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_65319/4386342_180.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Karlheinz",
 			"lastname": "T\u00f6chterle",
@@ -4359,7 +4359,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_83114/4385239_180.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Harald",
 			"lastname": "Troch",
@@ -4440,7 +4440,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_83143/4385928_180.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Georg",
 			"lastname": "Vetter",
@@ -4467,7 +4467,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_83116/4385044_180.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Markus",
 			"lastname": "Vogl",
@@ -4548,7 +4548,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_47087/4384930_180.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Hannes",
 			"lastname": "Weninger",
@@ -4683,7 +4683,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_60878/4386877_180.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Angelika",
 			"lastname": "Winzig",
@@ -4764,7 +4764,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_02768/4385727_180.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Gisela",
 			"lastname": "Wurm",
@@ -4818,7 +4818,7 @@
 			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
 			"url": "/PAD_83117/4445051_180.jpg"
 		},
-		"important": true,
+		"important": false,
 		"name": {
 			"firstname": "Nurten",
 			"lastname": "Yilmaz",
