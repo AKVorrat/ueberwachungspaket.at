@@ -80,32 +80,6 @@
 	},
 	{
 		"contact": {
-			"facebook": "",
-			"mail": "",
-			"phone": "+43171100805193",
-			"twitter": "MitterlehnerR"
-		},
-		"id": "08696",
-		"image": {
-			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "/PAD_08696/4386658_180.jpg"
-		},
-		"important": true,
-		"name": {
-			"firstname": "Reinhold",
-			"lastname": "Mitterlehner",
-			"prefix": "Dr.",
-			"prettyname": "reinhold-mitterlehner",
-			"suffix": ""
-		},
-		"party": "oevp",
-		"salutation": "Sehr geehrter Vizekanzler",
-		"sex": "male",
-		"state": "",
-		"team": "spy"
-	},
-	{
-		"contact": {
 			"facebook": "sebastiankurz.at",
 			"mail": "sebastian.kurz@bmeia.gv.at",
 			"phone": "+435011503469",
