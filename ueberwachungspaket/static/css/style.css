@@ -356,7 +356,10 @@ strong > a {
 	color: #c80000;
 }
 
-
+#call-video {
+	text-align: center;
+	margin: 1.5em;
+}
 
 
 
