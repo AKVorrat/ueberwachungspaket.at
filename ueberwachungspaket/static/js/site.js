@@ -186,3 +186,10 @@ function convertDateToString(date)
 	return StringDateResult;
 }
 
+/* Load call video */
+$(document).ready(function() {
+	$("#call-video").html('<a href="#" onclick="loadvideo(); return false;"><img src="static/img/video.jpg" width="560" height="315" alt="Anrufvideo"></a>') 
+});
+var loadvideo = function() {
+	$("#call-video").html('<iframe width="560" height="315" src="https://www.youtube.com/embed/-iXMesM0txo?autoplay=1" frameborder="0" allowfullscreen></iframe>')
+}
