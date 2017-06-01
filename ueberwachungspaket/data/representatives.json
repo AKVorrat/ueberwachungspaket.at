@@ -593,6 +593,33 @@
 		"state": "st",
 		"team": "spy"
 	},
+    {
+		"contact": {
+			"facebook": "",
+			"mail": "karin.doppelbauer@parlament.gv.at",
+			"phone": "",
+			"twitter": ""
+		},
+		"district": "9",
+		"id": "91141",
+		"image": {
+			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
+			"url": "/PAD_91141/6908260_180.jpg"
+		},
+		"important": false,
+		"name": {
+			"firstname": "Karin",
+			"lastname": "Doppelbauer",
+			"prefix": "Dipl.-Ing.",
+			"prettyname": "karin-doppelbauer",
+			"suffix": ""
+		},
+		"party": "neos",
+		"salutation": "Sehr geehrte Abgeordnete",
+		"sex": "female",
+		"state": "w",
+		"team": "liberty"
+	},
 	{
 		"contact": {
 			"facebook": "",
