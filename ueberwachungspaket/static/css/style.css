@@ -1402,15 +1402,28 @@ section{
 		display: none;
 	}
 }
-
 #supporters ul > * {
 	width: auto;
 }
 
+#supporters ul {
+	text-align: center;
+}
+
 #supporters img {
+	max-height: 200px;
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+#supporters a {
+	height: 200px;
 	width: 200px;
 	max-width: 100%;
 	margin-right: 1rem;
+	margin-bottom: 1rem;
+	background: #fff;
+	line-height: 200px;
 }
 
 /* Print */
