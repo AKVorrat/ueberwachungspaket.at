@@ -6,7 +6,7 @@
 <meta name="keywords" content="überwachung, vorratsdaten" />
 
 <meta property="og:title" content="{{ config['PROJECT_NAME'] }}" />
-<meta property="og:image" content="{{ url_for('static', filename='img/thumbnail.png') }}" />
+<meta property="og:image" content="{{ url_for('static', filename='img/thumbnail.jpg', _external=True) }}" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://überwachungspaket.at/" />
 <meta property="og:description" content="Sicherheit statt Überwachung" />
@@ -14,7 +14,7 @@
 <meta property="og:site_name" content="epicenter.works"/>
 
 <meta name="twitter:title" content="{{ config['PROJECT_NAME'] }}" />
-<meta name="twitter:image" content="{{ url_for('static', filename='img/thumbnail.png') }}" />
+<meta name="twitter:image" content="{{ url_for('static', filename='img/thumbnail.jpg', _external=True) }}" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:url" content="https://überwachungspaket.at/" />
 <meta name="twitter:description" content="Sicherheit statt Überwachung!" />
@@ -23,4 +23,5 @@
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/normalize.css') }}" />
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/font-awesome.min.css') }}" />
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" />
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/jquery-ui.css') }}" />
 <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='img/favicon.ico') }}" />

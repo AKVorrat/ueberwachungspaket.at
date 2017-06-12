@@ -1,7 +1,9 @@
-# Twilio settings using Twilio API keys.
+# Debug mode
+DEBUG = True
+
+# Twilio settings.
 TWILIO_NUMBERS = ['']
 TWILIO_ACCOUNT = ''
-TWILIO_SID = ''
 TWILIO_SECRET = ''
 TWILIO_APP = ''
 
@@ -17,3 +19,12 @@ SECRET_KEY = b''
 
 # Number dialed if a caller wants to give feedback.
 FEEDBACK_NUMBER = ''
+
+# Mail address used in from field
+MAIL_FROM = ''
+
+# Mail address used for debugging
+MAIL_DEBUG = ''
+
+# URL under which the /act routes are accessible, without trailing slash
+CALLBACK_BASE_URL = ''

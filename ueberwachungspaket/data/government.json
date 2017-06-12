@@ -1,9 +1,10 @@
+
 [
 	{
 		"contact": {
 			"facebook": "bundeskanzler.christian.kern",
 			"mail": "christian.kern@bka.gv.at",
-			"phone": "0800222666",
+			"phone": "+43800222666",
 			"twitter": "KernChri"
 		},
 		"id": "02941",
@@ -11,6 +12,7 @@
 			"copyright": "BKA / Andy Wenzel",
 			"url": "/PAD_02941/6517530_384.jpg"
 		},
+		"important": true,
 		"name": {
 			"firstname": "Christian",
 			"lastname": "Kern",
@@ -19,15 +21,16 @@
 			"suffix": ""
 		},
 		"party": "spoe",
+		"salutation": "Sehr geehrter Kanzler",
 		"sex": "male",
 		"state": "",
-		"team": "unknown"
+		"team": "spy"
 	},
 	{
 		"contact": {
 			"facebook": "m.duzdar",
-			"mail": "munar.duzdar@bka.gv.at",
-			"phone": "0153115204065",
+			"mail": "muna.duzdar@gmail.com",
+			"phone": "+43153115204065",
 			"twitter": ""
 		},
 		"id": "60446",
@@ -35,6 +38,7 @@
 			"copyright": "Parlamentsdirektion / WILKE",
 			"url": "/PAD_60446/3488020_384.jpg"
 		},
+		"important": false,
 		"name": {
 			"firstname": "Muna",
 			"lastname": "Duzdar",
@@ -43,6 +47,7 @@
 			"suffix": ""
 		},
 		"party": "spoe",
+		"salutation": "Sehr geehrte Staatssekräterin",
 		"sex": "female",
 		"state": "",
 		"team": "unknown"
@@ -51,7 +56,7 @@
 		"contact": {
 			"facebook": "thomas.drozda",
 			"mail": "Thomas.Drozda@bka.gv.at",
-			"phone": "0153115202104",
+			"phone": "+43153115202104",
 			"twitter": "thomasdrozda"
 		},
 		"id": "88629",
@@ -59,6 +64,7 @@
 			"copyright": "Parlamentsdirektion / Johannes Zinner",
 			"url": "/PAD_88629/6517608_384.jpg"
 		},
+		"important": true,
 		"name": {
 			"firstname": "Thomas",
 			"lastname": "Drozda",
@@ -67,30 +73,7 @@
 			"suffix": ""
 		},
 		"party": "spoe",
-		"sex": "male",
-		"state": "",
-		"team": "unknown"
-	},
-	{
-		"contact": {
-			"facebook": "",
-			"mail": "",
-			"phone": "0171100805193",
-			"twitter": "MitterlehnerR"
-		},
-		"id": "08696",
-		"image": {
-			"copyright": "Parlamentsdirektion / PHOTO SIMONIS",
-			"url": "/PAD_08696/4386658_180.jpg"
-		},
-		"name": {
-			"firstname": "Reinhold",
-			"lastname": "Mitterlehner",
-			"prefix": "Dr.",
-			"prettyname": "reinhold-mitterlehner",
-			"suffix": ""
-		},
-		"party": "oevp",
+		"salutation": "Sehr geehrter Minister",
 		"sex": "male",
 		"state": "",
 		"team": "unknown"
@@ -99,7 +82,7 @@
 		"contact": {
 			"facebook": "sebastiankurz.at",
 			"mail": "sebastian.kurz@bmeia.gv.at",
-			"phone": "05011503469",
+			"phone": "+435011503469",
 			"twitter": "sebastiankurz"
 		},
 		"id": "65321",
@@ -107,6 +90,7 @@
 			"copyright": "Felicitas Matern",
 			"url": "/PAD_65321/4652441_384.jpg"
 		},
+		"important": false,
 		"name": {
 			"firstname": "Sebastian",
 			"lastname": "Kurz",
@@ -115,9 +99,10 @@
 			"suffix": ""
 		},
 		"party": "oevp",
+		"salutation": "Sehr geehrter Minister",
 		"sex": "male",
 		"state": "",
-		"team": "unknown"
+		"team": "spy"
 	},
 	{
 		"contact": {
@@ -131,14 +116,16 @@
 			"copyright": "Grebe Elisabeth",
 			"url": "/PAD_52687/2402825_180.jpg"
 		},
+		"important": false,
 		"name": {
 			"firstname": "Alois",
-			"lastname": "Stöger",
+			"lastname": "St\u00f6ger",
 			"prefix": "",
 			"prettyname": "alois-stoeger",
-			"suffix": "diplômé"
+			"suffix": "dipl\u00f4m\u00e9"
 		},
 		"party": "spoe",
+		"salutation": "Sehr geehrter Minister",
 		"sex": "male",
 		"state": "",
 		"team": "unknown"
@@ -147,7 +134,7 @@
 		"contact": {
 			"facebook": "S.Hammerschmid",
 			"mail": "sonja.hammerschmid@bmb.gv.at",
-			"phone": "01531205000",
+			"phone": "+431531205000",
 			"twitter": ""
 		},
 		"id": "88631",
@@ -155,6 +142,7 @@
 			"copyright": "Daniela Beranek / Vetmeduni Vienna",
 			"url": "/PAD_88631/6353660_384.jpg"
 		},
+		"important": false,
 		"name": {
 			"firstname": "Sonja",
 			"lastname": "Hammerschmid",
@@ -163,6 +151,7 @@
 			"suffix": ""
 		},
 		"party": "spoe",
+		"salutation": "Sehr geehrte Ministerin",
 		"sex": "female",
 		"state": "",
 		"team": "unknown"
@@ -171,7 +160,7 @@
 		"contact": {
 			"facebook": "karmasin.sophie",
 			"mail": "sophie.karmasin@bmfj.gv.at",
-			"phone": "01711000",
+			"phone": "+431711000",
 			"twitter": ""
 		},
 		"id": "83297",
@@ -179,6 +168,7 @@
 			"copyright": "Christian Jungwirth",
 			"url": "/PAD_83297/4725791_384.jpg"
 		},
+		"important": false,
 		"name": {
 			"firstname": "Sophie",
 			"lastname": "Karmasin",
@@ -187,6 +177,7 @@
 			"suffix": ""
 		},
 		"party": "oevp",
+		"salutation": "Sehr geehrte Ministerin",
 		"sex": "female",
 		"state": "",
 		"team": "unknown"
@@ -195,7 +186,7 @@
 		"contact": {
 			"facebook": "",
 			"mail": "hans-joerg.schelling@bmf.gv.at",
-			"phone": "+43 1 51433-500005",
+			"phone": "+43151433500005",
 			"twitter": "HJSchelling"
 		},
 		"id": "36907",
@@ -203,6 +194,7 @@
 			"copyright": "BMF / Loebell",
 			"url": "/PAD_36907/5913436_384.jpg"
 		},
+		"important": false,
 		"name": {
 			"firstname": "Johann Georg",
 			"lastname": "Schelling",
@@ -211,6 +203,7 @@
 			"suffix": ""
 		},
 		"party": "oevp",
+		"salutation": "Sehr geehrter Minister",
 		"sex": "male",
 		"state": "",
 		"team": "unknown"
@@ -219,7 +212,11 @@
 		"contact": {
 			"facebook": "InnenministerAT",
 			"mail": "ministerbuero@bmi.gv.at",
+<<<<<<< HEAD
 			"phone": "01531262025",
+=======
+			"phone": "+431531262025",
+>>>>>>> 85009f5863cbbbb4e4271c3c11d045d16c4d8e53
 			"twitter": ""
 		},
 		"id": "88386",
@@ -227,6 +224,7 @@
 			"copyright": "Felicitas Matern",
 			"url": "/PAD_88386/6302763_384.jpg"
 		},
+		"important": false,
 		"name": {
 			"firstname": "Wolfgang",
 			"lastname": "Sobotka",
@@ -235,6 +233,7 @@
 			"suffix": ""
 		},
 		"party": "oevp",
+		"salutation": "Sehr geehrter Minister",
 		"sex": "male",
 		"state": "",
 		"team": "spy"
@@ -243,7 +242,7 @@
 		"contact": {
 			"facebook": "",
 			"mail": "minister.justiz@bmj.gv.at",
-			"phone": "+43 1 52152 2313",
+			"phone": "+431521522313",
 			"twitter": ""
 		},
 		"id": "83295",
@@ -251,6 +250,7 @@
 			"copyright": "Christian Jungwirth",
 			"url": "/PAD_83295/5370025_384.jpg"
 		},
+		"important": true,
 		"name": {
 			"firstname": "Wolfgang",
 			"lastname": "Brandstetter",
@@ -259,15 +259,16 @@
 			"suffix": ""
 		},
 		"party": "oevp",
+		"salutation": "Sehr geehrter Minister",
 		"sex": "male",
 		"state": "",
-		"team": "unknown"
+		"team": "spy"
 	},
 	{
 		"contact": {
 			"facebook": "",
 			"mail": "hans-peter.doskozil@bmlvs.gv.at",
-			"phone": "050201 10 20071",
+			"phone": "+43502011020071",
 			"twitter": "HPDoskozilAt"
 		},
 		"id": "87429",
@@ -275,6 +276,7 @@
 			"copyright": "Ricardo Herrgott",
 			"url": "/PAD_87429/6323967_384.jpg"
 		},
+		"important": false,
 		"name": {
 			"firstname": "Hans Peter",
 			"lastname": "Doskozil",
@@ -283,6 +285,7 @@
 			"suffix": ""
 		},
 		"party": "spoe",
+		"salutation": "Sehr geehrter Minister",
 		"sex": "male",
 		"state": "",
 		"team": "unknown"
@@ -291,7 +294,7 @@
 		"contact": {
 			"facebook": "BMRupprechter",
 			"mail": "buero.rupprechter@bmlfuw.gv.at",
-			"phone": "0171100606918",
+			"phone": "+43171100606918",
 			"twitter": "BMRupprechter"
 		},
 		"id": "83296",
@@ -299,14 +302,16 @@
 			"copyright": "Alexander Haiden",
 			"url": "/PAD_83296/6542366_384.jpg"
 		},
+		"important": false,
 		"name": {
-			"firstname": "Andrä",
+			"firstname": "Andr\u00e4",
 			"lastname": "Rupprechter",
 			"prefix": "Dipl.Ing.",
 			"prettyname": "andrae-rupprechter",
 			"suffix": ""
 		},
 		"party": "oevp",
+		"salutation": "Sehr geehrter Minister",
 		"sex": "male",
 		"state": "",
 		"team": "unknown"
@@ -315,7 +320,7 @@
 		"contact": {
 			"facebook": "joerg.leichtfried",
 			"mail": "joerg.leichtfried@bmvit.gv.at",
-			"phone": "0171162658818",
+			"phone": "+43171162658818",
 			"twitter": "jleichtfried"
 		},
 		"id": "22694",
@@ -323,14 +328,16 @@
 			"copyright": "www.beauhartphotography.com",
 			"url": "/PAD_22694/4832364_180.jpg"
 		},
+		"important": false,
 		"name": {
-			"firstname": "Jörg",
+			"firstname": "J\u00f6rg",
 			"lastname": "Leichtfried",
 			"prefix": "Mag.",
 			"prettyname": "joerg-leichtfried",
 			"suffix": ""
 		},
 		"party": "spoe",
+		"salutation": "Sehr geehrter Minister",
 		"sex": "male",
 		"state": "",
 		"team": "unknown"
@@ -339,7 +346,7 @@
 		"contact": {
 			"facebook": "harald.mahrer",
 			"mail": "harald.mahrer@bmwfw.gv.at",
-			"phone": "0171100802691",
+			"phone": "+43171100802691",
 			"twitter": ""
 		},
 		"id": "84308",
@@ -347,6 +354,7 @@
 			"copyright": "David Sailer",
 			"url": "/PAD_84308/5380448_384.jpg"
 		},
+		"important": false,
 		"name": {
 			"firstname": "Harald",
 			"lastname": "Mahrer",
@@ -355,6 +363,7 @@
 			"suffix": ""
 		},
 		"party": "oevp",
+		"salutation": "Sehr geehrter Staatssekretär",
 		"sex": "male",
 		"state": "",
 		"team": "unknown"
