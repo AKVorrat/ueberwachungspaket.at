@@ -242,7 +242,7 @@ def handle_representative(resp):
         if app.debug:
             resp.dial(FEEDBACK_NUMBER, timeLimit=60, callerId=choice(TWILIO_NUMBERS))
         else:
-            resp.dial(rep.contact.phone, timeLimit=900, callerId=choice(TWILIO_NUMBERS))
+            resp.dial(rep.contact.phone, timeLimit=3600, callerId=choice(TWILIO_NUMBERS))
 
         resp.play(url_for("static", filename="audio/adieu.wav"))
 
