@@ -46,7 +46,7 @@
 
 
 
-/* TRIVIALS */ 
+/* TRIVIALS */
 
 * {
 	margin: 0;
@@ -571,7 +571,7 @@ input[type="radio"] {
 	height: 13px;
 	margin: 0 8px 0 0;
 	padding: 0;
-	vertical-align: bottom;		
+	vertical-align: bottom;
 }
 
 input.stick {
@@ -1019,7 +1019,7 @@ nav > ul > li.active {
 	float: left;
 	width: 80%;
 	text-align: center;
-
+  padding: 1em;
 }
 .c-block{
 	background: #fff;
