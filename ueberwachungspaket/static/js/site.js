@@ -85,57 +85,6 @@ function updateText(event) {
 	});
 }
 
-// Progressbar
-
-$(document).ready(function() {
-	var startDate = '01/30/2017';
-	var endDate = '06/30/2017';
-
-	if (startDate != "" && endDate != "") {
-		var minDate = new Date(convertStringToDate(startDate));
-		var today = new Date();
-		var maxDate = new Date(convertStringToDate(endDate));
-
-		var nbTotalDays = Math.floor((maxDate.getTime() - minDate.getTime()) / 86400000);
-		var nbPastDays = Math.floor((today.getTime() - minDate.getTime()) / 86400000);
-
-		var percent = nbPastDays / nbTotalDays * 100;
-
-		// Extreme cases
-		if (percent < 0) {
-			percent = 0;
-		} else if (percent > 100) {
-			percent = 100;
-		}
-
-		$(".progressbar").reportprogress(percent);
-	}
-});
-
-(function($) {
-	//Main Method
-	$.fn.reportprogress = function(val,maxVal) {
-		var max=100;
-		if(maxVal)
-			max=maxVal;
-		return this.each(
-			function(){
-				var div=$(this);
-				var innerdiv=div.find(".progress");
-
-				if(innerdiv.length!=1){
-					innerdiv=$("<div class='progress'></div>");
-					div.append("<div class='text'>&nbsp;</div>");
-					div.append(innerdiv);
-				}
-				var width=Math.round(val/max*100);
-				innerdiv.css("width",width+"%");
-				div.find(".text").html(width+" %");
-			}
-		);
-	};
-})(jQuery);
-
 /*
  * Convert a string into a date.
  */
