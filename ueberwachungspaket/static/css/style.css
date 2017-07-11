@@ -1004,6 +1004,10 @@ input.cb-block-input {
 	width: 100%;
 }
 
+.helpbox {
+	color: #444;
+	font-size: .8em;
+}
 
 
 /* REPRESENTATIVES */
