@@ -142,3 +142,43 @@ $(document).ready(function() {
 var loadvideo = function() {
 	$("#call-video").html('<iframe width="560" height="315" src="https://www.youtube.com/embed/-iXMesM0txo?autoplay=1" frameborder="0" allowfullscreen></iframe>')
 }
+
+
+/*
+ * Consultation
+ */
+
+$(document).ready(function() {
+
+	/* check all issues */
+	$('#issues-check-all').click( function(){
+		$('.issue-cb').prop('checked', true);
+	});
+
+
+
+	/* resize textarea to its content*/
+	$('.floating-textarea').each(function () {
+		this.setAttribute('style', 'height:' + (this.scrollHeight) + 'px;overflow-y:hidden;');
+	}).on('input', function () {
+		this.style.height = 'auto';
+		this.style.height = (this.scrollHeight) + 'px';
+	});
+
+	/* update signature */
+	var typeSignature = function() {
+		var signature = "";
+		$('.typeaware').each(function() {
+			signature += " " + $(this).val();
+		});
+		$('.consultation-signature').each( function() {
+			$(this).html(signature);
+		});
+	}
+	typeSignature();
+	$('.typeaware').each(function() {
+		$(this).on('input', typeSignature);
+	});
+
+});
+

@@ -153,7 +153,9 @@ hr {
 	border: none;
 }
 
-
+.clear {
+	clear: both;
+}
 
 
 
@@ -254,9 +256,6 @@ nav > .row > * {
 	padding: 0;
 }
 
-main {
-
-}
 
 section {
 	position: relative;
@@ -270,8 +269,8 @@ section:first-of-type {
 @media screen and (min-width: 768px) {
 	.container,.block,
 	nav > ul {
-		margin-left: 20px;
-		margin-right: 20px;
+		margin-left: 5px;
+		margin-right: 5px;
 	}
 	section {
 		padding-left: 1.5rem;
@@ -579,6 +578,11 @@ input.stick {
 	margin: .5rem .5rem .5rem auto;
 }
 
+.form-required {
+	color: #800;
+	font-weight: bold;
+}
+
 label {
 	display: block;
 	font-size: 80%;
@@ -626,7 +630,7 @@ label.space {
 
 .btn:hover {
 	color: #fff;
-	background:#449d44;
+	background:#f00
 }
 
 
@@ -810,6 +814,153 @@ div.center > p,
 
 
 
+/* CONSULTATION */
+
+.trump {
+	text-transform: uppercase;
+}
+
+#consultation {
+	background: #fff;
+}
+
+#consultation .progress-bar {
+	border: 2px solid #888;
+	width: 100%;
+	position: relative;
+}
+#consultation .progress-bar-done {
+	background-color: #c80000;
+	display: block;
+	height: 2em;
+}
+
+#consultation .progress-bar-text {
+	position: absolute;
+	top: 50%;
+	margin-top: -.5em;
+	line-height: 1em;
+	width: 100%;
+	text-align: center;
+}
+
+.consultation-issues-pre {
+	margin: 1em 0 .4em !important;
+}
+
+.consultation-issues > li {
+	list-style: none;
+    width: 48%;
+    margin: 1%;
+    background: #eee;
+    float: left;
+}
+.consultation-issues > li > label > input {
+	float: left
+}
+
+.consultation-issues > li > label {
+	display: block;
+	padding: 1em;
+}
+
+#issues-check-all {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: .9em;
+	cursor: pointer;
+	margin: 1%;
+	color: #444;
+	clear: both;
+}
+#issues-check-all:hover {
+	color: #000;
+}
+
+
+/* CONSULTATION Step 2 */
+
+
+.cb-block {
+	margin: .5em 0;
+}
+
+input.cb-block-input {
+	top: 4px;
+	text-transform: none;
+	float: left;
+}
+
+.cb-block-label {
+	text-transform: none;
+	overflow: hidden;
+}
+
+
+.consultation-col-left,
+.consultation-col-right {
+	float: left;
+}
+
+.consultation-col-left {
+	width: 65%;
+	margin-right: 5%; 
+}
+
+.consultation-col-right {
+	width: 30%;
+}
+
+.consultation-text-intro {
+	font-size: .9em;
+	margin: .8em 0 .4em;
+}
+
+.consultation-external {
+	float: right;
+	text-align: right;
+	max-width: 15em;
+}
+
+.external-link:after {
+  content: url(../img/icon_external_link.png);
+  margin: 0 0 0 5px;
+}
+
+.consultation-text {
+	width: 100%;
+	overflow-y: scroll;
+	max-height: 100vh;
+	padding: 0.4rem;
+	font-family: "Courier New", Courier, serif;
+	font-size: 18px;
+	background-color: #fff;
+	border: 1px solid #00466e;
+	border-radius: 2px;
+	min-height: 23vh;
+	resize: vertical;
+}
+
+.consultation-text-area {
+	font-family: "Courier New", Courier, serif;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	-moz-appearance: none;
+	width: 100%;
+	resize: none;
+}
+.not-changeable {
+	cursor: not-allowed;
+	color: #888;
+}
+
+.consultation-btn-next {
+	margin: 1em 0;
+	width: 100%;
+}
+
+
 
 /* REPRESENTATIVES */
 
@@ -976,7 +1127,7 @@ a:hover{
 .bg-white{
 	background: #fff;
 }
-
+/*
 nav > ul > li:nth-of-type(2) > a {
 	background: #c80000;
 	color: #fff;
@@ -985,6 +1136,8 @@ nav > ul > li:nth-of-type(2) > a:hover {
 	background: #00466e;
 	color: #fff;
 }
+*/
+
 nav > ul > li.active {
 	color: #fff;
 	background-color: #00466e;
@@ -1209,6 +1362,7 @@ nav > ul > li.active {
 .chat h2{
 	margin: 25px 0 0;
 	margin-bottom: 0;
+	text-align: center;
 }
 .uetxt{
 	padding: 20px 0px;

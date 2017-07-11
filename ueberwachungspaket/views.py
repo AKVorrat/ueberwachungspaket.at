@@ -7,16 +7,27 @@ from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm.exc import NoResultFound
 from config import *
 from config.main import *
-from database.models import Representatives, Reminder, Mail, Sender
+from database.models import Representatives, Reminder, Mail, Sender, load_consultation_issues
 from . import app, db_session
 from .decorators import twilio_request
 
 reps = Representatives()
 
+c_issues = load_consultation_issues()
+
 @app.route("/")
 def root():
     important_reps = [reps.get_representative_by_id(id) for id in IMPORTANT_REPS]
-    return render_template("index.html", reps=important_reps)
+    return render_template(
+        "index.html", 
+        reps=important_reps, 
+#        consultation_progress_max=5000, 
+        consultation_progress_count=2000, 
+        consultation_progress_count_percent=20,
+        consultation_issues=c_issues
+    )
+    
+
 
 @app.route("/politiker/")
 def representatives():
@@ -321,6 +332,26 @@ def info_tape(resp):
     resp.redirect(url_for("gather_menu"))
 
 @app.route("/act/reminder_info_tape/", methods=["POST"])
+
+
+@app.route("/consultation/", methods=["post"])
+def consultation():
+    return render_template(
+        "consultation.html", 
+        consultation_issues=c_issues,
+        consultation_text_bmi="Hallo!\nIch beschwere mich hiermit.", 
+        consultation_text_bmj="Hallo!\nIch beschwere mich hiermit.",
+    )
+
+@app.route("/consultation/verify-email/", methods=["post"])
+def consultation_verifyemail():
+    return render_template(
+        "consultation_verifyemail.html"
+    )
+
+ 
+
+
 @twilio_request
 def reminder_info_tape(resp):
     with resp.gather(numDigits=1, action=url_for("gather_reminder_menu")) as g:

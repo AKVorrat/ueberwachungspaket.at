@@ -260,3 +260,9 @@ def load_representatives(filename, parties, teams, is_government=False):
     return representatives
 
 reps = Representatives()
+
+
+def load_consultation_issues():
+    with open("ueberwachungspaket/data/consultation_issues.json", "r") as f:
+        consultation_issues = load(f)
+    return consultation_issues
