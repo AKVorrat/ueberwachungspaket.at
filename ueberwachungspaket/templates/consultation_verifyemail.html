@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+	<title>E-Mail Verifikation | {{ config['PROJECT_NAME'] }}</title>
+{% endblock title%}
+
+{% block content %}
+	<section>
+		<h3>Ein letzter Schritt ...</h3>
+		<h2>E-Mail Verifikation</h2>
+		{% with messages = get_flashed_messages() -%}
+			{% if messages -%}
+				{% for message in messages -%}
+					<p>{{ message }}</p>
+				{% endfor -%}
+			{% endif -%}
+		{% endwith -%}
+	</section>
+{% endblock %}
