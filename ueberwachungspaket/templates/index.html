@@ -6,10 +6,10 @@
 {% endblock title%}
 
 {% block header %}
-	<header class="center">
+	<div class="banner">
 		<img src="static/img/header_uepa.jpg" class="visible-desktop">
 		<img src="static/img/header_uepa_mobile.jpg" class="visible-mobile">
-	</header>
+	</div>
 {% endblock %}
 
 {% block precontent %}
@@ -17,7 +17,7 @@
 <section id="consultation">
 
 	<div id="block" class="bg-white">
-		<div class="block">
+		<div class="block container">
 			<div class="blk-left">
 				<img src="static/img/Hand_FINAL.png">
 			</div>
@@ -45,7 +45,7 @@
 
 		<form action="/consultation/" method="post">
 			<h3 class="center consultation-issues-pre">Ich bin gegen ...</h3>
-			<ul class="consultation-issues">
+			<ul id="consultation-issues" class="consultation-issues">
 				{% for issue in consultation_issues -%}
 				<li>
 					<label for="issue-{{ issue.id }}">
@@ -56,15 +56,15 @@
 				{% endfor -%}
 			</ul>
 			<div id="issues-check-all">alles auswählen</div>
-			<input type="submit" value="Weiter" class="btn btn-default" />
+			<input type="submit" value="Weiter" class="btn btn-default" id="start-consultation" />
 		</form>
 	</div>
 </section>
 
-
 {% endblock %}
 
 {% block content %}
+<div class="frontpage-content">
 	<section id="topics">
 		<div class="container">
 			<h2 class="center">Das steckt im Überwachungspaket</h2>
@@ -359,4 +359,5 @@
 		</ul>
 		</div>
 	</section>
+</div>
 {% endblock %}

@@ -150,12 +150,39 @@ var loadvideo = function() {
 
 $(document).ready(function() {
 
-	/* check all issues */
-	$('#issues-check-all').click( function(){
-		$('.issue-cb').prop('checked', true);
+	/* at least one issue must be checked */
+	var switchConsBt = function() {
+		if ($('#consultation-issues input:checked').length === 0) {
+			$('#start-consultation').prop('disabled', true);
+		} else {
+			$('#start-consultation').prop('disabled', false);
+		}
+	}
+	switchConsBt();
+
+	var highlightActiveIssues = function() {
+		$("#consultation-issues :checkbox").is( function(){
+			if ($(this).is(':checked')) {
+				$(this).parent().addClass("issue-checked");
+			} else {
+				$(this).parent().removeClass("issue-checked");
+			}
+		});
+	}
+	highlightActiveIssues();
+
+	$('#consultation-issues input').change( function () {
+		switchConsBt();
+		highlightActiveIssues();
 	});
 
 
+	/* check all issues */
+	$('#issues-check-all').click( function(){
+		$('.issue-cb').prop('checked', true);
+		switchConsBt();
+		highlightActiveIssues();
+	});
 
 	/* resize textarea to its content*/
 	$('.floating-textarea').each(function () {
@@ -179,6 +206,7 @@ $(document).ready(function() {
 	$('.typeaware').each(function() {
 		$(this).on('input', typeSignature);
 	});
+
 
 });
 
