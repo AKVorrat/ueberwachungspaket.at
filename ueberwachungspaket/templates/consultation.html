@@ -5,14 +5,15 @@
 {% endblock title%}
 
 {% block content %}
-	<section class="container">
+	<section>
+	  <div class="container">
 		<h2>Konsultation</h2>
 		<form action="/consultation/verify-email" method="post">
 			<div class="consultation-col-left">
 				{% if consultation_text_bmi %}
 				<div class="consultation-text-intro">
 					<a class="consultation-external external-link" href="https://parlament.gv.at/PAKT/VHG/XXV/ME/ME_00326/index.shtml" title="Konsultation auf der Parlamentswebseite" target="_blank">326/ME</a>
-					Ihre Stellungnahme an das Bundesministerium für Inneres zu folgenden Themen:<br>
+					Ihre <b>Stellungnahme an das Bundesministerium für Inneres</b> zu folgenden Themen:<br>
 					{% for issue in consultation_issues if issue.authority == "BMI" -%}
 						<span class="consultation-issue">{{ issue.short }}</span> {{- ", " if not loop.last -}}
 					{% endfor -%}
@@ -32,7 +33,7 @@
 				{% if consultation_text_bmj %}
 				<div class="consultation-text-intro">
 					<a class="consultation-external external-link" href="https://parlament.gv.at/PAKT/VHG/XXV/ME/ME_00325/index.shtml" title="Konsultation auf der Parlamentswebseite" target="_blank">325/ME</a>
-					Ihre Stellungnahme an das Bundesministerium für Justiz zu folgenden Themen:<br>
+					Ihre <b>Stellungnahme an das Bundesministerium für Justiz</b> zu folgenden Themen:<br>
 					{% for issue in consultation_issues if issue.authority == "BMJ" -%}
 						<span class="consultation-issue">{{ issue.short }}</span> {{- ", " if not loop.last -}}
 					{% endfor -%}
@@ -90,6 +91,6 @@
 			</div>
 		</form>
 		<div class="clear"></div>
-
+	  </div>
 	</section>
 {% endblock %}
