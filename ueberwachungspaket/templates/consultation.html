@@ -1,0 +1,95 @@
+{% extends "layout.html" %}
+
+{% block title %}
+	<title>Konsultation | {{ config['PROJECT_NAME'] }}</title>
+{% endblock title%}
+
+{% block content %}
+	<section class="container">
+		<h2>Konsultation</h2>
+		<form action="/consultation/verify-email" method="post">
+			<div class="consultation-col-left">
+				{% if consultation_text_bmi %}
+				<div class="consultation-text-intro">
+					<a class="consultation-external external-link" href="https://parlament.gv.at/PAKT/VHG/XXV/ME/ME_00326/index.shtml" title="Konsultation auf der Parlamentswebseite" target="_blank">326/ME</a>
+					Ihre Stellungnahme an das Bundesministerium für Inneres zu folgenden Themen:<br>
+					{% for issue in consultation_issues if issue.authority == "BMI" -%}
+						<span class="consultation-issue">{{ issue.short }}</span> {{- ", " if not loop.last -}}
+					{% endfor -%}
+				</div>
+				<div class="consultation-text">
+					<textarea class="floating-textarea consultation-text-area">
+						{{- consultation_text_bmi -}}
+					</textarea>
+					<div class="consultation-text-area">
+						<span class="not-changeable">Mit freundlichen Grüßen,<br>
+						<span class="consultation-signature"></span>
+						</span>
+					</div>
+				</div>
+				{% endif %}
+
+				{% if consultation_text_bmj %}
+				<div class="consultation-text-intro">
+					<a class="consultation-external external-link" href="https://parlament.gv.at/PAKT/VHG/XXV/ME/ME_00325/index.shtml" title="Konsultation auf der Parlamentswebseite" target="_blank">325/ME</a>
+					Ihre Stellungnahme an das Bundesministerium für Justiz zu folgenden Themen:<br>
+					{% for issue in consultation_issues if issue.authority == "BMJ" -%}
+						<span class="consultation-issue">{{ issue.short }}</span> {{- ", " if not loop.last -}}
+					{% endfor -%}
+				</div>
+				<div class="consultation-text">
+					<textarea class="floating-textarea consultation-text-area">
+						{{- consultation_text_bmj -}}
+					</textarea>
+					<div class="consultation-text-area">
+						<span class="not-changeable">Mit freundlichen Grüßen,<br>
+							<span class="consultation-signature"></span>
+						</span>
+					</div>
+				</div>
+				{% endif %}
+
+			</div>
+
+			<div class="consultation-col-right">
+				<div class="column">
+					<label for="consultation-titel">Titel</label>
+					<input type="text" class="typeaware" name="consultation-titel" id="consultation-titel">
+				</div>
+				<div class="column">
+					<label for="consultation-vorname">Vorname <span class="form-required">*</span></label>
+					<input type="text" class="typeaware" required="required" name="consultation-vorname">
+				</div>
+				<div class="column">
+					<label for="consultation-nachname">Nachname <span class="form-required">*</span></label>
+					<input type="text" class="typeaware" required="required" name="consultation-nachname">
+				</div>
+				<div class="column">
+					<label for="consultation-email">E-Mail <span class="form-required">*</span></label>
+					<input type="email" required="required" name="consultation-email">
+				</div>
+
+				<div class="cb-block">
+					<input class="cb-block-input" type="checkbox" value="" id="consultation-check-name-datenschutz">
+					<label class="cb-block-label" for="consultation-check-name-datenschutz">Ich bin mit der Veröffentlichung meines Namens einverstanden und akzeptiere die <a href="/datenschutz/" target="_blank">Datenschutzbedingungen</a>. <span class="form-required">*</span></label>
+				</div>
+				<div class="cb-block">
+					<input class="cb-block-input" type="checkbox" value="" id="consultation-check-parlament">
+					<label class="cb-block-label" for="consultation-check-parlament">Ich bin mit der Veröffentlichung der Stellungnahme auf der Webseite des österr. Parlaments einverstanden.</label>
+				</div>
+				<div class="cb-block">
+					<input class="cb-block-input" type="checkbox" value="" id="consultation-check-newsletter">
+					<label class="cb-block-label" for="consultation-check-newsletter">Ich möchte den epicenter Newsletter abonnieren.</label>
+				</div>
+
+
+				<button class="btn btn-default consultation-btn-next">Weiter zur E-Mail Bestätigung</button>
+<!--
+				<input type="submit" class="btn btn-default consultation-btn-next" value="Weiter zur E-Mail Bestätigung">
+-->
+			</div>
+		</form>
+		<div class="clear"></div>
+
+	</section>
+{% endblock %}

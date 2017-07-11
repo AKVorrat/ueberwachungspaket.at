@@ -13,26 +13,61 @@
 {% endblock %}
 
 {% block precontent %}
+
+<section id="consultation">
+
 	<div id="block" class="bg-white">
 		<div class="block">
 			<div class="blk-left">
 				<img src="static/img/Hand_FINAL.png">
 			</div>
 			<div class="blk-middle">
-				<h2>Auch du wirst bald lückenlos überwacht!</h2>
-				<a href="https://epicenter.works/content/das-war-der-aktionstag-gegen-das-ueberwachungspaket" class="btn btn-default">Das war der Aktionstag</a>
+<!--
+				<h2 class="trump">Jetzt Stellungnahme an die Regierung schicken!</h2>
+				<h2 class="trump">We want you for Stellungnahme!</h2>
+-->
+				<h2 class="trump">Jetzt an der Konsultation beteiligen!</h2>
+				<h3 style="margin: 0;font-size: 1.1em;">(it's easy!)</h3>
 			</div>
 			<div class="blk-right">
 				<img src="static/img/Hand_FINAL.png">
 			</div>
 		</div>
 	</div>
+
+	<div class="container">
+		<div class="progress-bar">
+			<div class="progress-bar-done" style="width: {{ consultation_progress_count_percent }}%"></div>
+			<div class="progress-bar-text">
+				{{ consultation_progress_count }} Personen haben bereits mitgemacht!
+			</div>
+		</div>
+
+		<form action="/consultation/" method="post">
+			<h3 class="center consultation-issues-pre">Ich bin gegen ...</h3>
+			<ul class="consultation-issues">
+				{% for issue in consultation_issues -%}
+				<li>
+					<label for="issue-{{ issue.id }}">
+						<input type="checkbox" value="{{ issue.id }}" id="issue-{{ issue.id }}" class="issue-cb">
+						<span class="issue-name">{{ issue.name }}</span>
+					</label>
+				</li>
+				{% endfor -%}
+			</ul>
+			<div id="issues-check-all">alles auswählen</div>
+			<input type="submit" value="Weiter" class="btn btn-default" />
+		</form>
+	</div>
+</section>
+
+
 {% endblock %}
 
 {% block content %}
 	<section id="topics">
 		<div class="container">
-			<h2>Das steckt im Überwachungspaket</h2>
+			<h2 class="center">Das steckt im Überwachungspaket</h2>
 			<div class="row items3">
 				<div class="column">
 					<a href="https://epicenter.works/thema/ueberwachungspaket#Videoueberwachung">
@@ -109,8 +144,10 @@
 	</section>
     <section class="center">
 		<h2>Deine Regierung will dich überwachen!</h2>
-		<a href="politiker/" class="btn btn-default">werde aktiv</a>
+		<a href="#consultation" class="btn btn-default">werde aktiv</a>
 	</section>
+
+<!--
     <section id="sprich">
 		<div class="container">
 			<h2>Sprich mit Politikern</h2>
@@ -134,6 +171,8 @@
 			<a href="politiker/"><i class="fa fa-angle-double-right" aria-hidden="true"></i></i> mehr</a>
 		</div>
 	</section>
+-->
+
 	<section id="zitate" class="chat">
 		<div class="container">
 			<h2>Zitate</h2>
@@ -190,11 +229,13 @@
 				<li><i class="fa-li fa fa-check-square"></i>ein Ablaufdatum für neue Überwachungsgesetze ("Sunset Clauses" mit wissenschaftlicher Evaluierung und Rücknahme wirkungsloser Maßnahmen)</li>
 				<li><i class="fa-li fa fa-check-square"></i>Evaluierung aller bestehenden Überwachungsgesetze auf ihre Verfassungskonformität</li>
 			</ul>
+<!--
 			<p>Sprich über Überwachung. Sag' deinen Politikern, dass das Überwachungspaket durch ein echtes Sicherheitspaket ersetzt werden muss!</p>
+-->
 		</div>
 	</section>
 	<section class="aktivgreen">
-		<a href="politiker/" class="btn btn-default">Werde Aktiv</a>
+		<a href="#consultation" class="btn btn-default">Werde aktiv</a>
 	</section>
 	<section class="chat">
 		<div class="container">

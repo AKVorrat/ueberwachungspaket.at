@@ -1,0 +1,58 @@
+[
+    {
+        "id" : "bundestrojaner",
+        "name" : "Bundestrojaner",
+        "short" : "Bundestrojaner",
+        "authority" : "BMJ",
+        "text" : "Hallo!"
+    },
+    {
+        "id" : "netzsperren",
+        "name" : "Netzsperren",
+        "short" : "Netzsperren",
+        "authority" : "BMI",
+        "text" : "Hallo!"
+    },
+    {
+        "id" : "vds-video",
+        "name" : "Vorratsdatenspeicherung für Videoüberwachung",
+        "short" : "Videoüberwachung",
+        "authority" : "BMI",
+        "text" : "Hallo!"
+    },
+    {
+        "id" : "ueberwachung-strassen",
+        "name" : "Vollüberwachung auf Österreichs Straßen",
+        "short" : "Autobahnüberwachung",
+        "authority" : "BMI",
+        "text" : "Hallo!"
+    },
+    {
+        "id" : "vds-quickfreeze",
+        "name" : "Vorratsdatenspeicherung 2.0 – Quick freeze",
+        "short" : "Quick freeze",
+        "authority" : "BMI",
+        "text" : "Hallo!"
+    },
+    {
+        "id" : "anonyme-simkarten",
+        "name" : "Abschaffung von anonymen SIM-Karten",
+        "short" : "Anonyme SIM-Karten",
+        "authority" : "BMI",
+        "text" : "Hallo!"
+    },
+    {
+        "id" : "imsi-catcher",
+        "name" : "IMSI-Catcher",
+        "short" : "IMSI-Catcher",
+        "authority" : "BMJ",
+        "text" : "Hallo!"
+    },
+    {
+        "id" : "lauschangriff-auto",
+        "name" : "Lauschangriff im Auto",
+        "short" : "Lauschangriff im Auto",
+        "authority" : "BMJ",
+        "text" : "Hallo!"
+    }
+]
