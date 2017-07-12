@@ -1,19 +1,13 @@
 {% extends "layout.html" %}
 
 {% block title %}
-	<title>E-Mail Verifikation | {{ config['PROJECT_NAME'] }}</title>
+	<title>E-Mail-Bestätigung | {{ config['PROJECT_NAME'] }}</title>
 {% endblock title%}
 
 {% block content %}
 	<section>
-		<h3>Ein letzter Schritt ...</h3>
-		<h2>E-Mail Verifikation</h2>
-		{% with messages = get_flashed_messages() -%}
-			{% if messages -%}
-				{% for message in messages -%}
-					<p>{{ message }}</p>
-				{% endfor -%}
-			{% endif -%}
-		{% endwith -%}
+		<h2>E-Mail-Bestätigung</h2>
+        <p>Vielen Dank für Ihren Einsatz für unsere Grundrechte!</p>
+        <p>Um Missbrauch vorzubeugen, haben wir Ihnen einen Bestätigungslink per E-Mail zugesandt. Klicken Sie diesen Link, um Ihre Stellungnahme an Ministerien und Parlament zu versenden.</p>
 	</section>
 {% endblock %}
