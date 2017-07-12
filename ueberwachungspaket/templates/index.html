@@ -22,9 +22,9 @@
 				<img src="static/img/Hand_FINAL.png">
 			</div>
 			<div class="blk-middle">
-
-				<h2 class="trump">Jetzt an der Konsultation beteiligen!</h2>
-				<h3 style="margin: 0;font-size: 1.1em;">(it's easy!)</h3>
+                <p>Mitten im Sommer führt die Bundesregierung die Begutachtung des Überwachungspakets durch.</p>
+				<h2 class="trump">Beteilige dich jetzt an der Konsultation!</h2>
+				<h3 style="margin: 0;font-size: 1.1em;">(Es ist ganz einfach.)</h3>
 			</div>
 			<div class="blk-right">
 				<img src="static/img/Hand_FINAL.png">
@@ -33,12 +33,12 @@
 	</div>
 
 	<div class="container">
-		<div class="progress-bar">
+<!--		<div class="progress-bar">
 			<div class="progress-bar-done" style="width: {{ consultation_progress_count_percent }}%"></div>
 			<div class="progress-bar-text">
 				{{ consultation_progress_count }} Personen haben bereits mitgemacht!
 			</div>
-		</div>
+</div>-->
 
 		<form action="/consultation/" method="post">
 			<h3 class="center consultation-issues-pre">Ich bin gegen ...</h3>
@@ -46,7 +46,7 @@
 				{% for issue in consultation_issues -%}
 				<li>
 					<label for="issue-{{ issue.id }}">
-						<input type="checkbox" value="{{ issue.id }}" id="issue-{{ issue.id }}" class="issue-cb">
+						<input type="checkbox" name="{{ issue.id }}" value="{{ issue.id }}" id="issue-{{ issue.id }}" class="issue-cb">
 						<span class="issue-name">{{ issue.name }}</span>
 					</label>
 				</li>
@@ -170,7 +170,7 @@
 	</section>
 -->
 
-	<section id="zitate" class="chat">
+<!--	<section id="zitate" class="chat">
 		<div class="container">
 			<h2>Zitate</h2>
 			<ul>
@@ -209,7 +209,7 @@
 				</li>
 			</ul>
 		</div>
-	</section>
+</section>-->
 	<section>
 		<a href="weitersagen/" class="btn btn-default">Sprich über Überwachung</a>
 	</section>

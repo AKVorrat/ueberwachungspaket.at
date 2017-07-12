@@ -7,9 +7,15 @@ from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm.exc import NoResultFound
 from config import *
 from config.main import *
-from database.models import Representatives, Reminder, Mail, Sender, load_consultation_issues
+from config.mail import *
+from database.models import Representatives, Reminder, Mail, Sender, ConsultationSender
+from database.models import load_consultation_issues, sendmail
 from . import app, db_session
 from .decorators import twilio_request
+
+import pdfkit
+from markdown import markdown
+import re
 
 reps = Representatives()
 
@@ -332,32 +338,136 @@ def info_tape(resp):
     resp.redirect(url_for("gather_menu"))
 
 @app.route("/act/reminder_info_tape/", methods=["POST"])
-
-
-@app.route("/consultation/", methods=["post"])
-def consultation():
-    return render_template(
-        "consultation.html", 
-        consultation_issues=c_issues,
-        consultation_text_bmi="Hallo!\nIch beschwere mich hiermit.", 
-        consultation_text_bmj="Hallo!\nIch beschwere mich hiermit.",
-    )
-
-@app.route("/consultation/verify-email/", methods=["post"])
-def consultation_verifyemail():
-    return render_template(
-        "consultation_verifyemail.html"
-    )
-
- 
-
-
 @twilio_request
 def reminder_info_tape(resp):
     with resp.gather(numDigits=1, action=url_for("gather_reminder_menu")) as g:
         g.play(url_for("static", filename="audio/info_tape.wav"))
 
     resp.redirect(url_for("gather_reminder_menu"))
+
+@app.route("/consultation/", methods=["post"])
+def consultation():
+    selected_issues = list(map(lambda x: [i for i in c_issues if i['id'] == x][0],
+                               filter(lambda x: x != None,
+                                      [request.form.get(issue['id']) for issue in c_issues])))
+    if selected_issues == []:
+        abort(400)
+    
+    bmi_text = ''
+    bmj_text = ''
+    for issue in selected_issues:
+        # pull issue from issues array
+        if issue['authority'] == 'BMJ':
+            bmj_text += issue['text'] + '\n\n'
+        elif issue['authority'] == 'BMI':
+            bmi_text += issue['text'] + '\n\n'
+
+    return render_template(
+        "consultation.html", 
+        consultation_issues=selected_issues,
+        consultation_text_bmi=bmi_text, 
+        consultation_text_bmj=bmj_text,
+    )
+
+@app.route("/consultation/verify-email/", methods=["post"])
+def consultation_verifyemail():
+    first_name = request.form.get('consultation-vorname')
+    last_name = request.form.get('consultation-nachname')
+    email = request.form.get('consultation-email')
+    publish_name = request.form.get('consultation-check-name-datenschutz')
+    publish_content = request.form.get('consultation-check-parlament')
+    newsletter = request.form.get('consultation-check-newsletter')
+    bmi_text = request.form.get('consultation-text-bmi')
+    bmj_text = request.form.get('consultation-text-bmj')
+
+    if not (all([first_name, last_name, email, publish_name]) and (bmi_text or bmj_text)):
+        abort(400)
+
+    try:
+        sender = db_session.query(ConsultationSender).filter_by(email_address=email).one()
+        if sender.date_validated:
+            return render_template("consultation_corrections.html",
+                    address_parliament=EMAIL_PARL, address_bmi=EMAIL_BMI, address_bmj=EMAIL_BMJ)
+        else:
+            db_session.delete(sender)
+            db_session.commit()
+    except NoResultFound:
+        pass
+
+    # sender hasn't sent submission before
+    sender = ConsultationSender(first_name, last_name, email, bmi_text, bmj_text, not publish_content, bool(newsletter))
+    db_session.add(sender)
+    db_session.commit()
+    return render_template("consultation_verifyemail.html")
+
+def make_endnotes(md):
+    r_notes = r'\[\^[0-9]+\]\(([^)]+)\)'
+    footnotes = re.findall(r_notes, md)
+    old = ''
+    counter = 1
+    while md != old:
+        old = md
+        md = re.sub(r_notes, '[' + str(counter) + ']', md, count=1)
+        counter += 1
+    endnotes = []
+    for c, f in zip(range(1, len(footnotes) + 1), footnotes):
+        endnotes.append('[' + str(c) + '] ' + f)
+    return md, '\n\n'.join(endnotes)
+
+
+
+@app.route("/consultation/complete/<hash>")
+def consultation_complete(hash):
+    try:
+        sender = db_session.query(ConsultationSender).filter_by(hash=hash).one()
+    except NoResultFound:
+        abort(400)
+
+    if sender.date_validated:
+        return render_template("consultation_corrections.html",
+                address_parliament=EMAIL_PARL, address_bmi=EMAIL_BMI, address_bmj=EMAIL_BMJ)
+    else:
+        sender.validate()
+        db_session.commit()
+
+    name = sender.first_name + ' ' + sender.last_name
+    date = datetime.now().strftime("%d.%m.%Y")
+
+    if sender.confidential_submission:
+        confidential = "%s wünscht keine Veröffentlichung des Inhalts der Stellungnahme." % name
+    else:
+        confidential = ""
+
+    config = pdfkit.configuration(wkhtmltopdf=WKHTMLTOPDF.encode('utf-8'))
+
+    if sender.bmi_text:
+        text, endnotes = make_endnotes(sender.bmi_text)
+        html = CONSULTATION_PDF_BMI_FRAME % (name, date, name, markdown(text, output_format='html4'), markdown(endnotes, output_format='html4'))
+        pdfkit.from_string(html, PDF_FOLDER + str(sender.id) + '_bmi.pdf',
+                options={'margin-top': '2cm', 'margin-bottom': '2cm', 'margin-left': '2cm', 'margin-right': '2cm'},
+                configuration=config)
+        with open(PDF_FOLDER + str(sender.id) + '_bmi.pdf', 'rb') as f:
+            sendmail(MAIL_FROM, [EMAIL_BMI, EMAIL_PARL, sender.email_address],
+                     'Stellungnahme 326/ME',
+                     CONSULTATION_INTRO % ('326/ME', name, confidential, name, sender.email_address),
+                     f.read(),
+                     'stellungnahme-326-me.pdf')
+
+    if sender.bmj_text:
+        text, endnotes = make_endnotes(sender.bmj_text)
+        html = CONSULTATION_PDF_BMJ_FRAME % (name, date, name, markdown(text, output_format='html4'), markdown(endnotes, output_format='html4'))
+        pdfkit.from_string(html, PDF_FOLDER + str(sender.id) + '_bmj.pdf',
+                options={'margin-top': '2cm', 'margin-bottom': '2cm', 'margin-left': '2cm', 'margin-right': '2cm'},
+                configuration=config)
+        with open(PDF_FOLDER + str(sender.id) + '_bmj.pdf', 'rb') as f:
+            sendmail(MAIL_FROM,
+                     [EMAIL_BMJ, EMAIL_PARL, sender.email_address],
+                     'Stellungnahme 325/ME',
+                     CONSULTATION_INTRO % ('325/ME', name, confidential, name, sender.email_address),
+                     f.read(),
+                     'stellungnahme-325-me.pdf')
+
+    return render_template("consultation_complete.html")
 
 @app.errorhandler(404)
 def page_not_found(error):
