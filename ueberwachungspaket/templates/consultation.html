@@ -10,13 +10,17 @@
 		<h2>Konsultation</h2>
 		<form action="/consultation/verify-email" method="post">
 			<div class="consultation-col-left">
+				<p>Wir haben bereits einen Text für Sie vorbereitet. Wenn Sie Ihre ganz persönliche Kritik zum Ausdruck bringen möchten, können Sie hier Änderungen vornehmen.</p> 
 				{% if consultation_text_bmi %}
 				<div class="consultation-text-intro">
 					<a class="consultation-external external-link" href="https://parlament.gv.at/PAKT/VHG/XXV/ME/ME_00326/index.shtml" title="Konsultation auf der Parlamentswebseite" target="_blank">326/ME</a>
-					Ihre <b>Stellungnahme an das Bundesministerium für Inneres</b> zu folgenden Themen:<br>
+					<b>Ihre Stellungnahme an das Bundesministerium für Inneres</b>
+					<div class="consultation-issuelist">
+					Themen:
 					{% for issue in consultation_issues if issue.authority == "BMI" -%}
 						<span class="consultation-issue">{{ issue.short }}</span> {{- ", " if not loop.last -}}
 					{% endfor -%}
+					</div>
 				</div>
 				<div class="consultation-text">
 					<textarea class="floating-textarea consultation-text-area">
@@ -33,10 +37,13 @@
 				{% if consultation_text_bmj %}
 				<div class="consultation-text-intro">
 					<a class="consultation-external external-link" href="https://parlament.gv.at/PAKT/VHG/XXV/ME/ME_00325/index.shtml" title="Konsultation auf der Parlamentswebseite" target="_blank">325/ME</a>
-					Ihre <b>Stellungnahme an das Bundesministerium für Justiz</b> zu folgenden Themen:<br>
+					<b>Ihre Stellungnahme an das Bundesministerium für Justiz</b> <br>
+					<div class="consultation-issuelist">
+					Themen:
 					{% for issue in consultation_issues if issue.authority == "BMJ" -%}
 						<span class="consultation-issue">{{ issue.short }}</span> {{- ", " if not loop.last -}}
 					{% endfor -%}
+					</div>
 				</div>
 				<div class="consultation-text">
 					<textarea class="floating-textarea consultation-text-area">
@@ -84,10 +91,10 @@
 				</div>
 
 
-				<button class="btn btn-default consultation-btn-next">Weiter zur E-Mail Bestätigung</button>
+				<button class="btn btn-default consultation-btn-next">Weiter zur Email Bestätigung</button>
 				<div class="helpbox">
-					<p>Nachdem Sie dieses Formular abgeschickt haben, erhalten Sie von uns eine E-Mail mit einem Bestätigungslink.</p>
-					<p>Wenn Sie Ihre E-Mail bestätigt haben senden wir für Sie Ihre Stellungnahme(n) an die zuständigen Ministerien.</p> 
+					<p>Wenn Sie dieses Formular abgeschickt haben, erhalten Sie eine Email mit einem Bestätigungslink.</p>
+					<p>Sobald Sie Ihre Emailadresse erfolgreich bestätigt haben senden wir für Sie Ihre Stellungnahme mit Ihrer Emailadresse im CC an die zuständigen Stellen.</p>
 				</div>
 <!--
 				<input type="submit" class="btn btn-default consultation-btn-next" value="Weiter zur E-Mail Bestätigung">

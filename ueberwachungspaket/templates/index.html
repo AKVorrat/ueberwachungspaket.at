@@ -35,7 +35,7 @@
 	<div class="container">
 		<div class="progress-bar">
 			<div class="progress-bar-done" style="width: {{ consultation_progress_count_percent }}%"></div>
-			<div class="progress-bar-text">
+			<div class="progress-bar-text center">
 				{{ consultation_progress_count }} Personen haben bereits mitgemacht!
 			</div>
 		</div>
@@ -45,7 +45,7 @@
 			<ul id="consultation-issues" class="consultation-issues">
 				{% for issue in consultation_issues -%}
 				<li>
-					<label for="issue-{{ issue.id }}">
+					<label for="issue-{{ issue.id }}" class="issue-label">
 						<input type="checkbox" value="{{ issue.id }}" id="issue-{{ issue.id }}" class="issue-cb">
 						<span class="issue-name">{{ issue.name }}</span>
 					</label>
