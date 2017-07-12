@@ -1,0 +1,15 @@
+name.lastname,name.prefix,contact.mail,name.firstname,team,name.prettyname,contact.facebook,sex,state,important,id,party,image.url,salutation,image.copyright,contact.phone,contact.twitter,name.suffix
+Kern,Mag.,christian.kern@bka.gv.at,Christian,spy,christian-kern,bundeskanzler.christian.kern,male,,True,02941,spoe,/PAD_02941/6517530_384.jpg,Sehr geehrter Kanzler,BKA / Andy Wenzel,+43800222666,KernChri,
+Duzdar,Mag.,muna.duzdar@gmail.com,Muna,unknown,muna-duzdar,m.duzdar,female,,False,60446,spoe,/PAD_60446/3488020_384.jpg,Sehr geehrte Staatssekräterin,Parlamentsdirektion / WILKE,+43153115204065,,
+Drozda,Mag.,Thomas.Drozda@bka.gv.at,Thomas,unknown,thomas-drozda,thomas.drozda,male,,True,88629,spoe,/PAD_88629/6517608_384.jpg,Sehr geehrter Minister,Parlamentsdirektion / Johannes Zinner,+43153115202104,thomasdrozda,
+Kurz,,sebastian.kurz@bmeia.gv.at,Sebastian,spy,sebastian-kurz,sebastiankurz.at,male,,False,65321,oevp,/PAD_65321/4652441_384.jpg,Sehr geehrter Minister,Felicitas Matern,+435011503469,sebastiankurz,
+Stöger,,,Alois,unknown,alois-stoeger,,male,,False,52687,spoe,/PAD_52687/2402825_180.jpg,Sehr geehrter Minister,Grebe Elisabeth,,,diplômé
+Hammerschmid,Mag. Dr.,sonja.hammerschmid@bmb.gv.at,Sonja,unknown,sonja-hammerschmid,S.Hammerschmid,female,,False,88631,spoe,/PAD_88631/6353660_384.jpg,Sehr geehrte Ministerin,Daniela Beranek / Vetmeduni Vienna,+431531205000,,
+Karmasin,MMag. Dr.,sophie.karmasin@bmfj.gv.at,Sophie,unknown,sophie-karmasin,karmasin.sophie,female,,False,83297,oevp,/PAD_83297/4725791_384.jpg,Sehr geehrte Ministerin,Christian Jungwirth,+431711000,,
+Schelling,Dr.,hans-joerg.schelling@bmf.gv.at,Johann Georg,unknown,johann-georg-schelling,,male,,False,36907,oevp,/PAD_36907/5913436_384.jpg,Sehr geehrter Minister,BMF / Loebell,+43151433500005,HJSchelling,
+Sobotka,Mag.,ministerbuero@bmi.gv.at,Wolfgang,spy,wolfgang-sobotka,InnenministerAT,male,,False,88386,oevp,/PAD_88386/6302763_384.jpg,Sehr geehrter Minister,Felicitas Matern,+431531262025,,
+Brandstetter,Dr.,minister.justiz@bmj.gv.at,Wolfgang,spy,wolfgang-brandstetter,,male,,True,83295,oevp,/PAD_83295/5370025_384.jpg,Sehr geehrter Minister,Christian Jungwirth,+431521522313,,
+Doskozil,Mag.,hans-peter.doskozil@bmlvs.gv.at,Hans Peter,unknown,hans-peter-doskozil,,male,,False,87429,spoe,/PAD_87429/6323967_384.jpg,Sehr geehrter Minister,Ricardo Herrgott,+43502011020071,HPDoskozilAt,
+Rupprechter,Dipl.Ing.,buero.rupprechter@bmlfuw.gv.at,Andrä,unknown,andrae-rupprechter,BMRupprechter,male,,False,83296,oevp,/PAD_83296/6542366_384.jpg,Sehr geehrter Minister,Alexander Haiden,+43171100606918,BMRupprechter,
+Leichtfried,Mag.,joerg.leichtfried@bmvit.gv.at,Jörg,unknown,joerg-leichtfried,joerg.leichtfried,male,,False,22694,spoe,/PAD_22694/4832364_180.jpg,Sehr geehrter Minister,www.beauhartphotography.com,+43171162658818,jleichtfried,
+Mahrer,Mag. Dr.,harald.mahrer@bmwfw.gv.at,Harald,unknown,harald-mahrer,harald.mahrer,male,,False,84308,oevp,/PAD_84308/5380448_384.jpg,Sehr geehrter Staatssekretär,David Sailer,+43171100802691,,
