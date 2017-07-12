@@ -71,3 +71,82 @@ Liebe Grüße,
 
 Ihr Team von epicenter.works
 """
+
+CONSULTATION_MAIL_VALIDATE = """
+Liebe/r {first_name} {last_name},
+
+vielen Dank für Ihren Einsatz für unsere Grundrechte! Damit Ihre Stellungnahme über www.überwachungspaket.at auch abgeschickt werden kann, müssen Sie diesem Link folgen:
+{url}
+
+Falls Sie nicht wissen, wieso sie diese Nachricht erhalten haben, bitte ignorieren Sie diese Nachricht.
+
+Liebe Grüße,
+
+Ihr Team von epicenter.works
+"""
+
+CONSULTATION_PDF_BMI_FRAME = """
+<html>
+<head>
+<meta charset="utf-8">
+<style type="text/css">
+body { font-family: sans-serif; }
+#header { font-weight: bold; margin-bottom: 2cm; }
+#date { text-align: right; margin-top: 2cm; margin-bottom: 2cm; }
+#intro { margin-bottom: 2cm; }
+#endnotes { margin-top: 2cm; }
+h1 { font-size: large }
+h2 { font-size: large }
+</style>
+</head>
+<body>
+<div id="header">
+<p>%s<p>
+<p id="date">%s</p>
+<p id="intro">%s nimmt zu dem Entwurf wie folgt Stellung:</p>
+<h1>Stellungnahme im Begutachtungsverfahren zum Ministerialentwurf des Innenministeriums, mit dem das Sicherheitspolizeigesetzes, das Bundesstraßen-Mautgesetzes 2002, die Straßenverkehrsordnung 1960 und das Telekommunikationsgesetzes 2003 geändert werden (326/ME)</h1>
+</div>
+%s
+<div id="endnotes">
+%s
+</div>
+</body>
+</html>"""
+
+CONSULTATION_PDF_BMJ_FRAME = """
+<html>
+<head>
+<meta charset="utf-8">
+<style type="text/css">
+body { font-family: sans-serif; }
+#header { font-weight: bold; margin-bottom: 2cm; }
+#date { text-align: right; margin-top: 2cm; margin-bottom: 2cm; }
+#intro { margin-bottom: 2cm; }
+#endnotes { margin-top: 2cm; }
+h1 { font-size: large }
+h2 { font-size: large }
+</style>
+</head>
+<body>
+<div id="header">
+<p>%s<p>
+<p id="date">%s</p>
+<p id="intro">%s nimmt zu dem Entwurf wie folgt Stellung:</p>
+<h1>Stellungnahme im Begutachtungsverfahren zum Ministerialentwurf des Justizministeriums, Strafprozessrechtsänderungsgesetz 2017 (325/ME)</h1>
+</div>
+%s
+<div id="endnotes">
+%s
+</div>
+</body>
+</html>"""
+ 
+
+CONSULTATION_INTRO = """Sehr geehrte Damen und Herren,
+
+wir übersenden Ihnen die angehängte Stellungnahme zum Ministerialentwurf %s im Namen von %s. %s
+
+Für Rückfragen wenden Sie sich bitte direkt an %s via <%s>.
+
+Mit freundlichen Grüßen,
+das Team von epicenter.works"""

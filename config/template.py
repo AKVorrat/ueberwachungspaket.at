@@ -28,3 +28,14 @@ MAIL_DEBUG = ''
 
 # URL under which the /act routes are accessible, without trailing slash
 CALLBACK_BASE_URL = ''
+
+# e-mail addresses for consultation
+EMAIL_BMI = ''
+EMAIL_BMJ = ''
+EMAIL_PARL = ''
+
+# folder for consultation PDFs, with trailing slash
+PDF_FOLDER = ''
+
+# path to wkhtmltopdf
+WKHTMLTOPDF = ''
