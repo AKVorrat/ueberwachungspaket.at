@@ -8,7 +8,7 @@
 	<section>
 	  <div class="container">
 		<h2>Konsultation</h2>
-		<form action="/consultation/verify-email" method="post">
+		<form action="/consultation/verify-email/" method="post">
 			<div class="consultation-col-left">
 				{% if consultation_text_bmi %}
 				<div class="consultation-text-intro">
@@ -19,14 +19,14 @@
 					{% endfor -%}
 				</div>
 				<div class="consultation-text">
-					<textarea class="floating-textarea consultation-text-area">
+					<textarea class="floating-textarea consultation-text-area" name="consultation-text-bmi">
 						{{- consultation_text_bmi -}}
 					</textarea>
-					<div class="consultation-text-area">
+<!--					<div class="consultation-text-area">
 						<span class="not-changeable">Mit freundlichen Grüßen,<br>
 						<span class="consultation-signature"></span>
 						</span>
-					</div>
+</div>-->
 				</div>
 				{% endif %}
 
@@ -39,24 +39,24 @@
 					{% endfor -%}
 				</div>
 				<div class="consultation-text">
-					<textarea class="floating-textarea consultation-text-area">
+					<textarea class="floating-textarea consultation-text-area" name="consultation-text-bmj">
 						{{- consultation_text_bmj -}}
 					</textarea>
-					<div class="consultation-text-area">
+<!--					<div class="consultation-text-area">
 						<span class="not-changeable">Mit freundlichen Grüßen,<br>
 							<span class="consultation-signature"></span>
 						</span>
-					</div>
+</div>-->
 				</div>
 				{% endif %}
 
 			</div>
 
 			<div class="consultation-col-right">
-				<div class="column">
+<!--				<div class="column">
 					<label for="consultation-titel">Titel</label>
 					<input type="text" class="typeaware" name="consultation-titel" id="consultation-titel">
-				</div>
+</div>-->
 				<div class="column">
 					<label for="consultation-vorname">Vorname <span class="form-required">*</span></label>
 					<input type="text" class="typeaware" required="required" name="consultation-vorname" id="consultation-vorname">
@@ -71,23 +71,23 @@
 				</div>
 
 				<div class="cb-block">
-					<input class="cb-block-input" type="checkbox" value="" id="consultation-check-name-datenschutz">
-					<label class="cb-block-label" for="consultation-check-name-datenschutz">Ich bin mit der Veröffentlichung meines Namens einverstanden und akzeptiere die <a href="/datenschutz/" target="_blank">Datenschutzbedingungen</a>. <span class="form-required">*</span></label>
+					<input class="cb-block-input" type="checkbox" value="consultation-check-name-datenschutz" name="consultation-check-name-datenschutz" id="consultation-check-name-datenschutz" required="required">
+					<label class="cb-block-label" for="consultation-check-name-datenschutz">Ich bin mit der Veröffentlichung meines Namens auf der Website des österr. Parlaments einverstanden und akzeptiere die <a href="/datenschutz/" target="_blank">Datenschutzbedingungen</a>. <span class="form-required">*</span></label>
 				</div>
 				<div class="cb-block">
-					<input class="cb-block-input" type="checkbox" value="" id="consultation-check-parlament">
+					<input class="cb-block-input" type="checkbox" value="consultation-check-parlament" name="consultation-check-parlament" id="consultation-check-parlament">
 					<label class="cb-block-label" for="consultation-check-parlament">Ich bin mit der Veröffentlichung der Stellungnahme auf der Webseite des österr. Parlaments einverstanden.</label>
 				</div>
 				<div class="cb-block">
-					<input class="cb-block-input" type="checkbox" value="" id="consultation-check-newsletter">
-					<label class="cb-block-label" for="consultation-check-newsletter">Ich möchte den epicenter Newsletter abonnieren.</label>
+					<input class="cb-block-input" type="checkbox" value="consultation-check-newsletter" name="consultation-check-newsletter" id="consultation-check-newsletter">
+					<label class="cb-block-label" for="consultation-check-newsletter">Ich möchte den Newsletter von epicenter.works abonnieren.</label>
 				</div>
 
 
-				<button class="btn btn-default consultation-btn-next">Weiter zur E-Mail Bestätigung</button>
+				<button class="btn btn-default consultation-btn-next">Weiter zur E-Mail-Bestätigung</button>
 				<div class="helpbox">
 					<p>Nachdem Sie dieses Formular abgeschickt haben, erhalten Sie von uns eine E-Mail mit einem Bestätigungslink.</p>
-					<p>Wenn Sie Ihre E-Mail bestätigt haben senden wir für Sie Ihre Stellungnahme(n) an die zuständigen Ministerien.</p> 
+					<p>Wenn Sie Ihre E-Mail bestätigt haben, senden wir für Sie Ihre Stellungnahme(n) an die zuständigen Ministerien.</p> 
 				</div>
 <!--
 				<input type="submit" class="btn btn-default consultation-btn-next" value="Weiter zur E-Mail Bestätigung">
