@@ -508,7 +508,9 @@ form.row {
 	}
 }
 @media screen and (min-width: 768px) {
-
+	.items3 > * {
+		width: 50%;
+	}
 	.row-space > * {
 		width: calc(50% - 0.5em);
 	}
