@@ -420,7 +420,7 @@ def send_pdf(src_text, frame_html, filename, name, make_confidential, identifier
     if make_confidential:
         confidential = "%s wünscht keine Veröffentlichung des Inhalts der Stellungnahme." % name
     else:
-        confidential = ""
+        confidential = "Mit einer Veröffentlichung auf der Parlamentswebsite ist %s einverstanden." % name
 
     text, endnotes = make_endnotes(src_text)
     html = frame_html % \
