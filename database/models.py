@@ -6,18 +6,31 @@ from random import choice
 from uuid import uuid4
 from smtplib import SMTP
 from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+from email.mime.application import MIMEApplication
 from flask import url_for
-from sqlalchemy import UniqueConstraint, Column, Boolean, Integer, String, Date, DateTime, ForeignKey
+from sqlalchemy import UniqueConstraint, Column, Boolean, Integer, String, Date, DateTime, ForeignKey, Text
 from sqlalchemy.orm import relationship
 from config import DEBUG, MAIL_FROM, MAIL_DEBUG
 from config.mail import *
 from . import Base
 
-def sendmail(addr_from, addr_to, subject, msg):
-    mail = MIMEText(msg)
+def sendmail(addr_from, addr_to, subject, msg, attachment=None, attachment_name=None):
+    if not attachment:
+        mail = MIMEText(msg)
+    else:
+        mail = MIMEMultipart()
+        mail.attach(MIMEText(msg))
+        app = MIMEApplication(attachment)
+        app['Content-Disposition'] = 'attachment; filename="%s"' % attachment_name
+        mail.attach(app)
+
     mail["Subject"] = subject
     mail["From"] = addr_from
-    mail["To"] = addr_to
+    if type(addr_to) == str:
+        mail["To"] = addr_to
+    else:
+        mail["To"] = ', '.join(addr_to)
 
     with SMTP("localhost") as s:
         s.send_message(mail)
@@ -260,3 +273,49 @@ def load_representatives(filename, parties, teams, is_government=False):
     return representatives
 
 reps = Representatives()
+
+
+def load_consultation_issues():
+    with open("ueberwachungspaket/data/consultation_issues.json", "r") as f:
+        consultation_issues = load(f)
+    return consultation_issues
+
+class ConsultationSender(Base):
+    __tablename__ = "consultation_senders"
+
+    id = Column(Integer, primary_key=True)
+    first_name = Column(String(256), nullable=False)
+    last_name = Column(String(256), nullable=False)
+    email_address = Column(String(254), unique=True, nullable=False)
+    bmi_text = Column(Text)
+    bmj_text = Column(Text)
+    confidential_submission = Column(Boolean(True), nullable=False)
+    hash = Column(String(64), unique=True, nullable=False)
+    date_validated = Column(DateTime)
+    date_requested = Column(DateTime, nullable=False)
+    newsletter = Column(Boolean(False), nullable=False)
+
+    def __init__(self, first_name, last_name, email_address, bmi_text, bmj_text, confidential_submission, newsletter=False):
+        self.first_name = first_name
+        self.last_name = last_name
+        self.email_address = email_address
+        self.bmi_text = bmi_text
+        self.bmj_text = bmj_text
+        self.confidential_submission = confidential_submission
+        self.request_validation()
+        self.newsletter = newsletter
+
+    def validate(self):
+        self.date_validated = datetime.now()
+
+    def request_validation(self):
+        self.hash = uuid4().hex
+        self.date_requested = datetime.now()
+
+        addr_from = MAIL_FROM + " <" + MAIL_FROM + ">"
+        addr_to = '"' + self.first_name + ' ' + self.last_name + '" <' + self.email_address + '>'
+        subject = "Bestätigung für überwachungspaket.at"
+        url = url_for("consultation_complete", hash=self.hash, _external=True)
+        msg = CONSULTATION_MAIL_VALIDATE.format(first_name=self.first_name, last_name=self.last_name, url=url)
+        sendmail(addr_from, addr_to, subject, msg)
+
