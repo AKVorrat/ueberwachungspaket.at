@@ -215,7 +215,7 @@ header {
 
 nav > ul {
 	justify-content: flex-end !important;
-	margin: 0 10px;
+	margin: 0;
 	font-size: 120%;
 	font-family: 'Oswald', sans-serif;
 	text-transform: uppercase;
@@ -353,11 +353,7 @@ section::before {
 	border-right: 90px solid transparent;
 }
 
-.frontpage-content section:nth-child(even):not(.dark) + section::before {
-
-}
-
-.frontpage-content section:nth-child(odd):not(.dark) + section::before {
+section:nth-child(odd):not(.dark) + section::before {
 	border-top: 40px solid #EEE;
 }
 
@@ -512,7 +508,9 @@ form.row {
 	}
 }
 @media screen and (min-width: 768px) {
-
+	.items3 > * {
+		width: 50%;
+	}
 	.row-space > * {
 		width: calc(50% - 0.5em);
 	}
@@ -653,7 +651,7 @@ label.space {
 
 .btn:hover {
 	color: #fff;
-	background:#f00
+	background:#e00;
 }
 
 
@@ -848,29 +846,46 @@ div.center > p,
 }
 
 #consultation .progress-bar {
-	border: 2px solid #888;
-	width: 100%;
 	position: relative;
+	margin: auto;
+	width: 100%;
+	max-width: 50em;
+	background: #f5f5f5;
+	border: 2px solid #888;
+	border-radius: 3px;
+	box-sizing: border-box;
+	box-shadow: 1px 2px 3px #0204 inset;
 }
 #consultation .progress-bar-done {
 	background-color: #c80000;
+	background: linear-gradient(#f82230, #c90000);
 	display: block;
-	height: 3em;
+	min-height: 3em;
+	box-shadow: 1px 2px 1px #0204 inset, 1px 0 2px #0204;
 }
 
 #consultation .progress-bar-text {
 	position: absolute;
-	top: 50%;
-	margin-top: -.5em;
-	line-height: 1em;
+	top: 0;
+	bottom: 0;
+	line-height: 1.1em;
 	width: 100%;
 	text-align: center;
 	font-weight: bold;
-	text-shadow: 0 0 .3em #fff;
+	text-shadow:
+		-1px -1px 0 #fff7,
+		1px 1px 0 #fff,
+		0 0 .3em #fff;
 }
+
 
 .consultation-issues-pre {
 	margin: 1em 0 .4em !important;
+}
+
+#consultation-issues {
+    max-width: 50em;
+	margin: auto;
 }
 
 .consultation-issues > li {
@@ -879,28 +894,61 @@ div.center > p,
     margin: .5%;
     float: left;
 }
-.consultation-issues > li > label > input {
-	float: left;
-	margin-top: .3em;
-}
 
-.consultation-issues > li > label {
+
+.issue-label {
 	display: block;
 	padding: 1em;
-    background: #eee;
+	background: #eee;
 	border-radius: 2px;
 	box-shadow: 0 0 4px #0003 inset;
+	height: 4em;
+	line-height: 1.2em;
+	text-transform: none;
+
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-flex-wrap: nowrap;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	-webkit-justify-content: flex-start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	-webkit-align-content: flex-end;
+	-ms-flex-line-pack: end;
+	align-content: flex-end;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 }
 
-.issue-checked {
-    background: #efd969 !important;
+.issue-cb {
+	-webkit-flex: 0 1 auto;
+	-ms-flex: 0 1 auto;
+	flex: 0 1 auto;
+	-webkit-align-self: auto;
+	-ms-flex-item-align: auto;
+	align-self: auto;
 }
 
 .issue-name {
-    overflow: hidden;
-    display: block;
     font-size: 1.2em;
-    text-transform: none;
+
+	-webkit-flex: 1 1 auto;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+	-webkit-align-self: auto;
+	-ms-flex-item-align: auto;
+	align-self: auto;
+}
+
+
+.issue-checked {
+    background: #fbe888 !important;
 }
 
 #issues-check-all {
@@ -911,14 +959,29 @@ div.center > p,
 	margin: 1%;
 	color: #444;
 	clear: both;
+	transition: opacity .5s ease-in-out;
 }
 #issues-check-all:hover {
 	color: #000;
 }
 
+
+#start-consultation {
+	transition: all .5s ease-in-out;
+}
+#start-consultation.all-issues-checked {
+	padding: 1.5em 0;
+	margin-top: -1em;
+}
+
 #start-consultation:disabled {
-	background-color: #666;
+	background-color: #888;
 	cursor: not-allowed;
+}
+
+.hide {
+	opacity: 0;
+	transition: opacity .5s ease-in-out;
 }
 
 
@@ -960,9 +1023,14 @@ input.cb-block-input {
 	margin: .8em 0 .4em;
 }
 
+.consultation-issuelist {
+	font-size: .9em;
+}
+
 .consultation-external {
 	float: right;
 	text-align: right;
+	font-size: .9em;
 	max-width: 15em;
 }
 
@@ -981,7 +1049,7 @@ input.cb-block-input {
 	background-color: #fff;
 	border: 1px solid #00466e;
 	border-radius: 2px;
-	min-height: 23vh;
+	min-height: 25vh;
 	resize: vertical;
 }
 
