@@ -5,12 +5,13 @@
 {% endblock title%}
 
 {% block content %}
+
 	<section>
 	  <div class="container">
 		<h2>Konsultation</h2>
 		<form action="/consultation/verify-email/" method="post">
 			<div class="consultation-col-left">
-				<p>Wir haben bereits einen Text für Sie vorbereitet. Wenn Sie Ihre ganz persönliche Kritik zum Ausdruck bringen möchten, können Sie hier Änderungen vornehmen.</p> 
+				<p>Wir haben bereits einen Text für Sie vorbereitet. Wenn Sie Ihre persönliche Kritik zum Ausdruck bringen möchten, können Sie hier Änderungen vornehmen.</p> 
 				{% if consultation_text_bmi %}
 				<div class="consultation-text-intro">
 					<a class="consultation-external external-link" href="https://parlament.gv.at/PAKT/VHG/XXV/ME/ME_00326/index.shtml" title="Konsultation auf der Parlamentswebseite" target="_blank">326/ME</a>
@@ -77,7 +78,7 @@
 				</div>
 
 
-				<button class="btn btn-default consultation-btn-next">Weiter zur Email Bestätigung</button>
+				<button class="btn btn-default consultation-btn-next">Weiter zur E-Mail-Bestätigung</button>
 				<div class="helpbox">
 					<p>Nachdem Sie dieses Formular abgeschickt haben, erhalten Sie von uns eine E-Mail mit einem Bestätigungslink.</p>
 					<p>Erst wenn Sie Ihre E-Mail-Adresse bestätigt haben, senden wir für Sie Ihre Stellungnahme(n) zur Begutachtung.</p> 
@@ -87,4 +88,5 @@
 		<div class="clear"></div>
       </div>
 	</section>
+
 {% endblock %}
