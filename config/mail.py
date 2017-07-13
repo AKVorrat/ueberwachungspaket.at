@@ -90,7 +90,7 @@ CONSULTATION_PDF_BMI_FRAME = """
 <head>
 <meta charset="utf-8">
 <style type="text/css">
-body { font-family: sans-serif; }
+body { font-size: 12pt; font-family: sans-serif; }
 #header { font-weight: bold; margin-bottom: 2cm; }
 #date { text-align: right; margin-top: 2cm; margin-bottom: 2cm; }
 #intro { margin-bottom: 2cm; }
@@ -101,14 +101,14 @@ h2 { font-size: large }
 </head>
 <body>
 <div id="header">
-<p>%s<p>
-<p id="date">%s</p>
-<p id="intro">%s nimmt zu dem Entwurf wie folgt Stellung:</p>
+<p>%(name)s<p>
+<p id="date">%(date)s</p>
+<p id="intro">%(name)s nimmt zu dem Entwurf wie folgt Stellung:</p>
 <h1>Stellungnahme im Begutachtungsverfahren zum Ministerialentwurf des Innenministeriums, mit dem das Sicherheitspolizeigesetzes, das Bundesstraßen-Mautgesetzes 2002, die Straßenverkehrsordnung 1960 und das Telekommunikationsgesetzes 2003 geändert werden (326/ME)</h1>
 </div>
-%s
+%(text)s
 <div id="endnotes">
-%s
+%(endnotes)s
 </div>
 </body>
 </html>"""
@@ -129,14 +129,14 @@ h2 { font-size: large }
 </head>
 <body>
 <div id="header">
-<p>%s<p>
-<p id="date">%s</p>
-<p id="intro">%s nimmt zu dem Entwurf wie folgt Stellung:</p>
+<p>%(name)s<p>
+<p id="date">%(date)s</p>
+<p id="intro">%(name)s nimmt zu dem Entwurf wie folgt Stellung:</p>
 <h1>Stellungnahme im Begutachtungsverfahren zum Ministerialentwurf des Justizministeriums, Strafprozessrechtsänderungsgesetz 2017 (325/ME)</h1>
 </div>
-%s
+%(text)s
 <div id="endnotes">
-%s
+%(endnotes)s
 </div>
 </body>
 </html>"""
@@ -144,9 +144,9 @@ h2 { font-size: large }
 
 CONSULTATION_INTRO = """Sehr geehrte Damen und Herren,
 
-wir übersenden Ihnen die angehängte Stellungnahme zum Ministerialentwurf %s im Namen von %s. %s
+wir übersenden Ihnen die angehängte Stellungnahme zum Ministerialentwurf %(ident)s im Namen von %(name)s. %(confidential)s
 
-Für Rückfragen wenden Sie sich bitte direkt an %s via <%s>.
+Für Rückfragen wenden Sie sich bitte direkt an %(name)s via <%(email)s>.
 
 Mit freundlichen Grüßen,
 das Team von epicenter.works"""
