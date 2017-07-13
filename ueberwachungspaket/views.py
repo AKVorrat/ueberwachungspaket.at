@@ -13,7 +13,7 @@ from database.models import load_consultation_issues, sendmail
 from . import app, db_session
 from .decorators import twilio_request
 
-import pdfkit
+import weasyprint 
 from markdown import markdown
 import re
 
@@ -28,8 +28,8 @@ def root():
         "index.html", 
         reps=important_reps, 
 #        consultation_progress_max=5000, 
-        consultation_progress_count=2000, 
-        consultation_progress_count_percent=20,
+#        consultation_progress_count=2000, 
+#        consultation_progress_count_percent=20,
         consultation_issues=c_issues
     )
     
@@ -414,6 +414,30 @@ def make_endnotes(md):
         endnotes.append('[' + str(c) + '] ' + f)
     return md, '\n\n'.join(endnotes)
 
+def send_pdf(src_text, frame_html, filename, name, make_confidential, identifier, email_address, recipients):
+    name_nohtml = name.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+    date = datetime.now().strftime("%d.%m.%Y")
+    if make_confidential:
+        confidential = "%s wünscht keine Veröffentlichung des Inhalts der Stellungnahme." % name
+    else:
+        confidential = "Mit einer Veröffentlichung auf der Parlamentswebsite ist %s einverstanden." % name
+
+    text, endnotes = make_endnotes(src_text)
+    html = frame_html % \
+            {'name': name_nohtml,
+             'date': date,
+             'text': markdown(text, output_format='html5'),
+             'endnotes': markdown(endnotes, output_format='html5')}
+    
+    weasyprint.HTML(string=html).render().write_pdf(filename)
+
+    with open(filename, 'rb') as f:
+        sendmail(MAIL_FROM,
+                 recipients,
+                 'Stellungnahme ' + identifier,
+                 CONSULTATION_INTRO % {'ident': identifier, 'name': name, 'confidential': confidential, 'email': email_address},
+                 f.read(),
+                 'stellungnahme.pdf')
 
 
 @app.route("/consultation/complete/<hash>")
@@ -424,48 +448,31 @@ def consultation_complete(hash):
         abort(400)
 
     if sender.date_validated:
-        return render_template("consultation_corrections.html",
+        return render_template("consultation_already_verified.html",
                 address_parliament=EMAIL_PARL, address_bmi=EMAIL_BMI, address_bmj=EMAIL_BMJ)
     else:
         sender.validate()
         db_session.commit()
 
-    name = sender.first_name + ' ' + sender.last_name
-    date = datetime.now().strftime("%d.%m.%Y")
-
-    if sender.confidential_submission:
-        confidential = "%s wünscht keine Veröffentlichung des Inhalts der Stellungnahme." % name
-    else:
-        confidential = ""
-
-    config = pdfkit.configuration(wkhtmltopdf=WKHTMLTOPDF.encode('utf-8'))
-
     if sender.bmi_text:
-        text, endnotes = make_endnotes(sender.bmi_text)
-        html = CONSULTATION_PDF_BMI_FRAME % (name, date, name, markdown(text, output_format='html4'), markdown(endnotes, output_format='html4'))
-        pdfkit.from_string(html, PDF_FOLDER + str(sender.id) + '_bmi.pdf',
-                options={'margin-top': '2cm', 'margin-bottom': '2cm', 'margin-left': '2cm', 'margin-right': '2cm'},
-                configuration=config)
-        with open(PDF_FOLDER + str(sender.id) + '_bmi.pdf', 'rb') as f:
-            sendmail(MAIL_FROM, [EMAIL_BMI, EMAIL_PARL, sender.email_address],
-                     'Stellungnahme 326/ME',
-                     CONSULTATION_INTRO % ('326/ME', name, confidential, name, sender.email_address),
-                     f.read(),
-                     'stellungnahme-326-me.pdf')
+        send_pdf(sender.bmi_text,
+                 CONSULTATION_PDF_BMI_FRAME,
+                 PDF_FOLDER + str(sender.id) + '_bmi.pdf',
+                 sender.first_name + ' ' + sender.last_name,
+                 sender.confidential_submission,
+                 '326/ME',
+                 sender.email_address,
+                 [EMAIL_BMI, EMAIL_PARL, sender.email_address])
 
     if sender.bmj_text:
-        text, endnotes = make_endnotes(sender.bmj_text)
-        html = CONSULTATION_PDF_BMJ_FRAME % (name, date, name, markdown(text, output_format='html4'), markdown(endnotes, output_format='html4'))
-        pdfkit.from_string(html, PDF_FOLDER + str(sender.id) + '_bmj.pdf',
-                options={'margin-top': '2cm', 'margin-bottom': '2cm', 'margin-left': '2cm', 'margin-right': '2cm'},
-                configuration=config)
-        with open(PDF_FOLDER + str(sender.id) + '_bmj.pdf', 'rb') as f:
-            sendmail(MAIL_FROM,
-                     [EMAIL_BMJ, EMAIL_PARL, sender.email_address],
-                     'Stellungnahme 325/ME',
-                     CONSULTATION_INTRO % ('325/ME', name, confidential, name, sender.email_address),
-                     f.read(),
-                     'stellungnahme-325-me.pdf')
+        send_pdf(sender.bmj_text,
+                 CONSULTATION_PDF_BMJ_FRAME,
+                 PDF_FOLDER + str(sender.id) + '_bmj.pdf',
+                 sender.first_name + ' ' + sender.last_name,
+                 sender.confidential_submission,
+                 '325/ME',
+                 sender.email_address,
+                 [EMAIL_BMJ, EMAIL_PARL, sender.email_address])
 
     return render_template("consultation_complete.html")
 
