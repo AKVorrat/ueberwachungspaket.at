@@ -33,6 +33,13 @@
 	</div>
 
 	<div class="container">
+        <div class="progress-bar">
+            <div class="progress-bar-done" style="width: {{ consultation_progress_count_percent }}%"></div>
+            <div class="progress-bar-text">
+                {{ consultation_progress_count }} Personen haben bereits mitgemacht!
+            </div>
+        </div>
+
 		<form action="/consultation/" method="post">
 			<h3 class="center consultation-issues-pre">Ich bin gegen ...</h3>
 			<ul id="consultation-issues" class="consultation-issues">
