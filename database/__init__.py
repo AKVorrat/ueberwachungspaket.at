@@ -6,7 +6,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from config import *
 
 if all([DB_USER, DB_PASSWORD, DB_HOST, DB_NAME]):
-    db_path = "mysql+pymysql://{}:{}@{}/{}?charset=utf-8".format(DB_USER, DB_PASSWORD, DB_HOST, DB_NAME)
+    db_path = "mysql+pymysql://{}:{}@{}/{}?charset=utf8".format(DB_USER, DB_PASSWORD, DB_HOST, DB_NAME)
 else:
     db_path = "sqlite:///" + join(gettempdir(), "ueberwachungspaket.db")
 

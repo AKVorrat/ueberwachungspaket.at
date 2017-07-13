@@ -24,7 +24,7 @@
 			<div class="blk-middle">
                 <p>Mitten im Sommer führt die Bundesregierung die Begutachtung des Überwachungspakets durch.</p>
 				<h2 class="trump">Beteilige dich jetzt an der Konsultation!</h2>
-				<h3 style="margin: 0;font-size: 1.1em;">(Es ist ganz einfach.)</h3>
+				<h3 style="margin: 0;font-size: 1.1em;">Es ist ganz einfach.</h3>
 			</div>
 			<div class="blk-right">
 				<img src="static/img/Hand_FINAL.png">
@@ -33,13 +33,6 @@
 	</div>
 
 	<div class="container">
-<!--		<div class="progress-bar">
-			<div class="progress-bar-done" style="width: {{ consultation_progress_count_percent }}%"></div>
-			<div class="progress-bar-text center">
-				{{ consultation_progress_count }} Personen haben bereits mitgemacht!
-			</div>
-</div>-->
-
 		<form action="/consultation/" method="post">
 			<h3 class="center consultation-issues-pre">Ich bin gegen ...</h3>
 			<ul id="consultation-issues" class="consultation-issues">
@@ -143,73 +136,6 @@
 		<h2>Deine Regierung will dich überwachen!</h2>
 		<a href="#consultation" class="btn btn-default">werde aktiv</a>
 	</section>
-
-<!--
-    <section id="sprich">
-		<div class="container">
-			<h2>Sprich mit Politikern</h2>
-			<div id="call-video">
-				<noscript>
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/-iXMesM0txo" frameborder="0" allowfullscreen></iframe>
-				</noscript>
-			</div>
-			<div id="representatives" class="row">
-				{% for rep in reps %}
-				<a class="representative" href="{{ url_for('representative', prettyname=rep.name.prettyname) }}" data-firstname="{{ rep.name.firstname }}" data-lastname="{{ rep.name.lastname }}" data-party="{{ rep.party.prettyname }}" data-team="{{ rep.team.prettyname }}" data-state="{{ rep.state }}">
-					<div class="column">
-						<div class="name">{{ rep.name.lastname }}</div>
-						<div class="party">{{ rep.party.shortname }}</div>
-					</div>
-					<div class="overlay {{ rep.team.prettyname }}"></div>
-					<img src="{{ url_for('static', filename='img/representative-small/' + rep.id + '.jpg') }}" alt="" />
-				</a>
-				{% endfor %}
-			</div>
-			<a href="politiker/"><i class="fa fa-angle-double-right" aria-hidden="true"></i></i> mehr</a>
-		</div>
-	</section>
--->
-
-<!--	<section id="zitate" class="chat">
-		<div class="container">
-			<h2>Zitate</h2>
-			<ul>
-				<li>
-					<div class="avatar"><img src="static/img/representative-small/02941.jpg" alt=""></div>
-					<div class="avtxt"><strong>Bundeskanzler Kern (SPÖ):</strong> Das erfordert, dass wir die Themen Sicherheit und Integration nachvollziehbar abdecken.<br><a href="https://www.profil.at/oesterreich/ab-mitte-kern-spoe-tabus-partei-7970980">
-						(Quelle)</a></div>
-				</li>
-				<li>
-					<p>Für keine der vorgeschlagenen Sicherheitsmaßnahmen gibt es Belege, dass sie die Menschen sicherer machen werden. Im Gegenteil, bei manchen Maßnahmen, etwa der SIM-Karten-Registrierung, gibt es <a style="text-transform: none; color: white;" href="https://epicenter.works/thema/ueberwachungspaket#Wertkarten">viele Belege aus anderen Ländern</a>, dass sie nichts zur Verbrechensbekämpfung beitragen können. Videoüberwachung kann zwar normale Kriminalität in andere Stadtteile verlagern, aber Terroristen können durch die gratis Öffentlichkeit für ihre Gräueltaten sogar noch <a style="text-transform: none; color: white;" href="https://www.welt.de/politik/deutschland/article160868298/Amri-posierte-nach-Tat-mit-IS-Gruss-vor-Kamera-am-Bahnhof-Zoo.html">extra angespornt werden</a>.</p>
-					<p><a class="btn btn-default" href="p/christian-kern/">Jetzt mit Christian Kern über Überwachung sprechen!</a></p>
-
-				</li>
-				<li>
-					<div class="avatar"><img src="static/img/representative/sobotka.jpg" alt=""></div>
-					<div class="avtxt"><strong>Innenminister Sobotka (ÖVP): </strong> In allen Fragen lückenlose Überwachung.<br> <a href="http://derstandard.at/2000050236705/Sobotka-will-Lauschangriff-Fussfessel-fuer-Verdaechtige-und-vernetzte-Videokontrolle)">(Quelle)</a></div>
-				</li>
-				<li>
-					<p>Eigentlich hat sich der Innenminister mit dieser Aussage selbst disqualifiziert. Lückenlose Überwachung haben bislang nur Politiker in repressiven Regimen gefordert. Von Ministern eines demokratischen Landes hat man so etwas bislang noch nicht gehört. Eine funktionierende Demokratie ist ohne Privatsphäre nicht möglich. Unter ständiger Beobachtung können wir uns keine Meinung bilden und keine Kritik an bestehenden Verhältnissen äußern.</p>
-					<p><a class="btn btn-default" href="p/wolfgang-sobotka/">Jetzt mit Wolfgang Sobotka über Überwachung sprechen!</a></p>
-				</li>
-				<li>
-					<div class="avatar"><img src="static/img/representative-small/08696.jpg" alt=""></div>
-					<div class="avtxt"><strong>Reinhold Mitterlehner (ÖVP):</strong> Ohne Sicherheit gibt es keine Freiheit.<br><a href="https://futurezone.at/netzpolitik/vorratsdatenspeicherung-oevp-plant-nachfolgeregelung/239.769.676">(Quelle)</a></div>
-				</li>
-				<li>
-					<p>Sicherheit und Freiheit haben wenig miteinander zu tun. Es gibt viele Maßnahmen, die mehr Sicherheit bringen, ohne unsere Freiheit einzuschränken, wie etwa gut ausgebildete Polizeikräfte oder Prävention in bestimmten Gruppen mit krimineller Energie. Viele Maßnahmen, die unsere Freiheit einschränken, bringen gar keinen Gewinn an Sicherheit. Alle Menschen zu überwachen vergrößert nur den Heuhaufen für die Polizei, aber hilft nicht, die wirklichen Gefahren zu finden.</p>
-				</li>
-				<li>
-					<div class="avatar"><img src="static/img/representative/brandstetter.jpg" alt=""></div>
-					<div class="avtxt"><strong>Justizminister Brandstetter (ÖVP) zu staatlicher Spionagesoftware:</strong> Entscheidend ist doch, dass im Rahmen der Begutachtung so viel Kritik geäußert wurde in verschiedener Richtung, dass wir einfach zu dem Schluss kommen müssen: Das ist so wie es war offensichtlich nicht wirklich sinnvoll. <br><a href="https://www.youtube.com/watch?v=lee2oogWm_s">(Quelle)</a></div>
-				</li>
-				<li>
-					<p>2016 hat der Justizminister versucht eine staatliche Spionagesoftware in Österreich zu legalisieren. Das Gesetz wurde aufgrund massiver Kritik von unterschiedlichsten Seiten nach der Begutachtung zurückgezogen. Eine solche Spionagesoftware schafft neue Gefahren für die gesamte Bevölkerung, liefert aber nur zweifelhafte Beweise für Gerichtsverfahren. Trotzdem wird im neuen Regierungsprogramm versucht, denselben Fehler mit Anlauf zu wiederholen.</p>
-					<p><a class="btn btn-default" href="p/wolfgang-brandstetter/">Jetzt mit Wolfgang Brandstetter über Überwachung sprechen!</a></p>
-				</li>
-			</ul>
-		</div>
-</section>-->
 	<section>
 		<a href="weitersagen/" class="btn btn-default">Sprich über Überwachung</a>
 	</section>
@@ -226,9 +152,6 @@
 				<li><i class="fa-li fa fa-check-square"></i>ein Ablaufdatum für neue Überwachungsgesetze ("Sunset Clauses" mit wissenschaftlicher Evaluierung und Rücknahme wirkungsloser Maßnahmen)</li>
 				<li><i class="fa-li fa fa-check-square"></i>Evaluierung aller bestehenden Überwachungsgesetze auf ihre Verfassungskonformität</li>
 			</ul>
-<!--
-			<p>Sprich über Überwachung. Sag' deinen Politikern, dass das Überwachungspaket durch ein echtes Sicherheitspaket ersetzt werden muss!</p>
--->
 		</div>
 	</section>
 	<section class="aktivgreen">
