@@ -142,3 +142,71 @@ $(document).ready(function() {
 var loadvideo = function() {
 	$("#call-video").html('<iframe width="560" height="315" src="https://www.youtube.com/embed/-iXMesM0txo?autoplay=1" frameborder="0" allowfullscreen></iframe>')
 }
+
+
+/*
+ * Consultation
+ */
+
+$(document).ready(function() {
+
+	/* at least one issue must be checked */
+	var switchConsBt = function() {
+		if ($('#consultation-issues input:checked').length === 0) {
+			$('#start-consultation').prop('disabled', true);
+		} else {
+			$('#start-consultation').prop('disabled', false);
+		}
+	}
+	switchConsBt();
+
+	var highlightActiveIssues = function() {
+		$("#consultation-issues :checkbox").is( function(){
+			if ($(this).is(':checked')) {
+				$(this).parent().addClass("issue-checked");
+			} else {
+				$(this).parent().removeClass("issue-checked");
+			}
+		});
+	}
+	highlightActiveIssues();
+
+	$('#consultation-issues input').change( function () {
+		switchConsBt();
+		highlightActiveIssues();
+	});
+
+
+	/* check all issues */
+	$('#issues-check-all').click( function(){
+		$('.issue-cb').prop('checked', true);
+		switchConsBt();
+		highlightActiveIssues();
+	});
+
+	/* resize textarea to its content*/
+	$('.floating-textarea').each(function () {
+		this.setAttribute('style', 'height:' + (this.scrollHeight) + 'px;overflow-y:hidden;');
+	}).on('input', function () {
+		this.style.height = 'auto';
+		this.style.height = (this.scrollHeight) + 'px';
+	});
+
+	/* update signature */
+	var typeSignature = function() {
+		var signature = "";
+		$('.typeaware').each(function() {
+			signature += " " + $(this).val();
+		});
+		$('.consultation-signature').each( function() {
+			$(this).html(signature);
+		});
+	}
+	typeSignature();
+	$('.typeaware').each(function() {
+		$(this).on('input', typeSignature);
+	});
+
+
+});
+
