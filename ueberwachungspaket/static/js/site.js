@@ -152,11 +152,23 @@ $(document).ready(function() {
 
 	/* at least one issue must be checked */
 	var switchConsBt = function() {
-		if ($('#consultation-issues input:checked').length === 0) {
+		var l  = $('#consultation-issues input:checked').length;
+		var la = $('#consultation-issues input').length;
+		if (l === 0) {
 			$('#start-consultation').prop('disabled', true);
 		} else {
 			$('#start-consultation').prop('disabled', false);
 		}
+
+		if (l === la) {
+			$('#start-consultation').addClass('all-issues-checked');
+			$('#issues-check-all').addClass('hide');
+		} else {
+			$('#start-consultation').removeClass('all-issues-checked');
+			$('#issues-check-all').removeClass('hide');
+		}
+
+
 	}
 	switchConsBt();
 
