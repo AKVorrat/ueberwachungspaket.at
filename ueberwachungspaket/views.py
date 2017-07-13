@@ -3,6 +3,7 @@ from random import choice, shuffle
 from datetime import datetime, date, timedelta
 from re import match
 from flask import render_template, abort, request, url_for, flash, redirect
+from sqlalchemy import func
 from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm.exc import NoResultFound
 from config import *
@@ -13,6 +14,7 @@ from database.models import load_consultation_issues, sendmail
 from . import app, db_session
 from .decorators import twilio_request
 
+import math
 import weasyprint 
 from markdown import markdown
 import re
@@ -24,15 +26,19 @@ c_issues = load_consultation_issues()
 @app.route("/")
 def root():
     important_reps = [reps.get_representative_by_id(id) for id in IMPORTANT_REPS]
+    consultation_count = db_session.query(func.count(ConsultationSender.date_validated)).one()[0]
+    if consultation_count < 100:
+        consultation_max = 100
+    else:
+        consultation_max = math.ceil(consultation_count / 1000.0) * 1000
     return render_template(
         "index.html", 
         reps=important_reps, 
-#        consultation_progress_max=5000, 
-#        consultation_progress_count=2000, 
-#        consultation_progress_count_percent=20,
+        consultation_progress_max=consultation_max,
+        consultation_progress_count=consultation_count,
+        consultation_progress_count_percent=100.0*consultation_count/consultation_max,
         consultation_issues=c_issues
     )
-    
 
 
 @app.route("/politiker/")
