@@ -37,5 +37,3 @@ EMAIL_PARL = ''
 # folder for consultation PDFs, with trailing slash
 PDF_FOLDER = ''
 
-# path to wkhtmltopdf
-WKHTMLTOPDF = ''
