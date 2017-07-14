@@ -80,9 +80,9 @@ class Mail(Base):
 
         rep = reps.get_representative_by_id(self.recipient)
 
-        addr_from = MAIL_FROM + " <" + MAIL_FROM + ">"
+        addr_from = '"' + MAIL_FROM + '" <' + MAIL_FROM + '>'
         if DEBUG:
-            addr_to = MAIL_DEBUG + " <" + MAIL_DEBUG + ">"
+            addr_to = '"' + MAIL_DEBUG + '" <' + MAIL_DEBUG + '>'
         else:
             addr_to = str(rep) + " <" + rep.contact.mail + ">"
         subject = "Sicherheitspaket"
@@ -111,7 +111,7 @@ class Sender(Base):
     def validate(self):
         self.date_validated = datetime.now()
 
-        addr_from = MAIL_FROM + " <" + MAIL_FROM + ">"
+        addr_from = '"' + MAIL_FROM + '" <' + MAIL_FROM + '>'
         addr_to = self.name + " <" + self.email_address + ">"
         subject = "Vielen Dank für Ihre Teilnahme auf überwachungspaket.at"
         msg = MAIL_WELCOME.format(name_user=self.name)
@@ -121,7 +121,7 @@ class Sender(Base):
         self.hash = uuid4().hex
         self.date_requested = datetime.now()
 
-        addr_from = MAIL_FROM + " <" + MAIL_FROM + ">"
+        addr_from = '"' + MAIL_FROM + '" <' + MAIL_FROM + ">"
         addr_to = self.name + " <" + self.email_address + ">"
         subject = "Bestätigung für überwachungspaket.at"
         url = url_for("validate", hash=self.hash, _external=True)
@@ -312,7 +312,7 @@ class ConsultationSender(Base):
         self.hash = uuid4().hex
         self.date_requested = datetime.now()
 
-        addr_from = MAIL_FROM + " <" + MAIL_FROM + ">"
+        addr_from = '"' + MAIL_FROM + '" <' + MAIL_FROM + '>'
         addr_to = '"' + self.first_name + ' ' + self.last_name + '" <' + self.email_address + '>'
         subject = "Bestätigung für überwachungspaket.at"
         url = url_for("consultation_complete", hash=self.hash, _external=True)

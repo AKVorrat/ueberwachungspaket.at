@@ -438,7 +438,7 @@ def send_pdf(src_text, frame_html, filename, name, make_confidential, identifier
     weasyprint.HTML(string=html).render().write_pdf(filename)
 
     with open(filename, 'rb') as f:
-        sendmail(MAIL_FROM,
+        sendmail('"' + MAIL_FROM + '" <' + MAIL_FROM + '>',
                  recipients,
                  'Stellungnahme ' + identifier,
                  CONSULTATION_INTRO % {'ident': identifier, 'name': name, 'confidential': confidential, 'email': email_address},
