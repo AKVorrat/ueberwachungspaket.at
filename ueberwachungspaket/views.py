@@ -30,7 +30,7 @@ def root():
     if consultation_count < 100:
         consultation_max = 100
     else:
-        consultation_max = math.ceil(consultation_count / 1000.0) * 1000
+        consultation_max = math.ceil(consultation_count / 10000.0) * 10000
     return render_template(
         "index.html", 
         reps=important_reps, 
