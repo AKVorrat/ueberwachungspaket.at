@@ -502,12 +502,13 @@ form.row {
 		width: 75%!important;
 	}
 	#zitate li:nth-child(even) {
-
 		margin-left: 0!important;
-
 	}
 }
 @media screen and (min-width: 768px) {
+	.items2 > * {
+		width: 50%;
+	}
 	.items3 > * {
 		width: 50%;
 	}
@@ -517,7 +518,6 @@ form.row {
 	.row-space > *:nth-child(even) {
 		margin-left: 1em;
 	}
-
 }
 
 @media screen and (min-width: 992px) {
@@ -550,7 +550,6 @@ form.row {
 	#topics .row > .column:nth-child(3n+4) {
 		padding: 15px 15px 15px 0;
 	}
-
 }
 
 

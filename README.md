@@ -12,6 +12,8 @@ See below for dependencies.
 - twilio
 - SQLAlchemy
 - PyMySQL
+- WeasyPrint
+- Markdown
 
 # Includes
 - jQuery Core (C) jQuery Foundation, Inc. [MIT]
