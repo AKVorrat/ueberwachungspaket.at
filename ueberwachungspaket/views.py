@@ -13,34 +13,53 @@ from database.models import Representatives, Reminder, Mail, Sender
 from . import app, db_session
 from .decorators import twilio_request
 
+from json import load
 import math
 import weasyprint
 from markdown import markdown
 import re
 
 reps = Representatives()
+quotes = {}
+with open("ueberwachungspaket/data/quotes.json", "r") as json_file:
+    quotes = load(json_file)
 
 @app.route("/")
 def root():
-    return render_template("index.html")
+    return render_template(
+        "index.html",
+        quotes=quotes
+    )
 
 @app.route("/politiker/")
 def representatives():
     reps_random = reps.representatives + reps.government
     shuffle(reps_random)
-    return render_template("representatives.html", reps=reps_random)
+    return render_template(
+        "representatives.html",
+        reps=reps_random
+    )
 
 @app.route("/p/<prettyname>/")
 def representative(prettyname):
     rep = reps.get_representative_by_name(prettyname)
     if rep:
-        return render_template("representative.html", rep=rep, twilio_number=TWILIO_NUMBERS[0])
+        return render_template(
+            "representative.html",
+            rep=rep,
+            twilio_number=TWILIO_NUMBERS[0]
+        )
     else:
         abort(404)
 
 @app.route("/consultation/")
 def consultation():
-    return render_template("consultation.html")
+    opinions = {}
+    return render_template(
+        "consultation.html",
+        quotes=quotes,
+        opinions=opinions
+    )
 
 @app.route("/weitersagen/")
 def share():
