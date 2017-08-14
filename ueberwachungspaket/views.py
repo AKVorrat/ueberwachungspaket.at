@@ -15,7 +15,7 @@ from . import app, db_session
 from .decorators import twilio_request
 
 import math
-import weasyprint 
+import weasyprint
 from markdown import markdown
 import re
 
@@ -32,8 +32,8 @@ def root():
     else:
         consultation_max = math.ceil(consultation_count / 10000.0) * 10000
     return render_template(
-        "index.html", 
-        reps=important_reps, 
+        "index.html",
+        reps=important_reps,
         consultation_progress_max=consultation_max,
         consultation_progress_count=consultation_count,
         consultation_progress_count_percent=100.0*consultation_count/consultation_max,
@@ -180,7 +180,7 @@ def callback(resp):
 @twilio_request
 def gather_menu(resp):
     number = request.values.get("From")
-    
+
     try:
         reminder = Reminder(number)
         db_session.add(reminder)
@@ -358,7 +358,7 @@ def consultation():
                                       [request.form.get(issue['id']) for issue in c_issues])))
     if selected_issues == []:
         abort(400)
-    
+
     bmi_text = ''
     bmj_text = ''
     for issue in selected_issues:
@@ -434,7 +434,7 @@ def send_pdf(src_text, frame_html, filename, name, make_confidential, identifier
              'date': date,
              'text': markdown(text, output_format='html5'),
              'endnotes': markdown(endnotes, output_format='html5')}
-    
+
     weasyprint.HTML(string=html).render().write_pdf(filename)
 
     with open(filename, 'rb') as f:
