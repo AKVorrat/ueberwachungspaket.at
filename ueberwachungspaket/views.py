@@ -9,8 +9,7 @@ from sqlalchemy.orm.exc import NoResultFound
 from config import *
 from config.main import *
 from config.mail import *
-from database.models import Representatives, Reminder, Mail, Sender, ConsultationSender
-from database.models import load_consultation_issues, sendmail
+from database.models import Representatives, Reminder, Mail, Sender
 from . import app, db_session
 from .decorators import twilio_request
 
@@ -21,25 +20,9 @@ import re
 
 reps = Representatives()
 
-c_issues = load_consultation_issues()
-
 @app.route("/")
 def root():
-    important_reps = [reps.get_representative_by_id(id) for id in IMPORTANT_REPS]
-    consultation_count = db_session.query(func.count(ConsultationSender.date_validated)).one()[0]
-    if consultation_count < 100:
-        consultation_max = 100
-    else:
-        consultation_max = math.ceil(consultation_count / 10000.0) * 10000
-    return render_template(
-        "index.html",
-        reps=important_reps,
-        consultation_progress_max=consultation_max,
-        consultation_progress_count=consultation_count,
-        consultation_progress_count_percent=100.0*consultation_count/consultation_max,
-        consultation_issues=c_issues
-    )
-
+    return render_template("index.html")
 
 @app.route("/politiker/")
 def representatives():
@@ -54,6 +37,10 @@ def representative(prettyname):
         return render_template("representative.html", rep=rep, twilio_number=TWILIO_NUMBERS[0])
     else:
         abort(404)
+
+@app.route("/consultation/")
+def consultation():
+    return render_template("consultation.html")
 
 @app.route("/weitersagen/")
 def share():
@@ -350,137 +337,6 @@ def reminder_info_tape(resp):
         g.play(url_for("static", filename="audio/info_tape.wav"))
 
     resp.redirect(url_for("gather_reminder_menu"))
-
-@app.route("/consultation/", methods=["post"])
-def consultation():
-    selected_issues = list(map(lambda x: [i for i in c_issues if i['id'] == x][0],
-                               filter(lambda x: x != None,
-                                      [request.form.get(issue['id']) for issue in c_issues])))
-    if selected_issues == []:
-        abort(400)
-
-    bmi_text = ''
-    bmj_text = ''
-    for issue in selected_issues:
-        # pull issue from issues array
-        if issue['authority'] == 'BMJ':
-            bmj_text += issue['text'] + '\n\n'
-        elif issue['authority'] == 'BMI':
-            bmi_text += issue['text'] + '\n\n'
-
-    return render_template(
-        "consultation.html", 
-        consultation_issues=selected_issues,
-        consultation_text_bmi=bmi_text, 
-        consultation_text_bmj=bmj_text,
-    )
-
-@app.route("/consultation/verify-email/", methods=["post"])
-def consultation_verifyemail():
-    first_name = request.form.get('consultation-vorname')
-    last_name = request.form.get('consultation-nachname')
-    email = request.form.get('consultation-email')
-    publish_name = request.form.get('consultation-check-name-datenschutz')
-    publish_content = request.form.get('consultation-check-parlament')
-    newsletter = request.form.get('consultation-check-newsletter')
-    bmi_text = request.form.get('consultation-text-bmi')
-    bmj_text = request.form.get('consultation-text-bmj')
-
-    if not (all([first_name, last_name, email, publish_name]) and (bmi_text or bmj_text)):
-        abort(400)
-
-    try:
-        sender = db_session.query(ConsultationSender).filter_by(email_address=email).one()
-        if sender.date_validated:
-            return render_template("consultation_corrections.html",
-                    address_parliament=EMAIL_PARL, address_bmi=EMAIL_BMI, address_bmj=EMAIL_BMJ)
-        else:
-            db_session.delete(sender)
-            db_session.commit()
-    except NoResultFound:
-        pass
-
-    # sender hasn't sent submission before
-    sender = ConsultationSender(first_name, last_name, email, bmi_text, bmj_text, not publish_content, bool(newsletter))
-    db_session.add(sender)
-    db_session.commit()
-    return render_template("consultation_verifyemail.html")
-
-def make_endnotes(md):
-    r_notes = r'\[\^[0-9]+\]\(([^)]+)\)'
-    footnotes = re.findall(r_notes, md)
-    old = ''
-    counter = 1
-    while md != old:
-        old = md
-        md = re.sub(r_notes, '[' + str(counter) + ']', md, count=1)
-        counter += 1
-    endnotes = []
-    for c, f in zip(range(1, len(footnotes) + 1), footnotes):
-        endnotes.append('[' + str(c) + '] ' + f)
-    return md, '\n\n'.join(endnotes)
-
-def send_pdf(src_text, frame_html, filename, name, make_confidential, identifier, email_address, recipients):
-    name_nohtml = name.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
-    date = datetime.now().strftime("%d.%m.%Y")
-    if make_confidential:
-        confidential = "%s wünscht keine Veröffentlichung des Inhalts der Stellungnahme." % name
-    else:
-        confidential = "Mit einer Veröffentlichung auf der Parlamentswebsite ist %s einverstanden." % name
-
-    text, endnotes = make_endnotes(src_text)
-    html = frame_html % \
-            {'name': name_nohtml,
-             'date': date,
-             'text': markdown(text, output_format='html5'),
-             'endnotes': markdown(endnotes, output_format='html5')}
-
-    weasyprint.HTML(string=html).render().write_pdf(filename)
-
-    with open(filename, 'rb') as f:
-        sendmail('"' + MAIL_FROM + '" <' + MAIL_FROM + '>',
-                 recipients,
-                 'Stellungnahme ' + identifier,
-                 CONSULTATION_INTRO % {'ident': identifier, 'name': name, 'confidential': confidential, 'email': email_address},
-                 f.read(),
-                 'stellungnahme.pdf')
-
-
-@app.route("/consultation/complete/<hash>")
-def consultation_complete(hash):
-    try:
-        sender = db_session.query(ConsultationSender).filter_by(hash=hash).one()
-    except NoResultFound:
-        abort(400)
-
-    if sender.date_validated:
-        return render_template("consultation_already_verified.html",
-                address_parliament=EMAIL_PARL, address_bmi=EMAIL_BMI, address_bmj=EMAIL_BMJ)
-    else:
-        sender.validate()
-        db_session.commit()
-
-    if sender.bmi_text:
-        send_pdf(sender.bmi_text,
-                 CONSULTATION_PDF_BMI_FRAME,
-                 PDF_FOLDER + str(sender.id) + '_bmi.pdf',
-                 sender.first_name + ' ' + sender.last_name,
-                 sender.confidential_submission,
-                 '326/ME',
-                 sender.email_address,
-                 [EMAIL_BMI, EMAIL_PARL, sender.email_address])
-
-    if sender.bmj_text:
-        send_pdf(sender.bmj_text,
-                 CONSULTATION_PDF_BMJ_FRAME,
-                 PDF_FOLDER + str(sender.id) + '_bmj.pdf',
-                 sender.first_name + ' ' + sender.last_name,
-                 sender.confidential_submission,
-                 '325/ME',
-                 sender.email_address,
-                 [EMAIL_BMJ, EMAIL_PARL, sender.email_address])
-
-    return render_template("consultation_complete.html")
 
 @app.errorhandler(404)
 def page_not_found(error):
