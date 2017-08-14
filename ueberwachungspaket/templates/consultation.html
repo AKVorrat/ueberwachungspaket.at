@@ -8,21 +8,23 @@
 {% block content %}
 	<section id="quotes">
 		<h2>Highlights</h2>
-		{% block consultation_quotes %}{% endblock consultation_quotes %}
+		{% include "consultation_quotes.html" %}
 	</section>
 	<section id="table">
-		<h2>Stellungnamen</h2>
+		<h2>Stellungnahmen</h2>
 		<table>
 			<tr>
 				<th>Name</th>
 				<th>Datum</th>
 				<th>PDF</th>
 			</tr>
+			{% for opinion in opinions %}
 			<tr>
 				<td>Dummy</td>
 				<td>01.01.2018</td>
 				<td></td>
 			</tr>
+			{% endfor %}
 		</table>
 	</section>
 {% endblock %}

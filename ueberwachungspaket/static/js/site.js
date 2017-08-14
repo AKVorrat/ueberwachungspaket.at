@@ -28,6 +28,21 @@ $(document).ready(function () {
 	});
 });
 
+
+// slick carousel
+
+$(document).ready(function() {
+	$(".slick-enabled").slick({
+		dots: true,
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		adaptiveHeight: true,
+		autoplay: true,
+		autoplaySpeed: 5000
+	});
+});
+
 // search filter
 
 $(document).ready(function() {
