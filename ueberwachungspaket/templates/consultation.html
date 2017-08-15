@@ -6,11 +6,14 @@
 {% endblock title %}
 
 {% block content %}
-	<section id="quotes">
+<section id="quotes">
+	<div class="container">
 		<h2>Highlights</h2>
 		{% include "consultation_quotes.html" %}
-	</section>
-	<section id="table">
+	</div>
+</section>
+<section id="table">
+	<div class="container">
 		<h2>Stellungnahmen</h2>
 		<table>
 			<tr>
@@ -26,5 +29,6 @@
 			</tr>
 			{% endfor %}
 		</table>
-	</section>
+	</div>
+</section>
 {% endblock %}
