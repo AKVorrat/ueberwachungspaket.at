@@ -1172,6 +1172,10 @@ nav > ul > li.active {
 	margin-left: 30px;
 	text-align: justify;
 }
+#quotes .avtxt > a {
+	display: block;
+	text-align: right;
+}
 .avatar img{
 	width: 100%;
 }
