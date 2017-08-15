@@ -158,6 +158,8 @@ hr {
 
 
 
+
+
 /* SEMANTICS */
 
 header,
@@ -497,10 +499,10 @@ form.row {
 		padding: 15px;
 		width: 100%;
 	}
-	#zitate .avtxt {
+	#quotes .avtxt {
 		width: 75%!important;
 	}
-	#zitate li:nth-child(even) {
+	#quotes li:nth-child(even) {
 		margin-left: 0!important;
 	}
 }
@@ -831,6 +833,16 @@ div.center > p,
     font-family: "OpenSans", "Helvetica Neue", "Helvetica", sans-serif;
 }
 
+.slide-center {
+	position: relative;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
 
 
 
@@ -1080,11 +1092,9 @@ nav > ul > li.active {
 	font-size: 20px;
 	font-weight: bold;
 }
-#zitate ul,
 #anrufen ul {
 	list-style: none;
 }
-#zitate li:nth-child(even),
 #anrufen li:nth-child(even) {
 	position: relative;
 	margin-left: 140px;
@@ -1098,9 +1108,8 @@ nav > ul > li.active {
 	color: #fff;
 	width: 70%;
 }
-#zitate li:nth-child(even):before,
 #anrufen li:nth-child(even):before {
-	content:url('../img/wave.png');
+	content:url('../img/quote/epicenter.png');
 	position: absolute;
 	right: -110px;
 	top: -3px;
@@ -1108,7 +1117,6 @@ nav > ul > li.active {
 #anrufen .chat li:nth-child(even):before {
     content: url('../img/conversation/user.jpg')
 }
-#zitate li:nth-child(even):after,
 #anrufen li:nth-child(even):after {
 	content: ' ';
 	position: absolute;
@@ -1121,38 +1129,27 @@ nav > ul > li.active {
 	border: 10px solid;
 	border-color: #3EAEF8  transparent  transparent #3EAEF8;
 }
-#zitate li:nth-child(odd),
 #anrufen li:nth-child(odd) {
 	margin: 65px 15px 15px;
 	position:relative ;
 }
-#zitate li:nth-child(odd) .avtxt:after,
+#quotes .avtxt:after,
 #anrufen li:nth-child(odd) .avtxt:after {
 	content: ' ';
 	position: absolute;
 	width: 0;
 	height: 0;
-	left: 82px;
+	left: -24px;
 	right: auto;
 	top: 20%;
 	bottom: auto;
 	border: 12px solid;
 	border-color: #e4e4e4 #e4e4e4 transparent transparent;
 }
-#zitate li,
 #anrufe li {
 	clear: both;
 }
-#zitate li:nth-child(even) a{
-	color: #222;
-	text-transform: uppercase;
-
-}
-#zitate li:nth-child(even) a:hover{
-	color: #fff;
-
-}
-#zitate .avatar,
+#quotes .avatar,
 #anrufen .avatar {
 	width: 80px;
 	height: 80px;
@@ -1160,13 +1157,20 @@ nav > ul > li.active {
 	border-radius: 50%;
 	float: left;
 }
-#zitate .avtxt,
+#quotes .avtxt,
 #anrufen .avtxt {
-	margin-left: 100px;
+	position: relative;
 	background: #E5E5EA;
 	border-radius: 10px;
 	padding: 10px;
 	width: 70%;
+}
+#anrufen .avtxt {
+	margin-left: 100px;
+}
+#quotes .avtxt {
+	margin-left: 30px;
+	text-align: justify;
 }
 .avatar img{
 	width: 100%;
@@ -1298,6 +1302,7 @@ section{
 
 .banner {
     line-height: 0;
+	border-bottom: 6px solid #c80000;
 }
 .banner > img {
 	width: 100%;

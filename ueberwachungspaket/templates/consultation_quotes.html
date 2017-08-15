@@ -1,9 +1,15 @@
-<div class="slick-enabled">
+<div class="slick-enabled" id="quotes">
 {% for quote in quotes %}
 	<div>
-		<img src="{{ quote.logo }}" alt="{{ quote.name }}" />
-		<p>{{ quote.name }}</p>
-		<p>{{ quote.text }}</p>
+		<div class="slide-center">
+			<div class="avatar">
+				<img src="{{ url_for('static', filename='img/quote/' + quote.logo) }}" alt="{{ quote.name }}" />
+			</div>
+			<div class="avtxt">
+				<strong>{{ quote.name }}</strong>
+				<p>{{ quote.text }}</p>
+			</div>
+		</div>
 	</div>
 {% endfor %}
 </div>
