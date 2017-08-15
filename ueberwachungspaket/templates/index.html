@@ -19,7 +19,11 @@
 			<h2 class="center">Die Begutachtung zum Überwachungspaket ist vorbei</h2>
 			<h4 class="center">Schau dir an, was die Stellungnahmen sagen.</h4>
 			{% include "consultation_quotes.html" %}
-			<a class="btn btn-default indent" href="{{ url_for('consultation', _anchor='table') }}">Alle Stellungnahmen ansehen</a>
+		</div>
+	</section>
+	<section>
+		<div class="container">
+			<a class="btn btn-default" href="{{ url_for('consultation', _anchor='table') }}">Alle Stellungnahmen ansehen</a>
 		</div>
 	</section>
 	<section id="topics">
