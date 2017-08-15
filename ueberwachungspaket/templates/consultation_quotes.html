@@ -1,7 +1,9 @@
 <div class="slick-enabled">
 {% for quote in quotes %}
 	<div>
-		<p>simple test</p>
+		<img src="{{ quote.logo }}" alt="{{ quote.name }}" />
+		<p>{{ quote.name }}</p>
+		<p>{{ quote.text }}</p>
 	</div>
 {% endfor %}
 </div>

@@ -12,14 +12,14 @@
 	</div>
 {% endblock %}
 
-{% block precontent %}
-<section id="consultation">
-	{% include "consultation_quotes.html" %}
-</section>
-{% endblock %}
-
 {% block content %}
 <div class="frontpage-content">
+	<section>
+		<div class="container">
+			{% include "consultation_quotes.html" %}
+			<a class="btn btn-default indent" href="{{ url_for('consultation', _anchor='table') }}">Stellungnahmen ansehen</a>
+		</div>
+	</section>
 	<section id="topics">
 		<div class="container">
 			<h2 class="center">Das steckt im Überwachungspaket</h2>
