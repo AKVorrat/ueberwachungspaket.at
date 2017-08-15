@@ -319,3 +319,63 @@ class ConsultationSender(Base):
         msg = CONSULTATION_MAIL_VALIDATE.format(first_name=self.first_name, last_name=self.last_name, url=url)
         sendmail(addr_from, addr_to, subject, msg)
 
+class Opinion(Base):
+    __tablename__ = "opinions"
+
+    id = Column(Integer, primary_key=True)
+    name = Column(String(256), nullable=False)
+    logo_filename = Column(String(256))
+    date = Column(Date, nullable=False)
+    link_bmi_parliament = Column(String(256))
+    link_bmi_pdf = Column(String(256))
+    orginality_bmi = Column(Integer, nullable=False)
+    link_bmj_parliament = Column(String(256))
+    link_bmj_pdf = Column(String(256))
+    orginality_bmj = Column(Integer, nullable=False)
+    addresses_bundestrojaner = Column(Boolean, nullable=False)
+    addresses_netzsperren = Column(Boolean, nullable=False)
+    addresses_vds_video = Column(Boolean, nullable=False)
+    addresses_ueberwachung_strassen = Column(Boolean, nullable=False)
+    addresses_vds_quickfreeze = Column(Boolean, nullable=False)
+    addresses_anonyme_simkarten = Column(Boolean, nullable=False)
+    addresses_imsi_catcher = Column(Boolean, nullable=False)
+    addresses_lauschangriff_auto = Column(Boolean, nullable=False)
+    comment = Column(Text)
+
+    def __init__(self,
+                 name,
+                 logo_filename,
+                 date,
+                 link_bmi_parliament,
+                 link_bmi_pdf,
+                 orginality_bmi,
+                 link_bmj_parliament,
+                 link_bmj_pdf,
+                 orginality_bmj,
+                 addresses_bundestrojaner,
+                 addresses_netzsperren,
+                 addresses_vds_video,
+                 addresses_ueberwachung_strassen,
+                 addresses_vds_quickfreeze,
+                 addresses_anonyme_simkarten,
+                 addresses_imsi_catcher,
+                 addresses_lauschangriff_auto,
+                 comment):
+        self.name = name
+        self.logo_filename = logo_filename
+        self.date = date
+        self.link_bmi_parliament = link_bmi_parliament
+        self.link_bmi_pdf = link_bmi_pdf
+        self.orginality_bmi = orginality_bmi
+        self.link_bmj_parliament = link_bmj_parliament
+        self.link_bmj_pdf = link_bmj_pdf
+        self.orginality_bmj = orginality_bmj
+        self.addresses_bundestrojaner = addresses_bundestrojaner
+        self.addresses_netzsperren = addresses_netzsperren
+        self.addresses_vds_video = addresses_vds_video
+        self.addresses_ueberwachung_strassen = addresses_ueberwachung_strassen
+        self.addresses_vds_quickfreeze = addresses_vds_quickfreeze
+        self.addresses_anonyme_simkarten = addresses_anonyme_simkarten
+        self.addresses_imsi_catcher = addresses_imsi_catcher
+        self.addresses_lauschangriff_auto = addresses_lauschangriff_auto
+        self.comment = comment
