@@ -2,7 +2,7 @@
 from random import choice, shuffle
 from datetime import datetime, date, timedelta
 from re import match
-from flask import render_template, abort, request, url_for, flash, redirect
+from flask import render_template, abort, request, url_for, flash, redirect, jsonify
 from sqlalchemy import func, desc
 from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm.exc import NoResultFound
@@ -19,11 +19,12 @@ import weasyprint
 from markdown import markdown
 import re
 
+page_size = 25
 reps = Representatives()
 quotes = {}
 with open("ueberwachungspaket/data/quotes.json", "r") as json_file:
     quotes = load(json_file)
-opinions = db_session.query(Opinion).order_by(desc(Opinion.originality)).limit(25)
+opinions = db_session.query(Opinion).order_by(desc(Opinion.originality)).limit(page_size).all()
 
 @app.route("/")
 def root():
@@ -60,6 +61,13 @@ def consultation():
         quotes=quotes,
         opinions=opinions
     )
+
+@app.route("/konsultation/load")
+def consultation_load():
+    page_index = request.args.get("pageIndex", 0, type=int)
+    query = db_session.query(Opinion).order_by(desc(Opinion.originality)).slice(page_index * page_size, (page_index + 1) * page_size).all()
+    rows = [row.serialize() for row in query]
+    return jsonify(rows)
 
 @app.route("/weitersagen/")
 def share():

@@ -389,4 +389,18 @@ class Opinion(Base):
         return "{}.{}.{}".format(self.date.day, self.date.month, self.date.year)
 
     def originality_pretty(self):
-        return (self.originality_bmi + self.originality_bmj) // 2
+        return int(self.originality)
+
+    def serialize(self):
+        return {
+            "logoFilename": self.logo_filename,
+            "name": self.name,
+            "date": self.date_pretty(),
+            "linkBmiParliament": self.link_bmi_parliament,
+            "linkBmiPdf": self.link_bmi_pdf,
+            "linkBmjParliament": self.link_bmj_parliament,
+            "linkBmjPdf": self.link_bmj_pdf,
+            "addresses": "",
+            "originality": self.originality,
+            "comment": self.comment
+        }
