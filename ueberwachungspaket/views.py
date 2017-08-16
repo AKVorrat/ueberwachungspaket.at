@@ -9,7 +9,7 @@ from sqlalchemy.orm.exc import NoResultFound
 from config import *
 from config.main import *
 from config.mail import *
-from database.models import Representatives, Reminder, Mail, Sender
+from database.models import Representatives, Reminder, Mail, Sender, Opinion
 from . import app, db_session
 from .decorators import twilio_request
 
@@ -23,6 +23,7 @@ reps = Representatives()
 quotes = {}
 with open("ueberwachungspaket/data/quotes.json", "r") as json_file:
     quotes = load(json_file)
+opinions = db_session.query(Opinion).order_by(Opinion.originality).limit(25)
 
 @app.route("/")
 def root():
@@ -52,9 +53,8 @@ def representative(prettyname):
     else:
         abort(404)
 
-@app.route("/consultation/")
+@app.route("/konsultation/")
 def consultation():
-    opinions = {}
     return render_template(
         "consultation.html",
         quotes=quotes,

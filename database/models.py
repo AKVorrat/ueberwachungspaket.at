@@ -11,6 +11,7 @@ from email.mime.application import MIMEApplication
 from flask import url_for
 from sqlalchemy import UniqueConstraint, Column, Boolean, Integer, String, Date, DateTime, ForeignKey, Text
 from sqlalchemy.orm import relationship
+from sqlalchemy.ext.hybrid import hybrid_property
 from config import DEBUG, MAIL_FROM, MAIL_DEBUG
 from config.mail import *
 from . import Base
@@ -328,10 +329,10 @@ class Opinion(Base):
     date = Column(Date, nullable=False)
     link_bmi_parliament = Column(String(256))
     link_bmi_pdf = Column(String(256))
-    orginality_bmi = Column(Integer, nullable=False)
+    originality_bmi = Column(Integer, nullable=False)
     link_bmj_parliament = Column(String(256))
     link_bmj_pdf = Column(String(256))
-    orginality_bmj = Column(Integer, nullable=False)
+    originality_bmj = Column(Integer, nullable=False)
     addresses_bundestrojaner = Column(Boolean, nullable=False)
     addresses_netzsperren = Column(Boolean, nullable=False)
     addresses_vds_video = Column(Boolean, nullable=False)
@@ -348,10 +349,10 @@ class Opinion(Base):
                  date,
                  link_bmi_parliament,
                  link_bmi_pdf,
-                 orginality_bmi,
+                 originality_bmi,
                  link_bmj_parliament,
                  link_bmj_pdf,
-                 orginality_bmj,
+                 originality_bmj,
                  addresses_bundestrojaner,
                  addresses_netzsperren,
                  addresses_vds_video,
@@ -366,10 +367,10 @@ class Opinion(Base):
         self.date = date
         self.link_bmi_parliament = link_bmi_parliament
         self.link_bmi_pdf = link_bmi_pdf
-        self.orginality_bmi = orginality_bmi
+        self.originality_bmi = originality_bmi
         self.link_bmj_parliament = link_bmj_parliament
         self.link_bmj_pdf = link_bmj_pdf
-        self.orginality_bmj = orginality_bmj
+        self.originality_bmj = originality_bmj
         self.addresses_bundestrojaner = addresses_bundestrojaner
         self.addresses_netzsperren = addresses_netzsperren
         self.addresses_vds_video = addresses_vds_video
@@ -379,3 +380,7 @@ class Opinion(Base):
         self.addresses_imsi_catcher = addresses_imsi_catcher
         self.addresses_lauschangriff_auto = addresses_lauschangriff_auto
         self.comment = comment
+
+    @hybrid_property
+    def originality(self):
+        return (self.originality_bmi + self.originality_bmj) / 2
