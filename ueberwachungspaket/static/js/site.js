@@ -194,3 +194,7 @@ function setSortKey(newSortKey) {
 	clearTable();
 	loadNextPage();
 }
+
+$(document).ready(function() {
+	$("#loadnextpage").click(loadNextPage);
+});
