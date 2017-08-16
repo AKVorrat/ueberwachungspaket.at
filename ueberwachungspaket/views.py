@@ -3,7 +3,7 @@ from random import choice, shuffle
 from datetime import datetime, date, timedelta
 from re import match
 from flask import render_template, abort, request, url_for, flash, redirect
-from sqlalchemy import func
+from sqlalchemy import func, desc
 from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm.exc import NoResultFound
 from config import *
@@ -23,7 +23,7 @@ reps = Representatives()
 quotes = {}
 with open("ueberwachungspaket/data/quotes.json", "r") as json_file:
     quotes = load(json_file)
-opinions = db_session.query(Opinion).order_by(Opinion.originality).limit(25)
+opinions = db_session.query(Opinion).order_by(desc(Opinion.originality)).limit(25)
 
 @app.route("/")
 def root():
