@@ -384,3 +384,9 @@ class Opinion(Base):
     @hybrid_property
     def originality(self):
         return (self.originality_bmi + self.originality_bmj) / 2
+
+    def date_pretty(self):
+        return "{}.{}.{}".format(self.date.day, self.date.month, self.date.year)
+
+    def originality_pretty(self):
+        return (self.originality_bmi + self.originality_bmj) // 2

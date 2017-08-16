@@ -367,6 +367,35 @@ strong > a {
 	color: #c80000;
 }
 
+table {
+	margin: auto;
+	width: 100%;
+	max-width: 1100px;
+	font-size: 18px;
+	border-spacing: 0px;
+}
+
+th, td {
+	padding: 10px;
+	border-bottom: 1px #E5E5EA solid;
+	white-space: nowrap;
+}
+
+th.left,
+td.left {
+	text-align: left;
+}
+
+th {
+	background-color: #EEE;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+th.absorbing {
+	width: 100%;
+}
+
 #call-video {
 	text-align: center;
 	margin: 1.5em;
