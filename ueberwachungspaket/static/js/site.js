@@ -152,8 +152,45 @@ function convertDateToString(date)
 
 /* Load call video */
 $(document).ready(function() {
-	$("#call-video").html('<a href="#" onclick="loadvideo(); return false;"><img src="static/img/video.jpg" width="560" height="315" alt="Anrufvideo"></a>') 
+	$("#call-video").html('<a href="#" onclick="loadvideo(); return false;"><img src="static/img/video.jpg" width="560" height="315" alt="Anrufvideo"></a>')
 });
 var loadvideo = function() {
 	$("#call-video").html('<iframe width="560" height="315" src="https://www.youtube.com/embed/-iXMesM0txo?autoplay=1" frameborder="0" allowfullscreen></iframe>')
+}
+
+// consultation table
+
+var pageIndex = 1;
+var sortKey = "originality";
+
+function buildNextPage(data) {
+	$.each(data, function(i, item) {
+		row = $("<tr />");
+		row.append($("<td />", {class: "center", text: item.logoFilename}));
+		row.append($("<td />", {text: item.name}));
+		row.append($("<td />", {class: "center", text: item.date}));
+		row.append($("<td />", {class: "center", html: $("<a />", {href: item.linkBmiParliament, html: '<i class="fa fa-external-link" aria-hidden="true"></i>'})}));
+		row.append($("<td />", {class: "center", html: $("<a />", {href: item.linkBmiPdf, html: '<i class="fa fa-file-pdf-o" aria-hidden="true"></i>'})}));
+		row.append($("<td />", {class: "center", html: $("<a />", {href: item.linkBmjParliament, html: '<i class="fa fa-external-link" aria-hidden="true"></i>'})}));
+		row.append($("<td />", {class: "center", html: $("<a />", {href: item.linkBmjPdf, html: '<i class="fa fa-file-pdf-o" aria-hidden="true"></i>'})}));
+		row.append($("<td />", {class: "center", text: ""}));
+		row.append($("<td />", {class: "center", text: item.originality}));
+		$("#consultationTable > tbody").append(row);
+	})
+}
+
+function clearTable() {
+	$("#consultationTable > tbody").empty();
+}
+
+function loadNextPage() {
+	$.getJSON("/konsultation/load?pageIndex=" + pageIndex + "&sortKey=" + sortKey, buildNextPage);
+	pageIndex++;
+}
+
+function setSortKey(newSortKey) {
+	pageIndex = 0;
+	sortKey = newSortKey;
+	clearTable();
+	loadNextPage();
 }

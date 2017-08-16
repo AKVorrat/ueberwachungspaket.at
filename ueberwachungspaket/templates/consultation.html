@@ -16,33 +16,37 @@
 	<div class="container">
 		<h2>Stellungnahmen</h2>
 		<p>Die meisten Stellungnahmen werden am Ende der Begutachtung veröffentlicht. Besuchen sie diese Seite später, um die neuesten Stellungnahmen zu sehen.</p>
-		<table class="indent">
-			<tr>
-				<th></th>
-				<th class="left absorbing">Name</th>
-				<th>Datum</th>
-				<th>Link BMI</th>
-				<th>PDF BMI</th>
-				<th>Link BMJ</th>
-				<th>PDF BMJ</th>
-				<th>Themen</th>
-				<th>Originalität</th>
-			</tr>
-			{% for opinion in opinions %}
-			<tr>
-				<td class="center"></td>
-				<td>{{ opinion.name }}</td>
-				<td class="center">{{ opinion.date_pretty() }}</td>
-				<td class="center"><a href="{{ opinion.link_bmi_parliament }}"><i class="fa fa-external-link" aria-hidden="true"></i></a></td>
-				<td class="center"><a href="{{ opinion.link_bmi_pdf }}"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-				<td class="center"><a href="{{ opinion.link_bmj_parliament }}"><i class="fa fa-external-link" aria-hidden="true"></i></a></td>
-				<td class="center"><a href="{{ opinion.link_bmj_pdf }}"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-				<td class="center"></td>
-				<td class="center">{{ opinion.originality_pretty() }}</td>
-			</tr>
-			{% endfor %}
+		<table id="consultationTable" class="indent">
+			<thead>
+				<tr>
+					<th></th>
+					<th class="left absorbing">Name</th>
+					<th>Datum</th>
+					<th>Link BMI</th>
+					<th>PDF BMI</th>
+					<th>Link BMJ</th>
+					<th>PDF BMJ</th>
+					<th>Themen</th>
+					<th>Originalität</th>
+				</tr>
+			</thead>
+			<tbody>
+				{% for opinion in opinions %}
+				<tr>
+					<td class="center"></td>
+					<td>{{ opinion.name }}</td>
+					<td class="center">{{ opinion.date_pretty() }}</td>
+					<td class="center"><a href="{{ opinion.link_bmi_parliament }}"><i class="fa fa-external-link" aria-hidden="true"></i></a></td>
+					<td class="center"><a href="{{ opinion.link_bmi_pdf }}"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
+					<td class="center"><a href="{{ opinion.link_bmj_parliament }}"><i class="fa fa-external-link" aria-hidden="true"></i></a></td>
+					<td class="center"><a href="{{ opinion.link_bmj_pdf }}"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
+					<td class="center"></td>
+					<td class="center">{{ opinion.originality_pretty() }}</td>
+				</tr>
+				{% endfor %}
+			</tbody>
 		</table>
-		<a href="javascript:loadNext()" class="center indent">mehr laden</a>
+		<a href="javascript:loadNextPage()" class="center indent">mehr laden</a>
 	</div>
 </section>
 {% endblock %}
