@@ -385,16 +385,25 @@ class Opinion(Base):
     def originality(self):
         return (self.originality_bmi + self.originality_bmj) / 2
 
+    def name_pretty(self):
+        if len(self.name) > 64:
+            return self.name[0:65] + "..."
+        else:
+            return self.name
+
     def date_pretty(self):
         return "{}.{}.{}".format(self.date.day, self.date.month, self.date.year)
 
     def originality_pretty(self):
-        return int(self.originality)
+        if self.originality > 1073741822:
+            return 100
+        else:
+            return int(self.originality)
 
     def serialize(self):
         return {
             "logoFilename": url_for("static", filename="img/logo/" + self.logo_filename) if self.logo_filename is not None else None,
-            "name": self.name,
+            "name": self.name_pretty(),
             "date": self.date_pretty(),
             "linkBmiParliament": self.link_bmi_parliament,
             "linkBmiPdf": self.link_bmi_pdf,
