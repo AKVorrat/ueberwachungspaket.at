@@ -41,6 +41,12 @@
 					</td>
 					<td class="center">{{ opinion.originality_pretty() }}</td>
 				</tr>
+				{% if opinion.comment -%}
+				<tr class="comment">
+					<td></td>
+					<td colspan="6">{{ opinion.comment }}</td>
+				</tr>
+				{% endif -%}
 				{% endfor %}
 			</tbody>
 		</table>
