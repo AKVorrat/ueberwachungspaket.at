@@ -894,6 +894,11 @@ div.center > p,
 	background-color: #A1F675;
 }
 
+.comment {
+	display: none;
+	font-size: 14px;
+}
+
 
 
 

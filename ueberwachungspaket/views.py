@@ -2,7 +2,7 @@
 from random import choice, shuffle
 from datetime import datetime, date, timedelta
 from re import match
-from flask import render_template, abort, request, url_for, flash, redirect, jsonify
+from flask import render_template, abort, request, url_for, flash, redirect, jsonify, send_from_directory
 from sqlalchemy import func, desc
 from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm.exc import NoResultFound
@@ -68,6 +68,14 @@ def consultation_load():
     query = db_session.query(Opinion).order_by(desc(Opinion.originality)).slice(page_index * page_size, (page_index + 1) * page_size).all()
     rows = [row.serialize() for row in query]
     return jsonify(rows)
+
+@app.route("/konsultation/showpdf/bmi/<fid>/")
+def showpdf_bmi(fid):
+    return send_from_directory(PDF_FOLDER, fid + "_bmi.pdf")
+
+@app.route("/konsultation/showpdf/bmj/<fid>/")
+def showpdf_bmj(fid):
+    return send_from_directory(PDF_FOLDER, fid + "_bmj.pdf")
 
 @app.route("/weitersagen/")
 def share():

@@ -199,6 +199,11 @@ function buildNextPage(data) {
 		row.append($("<td />", {class: "center", html: indicators}));
 		row.append($("<td />", {class: "center", text: item.originality}));
 		$("#consultationTable > tbody").append(row);
+
+		if (item.comment) {
+			row = "<tr class='comment'><td></td><td colspan='6'>" + item.comment + "</td></tr>"
+			$("#consultationTable > tbody").append(row);
+		}
 	})
 }
 
