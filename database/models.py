@@ -393,7 +393,7 @@ class Opinion(Base):
 
     def serialize(self):
         return {
-            "logoFilename": self.logo_filename,
+            "logoFilename": url_for("static", filename="img/logo/" + self.logo_filename) if self.logo_filename is not None else None,
             "name": self.name,
             "date": self.date_pretty(),
             "linkBmiParliament": self.link_bmi_parliament,
@@ -401,6 +401,6 @@ class Opinion(Base):
             "linkBmjParliament": self.link_bmj_parliament,
             "linkBmjPdf": self.link_bmj_pdf,
             "addresses": "",
-            "originality": self.originality,
+            "originality": self.originality_pretty(),
             "comment": self.comment
         }

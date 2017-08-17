@@ -19,13 +19,11 @@
 		<table id="consultationTable" class="indent">
 			<thead>
 				<tr>
-					<th></th>
+					<th class="logo"><div style="width: 24px"></div></th>
 					<th class="left absorbing">Name</th>
 					<th>Datum</th>
-					<th>Link BMI</th>
-					<th>PDF BMI</th>
-					<th>Link BMJ</th>
-					<th>PDF BMJ</th>
+					<th>BMI</th>
+					<th>BMJ</th>
 					<th>Themen</th>
 					<th>Originalität</th>
 				</tr>
@@ -33,13 +31,11 @@
 			<tbody>
 				{% for opinion in opinions %}
 				<tr>
-					<td class="center"></td>
+					<td class="center logo">{% if opinion.logo_filename -%}<img src="{{ url_for('static', filename='img/logo/' + opinion.logo_filename) }}" alt="" />{% endif -%}</td>
 					<td>{{ opinion.name }}</td>
 					<td class="center">{{ opinion.date_pretty() }}</td>
-					<td class="center"><a href="{{ opinion.link_bmi_parliament }}"><i class="fa fa-external-link" aria-hidden="true"></i></a></td>
-					<td class="center"><a href="{{ opinion.link_bmi_pdf }}"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-					<td class="center"><a href="{{ opinion.link_bmj_parliament }}"><i class="fa fa-external-link" aria-hidden="true"></i></a></td>
-					<td class="center"><a href="{{ opinion.link_bmj_pdf }}"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
+					<td class="center">{% if opinion.link_bmi_parliament -%}<a href="{{ opinion.link_bmi_parliament }}"><i class="fa fa-external-link" aria-hidden="true"></i></a>{% endif -%}&nbsp;{% if opinion.link_bmi_pdf -%}<a href="{{ opinion.link_bmi_pdf }}"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>{% endif -%}</td>
+					<td class="center">{% if opinion.link_bmj_parliament -%}<a href="{{ opinion.link_bmj_parliament }}"><i class="fa fa-external-link" aria-hidden="true"></i></a>{% endif -%}&nbsp;{% if opinion.link_bmj_pdf -%}<a href="{{ opinion.link_bmj_pdf }}"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>{% endif -%}</td>
 					<td class="center"></td>
 					<td class="center">{{ opinion.originality_pretty() }}</td>
 				</tr>

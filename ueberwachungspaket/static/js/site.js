@@ -164,15 +164,29 @@ var pageIndex = 1;
 var sortKey = "originality";
 
 function buildNextPage(data) {
+	if(data.length == 0) {
+		$("#loadnextpage").hide();
+	}
+
 	$.each(data, function(i, item) {
 		row = $("<tr />");
-		row.append($("<td />", {class: "center", text: item.logoFilename}));
+		if (item.logoFilename) {
+			row.append($("<td />", {class: "center logo", html: $("<img />", {src: item.logoFilename, alt: ""})}));
+		} else {
+			row.append($("<td />"));
+		}
 		row.append($("<td />", {text: item.name}));
 		row.append($("<td />", {class: "center", text: item.date}));
-		row.append($("<td />", {class: "center", html: $("<a />", {href: item.linkBmiParliament, html: '<i class="fa fa-external-link" aria-hidden="true"></i>'})}));
-		row.append($("<td />", {class: "center", html: $("<a />", {href: item.linkBmiPdf, html: '<i class="fa fa-file-pdf-o" aria-hidden="true"></i>'})}));
-		row.append($("<td />", {class: "center", html: $("<a />", {href: item.linkBmjParliament, html: '<i class="fa fa-external-link" aria-hidden="true"></i>'})}));
-		row.append($("<td />", {class: "center", html: $("<a />", {href: item.linkBmjPdf, html: '<i class="fa fa-file-pdf-o" aria-hidden="true"></i>'})}));
+		if (item.linkBmiParliament && item.linkBmiPdf) {
+			row.append($("<td />", {class: "center", html: "<a href='" + item.linkBmiParliament + "'><i class='fa fa-external-link' aria-hidden='true'></i></a>&nbsp;<a href='" + item.linkBmiPdf + "'<i class='fa fa-file-pdf-o' aria-hidden='true'></i></a>"}));
+		} else {
+			row.append($("<td />"));
+		}
+		if (item.linkBmjParliament && item.linkBmjPdf) {
+			row.append($("<td />", {class: "center", html: "<a href='" + item.linkBmjParliament + "'><i class='fa fa-external-link' aria-hidden='true'></i></a>&nbsp;<a href='" + item.linkBmjPdf + "'<i class='fa fa-file-pdf-o' aria-hidden='true'></i></a>"}));
+		} else {
+			row.append($("<td />"));
+		}
 		row.append($("<td />", {class: "center", text: ""}));
 		row.append($("<td />", {class: "center", text: item.originality}));
 		$("#consultationTable > tbody").append(row);
