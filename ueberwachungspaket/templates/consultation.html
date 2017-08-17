@@ -8,14 +8,14 @@
 {% block content %}
 <section id="quotes">
 	<div class="container">
-		<h2>Highlights</h2>
+		<h2>Noch nie war eine Begutachtung so eindeutig</h2>
 		{% include "consultation_quotes.html" %}
 	</div>
 </section>
 <section id="table">
 	<div class="container">
-		<h2>Stellungnahmen</h2>
-		<p>Die meisten Stellungnahmen werden am Ende der Begutachtung veröffentlicht. Besuchen sie diese Seite später, um die neuesten Stellungnahmen zu sehen.</p>
+		<h2>Alle Stellungnahmen im Detail</h2>
+		<p>Die meisten Stellungnahmen werden am Ende der Begutachtung veröffentlicht. Besuchen sie diese Seite nach dem 21. August 2017, um ein vollständiges Bild zu bekommen.</p>
 		<table id="consultationTable" class="indent">
 			<thead>
 				<tr>
@@ -34,8 +34,8 @@
 					<td class="center logo">{% if opinion.logo_filename -%}<img src="{{ url_for('static', filename='img/logo/' + opinion.logo_filename) }}" alt="" />{% endif -%}</td>
 					<td>{{ opinion.name_pretty() }}</td>
 					<td class="center">{{ opinion.date_pretty() }}</td>
-					<td class="center">{% if opinion.link_bmi_parliament -%}<a href="{{ opinion.link_bmi_parliament }}"><i class="fa fa-external-link" aria-hidden="true"></i></a>{% endif -%}&nbsp;{% if opinion.link_bmi_pdf -%}<a href="{{ opinion.link_bmi_pdf }}"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>{% endif -%}</td>
-					<td class="center">{% if opinion.link_bmj_parliament -%}<a href="{{ opinion.link_bmj_parliament }}"><i class="fa fa-external-link" aria-hidden="true"></i></a>{% endif -%}&nbsp;{% if opinion.link_bmj_pdf -%}<a href="{{ opinion.link_bmj_pdf }}"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>{% endif -%}</td>
+					<td class="center">{% if opinion.link_bmi_pdf -%}<a href="{{ opinion.link_bmi_pdf }}"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>{% endif -%}</td>
+					<td class="center">{% if opinion.link_bmj_pdf -%}<a href="{{ opinion.link_bmj_pdf }}"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>{% endif -%}</td>
 					<td class="center">
 						<div class="indicator {% if opinion.addresses_bundestrojaner -%}green{% endif -%}" title="Bundestrojaner"></div>&nbsp;<div class="indicator {% if opinion.addresses_netzsperren -%}green{% endif -%}" title="Netzsperren"></div>&nbsp;<div class="indicator {% if opinion.addresses_vds_video -%}green{% endif -%}" title="Vorratsdatenspeicherung für Videoüberwachung"></div>&nbsp;<div class="indicator {% if opinion.addresses_ueberwachungs_strassen -%}green{% endif -%}" title="Vollüberwachung auf Österreichs Straßen"></div>&nbsp;<div class="indicator {% if opinion.addresses_vds_quickfreeze -%}green{% endif -%}" title="Quickfreeze"></div>&nbsp;<div class="indicator {% if opinion.addresses_anonyme_simkarten -%}green{% endif -%}" title="Anonyme Simkarten"></div>&nbsp;<div class="indicator {% if opinion.addresses_imsi_catcher -%}green{% endif -%}" title="IMSI-Catcher"></div>&nbsp;<div class="indicator {% if opinion.addresses_lauschangriff_auto -%}green{% endif -%}" title="Lauschangriff im Auto"></div>
 					</td>
