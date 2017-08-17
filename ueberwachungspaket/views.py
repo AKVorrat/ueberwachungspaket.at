@@ -73,11 +73,17 @@ def consultation_load():
 
 @app.route("/konsultation/showpdf/bmi/<int:fid>")
 def showpdf_bmi(fid):
-    return send_from_directory(PDF_FOLDER, str(fid) + "_bmi.pdf")
+    return send_from_directory(PDF_FOLDER,
+                               str(fid) + "_bmi.pdf",
+                               as_attachment=True,
+                               attachment_filename=str(fid) + "_bmi.pdf")
 
 @app.route("/konsultation/showpdf/bmj/<int:fid>")
 def showpdf_bmj(fid):
-    return send_from_directory(PDF_FOLDER, str(fid) + "_bmj.pdf")
+    return send_from_directory(PDF_FOLDER,
+                               str(fid) + "_bmj.pdf",
+                               as_attachment=True,
+                               attachment_filename=str(fid) + "_bmj.pdf")
 
 @app.route("/weitersagen/")
 def share():
