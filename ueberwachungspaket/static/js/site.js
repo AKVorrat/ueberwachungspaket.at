@@ -187,7 +187,16 @@ function buildNextPage(data) {
 		} else {
 			row.append($("<td />"));
 		}
-		row.append($("<td />", {class: "center", text: ""}));
+		var indicators = "";
+		indicators += "<div class='indicator " + (item.addressesBundestrojaner ? "green" : "") + "' title='Bundestrojaner'></div>&nbsp;";
+		indicators += "<div class='indicator " + (item.addressesNetzsperren ? "green" : "") + "' title='Netzsperren'></div>&nbsp;";
+		indicators += "<div class='indicator " + (item.addressesVdsVideo ? "green" : "") + "' title='Vorratsdatenspeicherung für Videoüberwachung'></div>&nbsp;";
+		indicators += "<div class='indicator " + (item.addressesUeberwachungStrassen ? "green" : "") + "' title='Vollüberwachung auf Österreichs Straßen'></div>&nbsp;";
+		indicators += "<div class='indicator " + (item.addressesVdsQuickfreeze ? "green" : "") + "' title='Quickfreeze'></div>&nbsp;";
+		indicators += "<div class='indicator " + (item.addressesAnonymeSimkarten ? "green" : "") + "' title='Anonyme Simkarten'></div>&nbsp;";
+		indicators += "<div class='indicator " + (item.addressesImsiCatcher ? "green" : "") + "' title='IMSI-Catcher'></div>&nbsp;";
+		indicators += "<div class='indicator " + (item.addressesLauschangriffAuto ? "green" : "") + "' title='Lauschangriff im Auto'></div>";
+		row.append($("<td />", {class: "center", html: indicators}));
 		row.append($("<td />", {class: "center", text: item.originality}));
 		$("#consultationTable > tbody").append(row);
 	})
