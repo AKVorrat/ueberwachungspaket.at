@@ -3,7 +3,7 @@ from random import choice, shuffle
 from datetime import datetime, date, timedelta
 from re import match
 from flask import render_template, abort, request, url_for, flash, redirect, jsonify, send_from_directory
-from sqlalchemy import func, desc
+from sqlalchemy import func
 from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm.exc import NoResultFound
 from config import *
@@ -56,7 +56,7 @@ def representative(prettyname):
 def consultation():
     with open("ueberwachungspaket/data/quotes.json", "r") as json_file:
         quotes = load(json_file)
-    opinions = db_session.query(Opinion).order_by(desc(Opinion.originality)).limit(page_size).all()
+    opinions = db_session.query(Opinion).order_by(Opinion.originality.desc(),Opinion.date.desc()).limit(page_size).all()
 
     return render_template(
         "consultation.html",
@@ -67,7 +67,7 @@ def consultation():
 @app.route("/konsultation/load")
 def consultation_load():
     page_index = request.args.get("pageIndex", 0, type=int)
-    query = db_session.query(Opinion).order_by(desc(Opinion.originality)).slice(page_index * page_size, (page_index + 1) * page_size).all()
+    query = db_session.query(Opinion).order_by(Opinion.originality.desc(),Opinion.date.desc()).slice(page_index * page_size, (page_index + 1) * page_size).all()
     rows = [row.serialize() for row in query]
     return jsonify(rows=rows)
 
