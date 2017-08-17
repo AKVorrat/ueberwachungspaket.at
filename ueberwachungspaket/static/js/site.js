@@ -179,13 +179,27 @@ function buildNextPage(data) {
 		}
 		row.append($("<td />", {text: item.name}));
 		row.append($("<td />", {class: "center", text: item.date}));
-		if (item.linkBmiParliament && item.linkBmiPdf) {
-			row.append($("<td />", {class: "center", html: "<a href='" + item.linkBmiParliament + "'><i class='fa fa-external-link' aria-hidden='true'></i></a>&nbsp;<a href='" + item.linkBmiPdf + "'<i class='fa fa-file-pdf-o' aria-hidden='true'></i></a>"}));
+		if (item.linkBmiParliament || item.linkBmiPdf) {
+			var part = $("<td />", {class: "center"});
+			if (item.linkBmiParliament) {
+				part.html("<a href='" + item.linkBmiParliament + "'><i class='fa fa-external-link' aria-hidden='true'></i></a>&nbsp;");
+			}
+			if (item.linkBmiPdf) {
+				part.html(part.html() + "<a href='" + item.linkBmiPdf + "'<i class='fa fa-file-pdf-o' aria-hidden='true'></i></a>");
+			}
+			row.append(part);
 		} else {
 			row.append($("<td />"));
 		}
-		if (item.linkBmjParliament && item.linkBmjPdf) {
-			row.append($("<td />", {class: "center", html: "<a href='" + item.linkBmjParliament + "'><i class='fa fa-external-link' aria-hidden='true'></i></a>&nbsp;<a href='" + item.linkBmjPdf + "'<i class='fa fa-file-pdf-o' aria-hidden='true'></i></a>"}));
+		if (item.linkBmjParliament || item.linkBmjPdf) {
+			var part = $("<td />", {class: "center"});
+			if (item.linkBmjParliament) {
+				part.html("<a href='" + item.linkBmjParliament + "'><i class='fa fa-external-link' aria-hidden='true'></i></a>&nbsp;");
+			}
+			if (item.linkBmjPdf) {
+				part.html(part.html() + "<a href='" + item.linkBmjPdf + "'<i class='fa fa-file-pdf-o' aria-hidden='true'></i></a>");
+			}
+			row.append(part);
 		} else {
 			row.append($("<td />"));
 		}
