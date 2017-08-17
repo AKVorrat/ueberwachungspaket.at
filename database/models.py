@@ -400,7 +400,14 @@ class Opinion(Base):
             "linkBmiPdf": self.link_bmi_pdf,
             "linkBmjParliament": self.link_bmj_parliament,
             "linkBmjPdf": self.link_bmj_pdf,
-            "addresses": "",
+            "addressesBundestrojaner": self.addresses_bundestrojaner,
+            "addressesNetzsperren": self.addresses_netzsperren,
+            "addressesVdsVideo": self.addresses_vds_video,
+            "addressesUeberwachungStrassen": self.addresses_ueberwachung_strassen,
+            "addressesVdsQuickfreeze": self.addresses_vds_quickfreeze,
+            "addressesAnonymeSimkarten": self.addresses_anonyme_simkarten,
+            "addressesImsiCatcher": self.addresses_imsi_catcher,
+            "addressesLauschangriffAuto": self.addresses_lauschangriff_auto,
             "originality": self.originality_pretty(),
             "comment": self.comment
         }

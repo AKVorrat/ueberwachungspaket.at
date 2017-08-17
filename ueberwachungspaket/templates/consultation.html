@@ -36,7 +36,9 @@
 					<td class="center">{{ opinion.date_pretty() }}</td>
 					<td class="center">{% if opinion.link_bmi_parliament -%}<a href="{{ opinion.link_bmi_parliament }}"><i class="fa fa-external-link" aria-hidden="true"></i></a>{% endif -%}&nbsp;{% if opinion.link_bmi_pdf -%}<a href="{{ opinion.link_bmi_pdf }}"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>{% endif -%}</td>
 					<td class="center">{% if opinion.link_bmj_parliament -%}<a href="{{ opinion.link_bmj_parliament }}"><i class="fa fa-external-link" aria-hidden="true"></i></a>{% endif -%}&nbsp;{% if opinion.link_bmj_pdf -%}<a href="{{ opinion.link_bmj_pdf }}"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>{% endif -%}</td>
-					<td class="center"></td>
+					<td class="center">
+						<div class="indicator {% if opinion.addresses_bundestrojaner -%}green{% endif -%}" title="Bundestrojaner"></div>&nbsp;<div class="indicator {% if opinion.addresses_netzsperren -%}green{% endif -%}" title="Netzsperren"></div>&nbsp;<div class="indicator {% if opinion.addresses_vds_video -%}green{% endif -%}" title="Vorratsdatenspeicherung für Videoüberwachung"></div>&nbsp;<div class="indicator {% if opinion.addresses_ueberwachungs_strassen -%}green{% endif -%}" title="Vollüberwachung auf Österreichs Straßen"></div>&nbsp;<div class="indicator {% if opinion.addresses_vds_quickfreeze -%}green{% endif -%}" title="Quickfreeze"></div>&nbsp;<div class="indicator {% if opinion.addresses_anonyme_simkarten -%}green{% endif -%}" title="Anonyme Simkarten"></div>&nbsp;<div class="indicator {% if opinion.addresses_imsi_catcher -%}green{% endif -%}" title="IMSI-Catcher"></div>&nbsp;<div class="indicator {% if opinion.addresses_lauschangriff_auto -%}green{% endif -%}" title="Lauschangriff im Auto"></div>
+					</td>
 					<td class="center">{{ opinion.originality_pretty() }}</td>
 				</tr>
 				{% endfor %}

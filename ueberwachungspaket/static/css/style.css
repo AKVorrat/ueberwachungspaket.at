@@ -882,6 +882,18 @@ div.center > p,
 	justify-content: center;
 }
 
+.indicator {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background-color: #EEE;
+	border: 1px solid #DDD;
+}
+
+.indicator.green {
+	background-color: #A1F675;
+}
+
 
 
 
