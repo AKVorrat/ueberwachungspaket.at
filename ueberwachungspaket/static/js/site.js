@@ -164,11 +164,13 @@ var pageIndex = 1;
 var sortKey = "originality";
 
 function buildNextPage(data) {
-	if(data.length == 0) {
+	rows = data.rows
+
+	if(rows.length == 0) {
 		$("#loadnextpage").hide();
 	}
 
-	$.each(data, function(i, item) {
+	$.each(rows, function(i, item) {
 		row = $("<tr />");
 		if (item.logoFilename) {
 			row.append($("<td />", {class: "center logo", html: $("<img />", {src: item.logoFilename, alt: ""})}));

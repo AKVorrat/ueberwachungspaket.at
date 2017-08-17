@@ -69,7 +69,7 @@ def consultation_load():
     page_index = request.args.get("pageIndex", 0, type=int)
     query = db_session.query(Opinion).order_by(desc(Opinion.originality)).slice(page_index * page_size, (page_index + 1) * page_size).all()
     rows = [row.serialize() for row in query]
-    return jsonify(rows)
+    return jsonify(rows=rows)
 
 @app.route("/konsultation/showpdf/bmi/<fid>/")
 def showpdf_bmi(fid):
