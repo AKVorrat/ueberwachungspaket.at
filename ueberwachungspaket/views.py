@@ -21,13 +21,11 @@ import re
 
 page_size = 25
 reps = Representatives()
-quotes = {}
-with open("ueberwachungspaket/data/quotes.json", "r") as json_file:
-    quotes = load(json_file)
-opinions = db_session.query(Opinion).order_by(desc(Opinion.originality)).limit(page_size).all()
 
 @app.route("/")
 def root():
+    with open("ueberwachungspaket/data/quotes.json", "r") as json_file:
+        quotes = load(json_file)
     return render_template(
         "index.html",
         quotes=quotes
@@ -56,6 +54,10 @@ def representative(prettyname):
 
 @app.route("/konsultation/")
 def consultation():
+    with open("ueberwachungspaket/data/quotes.json", "r") as json_file:
+        quotes = load(json_file)
+    opinions = db_session.query(Opinion).order_by(desc(Opinion.originality)).limit(page_size).all()
+
     return render_template(
         "consultation.html",
         quotes=quotes,
