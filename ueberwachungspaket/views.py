@@ -71,13 +71,13 @@ def consultation_load():
     rows = [row.serialize() for row in query]
     return jsonify(rows=rows)
 
-@app.route("/konsultation/showpdf/bmi/<fid>/")
+@app.route("/konsultation/showpdf/bmi/<int:fid>")
 def showpdf_bmi(fid):
-    return send_from_directory(PDF_FOLDER, fid + "_bmi.pdf")
+    return send_from_directory(PDF_FOLDER, str(fid) + "_bmi.pdf")
 
-@app.route("/konsultation/showpdf/bmj/<fid>/")
+@app.route("/konsultation/showpdf/bmj/<int:fid>")
 def showpdf_bmj(fid):
-    return send_from_directory(PDF_FOLDER, fid + "_bmj.pdf")
+    return send_from_directory(PDF_FOLDER, str(fid) + "_bmj.pdf")
 
 @app.route("/weitersagen/")
 def share():
