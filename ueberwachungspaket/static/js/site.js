@@ -32,7 +32,7 @@ $(document).ready(function () {
 // slick carousel
 
 $(document).ready(function() {
-	$(".slick-enabled").slick({
+	var carousel = $("#quotes-carousel").slick({
 		dots: true,
 		infinite: true,
 		slidesToShow: 1,
@@ -41,7 +41,21 @@ $(document).ready(function() {
 		autoplay: true,
 		autoplaySpeed: 5000
 	});
+
+	$(window).scroll(function() {
+    	var top_of_element = $("#quotes-carousel").offset().top;
+    	var bottom_of_element = $("#quotes-carousel").offset().top + $("#quotes-carousel").outerHeight();
+    	var bottom_of_screen = $(window).scrollTop() + $(window).height();
+    	var top_of_screen = $(window).scrollTop();
+
+    	if((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
+			carousel.slick("slickPlay");
+    	} else {
+			carousel.slick("slickPause");
+    	}
+	});
 });
+
 
 // search filter
 
