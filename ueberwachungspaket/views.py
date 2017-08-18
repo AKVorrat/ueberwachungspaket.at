@@ -26,6 +26,7 @@ reps = Representatives()
 def root():
     with open("ueberwachungspaket/data/quotes.json", "r") as json_file:
         quotes = load(json_file)
+    shuffle(quotes)
     return render_template(
         "index.html",
         quotes=quotes
@@ -56,6 +57,7 @@ def representative(prettyname):
 def consultation():
     with open("ueberwachungspaket/data/quotes.json", "r") as json_file:
         quotes = load(json_file)
+    shuffle(quotes)
     opinions = db_session.query(Opinion).order_by(Opinion.originality.desc(),Opinion.date.desc()).limit(page_size).all()
 
     return render_template(
