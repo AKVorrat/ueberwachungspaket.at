@@ -3,7 +3,11 @@
 	<div>
 		<div class="slide-center">
 			<div class="avatar">
-				<img src="{{ url_for('static', filename='img/quote/' + quote.logo) }}" alt="{{ quote.name }}" />
+				{% if quote.logo -%}
+				<img src="{{ url_for('static', filename='img/quote/' + quote.logo) }}" alt="" />
+				{% else -%}
+				<img src="{{ url_for('static', filename='img/quote/user.jpg') }}" alt="" />
+				{% endif -%}
 			</div>
 			<div class="avtxt">
 				<strong>{{ quote.name }}</strong>
