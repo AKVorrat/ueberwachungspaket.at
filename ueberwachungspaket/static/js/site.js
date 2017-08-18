@@ -39,7 +39,15 @@ $(document).ready(function() {
 		slidesToScroll: 1,
 		adaptiveHeight: true,
 		autoplay: true,
-		autoplaySpeed: 5000
+		autoplaySpeed: 5000,
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					dots: false
+				}
+			}
+		]
 	});
 
 	$(window).scroll(function() {
