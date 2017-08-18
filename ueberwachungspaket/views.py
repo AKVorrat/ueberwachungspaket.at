@@ -19,7 +19,7 @@ import weasyprint
 from markdown import markdown
 import re
 
-page_size = 25
+page_size = 35
 reps = Representatives()
 
 @app.route("/")
