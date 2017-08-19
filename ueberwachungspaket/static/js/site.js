@@ -185,8 +185,10 @@ var loadvideo = function() {
 // consultation table
 
 var pageIndex = 1;
-var sortKey = "originality";
 var loading = false;
+var sortKey = "originality";
+var filterOrigin = "both";
+var filterName = "";
 
 function buildNextPage(data) {
 	rows = data.rows
@@ -211,14 +213,14 @@ function buildNextPage(data) {
 			row.append($("<td />"));
 		}
 		var indicators = "";
-		indicators += "<div class='indicator " + (item.addressesBundestrojaner ? "green" : "") + "' title='Bundestrojaner'></div>&nbsp;";
-		indicators += "<div class='indicator " + (item.addressesNetzsperren ? "green" : "") + "' title='Netzsperren'></div>&nbsp;";
-		indicators += "<div class='indicator " + (item.addressesVdsVideo ? "green" : "") + "' title='Vorratsdatenspeicherung für Videoüberwachung'></div>&nbsp;";
-		indicators += "<div class='indicator " + (item.addressesUeberwachungStrassen ? "green" : "") + "' title='Vollüberwachung auf Österreichs Straßen'></div>&nbsp;";
-		indicators += "<div class='indicator " + (item.addressesVdsQuickfreeze ? "green" : "") + "' title='Quickfreeze'></div>&nbsp;";
-		indicators += "<div class='indicator " + (item.addressesAnonymeSimkarten ? "green" : "") + "' title='Anonyme Simkarten'></div>&nbsp;";
-		indicators += "<div class='indicator " + (item.addressesImsiCatcher ? "green" : "") + "' title='IMSI-Catcher'></div>&nbsp;";
-		indicators += "<div class='indicator " + (item.addressesLauschangriffAuto ? "green" : "") + "' title='Lauschangriff im Auto'></div>";
+		indicators += "<img class='indicator' src='/static/img/icons/" + (item.addressesBundestrojaner ? "green" : "gray") + "/trojaner.png' title='Bundestrojaner' />&nbsp;";
+		indicators += "<img class='indicator' src='/static/img/icons/" + (item.addressesNetzsperren ? "green" : "gray") + "/netzsperren.png' title='Netzsperren' />&nbsp;";
+		indicators += "<img class='indicator' src='/static/img/icons/" + (item.addressesVdsVideo ? "green" : "gray") + "/totalevideoueberwachung.png' title='Vorratsdatenspeicherung für Videoüberwachung' />&nbsp;";
+		indicators += "<img class='indicator' src='/static/img/icons/" + (item.addressesUeberwachungStrassen ? "green" : "gray") + "/verkehrsueberwachung.png' title='Vollüberwachung auf Österreichs Straßen' />&nbsp;";
+		indicators += "<img class='indicator' src='/static/img/icons/" + (item.addressesVdsQuickfreeze ? "green" : "gray") + "/vorratsdaten.png' title='Quickfreeze' />&nbsp;";
+		indicators += "<img class='indicator' src='/static/img/icons/" + (item.addressesAnonymeSimkarten ? "green" : "gray") + "/sim-id.png' title='Anonyme Simkarten' />&nbsp;";
+		indicators += "<img class='indicator' src='/static/img/icons/" + (item.addressesImsiCatcher ? "green" : "gray") + "/imsicatcher.png' title='IMSI-Catcher' />&nbsp;";
+		indicators += "<img class='indicator' src='/static/img/icons/" + (item.addressesLauschangriffAuto ? "green" : "gray") + "/lauschangriffauto.png' title='Lauschangriff im Auto' />";
 		row.append($("<td />", {class: "center", html: indicators}));
 		row.append($("<td />", {class: "center", text: item.originality}));
 		$("#consultationTable > tbody").append(row);
@@ -241,15 +243,19 @@ function clearTable() {
 
 function loadNextPage() {
 	loading = true;
-	$.getJSON("/konsultation/load?pageIndex=" + pageIndex + "&sortKey=" + sortKey, buildNextPage);
+	$.getJSON("/konsultation/load?pageIndex=" + pageIndex + "&sortKey=" + sortKey + "&filterOrigin=" + filterOrigin + "&filterName=" + filterName, buildNextPage);
 	pageIndex++;
 }
 
-function setSortKey(newSortKey) {
+function refreshTable() {
 	pageIndex = 0;
-	sortKey = newSortKey;
 	clearTable();
 	loadNextPage();
+}
+
+function setSortKey(newSortKey) {
+	sortKey = newSortKey;
+	refreshTable();
 }
 
 $(document).ready(function() {
@@ -260,5 +266,15 @@ $(document).ready(function() {
 		if((pageHeight - bottomOfScreen < 50) && !loading){
 			loadNextPage();
 		}
+	});
+
+	$("input[name='filterOrigin']").change(function () {
+		filterOrigin = $("input[name='filterOrigin']:checked").val();
+		refreshTable();
+	});
+
+	$("input[name='filterName']").change(function () {
+		filterName = $("input[name='filterName']").val().trim();
+		refreshTable();
 	});
 });

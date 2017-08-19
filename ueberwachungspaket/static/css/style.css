@@ -531,6 +531,48 @@ form.row {
 	max-width: 100%;
 }
 
+form.row + form.row {
+	margin-top: 1rem;
+}
+
+form.row > label {
+	padding: 6px 12px;
+	border: 1px solid #CCC;
+}
+
+form.row > label:hover {
+	background-color: #e6e6e6;
+	border-color: #adadad;
+}
+
+form.row > label + input + label {
+	margin-left: -1px;
+}
+
+form.row > label:nth-child(2) {
+	border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+form.row > label:last-child {
+	border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+form.row > input[type='radio']:checked + label {
+	color: #FFF;
+	background-color: #C80000;
+}
+
+form.row > input {
+	margin: 0;
+}
+
+form.row > input[type='text'] + input[type='button'] {
+	width: auto;
+	margin-left: 0.5rem;
+}
+
 .row > * {
 	padding: 0;
 }
@@ -885,14 +927,9 @@ div.center > p,
 
 .indicator {
 	display: inline-block;
-	width: 16px;
-	height: 16px;
+	height: 18px;
 	background-color: #EEE;
 	border: 1px solid #DDD;
-}
-
-.indicator.green {
-	background-color: #A1F675;
 }
 
 .comment {
