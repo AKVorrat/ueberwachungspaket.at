@@ -273,8 +273,15 @@ $(document).ready(function() {
 		refreshTable();
 	});
 
-	$("input[name='filterName']").change(function () {
+	$("#filterNameButton").click(function () {
 		filterName = $("input[name='filterName']").val().trim();
 		refreshTable();
+	});
+
+	$("input[name='filterName']").on("keyup", function (e) {
+		if (e.keyCode == 13) {
+			filterName = $("input[name='filterName']").val().trim();
+			refreshTable();
+		}
 	});
 });
