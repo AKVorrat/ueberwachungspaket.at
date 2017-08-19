@@ -16,6 +16,20 @@
 	<div class="container">
 		<h2>Alle Stellungnahmen im Detail</h2>
 		<p>Die meisten Stellungnahmen werden am Ende der Begutachtungsfrist veröffentlicht. Besuchen Sie diese Seite nach dem 21. August 2017, um ein vollständiges Bild zu bekommen.</p>
+		<div id="settings" class="indent">
+			<form class="row">
+				<input id="filterBmi" class="hidden" name="filterOrigin" value="bmi" type="radio" autocomplete="off" />
+				<label for="filterBmi">BMI</label>
+				<input id="filterBmj" class="hidden" name="filterOrigin" value="bmj" type="radio" autocomplete="off" />
+				<label for="filterBmj">BMJ</label>
+				<input id="filterBoth" class="hidden" name="filterOrigin" value="both" type="radio" checked="checked" autocomplete="off" />
+				<label for="filterBoth">beide</label>
+			</form>
+			<form class="row">
+				<input name="filterName" type="text" placeholder="Textsuche">
+				<input id="filterNameButton" class="btn" type="button" value="Suchen" />
+			</form>
+		</div>
 		<table id="consultationTable" class="indent">
 			<thead>
 				<tr>
@@ -37,7 +51,7 @@
 					<td class="center">{% if opinion.link_bmi_pdf -%}<a href="{{ opinion.link_bmi_pdf }}"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>{% endif -%}</td>
 					<td class="center">{% if opinion.link_bmj_pdf -%}<a href="{{ opinion.link_bmj_pdf }}"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>{% endif -%}</td>
 					<td class="center">
-						<div class="indicator {% if opinion.addresses_bundestrojaner -%}green{% endif -%}" title="Bundestrojaner"></div>&nbsp;<div class="indicator {% if opinion.addresses_netzsperren -%}green{% endif -%}" title="Netzsperren"></div>&nbsp;<div class="indicator {% if opinion.addresses_vds_video -%}green{% endif -%}" title="Vorratsdatenspeicherung für Videoüberwachung"></div>&nbsp;<div class="indicator {% if opinion.addresses_ueberwachungs_strassen -%}green{% endif -%}" title="Vollüberwachung auf Österreichs Straßen"></div>&nbsp;<div class="indicator {% if opinion.addresses_vds_quickfreeze -%}green{% endif -%}" title="Quickfreeze"></div>&nbsp;<div class="indicator {% if opinion.addresses_anonyme_simkarten -%}green{% endif -%}" title="Anonyme Simkarten"></div>&nbsp;<div class="indicator {% if opinion.addresses_imsi_catcher -%}green{% endif -%}" title="IMSI-Catcher"></div>&nbsp;<div class="indicator {% if opinion.addresses_lauschangriff_auto -%}green{% endif -%}" title="Lauschangriff im Auto"></div>
+						<img src="{{ url_for('static', filename='img/icons/' + ('green' if opinion.addresses_bundestrojaner else 'gray') + '/trojaner.png') }}" alt="" class="indicator" title="Bundestrojaner" />&nbsp;<img src="{{ url_for('static', filename='img/icons/' + ('green' if opinion.addresses_netzsperren else 'gray') + '/netzsperren.png') }}" alt="" class="indicator" title="Netzsperren" />&nbsp;<img src="{{ url_for('static', filename='img/icons/' + ('green' if opinion.addresses_vds_video else 'gray') + '/totalevideoueberwachung.png') }}" alt="" class="indicator" title="Vorratsdatenspeicherung für Videoüberwachung" />&nbsp;<img src="{{ url_for('static', filename='img/icons/' + ('green' if opinion.addresses_ueberwachungs_strassen else 'gray') + '/verkehrsueberwachung.png') }}" alt="" class="indicator" title="Vollüberwachung auf Österreichs Straßen" />&nbsp;<img src="{{ url_for('static', filename='img/icons/' + ('green' if opinion.addresses_vds_quickfreeze else 'gray') + '/vorratsdaten.png') }}" alt="" class="indicator" title="Quickfreeze" />&nbsp;<img src="{{ url_for('static', filename='img/icons/' + ('green' if opinion.addresses_anonyme_simkarten else 'gray') + '/sim-id.png') }}" alt="" class="indicator" title="Anonyme Simkarten" />&nbsp;<img src="{{ url_for('static', filename='img/icons/' + ('green' if opinion.addresses_imsi_catcher else 'gray') + '/imsicatcher.png') }}" alt="" class="indicator" title="IMSI-Catcher" />&nbsp;<img src="{{ url_for('static', filename='img/icons/' + ('green' if opinion.addresses_lauschangriff_auto else 'gray') + '/lauschangriffauto.png') }}" alt="" class="indicator" title="Lauschangriff im Auto" />
 					</td>
 					<td class="center">{{ opinion.originality_pretty() }}</td>
 				</tr>

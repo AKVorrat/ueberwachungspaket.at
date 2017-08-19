@@ -3,7 +3,7 @@ from random import choice, shuffle
 from datetime import datetime, date, timedelta
 from re import match
 from flask import render_template, abort, request, url_for, flash, redirect, jsonify, send_from_directory
-from sqlalchemy import func
+from sqlalchemy import func, and_
 from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm.exc import NoResultFound
 from config import *
@@ -69,7 +69,22 @@ def consultation():
 @app.route("/konsultation/load")
 def consultation_load():
     page_index = request.args.get("pageIndex", 0, type=int)
-    query = db_session.query(Opinion).order_by(Opinion.originality.desc(),Opinion.date.desc()).slice(page_index * page_size, (page_index + 1) * page_size).all()
+    sort_key = request.args.get("sortKey")
+    filter_origin = request.args.get("filterOrigin")
+    filter_name = request.args.get("filterName")
+
+    query = db_session.query(Opinion).order_by(Opinion.originality.desc(), Opinion.date.desc())
+
+    if filter_origin:
+        if filter_origin == "bmi":
+            query = query.filter(and_(Opinion.link_bmi_pdf.isnot(None), Opinion.link_bmi_pdf != ""))
+        elif filter_origin == "bmj":
+            query = query.filter(and_(Opinion.link_bmj_pdf.isnot(None), Opinion.link_bmj_pdf != ""))
+
+    if filter_name:
+        query = query.filter(Opinion.name.ilike("%{}%".format(filter_name)))
+
+    query = query.slice(page_index * page_size, (page_index + 1) * page_size).all()
     rows = [row.serialize() for row in query]
     return jsonify(rows=rows)
 
