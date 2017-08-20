@@ -191,9 +191,10 @@ var filterOrigin = "both";
 var filterName = "";
 
 function buildNextPage(data) {
-	rows = data.rows
+	opinions = data.opinions
+	opinionsCount = data.count
 
-	$.each(rows, function(i, item) {
+	$.each(opinions, function(i, item) {
 		row = $("<tr />");
 		if (item.logoFilename) {
 			row.append($("<td />", {class: "center logo", html: $("<img />", {src: item.logoFilename, alt: ""})}));
@@ -231,7 +232,9 @@ function buildNextPage(data) {
 		}
 	})
 
-	if(rows.length > 0) {
+	$("#opinionsCount").text(opinionsCount);
+
+	if(opinions.length > 0) {
 		loading = false;
 	}
 
