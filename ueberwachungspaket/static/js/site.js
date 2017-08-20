@@ -184,11 +184,14 @@ var loadvideo = function() {
 
 // consultation table
 
-var pageIndex = 1;
 var loading = false;
-var sortKey = "originality";
-var filterOrigin = "both";
-var filterName = "";
+var tableSettings = {
+	"pageIndex": 1,
+	"sortKey": "originality",
+	"filterOrigin": "both",
+	"filterName": "",
+	"filterTopic": "all"
+}
 
 function buildNextPage(data) {
 	opinions = data.opinions
@@ -246,18 +249,18 @@ function clearTable() {
 
 function loadNextPage() {
 	loading = true;
-	$.getJSON("/konsultation/load?pageIndex=" + pageIndex + "&sortKey=" + sortKey + "&filterOrigin=" + filterOrigin + "&filterName=" + filterName, buildNextPage);
-	pageIndex++;
+	$.getJSON("/konsultation/load?" + $.param(tableSettings), buildNextPage);
+	tableSettings.pageIndex++;
 }
 
 function refreshTable() {
-	pageIndex = 0;
+	tableSettings.pageIndex = 0;
 	clearTable();
 	loadNextPage();
 }
 
-function setSortKey(newSortKey) {
-	sortKey = newSortKey;
+function setSortKey(sortKey) {
+	tableSettings.sortKey = sortKey;
 	refreshTable();
 }
 
@@ -272,19 +275,24 @@ $(document).ready(function() {
 	});
 
 	$("input[name='filterOrigin']").change(function () {
-		filterOrigin = $("input[name='filterOrigin']:checked").val();
+		tableSettings.filterOrigin = $("input[name='filterOrigin']:checked").val();
 		refreshTable();
 	});
 
 	$("#filterNameButton").click(function () {
-		filterName = $("input[name='filterName']").val().trim();
+		tableSettings.filterName = $("input[name='filterName']").val().trim();
 		refreshTable();
 	});
 
 	$("input[name='filterName']").on("keyup", function (e) {
 		if (e.keyCode == 13) {
-			filterName = $("input[name='filterName']").val().trim();
+			tableSettings.filterName = $("input[name='filterName']").val().trim();
 			refreshTable();
 		}
+	});
+
+	$("select[name='filterTopic']").change(function () {
+		tableSettings.filterTopic = $("select[name='filterTopic']").val();
+		refreshTable();
 	});
 });
