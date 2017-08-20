@@ -16,6 +16,7 @@ See below for dependencies.
 - Markdown
 
 # Includes
+- Chart.js (C) Chart.js Contributors [MIT]
 - jQuery Core (C) jQuery Foundation, Inc. [MIT]
 - Normalize.css (C) Nicolas Gallagher, Jonathan Neal [MIT]
 - OpenSans (C) Steve Matteson [Apache]
