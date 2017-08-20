@@ -58,12 +58,15 @@ def consultation():
     with open("ueberwachungspaket/data/quotes.json", "r") as json_file:
         quotes = load(json_file)
     shuffle(quotes)
-    opinions = db_session.query(Opinion).order_by(Opinion.originality.desc(),Opinion.date.desc()).limit(page_size).all()
+    query = db_session.query(Opinion).order_by(Opinion.originality.desc(), Opinion.date.desc())
+    opinions_count = query.count()
+    opinions = query.limit(page_size).all()
 
     return render_template(
         "consultation.html",
         quotes=quotes,
-        opinions=opinions
+        opinions=opinions,
+        opinions_count=opinions_count
     )
 
 @app.route("/konsultation/load")
@@ -84,9 +87,10 @@ def consultation_load():
     if filter_name:
         query = query.filter(Opinion.name.ilike("%{}%".format(filter_name)))
 
-    query = query.slice(page_index * page_size, (page_index + 1) * page_size).all()
-    rows = [row.serialize() for row in query]
-    return jsonify(rows=rows)
+    opinions_count = query.count()
+    opinions = query.slice(page_index * page_size, (page_index + 1) * page_size).all()
+    opinions = [opinion.serialize() for opinion in opinions]
+    return jsonify(opinions=opinions, count=opinions_count)
 
 @app.route("/konsultation/showpdf/bmi/<int:fid>")
 def showpdf_bmi(fid):
