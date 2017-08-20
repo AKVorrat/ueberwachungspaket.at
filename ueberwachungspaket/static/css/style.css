@@ -941,6 +941,14 @@ div.center > p,
 	font-size: 14px;
 }
 
+.sortable {
+	cursor: pointer;
+}
+
+.sortable:hover {
+	background-color: #DDD;
+}
+
 
 
 
