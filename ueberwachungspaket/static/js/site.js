@@ -295,4 +295,9 @@ $(document).ready(function() {
 		tableSettings.filterTopic = $("select[name='filterTopic']").val();
 		refreshTable();
 	});
+
+	$("th.sortable").click(function () {
+		var sortKey = $(this).data("sortKey");
+		setSortKey(sortKey);
+	});
 });

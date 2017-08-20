@@ -77,24 +77,32 @@ def consultation_load():
     filter_topic = request.args.get("filterTopic")
     filter_name = request.args.get("filterName")
 
-    query = db_session.query(Opinion).order_by(Opinion.originality.desc(), Opinion.date.desc())
+    query = db_session.query(Opinion)
+
+    if sort_key:
+        if sort_key == "name":
+            query = query.order_by(Opinion.name, Opinion.originality.desc())
+        elif sort_key == "date":
+            query = query.order_by(Opinion.date, Opinion.originality.desc())
+        else:
+            query = query.order_by(Opinion.originality.desc(), Opinion.date.desc())
 
     if filter_topic:
         if filter_topic == "bundestrojaner":
             query = query.filter_by(addresses_bundestrojaner=True)
-        if filter_topic == "netzsperren":
+        elif filter_topic == "netzsperren":
             query = query.filter_by(addresses_netzsperren=True)
-        if filter_topic == "vds-video":
+        elif filter_topic == "vds-video":
             query = query.filter_by(addresses_vds_video=True)
-        if filter_topic == "ueberwachung-strassen":
+        elif filter_topic == "ueberwachung-strassen":
             query = query.filter_by(addresses_ueberwachung_strassen=True)
-        if filter_topic == "vds-quickfreeze":
+        elif filter_topic == "vds-quickfreeze":
             query = query.filter_by(addresses_vds_quickfreeze=True)
-        if filter_topic == "anonyme-simkarten":
+        elif filter_topic == "anonyme-simkarten":
             query = query.filter_by(addresses_anonyme_simkarten=True)
-        if filter_topic == "imsi-catcher":
+        elif filter_topic == "imsi-catcher":
             query = query.filter_by(addresses_imsi_catcher=True)
-        if filter_topic == "lauschangriff-auto":
+        elif filter_topic == "lauschangriff-auto":
             query = query.filter_by(addresses_lauschangriff_auto=True)
 
     if filter_origin:
