@@ -1266,6 +1266,7 @@ nav > ul > li.active {
 	overflow: hidden;
 	border-radius: 50%;
 	float: left;
+	background-color: #FFF;
 }
 #quotes .avtxt,
 #anrufen .avtxt {
