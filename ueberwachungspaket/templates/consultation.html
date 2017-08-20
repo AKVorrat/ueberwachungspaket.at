@@ -17,17 +17,32 @@
 		<h2>Alle Stellungnahmen im Detail</h2>
 		<p>Die meisten Stellungnahmen werden am Ende der Begutachtungsfrist veröffentlicht. Besuchen Sie diese Seite nach dem 21. August 2017, um ein vollständiges Bild zu bekommen.</p>
 		<div id="settings" class="indent">
-			<form class="row" action="javascript:void(0);">
-				<input id="filterBmi" class="hidden" name="filterOrigin" value="bmi" type="radio" autocomplete="off" />
-				<label for="filterBmi">BMI</label>
-				<input id="filterBmj" class="hidden" name="filterOrigin" value="bmj" type="radio" autocomplete="off" />
-				<label for="filterBmj">BMJ</label>
-				<input id="filterBoth" class="hidden" name="filterOrigin" value="both" type="radio" checked="checked" autocomplete="off" />
-				<label for="filterBoth">beide</label>
-			</form>
-			<form class="row" action="javascript:void(0);">
-				<input name="filterName" type="text" placeholder="Textsuche">
-				<input id="filterNameButton" class="btn" type="button" value="Suchen" />
+			<form action="javascript:void(0);" autocomplete="off">
+				<div class="row">
+					<input id="filterBmi" class="hidden" name="filterOrigin" value="bmi" type="radio" />
+					<label for="filterBmi">BMI</label>
+					<input id="filterBmj" class="hidden" name="filterOrigin" value="bmj" type="radio" />
+					<label for="filterBmj">BMJ</label>
+					<input id="filterBoth" class="hidden" name="filterOrigin" value="both" type="radio" checked="checked" />
+					<label for="filterBoth">beide</label>
+				</div>
+				<div class="row">
+					<select name="filterTopic">
+						<option value="all" selected="selected">Alle Themen</option>
+						<option value="bundestrojaner">Bundestrojaner</option>
+						<option value="netzsperren">Netzsperren</option>
+						<option value="vds-video">Vorratsdatenspeicherung für Videoüberwachung</option>
+						<option value="ueberwachung-strassen">Vollüberwachung auf Österreichs Straßen</option>
+						<option value="vds-quickfreeze">Quickfreeze</option>
+						<option value="anonyme-simkarten">Anonyme Simkarten</option>
+						<option value="imsi-catcher">IMSI-Catcher</option>
+						<option value="lauschangriff-auto">Lauschangriff im Auto</option>
+					</select>
+				</div>
+				<div class="row">
+					<input name="filterName" type="text" placeholder="Textsuche">
+					<input id="filterNameButton" class="btn" type="button" value="Suchen" />
+				</div>
 			</form>
 			<p class="center"><span id="opinionsCount">{{ opinions_count }}</span> gefundene Einträge</p>
 		</div>
