@@ -194,6 +194,8 @@ function buildNextPage(data) {
 	opinions = data.opinions
 	opinionsCount = data.count
 
+	$("#opinionsCount").text(opinionsCount);
+
 	$.each(opinions, function(i, item) {
 		row = $("<tr />");
 		if (item.logoFilename) {
@@ -232,8 +234,6 @@ function buildNextPage(data) {
 		}
 	})
 
-	$("#opinionsCount").text(opinionsCount);
-
 	if(opinions.length > 0) {
 		loading = false;
 	}
@@ -266,7 +266,7 @@ $(document).ready(function() {
 		var bottomOfScreen = $(window).scrollTop() + $(window).height();
 		var pageHeight = document.body.offsetHeight;
 
-		if((pageHeight - bottomOfScreen < 50) && !loading){
+		if((pageHeight - bottomOfScreen < 100) && !loading){
 			loadNextPage();
 		}
 	});

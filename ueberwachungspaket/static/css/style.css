@@ -937,6 +937,10 @@ div.center > p,
 	font-size: 14px;
 }
 
+#table {
+	min-width: 1280px;
+}
+
 
 
 
