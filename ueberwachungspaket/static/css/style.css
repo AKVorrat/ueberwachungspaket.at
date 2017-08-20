@@ -949,6 +949,10 @@ div.center > p,
 	background-color: #DDD;
 }
 
+#table {
+	min-height: 1080px;
+}
+
 
 
 
