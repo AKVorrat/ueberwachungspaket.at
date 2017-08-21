@@ -114,6 +114,21 @@ def consultation_load():
     opinions = [opinion.serialize() for opinion in opinions]
     return jsonify(opinions=opinions, count=opinions_count)
 
+@app.route("/konsultation/stats")
+def consultation_stats():
+    query = db_session.query(Opinion)
+    stats = {
+        "addressesBundestrojaner": query.filter_by(addresses_bundestrojaner=True).count(),
+        "addressesNetzsperren": query.filter_by(addresses_netzsperren=True).count(),
+        "addressesVdsVideo": query.filter_by(addresses_vds_video=True).count(),
+        "addressesUeberwachungStrassen": query.filter_by(addresses_ueberwachung_strassen=True).count(),
+        "addressesVdsQuickfreeze": query.filter_by(addresses_vds_quickfreeze=True).count(),
+        "addressesAnonymeSimkarten": query.filter_by(addresses_anonyme_simkarten=True).count(),
+        "addressesImsiCatcher": query.filter_by(addresses_imsi_catcher=True).count(),
+        "addressesLauschangriffAuto": query.filter_by(addresses_lauschangriff_auto=True).count()
+    }
+    return jsonify(stats=stats)
+
 @app.route("/konsultation/showpdf/bmi/<int:fid>")
 def showpdf_bmi(fid):
     resp = send_from_directory(PDF_FOLDER, str(fid) + "_bmi.pdf")
