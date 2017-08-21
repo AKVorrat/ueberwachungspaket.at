@@ -46,40 +46,42 @@
 			</form>
 			<p class="center"><span id="opinionsCount">{{ opinions_count }}</span> gefundene Einträge</p>
 		</div>
-		<table id="consultationTable" class="indent">
-			<thead>
-				<tr>
-					<th class="logo"><div style="width: 24px"></div></th>
-					<th class="left absorbing sortable" data-sort-key="name">Name</th>
-					<th class="sortable" data-sort-key="date">Datum</th>
-					<th>BMI</th>
-					<th>BMJ</th>
-					<th>Themen</th>
-					<th class="sortable" data-sort-key="originality">Originalität</th>
-				</tr>
-			</thead>
-			<tbody>
-				{% for opinion in opinions %}
-				<tr>
-					<td class="center logo">{% if opinion.logo_filename -%}<img src="{{ url_for('static', filename='img/logo/' + opinion.logo_filename) }}" alt="" />{% endif -%}</td>
-					<td>{{ opinion.name_pretty() }}</td>
-					<td class="center">{{ opinion.date_pretty() }}</td>
-					<td class="center">{% if opinion.link_bmi_pdf -%}<a href="{{ opinion.link_bmi_pdf }}"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>{% endif -%}</td>
-					<td class="center">{% if opinion.link_bmj_pdf -%}<a href="{{ opinion.link_bmj_pdf }}"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>{% endif -%}</td>
-					<td class="center">
-						<img src="{{ url_for('static', filename='img/icons/' + ('green' if opinion.addresses_bundestrojaner else 'gray') + '/trojaner.png') }}" alt="" class="indicator" title="Bundestrojaner" />&nbsp;<img src="{{ url_for('static', filename='img/icons/' + ('green' if opinion.addresses_netzsperren else 'gray') + '/netzsperren.png') }}" alt="" class="indicator" title="Netzsperren" />&nbsp;<img src="{{ url_for('static', filename='img/icons/' + ('green' if opinion.addresses_vds_video else 'gray') + '/totalevideoueberwachung.png') }}" alt="" class="indicator" title="Vorratsdatenspeicherung für Videoüberwachung" />&nbsp;<img src="{{ url_for('static', filename='img/icons/' + ('green' if opinion.addresses_ueberwachungs_strassen else 'gray') + '/verkehrsueberwachung.png') }}" alt="" class="indicator" title="Vollüberwachung auf Österreichs Straßen" />&nbsp;<img src="{{ url_for('static', filename='img/icons/' + ('green' if opinion.addresses_vds_quickfreeze else 'gray') + '/vorratsdaten.png') }}" alt="" class="indicator" title="Quickfreeze" />&nbsp;<img src="{{ url_for('static', filename='img/icons/' + ('green' if opinion.addresses_anonyme_simkarten else 'gray') + '/sim-id.png') }}" alt="" class="indicator" title="Anonyme Simkarten" />&nbsp;<img src="{{ url_for('static', filename='img/icons/' + ('green' if opinion.addresses_imsi_catcher else 'gray') + '/imsicatcher.png') }}" alt="" class="indicator" title="IMSI-Catcher" />&nbsp;<img src="{{ url_for('static', filename='img/icons/' + ('green' if opinion.addresses_lauschangriff_auto else 'gray') + '/lauschangriffauto.png') }}" alt="" class="indicator" title="Lauschangriff im Auto" />
-					</td>
-					<td class="center">{{ opinion.originality_pretty() }}</td>
-				</tr>
-				{% if opinion.comment -%}
-				<tr class="comment">
-					<td></td>
-					<td colspan="6">{{ opinion.comment }}</td>
-				</tr>
-				{% endif -%}
-				{% endfor %}
-			</tbody>
-		</table>
+		<div style="overflow-x:auto;">
+			<table id="consultationTable" class="indent">
+				<thead>
+					<tr>
+						<th class="logo"><div style="width: 24px"></div></th>
+						<th class="left absorbing sortable" data-sort-key="name">Name</th>
+						<th class="sortable" data-sort-key="date">Datum</th>
+						<th>BMI</th>
+						<th>BMJ</th>
+						<th>Themen</th>
+						<th class="sortable" data-sort-key="originality">Originalität</th>
+					</tr>
+				</thead>
+				<tbody>
+					{% for opinion in opinions %}
+					<tr>
+						<td class="center logo">{% if opinion.logo_filename -%}<img src="{{ url_for('static', filename='img/logo/' + opinion.logo_filename) }}" alt="" />{% endif -%}</td>
+						<td>{{ opinion.name_pretty() }}</td>
+						<td class="center">{{ opinion.date_pretty() }}</td>
+						<td class="center">{% if opinion.link_bmi_pdf -%}<a href="{{ opinion.link_bmi_pdf }}"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>{% endif -%}</td>
+						<td class="center">{% if opinion.link_bmj_pdf -%}<a href="{{ opinion.link_bmj_pdf }}"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>{% endif -%}</td>
+						<td class="center">
+							<img src="{{ url_for('static', filename='img/icons/' + ('green' if opinion.addresses_bundestrojaner else 'gray') + '/trojaner.png') }}" alt="" class="indicator" title="Bundestrojaner" />&nbsp;<img src="{{ url_for('static', filename='img/icons/' + ('green' if opinion.addresses_netzsperren else 'gray') + '/netzsperren.png') }}" alt="" class="indicator" title="Netzsperren" />&nbsp;<img src="{{ url_for('static', filename='img/icons/' + ('green' if opinion.addresses_vds_video else 'gray') + '/totalevideoueberwachung.png') }}" alt="" class="indicator" title="Vorratsdatenspeicherung für Videoüberwachung" />&nbsp;<img src="{{ url_for('static', filename='img/icons/' + ('green' if opinion.addresses_ueberwachungs_strassen else 'gray') + '/verkehrsueberwachung.png') }}" alt="" class="indicator" title="Vollüberwachung auf Österreichs Straßen" />&nbsp;<img src="{{ url_for('static', filename='img/icons/' + ('green' if opinion.addresses_vds_quickfreeze else 'gray') + '/vorratsdaten.png') }}" alt="" class="indicator" title="Quickfreeze" />&nbsp;<img src="{{ url_for('static', filename='img/icons/' + ('green' if opinion.addresses_anonyme_simkarten else 'gray') + '/sim-id.png') }}" alt="" class="indicator" title="Anonyme Simkarten" />&nbsp;<img src="{{ url_for('static', filename='img/icons/' + ('green' if opinion.addresses_imsi_catcher else 'gray') + '/imsicatcher.png') }}" alt="" class="indicator" title="IMSI-Catcher" />&nbsp;<img src="{{ url_for('static', filename='img/icons/' + ('green' if opinion.addresses_lauschangriff_auto else 'gray') + '/lauschangriffauto.png') }}" alt="" class="indicator" title="Lauschangriff im Auto" />
+						</td>
+						<td class="center">{{ opinion.originality_pretty() }}</td>
+					</tr>
+					{% if opinion.comment -%}
+					<tr class="comment">
+						<td></td>
+						<td colspan="6">{{ opinion.comment }}</td>
+					</tr>
+					{% endif -%}
+					{% endfor %}
+				</tbody>
+			</table>
+		</div>
 	</div>
 </section>
 {% endblock %}
