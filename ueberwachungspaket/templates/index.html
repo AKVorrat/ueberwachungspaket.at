@@ -12,14 +12,12 @@
 	</div>
 {% endblock %}
 
-{% block precontent %}
-
-<section id="consultation">
-
-	<div id="block" class="bg-white">
+{% block content %}
+<div id="consultation" class="pre-content bg-white">
+	<div id="block">
 		<div class="block container">
 			<div class="blk-middle">
-                <p>Mitten im Sommer führt die Bundesregierung die Begutachtung des Überwachungspakets durch.</p>
+				<p>Mitten im Sommer führt die Bundesregierung die Begutachtung des Überwachungspakets durch.</p>
 				<h2 class="trump">Beteilige dich jetzt an der Konsultation!</h2>
 				<h3 style="margin: 0;font-size: 1.1em;">Es ist ganz einfach.</h3>
 			</div>
@@ -27,14 +25,14 @@
 	</div>
 
 	<div class="container">
-        <div class="progress-bar">
-            <div class="progress-bar-done" style="width: {{ consultation_progress_count_percent }}%"></div>
-            <div class="progress-bar-text center">
-                {{ consultation_progress_count }} Personen haben bereits mitgemacht!
-            </div>
-        </div>
+		<div class="progress-bar">
+			<div class="progress-bar-done" style="width: {{ consultation_progress_count_percent }}%"></div>
+			<div class="progress-bar-text center">
+				{{ consultation_progress_count }} Personen haben bereits mitgemacht!
+			</div>
+		</div>
 
-		<form action="/consultation/" method="post">
+		<form action="/konsultation/form/" method="post">
 			<h3 class="center consultation-issues-pre">Ich bin gegen ...</h3>
 			<ul id="consultation-issues" class="consultation-issues">
 				{% for issue in consultation_issues -%}
@@ -50,12 +48,21 @@
 			<input type="submit" value="Weiter" class="btn btn-default" id="start-consultation" />
 		</form>
 	</div>
-</section>
+</div>
 
-{% endblock %}
-
-{% block content %}
 <div class="frontpage-content">
+	<section id="quotes">
+		<div class="container">
+			<h2 class="center">Die Begutachtung zum Überwachungspaket ist bald vorbei</h2>
+			<h4 class="center">Sieh dir an, was die Stellungnahmen sagen!</h4>
+			{% include "consultation_quotes.html" %}
+		</div>
+	</section>
+	<section>
+		<div class="container">
+			<a class="btn btn-default" href="{{ url_for('consultation', _anchor='table') }}">Alle Stellungnahmen ansehen</a>
+		</div>
+	</section>
 	<section id="topics">
 		<div class="container">
 			<h2 class="center">Das steckt im Überwachungspaket</h2>
@@ -125,7 +132,7 @@
 				<div class="column">
 					<a href="https://epicenter.works/thema/ueberwachungspaket#Bundesheer">
 						<div class="c-block">
-							<div class="center"><img src="static/img/icons/Bundesheer.png"></div>
+							<div class="center"><img src="static/img/icons/Bundesheer-verhindert.png"></div>
 							<h4>Bundesheer im Inneren</h4>
 						</div>
 					</a>
@@ -157,13 +164,6 @@
 			</div>
 		</div>
 	</section>
-    <section class="center">
-		<h2>Deine Regierung will dich überwachen!</h2>
-		<a href="#consultation" class="btn btn-default">werde aktiv</a>
-	</section>
-	<section>
-		<a href="weitersagen/" class="btn btn-default">Sprich über Überwachung</a>
-	</section>
 	<section id="sicherheit">
 		<div class="container">
 			<h2>Echtes Sicherheitspaket statt Überwachungspaket</h2>
@@ -179,15 +179,14 @@
 			</ul>
 		</div>
 	</section>
-	<section class="aktivgreen">
-		<a href="#consultation" class="btn btn-default">Werde aktiv</a>
+	<section >
+		<a href="weitersagen/" class="btn btn-default">Sprich über Überwachung</a>
 	</section>
 	<section class="chat">
 		<div class="container">
 		<h2>Wie betrifft mich das Überwachungspaket?</h2>
 		<ul>
 			<li>
-
 				<div class="avtxt"><h3>Lückenlose Überwachung betrifft auch dich!</h3></div>
 			</li>
 			<li>
@@ -238,13 +237,14 @@
 		</ul>
 		</div>
 	</section>
-	
+	<section >
+		<a href="weitersagen/" class="btn btn-default">Sprich über Überwachung</a>
+	</section>
 	<section class="chat">
 		<div class="container">
 		<h2>Überwachung macht uns sicherer?</h2>
 		<ul>
 			<li>
-
 				<div class="avtxt"><h3>Haben dir Politiker jemals einen Beleg dafür geliefert?</h3></div>
 			</li>
 			<li>

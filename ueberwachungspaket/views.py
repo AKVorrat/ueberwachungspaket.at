@@ -2,30 +2,34 @@
 from random import choice, shuffle
 from datetime import datetime, date, timedelta
 from re import match
-from flask import render_template, abort, request, url_for, flash, redirect
-from sqlalchemy import func
+from flask import render_template, abort, request, url_for, flash, redirect, jsonify, send_from_directory
+from sqlalchemy import func, and_
 from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm.exc import NoResultFound
 from config import *
 from config.main import *
 from config.mail import *
-from database.models import Representatives, Reminder, Mail, Sender, ConsultationSender
+from database.models import Representatives, Reminder, Mail, Sender, ConsultationSender, Opinion
 from database.models import load_consultation_issues, sendmail
 from . import app, db_session
 from .decorators import twilio_request
 
+from json import load
 import math
-import weasyprint 
+import weasyprint
 from markdown import markdown
 import re
 
+page_size = 35
 reps = Representatives()
-
 c_issues = load_consultation_issues()
 
 @app.route("/")
 def root():
-    important_reps = [reps.get_representative_by_id(id) for id in IMPORTANT_REPS]
+    with open("ueberwachungspaket/data/quotes.json", "r") as json_file:
+        quotes = load(json_file)
+    shuffle(quotes)
+
     consultation_count = db_session.query(func.count(ConsultationSender.date_validated)).one()[0]
     if consultation_count < 100:
         consultation_max = 100
@@ -33,27 +37,111 @@ def root():
         consultation_max = math.ceil(consultation_count / 10000.0) * 10000
     return render_template(
         "index.html", 
-        reps=important_reps, 
+        quotes=quotes,
         consultation_progress_max=consultation_max,
         consultation_progress_count=consultation_count,
         consultation_progress_count_percent=100.0*consultation_count/consultation_max,
         consultation_issues=c_issues
     )
 
-
 @app.route("/politiker/")
 def representatives():
     reps_random = reps.representatives + reps.government
     shuffle(reps_random)
-    return render_template("representatives.html", reps=reps_random)
+    return render_template(
+        "representatives.html",
+        reps=reps_random
+    )
 
 @app.route("/p/<prettyname>/")
 def representative(prettyname):
     rep = reps.get_representative_by_name(prettyname)
     if rep:
-        return render_template("representative.html", rep=rep, twilio_number=TWILIO_NUMBERS[0])
+        return render_template(
+            "representative.html",
+            rep=rep,
+            twilio_number=TWILIO_NUMBERS[0]
+        )
     else:
         abort(404)
+
+@app.route("/konsultation/")
+def consultation():
+    with open("ueberwachungspaket/data/quotes.json", "r") as json_file:
+        quotes = load(json_file)
+    shuffle(quotes)
+    query = db_session.query(Opinion).order_by(Opinion.originality.desc(), Opinion.date.desc())
+    opinions_count = query.count()
+    opinions = query.limit(page_size).all()
+
+    return render_template(
+        "consultation.html",
+        quotes=quotes,
+        opinions=opinions,
+        opinions_count=opinions_count
+    )
+
+@app.route("/konsultation/load")
+def consultation_load():
+    page_index = request.args.get("pageIndex", 0, type=int)
+    sort_key = request.args.get("sortKey")
+    filter_origin = request.args.get("filterOrigin")
+    filter_topic = request.args.get("filterTopic")
+    filter_name = request.args.get("filterName")
+
+    query = db_session.query(Opinion)
+
+    if sort_key:
+        if sort_key == "name":
+            query = query.order_by(Opinion.name, Opinion.originality.desc())
+        elif sort_key == "date":
+            query = query.order_by(Opinion.date, Opinion.originality.desc())
+        else:
+            query = query.order_by(Opinion.originality.desc(), Opinion.date.desc())
+
+    if filter_topic:
+        if filter_topic == "bundestrojaner":
+            query = query.filter_by(addresses_bundestrojaner=True)
+        elif filter_topic == "netzsperren":
+            query = query.filter_by(addresses_netzsperren=True)
+        elif filter_topic == "vds-video":
+            query = query.filter_by(addresses_vds_video=True)
+        elif filter_topic == "ueberwachung-strassen":
+            query = query.filter_by(addresses_ueberwachung_strassen=True)
+        elif filter_topic == "vds-quickfreeze":
+            query = query.filter_by(addresses_vds_quickfreeze=True)
+        elif filter_topic == "anonyme-simkarten":
+            query = query.filter_by(addresses_anonyme_simkarten=True)
+        elif filter_topic == "imsi-catcher":
+            query = query.filter_by(addresses_imsi_catcher=True)
+        elif filter_topic == "lauschangriff-auto":
+            query = query.filter_by(addresses_lauschangriff_auto=True)
+
+    if filter_origin:
+        if filter_origin == "bmi":
+            query = query.filter(and_(Opinion.link_bmi_pdf.isnot(None), Opinion.link_bmi_pdf != ""))
+        elif filter_origin == "bmj":
+            query = query.filter(and_(Opinion.link_bmj_pdf.isnot(None), Opinion.link_bmj_pdf != ""))
+
+    if filter_name:
+        query = query.filter(Opinion.name.ilike("%{}%".format(filter_name)))
+
+    opinions_count = query.count()
+    opinions = query.slice(page_index * page_size, (page_index + 1) * page_size).all()
+    opinions = [opinion.serialize() for opinion in opinions]
+    return jsonify(opinions=opinions, count=opinions_count)
+
+@app.route("/konsultation/showpdf/bmi/<int:fid>")
+def showpdf_bmi(fid):
+    resp = send_from_directory(PDF_FOLDER, str(fid) + "_bmi.pdf")
+    resp.headers["Content-Disposition"] = "inline; filename=" + str(fid) + "_bmi.pdf"
+    return resp
+
+@app.route("/konsultation/showpdf/bmj/<int:fid>")
+def showpdf_bmj(fid):
+    resp = send_from_directory(PDF_FOLDER, str(fid) + "_bmj.pdf")
+    resp.headers["Content-Disposition"] = "inline; filename=" + str(fid) + "_bmj.pdf"
+    return resp
 
 @app.route("/weitersagen/")
 def share():
@@ -180,7 +268,7 @@ def callback(resp):
 @twilio_request
 def gather_menu(resp):
     number = request.values.get("From")
-    
+
     try:
         reminder = Reminder(number)
         db_session.add(reminder)
@@ -351,8 +439,8 @@ def reminder_info_tape(resp):
 
     resp.redirect(url_for("gather_reminder_menu"))
 
-@app.route("/consultation/", methods=["post"])
-def consultation():
+@app.route("/konsultation/form/", methods=["post"])
+def consultation_form():
     selected_issues = list(map(lambda x: [i for i in c_issues if i['id'] == x][0],
                                filter(lambda x: x != None,
                                       [request.form.get(issue['id']) for issue in c_issues])))
@@ -369,7 +457,7 @@ def consultation():
             bmi_text += issue['text'] + '\n\n'
 
     return render_template(
-        "consultation.html", 
+        "consultation_form.html", 
         consultation_issues=selected_issues,
         consultation_text_bmi=bmi_text, 
         consultation_text_bmj=bmj_text,

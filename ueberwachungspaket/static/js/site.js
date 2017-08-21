@@ -7,8 +7,8 @@ if (!navigator.userAgent.match(/iPhone|iPad|Android/i)) {
 // Make SMS links compatible cross devices
 
 document.addEventListener('DOMContentLoaded', (function () {
-    var link = new SMSLink.link();
-    link.replaceAll();
+	var link = new SMSLink.link();
+	link.replaceAll();
 }), false);
 
 // smooth scroll
@@ -27,6 +27,45 @@ $(document).ready(function () {
 		}
 	});
 });
+
+
+// slick carousel
+
+$(document).ready(function() {
+	if ($("#quotes-carousel").length > 0) {
+		var carousel = $("#quotes-carousel").slick({
+			dots: true,
+			infinite: true,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			adaptiveHeight: true,
+			autoplay: true,
+			autoplaySpeed: 5000,
+			responsive: [
+				{
+					breakpoint: 992,
+					settings: {
+						dots: false
+					}
+				}
+			]
+		});
+
+		$(window).scroll(function() {
+			var top_of_element = $("#quotes-carousel").offset().top;
+			var bottom_of_element = $("#quotes-carousel").offset().top + $("#quotes-carousel").outerHeight();
+			var top_of_screen = $(window).scrollTop();
+			var bottom_of_screen = $(window).scrollTop() + $(window).height();
+
+			if((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
+				carousel.slick("slickPlay");
+			} else {
+				carousel.slick("slickPause");
+			}
+		});
+	}
+});
+
 
 // search filter
 
@@ -137,19 +176,17 @@ function convertDateToString(date)
 
 /* Load call video */
 $(document).ready(function() {
-	$("#call-video").html('<a href="#" onclick="loadvideo(); return false;"><img src="static/img/video.jpg" width="560" height="315" alt="Anrufvideo"></a>') 
+	$("#call-video").html('<a href="#" onclick="loadvideo(); return false;"><img src="static/img/video.jpg" width="560" height="315" alt="Anrufvideo"></a>')
 });
 var loadvideo = function() {
 	$("#call-video").html('<iframe width="560" height="315" src="https://www.youtube.com/embed/-iXMesM0txo?autoplay=1" frameborder="0" allowfullscreen></iframe>')
 }
-
 
 /*
  * Consultation
  */
 
 $(document).ready(function() {
-
 	/* at least one issue must be checked */
 	var switchConsBt = function() {
 		var l  = $('#consultation-issues input:checked').length;
@@ -167,8 +204,6 @@ $(document).ready(function() {
 			$('#start-consultation').removeClass('all-issues-checked');
 			$('#issues-check-all').removeClass('hide');
 		}
-
-
 	}
 	switchConsBt();
 
@@ -187,7 +222,6 @@ $(document).ready(function() {
 		switchConsBt();
 		highlightActiveIssues();
 	});
-
 
 	/* check all issues */
 	$('#issues-check-all').click( function(){
@@ -218,7 +252,124 @@ $(document).ready(function() {
 	$('.typeaware').each(function() {
 		$(this).on('input', typeSignature);
 	});
-
-
 });
 
+// consultation table
+
+var loading = false;
+var tableSettings = {
+	"pageIndex": 1,
+	"sortKey": "originality",
+	"filterOrigin": "both",
+	"filterName": "",
+	"filterTopic": "all"
+}
+
+function buildNextPage(data) {
+	opinions = data.opinions
+	opinionsCount = data.count
+
+	$("#opinionsCount").text(opinionsCount);
+
+	$.each(opinions, function(i, item) {
+		row = $("<tr />");
+		if (item.logoFilename) {
+			row.append($("<td />", {class: "center logo", html: $("<img />", {src: item.logoFilename, alt: ""})}));
+		} else {
+			row.append($("<td />"));
+		}
+		row.append($("<td />", {text: item.name}));
+		row.append($("<td />", {class: "center", text: item.date}));
+		if (item.linkBmi) {
+			row.append($("<td />", {class: "center", html: "<a href='" + item.linkBmi + "'<i class='fa fa-file-pdf-o' aria-hidden='true'></i></a>"}));
+		} else {
+			row.append($("<td />"));
+		}
+		if (item.linkBmj) {
+			row.append($("<td />", {class: "center", html: "<a href='" + item.linkBmj + "'<i class='fa fa-file-pdf-o' aria-hidden='true'></i></a>"}));
+		} else {
+			row.append($("<td />"));
+		}
+		var indicators = "";
+		indicators += "<img class='indicator' src='/static/img/icons/" + (item.addressesBundestrojaner ? "green" : "gray") + "/trojaner.png' title='Bundestrojaner' />&nbsp;";
+		indicators += "<img class='indicator' src='/static/img/icons/" + (item.addressesNetzsperren ? "green" : "gray") + "/netzsperren.png' title='Netzsperren' />&nbsp;";
+		indicators += "<img class='indicator' src='/static/img/icons/" + (item.addressesVdsVideo ? "green" : "gray") + "/totalevideoueberwachung.png' title='Vorratsdatenspeicherung für Videoüberwachung' />&nbsp;";
+		indicators += "<img class='indicator' src='/static/img/icons/" + (item.addressesUeberwachungStrassen ? "green" : "gray") + "/verkehrsueberwachung.png' title='Vollüberwachung auf Österreichs Straßen' />&nbsp;";
+		indicators += "<img class='indicator' src='/static/img/icons/" + (item.addressesVdsQuickfreeze ? "green" : "gray") + "/vorratsdaten.png' title='Quickfreeze' />&nbsp;";
+		indicators += "<img class='indicator' src='/static/img/icons/" + (item.addressesAnonymeSimkarten ? "green" : "gray") + "/sim-id.png' title='Anonyme Simkarten' />&nbsp;";
+		indicators += "<img class='indicator' src='/static/img/icons/" + (item.addressesImsiCatcher ? "green" : "gray") + "/imsicatcher.png' title='IMSI-Catcher' />&nbsp;";
+		indicators += "<img class='indicator' src='/static/img/icons/" + (item.addressesLauschangriffAuto ? "green" : "gray") + "/lauschangriffauto.png' title='Lauschangriff im Auto' />";
+		row.append($("<td />", {class: "center", html: indicators}));
+		row.append($("<td />", {class: "center", text: item.originality}));
+		$("#consultationTable > tbody").append(row);
+
+		if (item.comment) {
+			row = "<tr class='comment'><td></td><td colspan='6'>" + item.comment + "</td></tr>"
+			$("#consultationTable > tbody").append(row);
+		}
+	})
+
+	if(opinions.length > 0) {
+		loading = false;
+	}
+
+}
+
+function clearTable() {
+	$("#consultationTable > tbody").empty();
+}
+
+function loadNextPage() {
+	loading = true;
+	$.getJSON("/konsultation/load?" + $.param(tableSettings), buildNextPage);
+	tableSettings.pageIndex++;
+}
+
+function refreshTable() {
+	tableSettings.pageIndex = 0;
+	clearTable();
+	loadNextPage();
+}
+
+function setSortKey(sortKey) {
+	tableSettings.sortKey = sortKey;
+	refreshTable();
+}
+
+$(document).ready(function() {
+	$(window).scroll(function() {
+		var bottomOfScreen = $(window).scrollTop() + $(window).height();
+		var pageHeight = document.body.offsetHeight;
+
+		if((pageHeight - bottomOfScreen < 100) && !loading){
+			loadNextPage();
+		}
+	});
+
+	$("input[name='filterOrigin']").change(function () {
+		tableSettings.filterOrigin = $("input[name='filterOrigin']:checked").val();
+		refreshTable();
+	});
+
+	$("#filterNameButton").click(function () {
+		tableSettings.filterName = $("input[name='filterName']").val().trim();
+		refreshTable();
+	});
+
+	$("input[name='filterName']").on("keyup", function (e) {
+		if (e.keyCode == 13) {
+			tableSettings.filterName = $("input[name='filterName']").val().trim();
+			refreshTable();
+		}
+	});
+
+	$("select[name='filterTopic']").change(function () {
+		tableSettings.filterTopic = $("select[name='filterTopic']").val();
+		refreshTable();
+	});
+
+	$("th.sortable").click(function () {
+		var sortKey = $(this).data("sortKey");
+		setSortKey(sortKey);
+	});
+});
