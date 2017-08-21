@@ -386,8 +386,8 @@ class Opinion(Base):
         return (self.originality_bmi + self.originality_bmj) / 2
 
     def name_pretty(self):
-        if len(self.name) > 64:
-            return self.name[0:65] + "..."
+        if len(self.name) > 48:
+            return self.name[0:49] + "..."
         else:
             return self.name
 
