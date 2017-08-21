@@ -182,6 +182,60 @@ var loadvideo = function() {
 	$("#call-video").html('<iframe width="560" height="315" src="https://www.youtube.com/embed/-iXMesM0txo?autoplay=1" frameborder="0" allowfullscreen></iframe>')
 }
 
+// bar chart
+
+$(document).ready(function () {
+	var ctx = $("#barChart")
+
+	if (ctx.length > 0) {
+		$.getJSON("/konsultation/stats", function (data) {
+			var data = {
+				labels: [
+					"Bundestrojaner",
+					"Netzsperren",
+					"Vorratsdatenspeicherung für Videoüberwachung",
+					"Vollüberwachung auf Österreichs Straßen",
+					"Quickfreeze",
+					"Anonyme Simkarten",
+					"IMSI-Catcher",
+					"Lauschangriff im Auto"
+				],
+				datasets: [
+					{
+						data: [
+							data.stats.addressesBundestrojaner,
+							data.stats.addressesNetzsperren,
+							data.stats.addressesVdsVideo,
+							data.stats.addressesUeberwachungStrassen,
+							data.stats.addressesVdsQuickfreeze,
+							data.stats.addressesAnonymeSimkarten,
+							data.stats.addressesImsiCatcher,
+							data.stats.addressesLauschangriffAuto
+						]
+					}
+				]
+			};
+
+			var options = {
+				"legend": {
+					"display": false
+				},
+				"elements": {
+					"rectangle": {
+						"backgroundColor": "#00466e"
+					}
+				}
+			}
+
+			var barChart = new Chart(ctx, {
+				type: "horizontalBar",
+				data: data,
+				options: options
+			});
+		});
+	}
+});
+
 // consultation table
 
 var loading = false;
