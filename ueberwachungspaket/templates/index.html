@@ -13,10 +13,47 @@
 {% endblock %}
 
 {% block content %}
+<div id="consultation" class="pre-content bg-white">
+	<div id="block">
+		<div class="block container">
+			<div class="blk-middle">
+				<p>Mitten im Sommer führt die Bundesregierung die Begutachtung des Überwachungspakets durch.</p>
+				<h2 class="trump">Beteilige dich jetzt an der Konsultation!</h2>
+				<h3 style="margin: 0;font-size: 1.1em;">Es ist ganz einfach.</h3>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="progress-bar">
+			<div class="progress-bar-done" style="width: {{ consultation_progress_count_percent }}%"></div>
+			<div class="progress-bar-text center">
+				{{ consultation_progress_count }} Personen haben bereits mitgemacht!
+			</div>
+		</div>
+
+		<form action="/konsultation/form/" method="post">
+			<h3 class="center consultation-issues-pre">Ich bin gegen ...</h3>
+			<ul id="consultation-issues" class="consultation-issues">
+				{% for issue in consultation_issues -%}
+				<li>
+					<label for="issue-{{ issue.id }}" class="issue-label">
+						<input type="checkbox" name="{{ issue.id }}" value="{{ issue.id }}" id="issue-{{ issue.id }}" class="issue-cb">
+						<span class="issue-name">{{ issue.name }}</span>
+					</label>
+				</li>
+				{% endfor -%}
+			</ul>
+			<div id="issues-check-all">alles auswählen</div>
+			<input type="submit" value="Weiter" class="btn btn-default" id="start-consultation" />
+		</form>
+	</div>
+</div>
+
 <div class="frontpage-content">
 	<section id="quotes">
 		<div class="container">
-			<h2 class="center">Die Begutachtung zum Überwachungspaket ist vorbei</h2>
+			<h2 class="center">Die Begutachtung zum Überwachungspaket ist bald vorbei</h2>
 			<h4 class="center">Sieh dir an, was die Stellungnahmen sagen!</h4>
 			{% include "consultation_quotes.html" %}
 		</div>

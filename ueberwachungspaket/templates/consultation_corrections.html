@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+	<title>E-Mail-Bestätigung | {{ config['PROJECT_NAME'] }}</title>
+{% endblock title%}
+
+{% block content %}
+	<section>
+	  <div class="container">
+		<h2>E-Mail-Bestätigung</h2>
+        <p>Sie haben bereits eine Stellungnahme versendet. Korrekturen sind möglich, müssen aber direkt an die zuständigen Ministerien und ans Parlament gerichtet werden.</p>
+        <p>Die E-Mail-Adresse des Parlaments ist: <a href="mailto:{{ address_parliament }}">{{ address_parliament }}</a></p>
+        <p>Die E-Mail-Adresse des Innenministeriums ist: <a href="mailto:{{ address_bmi }}">{{ address_bmi }}</a></p>
+        <p>Die E-Mail-Adresse des Justizministeriums ist: <a href="mailto:{{ address_bmj }}">{{ address_bmj }}</a></p>
+      </div>
+	</section>
+{% endblock %}
