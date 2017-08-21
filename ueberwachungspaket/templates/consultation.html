@@ -44,13 +44,12 @@
 					<input id="filterNameButton" class="btn" type="button" value="Suchen" />
 				</div>
 			</form>
-			<p class="center"><span id="opinionsCount">{{ opinions_count }}</span> gefundene Einträge</p>
+			<p class="center"><span id="opinionsCount">{{ opinions_count }}</span> öffentliche Einträge gefunden</p>
 		</div>
 		<div style="overflow-x:auto;">
 			<table id="consultationTable" class="indent">
 				<thead>
 					<tr>
-						<th class="logo"><div style="width: 24px"></div></th>
 						<th class="left absorbing sortable" data-sort-key="name">Name</th>
 						<th class="sortable" data-sort-key="date">Datum</th>
 						<th>BMI</th>
@@ -62,7 +61,6 @@
 				<tbody>
 					{% for opinion in opinions %}
 					<tr>
-						<td class="center logo">{% if opinion.logo_filename -%}<img src="{{ url_for('static', filename='img/logo/' + opinion.logo_filename) }}" alt="" />{% endif -%}</td>
 						<td>{{ opinion.name_pretty() }}</td>
 						<td class="center">{{ opinion.date_pretty() }}</td>
 						<td class="center">{% if opinion.link_bmi_pdf -%}<a href="{{ opinion.link_bmi_pdf }}"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>{% endif -%}</td>

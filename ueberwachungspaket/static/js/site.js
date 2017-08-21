@@ -273,11 +273,6 @@ function buildNextPage(data) {
 
 	$.each(opinions, function(i, item) {
 		row = $("<tr />");
-		if (item.logoFilename) {
-			row.append($("<td />", {class: "center logo", html: $("<img />", {src: item.logoFilename, alt: ""})}));
-		} else {
-			row.append($("<td />"));
-		}
 		row.append($("<td />", {text: item.name}));
 		row.append($("<td />", {class: "center", text: item.date}));
 		if (item.linkBmi) {
