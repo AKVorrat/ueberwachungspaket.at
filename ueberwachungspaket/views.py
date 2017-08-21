@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from random import choice, shuffle
 from datetime import datetime, date, timedelta
+from json import load
 from re import match
 from flask import render_template, abort, request, url_for, flash, redirect, jsonify, send_from_directory
 from sqlalchemy import func, and_
@@ -12,12 +13,6 @@ from config.mail import *
 from database.models import Representatives, Reminder, Mail, Sender, Opinion
 from . import app, db_session
 from .decorators import twilio_request
-
-from json import load
-import math
-import weasyprint
-from markdown import markdown
-import re
 
 page_size = 35
 reps = Representatives()
