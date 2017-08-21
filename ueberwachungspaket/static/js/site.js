@@ -224,6 +224,13 @@ $(document).ready(function () {
 					"rectangle": {
 						"backgroundColor": "#00466e"
 					}
+				},
+				"scales": {
+					"xAxes": [{
+						"ticks": {
+							"beginAtZero": true
+						}
+					}]
 				}
 			}
 
