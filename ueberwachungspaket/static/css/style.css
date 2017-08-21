@@ -387,16 +387,6 @@ td.left {
 	text-align: left;
 }
 
-th.logo,
-td.logo {
-	padding-right: 0px;
-}
-
-td.logo > img {
-	display: block;
-	width: 100%;
-}
-
 th {
 	background-color: #EEE;
 	font-size: 14px;
