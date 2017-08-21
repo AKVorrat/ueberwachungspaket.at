@@ -11,6 +11,7 @@ from email.mime.application import MIMEApplication
 from flask import url_for
 from sqlalchemy import UniqueConstraint, Column, Boolean, Integer, String, Date, DateTime, ForeignKey, Text
 from sqlalchemy.orm import relationship
+from sqlalchemy.ext.hybrid import hybrid_property
 from config import DEBUG, MAIL_FROM, MAIL_DEBUG
 from config.mail import *
 from . import Base
@@ -319,3 +320,101 @@ class ConsultationSender(Base):
         msg = CONSULTATION_MAIL_VALIDATE.format(first_name=self.first_name, last_name=self.last_name, url=url)
         sendmail(addr_from, addr_to, subject, msg)
 
+class Opinion(Base):
+    __tablename__ = "opinions"
+
+    id = Column(Integer, primary_key=True)
+    name = Column(String(256), nullable=False)
+    logo_filename = Column(String(256))
+    date = Column(Date, nullable=False)
+    link_bmi_parliament = Column(String(256))
+    link_bmi_pdf = Column(String(256))
+    originality_bmi = Column(Integer)
+    link_bmj_parliament = Column(String(256))
+    link_bmj_pdf = Column(String(256))
+    originality_bmj = Column(Integer)
+    addresses_bundestrojaner = Column(Boolean, nullable=False)
+    addresses_netzsperren = Column(Boolean, nullable=False)
+    addresses_vds_video = Column(Boolean, nullable=False)
+    addresses_ueberwachung_strassen = Column(Boolean, nullable=False)
+    addresses_vds_quickfreeze = Column(Boolean, nullable=False)
+    addresses_anonyme_simkarten = Column(Boolean, nullable=False)
+    addresses_imsi_catcher = Column(Boolean, nullable=False)
+    addresses_lauschangriff_auto = Column(Boolean, nullable=False)
+    comment = Column(Text)
+
+    def __init__(self,
+                 name,
+                 logo_filename,
+                 date,
+                 link_bmi_parliament,
+                 link_bmi_pdf,
+                 originality_bmi,
+                 link_bmj_parliament,
+                 link_bmj_pdf,
+                 originality_bmj,
+                 addresses_bundestrojaner,
+                 addresses_netzsperren,
+                 addresses_vds_video,
+                 addresses_ueberwachung_strassen,
+                 addresses_vds_quickfreeze,
+                 addresses_anonyme_simkarten,
+                 addresses_imsi_catcher,
+                 addresses_lauschangriff_auto,
+                 comment):
+        self.name = name
+        self.logo_filename = logo_filename
+        self.date = date
+        self.link_bmi_parliament = link_bmi_parliament
+        self.link_bmi_pdf = link_bmi_pdf
+        self.originality_bmi = originality_bmi
+        self.link_bmj_parliament = link_bmj_parliament
+        self.link_bmj_pdf = link_bmj_pdf
+        self.originality_bmj = originality_bmj
+        self.addresses_bundestrojaner = addresses_bundestrojaner
+        self.addresses_netzsperren = addresses_netzsperren
+        self.addresses_vds_video = addresses_vds_video
+        self.addresses_ueberwachung_strassen = addresses_ueberwachung_strassen
+        self.addresses_vds_quickfreeze = addresses_vds_quickfreeze
+        self.addresses_anonyme_simkarten = addresses_anonyme_simkarten
+        self.addresses_imsi_catcher = addresses_imsi_catcher
+        self.addresses_lauschangriff_auto = addresses_lauschangriff_auto
+        self.comment = comment
+
+    @hybrid_property
+    def originality(self):
+        return (self.originality_bmi + self.originality_bmj) / 2
+
+    def name_pretty(self):
+        if len(self.name) > 64:
+            return self.name[0:65] + "..."
+        else:
+            return self.name
+
+    def date_pretty(self):
+        return "{}.{}.{}".format(self.date.day, self.date.month, self.date.year)
+
+    def originality_pretty(self):
+        if self.originality > 1073741822:
+            return 100
+        else:
+            return int(99 / 6000 * self.originality)
+
+    def serialize(self):
+        return {
+            "logoFilename": url_for("static", filename="img/logo/" + self.logo_filename) if self.logo_filename is not None else None,
+            "name": self.name_pretty(),
+            "date": self.date_pretty(),
+            "linkBmi": self.link_bmi_pdf,
+            "linkBmj": self.link_bmj_pdf,
+            "addressesBundestrojaner": self.addresses_bundestrojaner,
+            "addressesNetzsperren": self.addresses_netzsperren,
+            "addressesVdsVideo": self.addresses_vds_video,
+            "addressesUeberwachungStrassen": self.addresses_ueberwachung_strassen,
+            "addressesVdsQuickfreeze": self.addresses_vds_quickfreeze,
+            "addressesAnonymeSimkarten": self.addresses_anonyme_simkarten,
+            "addressesImsiCatcher": self.addresses_imsi_catcher,
+            "addressesLauschangriffAuto": self.addresses_lauschangriff_auto,
+            "originality": self.originality_pretty(),
+            "comment": self.comment
+        }
