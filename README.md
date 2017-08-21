@@ -12,8 +12,6 @@ See below for dependencies.
 - twilio
 - SQLAlchemy
 - PyMySQL
-- WeasyPrint
-- Markdown
 
 # Includes
 - Chart.js (C) Chart.js Contributors [MIT]
