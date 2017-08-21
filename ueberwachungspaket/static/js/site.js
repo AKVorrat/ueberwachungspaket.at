@@ -182,76 +182,65 @@ var loadvideo = function() {
 	$("#call-video").html('<iframe width="560" height="315" src="https://www.youtube.com/embed/-iXMesM0txo?autoplay=1" frameborder="0" allowfullscreen></iframe>')
 }
 
-/*
- * Consultation
- */
+// bar chart
 
-$(document).ready(function() {
-	/* at least one issue must be checked */
-	var switchConsBt = function() {
-		var l  = $('#consultation-issues input:checked').length;
-		var la = $('#consultation-issues input').length;
-		if (l === 0) {
-			$('#start-consultation').prop('disabled', true);
-		} else {
-			$('#start-consultation').prop('disabled', false);
-		}
+$(document).ready(function () {
+	var ctx = $("#barChart")
 
-		if (l === la) {
-			$('#start-consultation').addClass('all-issues-checked');
-			$('#issues-check-all').addClass('hide');
-		} else {
-			$('#start-consultation').removeClass('all-issues-checked');
-			$('#issues-check-all').removeClass('hide');
-		}
-	}
-	switchConsBt();
+	if (ctx.length > 0) {
+		$.getJSON("/konsultation/stats", function (data) {
+			var data = {
+				labels: [
+					"Bundestrojaner",
+					"Netzsperren",
+					"Vorratsdatenspeicherung für Videoüberwachung",
+					"Vollüberwachung auf Österreichs Straßen",
+					"Quickfreeze",
+					"Anonyme Simkarten",
+					"IMSI-Catcher",
+					"Lauschangriff im Auto"
+				],
+				datasets: [
+					{
+						data: [
+							data.stats.addressesBundestrojaner,
+							data.stats.addressesNetzsperren,
+							data.stats.addressesVdsVideo,
+							data.stats.addressesUeberwachungStrassen,
+							data.stats.addressesVdsQuickfreeze,
+							data.stats.addressesAnonymeSimkarten,
+							data.stats.addressesImsiCatcher,
+							data.stats.addressesLauschangriffAuto
+						]
+					}
+				]
+			};
 
-	var highlightActiveIssues = function() {
-		$("#consultation-issues :checkbox").is( function(){
-			if ($(this).is(':checked')) {
-				$(this).parent().addClass("issue-checked");
-			} else {
-				$(this).parent().removeClass("issue-checked");
+			var options = {
+				"legend": {
+					"display": false
+				},
+				"elements": {
+					"rectangle": {
+						"backgroundColor": "#00466e"
+					}
+				},
+				"scales": {
+					"xAxes": [{
+						"ticks": {
+							"beginAtZero": true
+						}
+					}]
+				}
 			}
+
+			var barChart = new Chart(ctx, {
+				type: "horizontalBar",
+				data: data,
+				options: options
+			});
 		});
 	}
-	highlightActiveIssues();
-
-	$('#consultation-issues input').change( function () {
-		switchConsBt();
-		highlightActiveIssues();
-	});
-
-	/* check all issues */
-	$('#issues-check-all').click( function(){
-		$('.issue-cb').prop('checked', true);
-		switchConsBt();
-		highlightActiveIssues();
-	});
-
-	/* resize textarea to its content*/
-	$('.floating-textarea').each(function () {
-		this.setAttribute('style', 'height:' + (this.scrollHeight) + 'px;overflow-y:hidden;');
-	}).on('input', function () {
-		this.style.height = 'auto';
-		this.style.height = (this.scrollHeight) + 'px';
-	});
-
-	/* update signature */
-	var typeSignature = function() {
-		var signature = "";
-		$('.typeaware').each(function() {
-			signature += " " + $(this).val();
-		});
-		$('.consultation-signature').each( function() {
-			$(this).html(signature);
-		});
-	}
-	typeSignature();
-	$('.typeaware').each(function() {
-		$(this).on('input', typeSignature);
-	});
 });
 
 // consultation table
