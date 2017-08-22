@@ -20,10 +20,16 @@
 			<h4 class="center">Sieh dir an, was die Stellungnahmen sagen!</h4>
 			{% include "consultation_quotes.html" %}
 		</div>
+        <div class="progress-bar">
+            <div class="progress-bar-done" style="width: {{ consultation_progress_count_percent }}%"></div>
+            <div class="progress-bar-text center">
+                {{ consultation_progress_count }} Personen haben auf überwachungspaket.at mitgemacht!
+            </div>
+        </div>
 	</section>
 	<section>
 		<div class="container">
-			<a class="btn btn-default" href="{{ url_for('consultation') }}">Alle Stellungnahmen ansehen</a>
+			<a class="btn btn-default" href="{{ url_for('consultation') }}">Alle {{ opinion_count }} öffentlichen Stellungnahmen ansehen</a>
 		</div>
 	</section>
 	<section id="topics">

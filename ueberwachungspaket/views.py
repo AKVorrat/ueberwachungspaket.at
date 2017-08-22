@@ -10,9 +10,10 @@ from sqlalchemy.orm.exc import NoResultFound
 from config import *
 from config.main import *
 from config.mail import *
-from database.models import Representatives, Reminder, Mail, Sender, Opinion
+from database.models import Representatives, Reminder, Mail, Sender, Opinion, ConsultationSender
 from . import app, db_session
 from .decorators import twilio_request
+import math
 
 page_size = 35
 reps = Representatives()
@@ -22,9 +23,16 @@ def root():
     with open("ueberwachungspaket/data/quotes.json", "r") as json_file:
         quotes = load(json_file)
     shuffle(quotes)
+    consultation_count = db_session.query(func.count(ConsultationSender.date_validated)).one()[0]
+    consultation_max = math.ceil(consultation_count / 10000.0) * 10000
+    opinions = db_session.query(Opinion).count()
     return render_template(
         "index.html",
-        quotes=quotes
+        quotes=quotes,
+        opinion_count=opinions,
+        consultation_progress_max=consultation_max,
+        consultation_progress_count=consultation_count,
+        consultation_progress_count_percent=100.0*consultation_count/consultation_max
     )
 
 @app.route("/politiker/")
