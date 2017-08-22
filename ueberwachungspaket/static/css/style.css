@@ -922,8 +922,6 @@ div.center > p,
 .indicator {
 	display: inline-block;
 	height: 18px;
-	background-color: #EEE;
-	border: 1px solid #DDD;
 }
 
 .comment {
