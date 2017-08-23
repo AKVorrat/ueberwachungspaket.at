@@ -274,7 +274,7 @@ $(document).ready(function () {
 					}]
 				},
 				"indicatorLine": {
-					"x": "1200",
+					"x": "1659",
 					"text": "bisheriges Maximum an Stellungnahmen in einer Begutachtung in Österreich",
 					"color": "#c80000"
 				}
