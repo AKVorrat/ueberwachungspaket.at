@@ -86,8 +86,14 @@ def consultation_load():
     if sort_key:
         if sort_key == "name":
             query = query.order_by(Opinion.name, Opinion.originality.desc())
+        if sort_key == "-name":
+            query = query.order_by(Opinion.name.desc(), Opinion.originality.desc())
         elif sort_key == "date":
             query = query.order_by(Opinion.date, Opinion.originality.desc())
+        elif sort_key == "-date":
+            query = query.order_by(Opinion.date.desc(), Opinion.originality.desc())
+        elif sort_key == "-originality":
+            query = query.order_by(Opinion.originality, Opinion.date.desc())
         else:
             query = query.order_by(Opinion.originality.desc(), Opinion.date.desc())
 
