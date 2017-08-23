@@ -10,6 +10,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.application import MIMEApplication
 from flask import url_for
 from sqlalchemy import UniqueConstraint, Column, Boolean, Integer, String, Date, DateTime, ForeignKey, Text
+from sqlalchemy import func
 from sqlalchemy.orm import relationship
 from sqlalchemy.ext.hybrid import hybrid_property
 from config import DEBUG, MAIL_FROM, MAIL_DEBUG
@@ -383,7 +384,11 @@ class Opinion(Base):
 
     @hybrid_property
     def originality(self):
-        return (self.originality_bmi + self.originality_bmj) / 2
+        return max(self.originality_bmi, self.originality_bmj)
+
+    @originality.expression
+    def originality(cls):
+        return func.greatest(cls.originality_bmi, cls.originality_bmj)
 
     def name_pretty(self):
         if len(self.name) > 48:
