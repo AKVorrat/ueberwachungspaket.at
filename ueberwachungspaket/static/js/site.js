@@ -362,7 +362,10 @@ function refreshTable() {
 }
 
 function setSortKey(sortKey) {
-	tableSettings.sortKey = sortKey;
+	if (tableSettings.sortKey == sortKey)
+		tableSettings.sortKey = "-" + sortKey;
+	else
+		tableSettings.sortKey = sortKey;
 	refreshTable();
 }
 
