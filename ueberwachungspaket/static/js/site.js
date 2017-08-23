@@ -184,6 +184,47 @@ var loadvideo = function() {
 
 // bar chart
 
+var indicatorPlugin = {
+	beforeInit: function(chartInstance) {
+		var layout = chartInstance.options.layout;
+		if (!layout) {
+			layout = {
+				"padding": {
+					"bottom": 20
+				}
+			}
+			chartInstance.options.layout = layout;
+		}
+	},
+	afterDraw: function(chartInstance) {
+		var xScale = chartInstance.scales["x-axis-0"];
+		var canvas = chartInstance.chart;
+		var ctx = canvas.ctx;
+
+		if (chartInstance.options.indicatorLine) {
+			var line = chartInstance.options.indicatorLine;
+			var style = line.color ? line.color : "#000000";
+			var xValue = line.x ? xScale.getPixelForValue(line.x) : 0;
+
+			ctx.lineWidth = 2;
+			ctx.beginPath();
+
+			ctx.moveTo(xValue, 0);
+			ctx.lineTo(xValue, canvas.height - 25);
+			ctx.strokeStyle = style;
+			ctx.stroke();
+
+			ctx.fillStyle = style;
+			ctx.textAlign = "center";
+			ctx.textBaseline = "bottom";
+			ctx.fillText(line.text, xValue, canvas.height);
+
+			ctx.closePath();
+		}
+	}
+}
+Chart.pluginService.register(indicatorPlugin)
+
 $(document).ready(function () {
 	var ctx = $("#barChart")
 
@@ -231,6 +272,11 @@ $(document).ready(function () {
 							"beginAtZero": true
 						}
 					}]
+				},
+				"indicatorLine": {
+					"x": "1659",
+					"text": "bisheriges Maximum an Stellungnahmen in einer Begutachtung in Österreich",
+					"color": "#c80000"
 				}
 			}
 

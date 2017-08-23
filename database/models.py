@@ -403,7 +403,7 @@ class Opinion(Base):
         if self.originality > 1073741822:
             return 100
         else:
-            return int(99 / 6000 * self.originality)
+            return int(99 / 9273 * self.originality)
 
     def serialize(self):
         return {
