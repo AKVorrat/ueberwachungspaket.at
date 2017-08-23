@@ -25,6 +25,7 @@ def root():
     shuffle(quotes)
     consultation_count = db_session.query(func.count(ConsultationSender.date_validated)).one()[0]
     consultation_max = math.ceil(consultation_count / 10000.0) * 10000
+    consultation_percent = 100.0*consultation_count/consultation_max if consultation_count > 0 else 0
     opinions = db_session.query(Opinion).count()
     return render_template(
         "index.html",
@@ -32,7 +33,7 @@ def root():
         opinion_count=opinions,
         consultation_progress_max=consultation_max,
         consultation_progress_count=consultation_count,
-        consultation_progress_count_percent=100.0*consultation_count/consultation_max
+        consultation_progress_count_percent=consultation_percent
     )
 
 @app.route("/politiker/")
