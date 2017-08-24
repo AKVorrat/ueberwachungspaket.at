@@ -407,6 +407,7 @@ class Opinion(Base):
 
     def serialize(self):
         return {
+            "id": self.id,
             "logoFilename": url_for("static", filename="img/logo/" + self.logo_filename) if self.logo_filename is not None else None,
             "name": self.name_pretty(),
             "date": self.date_pretty(),

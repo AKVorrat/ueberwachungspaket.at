@@ -69,11 +69,10 @@
 						<td class="center">
 							<img src="{{ url_for('static', filename='img/icons/' + ('green' if opinion.addresses_bundestrojaner else 'gray') + '/trojaner.png') }}" alt="" class="indicator" title="Bundestrojaner" />&nbsp;<img src="{{ url_for('static', filename='img/icons/' + ('green' if opinion.addresses_netzsperren else 'gray') + '/netzsperren.png') }}" alt="" class="indicator" title="Netzsperren" />&nbsp;<img src="{{ url_for('static', filename='img/icons/' + ('green' if opinion.addresses_vds_video else 'gray') + '/totalevideoueberwachung.png') }}" alt="" class="indicator" title="Vorratsdatenspeicherung für Videoüberwachung" />&nbsp;<img src="{{ url_for('static', filename='img/icons/' + ('green' if opinion.addresses_ueberwachung_strassen else 'gray') + '/verkehrsueberwachung.png') }}" alt="" class="indicator" title="Vollüberwachung auf Österreichs Straßen" />&nbsp;<img src="{{ url_for('static', filename='img/icons/' + ('green' if opinion.addresses_vds_quickfreeze else 'gray') + '/vorratsdaten.png') }}" alt="" class="indicator" title="Quickfreeze" />&nbsp;<img src="{{ url_for('static', filename='img/icons/' + ('green' if opinion.addresses_anonyme_simkarten else 'gray') + '/sim-id.png') }}" alt="" class="indicator" title="Anonyme Simkarten" />&nbsp;<img src="{{ url_for('static', filename='img/icons/' + ('green' if opinion.addresses_imsi_catcher else 'gray') + '/imsicatcher.png') }}" alt="" class="indicator" title="IMSI-Catcher" />&nbsp;<img src="{{ url_for('static', filename='img/icons/' + ('green' if opinion.addresses_lauschangriff_auto else 'gray') + '/lauschangriffauto.png') }}" alt="" class="indicator" title="Lauschangriff im Auto" />
 						</td>
-						<td class="center">{{ opinion.originality_pretty() }}</td>
+						<td class="center">{{ opinion.originality_pretty() }}{% if opinion.comment -%}<i class="fa fa-chevron-circle-down commentOpener" data-comment="{{ opinion.id }}" aria-hidden="true"></i>{% endif -%}</td>
 					</tr>
 					{% if opinion.comment -%}
-					<tr class="comment">
-						<td></td>
+					<tr class="comment" id="comment{{ opinion.id }}">
 						<td colspan="6">{{ opinion.comment }}</td>
 					</tr>
 					{% endif -%}

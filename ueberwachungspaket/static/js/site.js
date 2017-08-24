@@ -330,11 +330,11 @@ function buildNextPage(data) {
 		indicators += "<img class='indicator' src='/static/img/icons/" + (item.addressesImsiCatcher ? "green" : "gray") + "/imsicatcher.png' title='IMSI-Catcher' />&nbsp;";
 		indicators += "<img class='indicator' src='/static/img/icons/" + (item.addressesLauschangriffAuto ? "green" : "gray") + "/lauschangriffauto.png' title='Lauschangriff im Auto' />";
 		row.append($("<td />", {class: "center", html: indicators}));
-		row.append($("<td />", {class: "center", text: item.originality}));
+		row.append($("<td />", {class: "center", html: item.originality + (item.comment ? "<i class='fa fa-chevron-circle-down commentOpener' data-comment='" + item.id + "' aria-hidden='true'></i>" : "")}));
 		$("#consultationTable > tbody").append(row);
 
 		if (item.comment) {
-			row = "<tr class='comment'><td></td><td colspan='6'>" + item.comment + "</td></tr>"
+			row = "<tr class='comment' id='comment" + item.id + "'><td colspan='6'>" + item.comment + "</td></tr>"
 			$("#consultationTable > tbody").append(row);
 		}
 	})
@@ -404,5 +404,19 @@ $(document).ready(function() {
 	$("th.sortable").click(function () {
 		var sortKey = $(this).data("sortKey");
 		setSortKey(sortKey);
+	});
+
+	$("body").on("click", ".commentOpener", function () {
+		var commentId = $(this).data("comment");
+		var comment = $("#comment" + commentId);
+		comment.toggle();
+
+		if (comment.css("display") == "none") {
+			// comment is now hidden
+			$(this).removeClass("fa-chevron-circle-up").addClass("fa-chevron-circle-down");
+		} else {
+			// comment is now shown
+			$(this).removeClass("fa-chevron-circle-down").addClass("fa-chevron-circle-up");
+		}
 	});
 });
