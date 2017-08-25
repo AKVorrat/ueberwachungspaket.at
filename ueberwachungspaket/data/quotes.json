@@ -1,414 +1,483 @@
 [
 	{
 		"name": "Bund Österreichischer Frauenvereine",
+		"slider": false,
 		"logo": "frauenvereine80.png",
 		"text": "Zu § 94 ist zu bemerken, dass mit gutem Grund die sitzungspolizeilichen Entscheidungen gem. § 235 und § 236 Abs. 2 dem Gericht als neutralem Mittler zwischen Anklagevertreter und Verteidiger übertragen wurden. Dass in Zukunft derartige Entscheidungen des Gerichtes von einem Antrag der Staatsanwaltschaft abhängig gemacht werden sollen und nicht auch von Amts wegen gefällt werden können, betont die Rolle der Staatsanwaltschaft gegenüber der Verteidigung in unangemessener Weise und lässt die Unvoreingenommenheit des Gerichtes in der Öffentlichkeit zweifelhaft erscheinen.",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_12412/fname_647219.pdf"
 	},
 	{
 		"name": "Universität Innsbruck, Institut für Strafrecht, Strafprozessrecht und Kriminologie, Univ.-Prof. Dr. Klaus Schwaighofer, Univ.-Prof. Dr. Andreas Venier",
+		"slider": false,
 		"logo": "uniibk80.png",
 		"text": "Es gilt eine Reihe von Gefahren und Missbrauchsmöglichkeiten zu bedenken, die bei \"normaler\" Telefonüberwachung nicht aufreten und die der Entwurf nicht weiter problematisiert oder gar verschweigt.",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_19495/imfname_655558.pdf"
 	},
 	{
 		"name": "Universität Innsbruck, Institut für Strafrecht, Strafprozessrecht und Kriminologie, Univ.-Prof. Dr. Klaus Schwaighofer, Univ.-Prof. Dr. Andreas Venier",
+		"slider": false,
 		"logo": "uniibk80.png",
 		"text": "Die im Entwurf vorgeschlagene Maßnahme der \"Überwachung verschlüsselter Nachrichten\" stellt daher bei einer anzustellenden Gesamtschau einen ungleich intensiveren Rechtseingriff dar als die bisherige Nachrichtenüberwachung. Der Entwurf lässt die gebotene Gesamtbetrachtung vermissen, er ist daher in der vorliegenden Form abzulehnen.",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_19495/imfname_655558.pdf"
 	},
 	{
 		"name": "Universität Innsbruck, Institut für Strafrecht, Strafprozessrecht und Kriminologie, Univ.-Prof. Dr. Klaus Schwaighofer, Univ.-Prof. Dr. Andreas Venier",
+		"slider": false,
 		"logo": "uniibk80.png",
 		"text": "In Zukunft können Postkunden, deren Sendungen nicht beim Empänger ankommen, nicht mehr sicher sein, ob sie die Justiz beschlagnahmt oder die Post verschlampt hat. Wo soll sich der Kunde beschweren, bei der Justiz oder bei der Post?",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_19495/imfname_655558.pdf"
 	},
 	{
 		"name": "Universität Innsbruck, Institut für Strafrecht, Strafprozessrecht und Kriminologie, Univ.-Prof. Dr. Klaus Schwaighofer, Univ.-Prof. Dr. Andreas Venier",
+		"slider": false,
 		"logo": "uniibk80.png",
 		"text": "Ein erheblicher Teil privater oder beruflicher zwischenmenschlicher Kommunikation spielt sich heute auf der Fahrt im Auto oder im Zug ab, Dass jedes Wort. das jemand im Auto oder Zugabteil mit einem anderen wechselt, von der Polizei abgehört und aufgezeichnet werden kann, erscheint dem geltenden Recht nur erträglich, wenn die Voraussetzungen eines Lauschangriffs nach § 136 Abs I StPO erfüllt sind. Wir sehen keinen Grund, von dieser bewährten Beschränkung abzugehen.",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_19495/imfname_655558.pdf"
 	},
 	{
 		"name": "Stellvertretender Rechtsschutzbeauftragter nach der Strafprozessordnung",
+		"slider": false,
 		"logo": "justiz80.png",
 		"text": "Es erscheint nun aber mit einer wirksamen und in der Öffentlichkeit akzeptierten Kontrolle durch den unabhängigen Rechtsschutzbeauftragten nicht vereinbar, wenn das Ob der Bestellung eines Sachverständigen, seine Auswahl und möglicher Weise auch der Umfang seiner Betrauung nicht dem Rechtsschutzbeauftragten selbst oder einem anderen unabhängigen Organ, sondern dem kontrollierten Staatsorgan obliegt. […] Es wird daher vorgeschlagen, die Befugnis zur Bestellung eines Sachverständigen dem RSB selbst oder dem Gericht zu übertragen.",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_25123/fname_661620.pdf"
 	},
 	{
 		"name": "Stellvertretender Rechtsschutzbeauftragter nach der Strafprozessordnung",
+		"slider": false,
 		"logo": "justiz80.png",
 		"text": "Wegen der hervorgehobenen Besonderheit, des Gewichtes und der Reichweite der Ermittlungsmaßnahme der sog „Funkzellenabfrage“, sollte ihr Einsatz auch bei uns auf besonders schwere Straftaten beschränkt werden (etwa wie die Überwachung verschlüsselter Nachrichten nach § 135a Abs 1 Z 3 StPO idF des Entwurfes) und ihre Kontrolle durch den RSB nicht ausgeschaltet sein.",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_25123/fname_661620.pdf"
 	},
 	{
 		"name": "Piratenpartei Österreichs",
+		"slider": true,
 		"logo": "piratenpartei.svg",
 		"text": "Die hier vorgestellten Maßnahmen sind allesamt unverhältnismäßig und stellen jeden Menschen dieses Landes unter Generalverdacht. Zudem senken sie die individuelle Sicherheit anstatt diese zu erhöhen. Dass man sich hier auf das Niveau von kriminellen Organisationen begeben möchte und mit Steuergeld Anbieter solcher Technologien noch finanzieren will, ist skandalös und dieser Republik unwürdig.",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_25430/fname_661937.pdf"
 	},
 	{
 		"name": "Piratenpartei Österreichs",
+		"slider": true,
 		"logo": "piratenpartei.svg",
 		"text": "Nachdem erst im Jahr 2016 das polizeiliche Staatsschutzgesetz neu gefasst wurde und damit eine Entwicklung in Richtung Totalüberwachung, Generalverdacht, mangelnde Kontrolle des Geheimdiensts, fehlenden Rechtsschutz und die unkontrollierte Weitergabe von Daten an ausländische Dienste eingleitet wurde, ist man nun seitens des Innenministeriums offensichtlich wild entschlossen, die Privatsphäre rechtstreuer BürgerInnen sukzessive auszumerzen.",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_25420/fname_661893.pdf"
 	},
 	{
 		"name": "Piratenpartei Österreichs",
+		"slider": true,
 		"logo": "piratenpartei.svg",
 		"text": "Wir halten die vorgeschlagenen Bestrebungen für unausgegoren, brandgefährlich und eines freiheitlichen Rechtsstaats für unwürdig.",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_25420/fname_661893.pdf"
 	},
 	{
 		"name": "A-SIT",
+		"slider": false,
 		"logo": "asit80.png",
 		"text": "Der Entwurf zur Änderung der Strafprozessordnung konzentriert sich auf den strafrechtlichen Aspekt. In der Materie hat der technische Aspekt aber einen wesentlichen Einfluss. Dieser scheint noch nicht hinreichend erfasst, worauf auch die Erläuterungen insofern hinweisen, als die genannte Expertengruppe hochrangige Kapazitäten der Rechtswissenschaften ausweist, eine äquivalente Benennung technischer Wissenschaften zur qualitativen Untermauerung des Stands der Technik nicht genannt ist.",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_26725/imfname_663427.pdf"
 	},
 	{
 		"name": "Kinder- und Jugendanwaltschaft Tirol",
+		"slider": false,
 		"logo": "kinderanwaltschaft80.png",
 		"text": "Die Kinder- und Jugendanwaltschaft Tirol nimmt zum o. a. Entwurf Stellung. Es werden durch die geplanten Gesetzesänderungen maßgebliche Leitsätze der UN-Kinderrechtekonvention (UN-KRK) und des BVG Kinderrechte (BVGKR) verletzt!",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_26888/imfname_663595.pdf"
 	},
 	{
 		"name": "Dominik Schreiber",
+		"slider": false,
 		"logo": "",
 		"text": "Statt wieder mal die Demokratie und Privatsphäre anzugreifen, könnte zur Abwechslung mal Geld in Bildung oder maßnahmen zur stabilisierung kriegsgebeutelter Länder fließe. Sowas würde wenigstens langsam für Verbesserungen sorgen.",
 		"url": "https://www.überwachungspaket.at/konsultation/showpdf/bmj/8506"
 	},
 	{
 		"name": "Institut für Angewandte Informationsverarbeitung und Kommunikationstechnologie (IAIK)",
+		"slider": false,
 		"logo": "iaik80.png",
 		"text": "Je länger eine Sicherheitslücke in einem System vorhanden ist, desto wahrscheinlicher ist die Identifikation der Lücke durch Kriminelle und desto länger kann sie auch durch Kriminelle ausgenutzt werden. Deshalb wird allein durch das bewusste Belassen von Sicherheitslücken in Systemen zum Zweck der Installation von behördlicher Überwachungs- software die Chance für Internetkriminalität erhöht.",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_28204/imfname_664966.pdf"
 	},
 	{
 		"name": "Institut für Angewandte Informationsverarbeitung und Kommunikationstechnologie (IAIK)",
+		"slider": false,
 		"logo": "iaik80.png",
 		"text": "Vor diesem Hintergrund ist fraglich inwieweit die technischen Voraussetzungen für eine effiziente Überwachung mit den geplanten finanziellen Mitteln gegeben sind.",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_28204/imfname_664966.pdf"
 	},
 	{
 		"name": "Club Sozialdemokratischer Rechtsanwältinnen und Rechtsanwälte",
+		"slider": false,
 		"logo": "bsa80.png",
 		"text": "Die Notwendigkeit der vorgeschlagenen Grundrechtseingriffe ist auch nicht objektiv mit statistischen Daten untermauert.\n\nDie Kriminalstatistik und die Statistik des Justizministeriums zeigen, dass Österreich im internationalen Vergleich eine geringe Verbrechensrate mit relativ hoher Aufklärungsquote aufweist. Diese positiven Ergebnisse wurden von den österreichischen Sicherheits- und Justizbehörden mit den derzeit bereits zur Verfügung stehenden Ermittlungsmaßnahmen erzielt.\n\nEngpässe erwiesen sich in der Vergangenheit vorwiegend beim Personal. Dies wird sich durch die gegenständliche Novelle in keiner Weise verbessern. Wenn der Wille besteht, ab 2018 pro Jahr im Schnitt EUR 10 Mio mehr an Mitteln für Justiz und Sicherheit auszugeben, so würde vielmehr die Einstellung weiterer Ermittlungsbeamter sowie weitere Planstellen in den Kriminalbehörden und der Staatsanwaltschaft benötigt.",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_29109/imfname_666204.pdf"
 	},
 	{
 		"name": "Wirtschaftskammer Österreich",
+		"slider": false,
 		"logo": "wkoe80.png",
-		"text": "Die Notwendigkeit einer Anpassung der Überwa­chungsmöglichkeiten an neue Technologien ist zwar nachvollziehbar, kann jedoch auch eine Gefahr für die Datensicherheit darstellen.",
+		"text": "Die Notwendigkeit einer Anpassung der Überwachungsmöglichkeiten an neue Technologien ist zwar nachvollziehbar, kann jedoch auch eine Gefahr für die Datensicherheit darstellen.",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_29358/imfname_666482.pdf"
 	},
 	{
 		"name": "Wirtschaftskammer Österreich",
+		"slider": false,
 		"logo": "wkoe80.png",
-		"text": "Die vorgeschlagenen Ermittlungsmaßnahmen untergraben damit auch das Vertrauen in österreichische Unternehmen und in den Wirtschaftsstandort Ös­terreich, der bislang aufgrund der hohen Datenschutz- und Sicherheitsstandards geschätzt wird.",
+		"text": "Die vorgeschlagenen Ermittlungsmaßnahmen untergraben damit auch das Vertrauen in österreichische Unternehmen und in den Wirtschaftsstandort Österreich, der bislang aufgrund der hohen Datenschutz- und Sicherheitsstandards geschätzt wird.",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_29358/imfname_666482.pdf"
 	},
 	{
 		"name": "Wirtschaftskammer Österreich",
+		"slider": false,
 		"logo": "wkoe80.png",
 		"text": "Auch unter dem Gesichtspunkt des Schutzes der öffentlichen Sicherheit wäre die Förderung eines \"Markts für Sicherheitslücken\" nicht zu rechtfertigen, der sowohl von Kriminellen als auch von fremden Geheimdiensten sowie autokratischen Regimes zur Verfolgung von Dissidenten oder Industriespionage genutzt werden kann.",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_29358/imfname_666482.pdf"
 	},
 	{
 		"name": "Oberlandesgericht Wien",
+		"slider": false,
 		"logo": "justiz80.png",
 		"text": "Inwieweit die geplante Installation eines Programmes auf dem zu überwachenden Computersystem technisch möglich sein wird und die Überwachung der verschlüsselten Nachrichten sodann tatsächlich durchgeführt werden kann, wird abzuwarten und Gegenstand der geplanten Evaluierung sein.",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_29444/imfname_666606.pdf"
 	},
 	{
 		"name": "Internet Service Providers Austria (ISPA)",
+		"slider": false,
 		"logo": "ispa80.png",
 		"text": "Die ISPA möchte darauf aufmerksam machen, dass die Nutzung von Sicherheitslücken für Ermittlungsmaßnahmen die österreichischen Cybersicherheitsstandards schwächt und das Vertrauen in den österreichischen Wirtschaftsstandort untergräbt.",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_29464/imfname_666672.pdf"
 	},
 	{
 		"name": "Oberster Gerichtshof",
+		"slider": false,
 		"logo": "ogh80.png",
 		"text": "Nicht nachvollziehbar wäre, warum trotz der zumindest gleichen Eingriffsintensität der Einsatz eines IMSI-Catchers dem Erfordernis einer richterlichen Bewilligung entzogen sein soll.",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_29473/imfname_666692.pdf"
 	},
 	{
 		"name": "Oberster Gerichtshof",
+		"slider": false,
 		"logo": "ogh80.png",
 		"text": "Ein solches staatlich veranlasstes Einschleusen von im genannten Sinn gezielt wirkender Schadsoftware (Schlagwort \"Bundestrojaner\"), ist, wie bspw die ausführliche Stellungnahme des Instituts für Angewandte Informationsverarbeitung und Kommunikationstechnologie der TU Graz veranschaulicht, zum einen de facto kaum machbar und zum anderen mit gravierenden negativen Begleiterscheinungen verbunden (Förderung von Internetkriminalität, vgl S 3 f jener Stellungnahme).",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_29473/imfname_666692.pdf"
 	},
 	{
 		"name": "Kurt Netzer",
+		"slider": false,
 		"logo": "",
 		"text": "Als Absolvent der TU Wien in Informatik bin ich entschiedenst gegen die Vorhaben der Regierung in Bezug auf das neue Sicherheitspaket.",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_25771/imfname_662303.pdf"
 	},
 	{
 		"name": "VENTOCOM GMBH",
+		"slider": false,
 		"logo": "ventocom80.png",
 		"text": "Ventocom spricht sich entschieden gegen die Einführung dieser neuen Registrierungspflicht, die auch das Prepaid-Segment des Mobilfunkmarkts umfassen soll, aus. Zum einen wäre diese Maßnahme gänzlich ungeeignet, den damit verfolgten Zweck (die Bekämpfung von Kriminalität bzw die Erhöhung von Sicherheit) zu fördern. Die Maßnahme wäre auch deshalb nicht verhältnismäßig, weil sie mit einem massiven Eingriff in Grund- und Freiheitsrechte der österreichischen Staatsbürger verbunden wäre. Zum zweiten würde die Maßnahme auch grundlegenden Zielsetzungen des TKG 2003, namentlich der Förderung des Wettbewerbs und unter Berücksichtigung größtmöglicher Vorteile der Endnutzer, zuwiderlaufen. Aus diesen Gründen wäre die Einführung der ins Auge gefassten neuen Bestimmung nicht nur unzweckmäßig, sondern auch verfassungsrechtlich hoch bedenklich.",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_26752/imfname_663453.pdf"
 	},
 	{
 		"name": "VENTOCOM GMBH",
+		"slider": false,
 		"logo": "ventocom80.png",
 		"text": "Erstens ist dazu festzuhalten, dass von den in Österreich derzeit in Umlauf befindlichen ca. 5,2 Mio Prepaid-SIM-Karten ca. 3,8 Mio von nicht registrierten Endkunden gehalten werden […] Die Einführung der neuen Regelung würde somit möglicherweise sogar die Entstehung eines \"Schwarzmarkts\" für bereits bestehende nicht registrierte SIM-Karten fördern.",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_26752/imfname_663453.pdf"
 	},
 	{
 		"name": "VENTOCOM GMBH",
+		"slider": false,
 		"logo": "ventocom80.png",
 		"text": "Beispielsweise wurden im Vereinigten Königreich, Rumänien und Tschechien zuletzt Diskussionen (auf parlamentarischer Ebene) zum Thema Registrierungspflicht von Prepaid-Karten geführt; nach intensiver Auseinandersetzung mit der Materie haben sich aber auch diese Länger gegen eine Einführung der Registrierungspflicht entschieden. Dies insbesondere deshalb, weil es eben keine empirischen Nachweise gibt, wonach eine verpflichtende Registrierung zu einer Verringerung der Kriminalitätsrate oder zu erhöhten Aufklärungsraten von Verbrechen bzw terroristischen Aktivitäten führt.",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_26752/imfname_663453.pdf"
 	},
 	{
 		"name": "VENTOCOM GMBH",
+		"slider": false,
 		"logo": "ventocom80.png",
 		"text": "Im Ergebnis würde die Einführung einer Registrierungspflicht somit dem damit angestrebten Zweck gar nicht förderlich sein, sondern vielmehr einen einschneidenden Eingriff in Grund- und Freiheitsrechte der Endkunden (und dabei gerade der sozial schwächeren Nutzer), nämlich den Gleichheitssatz, das Recht auf Achtung des Privat- und Familienlebens, das Grundrecht auf Datenschutz, die Kommunikationsfreiheit, etc., darstellen.",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_26752/imfname_663453.pdf"
 	},
 	{
 		"name": "VENTOCOM GMBH",
+		"slider": false,
 		"logo": "ventocom80.png",
 		"text": "Diese negativen Auswirkungen der Einführung einer Registrierungspflicht können letztlich auch zum Ausscheiden von innovativen Anbietern aus dem Markt führen, wie das Beispiel von \"ALDI-Talk\"s in Belgien zeigt. Nach Einführung der Prepaid-Registrierungspflicht in Belgien im Juni 2017 musste ALDI Talk seine Dienste in Belgien einstellen, weil die Umsetzung der Registrierungspflicht organisatorisch nicht zumutbar war.",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_26752/imfname_663453.pdf"
 	},
 	{
 		"name": "Bundeskanzleramt",
+		"slider": false,
 		"logo": "bka80.png",
 		"text": "Die Wirkungscontrollingverordnung (§ 5 Abs. 4) sieht bei einer gänzlichen und teilweisen Nichtberücksichtigung der Empfehlungen aus der Qualitätssicherung eine schriftliche Begründung des haushaltsleitenden Organs gegenüber der ressortübergreifenden Wirkungscontrollingstelle vor.",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_28352/imfname_665265.pdf"
 	},
 	{
 		"name": "ÖBB-Holding AG",
+		"slider": false,
 		"logo": "oebb80.png",
 		"text": "Es ist darauf hinzuweisen, dass die Datenspeicherung durch private Rechtsträger grundsätzlich anderen Zwecken als der eine Aufgabe der Hoheitsverwaltung darstellenden Strafverfolgung dient.",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_28387/imfname_665292.pdf"
 	},
 	{
 		"name": "ÖBB-Holding AG",
+		"slider": false,
 		"logo": "oebb80.png",
 		"text": "Es ist jedenfalls sicherzustellen, dass der Datenschutzbehörde weiterhin die Alleinkompetenz für die Festlegung von Speicherfristen bei Video-Überwachungsanlagen zukommt.",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_28387/imfname_665292.pdf"
 	},
 	{
 		"name": "Österreichischer Städtebund",
+		"slider": false,
 		"logo": "staedtebund80.png",
 		"text": "Der geplante Entwurf zur Änderung des Sicherheitsgesetzes in Bezug auf die Weiterverwendung von Bild- und Tondaten ist grundrechtlich wie datenschutzrechtlich überschießend.",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_28511/imfname_665505.pdf"
 	},
 	{
 		"name": "Österreichischer Städtebund",
+		"slider": false,
 		"logo": "staedtebund80.png",
 		"text": "Die Regelung ist auch nicht das gelindeste Mittel zur Erreichung dieses Zieles. Terroranschläge und Verbrechen lassen sich nämlich durch mehr Polizeipräsenz besser verhindern und eine Erhöhung der Aufklärungsquote ist durch bestens ausgebildetes Ermittlungspersonal mit ausreichend zeitlichen Ressourcen besser zu erreichen.",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_28511/imfname_665505.pdf"
 	},
 	{
 		"name": "UPC Austria GmbH",
+		"slider": false,
 		"logo": "upc80.png",
 		"text": "Gemäß A 3 (3) lit a TSM-VO ist der Einsatz von weitergehenden Verkehrsmanagementmaßnahmen erlaubt, wenn dies erforderlich ist, um nationalen Rechtsvorschriften \"zu entsprechen\". Der Wortlaut dieser Bestimmung lässt erkennen, dass es zulässig ist Verkehrsmanagementmaßnahmen einzusetzen, um einer nationalen Pflicht zu entsprechen dh die nationale Einräumung einer Möglichkeit bestimmte Dienste anzubieten lässt sich nicht unter Art 3 (3) lit a TSM-Va subsumieren und geht daher ins Leere. Zusatzdienste, welche erst durch den Einsatz von Verkehrsmanagementmaßnahmen ermöglicht werden könnten, würden weiterhin gegen die TSM-VO verstoßen.",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_28797/imfname_665838.pdf"
 	},
 	{
 		"name": "UPC Austria GmbH",
+		"slider": false,
 		"logo": "upc80.png",
 		"text": "Die einzelnen Bestimmungen zur Auskunfts- und Protokollierungspflicht des vorgeschlagenen § 99 Abs 1a - 1 e TKG 2003 (neu) sind widersprüchlich und erfordern dringend eine Klarstellung",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_28797/imfname_665838.pdf"
 	},
 	{
 		"name": "UPC Austria GmbH",
+		"slider": false,
 		"logo": "upc80.png",
 		"text": "Abschließend möchten wir festhalten, dass die kurze Frist für das Inkraftreten des § 99 TKG 2003 (neu) - am 1. Jänner 2018 - aufgrund der für UPC unvorhersehbaren hohen Aufwände und Investitionen nicht haltbar scheint.",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_28797/imfname_665838.pdf"
 	},
 	{
 		"name": "Holger Hager ",
+		"slider": false,
 		"logo": "",
 		"text": "Statt einer akuraten Modernisierung der Gesetzeslage scheint es, als würde der technische Fortschritt genutzt um die Grundrechte der Bevölkerung auszuhöhlen. Dies erachte ich als politisch wenig ehrliches Auftreten, das dem Bundesministerium für Inneres sowie auch dem Bundesministerium für Justiz nicht würdig erscheint.",
 		"url": "https://www.überwachungspaket.at/konsultation/showpdf/bmi/4116"
 	},
 	{
 		"name": "Amt der Niederösterreichischen Landesregierung",
+		"slider": false,
 		"logo": "noe80.png",
 		"text": "Die NÖ Landesregierung hat beschlossen, dass gegen den Entwurf […] keine Einwendungen erhoben werden.",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_29336/imfname_666475.pdf"
 	},
 	{
 		"name": "Verband Alternativer Telekom-Netzbetreiber (VAT)",
+		"slider": false,
 		"logo": "vat80.png",
 		"text": "Die Einführung der Registrierungspflicht bei Prepaid-Wertkarten wird seitens des VAT stark kritisiert.",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_29445/imfname_666605.pdf"
 	},
 	{
 		"name": "Verband Alternativer Telekom-Netzbetreiber (VAT)",
+		"slider": false,
 		"logo": "vat80.png",
 		"text": "Betreffend die Dauer der neuen Vorratsdatenspeicherung und den Umfang der zu speichernden Verkehrsdaten weist der VAT auf die Rechtsprechung des EuGH zur Beschränkung der Speicherung auf das absolut Notwendigste hin.",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_29445/imfname_666605.pdf"
 	},
 	{
 		"name": "Amt der Wiener Landesregierung",
+		"slider": false,
 		"logo": "wien80.png",
 		"text": "Die Zulässigkeit des Informationsaustausches im Sicherheitsforum sollte näher konkretisiert werden.",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_29450/imfname_666600.pdf"
 	},
 	{
 		"name": "Amt der Wiener Landesregierung",
+		"slider": false,
 		"logo": "wien80.png",
 		"text": "Die vorgesehenen Verwaltungsstrafen sind zur Sicherstellung der Einhaltung des Datenschutzes nicht ausreichend.",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_29450/imfname_666600.pdf"
 	},
 	{
 		"name": "Österreichisches Rotes Kreuz",
+		"slider": true,
 		"logo": "roteskreuz80.png",
 		"text": "Nach Ansicht des ÖRK ist eine Umsetzung der gegenständlichen Plattform verfassungswidrig.",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_29451/imfname_666599.pdf"
 	},
 	{
 		"name": "Österreichisches Rotes Kreuz",
+		"slider": true,
 		"logo": "roteskreuz80.png",
 		"text": "Das ÖRK sieht in diesem Zusammenhang eine Verletzung des rechtsstaatlichen Prinzips und vermisst erneut eine umfassende Rechtfertigung für eine derart weitreichende Regelung, die in weiterer Folge zur Verfassungswidrigkeit dieser Bestimmung führen könnte.",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_29451/imfname_666599.pdf"
 	},
 	{
 		"name": "Österreichisches Rotes Kreuz",
+		"slider": true,
 		"logo": "roteskreuz80.png",
 		"text": "Nach Ansicht des ÖRK besteht die reale Gefahr, dass es durch die vorgeschlagenen Bestimmungen zu einer sachlich nicht gerechtfertigten und zur Bekämpfung schwerer Kriminalität gar nicht hilfreichen Zunahme der laufenden Überwachung der Bevölkerung kommen wird.",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_29451/imfname_666599.pdf"
 	},
 	{
 		"name": "Österreichisches Rotes Kreuz",
+		"slider": true,
 		"logo": "roteskreuz80.png",
 		"text": "Ganz allgemein hat die in jüngerer Zeit deutlich zunehmende Tendenz, grundrechtlich geschützte Bereiche in der österreichischen Gesellschaft sowie das der österreichischen Bundesverfassung zu Grunde liegende liberale Prinzip ohne objektiv zwingende Notwendigkeit mehr und mehr einzuengen, aus der Sicht des ÖRK besorgniserregende Ausmaße angenommen.",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_29451/imfname_666599.pdf"
 	},
 	{
 		"name": "Österreichisches Rotes Kreuz",
+		"slider": true,
 		"logo": "roteskreuz80.png",
 		"text": "Keinesfalls dürfen die verfassungsrechtlichen Errungenschaften der vergangenen Jahrhunderte, von vielen Österreicherinnen und Österreichern unter Einsatz ihrer Freiheit, ihrer Gesundheit oder gar ihres Lebens erkämpft, heute leichtfertig zur vermeintlichen Erhöhung des subjektiven Sicherheitsgefühls, für tages- oder parteipolitische, populistische, wahltaktische oder sonstige sachfremde Interessen geopfert werden.",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_29451/imfname_666599.pdf"
 	},
 	{
 		"name": "Kinder- und Jugendanwaltschaft Wien",
+		"slider": false,
 		"logo": "kinderanwaltschaft80.png",
 		"text": "Es ist nicht nachvollziehbar, dass die Mitglieder dieser Sicherheitsforen pesonenbezogene Daten erhalten müssen, damit sie mit den Sicherheitsbehörden effektiv an Problemen arbeiten und Lösungen finden können.",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_29462/fname_666674.pdf"
 	},
 	{
 		"name": "Kinder- und Jugendanwaltschaft Wien",
+		"slider": false,
 		"logo": "kinderanwaltschaft80.png",
 		"text": "Insbesondere ist der Schutz der Privatsphäre von Personene, die keinerlei kriminelle Handlungen setzen, keinesfalls gewährleistet.",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_29462/fname_666674.pdf"
 	},
 	{
 		"name": "Kinder- und Jugendanwaltschaft Wien",
+		"slider": false,
 		"logo": "kinderanwaltschaft80.png",
 		"text": "Er führt zu einer Ausweitung der Überwachung – wobei im Hinblick auf die Kosten-Nutzen-Rechnung fraglich ist, ob dies den gewünschten Effekt bei der Kriminalitätsbekämpfung hat.",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_29462/fname_666674.pdf"
 	},
 	{
 		"name": "Internet Service Providers Austria (ISPA)",
+		"slider": false,
 		"logo": "ispa80.png",
 		"text": "Der Aufwand welcher mit der Registrierung von Prepaid-SIM-Karten verbunden ist steht keinem entsprechenden Nutzen in der Strafverfolgung gegenüber und führt darüber hinaus zu einem Wettbewerbsrückgang.",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_29465/imfname_666671.pdf"
 	},
 	{
 		"name": "Internet Service Providers Austria (ISPA)",
+		"slider": false,
 		"logo": "ispa80.png",
 		"text": "Nach Ansicht der ISPA entspricht das „quick-freeze“ Modell nicht den Vorgaben des Europäischen Gerichtshofs zur Vorratsdatenspeicherung",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_29465/imfname_666671.pdf"
 	},
 	{
 		"name": "Hutchison Drei Austria GmbH",
+		"slider": false,
 		"logo": "drei80.png",
 		"text": "Vergleiche zwischen Staaten, in welchen eine Registrierungspflicht für Teilnehmeranschlüsse vorgesehen wurde und Staaten, die diese Verpflichtung nicht haben, haben gezeigt, dass die Identifizierung zu keiner Abnahme von kriminellen Aktivitäten und deren Aufklärung geführt haben'. Europäische Länder, darunter Großbritannien, Rumänien und die Tschechische Republik, haben aus diesem Grund von der Einführung einer Registrierungspflicht abgesehen und einen entsprechenden Antrag abgelehnt.",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_29495/imfname_666697.pdf"
 	},
 	{
 		"name": "epicenter.works",
+		"slider": true,
 		"logo": "epicenter80.png",
 		"text": "epicenter.works warnt eindringlich vor der Einführung gesetzlicher Bestimmungen mit polizeistaatlichen Tendenzen und fordert die Bundesregierung auf, den vorliegenden überschießenden Gesetzesentwurf zurückzuziehen.",
 		"url": "https://epicenter.works/sites/default/files/epicenter.works_-_spg_bstmg_stvo_und_tkg_326_me_xxv_gp.pdf"
 	},
 	{
 		"name": "epicenter.works",
+		"slider": true,
 		"logo": "epicenter80.png",
 		"text": "Der Verein epicenter.works fordert den Bundesminister für Justiz auf, den vorliegenden Gesetzesentwurf zu verwerfen. Der Einsatz von staatlicher Schadsoftware (Malware) für die „Überwachung verschlüsselter Nachrichten“ birgt zahlreiche Gefahren für die Sicherheit der IT-Infrastruktur in Österreich. Deshalb sprechen wir uns für ein ausdrückliches Verbot staatlicher Spionagesoftware aus!",
 		"url": "https://epicenter.works/sites/default/files/epicenter.works_-_strafprozessaenderungsg_2017_325_me_xxv_gp_0.pdf"
 	},
 	{
 		"name": "epicenter.works",
+		"slider": true,
 		"logo": "epicenter80.png",
 		"text": "Das Briefgeheimnis stellt einen zentralen Bestandteil des Staatsgrundgesetzes über die allgemeinen Rechte der Staatsbürger vom 21. Dezember 1867 dar, das im Übrigen heuer sein 150jähriges Bestehen feiert. Mit diesem richtungsweisenden Gesetz hat man damals geglaubt, den repressiven metternichschen Überwachungsstaat überwunden zu haben. Ausgerechnet im Jubiläumsjahr soll nun dieses Gesetz beschnitten werden und Österreich zu einem modernen Überwachungsstaat umgewandelt werden.",
 		"url": "https://epicenter.works/sites/default/files/epicenter.works_-_strafprozessaenderungsg_2017_325_me_xxv_gp_0.pdf"
 	},
 	{
 		"name": "epicenter.works",
+		"slider": true,
 		"logo": "epicenter80.png",
 		"text": "Der vorliegende Gesetzesentwurf als Teil des gesamten „Sicherheitspakets“ der Bundesregierung zeigt neuerlich, dass immer weiter gehende Eingriffe in immer kürzer werdenden Abständen vorgeschlagen werden, bestehende Maßnahmen und Befugnisse aber nicht evaluiert und schon gar nicht zurückgebaut werden.",
 		"url": "https://epicenter.works/sites/default/files/epicenter.works_-_strafprozessaenderungsg_2017_325_me_xxv_gp_0.pdf"
 	},
 	{
 		"name": "Stefan Hirschmann",
+		"slider": false,
 		"logo": "",
 		"text": "In dieser Stellungnahme wurde aufgezeigt, dass die geplante Änderung zur akustischen Überwachung von Fahrzeugen sachlich nicht gerechtfertigt ist, zu sehr eigenartigen Resultaten führt und mit den Grundwerten der öst Verfassung nicht in Einklang gebracht werden kann. Die Erläuterungen behaupteten keinen Bedarf für diese Maßnahme.",
 		"url": "https://www.parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_29459/imfname_666667.pdf"
 	},
 	{
 		"name": "Rundfunk & Telekom Regulierungs-GmbH",
+		"slider": false,
 		"logo": "rtr80.png",
 		"text": "Insgesamt erscheint der vorliegende Entwurf für § 17 Abs 1a TKG 2003 daher auch aus diesem Grund mit dem Unionsrecht unvereinbar.",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_30437/imfname_667763.pdf"
 	},
 	{
 		"name": "Rundfunk & Telekom Regulierungs-GmbH",
+		"slider": false,
 		"logo": "rtr80.png",
 		"text": "Die beabsichtigte Bestimmung kann aus Sicht der RTR-GmbH Preissteigerungen für die Kundinnen und Kunden zur Folge haben.",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_30437/imfname_667763.pdf"
 	},
 	{
 		"name": "Rundfunk & Telekom Regulierungs-GmbH",
+		"slider": false,
 		"logo": "rtr80.png",
 		"text": " Somit scheidet –die im Entwurf vorgesehene Vorgangsweise aus, da diese Sperren nach dem Entwurf weder von einer staatlichen Stelle in transparenten Verfahren festgelegt werden, noch eine Verpflichtung zur Beschränkung der Sperren auf das Notwendige vorgesehen ist und auch keine Möglichkeiten für Rechtsmittel vorgesehen sind.",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_30437/imfname_667763.pdf"
 	},
 	{
 		"name": "Rundfunk & Telekom Regulierungs-GmbH",
+		"slider": false,
 		"logo": "rtr80.png",
 		"text": "Auch durch diesen schrankenlosen Eingriff in die zitierten, im Verfassungsrang stehenden Grundrechte, könnte der Entwurf für § 17 Abs 1a TKG 2003 aus Sicht der RTR-GmbH auch verfassungswidrig sein.",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_30437/imfname_667763.pdf"
 	},
 	{
 		"name": "Rundfunk & Telekom Regulierungs-GmbH",
+		"slider": false,
 		"logo": "rtr80.png",
 		"text": "Der vorgeschlagene Entwurf sieht de facto eine fast schrankenlose Möglichkeit für ISP vor, Verkehrsmanagementmaßnahmen anzubieten, die Inhalte, Dienste oder Anwendungen, die von Dritten oder auch von eigenen Kunden bereitgestellt werden, zu blockieren, zu stören etc, wenn der ISP der Meinung ist, dass diese Inhalte, Dienste oder Anwendungen gegen (verwaltungs?)strafrechtliche Verbote verstoßen oder aus Sicht des ISP „jugendgefährdend“ sind.",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_30437/imfname_667763.pdf"
 	},
 	{
 		"name": "BM f. Verkehr, Innovation und Technologie",
+		"slider": false,
 		"logo": "bmvit80.png",
 		"text": "Zur generellen datenschutzrechtlichen Problemstellung ist auszuführen, dass aus Rechtspre- chung und Literatur zu Art. 8 EMRK erschließbar ist, dass es einen Anspruch des Menschen auf Bewegung im öffentlichen Raum ohne systematische Beobachtung gibt.",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_30490/imfname_667818.pdf"
 	},
 	{
 		"name": "BM f. Verkehr, Innovation und Technologie",
+		"slider": false,
 		"logo": "bmvit80.png",
 		"text": "Darüber hinaus ist die ASFINAG technisch gar nicht in der Lage Daten in jenem Umfang an Sicherheitsbehörden zu übermitteln, der für deren Tätigkeit sinnvoll wäre.",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_30490/imfname_667818.pdf"
 	},
 	{
 		"name": "BM f. Verkehr, Innovation und Technologie",
+		"slider": false,
 		"logo": "bmvit80.png",
 		"text": "Das Gesetzesvorhaben [läuft] somit hinsichtlich der Verwendung von Bilddaten und von daraus gewonnenen Kennzeichen- und Kontrolldaten, die im Zuge der automatischen Überwachung der Einhaltung der Mautpflicht auf Bundesstraßen anfallen, weitestgehend ins Leere",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_30490/imfname_667818.pdf"
 	},
 	{
 		"name": "BM f. Verkehr, Innovation und Technologie",
+		"slider": false,
 		"logo": "bmvit80.png",
 		"text": "Von Seiten des bmvit wird zu den beabsichtigten Änderungen festgehalten, dass diese zu außer- ordentlich finanziellen Mehraufwendungen in Millionenhöhe für private Rechtsträger wie der ASFI- NAG oder ÖBB führen könnten.",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_30490/imfname_667818.pdf"
 	},
 	{
 		"name": "BM f. Verkehr, Innovation und Technologie",
+		"slider": false,
 		"logo": "bmvit80.png",
 		"text": "Durch Betreiber selbst initiierte Verkehrsmanagementmaßnahmen sind grundsätzlich nicht mit der VO 2015/2120 kompatibel.",
 		"url": "https://parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_30490/imfname_667818.pdf"
