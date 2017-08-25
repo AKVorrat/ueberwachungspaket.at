@@ -964,6 +964,10 @@ div.center > p,
 	font-size: 14px;
 }
 
+.comment > td {
+	white-space: normal;
+}
+
 .commentOpener {
 	position: absolute;
 	top: 50%;
