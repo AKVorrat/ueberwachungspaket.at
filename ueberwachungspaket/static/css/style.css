@@ -974,6 +974,7 @@ div.center > p,
 	top: 50%;
 	right: 8px;
 	transform: translateY(-50%);
+	cursor: pointer;
 }
 
 .sortable {
