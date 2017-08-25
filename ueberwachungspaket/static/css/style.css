@@ -965,7 +965,8 @@ div.center > p,
 }
 
 .comment > td {
-	white-space: normal;
+	white-space: pre-line;
+	font-family: monospace;
 }
 
 .commentOpener {
