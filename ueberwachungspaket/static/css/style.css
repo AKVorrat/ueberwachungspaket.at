@@ -377,6 +377,7 @@ table {
 }
 
 th, td {
+	position: relative;
 	padding: 10px;
 	border-bottom: 1px #E5E5EA solid;
 	white-space: nowrap;
@@ -961,6 +962,19 @@ div.center > p,
 .comment {
 	display: none;
 	font-size: 14px;
+}
+
+.comment > td {
+	white-space: pre-line;
+	font-family: monospace;
+}
+
+.commentOpener {
+	position: absolute;
+	top: 50%;
+	right: 8px;
+	transform: translateY(-50%);
+	cursor: pointer;
 }
 
 .sortable {

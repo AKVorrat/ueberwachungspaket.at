@@ -1,5 +1,6 @@
 <div class="indent" id="quotes-carousel">
 {% for quote in quotes %}
+{% if quote.slider -%}
 	<div>
 		<div class="slide-center">
 			<div class="avatar">
@@ -16,5 +17,6 @@
 			</div>
 		</div>
 	</div>
+{% endif -%}
 {% endfor %}
 </div>
