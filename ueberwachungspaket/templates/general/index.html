@@ -1,5 +1,5 @@
 {% extends "layout.html" %}
-{% set active_page = "root" %}
+{% set active_page = "general.index" %}
 
 {% block title %}
 	<title>{{ config['PROJECT_NAME'] }}</title>
@@ -18,7 +18,7 @@
 		<div class="container">
 			<h2 class="center">Die Begutachtung zum Überwachungspaket ist vorbei</h2>
 			<h4 class="center">Sieh dir an, was die Stellungnahmen sagen!</h4>
-			{% include "consultation_quotes.html" %}
+			{% include "consultation/quotes.html" %}
 		</div>
         <div class="progress-bar">
             <div class="progress-bar-done" style="width: {{ consultation_progress_count_percent }}%"></div>
@@ -29,7 +29,7 @@
 	</section>
 	<section>
 		<div class="container">
-			<a class="btn btn-default" href="{{ url_for('consultation') }}">Alle {{ opinion_count }} öffentlichen Stellungnahmen ansehen</a>
+			<a class="btn btn-default" href="{{ url_for('consultation.index') }}">Alle {{ opinion_count }} öffentlichen Stellungnahmen ansehen</a>
 		</div>
 	</section>
 	<section id="topics">

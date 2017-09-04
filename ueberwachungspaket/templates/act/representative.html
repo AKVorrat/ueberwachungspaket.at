@@ -1,5 +1,5 @@
 {% extends "layout.html" %}
-{% set active_page = "representative" %}
+{% set active_page = "act.representative" %}
 
 {% block title %}
 	<title>{{ rep }} | {{ config['PROJECT_NAME'] }}</title>
@@ -92,7 +92,7 @@
 	{% if rep.contact.mail|length > 0 %}
 	<section id="email-senden">
 		<h2><a name="email"></a><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i> E-Mail senden</h2>
-		<form id="mail" autocomplete="off" class="shrunk" action="{{ url_for('mail') }}" method="post">
+		<form id="mail" autocomplete="off" class="shrunk" action="{{ url_for('act.mail') }}" method="post">
 			{% with messages = get_flashed_messages() -%}
 				{% if messages -%}
 					{% for message in messages -%}

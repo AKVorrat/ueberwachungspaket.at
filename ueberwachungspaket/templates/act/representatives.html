@@ -1,5 +1,5 @@
 {% extends "layout.html" %}
-{% set active_page = "representatives" %}
+{% set active_page = "act.representatives" %}
 
 {% block title %}
 	<title>Draht zu deinen Politikern | {{ config['PROJECT_NAME'] }}</title>
@@ -66,7 +66,7 @@
 		</div>
 		<div id="representatives" class="row">
 			{% for rep in reps %}
-			<a class="representative {% if not rep.important %}invisible{% endif %}" href="{{ url_for('representative', prettyname=rep.name.prettyname) }}" data-firstname="{{ rep.name.firstname }}" data-lastname="{{ rep.name.lastname }}" data-party="{{ rep.party.prettyname }}" data-team="{{ rep.team.prettyname }}" data-state="{{ rep.state }}" data-important="{{ rep.important }}">
+			<a class="representative {% if not rep.important %}invisible{% endif %}" href="{{ url_for('general.representative', prettyname=rep.name.prettyname) }}" data-firstname="{{ rep.name.firstname }}" data-lastname="{{ rep.name.lastname }}" data-party="{{ rep.party.prettyname }}" data-team="{{ rep.team.prettyname }}" data-state="{{ rep.state }}" data-important="{{ rep.important }}">
 				<div class="column">
 					<div class="name">{{ rep.name.lastname }}</div>
 					<div class="party">{{ rep.party.shortname }}</div>
