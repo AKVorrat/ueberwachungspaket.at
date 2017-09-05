@@ -10,8 +10,8 @@ from database.models import (Representatives, Reminder, Mail, Sender)
 from database import db_session
 from ueberwachungspaket.decorators import twilio_request
 
-reps = Representatives()
 mod = Blueprint("act", __name__, url_prefix="/act")
+reps = Representatives()
 
 
 @mod.route("/mail/", methods=["POST"])
