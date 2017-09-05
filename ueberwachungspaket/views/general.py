@@ -5,11 +5,9 @@ from sqlalchemy import func
 from config import TWILIO_NUMBERS
 from database.models import Representatives, Opinion, ConsultationSender
 from database import db_session
-import math
 
-page_size = 35
-reps = Representatives()
 mod = Blueprint("general", __name__)
+reps = Representatives()
 
 
 @mod.route("/")
@@ -18,16 +16,12 @@ def index():
         quotes = load(json_file)
     shuffle(quotes)
     consultation_count = db_session.query(func.count(ConsultationSender.date_validated)).one()[0]
-    consultation_max = math.ceil(consultation_count / 10000.0) * 10000
-    consultation_percent = 100.0*consultation_count/consultation_max if consultation_count > 0 else 0
     opinions = db_session.query(Opinion).count()
     return render_template(
         "general/index.html",
         quotes=quotes,
         opinion_count=opinions,
-        consultation_progress_max=consultation_max,
-        consultation_progress_count=consultation_count,
-        consultation_progress_count_percent=consultation_percent
+        consultation_count=consultation_count
     )
 
 

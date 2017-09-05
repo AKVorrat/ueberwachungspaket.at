@@ -804,40 +804,7 @@ label.space {
 }
 
 
-/* PROGRESS BAR */
 
-.progress-bar {
-    position: relative;
-    margin: auto;
-    width: 100%;
-    max-width: 50em;
-    background: #f5f5f5;
-    border: 2px solid #888;
-    border-radius: 3px;
-    box-sizing: border-box;
-    box-shadow: 1px 2px 3px #0204 inset;
-}
-.progress-bar-done {
-    background-color: #c80000;
-    background: linear-gradient(#f82230, #c90000);
-    display: block;
-    min-height: 3em;
-    box-shadow: 1px 2px 1px #0204 inset, 1px 0 2px #0204;
-}
-
-.progress-bar-text {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    line-height: 1.1em;
-    width: 100%;
-    text-align: center;
-    font-weight: bold;
-    text-shadow:
-        -1px -1px 0 #fff7,
-        1px 1px 0 #fff,
-        0 0 .3em #fff;
-}
 
 
 /* OTHER */

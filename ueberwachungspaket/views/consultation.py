@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 from random import shuffle
 from json import load
 from flask import (Blueprint, render_template, request, jsonify,
@@ -10,8 +9,8 @@ from config.mail import *
 from database.models import Opinion
 from database import db_session
 
-page_size = 35
 mod = Blueprint("consultation", __name__, url_prefix="/konsultation")
+page_size = 35
 
 
 @mod.route("/")
