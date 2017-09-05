@@ -64,6 +64,29 @@ $(document).ready(function() {
 			}
 		});
 	}
+
+	if ($("#videos-carousel").length > 0) {
+		var videocarousel = $("#videos-carousel").slick({
+			dots: true,
+			infinite: true,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			adaptiveHeight: true,
+			responsive: [
+				{
+					breakpoint: 992,
+					settings: {
+						dots: false
+					}
+				}
+			]
+		});
+
+		videocarousel.on("beforeChange", function(event, slick, currentSlide, nextSlide) {
+			var current = $("#videos-carousel .slick-current");
+			current.html(current.html());
+		});
+	}
 });
 
 
