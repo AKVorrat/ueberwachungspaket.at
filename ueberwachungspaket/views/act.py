@@ -69,7 +69,7 @@ def mail():
         db_session.commit()
         flash("Danke für Ihr Engagement. Um fortzufahren, bestätigen Sie bitte den Link, den wir an {mail_user} gesendet haben.".format(mail_user=sender.email_address))
 
-    return redirect(url_for("representative", prettyname=rep.name.prettyname, _anchor="email-senden"))
+    return redirect(url_for("act.representative", prettyname=rep.name.prettyname, _anchor="email-senden"))
 
 
 @mod.route("/validate/<hash>", methods=["GET"])
@@ -99,7 +99,7 @@ def validate(hash):
 @twilio_request
 def call(resp):
     resp.play(url_for("static", filename="audio/intro.wav"))
-    resp.redirect(url_for("gather_menu"))
+    resp.redirect(url_for("act.gather_menu"))
 
 
 @mod.route("/callback/", methods=["POST"])
@@ -135,7 +135,7 @@ def gather_menu(resp):
     except IntegrityError:
         db_session.rollback()
 
-    with resp.gather(numDigits=1, action=url_for("handle_menu")) as g:
+    with resp.gather(numDigits=1, action=url_for("act.handle_menu")) as g:
         g.play(url_for("static", filename="audio/gather_menu.wav"), loop=4)
 
 
@@ -145,24 +145,24 @@ def handle_menu(resp):
     digits_pressed = request.values.get("Digits", 0, type=int)
 
     if digits_pressed == 1:
-        resp.redirect(url_for("gather_reminder_time"))
+        resp.redirect(url_for("act.gather_reminder_time"))
     elif digits_pressed == 2:
-        resp.redirect(url_for("gather_representative"))
+        resp.redirect(url_for("act.gather_representative"))
     elif digits_pressed == 3:
-        resp.redirect(url_for("info_tape"))
+        resp.redirect(url_for("act.info_tape"))
     elif digits_pressed == 4:
-        resp.redirect(url_for("handle_reminder_unsubscribe"))
+        resp.redirect(url_for("act.handle_reminder_unsubscribe"))
     elif digits_pressed == 5:
         resp.dial(FEEDBACK_NUMBER)
     else:
         resp.play(url_for("static", filename="audio/invalid.wav"))
-        resp.redirect(url_for("gather_menu"))
+        resp.redirect(url_for("act.gather_menu"))
 
 
 @mod.route("/gather-reminder-time/", methods=["POST"])
 @twilio_request
 def gather_reminder_time(resp):
-    with resp.gather(numDigits=2, action=url_for("handle_reminder_time")) as g:
+    with resp.gather(numDigits=2, action=url_for("act.handle_reminder_time")) as g:
         g.play(url_for("static", filename="audio/gather_reminder_time.wav"), loop=4)
 
 
@@ -188,13 +188,13 @@ def handle_reminder_time(resp):
         db_session.commit()
     else:
         resp.play(url_for("static", filename="audio/handle_reminder_time_invalid.wav"))
-        resp.redirect(url_for("gather_reminder_time"))
+        resp.redirect(url_for("act.gather_reminder_time"))
 
 
 @mod.route("/gather-representative/", methods=["POST"])
 @twilio_request
 def gather_representative(resp):
-    with resp.gather(numDigits=5, action=url_for("handle_representative")) as g:
+    with resp.gather(numDigits=5, action=url_for("act.handle_representative")) as g:
         g.play(url_for("static", filename="audio/gather_representative.wav"), loop=4)
 
 
@@ -223,7 +223,7 @@ def handle_representative(resp):
 
     else:
         resp.play(url_for("static", filename="audio/handle_representative_invalid.wav"))
-        resp.redirect(url_for("gather_representative"))
+        resp.redirect(url_for("act.gather_representative"))
 
 
 @mod.route("/handle-reminder-unsubscribe/", methods=["POST"])
@@ -246,13 +246,13 @@ def handle_reminder_unsubscribe(resp):
 @twilio_request
 def gather_reminder_call(resp):
     resp.play(url_for("static", filename="audio/gather_reminder_call.wav"))
-    resp.redirect(url_for("gather_reminder_menu"))
+    resp.redirect(url_for("act.gather_reminder_menu"))
 
 
 @mod.route("/gather-reminder-menu/", methods=["POST"])
 @twilio_request
 def gather_reminder_menu(resp):
-    with resp.gather(numDigits=1, action=url_for("handle_reminder_menu")) as g:
+    with resp.gather(numDigits=1, action=url_for("act.handle_reminder_menu")) as g:
         g.play(url_for("static", filename="audio/gather_reminder_menu.wav"), loop=4)
 
 
@@ -282,29 +282,29 @@ def handle_reminder_menu(resp):
     elif digits_pressed == 2:
         pass  # hang up
     elif digits_pressed == 3:
-        resp.redirect(url_for("reminder_info_tape"))
+        resp.redirect(url_for("act.reminder_info_tape"))
     elif digits_pressed == 4:
-        resp.redirect(url_for("handle_reminder_unsubscribe"))
+        resp.redirect(url_for("act.handle_reminder_unsubscribe"))
     elif digits_pressed == 5:
         resp.dial(FEEDBACK_NUMBER)
     else:
         resp.play(url_for("static", filename="audio/invalid.wav"))
-        resp.redirect(url_for("gather_reminder_menu"))
+        resp.redirect(url_for("act.gather_reminder_menu"))
 
 
 @mod.route("/info_tape/", methods=["POST"])
 @twilio_request
 def info_tape(resp):
-    with resp.gather(numDigits=1, action=url_for("gather_menu")) as g:
+    with resp.gather(numDigits=1, action=url_for("act.gather_menu")) as g:
         g.play(url_for("static", filename="audio/info_tape.wav"))
 
-    resp.redirect(url_for("gather_menu"))
+    resp.redirect(url_for("act.gather_menu"))
 
 
 @mod.route("/reminder_info_tape/", methods=["POST"])
 @twilio_request
 def reminder_info_tape(resp):
-    with resp.gather(numDigits=1, action=url_for("gather_reminder_menu")) as g:
+    with resp.gather(numDigits=1, action=url_for("act.gather_reminder_menu")) as g:
         g.play(url_for("static", filename="audio/info_tape.wav"))
 
-    resp.redirect(url_for("gather_reminder_menu"))
+    resp.redirect(url_for("act.gather_reminder_menu"))
