@@ -197,13 +197,14 @@ function convertDateToString(date)
 	return StringDateResult;
 }
 
-/* Load call video */
+// register video embeds
+
 $(document).ready(function() {
-	$("#call-video").html('<a href="#" onclick="loadvideo(); return false;"><img src="static/img/video.jpg" width="560" height="315" alt="Anrufvideo"></a>')
+	$(".video-embed").click(function(e) {
+		var vid = $(this).data("vid");
+		$(this).replaceWith('<iframe width="480" height="360" src="https://www.youtube.com/embed/' + vid + '?autoplay=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe>');
+	});
 });
-var loadvideo = function() {
-	$("#call-video").html('<iframe width="560" height="315" src="https://www.youtube.com/embed/-iXMesM0txo?autoplay=1" frameborder="0" allowfullscreen></iframe>')
-}
 
 // bar chart
 

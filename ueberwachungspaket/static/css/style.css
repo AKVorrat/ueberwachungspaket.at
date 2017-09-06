@@ -398,10 +398,7 @@ th.absorbing {
 	width: 100%;
 }
 
-#call-video {
-	text-align: center;
-	margin: 1.5em;
-}
+
 
 
 
@@ -957,7 +954,11 @@ div.center > p,
 }
 
 #videos-carousel {
-	width: 420px;
+	width: 480px;
+}
+
+.video-embed {
+	cursor: pointer;
 }
 
 
