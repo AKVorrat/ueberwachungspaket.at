@@ -200,7 +200,7 @@ function convertDateToString(date)
 // register video embeds
 
 $(document).ready(function() {
-	$(".video-embed").click(function(e) {
+	$("body").on("click", ".video-embed", function (e) {
 		var vid = $(this).data("vid");
 		$(this).replaceWith('<iframe width="480" height="360" src="https://www.youtube.com/embed/' + vid + '?autoplay=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe>');
 	});
