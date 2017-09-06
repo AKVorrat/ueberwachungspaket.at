@@ -1174,17 +1174,16 @@ nav > ul > li.active {
 	float: left;
 	width: 80%;
 	text-align: center;
-  padding: 1em;
+	padding: 1em;
 }
 .c-block{
-	background: #fff;
+	background: #EEE;
 	padding: 10px;
-	transition:all 0.3s ease;
+	transition: all 0.3s ease;
 	min-height: 170px;
 	border-radius: 10px;
 }
 .c-block:hover{
-
 	color: #C90000;
 	box-shadow: inset 0 0 0 5px #C90000;
 }
