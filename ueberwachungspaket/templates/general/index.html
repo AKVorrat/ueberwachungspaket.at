@@ -1,5 +1,5 @@
 {% extends "layout.html" %}
-{% set active_page = "root" %}
+{% set active_page = "general.index" %}
 
 {% block title %}
 	<title>{{ config['PROJECT_NAME'] }}</title>
@@ -18,18 +18,31 @@
 		<div class="container">
 			<h2 class="center">Die Begutachtung zum Überwachungspaket ist vorbei</h2>
 			<h4 class="center">Sieh dir an, was die Stellungnahmen sagen!</h4>
-			{% include "consultation_quotes.html" %}
+			{% include "consultation/quotes.html" %}
 		</div>
-        <div class="progress-bar">
-            <div class="progress-bar-done" style="width: {{ consultation_progress_count_percent }}%"></div>
-            <div class="progress-bar-text center">
-                {{ consultation_progress_count }} Personen haben auf überwachungspaket.at mitgemacht!
-            </div>
-        </div>
 	</section>
 	<section>
 		<div class="container">
-			<a class="btn btn-default" href="{{ url_for('consultation') }}">Alle {{ opinion_count }} öffentlichen Stellungnahmen ansehen</a>
+            <h2 class="center" style="margin: 0 0 1.6em 0;">{{ consultation_count }} Personen haben auf überwachungspaket.at mitgemacht!</h2>
+			<a class="btn btn-default" href="{{ url_for('consultation.index') }}">Alle {{ opinion_count }} öffentlichen Stellungnahmen ansehen</a>
+		</div>
+	</section>
+	<section>
+		<div class="container">
+			<h2 class="center" style="margin: 0 0 1.6em 0;">Das Überwachungspaket ist vorerst gestoppt. Zivilgesellschaft wirkt!</h2>
+			<div class="center">
+				<div id="videos-carousel">
+					<div class="slick-video">
+						<img src="{{ url_for('static', filename='img/thumbnail/v1.jpg') }}" alt="" class="video-embed" data-vid="qjGfjg71lTU" />
+					</div>
+					<div class="slick-video">
+						<img src="{{ url_for('static', filename='img/thumbnail/v2.jpg') }}" alt="" class="video-embed" data-vid="w5vmbUBBtMA" />
+					</div>
+					<div class="slick-video">
+						<img src="{{ url_for('static', filename='img/thumbnail/v3.jpg') }}" alt="" class="video-embed" data-vid="3JQVx8Bav9s" />
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 	<section id="topics">
@@ -147,9 +160,6 @@
 				<li><i class="fa-li fa fa-check-square"></i>Evaluierung aller bestehenden Überwachungsgesetze auf ihre Verfassungskonformität</li>
 			</ul>
 		</div>
-	</section>
-	<section >
-		<a href="weitersagen/" class="btn btn-default">Sprich über Überwachung</a>
 	</section>
 	<section class="chat">
 		<div class="container">
