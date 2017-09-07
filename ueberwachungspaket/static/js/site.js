@@ -83,8 +83,11 @@ $(document).ready(function() {
 		});
 
 		videocarousel.on("beforeChange", function(event, slick, currentSlide, nextSlide) {
-			var current = $("#videos-carousel .slick-current");
-			current.html(current.html());
+			var iframe = $("#videos-carousel .slick-current iframe");
+			if (iframe.length > 0) {
+				var iframeWindow = iframe.get(0).contentWindow;
+				iframeWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+			}
 		});
 	}
 });
@@ -202,7 +205,7 @@ function convertDateToString(date)
 $(document).ready(function() {
 	$("body").on("click", ".video-embed", function (e) {
 		var vid = $(this).data("vid");
-		$(this).replaceWith('<iframe width="480" height="360" src="https://www.youtube.com/embed/' + vid + '?autoplay=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe>');
+		$(this).replaceWith('<iframe width="480" height="360" src="https://www.youtube.com/embed/' + vid + '?autoplay=1&enablejsapi=1" frameborder="0" allowfullscreen="allowfullscreen"></iframe>');
 	});
 });
 
