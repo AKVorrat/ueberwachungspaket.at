@@ -64,6 +64,32 @@ $(document).ready(function() {
 			}
 		});
 	}
+
+	if ($("#videos-carousel").length > 0) {
+		var videocarousel = $("#videos-carousel").slick({
+			dots: true,
+			infinite: true,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			adaptiveHeight: true,
+			responsive: [
+				{
+					breakpoint: 992,
+					settings: {
+						dots: false
+					}
+				}
+			]
+		});
+
+		videocarousel.on("beforeChange", function(event, slick, currentSlide, nextSlide) {
+			var iframe = $("#videos-carousel .slick-current iframe");
+			if (iframe.length > 0) {
+				var iframeWindow = iframe.get(0).contentWindow;
+				iframeWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+			}
+		});
+	}
 });
 
 
@@ -174,13 +200,14 @@ function convertDateToString(date)
 	return StringDateResult;
 }
 
-/* Load call video */
+// register video embeds
+
 $(document).ready(function() {
-	$("#call-video").html('<a href="#" onclick="loadvideo(); return false;"><img src="static/img/video.jpg" width="560" height="315" alt="Anrufvideo"></a>')
+	$("body").on("click", ".video-embed", function (e) {
+		var vid = $(this).data("vid");
+		$(this).replaceWith('<iframe width="480" height="360" src="https://www.youtube.com/embed/' + vid + '?autoplay=1&enablejsapi=1" frameborder="0" allowfullscreen="allowfullscreen"></iframe>');
+	});
 });
-var loadvideo = function() {
-	$("#call-video").html('<iframe width="560" height="315" src="https://www.youtube.com/embed/-iXMesM0txo?autoplay=1" frameborder="0" allowfullscreen></iframe>')
-}
 
 // bar chart
 

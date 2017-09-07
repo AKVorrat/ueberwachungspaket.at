@@ -1,5 +1,5 @@
 {% extends "layout.html" %}
-{% set active_page = "consultation" %}
+{% set active_page = "consultation.index" %}
 
 {% block title %}
 	<title>Konsultation | {{ config['PROJECT_NAME'] }}</title>
@@ -9,7 +9,7 @@
 <section id="quotes">
 	<div class="container">
 		<h2>Noch nie war eine Begutachtung so eindeutig</h2>
-		{% include "consultation_quotes.html" %}
+		{% include "consultation/quotes.html" %}
 		<h2 class="indent">Welche Themen von den meisten Stellungnahmen abgelehnt wurden</h2>
 		<canvas id="barChart" class="indent" height="80"></canvas>
 	</div>

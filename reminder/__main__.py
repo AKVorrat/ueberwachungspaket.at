@@ -20,14 +20,15 @@ today = date.today()
 try:
     reminders = db_session.query(Reminder).filter(Reminder.time == hour, or_(Reminder.last_called == None, cast(Reminder.last_called, Date) != today)).all()
 except NoResultFound:
+    db_session.remove()
     exit(0)
 
 for reminder in reminders:
     try:
-        client.calls.create(to = reminder.phone_number,
-                            from_ = choice(TWILIO_NUMBERS),
-                            url = CALLBACK_BASE_URL + "/act/gather-reminder-call/",
-                            if_machine = "Hangup")
+        client.calls.create(to=reminder.phone_number,
+                            from_=choice(TWILIO_NUMBERS),
+                            url=CALLBACK_BASE_URL + "/act/gather-reminder-call/",
+                            if_machine="Hangup")
         reminder.last_called = datetime.now()
         reminder.times_called = reminder.times_called + 1
     except TwilioRestException:
