@@ -15,7 +15,7 @@ def index():
     with open("ueberwachungspaket/data/quotes.json", "r") as json_file:
         quotes = load(json_file)
     shuffle(quotes)
-    consultation_count = db_session.query(func.count(ConsultationSender.date_validated)).one()[0]
+    consultation_count = 9143 #db_session.query(func.count(ConsultationSender.date_validated)).one()[0]
     opinions = db_session.query(Opinion).count()
     return render_template(
         "general/index.html",
