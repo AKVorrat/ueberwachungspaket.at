@@ -14,35 +14,21 @@
 
 {% block content %}
 <div class="frontpage-content">
-	<section id="quotes">
-		<div class="container">
-			<h2 class="center">Die Begutachtung zum Überwachungspaket ist vorbei</h2>
-			<h4 class="center">Sieh dir an, was die Stellungnahmen sagen!</h4>
-			{% include "consultation/quotes.html" %}
-		</div>
-	</section>
 	<section>
-		<div class="container">
-            <h2 class="center" style="margin: 0 0 1.6em 0;">{{ consultation_count }} Personen haben auf überwachungspaket.at mitgemacht!</h2>
-			<a class="btn btn-default" href="{{ url_for('consultation.index') }}">Alle {{ opinion_count }} öffentlichen Stellungnahmen ansehen</a>
-		</div>
-	</section>
-	<section>
-		<div class="container">
-			<h2 class="center" style="margin: 0 0 1.6em 0;">Das Überwachungspaket ist vorerst gestoppt. Zivilgesellschaft wirkt!</h2>
-			<div class="center">
-				<div id="videos-carousel">
-					<div class="slick-video">
-						<img src="{{ url_for('static', filename='img/thumbnail/v1.jpg') }}" alt="" class="video-embed" data-vid="qjGfjg71lTU" />
-					</div>
-					<div class="slick-video">
-						<img src="{{ url_for('static', filename='img/thumbnail/v2.jpg') }}" alt="" class="video-embed" data-vid="w5vmbUBBtMA" />
-					</div>
-					<div class="slick-video">
-						<img src="{{ url_for('static', filename='img/thumbnail/v3.jpg') }}" alt="" class="video-embed" data-vid="3JQVx8Bav9s" />
-					</div>
-				</div>
-			</div>
+		<h2>Das Überwachungspaket ist wieder da</h2>
+		<p>
+			Die schwarz-blaue Regierung hat am 21. Februar 2018 eine Neuauflage des Überwachungspakets vorgestellt. Die Kritik an dieser beispiellosen Einschränkung unserer Freiheit gilt nach wie vor. Wir brauchen echte Sicherheit statt mehr Überwachung. Dafür werden wir weiter mit aller Kraft eintreten. Wir brauchen deine Unterstützung! Bald gibt's hier mehr dazu. Bleib am Laufenden:
+		</p>
+		<div class="row bottom">
+			<a class="share center" href="http://www.facebook.com/epicenter.works">
+				<div class="center"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+			</a>
+			<a class="share center" href="https://twitter.com/epicenter_works">
+				<div class="center"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+			</a>
+			<a class="share center" href="https://epicenter.works/newsletter">
+				<div class="center"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+			</a>
 		</div>
 	</section>
 	<section id="topics">
@@ -50,98 +36,52 @@
 			<h2 class="center">Das steckt im Überwachungspaket</h2>
 			<div class="row items3">
 				<div class="column">
-					<a href="https://epicenter.works/thema/ueberwachungspaket#Bundestrojaner">
-						<div class="c-block">
-							<div class="center"><img src="static/img/icons/Trojaner_VERHINDERT.png"></div>
-							<h4>Staatliche Spionagesoftware (Bundestrojaner)</h4>
-						</div>
-					</a>
-				</div>
-				<div class="column">
-					<a href="https://epicenter.works/thema/ueberwachungspaket#Netzsperren">
-						<div class="c-block">
-							<div class="center"><img src="static/img/icons/Netzsperren_VERHINDERT.png"></div>
-							<h4>Netzsperren</h4>
-						</div>
-					</a>
-				</div>
-				<div class="column">
-					<a href="https://epicenter.works/thema/ueberwachungspaket#Videoueberwachung">
-						<div class="c-block">
-							<div class="center"><img src="static/img/icons/totaleVideoueberwachung_VERHINDERT.png"></div>
-							<h4>Verstärkte Videoüberwachung</h4>
-						</div>
-					</a>
-				</div>
-				<div class="column">
-					<a href="https://epicenter.works/thema/ueberwachungspaket#IMSI">
-						<div class="c-block">
-							<div class="center"><img src="static/img/icons/IMSICatcher2_VERHINDERT.png"></div>
-							<h4>IMSI-Catcher</h4>
-						</div>
-					</a>
-				</div>
-				<div class="column">
-					<a href="https://epicenter.works/thema/ueberwachungspaket#LauschangriffPKW">
-						<div class="c-block">
-							<div class="center"><img src="static/img/icons/LauschangriffAuto_VERHINDERT.png"></div>
-							<h4>Lauschangriff im Auto</h4>
-						</div>
-					</a>
-				</div>
-				<div class="column">
-					<a href="https://epicenter.works/thema/ueberwachungspaket#Kennzeichenerfassung">
 					<div class="c-block">
-						<div class="center"><img src="static/img/icons/StreetCCTV_VERHINDERT.png"></div>
-						<h4>Überwachung im Straßenverkehr</h4></div>
-					</a>
+						<div class="center"><img src="static/img/icons/Trojaner.png"></div>
+						<h4>Staatliche Spionagesoftware (Bundestrojaner)</h4>
+					</div>
 				</div>
 				<div class="column">
-					<a href="https://epicenter.works/thema/ueberwachungspaket#VDS">
-						<div class="c-block">
-							<div class="center"><img src="static/img/icons/Vorratsdaten_02_VERHINDERT.png"></div>
-							<h4>Vorratsdatenspeicherung 2.0</h4>
-						</div>
-					</a>
+					<div class="c-block">
+						<div class="center"><img src="static/img/icons/totaleVideoueberwachung.png"></div>
+						<h4>Verstärkte Videoüberwachung</h4>
+					</div>
 				</div>
 				<div class="column">
-					<a href="https://epicenter.works/thema/ueberwachungspaket#Wertkarten">
-						<div class="c-block">
-							<div class="center"><img src="static/img/icons/SIM-ID_VERHINDERT.png"></div>
-						<h4>Registrierungspflicht für Wertkarten</h4></div>
-					</a>
+					<div class="c-block">
+						<div class="center"><img src="static/img/icons/IMSI.png"></div>
+						<h4>IMSI-Catcher</h4>
+					</div>
 				</div>
 				<div class="column">
-					<a href="https://epicenter.works/thema/ueberwachungspaket#Bundesheer">
-						<div class="c-block">
-							<div class="center"><img src="static/img/icons/Bundesheer_im_Inneren_VERHINDERT.png"></div>
-							<h4>Bundesheer im Inneren</h4>
-						</div>
-					</a>
+					<div class="c-block">
+						<div class="center"><img src="static/img/icons/LauschangriffAuto.png"></div>
+						<h4>Lauschangriff im Auto</h4>
+					</div>
 				</div>
 				<div class="column">
-					<a href="https://epicenter.works/thema/ueberwachungspaket#Fussfessel">
-						<div class="c-block">
-							<div class="center"><img src="static/img/icons/Fussfessel_verhindert_v2.png"></div>
-							<h4>Fußfessel für nicht Verurteilte</h4>
-						</div>
-					</a>
+					<div class="c-block">
+						<div class="center"><img src="static/img/icons/Verkehrsueberwachung.png"></div>
+						<h4>Überwachung im Straßenverkehr</h4>
+                    </div>
 				</div>
 				<div class="column">
-					<a href="https://epicenter.works/thema/ueberwachungspaket#Versammlungsrecht">
-						<div class="c-block">
-							<div class="center"><img src="static/img/icons/EinschraenkungDemo_BESCHLOSSEN.png"></div>
-							<h4>Einschränkung des Versammlungsrechts</h4>
-						</div>
-					</a>
+					<div class="c-block">
+						<div class="center"><img src="static/img/icons/Vorratsdaten.png"></div>
+						<h4>Vorratsdatenspeicherung 2.0</h4>
+					</div>
 				</div>
 				<div class="column">
-					<a href="https://epicenter.works/thema/ueberwachungspaket#Staatsfeind">
-						<div class="c-block">
-							<div class="center"><img src="static/img/icons/Einschraenkung der Meinungsfreiheit_BESCHLOSSEN.png"></div>
-							<h4>Einschränkung der Meinungsfreiheit (Staatsfeindeparagraf)</h4>
-						</div>
-					</a>
+					<div class="c-block">
+						<div class="center"><img src="static/img/icons/SIM-ID.png"></div>
+						<h4>Registrierungspflicht für Wertkarten</h4>
+					</div>
+				</div>
+				<div class="column">
+					<div class="c-block">
+						<div class="center"><img src="static/img/icons/Briefgeheimnis.png"></div>
+						<h4>Beschlagnahmung von Briefen</h4>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -159,128 +99,6 @@
 				<li><i class="fa-li fa fa-check-square"></i>ein Ablaufdatum für neue Überwachungsgesetze ("Sunset Clauses" mit wissenschaftlicher Evaluierung und Rücknahme wirkungsloser Maßnahmen)</li>
 				<li><i class="fa-li fa fa-check-square"></i>Evaluierung aller bestehenden Überwachungsgesetze auf ihre Verfassungskonformität</li>
 			</ul>
-		</div>
-	</section>
-	<section class="chat">
-		<div class="container">
-		<h2>Wie betrifft mich das Überwachungspaket?</h2>
-		<ul>
-			<li>
-				<div class="avtxt"><h3>Lückenlose Überwachung betrifft auch dich!</h3></div>
-			</li>
-			<li>
-				Wenn die Regierung ihre Pläne umsetzt, kann sich bald niemand mehr unbeobachtet auf Straßen und öffentlichen Plätzen bewegen. Auch du bist dann im Überwachungsnetz gefangen. Die Erfassung von Autokennzeichen, vernetzte Videokameras, das Verbot anonymer Wertkarten und Ausweiskontrollen beim Kauf von Bahn- oder Bustickets schränken deine persönliche Freiheit ein! Für die Verbrechensbekämpfung sind diese Maßnahmen allerdings kaum geeignet. Setze dich für verhältnismäßige Sicherheitspolitik ein!
-			</li>
-			<li>
-				<div class="avtxt"><h3>Verwendest du Passwörter? </h3></div>
-			</li>
-			<li>
-				Mit dem geplanten Bundestrojaner wird der Staat zum Hacker. Smartphones und private Rechner sollen mit staatlicher Spionagesoftware infiziert werden, um sensible persönliche Daten und Passwörter auszulesen. Dafür riskiert der Staat, uns alle unsicherer zu machen. Sicherheitslücken, müssen offen bleiben, damit Trojaner eingeschleust werden können.
-			</li>
-			<li>
-				<div class="avtxt"><h3>Hast du eine Kamera im Badezimmer? </h3></div>
-			</li>
-			<li>
-				<p>Wir alle wollen intime Momente genießen. Es gibt immer wieder Situationen im Leben, in denen man nicht beobachtet werden will. Mit "lückenloser Überwachung" wie sie Innenminister Sobotka fordert, wird dein Recht auf Privatsphäre massiv eingeschränkt. Wir alle haben einen schützenswerten Intimbereich.</p>
-			</li>
-			<li>
-				<div class="avtxt"><h3>Fährt bei dir im Auto immer ein Polizist mit?</h3></div>
-			</li>
-			<li>
-				<p>Mit der neuen Kennzeichenerfassung hat der Staat bald vollständige Bewegungsprofile aller Autofahrer in Österreich. Egal ob Arbeit, Freizeit oder Krankenhaus jeder Weg wird mit protokolliert. Dazu kann in jedem Auto bald ein Lauschangriff stattfinden, auch schon bei Straftaten mit geringem Strafmaß. All das steht bald in einer Datenbank, auf die der Staat Zugriff hat. </p>
-			</li>
-			<li>
-				<div class="avtxt"><h3>Hast du ein Wertkartenhandy?</h3></div>
-			</li>
-			<li>
-				<p>Dann bist du einer von 4,5 Millionen Österreicherinnen und Österreichern, die bald für einfache Kommunikation ihren Ausweis zeigen und auch noch mehr bezahlen müssen. Anonyme Wertkarten werden mit dem Überwachungspaket verboten. Andere Länder haben sich gegen diese Maßnahme entschieden, weil sie nicht positiv für die Sicherheit ist und einen Schwarzmarkt für gestohlene und getauschte SIM-Karten fördert. Mit der Maßnahme werden Billiganbieter vom Markt gedrängt, weil diese kaum Möglichkeiten haben, die Registrierung durchzuführen. Damit steigen die Preise.</p>
-			</li>
-			<li>
-				<div class="avtxt"><h3>Lässt du deine Haustüre offen, um sicherer zu leben?</h3></div>
-			</li>
-			<li>
-				<p>Genau das macht ein Bundestrojaner mit deinem Computer oder Handy. Eine staatliche Spionagesoftware nutzt Sicherheitslücken aus, die dann auch von Dritten verwendet werden können, um dein Gerät zu manipulieren. </p>
-			</li>
-			<li>
-				<div class="avtxt"><h3>Gibst du den PIN deiner Bankomatkarte einfach so raus?</h3></div>
-			</li>
-			<li>
-				<p>Es gibt gute Gründe, sensible Daten vor dem Zugriff Dritter zu schützen. Niemand soll dein Geld ausgeben können, wenn du es nicht willst. Niemand soll deine Post öffnen dürfen. </p>
-			</li>
-			<li>
-				<div class="avtxt"><h3>Glaubst du auch, dass du nichts zu verbergen hast?</h3></div>
-			</li>
-			<li>
-				<p>Dann legen wir dir dieses Zitat von Edward Snowden ans Herz: "Zu behaupten, das Recht auf Privatsphäre sei nicht so wichtig, weil man nichts zu verbergen hat, ist wie zu sagen; Das Recht auf freie Meinungsäußerung sei nicht so wichtig, weil man nichts zu sagen hat." (Im Original: "Arguing that you don't care about the right to privacy because you have nothing to hide is no different than saying you don't care about free speech because you have nothing to say.”) </p>
-			</li>
-		</ul>
-		</div>
-	</section>
-	<section >
-		<a href="weitersagen/" class="btn btn-default">Sprich über Überwachung</a>
-	</section>
-	<section class="chat">
-		<div class="container">
-		<h2>Überwachung macht uns sicherer?</h2>
-		<ul>
-			<li>
-				<div class="avtxt"><h3>Haben dir Politiker jemals einen Beleg dafür geliefert?</h3></div>
-			</li>
-			<li>
-				Laufend werden neue Überwachungsgesetze beschlossen, ohne dass man sich Gedanken über ihre Wirksamkeit macht. Was dir als "Sicherheitspolitik" verkauft wird, bringt in den seltensten Fällen mehr Sicherheit, aber sehr oft Einschränkungen deiner Grund- und Freiheitsrechte. Frag Politiker nach einer Wirkungsfolgenabschätzung für die Maßnahmen, die sie planen!
-			</li>
-			<li>
-				<div class="avtxt"><h3>Werden Kinder zu freien, verantwortungsvollen Menschen, wenn man sie dauernd kontrolliert?</h3></div>
-			</li>
-			<li>
-				So ähnlich ist das auch mit staatlicher Überwachung. Sie eignet sich ganz gut dazu, Menschen zu unterdrücken. Freier macht sie sie aber bestimmt nicht. Wer sich permanent überwacht fühlt, wird es irgendwann nicht mehr wagen, eine Meinung zu haben.
-			</li>
-			<li>
-				<div class="avtxt"><h3>Weniger Freiheit bringt mehr Sicherheit?</h3></div>
-			</li>
-			<li>
-				<p>Freiheit und Sicherheit stehen nicht in einer Balance. Es gibt viele Dinge die unsere Freiheit einschränken aber überhaupt keine Sicherheit bringen. Mehr Daten zu sammeln macht es nicht einfacher Verbrecher zu finden, das wäre so, als ob man den Heuhaufen größer macht, um eine Nadel leichter zu finden. Viele der Maßnahmen im Überwachungspaket wurden in anderen Ländern bereits diskutiert und abgelehnt. Ein Gesetz zur Legalisierung einer staatlichen Spionagesoftware (Bundestrojaner) wurde erst 2016 vorgestellt und von Justizminister Brandstetter nach massiver Kritik zurückgenommen. Bei keiner der vorgestellten Maßnahmen gibt es einen Nachweis, das sie uns sicherer macht. Bestehende Überwachungskompetenzen müssten dringend evaluiert werden. Wir fordern eine faktenbasierte Sicherheitspolitik.</p>
-				<p><a href="https://epicenter.works/thema/heat" class="btn btn-default">Erfahre mehr zur Überwachungsgesamtrechnung.</a></p>
-			</li>
-		</ul>
-			</div>
-	</section>
-	<section >
-		<a href="weitersagen/" class="btn btn-default">Sprich über Überwachung</a>
-	</section>
-	<section class="chat">
-		<div class="container">
-		<h2>Aber ich habe doch nichts zu verbergen!?</h2>
-		<ul>
-			<li>
-				<div class="avtxt"><h3>Wir haben alle etwas zu verbergen! </h3></div>
-			</li>
-			<li><p>Schließlich tragen wir Kleidung, verwenden Passwörter, wollen keine Kameras in unseren Schlafzimmern und erzählen fremden Menschen nicht unsere intimsten Erinnerungen. Privatsphäre bedeutet, selbst entscheiden zu können, wem wir etwas über uns erzählen. Sie ist ein Rückzugsort, wo wir ganz bei uns selbst sind.</p>
-			</li>
-			<li>
-				<div class="avtxt"><h3>Wir haben alle etwas zu befürchten! </h3></div>
-			</li>
-			<li><p>Bei allen Menschen gibt es Dinge, mit denen man sie bloßstellen kann. Auch Ehepartner müssen nicht alles über uns wissen; Vorgesetzte auch nicht und auch die Staatsmacht nicht: Es gibt gewisse Aspekte in unserem Leben, die wir lieber für uns behalten. Wir haben unsere Meinung geändert, wir sind reifer und älter geworden. Was früher war, darf uns heute nicht mehr zur Last gelegt werden. Insbesondere wenn jemand in einer Machtposition ist, haben wir ein berechtigtes Interesse, gewisse Lebensaspekte geheim zu halten. Wenn man einmal ins Fadenkreuz gerät und als “Gefährder” abgestempelt wird, ist jeder Lebensaspekt unter dem Mikroskop. </p>
-			</li>
-			<li>
-				<div class="avtxt"><h3>Was kann passieren?</h3></div>
-			</li>
-			<li>
-				<p>Viele Menschen haben berechtigte Gründe etwas zu verbergen. Man kann die Religion, Jugendsünden, Weltanschauung oder Sexualität gegen einen Menschen verwenden. Im besten Fall wird sich dieser Mensch regelkonformer verhalten, seltener aus der Reihe tanzen, weniger auffallen. Im schlimmsten Fall kann man mit solchen Informationen ein Leben zerstören. </p>
-			</li>
-			<li>
-				<div class="avtxt"><h3>Wer überwacht die Überwacher? </h3></div>
-			</li>
-			<li>
-				<p>Das große Problem bei Überwachung ist, dass die Gegenseite viel über uns weiß, wir aber nichts über sie. Diese <a href="https://de.wikipedia.org/wiki/Panopticon">Asymmetrie der Informationsverteilung</a> nimmt uns die Chance auf Augenhöhe mit dem Überwacher zu verhandeln. Der Überwachte wird zum Feind. Es gibt <a href="https://theintercept.com/2015/07/24/documents-show-department-homeland-security-monitoring-black-lives-matter-since-ferguson/">mehrere Geschichten</a> aus der <a href="https://de.wikipedia.org/wiki/Wiener_Neustädter_Tierschützerprozess">jüngeren Vergangenheit</a>, wo staatliche Überwachung zu den <a href="https://futurezone.at/netzpolitik/anonymous-razzia-grobe-maengel-bei-ermittlungen/24.577.019">wildesten Anschuldigungen</a> gegen <a href="https://derstandard.at/jetzt/livebericht/1342947762688/nachlese-live-bericht-freispruch-im-unibrennt-prozess">unbescholtene Menschen</a> geführt hat. </p>
-			</li>
-			<li>
-				<div class="avtxt"><h3>Überwachung ist gefährlich für unsere Demokratie! </h3></div>
-			</li>
-			<li>
-				<p>Aus gutem Grund geben wir unsere Stimme im Wahllokal in einer unbeobachteten Wahlkabine ab. Eine Demokratie ohne Privatsphäre gibt es nicht. Nur wenn wir unbeobachtet sind, können wir eine freie und geheime Wahl treffen und mit Anderen versuchen, die Gesellschaft voran zu bringen. Nur in einer Diktatur geht die Gefahr vom Volk aus.</p>
-			</li>
-		</ul>
 		</div>
 	</section>
 </div>
