@@ -11,14 +11,7 @@
 					<h1>Stoppt das <br>Überwachungspaket!</h1>
 				</a>
 				<nav>
-					{% set navigation_items = [
-						("general.index", "Home"),
-						("consultation.index", "Konsultation"),
-						("general.share", "Weitersagen"),
-						("general.supporters", "Unterstützt von"),
-						("general.faq", "FAQ")
-					] -%}
-
+					{% set navigation_items = [] %}
 					<ul class="row">
 						{% for func, title in navigation_items -%}
 							<li{% if func == active_page %} class="active"{% endif %}><a href="{{ url_for(func) }}">{{ title }}</a></li>
