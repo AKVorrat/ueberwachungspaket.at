@@ -627,6 +627,12 @@ form .row > input[type='text'] + input[type='button'] {
 	}
 }
 
+@media screen and (max-width: 992px) {
+	.full-width-on-mobile {
+		width: 98% !important;
+	}
+}
+
 
 
 
