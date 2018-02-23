@@ -25,7 +25,7 @@ def index():
     )
 
 
-@mod.route("/politiker/")
+#@mod.route("/politiker/")
 def representatives():
     reps_random = reps.representatives + reps.government
     shuffle(reps_random)
@@ -35,7 +35,7 @@ def representatives():
     )
 
 
-@mod.route("/p/<prettyname>/")
+#@mod.route("/p/<prettyname>/")
 def representative(prettyname):
     rep = reps.get_representative_by_name(prettyname)
     if rep:
@@ -48,17 +48,17 @@ def representative(prettyname):
         abort(404)
 
 
-@mod.route("/weitersagen/")
+#@mod.route("/weitersagen/")
 def share():
     return render_template("general/share.html")
 
 
-@mod.route("/unterstützer/")
+#@mod.route("/unterstützer/")
 def supporters():
     return render_template("general/supporters.html")
 
 
-@mod.route("/faq/")
+#@mod.route("/faq/")
 def faq():
     return render_template("general/faq.html")
 
