@@ -205,7 +205,9 @@ function convertDateToString(date)
 $(document).ready(function() {
 	$("body").on("click", ".video-embed", function (e) {
 		var vid = $(this).data("vid");
-		$(this).replaceWith('<iframe width="480" height="360" src="https://www.youtube.com/embed/' + vid + '?autoplay=1&enablejsapi=1" frameborder="0" allowfullscreen="allowfullscreen"></iframe>');
+        var width = $(this).attr('width');
+        var height = $(this).attr('height');
+		$(this).replaceWith('<iframe width="' + width + '" height="' + height + '" src="https://www.youtube.com/embed/' + vid + '?autoplay=1&enablejsapi=1" frameborder="0" allowfullscreen="allowfullscreen"></iframe>');
 	});
 });
 
