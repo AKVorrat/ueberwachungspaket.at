@@ -13,7 +13,11 @@
 			<div class="avtxt">
 				<strong>{{ quote.name }}</strong>
 				<p>{{ quote.text|safe }}</p>
-				<a href="{{ quote.url }}" class="small"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Stellungnahme lesen</a>
+				<a href="{{ quote.url }}" class="small">
+					<!--<i class="fa fa-file-pdf-o" aria-hidden="true"></i>-->
+					<i class="fa fa-external-link"></i>
+					Zustimmen
+				</a>
 			</div>
 		</div>
 	</div>

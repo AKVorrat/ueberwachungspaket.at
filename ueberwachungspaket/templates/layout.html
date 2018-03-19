@@ -11,7 +11,10 @@
 					<h1>Stoppt das <br>Überwachungspaket!</h1>
 				</a>
 				<nav>
-					{% set navigation_items = [] %}
+					{% set navigation_items = [
+						("general.share", "Werde aktiv!"),
+						("general.supporters", "Unterstützt von"),
+						("general.faq", "FAQ")] %}
 					<ul class="row">
 						{% for func, title in navigation_items -%}
 							<li{% if func == active_page %} class="active"{% endif %}><a href="{{ url_for(func) }}">{{ title }}</a></li>
