@@ -48,17 +48,17 @@ def representative(prettyname):
         abort(404)
 
 
-#@mod.route("/weitersagen/")
+@mod.route("/weitersagen/")
 def share():
     return render_template("general/share.html")
 
 
-#@mod.route("/unterstützer/")
+@mod.route("/unterstützer/")
 def supporters():
     return render_template("general/supporters.html")
 
 
-#@mod.route("/faq/")
+@mod.route("/faq/")
 def faq():
     return render_template("general/faq.html")
 
