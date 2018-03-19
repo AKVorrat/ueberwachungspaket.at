@@ -30,40 +30,106 @@ $(document).ready(function () {
 
 
 // slick carousel
+function toggleQuotesCarousel(element) {
+    var $quotesCarousel = $('#quotes-carousel');
+    if ($quotesCarousel.length > 0) {
+        var isSlickLoaded = $quotesCarousel.hasClass('slick-initialized');
+        var $icon = null;
+        if (typeof  element !== 'undefined') {
+            $icon = $(element).find('i');
+        }
+        
+        if (isSlickLoaded) {
+            $quotesCarousel.slick('unslick');
+			if ($icon) {
+				$icon.removeClass('fa-angle-down');
+				$icon.addClass('fa-angle-up');
+				$(element).contents().last().replaceWith(' Einklappen');
+            }
+            
+        } else {
+            var slickQuotesCarousel = $quotesCarousel.slick({
+                dots: true,
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                adaptiveHeight: true,
+                autoplay: true,
+                autoplaySpeed: 5000,
+                responsive: [
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            dots: false
+                        }
+                    }
+                ]
+            });
+
+            window.scroll = function() {
+                var top_of_element = $quotesCarousel.offset().top;
+                var bottom_of_element = $quotesCarousel.offset().top + $quotesCarousel.outerHeight();
+                var top_of_screen = $(window).scrollTop();
+                var bottom_of_screen = $(window).scrollTop() + $(window).height();
+
+                if((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
+                    slickQuotesCarousel.slick("slickPlay");
+                } else {
+                    slickQuotesCarousel.slick("slickPause");
+                }
+            };
+
+			if ($icon) {
+				$icon.removeClass('fa-angle-up');
+				$icon.addClass('fa-angle-down');
+				$(element).contents().last().replaceWith(' Alle Stellungnahmen');
+			}
+		}
+    }
+    
+}
+
+// be-active section
+$(document).ready(function() {
+	var $beActive = $('#be-active');
+	var containers = $beActive.find('.container');
+	
+	if ($beActive && containers.length > 2) {
+        var $container1 = $(containers[0]);
+        var $container2 = $(containers[1]);
+        var $container3 = $(containers[2]);
+        
+        $('#be-active-button').on('click', function () {
+            $container1.hide();
+            $container2.show();
+        });
+        
+        $('#be-active-form').on('submit', function(e) {
+        	e.preventDefault();
+            var postUrl = $(this).attr("action"); //get form action url
+            var formData = $(this).serialize(); //Encode form elements for submission
+
+            $.post( postUrl, formData) 
+				.done(function() {
+                    $container2.hide();
+                    $container3.show();
+                })
+				.fail(function(xhr, status, error) {
+                    $("#be-active-server-error").html('Ein Fehler ist aufgetreten. Bitte versuche es später nochmal!');	
+				});
+			
+                
+		});
+        
+        $('#be-active-back').on('click', function() {
+            $container3.hide();
+            $container1.show();
+		});
+    }
+});
 
 $(document).ready(function() {
-	if ($("#quotes-carousel").length > 0) {
-		var carousel = $("#quotes-carousel").slick({
-			dots: true,
-			infinite: true,
-			slidesToShow: 1,
-			slidesToScroll: 1,
-			adaptiveHeight: true,
-			autoplay: true,
-			autoplaySpeed: 5000,
-			responsive: [
-				{
-					breakpoint: 992,
-					settings: {
-						dots: false
-					}
-				}
-			]
-		});
-
-		$(window).scroll(function() {
-			var top_of_element = $("#quotes-carousel").offset().top;
-			var bottom_of_element = $("#quotes-carousel").offset().top + $("#quotes-carousel").outerHeight();
-			var top_of_screen = $(window).scrollTop();
-			var bottom_of_screen = $(window).scrollTop() + $(window).height();
-
-			if((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
-				carousel.slick("slickPlay");
-			} else {
-				carousel.slick("slickPause");
-			}
-		});
-	}
+	toggleQuotesCarousel();
 
 	if ($("#videos-carousel").length > 0) {
 		var videocarousel = $("#videos-carousel").slick({

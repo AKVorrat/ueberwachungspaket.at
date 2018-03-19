@@ -587,6 +587,9 @@ form .row > input[type='text'] + input[type='button'] {
 	.items3 > * {
 		width: 50%;
 	}
+	.items4 > * {
+		width: 50%;
+	}
 	.row-space > * {
 		width: calc(50% - 0.5em);
 	}
@@ -677,6 +680,10 @@ input[type="radio"] {
 input.stick {
 	width: auto;
 	margin: .5rem .5rem .5rem auto;
+}
+
+button {
+	border: 0;
 }
 
 .form-required {
@@ -1190,20 +1197,91 @@ nav > ul > li.active {
 	min-height: 170px;
 	border-radius: 10px;
 }
+/*
 .c-block:hover{
 	color: #C90000;
 	box-shadow: inset 0 0 0 5px #C90000;
 }
+*/
 .c-block h4{
 	color: #00466e;
 }
+/*
 .c-block:hover h4{
 	color: #C90000;
 }
+*/
 .c-block img{
-	height: 85px;
+	height: 160px;
+	border-radius: 8px;
+	border: 3px solid white;
+	transition : border 0.3s ease;
 }
 
+.c-block img:hover {
+	border: 3px solid #C80000;
+}
+
+.be-active-block {
+	padding: 10px;
+	min-height: 170px;
+}
+
+.be-active-block img{
+	height: 140px;
+	margin-bottom: 20px;
+} 
+
+.be-active-block h5 {
+	font-size: 14px;
+	font-weight: 100;
+}
+
+#be-active-server-error {
+	color: #C80000;
+}
+
+#be-active input {
+	display: block;
+	margin: auto;
+	height: 48px;
+	width: 300px;
+	border-radius: 4px;
+	margin-top: 10px;
+}
+
+#be-active button {
+	display: block;
+	margin: auto;
+	margin-top: 10px;
+}
+
+#be-active .fa-thumbs-o-up {
+	font-size: 60px;
+}
+
+.button {
+	margin-top: 30px;
+	height:48px;
+	width:300px;
+	border-radius: 4px;
+	text-align: center;
+	padding: 13px;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-family: "Oswald", sans-serif;
+	font-weight: 600;
+	font-size: 24px;
+}
+
+.button.blue {
+	color: white;
+	background-color: #00a4eb;
+}
+
+.button.blue:hover {
+	background-color: #00466d;
+}
 
 .padding{
 	padding: 4em!important;
