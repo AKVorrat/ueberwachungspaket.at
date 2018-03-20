@@ -355,7 +355,11 @@ section::before {
 	border-right: 90px solid transparent;
 }
 
-section:nth-child(odd):not(.dark):not(#sicherheit) + section::before {
+#quotes::before {
+    border-top-color: #fff;
+}
+
+section + section::before {
 	border-top: 40px solid #EEE;
 }
 
