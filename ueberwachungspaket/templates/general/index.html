@@ -2,147 +2,147 @@
 {% set active_page = "general.index" %}
 
 {% block title %}
-	<title>{{ config['PROJECT_NAME'] }}</title>
+    <title>{{ config['PROJECT_NAME'] }}</title>
 {% endblock title%}
 
 {% block header %}
-	<div class="banner">
-		<img src="static/img/header_uepa.jpg" class="visible-desktop">
-		<img src="static/img/header_uepa_mobile.jpg" class="visible-mobile">
-	</div>
+    <div class="banner">
+        <img src="static/img/header_uepa.jpg" class="visible-desktop">
+        <img src="static/img/header_uepa_mobile.jpg" class="visible-mobile">
+    </div>
 {% endblock %}
 
 {% block content %}
 <div class="frontpage-content">
-	<section id="be-active">
-		<div class="container">
-			<h2>Werde aktiv!</h2>
-			<div class="row items3">
-				<div class="column">
-					<div class="be-active-block">
-						<div class="center"><img src="static/img/icons/werde-aktiv_01.png" alt="Werde aktiv Clipboard"></div>
-						<div class="center"><h4>1. E-Mail-Adresse und<br>Rufnummer angeben</h4></div>
-					</div>
-				</div>
-				<div class="column">
-					<div class="be-active-block">
-						<div class="center"><img src="static/img/icons/werde-aktiv_02.png" alt="Werde aktiv Unterstützung"></div>
-						<div class="center"><h4>2. Aktuelle Infos erhalten,<br>wie man aktiv werden kann</h4></div>
-						<div class="center"><h5>(neue kritische Stellungnahme zum Überwachgunspaket<br>auf der Seite des Parlaments verfügbar)</h5></div>
-					</div>
-				</div>
-				<div class="column">
-					<div class="be-active-block">
-						<div class="center"><img src="static/img/icons/werde-aktiv_03.png" alt="Werde aktiv Brief"></div>
-						<div class="center"><h4>3. Auf die Parlamentswebsite<br>gehen und einer kritischen<br>Stellungnahme zustimmen</h4></div>
-					</div>
-				</div>
-				<div class="center">
-					<div class="button blue" id="be-active-button">Jetzt anmelden</div>
-				</div>
-			</div>
-		</div>
-		<div class="container" style="display: none">
-			<h2>Jetzt anmelden</h2>
-			<div class="row items1">
-				<div class="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
-				<form id="be-active-form" action="/join/" method="post">
-					<input type="email" placeholder="E-Mail-Adresse (Pflichtfeld)" name="email">
-					<input type="text" placeholder="Rufnummer (optional)" name="phonenumber" maxlength="20">
-					<button type="submit" class="button blue">Abschicken</button>
-					<div id="be-active-server-error"></div>
-				</form>
-			</div>
-		</div>
-		<div class="container" style="display: none">
-			<h2><i class="fa fa-thumbs-o-up"></i></h2>
-			<h2>Vielen Dank für Deine Unterstützung</h2>
-			<div class="center">
-				<div class="button blue" id="be-active-back">Zurück</div>
-			</div>
-		</div>
-	</section>
-	<section id="topics">
-		<div class="container">
-			<h2 class="center">Das steckt im Überwachungspaket</h2>
-			<div class="row items4">
-				<div class="column">
-					<div class="c-block">
-						<div class="center"><img src="static/img/icons/up_graphic01.png"></div>
-						<h4>Staatliche Spionagesoftware (Bundestrojaner)</h4>
-					</div>
-				</div>
-				<div class="column">
-					<div class="c-block">
-						<div class="center"><img src="static/img/icons/up_graphic02.png"></div>
-						<h4>Verstärkte Videoüberwachung</h4>
-					</div>
-				</div>
-				<div class="column">
-					<div class="c-block">
-						<div class="center"><img src="static/img/icons/up_graphic03.png"></div>
-						<h4>IMSI-Catcher</h4>
-					</div>
-				</div>
-				<div class="column">
-					<div class="c-block">
-						<div class="center"><img src="static/img/icons/up_graphic04.png"></div>
-						<h4>Lauschangriff im Auto</h4>
-					</div>
-				</div>
-				<div class="column">
-					<div class="c-block">
-						<div class="center"><img src="static/img/icons/up_graphic05.png"></div>
-						<h4>Überwachung im Straßenverkehr</h4>
+    <section id="be-active">
+        <div class="container">
+            <h2>Werde aktiv!</h2>
+            <div class="row items3">
+                <div class="column">
+                    <div class="be-active-block">
+                        <div class="center"><img src="static/img/icons/werde-aktiv_01.png" alt="Werde aktiv Clipboard"></div>
+                        <div class="center"><h4>1. E-Mail-Adresse und<br>Rufnummer angeben</h4></div>
                     </div>
-				</div>
-				<div class="column">
-					<div class="c-block">
-						<div class="center"><img src="static/img/icons/up_graphic06.png"></div>
-						<h4>Vorratsdatenspeicherung 2.0</h4>
-					</div>
-				</div>
-				<div class="column">
-					<div class="c-block">
-						<div class="center"><img src="static/img/icons/up_graphic07.png"></div>
-						<h4>Registrierungspflicht für Wertkarten</h4>
-					</div>
-				</div>
-				<div class="column">
-					<div class="c-block">
-						<div class="center"><img src="static/img/icons/up_graphic08.png"></div>
-						<h4>Beschlagnahmung von Briefen</h4>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section id="quotes">
-		<div class="container">
-			<h2 class="center">Kritik am Überwachungspaket</h2>
-			<div class="center">Das plant die schwarz-blaue Bundesregierung</div>
-			<div class="center">(<a href="{}"><i class="fa fa-sign-out"></i> Mehr zum Überwachungspaket 2017</a>)</div>
-			{% include "consultation/quotes.html" %}
-		</div>
-		<div class="center">
-			<a href="#quotes" onclick="toggleQuotesCarousel(this);">
-				<i class="fa fa-angle-down"></i> Alle Stellungnahmen</a>
-		</div>
-	</section>
-	<section id="sicherheit">
-		<div class="container">
-			<h2>Echtes Sicherheitspaket statt Überwachungspaket</h2>
-			<p>Im Überwachungspaket der Regierung ist keine wirkliche Sicherheit enthalten. Statt "subjektivem" Sicherheitsgefühl, Angstmache und Populismus brauchen wir ein "objektives" Sicherheitspaket:</p>
-			<ul class="fa-ul">
-				<li><i class="fa-li fa fa-check-square"></i>mehr spezifisch ausgebildete Polizeikräfte statt mehr Kameras</li>
-				<li><i class="fa-li fa fa-check-square"></i>verbesserte Analysekapazitäten für Sicherheitsbehörden: Mehr speziell ausgebildete Datenanalysten statt mehr Daten</li>
-				<li><i class="fa-li fa fa-check-square"></i>mehrsprachige Polizeikräfte bzw. mehr Dolmetscherkapazitäten</li>
-				<li><i class="fa-li fa fa-check-square"></i>mehr Präventionsarbeit gegen Radikalisierungstendenzen</li>
-				<li><i class="fa-li fa fa-check-square"></i>bessere Vernetzung mit Communities als vertrauensbildende Maßnahmen und zur frühzeitigen Erkennung radikaler Tendenzen</li>
-				<li><i class="fa-li fa fa-check-square"></i>ein Ablaufdatum für neue Überwachungsgesetze ("Sunset Clauses" mit wissenschaftlicher Evaluierung und Rücknahme wirkungsloser Maßnahmen)</li>
-				<li><i class="fa-li fa fa-check-square"></i>Evaluierung aller bestehenden Überwachungsgesetze auf ihre Verfassungskonformität</li>
-			</ul>
-		</div>
-	</section>
+                </div>
+                <div class="column">
+                    <div class="be-active-block">
+                        <div class="center"><img src="static/img/icons/werde-aktiv_02.png" alt="Werde aktiv Unterstützung"></div>
+                        <div class="center"><h4>2. Aktuelle Infos erhalten,<br>wie man aktiv werden kann</h4></div>
+                        <div class="center"><h5>(neue kritische Stellungnahme zum Überwachgunspaket<br>auf der Seite des Parlaments verfügbar)</h5></div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="be-active-block">
+                        <div class="center"><img src="static/img/icons/werde-aktiv_03.png" alt="Werde aktiv Brief"></div>
+                        <div class="center"><h4>3. Auf die Parlamentswebsite<br>gehen und einer kritischen<br>Stellungnahme zustimmen</h4></div>
+                    </div>
+                </div>
+                <div class="center">
+                    <div class="button blue" id="be-active-button">Jetzt anmelden</div>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="display: none">
+            <h2>Jetzt anmelden</h2>
+            <div class="row items1">
+                <div class="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+                <form id="be-active-form" action="/join/" method="post">
+                    <input type="email" placeholder="E-Mail-Adresse (Pflichtfeld)" name="email">
+                    <input type="text" placeholder="Rufnummer (optional)" name="phonenumber" maxlength="20">
+                    <button type="submit" class="button blue">Abschicken</button>
+                    <div id="be-active-server-error"></div>
+                </form>
+            </div>
+        </div>
+        <div class="container" style="display: none">
+            <h2><i class="fa fa-thumbs-o-up"></i></h2>
+            <h2>Vielen Dank für Deine Unterstützung</h2>
+            <div class="center">
+                <div class="button blue" id="be-active-back">Zurück</div>
+            </div>
+        </div>
+    </section>
+    <section id="topics">
+        <div class="container">
+            <h2 class="center">Das steckt im Überwachungspaket</h2>
+            <div class="row items4">
+                <div class="column">
+                    <div class="c-block">
+                        <div class="center"><img src="static/img/icons/up_graphic01.png"></div>
+                        <h4>Staatliche Spionagesoftware (Bundestrojaner)</h4>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="c-block">
+                        <div class="center"><img src="static/img/icons/up_graphic02.png"></div>
+                        <h4>Verstärkte Videoüberwachung</h4>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="c-block">
+                        <div class="center"><img src="static/img/icons/up_graphic03.png"></div>
+                        <h4>IMSI-Catcher</h4>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="c-block">
+                        <div class="center"><img src="static/img/icons/up_graphic04.png"></div>
+                        <h4>Lauschangriff im Auto</h4>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="c-block">
+                        <div class="center"><img src="static/img/icons/up_graphic05.png"></div>
+                        <h4>Überwachung im Straßenverkehr</h4>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="c-block">
+                        <div class="center"><img src="static/img/icons/up_graphic06.png"></div>
+                        <h4>Vorratsdatenspeicherung 2.0</h4>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="c-block">
+                        <div class="center"><img src="static/img/icons/up_graphic07.png"></div>
+                        <h4>Registrierungspflicht für Wertkarten</h4>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="c-block">
+                        <div class="center"><img src="static/img/icons/up_graphic08.png"></div>
+                        <h4>Beschlagnahmung von Briefen</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="quotes">
+        <div class="container">
+            <h2 class="center">Kritik am Überwachungspaket</h2>
+            <div class="center">Das plant die schwarz-blaue Bundesregierung</div>
+            <div class="center">(<a href="{}"><i class="fa fa-sign-out"></i> Mehr zum Überwachungspaket 2017</a>)</div>
+            {% include "consultation/quotes.html" %}
+        </div>
+        <div class="center">
+            <a href="#quotes" onclick="toggleQuotesCarousel(this);">
+                <i class="fa fa-angle-down"></i> Alle Stellungnahmen</a>
+        </div>
+    </section>
+    <section id="sicherheit">
+        <div class="container">
+            <h2>Echtes Sicherheitspaket statt Überwachungspaket</h2>
+            <p>Im Überwachungspaket der Regierung ist keine wirkliche Sicherheit enthalten. Statt "subjektivem" Sicherheitsgefühl, Angstmache und Populismus brauchen wir ein "objektives" Sicherheitspaket:</p>
+            <ul class="fa-ul">
+                <li><i class="fa-li fa fa-check-square"></i>mehr spezifisch ausgebildete Polizeikräfte statt mehr Kameras</li>
+                <li><i class="fa-li fa fa-check-square"></i>verbesserte Analysekapazitäten für Sicherheitsbehörden: Mehr speziell ausgebildete Datenanalysten statt mehr Daten</li>
+                <li><i class="fa-li fa fa-check-square"></i>mehrsprachige Polizeikräfte bzw. mehr Dolmetscherkapazitäten</li>
+                <li><i class="fa-li fa fa-check-square"></i>mehr Präventionsarbeit gegen Radikalisierungstendenzen</li>
+                <li><i class="fa-li fa fa-check-square"></i>bessere Vernetzung mit Communities als vertrauensbildende Maßnahmen und zur frühzeitigen Erkennung radikaler Tendenzen</li>
+                <li><i class="fa-li fa fa-check-square"></i>ein Ablaufdatum für neue Überwachungsgesetze ("Sunset Clauses" mit wissenschaftlicher Evaluierung und Rücknahme wirkungsloser Maßnahmen)</li>
+                <li><i class="fa-li fa fa-check-square"></i>Evaluierung aller bestehenden Überwachungsgesetze auf ihre Verfassungskonformität</li>
+            </ul>
+        </div>
+    </section>
 </div>
 {% endblock %}
