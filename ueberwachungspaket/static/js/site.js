@@ -110,9 +110,18 @@ $(document).ready(function() {
             var formData = $(this).serialize(); //Encode form elements for submission
 
             $.post( postUrl, formData) 
-				.done(function() {
-                    $container2.hide();
-                    $container3.show();
+				.done(function(data) {
+                    console.log(data.status);
+                    if (data.status == 'success') {
+                        $container2.hide();
+                        $container3.show();
+                    } else {
+                        if (data.reason == 'already_subscribed') {
+                            $("#be-active-server-error").html('Du bist bereits eingetragen.');
+                        } else {
+                            $("#be-active-server-error").html('Ein Fehler ist aufgetreten. Bitte versuche es später nochmal!');
+                        }
+                    }
                 })
 				.fail(function(xhr, status, error) {
                     $("#be-active-server-error").html('Ein Fehler ist aufgetreten. Bitte versuche es später nochmal!');	

@@ -14,18 +14,6 @@
 
 {% block content %}
 <div class="frontpage-content">
-	<section id="quotes">
-		<div class="container">
-			<h2 class="center">Kritik am Überwachungspaket</h2>
-			<div class="center">Das plant die schwarz-blaue Bundesregierung</div>
-			<div class="center">(<a href="{}"><i class="fa fa-sign-out"></i> Mehr zum Überwachungspaket 2017</a>)</div>
-			{% include "consultation/quotes.html" %}
-		</div>
-		<div class="center">
-			<a href="#quotes" onclick="toggleQuotesCarousel(this);">
-				<i class="fa fa-angle-down"></i> Alle Stellungnahmen</a>
-		</div>
-	</section>
 	<section id="be-active">
 		<div class="container">
 			<h2>Werde aktiv!</h2>
@@ -58,9 +46,9 @@
 			<h2>Jetzt anmelden</h2>
 			<div class="row items1">
 				<div class="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
-				<form id="be-active-form" action="" method="post">
-					<input type="email" placeholder="E-Mail-Adresse" name="email">
-					<input type="text" placeholder="Rufnummer" name="phonenumber">
+				<form id="be-active-form" action="/join/" method="post">
+					<input type="email" placeholder="E-Mail-Adresse (Pflichtfeld)" name="email">
+					<input type="text" placeholder="Rufnummer (optional)" name="phonenumber" maxlength="20">
 					<button type="submit" class="button blue">Abschicken</button>
 					<div id="be-active-server-error"></div>
 				</form>
@@ -127,6 +115,18 @@
 					</div>
 				</div>
 			</div>
+		</div>
+	</section>
+	<section id="quotes">
+		<div class="container">
+			<h2 class="center">Kritik am Überwachungspaket</h2>
+			<div class="center">Das plant die schwarz-blaue Bundesregierung</div>
+			<div class="center">(<a href="{}"><i class="fa fa-sign-out"></i> Mehr zum Überwachungspaket 2017</a>)</div>
+			{% include "consultation/quotes.html" %}
+		</div>
+		<div class="center">
+			<a href="#quotes" onclick="toggleQuotesCarousel(this);">
+				<i class="fa fa-angle-down"></i> Alle Stellungnahmen</a>
 		</div>
 	</section>
 	<section id="sicherheit">

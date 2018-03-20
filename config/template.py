@@ -37,3 +37,8 @@ EMAIL_PARL = ''
 # folder for consultation PDFs, with trailing slash
 PDF_FOLDER = ''
 
+# subscription POST url for activism mailing list
+ACTIVISM_LIST_POST_URL = ''
+
+# referer header for subscription POST request
+ACTIVISM_LIST_POST_REFERER = ''
