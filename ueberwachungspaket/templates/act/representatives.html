@@ -2,81 +2,81 @@
 {% set active_page = "act.representatives" %}
 
 {% block title %}
-	<title>Draht zu deinen Politikern | {{ config['PROJECT_NAME'] }}</title>
+    <title>Draht zu deinen Politikern | {{ config['PROJECT_NAME'] }}</title>
 {% endblock title %}
 
 {% block content %}
-	<section id="aktiv">
-		<h1>Draht zu deinen Politikern</h1>
-		<h2>Überzeuge deine Abgeordneten, dass wir ein echtes Sicherheitspaket brauchen und kein Überwachungspaket</h2>
-		<div id="filter" class="column">
-			<form id="importance" class="btn-group row" autocomplete="off">
-				<input id="reps-important" type="radio" name="importance" checked="checked">
-				<label for="reps-important">thematisch Zuständige</label>
-				<input id="reps-all" type="radio" name="importance">
-				<label for="reps-all">alle Politiker</label>
-			</form>
-			<form id="parties" class="btn-group row" autocomplete="off">
-				<input id="spoe" type="checkbox">
-				<label for="spoe">SPÖ</label>
-				<input id="oevp" type="checkbox">
-				<label for="oevp">ÖVP</label>
-				<input id="fpoe" type="checkbox">
-				<label for="fpoe">FPÖ</label>
-				<input id="gruene" type="checkbox">
-				<label for="gruene">GRÜNE</label>
-				<input id="neos" type="checkbox">
-				<label for="neos">NEOS</label>
-				<input id="frank" type="checkbox">
-				<label for="frank">FRANK</label>
-				<input id="none" type="checkbox">
-				<label for="none">parteilos</label>
-			</form>
-			<form id="teams" class="btn-group row" autocomplete="off">
-				<input id="liberty" type="checkbox">
-				<label for="liberty"><span class="glyph liberty">&#9724;</span> Team Grundrechte</label>
-				<input id="spy" type="checkbox">
-				<label for="spy"><span class="glyph spy">&#9724;</span> Team Überwachung</label>
-				<input id="unknown" type="checkbox">
-				<label for="unknown"><span class="glyph unknown">&#9724;</span> Unbekannt</label>
-			</form>
-			<form id="states" class="btn-group row" autocomplete="off">
-				<input id="state-b" type="checkbox">
-				<label for="state-b">Bgld.</label>
-				<input id="state-k" type="checkbox">
-				<label for="state-k">Ktn.</label>
-				<input id="state-n" type="checkbox">
-				<label for="state-n">NÖ</label>
-				<input id="state-o" type="checkbox">
-				<label for="state-o">OÖ</label>
-				<input id="state-s" type="checkbox">
-				<label for="state-s">Sbg.</label>
-				<input id="state-st" type="checkbox">
-				<label for="state-st">Stmk.</label>
-				<input id="state-t" type="checkbox">
-				<label for="state-t">T</label>
-				<input id="state-v" type="checkbox">
-				<label for="state-v">Vbg.</label>
-				<input id="state-w" type="checkbox">
-				<label for="state-w">W</label>
-			</form>
-			<form id="name" class="btn-group row" autocomplete="off">
-				<input type="text" size="60" placeholder="Namenssuche" />
-			</form>
-		</div>
-		<div id="representatives" class="row">
-			{% for rep in reps %}
-			<a class="representative {% if not rep.important %}invisible{% endif %}" href="{{ url_for('general.representative', prettyname=rep.name.prettyname) }}" data-firstname="{{ rep.name.firstname }}" data-lastname="{{ rep.name.lastname }}" data-party="{{ rep.party.prettyname }}" data-team="{{ rep.team.prettyname }}" data-state="{{ rep.state }}" data-important="{{ rep.important }}">
-				<div class="column">
-					<div class="name">{{ rep.name.lastname }}</div>
-					<div class="party">{{ rep.party.shortname }}</div>
-				</div>
-				<div class="overlay {{ rep.team.prettyname }}"></div>
-				<img src="{{ url_for('static', filename='img/representative-small/' + rep.id + '.jpg') }}" alt="" />
-			</a>
-			{% endfor %}
-		</div>
-		<p class="center small indent">Die Zuordnung der Politikerinnen und Politiker zu den einzelnen Teams erfolgte durch den Verein epicenter.works auf Basis von Aussagen der Personen und Parteien. Sollte die hier getroffene Zuordnung für oder gegen das geplante Überwachungspaket zu stimmen nicht korrekt sein, treten Sie mit uns in Kontakt.</p>
-		<p class="center small indent">Kontaktdaten der <a href="{{ url_for('static', filename='data/representatives.csv') }}">Abgeordneten</a> und <a href="{{ url_for('static', filename='data/representatives.csv') }}">Regierungsmitglieder</a> als CSV.</p>
-	</section>
+    <section id="aktiv">
+        <h1>Draht zu deinen Politikern</h1>
+        <h2>Überzeuge deine Abgeordneten, dass wir ein echtes Sicherheitspaket brauchen und kein Überwachungspaket</h2>
+        <div id="filter" class="column">
+            <form id="importance" class="btn-group row" autocomplete="off">
+                <input id="reps-important" type="radio" name="importance" checked="checked">
+                <label for="reps-important">thematisch Zuständige</label>
+                <input id="reps-all" type="radio" name="importance">
+                <label for="reps-all">alle Politiker</label>
+            </form>
+            <form id="parties" class="btn-group row" autocomplete="off">
+                <input id="spoe" type="checkbox">
+                <label for="spoe">SPÖ</label>
+                <input id="oevp" type="checkbox">
+                <label for="oevp">ÖVP</label>
+                <input id="fpoe" type="checkbox">
+                <label for="fpoe">FPÖ</label>
+                <input id="gruene" type="checkbox">
+                <label for="gruene">GRÜNE</label>
+                <input id="neos" type="checkbox">
+                <label for="neos">NEOS</label>
+                <input id="frank" type="checkbox">
+                <label for="frank">FRANK</label>
+                <input id="none" type="checkbox">
+                <label for="none">parteilos</label>
+            </form>
+            <form id="teams" class="btn-group row" autocomplete="off">
+                <input id="liberty" type="checkbox">
+                <label for="liberty"><span class="glyph liberty">&#9724;</span> Team Grundrechte</label>
+                <input id="spy" type="checkbox">
+                <label for="spy"><span class="glyph spy">&#9724;</span> Team Überwachung</label>
+                <input id="unknown" type="checkbox">
+                <label for="unknown"><span class="glyph unknown">&#9724;</span> Unbekannt</label>
+            </form>
+            <form id="states" class="btn-group row" autocomplete="off">
+                <input id="state-b" type="checkbox">
+                <label for="state-b">Bgld.</label>
+                <input id="state-k" type="checkbox">
+                <label for="state-k">Ktn.</label>
+                <input id="state-n" type="checkbox">
+                <label for="state-n">NÖ</label>
+                <input id="state-o" type="checkbox">
+                <label for="state-o">OÖ</label>
+                <input id="state-s" type="checkbox">
+                <label for="state-s">Sbg.</label>
+                <input id="state-st" type="checkbox">
+                <label for="state-st">Stmk.</label>
+                <input id="state-t" type="checkbox">
+                <label for="state-t">T</label>
+                <input id="state-v" type="checkbox">
+                <label for="state-v">Vbg.</label>
+                <input id="state-w" type="checkbox">
+                <label for="state-w">W</label>
+            </form>
+            <form id="name" class="btn-group row" autocomplete="off">
+                <input type="text" size="60" placeholder="Namenssuche" />
+            </form>
+        </div>
+        <div id="representatives" class="row">
+            {% for rep in reps %}
+            <a class="representative {% if not rep.important %}invisible{% endif %}" href="{{ url_for('general.representative', prettyname=rep.name.prettyname) }}" data-firstname="{{ rep.name.firstname }}" data-lastname="{{ rep.name.lastname }}" data-party="{{ rep.party.prettyname }}" data-team="{{ rep.team.prettyname }}" data-state="{{ rep.state }}" data-important="{{ rep.important }}">
+                <div class="column">
+                    <div class="name">{{ rep.name.lastname }}</div>
+                    <div class="party">{{ rep.party.shortname }}</div>
+                </div>
+                <div class="overlay {{ rep.team.prettyname }}"></div>
+                <img src="{{ url_for('static', filename='img/representative-small/' + rep.id + '.jpg') }}" alt="" />
+            </a>
+            {% endfor %}
+        </div>
+        <p class="center small indent">Die Zuordnung der Politikerinnen und Politiker zu den einzelnen Teams erfolgte durch den Verein epicenter.works auf Basis von Aussagen der Personen und Parteien. Sollte die hier getroffene Zuordnung für oder gegen das geplante Überwachungspaket zu stimmen nicht korrekt sein, treten Sie mit uns in Kontakt.</p>
+        <p class="center small indent">Kontaktdaten der <a href="{{ url_for('static', filename='data/representatives.csv') }}">Abgeordneten</a> und <a href="{{ url_for('static', filename='data/representatives.csv') }}">Regierungsmitglieder</a> als CSV.</p>
+    </section>
 {% endblock %}

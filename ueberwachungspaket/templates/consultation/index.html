@@ -2,84 +2,84 @@
 {% set active_page = "consultation.index" %}
 
 {% block title %}
-	<title>Konsultation | {{ config['PROJECT_NAME'] }}</title>
+    <title>Konsultation | {{ config['PROJECT_NAME'] }}</title>
 {% endblock title %}
 
 {% block content %}
 <section id="quotes">
-	<div class="container">
-		<h2>Noch nie war eine Begutachtung so eindeutig</h2>
-		{% include "consultation/quotes.html" %}
-		<h2 class="indent">Welche Themen von den meisten Stellungnahmen abgelehnt wurden</h2>
-		<canvas id="barChart" class="indent" height="80"></canvas>
-	</div>
+    <div class="container">
+        <h2>Noch nie war eine Begutachtung so eindeutig</h2>
+        {% include "consultation/quotes.html" %}
+        <h2 class="indent">Welche Themen von den meisten Stellungnahmen abgelehnt wurden</h2>
+        <canvas id="barChart" class="indent" height="80"></canvas>
+    </div>
 </section>
 <section id="table">
-	<div class="container">
-		<h2>Alle Stellungnahmen im Detail</h2>
-		<div id="settings" class="indent">
-			<form action="javascript:void(0);" autocomplete="off">
-				<div class="row">
-					<input id="filterBmi" class="hidden" name="filterOrigin" value="bmi" type="radio" />
-					<label for="filterBmi">BMI</label>
-					<input id="filterBmj" class="hidden" name="filterOrigin" value="bmj" type="radio" />
-					<label for="filterBmj">BMJ</label>
-					<input id="filterBoth" class="hidden" name="filterOrigin" value="both" type="radio" checked="checked" />
-					<label for="filterBoth">beide</label>
-				</div>
-				<div class="row">
-					<select name="filterTopic">
-						<option value="all" selected="selected">Alle Themen</option>
-						<option value="bundestrojaner">Bundestrojaner</option>
-						<option value="netzsperren">Netzsperren</option>
-						<option value="vds-video">Vorratsdatenspeicherung für Videoüberwachung</option>
-						<option value="ueberwachung-strassen">Vollüberwachung auf Österreichs Straßen</option>
-						<option value="vds-quickfreeze">Quickfreeze</option>
-						<option value="anonyme-simkarten">Anonyme Simkarten</option>
-						<option value="imsi-catcher">IMSI-Catcher</option>
-						<option value="lauschangriff-auto">Lauschangriff im Auto</option>
-					</select>
-				</div>
-				<div class="row">
-					<input name="filterName" type="text" placeholder="Namenssuche">
-					<input id="filterNameButton" class="btn" type="button" value="Suchen" />
-				</div>
-			</form>
-			<p class="center"><span id="opinionsCount">{{ opinions_count }}</span> öffentliche Einträge gefunden</p>
-		</div>
-		<div style="overflow-x:auto;">
-			<table id="consultationTable" class="indent">
-				<thead>
-					<tr>
-						<th class="left absorbing sortable" data-sort-key="name">Name</th>
-						<th class="sortable" data-sort-key="date">Datum</th>
-						<th>BMI</th>
-						<th>BMJ</th>
-						<th>Themen</th>
-						<th class="sortable" data-sort-key="originality">Originalität</th>
-					</tr>
-				</thead>
-				<tbody>
-					{% for opinion in opinions %}
-					<tr>
-						<td>{{ opinion.name_pretty() }}</td>
-						<td class="center">{{ opinion.date_pretty() }}</td>
-						<td class="center">{% if opinion.link_bmi_pdf -%}<a href="{{ opinion.link_bmi_pdf }}"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>{% endif -%}</td>
-						<td class="center">{% if opinion.link_bmj_pdf -%}<a href="{{ opinion.link_bmj_pdf }}"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>{% endif -%}</td>
-						<td class="center">
-							<img src="{{ url_for('static', filename='img/icons/' + ('green' if opinion.addresses_bundestrojaner else 'gray') + '/trojaner.png') }}" alt="" class="indicator" title="Bundestrojaner" />&nbsp;<img src="{{ url_for('static', filename='img/icons/' + ('green' if opinion.addresses_netzsperren else 'gray') + '/netzsperren.png') }}" alt="" class="indicator" title="Netzsperren" />&nbsp;<img src="{{ url_for('static', filename='img/icons/' + ('green' if opinion.addresses_vds_video else 'gray') + '/totalevideoueberwachung.png') }}" alt="" class="indicator" title="Vorratsdatenspeicherung für Videoüberwachung" />&nbsp;<img src="{{ url_for('static', filename='img/icons/' + ('green' if opinion.addresses_ueberwachung_strassen else 'gray') + '/verkehrsueberwachung.png') }}" alt="" class="indicator" title="Vollüberwachung auf Österreichs Straßen" />&nbsp;<img src="{{ url_for('static', filename='img/icons/' + ('green' if opinion.addresses_vds_quickfreeze else 'gray') + '/vorratsdaten.png') }}" alt="" class="indicator" title="Quickfreeze" />&nbsp;<img src="{{ url_for('static', filename='img/icons/' + ('green' if opinion.addresses_anonyme_simkarten else 'gray') + '/sim-id.png') }}" alt="" class="indicator" title="Anonyme Simkarten" />&nbsp;<img src="{{ url_for('static', filename='img/icons/' + ('green' if opinion.addresses_imsi_catcher else 'gray') + '/imsicatcher.png') }}" alt="" class="indicator" title="IMSI-Catcher" />&nbsp;<img src="{{ url_for('static', filename='img/icons/' + ('green' if opinion.addresses_lauschangriff_auto else 'gray') + '/lauschangriffauto.png') }}" alt="" class="indicator" title="Lauschangriff im Auto" />
-						</td>
-						<td class="center">{{ opinion.originality_pretty() }}{% if opinion.comment -%}<i class="fa fa-chevron-circle-down commentOpener" data-comment="{{ opinion.id }}" aria-hidden="true"></i>{% endif -%}</td>
-					</tr>
-					{% if opinion.comment -%}
-					<tr class="comment" id="comment{{ opinion.id }}">
-						<td colspan="6">{{ opinion.comment }}</td>
-					</tr>
-					{% endif -%}
-					{% endfor %}
-				</tbody>
-			</table>
-		</div>
-	</div>
+    <div class="container">
+        <h2>Alle Stellungnahmen im Detail</h2>
+        <div id="settings" class="indent">
+            <form action="javascript:void(0);" autocomplete="off">
+                <div class="row">
+                    <input id="filterBmi" class="hidden" name="filterOrigin" value="bmi" type="radio" />
+                    <label for="filterBmi">BMI</label>
+                    <input id="filterBmj" class="hidden" name="filterOrigin" value="bmj" type="radio" />
+                    <label for="filterBmj">BMJ</label>
+                    <input id="filterBoth" class="hidden" name="filterOrigin" value="both" type="radio" checked="checked" />
+                    <label for="filterBoth">beide</label>
+                </div>
+                <div class="row">
+                    <select name="filterTopic">
+                        <option value="all" selected="selected">Alle Themen</option>
+                        <option value="bundestrojaner">Bundestrojaner</option>
+                        <option value="netzsperren">Netzsperren</option>
+                        <option value="vds-video">Vorratsdatenspeicherung für Videoüberwachung</option>
+                        <option value="ueberwachung-strassen">Vollüberwachung auf Österreichs Straßen</option>
+                        <option value="vds-quickfreeze">Quickfreeze</option>
+                        <option value="anonyme-simkarten">Anonyme Simkarten</option>
+                        <option value="imsi-catcher">IMSI-Catcher</option>
+                        <option value="lauschangriff-auto">Lauschangriff im Auto</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <input name="filterName" type="text" placeholder="Namenssuche">
+                    <input id="filterNameButton" class="btn" type="button" value="Suchen" />
+                </div>
+            </form>
+            <p class="center"><span id="opinionsCount">{{ opinions_count }}</span> öffentliche Einträge gefunden</p>
+        </div>
+        <div style="overflow-x:auto;">
+            <table id="consultationTable" class="indent">
+                <thead>
+                    <tr>
+                        <th class="left absorbing sortable" data-sort-key="name">Name</th>
+                        <th class="sortable" data-sort-key="date">Datum</th>
+                        <th>BMI</th>
+                        <th>BMJ</th>
+                        <th>Themen</th>
+                        <th class="sortable" data-sort-key="originality">Originalität</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for opinion in opinions %}
+                    <tr>
+                        <td>{{ opinion.name_pretty() }}</td>
+                        <td class="center">{{ opinion.date_pretty() }}</td>
+                        <td class="center">{% if opinion.link_bmi_pdf -%}<a href="{{ opinion.link_bmi_pdf }}"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>{% endif -%}</td>
+                        <td class="center">{% if opinion.link_bmj_pdf -%}<a href="{{ opinion.link_bmj_pdf }}"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>{% endif -%}</td>
+                        <td class="center">
+                            <img src="{{ url_for('static', filename='img/icons/' + ('green' if opinion.addresses_bundestrojaner else 'gray') + '/trojaner.png') }}" alt="" class="indicator" title="Bundestrojaner" />&nbsp;<img src="{{ url_for('static', filename='img/icons/' + ('green' if opinion.addresses_netzsperren else 'gray') + '/netzsperren.png') }}" alt="" class="indicator" title="Netzsperren" />&nbsp;<img src="{{ url_for('static', filename='img/icons/' + ('green' if opinion.addresses_vds_video else 'gray') + '/totalevideoueberwachung.png') }}" alt="" class="indicator" title="Vorratsdatenspeicherung für Videoüberwachung" />&nbsp;<img src="{{ url_for('static', filename='img/icons/' + ('green' if opinion.addresses_ueberwachung_strassen else 'gray') + '/verkehrsueberwachung.png') }}" alt="" class="indicator" title="Vollüberwachung auf Österreichs Straßen" />&nbsp;<img src="{{ url_for('static', filename='img/icons/' + ('green' if opinion.addresses_vds_quickfreeze else 'gray') + '/vorratsdaten.png') }}" alt="" class="indicator" title="Quickfreeze" />&nbsp;<img src="{{ url_for('static', filename='img/icons/' + ('green' if opinion.addresses_anonyme_simkarten else 'gray') + '/sim-id.png') }}" alt="" class="indicator" title="Anonyme Simkarten" />&nbsp;<img src="{{ url_for('static', filename='img/icons/' + ('green' if opinion.addresses_imsi_catcher else 'gray') + '/imsicatcher.png') }}" alt="" class="indicator" title="IMSI-Catcher" />&nbsp;<img src="{{ url_for('static', filename='img/icons/' + ('green' if opinion.addresses_lauschangriff_auto else 'gray') + '/lauschangriffauto.png') }}" alt="" class="indicator" title="Lauschangriff im Auto" />
+                        </td>
+                        <td class="center">{{ opinion.originality_pretty() }}{% if opinion.comment -%}<i class="fa fa-chevron-circle-down commentOpener" data-comment="{{ opinion.id }}" aria-hidden="true"></i>{% endif -%}</td>
+                    </tr>
+                    {% if opinion.comment -%}
+                    <tr class="comment" id="comment{{ opinion.id }}">
+                        <td colspan="6">{{ opinion.comment }}</td>
+                    </tr>
+                    {% endif -%}
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
 </section>
 {% endblock %}
