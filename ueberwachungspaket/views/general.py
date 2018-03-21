@@ -15,7 +15,7 @@ reps = Representatives()
 
 @mod.route("/")
 def index():
-    with open("ueberwachungspaket/data/quotes.json", "r") as json_file:
+    with open("ueberwachungspaket/data/quotes_2.0.json", "r") as json_file:
         quotes = load(json_file)
     shuffle(quotes)
     consultation_count = 9143 #db_session.query(func.count(ConsultationSender.date_validated)).one()[0]
