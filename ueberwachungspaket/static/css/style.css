@@ -1195,7 +1195,7 @@ nav > ul > li.active {
     padding: 1em;
 }
 .c-block{
-    background: #EEE;
+    background: #FFF;
     padding: 10px;
     transition: all 0.3s ease;
     min-height: 170px;
@@ -1218,7 +1218,7 @@ nav > ul > li.active {
 .c-block img{
     height: 160px;
     border-radius: 8px;
-    border: 3px solid white;
+    border: 3px solid #EEE;
     transition : border 0.3s ease;
 }
 
