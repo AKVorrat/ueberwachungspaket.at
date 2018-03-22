@@ -1,10 +1,13 @@
 from random import shuffle
 from json import load
-from flask import Blueprint, render_template, abort
+from flask import Blueprint, render_template, abort, request, jsonify
 from sqlalchemy import func
-from config import TWILIO_NUMBERS
-from database.models import Representatives, Opinion, ConsultationSender
+from sqlalchemy.exc import IntegrityError
+from config import TWILIO_NUMBERS, ACTIVISM_LIST_POST_URL, ACTIVISM_LIST_POST_REFERER
+from database.models import Representatives, Opinion, ConsultationSender, Activist
 from database import db_session
+from datetime import datetime
+import requests
 
 mod = Blueprint("general", __name__)
 reps = Representatives()
@@ -12,7 +15,7 @@ reps = Representatives()
 
 @mod.route("/")
 def index():
-    with open("ueberwachungspaket/data/quotes.json", "r") as json_file:
+    with open("ueberwachungspaket/data/quotes_2.0.json", "r") as json_file:
         quotes = load(json_file)
     shuffle(quotes)
     consultation_count = 9143 #db_session.query(func.count(ConsultationSender.date_validated)).one()[0]
@@ -48,17 +51,17 @@ def representative(prettyname):
         abort(404)
 
 
-#@mod.route("/weitersagen/")
+@mod.route("/weitersagen/")
 def share():
     return render_template("general/share.html")
 
 
-#@mod.route("/unterstützer/")
+@mod.route("/unterstützer/")
 def supporters():
     return render_template("general/supporters.html")
 
 
-#@mod.route("/faq/")
+@mod.route("/faq/")
 def faq():
     return render_template("general/faq.html")
 
@@ -66,3 +69,23 @@ def faq():
 @mod.route("/datenschutz/")
 def privacy():
     return render_template("general/privacy.html")
+
+@mod.route("/join/", methods=["POST"])
+def join():
+    email = request.form.get('email')
+    phone = request.form.get('phonenumber')
+
+    if not email:
+        abort(400)
+
+    activist = Activist(email, phone, datetime.now())
+
+    try:
+        db_session.add(activist)
+        db_session.commit()
+    except IntegrityError:
+        return jsonify({'status': 'error', 'reason': 'already_subscribed'})
+
+    requests.post(ACTIVISM_LIST_POST_URL, data={'email': email}, headers={'referer': ACTIVISM_LIST_POST_REFERER})
+
+    return jsonify({'status': 'success', 'reason': ''})

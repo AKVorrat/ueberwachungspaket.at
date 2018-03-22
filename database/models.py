@@ -424,3 +424,16 @@ class Opinion(Base):
             "originality": self.originality_pretty(),
             "comment": self.comment
         }
+
+class Activist(Base):
+    __tablename__ = "activists"
+
+    id = Column(Integer, primary_key=True)
+    email = Column(String(255), unique=True, nullable=False)
+    phone = Column(String(20))
+    date_entered = Column(DateTime, nullable=False)
+
+    def __init__(self, email, phone, date_entered):
+        self.email = email
+        self.phone = phone
+        self.date_entered = date_entered

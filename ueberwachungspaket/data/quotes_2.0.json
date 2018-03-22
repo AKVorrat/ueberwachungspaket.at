@@ -1,0 +1,50 @@
+[
+	{
+		"name": "epicenter.works",
+		"id": "4/AUA",
+		"slider": true,
+		"logo": "epicenter80.png",
+		"text": "Der vorliegende Entwurf beinhaltet deshalb drei neue Formen der anlasslosen Massenüberwachung und wird von uns als unverhältnismäßig und grundrechtswidrig abgelehnt.",
+		"url": "https://www.parlament.gv.at/PAKT/VHG/XXVI/SN/SN_00025/index.shtml"
+	},
+	{
+		"name": "epicenter.works",
+		"id": "1/AUA",
+		"slider": true,
+		"logo": "epicenter80.png",
+		"text": "Grundrechte dürfen nicht verletzt werden, auch und gerade bei Ermittlungen im polizeilichen Bereich, insbesondere der Bundestrojaner ist kaum auf eine grundrechtskonforme Weise durchführbar.",
+		"url": "https://www.parlament.gv.at/PAKT/VHG/XXVI/SN/SN_00026/index.shtml"
+	},
+	{
+		"name": "Uni Innsbruck (Rechtswissenschaftliche Fakultät)",
+		"id": "1/AUA",
+		"slider": true,
+		"logo": "uniibk80.png",
+		"text": "Dass eine derart dürftige Verdachtslage, die sich nicht einmal auf schwere Delikte beziehen muss, eine so weitgehende Verpflichtung zur Datenspeicherung auslösen soll, ist unseres Erachtens inakzeptabel.",
+		"url": "https://www.parlament.gv.at/PAKT/VHG/XXVI/SN/SN_00022/index.shtml"
+	},
+	{
+		"name": "TU Wien (Fakultät für Informatik)",
+		"id": "1/AUA",
+		"slider": true,
+		"logo": "tuwien.png",
+		"text": "Viele der im Vorschlag erwähnten Maßnahmen sind aus technischer Sicht kaum oder nicht im geforderten Ausmaß implementierbar; andere wiederum haben weitreichendere Auswirkungen auf die Sicherheit von Computersystemen als im Entwurf berücksichtigt.",
+		"url": "https://www.parlament.gv.at/PAKT/VHG/XXVI/SN/SN_00029/index.shtml"
+	},
+	{
+		"name": "Österreichischer Rechtsanwaltskammertag",
+		"id": "1/AUA",
+		"slider": true,
+		"logo": "oerak.png",
+		"text": "Sollten diese Gesetzesvorschläge tatsächlich vom Nationalrat in dieser Form beschlossen werden, wären damit zahlreiche Eingriffe in die Grund- und Freiheitsrechte der österreichischen Bevölkerung verbunden. Insbesondere befremdlich erachten wir das Ansinnen der österreichischen Bundesregierung hinkünftig die Überwachung verschlüsselter Nachrichten durch einen sogenannten „Bundestrojaner“ zu ermöglichen.",
+		"url": "https://www.parlament.gv.at/PAKT/VHG/XXVI/SN/SN_00005/index.shtml"
+	},
+	{
+		"name": "Österreichischer Rechtsanwaltskammertag",
+		"id": "4/AUA",
+		"slider": true,
+		"logo": "oerak.png",
+		"text": "Viel eher würde es der ÖRAK begrüßen, wenn der Nationalrat echte Sicherheitsmaßnahmen anstelle des von der Bundesregierung vorgeschlagenen Überwachungspaketes verabschieden würde. ",
+		"url": "https://www.parlament.gv.at/PAKT/VHG/XXVI/SN/SN_00008/index.shtml"
+	}
+]
