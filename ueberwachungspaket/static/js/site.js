@@ -85,6 +85,7 @@ function toggleQuotesCarousel(element) {
                 $(element).contents().last().replaceWith(' Alle Stellungnahmen');
             }
         }
+        $("#quotes-carousel .avatar").map(function() { $(this).css({'max-height': $(this).width() + 'px'}) });
     }
     
 }
