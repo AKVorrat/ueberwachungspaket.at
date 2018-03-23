@@ -46,5 +46,14 @@
 		"logo": "oerak.png",
 		"text": "Viel eher würde es der ÖRAK begrüßen, wenn der Nationalrat echte Sicherheitsmaßnahmen anstelle des von der Bundesregierung vorgeschlagenen Überwachungspaketes verabschieden würde. ",
 		"url": "https://www.parlament.gv.at/PAKT/VHG/XXVI/SN/SN_00008/index.shtml"
-	}
+	},
+    {
+        "name": "Ventocom GmbH",
+        "id": "4/AUA",
+        "slider": "true",
+        "logo": "ventocom.png",
+        "text": "Abschaffung anonymer Sim-Karten: Zusammenfassend wäre diese Maßnahme gänzlich ungeeignet, den damit verfolgten Zweck (die Bekämpfung von Kriminalität bzw die Erhöhung von Sicherheit) zu fördern. Die Maßnahme wäre auch deshalb nicht verhältnismäßig, weil sie mit einem massiven Eingriff in Grund- und Freiheitsrechte der österreichischen Staatsbürger verbunden wäre.",
+        "url": "https://www.parlament.gv.at/PAKT/VHG/XXVI/SN/SN_00033/index.shtml"
+    }
+
 ]
