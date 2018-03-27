@@ -16,7 +16,7 @@
 		"url": "https://www.parlament.gv.at/PAKT/VHG/XXVI/SN/SN_00026/index.shtml"
 	},
 	{
-		"name": "Uni Innsbruck (Rechtswissenschaftliche Fakultät)",
+		"name": "Universität Innsbruck (Rechtswissenschaftliche Fakultät)",
 		"id": "1/AUA",
 		"slider": true,
 		"logo": "uniibk80.png",
@@ -51,9 +51,56 @@
         "name": "Ventocom GmbH",
         "id": "4/AUA",
         "slider": "true",
-        "logo": "ventocom.png",
+        "logo": "ventocom80.png",
         "text": "Abschaffung anonymer Sim-Karten: Zusammenfassend wäre diese Maßnahme gänzlich ungeeignet, den damit verfolgten Zweck (die Bekämpfung von Kriminalität bzw die Erhöhung von Sicherheit) zu fördern. Die Maßnahme wäre auch deshalb nicht verhältnismäßig, weil sie mit einem massiven Eingriff in Grund- und Freiheitsrechte der österreichischen Staatsbürger verbunden wäre.",
         "url": "https://www.parlament.gv.at/PAKT/VHG/XXVI/SN/SN_00033/index.shtml"
+    },
+    {
+        "name": "Instiute for Parlamentarism, Security and Science",
+        "id": "1/AUA",
+        "slider": "true",
+        "logo": "",
+        "text": "Klar ist jedoch, dass es sich dabei um Schadsoftware handelt, die notwendig ist, um unbekannte Sicherheitslücken in IT-Systemen auszunützen.",
+        "url": "https://www.parlament.gv.at/PAKT/VHG/XXVI/SN/SN_00038/index.shtml"
+    },
+    {
+        "name": "Instiute for Parlamentarism, Security and Science",
+        "id": "4/AUA",
+        "slider": "true",
+        "logo": "",
+        "text": "Diese Maßnahmen kombiniert mit Gesichtserkennungsprogrammen führen zu einer beinahe lückenlosen Überwachung jeder Person im öffentlichen Raum und damit zu einer maßlosen Einschränkung des Grundrechts auf Privatheit.",
+        "url": "https://www.parlament.gv.at/PAKT/VHG/XXVI/SN/SN_00039/index.shtml"
+    },
+    {
+        "name": "Amnesty International Österreich",
+        "id": "1/AUA",
+        "slider": "true",
+        "logo": "amnesty80.png",
+        "text": "Wiewohl den staatlichen Sicherheitsbehörden Instrumente zur Verfügung gestellt werden müssen, um Kriminalität effektiv bekämpfen zu können, darf dabei nicht in Kauf genommen werden, dass durch nicht abschätzbare Nebenwirkungen die Grund- und Menschenrechte eingeschränkt werden.",
+        "url": "https://www.parlament.gv.at/PAKT/VHG/XXVI/SN/SN_00049/index.shtml"
+    },
+    {
+        "name": "AK Wien",
+        "id": "1/AUA",
+        "slider": "true",
+        "logo": "akwien80.png",
+        "text": "Bei den vorgeschlagenen Maßnahmen handelt es sich um massive Eingriffe in die verfassungsmäßig gesicherten Grundrechte des Einzelnen, deren Verhältnismäßigkeit und damit Zweckmäßigkeit sowie Notwendigkeit an dieser Stelle bezweifelt wird.",
+        "url": "https://www.parlament.gv.at/PAKT/VHG/XXVI/SN/SN_00043/index.shtml"
+    },
+    {
+        "name": "AK Wien",
+        "id": "4/AUA",
+        "slider": "true",
+        "logo": "akwien80.png",
+        "text": "Bezweifelt wird aber die Verhältnismäßigkeit sowie Zweckmäßigkeit und Notwendigkeit der massiven Eingriffe in die verfassungsmäßig gesicherten Grundrechte des Einzelnen durch die Regelungen des vorliegenden Gesetzesentwurfs.",
+        "url": "https://www.parlament.gv.at/PAKT/VHG/XXVI/SN/SN_00046/index.shtml"
+    },
+    {
+        "name": "ISPA (Internet Service Providers Austria)",
+        "id": "4/AUA",
+        "slider": "true",
+        "logo": "ispa80.png",
+        "text": "Verbot anonymer Sim-Karten: Die vorgeschlagene Registrierungspflicht stellt eine breitenwirksame Überwachung dar die im Regierungsprogramm abgelehnt wird.",
+        "url": "https://www.parlament.gv.at/PAKT/VHG/XXVI/SN/SN_00045/index.shtml"
     }
-
 ]
