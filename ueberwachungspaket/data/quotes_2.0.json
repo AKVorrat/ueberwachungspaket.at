@@ -102,5 +102,69 @@
         "logo": "ispa80.png",
         "text": "Verbot anonymer Sim-Karten: Die vorgeschlagene Registrierungspflicht stellt eine breitenwirksame Überwachung dar die im Regierungsprogramm abgelehnt wird.",
         "url": "https://www.parlament.gv.at/PAKT/VHG/XXVI/SN/SN_00045/index.shtml"
+    },
+    {
+        "name": "Digital Society",
+        "id": "1/AUA",
+        "slider": "true",
+        "logo": "digisoc80.png",
+        "text": "Bei Betrachtung der technischen Sicherheitsrisiken für die Allgemeinheit und des fraghaften Nutzens erscheint es wie Hohn, wenn diese Gesetzesänderung als \"Sicherheitspaket\" bezeichnet wird.",
+        "url": "https://www.parlament.gv.at/PAKT/VHG/XXVI/SN/SN_00053/index.shtml"
+    },
+    {
+        "name": "Digital Society",
+        "id": "4/AUA",
+        "slider": "true",
+        "logo": "digisoc80.png",
+        "text": "Bei Betrachtung der technischen Sicherheitsrisiken für die Allgemeinheit und des fraghaften Nutzens erscheint es wie Hohn, wenn diese Gesetzesänderung als \"Sicherheitspaket\" bezeichnet wird.",
+        "url": "https://www.parlament.gv.at/PAKT/VHG/XXVI/SN/SN_00052/index.shtml"
+    },
+    {
+        "name": "Wirtschaftskammer Österreich (WKÖ)",
+        "id": "1/AUA",
+        "slider": "true",
+        "logo": "wkoe80.png",
+        "text": "Vieles ist zwar ansatzweise gut gemeint, doch scheint die technische Verwirklichung und Absicherung in den Kinderschuhen zu stecken, sodass eine missbräuchliche Datenverwendung nicht ganz ausgeschlossen werden kann.",
+        "url": "https://www.parlament.gv.at/PAKT/VHG/XXVI/SN/SN_00063/index.shtml"
+    },
+    {
+        "name": "Wirtschaftskammer Österreich (WKÖ)",
+        "id": "4/AUA",
+        "slider": "true",
+        "logo": "wkoe80.png",
+        "text": "So ist es insbesondere beim Zugriff der Behörden auf Video- und Tondaten und dem Ausbau der Kennzeichenerkennungssysteme (betrifft alle Autobesitzer in Österreich) fraglich, ob die vorgesehenen Maßnahmen verhältnismäßig sind und nicht übermäßig in verfassungsrechtlich gewährleistete Grundrechte (Recht auf persönliche Freiheit, Grundrecht auf Datenschutz) eingreifen.",
+        "url": "https://www.parlament.gv.at/PAKT/VHG/XXVI/SN/SN_00061/index.shtml"
+    },
+    {
+        "name": "Rundfunk und Telekom Regulierungs-GmbH (RTR)",
+        "id": "4/AUA",
+        "slider": "true",
+        "logo": "rtr80.png",
+        "text": "Es besteht die Gefahr, dass einzelne, auf Prepaid-Produkte angewiesene Bevölkerungsschichten vom Zugang zur Mobilfunkkommunikation ausgeschlossen werden.",
+        "url": "https://www.parlament.gv.at/PAKT/VHG/XXVI/SN/SN_00055/index.shtml"
+    },
+    {
+        "name": "Österreichischer Gemeindebund",
+        "id": "4/AUA",
+        "slider": "true",
+        "logo": "gembund80.png",
+        "text": "Videoüberwachung: Kritisch zu hinterfragen ist, weswegen die bereits in Kritik gestandene, im Bedarfsfall bescheidmäßig aufzuerlegende Aufbewahrungsfrist von Bildaufnahmen in der Dauer von zwei Wochen nunmehr auf vier Wochen erweitert wurde.",
+        "url": "https://www.parlament.gv.at/PAKT/VHG/XXVI/SN/SN_00056/index.shtml"
+    },
+    {
+        "name": "Bundesministerium für Verfassung, Reformen, Deregulierung und Justiz",
+        "id": "4/AUA",
+        "slider": "true",
+        "logo": "bmvrdj80.png",
+        "text": "Im Licht der grundrechtlichen Vorgaben des § 1 DSG erscheint fraglich, ob die Zwecke, zu denen eine Herausgabe von Daten verlangt werden kann, ausreichend begrenzt sind. Insbesondere der Zweck der Vorbeugung wahrscheinlicher gefährlicher Angriffe scheint ein äußerst weites Einsatzgebiet dieser Maßnahme zu eröffnen.",
+        "url": "https://www.parlament.gv.at/PAKT/VHG/XXVI/SN/SN_00062/index.shtml"
+    },
+    {
+        "name": "ASFINAG",
+        "id": "4/AUA",
+        "slider": "true",
+        "logo": "asfinag80.png",
+        "text": "Die obigen Ausführungen zeigen, dass die im vorliegenden Entwurf enthaltenen unklaren Gesetzesbegriffe in der Praxis zu Rechtsunsicherheit führen können.",
+        "url": "https://www.parlament.gv.at/PAKT/VHG/XXVI/SN/SN_00059/index.shtml"
     }
 ]
