@@ -70,7 +70,7 @@ def faq():
 def privacy():
     return render_template("general/privacy.html")
 
-@mod.route("/join/", methods=["POST"])
+#@mod.route("/join/", methods=["POST"])
 def join():
     email = request.form.get('email')
     phone = request.form.get('phonenumber')
