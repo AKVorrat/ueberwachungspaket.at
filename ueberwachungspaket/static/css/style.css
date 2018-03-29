@@ -331,11 +331,11 @@ section:first-of-type {
     }
 }
 
-section:nth-child(even) {
+section:nth-child(odd) {
     background-color: #FFF;
 }
 
-section:nth-child(odd) {
+section:nth-child(even) {
     background-color: #EEE;
 }
 
