@@ -166,5 +166,46 @@
         "logo": "asfinag80.png",
         "text": "Die obigen Ausführungen zeigen, dass die im vorliegenden Entwurf enthaltenen unklaren Gesetzesbegriffe in der Praxis zu Rechtsunsicherheit führen können.",
         "url": "https://www.parlament.gv.at/PAKT/VHG/XXVI/SN/SN_00059/index.shtml"
+    },
+    {
+        "name": "Österreichische Notariatskammer",
+        "id": "1/AUA",
+        "slider": "true",
+        "logo": "notar80.png",
+        "text": "Der Entfall von § 137 Abs. 2 StPO würde betreffend die Beschlagnahme von Briefen, insbesondere weil § 112 StPO nicht mehr anwendbar wäre, ein Defizit gegenüber dem bisherigen Standard hinsichtlich des Schutzes von zB notariellen Berufsgeheimnissen bedeuten. Die Österreichische Notariatskammer spricht sich gegen eine derartige Schwächung des Schutzes von Berufsgeheimnissen und daher gegen den Entfall von § 137 Abs. 2 StPO aus.",
+        "url": "https://parlament.gv.at/PAKT/VHG/XXVI/SN/SN_00070/index.shtml"
+    },
+    {
+        "name": "Ökobüro - Allianz der Umweltbewegung",
+        "id": "1/AUA",
+        "slider": "true",
+        "logo": "oekobuero80.png",
+        "text": "Die Bestimmungen der Novelle haben das Potential, tief in die Grundrechte der Gesamtbevölkerung einzugreifen und damit auch die Arbeit der Zivilgesellschaft zu erschweren. Insbesondere das Ausnutzen von Sicherheitslücken zugunsten zweifelhafter Ermittlungsmaßnahmen birgt enorme Risiken, die über die Frage des Rechts auf Privatsphäre hinausreichen.",
+        "url": "https://parlament.gv.at/PAKT/VHG/XXVI/SN/SN_00079/index.shtml"
+    },
+    {
+        "name": "Datenschutzrat",
+        "id": "1/AUA",
+        "slider": "true",
+        "logo": "datenschutzrat80.png",
+        "text": "Angesichts des Umstands, dass dadurch Dritte, gegen die selbst kein Tatverdacht vorliegt, von einer derartigen Überwachungsmaßnahme betroffen sind, sollte überlegt werden, ob eine höhere Schwelle als die Annahme „auf Grund bestimmter Tatsachen“ im Gesetz verankert werden sollte.",
+        "url": "https://parlament.gv.at/PAKT/VHG/XXVI/SN/SN_00074/index.shtml"
+    },
+    {
+        "name": "Datenschutzrat",
+        "id": "4/AUA",
+        "slider": "true",
+        "logo": "datenschutzrat80.png",
+        "text": "Vor dem Hintergrund des Datenschutzgrundrechtes (§1 DSG) und der Betroffenheit von Personen, die nicht unmittelbar in die betroffenen sicherheitspolizeilichen Vorkommnisse involviert sind, sollte der Begriff „wahrscheinlicher“ näher determiniert werden.",
+        "url": "https://parlament.gv.at/PAKT/VHG/XXVI/SN/SN_00076/index.shtml"
+    },
+    {
+        "name": "Österreichisches Rotes Kreuz",
+        "id": "4/AUA",
+        "slider": "true",
+        "logo": "",
+        "text": "Keinesfalls dürfen die verfassungsrechtlichen Errungenschaften der vergangenen Jahrhunderte, von vielen Österreicherinnen unter Einsatz ihrer Freiheit, ihrer Gesundheit oder gar ihres Lebens erkämpft, heute leichtfertig zur vermeintlichen Erhöhung des subjektiven Sicherheitsgefühls, für tages- oder parteipolitische, populistische, wahltaktische oder sonstige sachfremde Interessen geopfert werden.",
+        "url": "https://parlament.gv.at/PAKT/VHG/XXVI/SN/SN_00066/index.shtml"
     }
+
 ]
