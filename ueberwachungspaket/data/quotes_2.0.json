@@ -203,9 +203,96 @@
         "name": "Österreichisches Rotes Kreuz",
         "id": "4/AUA",
         "slider": "true",
-        "logo": "",
+        "logo": "roteskreuz80.png",
         "text": "Keinesfalls dürfen die verfassungsrechtlichen Errungenschaften der vergangenen Jahrhunderte, von vielen Österreicherinnen unter Einsatz ihrer Freiheit, ihrer Gesundheit oder gar ihres Lebens erkämpft, heute leichtfertig zur vermeintlichen Erhöhung des subjektiven Sicherheitsgefühls, für tages- oder parteipolitische, populistische, wahltaktische oder sonstige sachfremde Interessen geopfert werden.",
         "url": "https://parlament.gv.at/PAKT/VHG/XXVI/SN/SN_00066/index.shtml"
+    },
+    {
+        "name": "Österreichischer Gewerkschaftsbund (ÖGB)",
+        "id": "1/AUA",
+        "slider": "true",
+        "logo": "oegb80.png",
+        "text": "Das sogenannte \"informationelle Selbstbestimmungsrecht\" ist seit den 1980er Jahren als Grundpfeiler  des Rechts auf Datenschutz und des Persönlichkeitsrechts anerkannt. Es besagt im Kern: Wer nicht mit hinreichender Sicherheit überschauen kann, welche ihn betreffende Informationen in bestimmten Bereichen seiner sozialen Umwelt bekannt sind, und wer das Wissen möglicher Kommunikationspartner nicht einigermaßen abzuschätzen vermag, ist in seiner freien, persönlichen Entfaltung massiv eingeschränkt. Wer unsicher ist, ob abweichende Verhaltensweisen jederzeit notiert und als Information gespeichert oder weiterverwendet werden, wird versuchen, nicht durch solche Verhaltensweisen aufzufallen. Wer damit rechnet, dass etwa die Teilnahme an einer Versammlung behördlich registriert wird und dass ihm dadurch Risiken entstehen können, wird möglicherweise auf eine Ausübung seiner entsprechenden Grundrechte verzichten. Das ist mit einer demokratischen Gesellschaft nicht vereinbar. Eingriffe in dieses Grundrecht müssen daher mit Bedacht erfolgen und auf das Notwendigste eingeschränkt bleiben. Dem läuft das nun vorliegende Sicherheitspaket massiv entgegen. Die vorgeschlagenen Maßnahmen bewegen sich in Richtung Totalüberwachung der Bürgerinnen und Bürger. Natürlich sind wir der Ansicht, dass sich die Menschen in unserem Land sicher fühlen sollen. Selbstverständlich hat das nicht nur mit der objektiven Sicherheitslage sondern auch mit dem subjektiven Sicherheitsgefühl zu tun. Eine derartig offensive Ausweitung der staatlichen Überwachung des/der Einzelnen, insbesondere auch unbeteiligter und unbescholtener Bürgerinnen und Bürger, stellt jedoch keinesfalls ein taugliches Mittel dazu dar, die objektive Sicherheitslage wie auch das subjektive Sicherheitsgefühl zu verbessern.",
+        "url": "https://parlament.gv.at/PAKT/VHG/XXVI/SN/SN_00087/index.shtml"
+    },
+    {
+        "name": "Ökobüro - Allianz der Umweltbewegung",
+        "id": "4/AUA",
+        "slider": "true",
+        "logo": "oekobuero80.png",
+        "text": "Die geplante Novelle stellt eine massive Erweiterung der Befugnisse der Sicherheitsbehörden dar und ermöglichte großflächige, teilweise auch ungezielte Überwachung ohne richterliche Genehmigung und eigenständigen Rechtsschutz der Betroffenen. Dazu kommt, dass die Maßnahmen im SPG und TKG aus technischen und praktischen ründen nicht geeignet sind, tatsächlich zur Verbrechens- und Terrorismusbekämpfung beizutragen. Es besteht die Befürchtung, dass diese zusätzlichen Überwachungsmaßnahmen als repressive Instrumente gegen die Zivilgesellschaft eingesetzt werden könnten. Wir fordern den Innenminister auf, den Entwurf zurückzuziehen.",
+        "url": "https://parlament.gv.at/PAKT/VHG/XXVI/SN/SN_00081/index.shtml"
+    },
+    {
+        "name": "Vereinigung der österreichischen Richterinnen und Richter",
+        "id": "1/AUA",
+        "slider": "true",
+        "logo": "riv80.png",
+        "text": "Allerdings ist auch diese Gesetzesinitiative mit einem personellen Mehraufwand im Justizbereich verbunden, der in der „Wirkungsorientierten Folgenabschätzung“ (WFA), in der nur auf Innenressort abgestellt wird, nicht abgebildet ist. Die benötigen personellen und finanziellen Ressourcen auch im Bereich der Justiz sind vor Inkrafttreten der Regelung sicherzustellen.",
+        "url": "https://parlament.gv.at/PAKT/VHG/XXVI/SN/SN_00088/index.shtml"
+    },
+    {
+        "name": "Verein gegen Tierfabriken",
+        "id": "1/AUA",
+        "slider": "true",
+        "logo": "vgt80.png",
+        "text": "Der aktuelle Gesetzesvorschlag sieht einen Ausbau der Überwachungsmöglichkeiten bei einer gleichzeitigen Einschränkung der Transparenz in öffentlichen Ämtern vor. Dem entsprechend ist dieser Gesetzesvorschlag nicht dazu geeignet die allgemeine Sicherheit zu fördern. Er führt im Gegensatz zu einer allgemeinen Gefährdung weil es dazu beiträgt, dass die Zivilbevölkerung noch effektiver überwacht werden kann während die Aktivitäten von Amtsorganen weiter verborgen werden. Machtmissbrauch wird damit erheblich erleichtert. Das erschwert kritische zivile Mitgestaltung erheblich weil Amtsmissbrauch auf diese Art weder aufgedeckt, noch noch angeprangert werden kann.",
+        "url": "https://parlament.gv.at/PAKT/VHG/XXVI/SN/SN_00089/index.shtml"
+    },
+    {
+        "name": "Verein gegen Tierfabriken",
+        "id": "4/AUA",
+        "slider": "true",
+        "logo": "vgt80.png",
+        "text": "Zusammenfassend gehen die von der Bundesregierung vorgeschlagenen Gesetzesänderungen aus Sicht des VGT allesamt in die falsche Richtung. Mit diesen Änderungen würden wir unsere Gesellschaft nicht sicherer, sondern deutlich unsicherer machen, weil wir durch sie die Fähigkeit unserer Gemeinschaft zur kreativen Weiterentwicklung blockieren würden.",
+        "url": "https://parlament.gv.at/PAKT/VHG/XXVI/SN/SN_00083/index.shtml"
+    },
+    {
+        "name": "Club Sozialdemokratischer Rechtsanwältinnen und Rechtsanwälte",
+        "id": "1/AUA",
+        "slider": "true",
+        "logo": "bsa80.png",
+        "text": "Es ist bedauerlich, dass die warnenden Worte [unserer], wie auch vieler anderer Stellungnahmen, keinen Eingang in die gegenständlichen Regierungsvorlagen 17 d.B. und 15 d.B gefunden haben. Ungeachtet der dahingehend irreführendenden Ausführungen der erläuternden Bemerkungen beider Regierungsvorlagen, wurden berechtigte Kritik und berechtigte Warnungen nicht „berücksichtigt“.",
+        "url": "https://parlament.gv.at/PAKT/VHG/XXVI/SN/SN_00090/index.shtml"
+    },
+    {
+        "name": "Club Sozialdemokratischer Rechtsanwältinnen und Rechtsanwälte",
+        "id": "4/AUA",
+        "slider": "true",
+        "logo": "bsa80.png",
+        "text": "Die vorliegenden Regierungsvorlagen bewirken sachlich nicht gerechtfertigte Grundrechtseingriffe.",
+        "url": "https://parlament.gv.at/PAKT/VHG/XXVI/SN/SN_00084/index.shtml"
+    },
+    {
+        "name": "Landesgericht für Strafsachen Wien",
+        "id": "1/AUA",
+        "slider": "true",
+        "logo": "",
+        "text": "Betreffend IMSI-Catcher: Weshalb die bewährte gerichtliche Kontrolle nunmehr bei Ermittlung derselben Daten wegfallen soll, leuchtet nicht ein. Vielmehr ist im Falle der Lokalisierung einer technischen Einrichtung die gerichtliche Kontrolle vorab aus folgendem Grund sogar noch mehr geboten als bei der Auskunft über Daten einer Nachrichtenübermittlung",
+        "url": "https://parlament.gv.at/PAKT/VHG/XXVI/SN/SN_00092/index.shtml"
+    },
+    {
+        "name": "Chaos Computer Club Wien (C3W)",
+        "id": "1/AUA",
+        "slider": "true",
+        "logo": "c3w80.png",
+        "text": "Die neuen Überwachungsmöglichkeiten erfordern jedoch das Eindringen in die intimsten Bereiche der Privatsphäre; um technisch überhaupt zu funktionieren, muss der Zugriff auf Systemebene erfolgen. Damit ist jede Manipulation am betroffenen Gerät möglich: Zugriff auf alle vorhandenen Funktionen und Datenbestände des Geräts: Lesen, Kopieren, Verändern, Löschen, Hinzufügen und Ausleiten von Daten auf dem Gerät, unbemerkt vom und ungesteuert durch den Benutzer, bzw. Besitzer.",
+        "url": "https://parlament.gv.at/PAKT/VHG/XXVI/SN/SN_00093/index.shtml"
+    },
+    {
+        "name": "Chaos Computer Club Wien (C3W)",
+        "id": "4/AUA",
+        "slider": "true",
+        "logo": "c3w80.png",
+        "text": "Die Bundesegierung legt wieder einmal ein Überwachungspaket vor, das massive Eingriffe in die Grundrechte sowie verschärfte Überwachung ermöglichen soll. Hier zeigt sich besonders deutlich, dass durch ständige Ausweitung der Überwachungsmaßnahmen die Grund- und Freiheitsrechte Stück für Stück beschnitten werden – der demokratische Rechtsstaat wird langsam zum Überwachungs- und Polizeistaat.",
+        "url": "https://parlament.gv.at/PAKT/VHG/XXVI/SN/SN_00086/index.shtml"
+    },
+    {
+        "name": "ÖAMTC",
+        "id": "4/AUA",
+        "slider": "true",
+        "logo": "oeamtc80.png",
+        "text": "Der ÖAMTC hegt Zweifel, dass der mit der geplanten Maßnahme beabsichtigte Eingriff in das Recht auf Datenschutz gerechtfertigt ist.",
+        "url": "https://parlament.gv.at/PAKT/VHG/XXVI/SN/SN_00082/index.shtml"
     }
-
 ]
