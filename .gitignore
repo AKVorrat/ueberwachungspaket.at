@@ -2,3 +2,5 @@ env
 __pycache__
 config/__init__.py
 *.pyc
+ueberwachungspaket/data/representatives.json
+ueberwachungspaket/data/government.json
