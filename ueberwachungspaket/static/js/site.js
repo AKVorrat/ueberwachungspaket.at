@@ -511,6 +511,11 @@ $(document).ready(function() {
         setSortKey(sortKey);
     });
 
+    $(".kickl-popup > button").click(function (e) {
+        e.preventDefault();
+        $(".kickl-popup").remove();
+    });
+
     $("body").on("click", ".commentOpener", function () {
         var commentId = $(this).data("comment");
         var comment = $("#comment" + commentId);

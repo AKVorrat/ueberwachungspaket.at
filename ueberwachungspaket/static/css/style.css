@@ -1615,3 +1615,36 @@ section{
         display: none;
     }
 }
+
+/* Kickl Popup */
+
+.kickl-popup {
+  background-image: url('../img/kickl-popup.jpg');
+  position: fixed;
+  z-index: 10000;
+  right: 0;
+  bottom: 0;
+  margin: 1rem;
+  width: 20rem;
+  max-width: 80%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  box-shadow: 5px 5px 5px #000;
+}
+.kickl-popup:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+.kickl-popup > button {
+  border: 0;
+  background: none;
+  color: #fff;
+  float: right;
+  padding: 5px 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+.kickl-popup > button:hover {
+  color: #000;
+}
