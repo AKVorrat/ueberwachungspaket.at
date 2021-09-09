@@ -1,8 +1,8 @@
 from urllib.parse import urlparse, urlunparse
 from functools import wraps
 from flask import abort, current_app, request
-from twilio.twiml import Response
-from twilio.util import RequestValidator
+from twilio.twiml.voice_response import VoiceResponse
+from twilio.request_validator import RequestValidator
 from config import *
 
 def twilio_request(f):
@@ -18,7 +18,7 @@ def twilio_request(f):
         request_valid = validator.validate(url, request.form, signature)
 
         if request_valid or current_app.debug:
-            resp = Response()
+            resp = VoiceResponse()
             f(resp, *args, **kwargs)
             return str(resp)
 
